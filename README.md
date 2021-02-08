@@ -11,7 +11,8 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
 * Einführungen: Überblick zur Architektur, zum Zusammenwirken der Komponenten, zu Begriffen
-* 
+* usw.
+
 #### Programmieren und Installieren
 * IQB-Testcenter:
   * Programmcode: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), [Docker-Setup](https://github.com/iqb-berlin/testcenter-setup)
