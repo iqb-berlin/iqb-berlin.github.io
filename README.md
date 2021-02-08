@@ -10,8 +10,16 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
-* Einführungen: Überblick zur Architektur, zum Zusammenwirken der Komponenten, zu Begriffen
-* usw.
+* [Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki): Dieses Wiki gibt einen Überblick über das Instrumentarium zum Online-Testen am IQB. Hier finden sich zahlreiche Verweise auf andere Quellen bzw. zu den Wiki-Seiten der jeweiligen Anwendungen.
+* **IQB-Testcenter**: Diese Webanwendung wird zur Durchführung von Befragungen oder Kompetenztests benutzt.
+  * [Wiki zum IQB-Testcenter](https://github.com/iqb-berlin/testcenter-frontend/wiki): 
+Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der Konfiguration dieser Web-Anwendung.
+  * [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions): Hier finden Sie häufig gestellte Fragen mit Antworten sowie Berichte über Einsätze des IQB-Testcenters.
+  * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net). Man erhält Unterstützung bei der Erstellung von Steuerdateien (Logins, Testheft-Xml) und bei der Aufbereitung der Ergebnisse.
+  * [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications/blob/main/README.md): Spezifikationen zu den Datenformaten "iqb-scripted" und "iqb-key-value" 
+* **IQB-Teststudio-Lite**: Mit dieser Webanwendung erstellt man Aufgaben für die Befragungen bzw. Kompetenztests.
+  * [Wiki zum IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki): 
+Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der Konfiguration dieser Web-Anwendung.
 
 #### Programmieren und Installieren
 * IQB-Testcenter:
@@ -49,6 +57,6 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 * [eatRep](https://cran.r-project.org/web/packages/eatRep/index.html): Berechnet Mittelwerte, Standardabweichungen, Varianzen, Häufigkeitstabellen, Perzentile und lineare (logistische) Regressionen sowie Trends für alle diese Analysen in geclusterten Mehrebenenstrukturen mit imputierten Daten. Das Paket implementiert einen Teil der Funktionsweise der Computersoftware WesVar in R und ist im Wesentlichen für die IQB-Bildungstrendstudien relevant.
 * [eatGADS](https://cran.r-project.org/web/packages/eatGADS/index.html): Erzeugt den Gesamtanalysedatensatz (GADS) für IQB-Bildungstrendstudien als SQLite3-Datenbank. Teile des Datensatzes können mithilfe des Pakets dann in R geladen werden. Erlaubt außerdem den Import und Export von SPSS Dateien in und aus R. Beinhaltet die Anonymisierungsfunktionen des FDZ
 * [eatTools](https://cran.r-project.org/web/packages/eatTools/index.html): verschiedene Hilfsfunktionen, die unter anderem auch von den Paketen `eatPrep`, `eatModel` und `eatRep` benötigt werden.
-* [eatAnalysis](https://github.com/beckerbz/eatAnalysis): verschiedene nützliche Hilfsfunktionen, wie zum Speichern von Excel-Datein, Speichern von Analyse-Ergebnissen von lm4 und Simulieren von IRT-Responses
-* [eatATA](https://github.com/beckerbz/eatATA): automatisierte Blockbesetzung/automatisierte Testhefterstellung
-* [eatFDZ](https://github.com/beckerbz/eatFDZ): automatisierte Anonymisierung von Datensätzen; Abgleich von pdf-Dokumenten (z. B. Skalenhandbüchern) und Datensätzen
+* [eatAnalysis](https://github.com/beckerbenj/eatAnalysis): verschiedene nützliche Hilfsfunktionen, wie zum Speichern von Excel-Datein, Speichern von Analyse-Ergebnissen von lm4 und Simulieren von IRT-Responses
+* [eatATA](https://github.com/beckerbenj/eatATA): automatisierte Blockbesetzung/automatisierte Testhefterstellung
+* [eatFDZ](https://github.com/beckerbenj/eatFDZ): automatisierte Anonymisierung von Datensätzen; Abgleich von pdf-Dokumenten (z. B. Skalenhandbüchern) und Datensätzen
