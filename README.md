@@ -10,7 +10,7 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 
 | [Computerbasiertes Testen](#cba) | [Metadaten-Kataloge](#metadata) | [R-Programmierungen zur Datenanalyse](#rcode) | [Übergreifende Programmierungen/ Spezifikationen](#components) | 
 | ---- | ---- | ---- | ---- |
-| yy | xx | pp | hh |
+
 
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
