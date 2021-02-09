@@ -7,8 +7,10 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
 
 Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick auf die Links begeben Sie sich in Wikis, Code-Repositorien und Foren oder zu einer Videopräsentation zum jeweiligen Thema.
 
+
 | [Computerbasiertes Testen](#cba) | [Metadaten-Kataloge](#metadata) | [R-Programmierungen zur Datenanalyse](#rcode) | [Übergreifende Programmierungen/ Spezifikationen](#components) | 
 | ---- | ---- | ---- | ---- |
+
 
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
