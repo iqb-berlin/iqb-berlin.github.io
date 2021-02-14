@@ -14,7 +14,7 @@
             padding: 45px;
         }
         .logo-img {
-            float: left;
+            float: right;
             position: relative;
             margin: 10px 15px 15px 10px;
         }
@@ -32,7 +32,9 @@
     {{ content }}
 </section>
 <footer>
-    &copy; IQB 2021
+    {% for repository in site.github.public_repositories %}
+    * [{{ repository.name }}]({{ repository.html_url }})
+    {% endfor %}
 </footer>
 </body>
 </html>
