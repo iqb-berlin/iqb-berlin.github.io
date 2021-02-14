@@ -53,7 +53,7 @@ Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der
 * [eatATA](https://cran.r-project.org/web/packages/eatATA/index.html): automatisierte Blockbesetzung/automatisierte Testhefterstellung
 * [eatFDZ](https://github.com/beckerbenj/eatFDZ): automatisierte Anonymisierung von Datensätzen; Abgleich von pdf-Dokumenten (z. B. Skalenhandbüchern) und Datensätzen
 
-# <a name="components"></a>Übergreifende Programmierungen / Spezifikationen:
+# <a name="components"></a>Übergreifende Programmierungen / Spezifikationen
 * [IQB-Components](https://github.com/iqb-berlin/iqb-components): Angular-Komponenten zur Verwendung in Web-Anwendungen
 * [IQB-Dev-Components](https://github.com/iqb-berlin/iqb-dev-components): Sammlung von Scripten zur Unterstützung der Programmierung bzw. des Deployments von Web-Anwendungen
 * [eslint-config](https://github.com/iqb-berlin/eslint-config): TypeScript/JavaScript Syntax-Regeln (linting)
@@ -61,6 +61,7 @@ Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der
 * [vb-lib](https://github.com/iqb-berlin/vb-lib): Sammlung verschiedener Module zur Programmierung von Windows-Desktop-Anwendungen (vb.Net-Code); diese Module sind auf nuget.org als Package veröffentlicht
 * [Version-Compare](https://github.com/iqb-berlin/version-compare): Kleines Tool (Windows legacy)  
 
+# Repositories alphabetisch:
 {% for repository in site.github.public_repositories %}
-    * [{{ repository.name }}]({{ repository.html_url }})
+* [{{ repository.name }}]({{ repository.html_url }}) - {{ repository.archived }}
 {% endfor %}
