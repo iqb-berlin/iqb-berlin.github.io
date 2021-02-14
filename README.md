@@ -60,3 +60,7 @@ Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der
 * [distpacker](https://github.com/iqb-berlin/distpacker): Script zum Packen von Html-, Css- und JavaScript-Dateien zu einer Html-Datei
 * [vb-lib](https://github.com/iqb-berlin/vb-lib): Sammlung verschiedener Module zur Programmierung von Windows-Desktop-Anwendungen (vb.Net-Code); diese Module sind auf nuget.org als Package veröffentlicht
 * [Version-Compare](https://github.com/iqb-berlin/version-compare): Kleines Tool (Windows legacy)  
+
+{% for repository in site.github.public_repositories %}
+    * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
