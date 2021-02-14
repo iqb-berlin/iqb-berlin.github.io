@@ -62,6 +62,5 @@ Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der
 * [Version-Compare](https://github.com/iqb-berlin/version-compare): Kleines Tool (Windows legacy)  
 
 # Repositories alphabetisch:
-{% for repository in site.github.public_repositories %}
-* [{{ repository.name }}]({{ repository.html_url }}) - {{ repository.archived }}
-{% endfor %}
+{% for repository in site.github.public_repositories %}{% if repository.archived == false %}
+* [{{ repository.name }}]({{ repository.html_url }}){% endif %}{% endfor %}
