@@ -63,4 +63,4 @@ Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der
 
 # Repositories alphabetisch:
 {% for repository in site.github.public_repositories %}{% if repository.archived == false %}
-* [{{ repository.name }}]({{ repository.html_url }}){% endif %}{% endfor %}
+* [{{ repository.name }}]({{ repository.html_url }}) *{{ repository.title }}* {% endif %}{% endfor %}
