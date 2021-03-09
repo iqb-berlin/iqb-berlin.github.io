@@ -10,13 +10,11 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
-* [Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki): Dieses Wiki gibt einen Überblick über das Instrumentarium zum Online-Testen am IQB. Hier finden sich zahlreiche Verweise auf andere Quellen bzw. zu den Wiki-Seiten der jeweiligen Anwendungen.
-* **IQB-Testcenter**: Diese Webanwendung wird zur Durchführung von Befragungen oder Kompetenztests benutzt.
-  * [Wiki zum IQB-Testcenter](https://github.com/iqb-berlin/testcenter-frontend/wiki): 
-Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der Konfiguration dieser Web-Anwendung.
-  * [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions): Hier finden Sie häufig gestellte Fragen mit Antworten sowie Berichte über Einsätze des IQB-Testcenters.
-  * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net). Man erhält Unterstützung bei der Erstellung von Steuerdateien (Logins, Testheft-Xml) und bei der Aufbereitung der Ergebnisse.
-  * [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications/blob/main/README.md): Spezifikationen zu den Datenformaten "iqb-scripted" und "iqb-key-value" 
+
+Informationen für Anwender_innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
+
+ * [Wiki IQB-TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki): 
+
 * **IQB-Teststudio-Lite**: Mit dieser Webanwendung erstellt man Aufgaben für die Befragungen bzw. Kompetenztests.
   * [Wiki zum IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki): 
 Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der Konfiguration dieser Web-Anwendung.
