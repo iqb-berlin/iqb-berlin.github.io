@@ -13,11 +13,11 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 
 Informationen für Anwender_innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
 
+---
+
  **[Wiki IQB-TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)**
 
-* **IQB-Teststudio-Lite**: Mit dieser Webanwendung erstellt man Aufgaben für die Befragungen bzw. Kompetenztests.
-  * [Wiki zum IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki): 
-Diese Wiki-Seiten beschreiben im Detail die Bedienung und die Möglichkeiten der Konfiguration dieser Web-Anwendung.
+---
 
 #### Programmieren und Installieren
 * IQB-Testcenter:
