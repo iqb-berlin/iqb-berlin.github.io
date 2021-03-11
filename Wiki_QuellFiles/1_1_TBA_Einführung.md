@@ -1,64 +1,219 @@
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Back Home](https://img.shields.io/badge/Zurück--KapComputerbasiertesTesten-blueviolet)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.--Computerbasiertes-Testen-(TBA))
 
-Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) nutzt GitHub für die Veröffentlichung von Programmcode. Zusätzlich pflegen wir hier Dokumentationen zu diesen Programmierungen, die es Interessierten erleichtern, mit diesen Anwendungen zu arbeiten und diese zu installieren und anzupassen. Außerdem geben wir an vielen Stellen die Möglichkeit, mit uns in den Dialog zu treten. 
-
-Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick auf die Links begeben Sie sich in Wikis, Code-Repositorien und Foren oder zu einer Videopräsentation zum jeweiligen Thema.
-
-
-| :----: | :----: | :----: | :----: |
-| [Computerbasiertes Testen](#cba) | [Metadaten-Kataloge](#metadata) | [R-Programmierungen zur Datenanalyse](#rcode) | [Übergreifende Programmierungen/ Spezifikationen](#components) | 
-
-# <a name="cba"></a>Computerbasiertes Testen
-#### Verstehen und Anwenden
-
-Informationen für Anwender_innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
+![Back Home](https://img.shields.io/badge/Haupt--Kapitel-ComputerbasiertesTesten-brightgreen)
 
 ---
 
- **[Wiki IQB-TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)**
+**Vorab:**
+
+Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
+* [TBA-Projekt 2018-2020](https://www.iqb.hu-berlin.de/research/dm/tba/)
+* [TBA-Projekt 2021-2023](https://www.iqb.hu-berlin.de/research/dm/tba21/)
+* [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
 
 ---
 
-#### Programmieren und Installieren
-* IQB-Testcenter:
-  * Programmcode: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), [Docker-Setup](https://github.com/iqb-berlin/testcenter-setup)
-  * Installation (Video-Präsentationen auf HU-Box): [Einführung in die Architektur](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/), [Optionen der Einbindung](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)  
-* IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), [Docker-Setup](https://github.com/iqb-berlin/teststudio-lite-setup)
-* [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net)
-* [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
-* IQB-Verona-Player: [abi](https://github.com/iqb-berlin/verona-player-abi), [dan](https://github.com/iqb-berlin/verona-player-dan), [simple](https://github.com/iqb-berlin/verona-player-simple)
-* [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications): Ergänzende Spezifikationen zu Datenformaten rund um Verona 
+**Inhalt:**
+  * [1.1.1 TBA Module Aufbau](1.1.1-TBA-Module-Aufbau)
+  * [1.1.2 Datenhandshake Testcenter Teststudio](1.1.2-Datenhandshake-Testcenter-Teststudio)
+  * [1.1.3 Aktueller Entwicklungsstand](1.1.3-Aktueller-Entwicklungsstand)
+  * [1.1.4 Studiendurchführung](1.1.4-Studiendurchführung)
+  * [1.1.5 Verfügbarkeit IQB Programmierung](1.1.5-Verfügbarkeit-IQB-Programmierung)
+  * [1.1.6 Was macht VERA so speziell?](1.1.6-Was-macht-VERA-so-speziell%3F)
 
-#### Konzipieren: Verona-Interfaces
-* Video-Präsentationen: [Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/), [Player-Modell](https://box.hu-berlin.de/f/8f4b50975e9645af803b/), [Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
-* [Player-Spezifikation](https://github.com/verona-interfaces/player)
-* [Editor-Spezifikation](https://github.com/verona-interfaces/editor)
-* [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications): Ergänzende Spezifikationen zu Datenformaten rund um Verona 
- 
-# <a name="metadata"></a>Metadaten-Kataloge
-* [Spezifikation und Erläuterung](https://github.com/iqb-berlin/mdc-schemadefinition)
-* Aktive Kataloge: [Kernkatalog](https://github.com/iqb-berlin/mdc-core), [Copyright-Datenbank](https://github.com/iqb-berlin/mdc-copyright), [Forschungsdaten](https://github.com/iqb-berlin/mdc-researchdata)
-* Kataloge Entwurfsstadium: [Bildungsstandards](https://github.com/iqb-berlin/mdc-educational-standards)
-* [vb-metadata](https://github.com/iqb-berlin/vb-metadata): vb.Net-Module zum Auslesen eines Metadatenkatalogs sowie Komponenten zur Darstellung und Änderung von Metadaten in einer Windows-Desktop-Anwendung; außerdem `IQB-MD-CatAdmin` Windows-Anwendung zum Lesen und Speichern eines Kataloges
+---
 
-# <a name="rcode"></a> R-Programmierungen zur Datenanalyse (GitHub, CRAN) 
-* [eatPrep](https://github.com/sachseka/eatPrep): Aufbereitung von Datensätzen (Einlesen, Plausibilitätsprüfungen, Zusammenführen von Datensätzen, Missingbehandlung, Rekodieren, Aggregieren, Scoren und Schreiben von gelabelten SPSS-Datensätzen) unter Verwendung von in der IQB-Datenbank hinterlegten Informationen zu den Items und zum Testdesign.
-* [eatModel](https://github.com/weirichs/eatModel): Dient als Interface für die Software ConQuest. Die benötigten Steuerdateien (Skript, Labels, Datensatz im "fixed width"-Format) werden automatisch erzeugt und ConQuest über die Kommandozeile aufgerufen. Die Ergebnisdateien (Showfile, WLEs, PVs, etc.) können wieder nach R importiert und weiterverarbeitet werden. Neuere Versionen von `eatModel` erlauben auch die Einbindung des R-Pakets `tam` sowie Parallelisierung.
-* [eatRep](https://cran.r-project.org/web/packages/eatRep/index.html): Berechnet Mittelwerte, Standardabweichungen, Varianzen, Häufigkeitstabellen, Perzentile und lineare (logistische) Regressionen sowie Trends für alle diese Analysen in geclusterten Mehrebenenstrukturen mit imputierten Daten. Das Paket implementiert einen Teil der Funktionsweise der Computersoftware WesVar in R und ist im Wesentlichen für die IQB-Bildungstrendstudien relevant.
-* [eatGADS](https://cran.r-project.org/web/packages/eatGADS/index.html): Erlaubt Import und Datenaufbereitungen von SPSS Datensätzen in R. Erzeugt den Gesamtanalysedatensatz (GADS) für IQB-Bildungstrendstudien als SQLite3-Datenbank. Teile des Datensatzes können mithilfe des Pakets dann in R geladen werden. Erlaubt außerdem den Export von SPSS Dateien in und aus R.
-* [eatTools](https://cran.r-project.org/web/packages/eatTools/index.html): verschiedene Hilfsfunktionen, die unter anderem auch von den Paketen `eatPrep`, `eatModel` und `eatRep` benötigt werden.
-* [eatAnalysis](https://github.com/beckerbenj/eatAnalysis): verschiedene nützliche Hilfsfunktionen, wie zum Speichern von Excel-Datein, Speichern von Analyse-Ergebnissen von `lm4` und Simulieren von IRT-Responses
-* [eatATA](https://cran.r-project.org/web/packages/eatATA/index.html): automatisierte Blockbesetzung/automatisierte Testhefterstellung
-* [eatFDZ](https://github.com/beckerbenj/eatFDZ): automatisierte Anonymisierung von Datensätzen; Abgleich von pdf-Dokumenten (z. B. Skalenhandbüchern) und Datensätzen
 
-# <a name="components"></a>Übergreifende Programmierungen / Spezifikationen
-* [IQB-Components](https://github.com/iqb-berlin/iqb-components): Angular-Komponenten zur Verwendung in Web-Anwendungen
-* [IQB-Dev-Components](https://github.com/iqb-berlin/iqb-dev-components): Sammlung von Scripten zur Unterstützung der Programmierung bzw. des Deployments von Web-Anwendungen
-* [eslint-config](https://github.com/iqb-berlin/eslint-config): TypeScript/JavaScript Syntax-Regeln (linting)
-* [distpacker](https://github.com/iqb-berlin/distpacker): Script zum Packen von Html-, Css- und JavaScript-Dateien zu einer Html-Datei
-* [vb-lib](https://github.com/iqb-berlin/vb-lib): Sammlung verschiedener Module zur Programmierung von Windows-Desktop-Anwendungen (vb.Net-Code); diese Module sind auf nuget.org als Package veröffentlicht
-* [Version-Compare](https://github.com/iqb-berlin/version-compare): Kleines Tool (Windows legacy)  
 
-# Repositories alphabetisch:
-{% for repository in site.github.public_repositories %}{% if repository.archived == false %}
-* [{{ repository.name }}]({{ repository.html_url }}) {% endif %}{% endfor %}
+## 1.1.1 TBA Module Aufbau
+
+[![Back Home](https://img.shields.io/badge/Zurück--KapTBAEinführung-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
+
+![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+
+---
+Nachfolgend wird ein Überblick über die wesentlichen softwarebasierten Bestandteile des Computerbasierten Testens gegeben.
+Detaillierte Informationen zu den Software Modulen entnehmen Sie bitte den gleichnamigen Kapiteln.
+Die meisten Anwender werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen **Teststudio** und **Testcenter** in Berührung kommen. 
+
+![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
+
+* **IQB-Teststudio**: Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                            
+*Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
+
+* **IQB-Testcenter**: Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. Der Anwender kommt nur mit dem Frontend in Berührung. Das Frontend wird über eine Internetadresse geladen. Hier können Aufgaben hochgeladen werden und "abgespielt" werden. Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. Die Testpersonen wählen sich über die angegebene Internet-Adresse ein und geben Anmeldenamen und Kennwort ein. Die Verantwortlichen für die Testdurchführung können die Units, Testhefte und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. Außerdem kann man für eine Testgruppe (z. B. Klasse/Kurs) den Fortschritt der Bearbeitung beobachten.
+
+* **IQB-Dateneditor**: Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
+
+* **IQB-Testarchiv**: Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+
+* **IQB-Testdepot**: Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
+
+
+
+## 1.1.2 Datenhandshake Testcenter Teststudio
+
+[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
+
+![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+
+---
+Nachfolgend wird der grundsätzliche Handshake zwischen den Hauptmodulen Teststudio und Testcenter, 
+beginnend mit der Dateierzeugung bis zur Dateneingabe und Bearbeitung, aufgezeigt.
+
+![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
+
+
+### Dateierzeugung
+Die Dateierzeugung erfolgt mittels Teststudio (Item-Datenbank und intergriertem Editor). 
+Nach finaler Editierung der Aufgaben und Anforderung der Daten im Teststudio, erzeugt dieses die folgenden Dateien verpackt in einem Zip-Format:
+
+![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Datenstruktur_Out_final.png)
+
+### Dateibearbeitung
+Die einzelnen Datei bzgl. Unit, Booklet etc. können hinsichtlich bestimmter Parameter bearbeitet werden.
+Nachfolgend finden Sie eine Übersicht welche Parameter in den einzelnen Dateien verändert werden können. 
+
+**TESTTAKERS.xml**
+* Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
+* Definition User und Testmodi
+* Definition Test Gruppe
+
+
+**BOOKLET.xml**
+* Layout des Booklets
+* Namen des Testheftes
+* Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
+* Name der Unit
+* Beschränkungen mittels Codewort
+
+**UNIT.xml**
+* Definition des zu verwendenden Players
+* Definition der zu verwendenden Ressourcen Datei
+
+
+### Dateieingabe
+Wie die Dateien in das Testcenter zu laden sind, entnehmen Sie bitte dem Kapitel zum Testcenter Frontend.
+
+
+
+Weitere Bearbeitung erforderlich! Stand: 01.03.21 T.Huste
+
+---
+
+
+
+## 1.1.3 Aktueller Entwicklungsstand
+
+[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
+
+![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+
+---
+(Februar 2021)
+### IQB-Testcenter
+Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als stabil und produktiv einsetzbar angesehen. Nächste Entwicklungsschritte:
+* Massiver Ausbau der Dokumentation/ Wissensbasis, z. B. Entwicklung typischer Einsatzszenarien mit ausführlicher Verfahrensbeschreibung einschl. Datensicherheitskonzept
+* Einsatz eingebettet in eine fremde Anwendungsumgebung: Das Einspielen von Testinhalten und das Auslesen von Testantworten erfolgt nicht über das Verwaltungsportal des IQB-Testcenters, sondern durch Drittanwendungen über das API des IQB-Testcenters.
+* Optimierung des Installationspaketes hinsichtlich Lastverhalten während des Tests
+
+### IQB-Teststudio
+Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams können hinreichend schnell Aufgaben gestalten. Diese einfache Version des IQB-Teststudios wird als IQB-Teststudio-Lite weitergeführt. Nächste Entwicklungsschritte:
+* Verbesserung der Import/Export-Funktionen
+* Konzeption eines IQB-Teststudios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
+
+### IQB-Dateneditor
+**In Bearbeitung**
+
+THuste
+
+Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
+
+Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung [ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md).
+
+### IQB-Testarchiv IQB-Testdepot
+Diese Anwendungen werden derzeit konzipiert. 
+
+---
+
+
+
+## 1.1.4 Studiendurchführung
+
+[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
+
+![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+
+---
+
+### Planung
+Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
+
+* Soll ein System-Check durchgeführt werden?
+* Wie genau erfolgt die Anmeldung der Testperson (durch die Testaufsicht, oder nur teilweise, oder nur durch Link usw., siehe [hier](https://github.com/iqb-berlin/testcenter-frontend/wiki/Varianten-der-Anmeldung-einer-Testperson))?
+* Soll der Testablauf einer Testgruppe beobachtet oder gesteuert werden (Testleitungskonsole)?
+* Erhalten die Schulen eine Rückmeldung? Wie sieht die aus?
+* Welche Zusatzmaterialien werden vor Ort benötigt: Taschenrechner, Lineal, Notizpapier, Kopfhörer?
+* Stehen für die Durchführung Testleiterinnen oder Testleiter oder zumindest Coaches zur Verfügung?
+* Soll es eine Hotline geben? Für welchen Zeitraum?
+* Wie hoch ist das Risiko für technische Probleme? Soll jemand aus der Systemadministration oder Programmierung ständig greifbar sein?
+* Wie lautet die genaue Internet-Adresse für die Testung bzw. Befragung?
+
+### Units gestalten mit IQB-Teststudio
+#### Vorbereitung
+* Zugangsdaten erhalten
+* Neuen Arbeitsbereich (Workspace) anlegen lassen
+* Testablauf planen: Welche Units, welche Zwischenseiten?
+* Entscheidungen treffen: Welcher Player, welcher Editor?, ggf. in das IQB-Teststudio hochladen lassen
+* ggf. Audios aufbereiten: Größe reduzieren, Exif-Metadaten eintragen
+* ggf. Grafikdateien aufbereiten (Farben prüfen, Auflösung bei Zoom)
+* Konventionen festlegen (Einrückung, Schriftart/-größe, Zeilenabstand, Formulierung bei Instruktionen, Benennung der Units usw.)
+
+#### Übertragung organisieren
+* Trello, CryptPad Kanban o. ä. einrichten, um für jede Unit den aktuellen Status zu dokumentieren
+* Workflow definieren: Wer macht ersten Entwurf, wer schaut drüber, wer prüft psychometrisch, wer prüft fachdidaktisch usw.
+* Schulungen und Austausch der Autorinnen und Autoren untereinander planen
+
+#### Gestaltung
+* Gute Kurznamen für Units wählen, sprechende Titel
+* Voransicht nutzen, um Layout und Verhalten zu prüfen
+* Erzeugte IDs der Interaktionselemente notieren (canvasElement214...; z. B. über Excel- oder CryptPad-Tabelle)
+* Beteiligte sollten sich regelmäßig ihre Units zeigen und Erfahrungen austauschen
+* frühzeitig einige Units in das IQB-Testcenter übertragen, um deren Verhalten zu überprüfen
+* Units regelmäßig als Dateien exportieren als Backup
+
+#### Export
+* Units exportieren mit Xml und Voud
+* (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
+
+### Teststudio einrichten
+#### Vorbereitung
+* Zugangsdaten erhalten
+* Neuen Arbeitsbereich (Workspace) anlegen lassen
+* System-Check ggf. einrichten und freigeben
+
+#### Units hochladen
+* (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
+* Erst die voud-Dateien, dann die Xml-Dateien hochladen. Es könnte sonst passieren, dass eine Xml abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
+
+#### Testhefte hochladen
+* Eine [xlsx-Datei für die ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/docs/manual-booklet.md) kann helfen, das Testdesign transparent zu planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten Xml-Dateien hochzuladen.
+* Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
+
+### Review und Probelauf
+* Allgemein bitte [diese Hinweise](https://github.com/iqb-berlin/itc-toolbox/blob/master/docs/manual-logins.md) zu Logins beachten.
+* Die Xml zu Testteilnehmern (sog. Testtaker) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/testcenter-frontend/wiki/Modi-der-Testdurchf%C3%BChrung) anlegen für alle Verantwortlichen der Studie hochladen.
+* Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die Xml-Änderungen).
+* Auch Logins im hot-restart-Modus anlegen, Real-Time-Tests durchführen und sorgfältig auswerten
+
+### Studie durchführen
+* Logins für Durchführung hochladen, ggf. Zeitfenster gut dokumentieren
+* täglich Antworten und Logs ziehen und speichern
+* Probeauswertungen vornehmen: Nur so erkennt man früh, wenn bestimmmte Variablen nicht ankommen
+* Hotline auswerten, auch erste Testprotokolle analysieren
+
+### Auswertung, Evaluation
+* Daten wie vorgesehen auswerten, Berichte schreiben, Rückmeldung an Schulen geben
+* Evaluieren: Dabei hilft die Vorstellung, dass man die gleiche Studie nächste Woche nochmal durchführen soll
+* Feiern...
+
