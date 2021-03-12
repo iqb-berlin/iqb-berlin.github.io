@@ -15,7 +15,7 @@ Informationen für Anwender_innen rund um das Thema TBA, finden Sie im nachfolge
 
 ---
 
- **[Wiki IQB-TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)**
+ **[Wiki IQB TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)**
 
 ---
 
