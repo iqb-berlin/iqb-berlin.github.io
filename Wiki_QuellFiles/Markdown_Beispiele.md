@@ -19,4 +19,4 @@
 
 Wenn Sternchen als Zeichen angezeigt werden soll:
 
-Anwender/*innen
+Anwender\*innen
