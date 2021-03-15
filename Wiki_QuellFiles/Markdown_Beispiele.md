@@ -38,5 +38,6 @@ Anwender\*innen
 <p align="right"><img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button.png"/></p>
 </a>
 
-
+<!--
 [![Button](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button.png)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau)
+-->
