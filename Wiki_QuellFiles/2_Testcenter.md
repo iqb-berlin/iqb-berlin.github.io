@@ -91,17 +91,8 @@ mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text fin
 
 | Element | Attribute |  Datum  | Beschreibung |      
 | :-----------| :--------- | :-----------| :--------- |
-| Metadata | | | |
-| Describition | | Text | Frei wählbar|
-
-
-
-
-
-**1. Element: Metadata**
-* Unterelement: Describition 
-  * Attribut: kein 
-  * Datum: Text. Frei wählbar.
+| Metadata | / | / | / |
+| Describition | / | Text | Frei wählbar|
 
 ```
 <?xml version="1.0"?>
@@ -116,11 +107,10 @@ mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text fin
 ```
 ---
 
-**2. Element: CustomTexts**
-* Unterelement: CustomText
-  * Attribut: Key<br>
-*Definierter Parameter (siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)*
-  * Datum: Text. 
+| Element | Attribute | Beschreibung | Datum  | Beschreibung |      
+| :-----------| :--------- | :-----------| :--------- | :--------- |
+| CustomTexts | / | / | / | / |
+| CustomText | Key | Definiertes Attribut, siehe Liste:<br>[Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung) | Text| frei wählbar |
 
 ```
   <CustomTexts>
@@ -256,7 +246,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 
 ### Booklet Konfiguration
 
-Es ist möglich Booklets entsprechend zu konfigurieren. Hierfür stehen einige Parameter zur Verfügung, die in der Booklet.xml (wenn gewünscht) anzugeben sind. Alle verwendbaren Parameter befinden sich in einer separaten Konfiguraionsdatei (booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie einzelne Parameter nutzen, müssen Sie den Parameter und den gewünschten Wert in der Booklet.xml unter "BookletConfig" angeben. 
+Es ist möglich Booklets entsprechend zu konfigurieren. Hierfür stehen einige Attribute zur Verfügung, die in der Booklet.xml (wenn gewünscht) anzugeben sind. Alle verwendbaren Attribute befinden sich in einer separaten Konfiguraionsdatei (booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie einzelne Attribute nutzen, müssen Sie das Attribut und den gewünschten Wert (Datum) in der Booklet.xml unter "BookletConfig" angeben. 
 
 Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 
@@ -281,9 +271,9 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 ---
 
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Parameter und deren Bedeutung. **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
-|Parameter &nbsp; &nbsp;| Bedeutung     | Wert     |
+|Attribut &nbsp; &nbsp;| Bedeutung     | Wert (Datum)    |
 | :----------------| :----------| :--------|
 |`loading_mode`|Ladeverhalten beim Start| **LAZY(default):** Start sobald wie möglich, Laden im Hintergrund fortsetzen;<br>**EAGER:** Testheft erst dann starten, wenn alle Inhalte geladen sind |
 |`logPolicy`|Erfassen und Speichern von Log-Daten| **disabled:** Ausgeschaltet;<br>**lean:** Nur wichtige Meldungen;<br>**rich(default):** Alles außer debug-informationen;<br>**debug:** Auch debug-informationen |
@@ -303,7 +293,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Parameter und dere
 ### Custom Text Konfigurationen
 
 Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, in welcher das Testcenter ausgeführt wird, passen.
-Alle möglichen CustomText Parameter sind in einer Konfigurationsdatei deklariert, die das Testcenter ausliest. Daher können auch nur CustomText Parameter verwendet werden, die in dieser Datei deklariert sind. Eine Übersicht der verfügbaren Parameter und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
+Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, die das Testcenter ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
 
 Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Testtakers.xml) aufgeführt:
 
@@ -314,7 +304,7 @@ Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Test
   </Metadata>
 	
   <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
+    <CustomText key="app_title">Titel der Anwendung</CustomText>
     ...
   </CustomTexts>
 	
@@ -339,10 +329,10 @@ Nachfolgend sind die benötigten Strukuren für `Custom Check` aufgeführt:
 
 ---
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Parameter und deren Bedeutung. **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. **Achten Sie bei der Verwendung dieser Attribute auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
 
-| Key       | Used for     | Default     |
+| Key (Attribut)  | Used for | Default |
 | :------------- | :---------- | :----------- |
 |`app_intro1`|Begrüßungstext auf der Startseite (Text nach IQB-Link)|betreibt auf diesen Seiten eine Anwendung für das computerbasierte Leistungstesten von Schülerinnen und Schülern. Der Zugang zu einem Test ist nur möglich, wenn Sie von Testverantwortlichen Zugangsdaten erhalten haben. Es sind keine weiteren Seiten öffentlich verfügbar.|
 |`app_title`|Titel der Hauptanwendung|IQB-Testcenter|
