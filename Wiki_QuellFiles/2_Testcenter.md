@@ -163,7 +163,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 <tr>
     <td><b>CustomText:</b></td>
-    <td>" "</td>
+    <td>"><"</td>
     <td>Datum</td>
     <td>frei wählbar </td>
 </tr>
@@ -189,38 +189,38 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <th>Wert</th>
 </tr>
 <tr>
-    <td><b>group:</b</td>
+    <td><b>Group:</b</td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td><b>group:</b></td>
+    <td><b>Group:</b></td>
     <td>label</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td><b>login:</b></td>
+    <td><b>Login:</b></td>
     <td>name</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td><b>login:</b></td>
+    <td><b>Login:</b></td>
     <td>mode</td>
     <td>Attribut</td>
     <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
 </tr>
 <tr>
-    <td><b>login:</b></td>
+    <td><b>Login:</b></td>
     <td>pw</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td><b>booklet:</b></td>
-    <td>" "</td>
+    <td><b>Booklet:</b></td>
+    <td>"><"</td>
     <td>Datum</td>
     <td>frei wählbar</td>
 </tr>
