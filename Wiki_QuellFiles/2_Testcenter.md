@@ -124,7 +124,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td><b>Wert</b></td>
 </tr>
 <tr>
-    <td>Unterelement Describition:</td>
+    <td>Describition:</td>
     <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar</td>
@@ -155,13 +155,13 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td><b>Wert</b></td>
 </tr>
 <tr>
-    <td>Unterelement CustomText:</td>
+    <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
+    <td>Vordefiniert, siehe:<br><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
 </tr>
 <tr>
-    <td>Unterelement CustomText:</td>
+    <td>CustomText:</td>
     <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar </td>
@@ -187,37 +187,37 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 <table>
 <tr>
-    <td>Unterelement group:</td>
+    <td>group:</td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td>Unterelement group:</td>
+    <td>group:</td>
     <td>label</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>login:</td>
     <td>name</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
+    <td>Vordefiniert, siehe:<br> <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>login:</td>
     <td>pw</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td>Unterelement booklet:</td>
+    <td>booklet:</td>
     <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar</td>
