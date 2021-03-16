@@ -110,7 +110,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ---
 
-### TESTTAKERS.xml ###
+### TESTTAKERS.xml
 
 Element: Metadata/ Describition<br>
 Datum: frei wählbar
