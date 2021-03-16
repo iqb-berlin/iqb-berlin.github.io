@@ -83,9 +83,9 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 1. Element ohne Attribute mit Dateninhalt:<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
-```xml
-<Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
-```
+  ```xml
+  <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
+  ```
 
 2. Element mit Attributen ohne Daten:<br>
 *Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
