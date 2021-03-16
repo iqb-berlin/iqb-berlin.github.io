@@ -137,7 +137,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
   </CustomTexts>
   ...
 ```
-Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
+`key:`Welche vordefinierten Werte in **CustomText** verwendet werden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
 [Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
 
 ---
@@ -152,14 +152,51 @@ Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen
  </Group>
 </Testtakers>
 ```
-Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
+`mode:`Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
 [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)
 
 ---
 
 ### Attribute und Daten BOOKLET.xml
 
+`METADATA`
 
+```xml
+<Metadata>
+  <Id>Frei wählbare ID. Diese ID muss in gleicher Schreibweise auch in der Texttakers.xml angegeben werden.</Id>
+  <Label>frei wählbares Label</Label>
+  <Description>frei wählbare Describition</Description>
+</Metadata>
+```
+---
+
+`BOOKLETCONFIG`
+
+```xml
+<BookletConfig>
+  <Config key="!Vordefinierter Wert!">!Vordefinierter Wert!</Config>
+</BookletConfig>
+```
+`key:` Welche vordefinierten Werte in der **BookletConfig** verwendet werden können, entnehmen Sie bitte der **Booklet Configuration** in dem folgenden Kapitel:
+[Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
+
+---
+
+`UNITS`
+
+```xml
+<Units> 
+	
+  <Unit id="Frei wählbare ID für erste Unit.!Unit muss in gleicher Schreibweise als xml-Datei vorhanden sein!" label="frei wählbares Label" />
+  <Testlet id="frei wählbare ID" label="frei wählbares Label ">
+    <Restrictions>
+      <CodeToEnter code="frei wählbarer Code !Weitere Angaben siehe unten!">frei wählbarer Text, dieser Text steht dann über der Codeabfrage</CodeToEnter>
+    </Restrictions>
+  </Testlet>
+		
+</Units>
+```
+`code:` Der gewählte Code muss beim späteren Abspielen im Testcenter eingegeben werden um zur nächsten Unit zu gelangen.
 
 ---
 
