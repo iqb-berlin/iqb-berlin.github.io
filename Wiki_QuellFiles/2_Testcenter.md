@@ -158,7 +158,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td><b>CustomText:</b></td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe:<br><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
+    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
 </tr>
 <tr>
     <td><b>CustomText:</b></td>
