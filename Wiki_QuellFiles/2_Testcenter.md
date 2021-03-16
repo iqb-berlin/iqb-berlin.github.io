@@ -117,8 +117,8 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 	
 <tr>
-    <td>Unterelement Describition::</td>
-    <td>""</td>
+    <td>Unterelement Describition:</td>
+    <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar</td>
 </tr>
@@ -149,7 +149,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 <tr>
     <td>Unterelement CustomText:</td>
-    <td>""</td>
+    <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar </td>
 </tr>
@@ -199,7 +199,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 <tr>
     <td>Unterelement booklet:</td>
-    <td>""</td>
+    <td>" "</td>
     <td>Datum</td>
     <td>frei wählbar</td>
 </tr>
