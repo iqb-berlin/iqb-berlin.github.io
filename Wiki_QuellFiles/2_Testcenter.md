@@ -115,22 +115,6 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 `METADATA`
 
-<table>
-
-<tr>
-    <th></th>
-    <th>Name Datum/Attribut</th>
-    <th>Datum/Attribut</th>
-    <th>Wert</th>
-</tr>
-<tr>
-    <td><b>Describition:</b></td>
-    <td>"><"</td>
-    <td>>Datum</td>
-    <td>frei wählbar</td>
-</tr>
-
-</table>
 
 ```xml
 <?xml version="1.0"?>
