@@ -80,14 +80,14 @@ Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein tex
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
-1.Element ohne Attribute mit Dateninhalt:<br>
+1. Element ohne Attribute mit Dateninhalt:<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
 ```xml
 <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
 ```
 
-2.Element mit Attributen ohne Daten:<br>
+2. Element mit Attributen ohne Daten:<br>
 *Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
 Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
 
@@ -95,7 +95,7 @@ Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attr
 <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
-3.Element mit Daten und Attributen:<br>
+3. Element mit Daten und Attributen:<br>
 *Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
 Datum ist der Text: ON.*
 
