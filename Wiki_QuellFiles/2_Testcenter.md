@@ -126,7 +126,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <tr>
     <td><b>Describition:</b></td>
     <td>" "</td>
-    <td>Datum</td>
+	<td><small>Datum</small></td>
     <td>frei wählbar</td>
 </tr>
 
