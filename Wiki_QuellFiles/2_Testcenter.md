@@ -74,7 +74,6 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 ---
 
 **Bevor es los geht ein paar Grundlagen:**
-<p>
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
@@ -92,7 +91,7 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
 
 ```xml
-    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
+   <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
 3. Element mit Daten und Attributen:<br>
@@ -100,15 +99,13 @@ Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attr
 Datum ist der Text: ON.*
 
 ```xml
-<Config key="force_presentation_complete">ON</Config>
+    <Config key="force_presentation_complete">ON</Config>
 ````
 
 
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
 Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen. Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
   
-</p>
-
 ---
 
 ### Attribute und Daten TESTTAKERS.xml
