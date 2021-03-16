@@ -105,7 +105,7 @@ Datum ist der Text: ON.*
 
 
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
-Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
+Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen. Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
   
 </p>
 
@@ -118,6 +118,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 
 <tr>
+    <th></th></td>
     <th>Name Datum/Attribut</th></td>
     <th>Datum/Attribut</th></td>
     <th>Wert</th></td>
@@ -147,11 +148,11 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 <table>
 
-<tr>
-    <td><b>Unterelement</b></td>
-    <td><b>Name Datum/Attribut</b></td>
-    <td><b>Datum/Attribut</b></td>
-    <td><b>Wert</b></td>
+tr>
+    <th></th></td>
+    <th>Name Datum/Attribut</th></td>
+    <th>Datum/Attribut</th></td>
+    <th>Wert</th></td>
 </tr>
 <tr>
     <td>CustomText:</td>
@@ -180,11 +181,11 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 <table>
 
-<tr>
-    <td><b>Unterelement</b></td>
-    <td><b>Name Datum/Attribut</b></td>
-    <td><b>Datum/Attribut</b></td>
-    <td><b>Wert</b></td>
+tr>
+    <th></th></td>
+    <th>Name Datum/Attribut</th></td>
+    <th>Datum/Attribut</th></td>
+    <th>Wert</th></td>
 </tr>
 <tr>
     <td>group:</td>
