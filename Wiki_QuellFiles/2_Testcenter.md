@@ -131,35 +131,15 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 `CUSTOMTEXT`
 
-<table>
-
-<tr>
-    <th></th>
-    <th>Name Datum/Attribut</th>
-    <th>Datum/Attribut</th>
-    <th>Wert</th>
-</tr>
-<tr>
-    <td><b>CustomText:</b></td>
-    <td>key</td>
-    <td>Attribut</td>
-    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
-</tr>
-<tr>
-    <td><b>CustomText:</b></td>
-    <td>"><"</td>
-    <td>Datum</td>
-    <td>frei wählbar </td>
-</tr>
-
-</table> 
-
 ```xml
   <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
+    <CustomText key="Vordefinierter Wert!">frei wählbarer Text</CustomText>
   </CustomTexts>
   ...
 ```
+Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen Sie bitte dem folgenden Kapitel: [Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
+
+
 ---
 
 `GROUP`
