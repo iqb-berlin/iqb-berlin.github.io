@@ -112,7 +112,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-**Element: Metadata**<br>
+**Hauptelement: Metadata**<br>
 
 <table>
 	
@@ -137,13 +137,13 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 ```
 ---
 
-**Element: CustomTexts**
+**Hauptelement: CustomTexts**
 
 <table>
 	
 <tr>
     <td>CustomText:</td>
-    <td>kex</td>
+    <td>key</td>
     <td>Attribut</td>
     <td>Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-  Konfiguration-der-Testdurchf%C3%BChrung)</td>
 </tr>
@@ -164,7 +164,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 ```
 ---
 
-**Element: Group**
+**Hauptelement: Group**
 
 <table>
 <tr>
