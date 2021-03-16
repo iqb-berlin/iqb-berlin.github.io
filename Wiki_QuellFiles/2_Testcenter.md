@@ -155,7 +155,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 
 </table> 
-   
+
 ```
   <CustomTexts>
     <CustomText key="somestr">string</CustomText>
