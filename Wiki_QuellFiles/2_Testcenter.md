@@ -118,10 +118,13 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 
 <tr>
-    <th></th>
-    <th>Name Datum/Attribut</th>
-    <th>Datum/Attribut</th>
-    <th>Wert</th>
+    <td colspan="4"><b>Hauptelement: Metadata</b></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Name Datum/Attribut</td>
+    <td>Datum/Attribut</td>
+    <td>Wert</td>
 </tr>
 <tr>
     <td><b>Describition:</b></td>
