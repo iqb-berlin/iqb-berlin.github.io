@@ -143,9 +143,9 @@ Datum: frei wählbar
 **Group**<br>
 Attribute
 
----------- ----------
+-          -
 id         frei wählbar
----------- ------------ 
+-          - 
 
 
 
