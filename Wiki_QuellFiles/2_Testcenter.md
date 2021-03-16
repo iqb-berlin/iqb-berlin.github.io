@@ -152,7 +152,7 @@ Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen
  </Group>
 </Testtakers>
 ```
-Welche vordefinierte Modi verwendet werden kann, entnehmen Sie bitte dem folgenden Kapitel:
+Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
 [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)
 
 ---
