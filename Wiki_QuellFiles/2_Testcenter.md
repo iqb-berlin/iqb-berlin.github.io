@@ -129,8 +129,8 @@ Datum: frei wählbar
 
 **Element: CustomTexts/ CustomText**<br>
 Attribut: key<br>
-Attributwert: Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung) 
-
+Attributwert: Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)<br> 
+Datum: frei wählbar 
 ```
   <CustomTexts>
     <CustomText key="somestr">string</CustomText>
