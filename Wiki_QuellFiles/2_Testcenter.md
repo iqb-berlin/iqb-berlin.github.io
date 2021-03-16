@@ -110,10 +110,17 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ---
 
-### Die Datei TESTTAKERS.xml
+### Attribute und Daten TESTTAKERS.xml
 
-**Element: Metadata/ Describition**<br>
-Datum: frei wählbar
+**Element: Metadata**<br>
+
+<table>
+<tr>
+    <td>Describition::</td>
+    <td></td>
+    <td>Datum</td>
+    <td>frei wählbar</td>
+</tr>
 
 ```
 <?xml version="1.0"?>
@@ -127,11 +134,25 @@ Datum: frei wählbar
 ```
 ---
 
-**Hauptelement: CustomTexts**
-  Unterelement: CustomText<br>
-    Attribute:<br>
-    key:<br> Attributwert: Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-  Konfiguration-der-Testdurchf%C3%BChrung)<br> 
-Datum: frei wählbar 
+**Element: CustomTexts**
+
+<table>
+	
+<tr>
+    <td>CustomText:</td>
+    <td>kex</td>
+    <td>Attribut</td>
+    <td>Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-  Konfiguration-der-Testdurchf%C3%BChrung)</td>
+</tr>
+<tr>
+    <td>CustomText:</td>
+    <td></td>
+    <td>Datum</td>
+    <td>frei wählbar </td>
+</tr>
+
+</table> 
+   
 ```
   <CustomTexts>
     <CustomText key="somestr">string</CustomText>
