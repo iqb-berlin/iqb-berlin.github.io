@@ -197,12 +197,6 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ---
 
-> **in Bearbeitung**
-> 
-> T.Huste
-> 
-> Stand: 3.3.21
-
 ## 2.4 Modi der Testdurchführung
 
 Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
