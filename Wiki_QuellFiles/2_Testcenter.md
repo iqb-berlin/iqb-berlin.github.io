@@ -84,7 +84,7 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
   ```xml
-  <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
+    <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
   ```
 
 2. Element mit Attributen ohne Daten:<br>
@@ -92,7 +92,7 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
 
 ```xml
-<Unit id="Unit1" label="1. Postcard" labelshort="1" />
+    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
 3. Element mit Daten und Attributen:<br>
