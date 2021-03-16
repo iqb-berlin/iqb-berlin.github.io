@@ -103,7 +103,8 @@ Datum ist der Text: ON.*
 ````
 
 
-Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten. Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
+Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
+Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
   
 </p>
 
