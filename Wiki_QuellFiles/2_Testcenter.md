@@ -179,13 +179,14 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 **Hauptelement: Group**
 
+<table>
+
 <tr>
     <td><b>Unterelement</b></td>
     <td><b>Name Datum/Attribut</b></td>
     <td><b>Datum/Attribut</b></td>
     <td><b>Wert</b></td>
 </tr>
-<table>
 <tr>
     <td>group:</td>
     <td>id</td>
@@ -222,6 +223,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Datum</td>
     <td>frei wählbar</td>
 </tr>
+
 </table>
 
 ```xml
