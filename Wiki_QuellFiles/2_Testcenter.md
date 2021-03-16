@@ -137,8 +137,8 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
   </CustomTexts>
   ...
 ```
-Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen Sie bitte dem folgenden Kapitel: [Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
-
+Welche vordefinierten Werte für **CustomText** Sie verwenden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:<br>
+[Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
 
 ---
 
