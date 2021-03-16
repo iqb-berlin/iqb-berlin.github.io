@@ -118,10 +118,10 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 
 <tr>
-    <td><b>Element</b></td>
-    <td>Name Datum/Attribut</td>
-    <td>Datum/Attribut</td>
-    <td>Wert</td>
+    <td><b>Unterelement</b></td>
+    <td><b>Name Datum/Attribut</b></td>
+    <td><b>Datum/Attribut</b></td>
+    <td><b>Wert</b></td>
 </tr>
 <tr>
     <td>Unterelement Describition:</td>
@@ -147,7 +147,13 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 **Hauptelement: CustomTexts**
 
 <table>
-	
+
+<tr>
+    <td><b>Unterelement</b></td>
+    <td><b>Name Datum/Attribut</b></td>
+    <td><b>Datum/Attribut</b></td>
+    <td><b>Wert</b></td>
+</tr>
 <tr>
     <td>Unterelement CustomText:</td>
     <td>key</td>
@@ -173,6 +179,12 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 **Hauptelement: Group**
 
+<tr>
+    <td><b>Unterelement</b></td>
+    <td><b>Name Datum/Attribut</b></td>
+    <td><b>Datum/Attribut</b></td>
+    <td><b>Wert</b></td>
+</tr>
 <table>
 <tr>
     <td>Unterelement group:</td>
