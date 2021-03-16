@@ -15,13 +15,13 @@ da Anwender vorwiegend damit in Berührung kommen.
 ## 2.1 Testcenter Einführung
 
 Eine grobe Einführung geben die nachfolgenden Verlinkungen.                         
-Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an (jeweils Link zu HU-Box):
+Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
 * [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
 * [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
 
-Des Weiteren gibt besteht das folgende Forum:
+Des Weiteren gibt besteht folgende Forum:
 [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)                      
-Hier finden Sie häufig gestellte Fragen mit Antworten sowie Berichte über Einsätze des IQB-Testcenters.
+Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
 
 ### Aufbau
 
@@ -50,18 +50,15 @@ Weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Tes
 
 ## 2.2 Laden eines Tests
 
-Nach der Anmeldung im Testcenter können Sie auf Ihren Workspace zugreifen oder andere vom Administrator für Sie freigegebene Arbeitsbereiche, wie z.B Beispielaufgaben.
+Nach der Anmeldung im Testcenter können Sie auf Ihren Workspace oder andere vom Administrator für Sie freigegebene Arbeitsbereiche, wie z.B Beispielaufgaben, zugreifen.
                   
-**Der Workspace oder andere Arbeitsbereiche muss zuvor von einem IQB Administrator für Sie angelegt werden!**
+**Der Workspace und andere Arbeitsbereiche müssen zuvor von einem IQB Administrator für Sie angelegt oder freigegeben werden!**
 
-Anschließend ist es Ihnen möglich Dateien eines Tests hochzuladen.
-Während des Hochladens findet eine Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig die richtige Reihefolge beim Upload einzuhalten.                                                                  
-Eine Übersicht verschafft das nachfolgende Bild:
+Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu laden oder Testbestandteile aus dem Testcenter herunterzuladen. Auch die Löschung einzelner Datei ist möglich. Während des Hochladens findet eine Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das nachfolgende Bild:
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Dateien_final.png)
 
 ---
-
 
 > **In Bearbeitung**
 > 
@@ -70,18 +67,44 @@ Eine Übersicht verschafft das nachfolgende Bild:
 
 ## 2.3 Bearbeiten eines Tests
 
-Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter Frontend berarbeitet werden.
+Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
 [TBA Einführung -> Datenhandshake](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
 
+---
+
 **Bevor es los geht ein paar Grundlagen:**
 <p>
 
-Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Bei Xml handelt es sich um ein textbasiertes Datenformat.   
-Die Daten werden also in einem Text hinterlegt. Damit die Daten im Text gefunden werden können, 
-muss eine bestimmte Syntax eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter,
-mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb der Elementen Deklaration, sprich innerhalb der beiden spitzen Klammern. Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten. Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
+Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
+Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
+Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgende aufgeführt:
+
+Element ohne Attribute mit Dateninhalt.<br>
+*Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
+
+```
+<Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
+```
+
+Element mit Attributen ohne Daten.<br>
+*Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
+Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
+
+```
+<Unit id="Unit1" label="1. Postcard" labelshort="1" />
+```
+
+Element mit Daten und Attributen.<br>
+*Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
+Datum ist der Text: ON.*
+````
+<Config key="force_presentation_complete">ON</Config>
+````
+
+
+Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten. Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
   
 </p>
 
