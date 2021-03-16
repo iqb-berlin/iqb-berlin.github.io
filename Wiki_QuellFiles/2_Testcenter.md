@@ -32,8 +32,7 @@ Endbenutzer\*innen kommen mit diesem Teil des Testcenters nicht direkt in Berüh
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Aufbau_final.png)
 
-Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel.<br>
-Weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
+Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
