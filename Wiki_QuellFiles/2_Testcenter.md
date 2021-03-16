@@ -83,7 +83,7 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 Element ohne Attribute mit Dateninhalt.<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
-```
+```xml
 <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
 ```
 
@@ -91,14 +91,15 @@ Element mit Attributen ohne Daten.<br>
 *Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
 Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
 
-```
+```xml
 <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
 Element mit Daten und Attributen.<br>
 *Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
 Datum ist der Text: ON.*
-````
+
+```xml
 <Config key="force_presentation_complete">ON</Config>
 ````
 
@@ -125,7 +126,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table>
 
-```
+```xml
 <?xml version="1.0"?>
 <Testtakers>
   <Metadata>
@@ -156,7 +157,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table> 
 
-```
+```xml
   <CustomTexts>
     <CustomText key="somestr">string</CustomText>
   </CustomTexts>
@@ -205,7 +206,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 </table>
 
-```
+```xml
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
     <Login name="user1" mode="run-demo" pw="123">
       <Booklet>Booklet1</Booklet>
@@ -268,24 +269,26 @@ Bei der Definition der Anmeldung zur Durchführung eines Tests können verschied
 ### Wo wird das festgelegt?
 Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode`:
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Testtakers
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+  <Testtakers
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Testtakers.xsd">
 
      <Metadata>
-     <Description>Technischer Test Mechtel</Description>
+       <Description>Technischer Test Mechtel</Description>
      </Metadata>
 
      <Group id="check_mme" label="Mechtels Testgruppe">
-     <Login mode="run-review" name="mme4r5t6" pw="d7u9">
-     <Booklet>Booklet_Version1</Booklet>
-     </Login>
-     <Login mode="run-hot-return" name="susicheck12" pw="r4u2">
-     <Booklet>Booklet_Version2</Booklet>
-    </Login>
-    </Group>
-    </Testtakers>
+       <Login mode="run-review" name="mme4r5t6" pw="d7u9">
+         <Booklet>Booklet_Version1</Booklet>
+       </Login>
+       <Login mode="run-hot-return" name="susicheck12" pw="r4u2">
+         <Booklet>Booklet_Version2</Booklet>
+       </Login>
+     </Group>
+   </Testtakers>
+```
 
 ### Welche Modi gibt es?
 | Modus | Erläuterung |
@@ -323,7 +326,7 @@ Es ist möglich Booklets entsprechend zu konfigurieren. Hierfür stehen einige A
 
 Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 
-```
+```xml
 <Booklet>
   <Metadata>
       ...
@@ -370,7 +373,7 @@ Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklarier
 
 Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Testtakers.xml) aufgeführt:
 
-```
+```xml
 <Testtakers>
   <Metadata>
     ...		
@@ -390,7 +393,7 @@ Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Test
 
 Nachfolgend sind die benötigten Strukuren für `Custom Check` aufgeführt:
 
-```
+```xml
 <Config>
     <UploadSpeed ...
     <DownloadSpeed ...
