@@ -143,10 +143,22 @@ Datum: frei wählbar
 **Group**<br>
 Attribute
 
--          -
-id         frei wählbar
--          - 
-
+<table>
+<tr>
+    <td>**Element:Group**</td>
+    
+</tr>
+<tr>
+    <td>id</td>
+    <td>Attribut</td>
+    <td>frei wählbar</td>
+</tr>
+<tr>
+    <td>label</td>
+    <td>Attribut</td>
+    <td>frei wählbar</td>
+</tr>
+</table>
 
 
 * id:frei wählbar<br>
