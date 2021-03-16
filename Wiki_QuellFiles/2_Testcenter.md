@@ -113,16 +113,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-```xml
-<?xml version="1.0"?>
-<Testtakers>
-  <Metadata>
-    <Description>
-     This file contains some logins for testing and works a a sample for developers.
-    </Description>		
-  </Metadata>
-  ...
-```
+`Hauptelement: Metadata`
 
 <table>
 
@@ -140,6 +131,17 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 </tr>
 
 </table>
+
+```xml
+<?xml version="1.0"?>
+<Testtakers>
+  <Metadata>
+    <Description>
+     This file contains some logins for testing and works a a sample for developers.
+    </Description>		
+  </Metadata>
+  ...
+```
 
 ---
 
