@@ -141,9 +141,16 @@ Datum: frei wählbar
 ---
 
 **Group**<br>
-Attribute:
-* id: frei wählbar<br>
-* label:   frei wählbar<br>
+Attribute
+
+---------- ----------
+id         frei wählbar
+---------- ------------ 
+
+
+
+* id:frei wählbar<br>
+* label:frei wählbar<br>
 **Login**<br>
 * name: frei wählbar<br>
 * mode: Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)<br>
