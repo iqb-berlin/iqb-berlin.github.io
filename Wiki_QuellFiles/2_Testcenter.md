@@ -157,25 +157,9 @@ Welche vordefinierte Modi verwendet werden kann, entnehmen Sie bitte dem folgend
 
 ---
 
-### BOOKLET.xml
+### Attribute und Daten BOOKLET.xml
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Booklet_final.png)
 
----
-
-| Parameter_A<br>*(Metadaten)*|Beschreibung|
-| :-----------| :--------- |
-| Id | Frei wählbare ID. Die Booklet.xml wird über die Testtakers.xml aufgerufen. In der Testtakers.xml<br>muss somit zwingend die gewählte Booklet ID unter Beachtung der Groß-/Kleinschreibweise angegeben werden |
-| Label| Frei wählbar |
-| Describtion| Frei wählbar |
----
-| Parameter_B<br>*(BookletConfig)*|Beschreibung|
-| :-----------| :--------- |
-| Config| Welche Parameter genutzt werden können, entnehmen Sie bitte dem nachfolgenden Kapitel: *[Testcenter Frontend -> Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)* |
----
-| Parameter_C<br>*(Units)*|Beschreibung|
-| :-----------| :--------- |
-| | |
 
 ---
 
