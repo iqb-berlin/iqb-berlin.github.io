@@ -113,12 +113,10 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-`Hauptelement: Metadata`
-
 <table>
 
 <tr>
-    <td colspan="4"><b>Hauptelement: Metadata</b></td>
+    <td align="center" colspan="4"><b>Hauptelement:Metadata</b></td>
 </tr>
 <tr>
     <td></td>
