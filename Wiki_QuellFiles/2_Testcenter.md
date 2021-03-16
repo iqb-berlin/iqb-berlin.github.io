@@ -148,7 +148,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 <table>
 
-tr>
+<tr>
     <th></th>
     <th>Name Datum/Attribut</th>
     <th>Datum/Attribut</th>
@@ -181,14 +181,14 @@ tr>
 
 <table>
 
-tr>
+<tr>
     <th></th>
     <th>Name Datum/Attribut</th>
     <th>Datum/Attribut</th>
     <th>Wert</th>
 </tr>
 <tr>
-    <td><b>group:</b></td>
+    <td><em>group:</em></td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
