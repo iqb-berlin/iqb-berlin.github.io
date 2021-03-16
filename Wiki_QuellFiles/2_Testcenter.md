@@ -113,7 +113,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-`**METADATA**`
+`METADATA`
 
 <table>
 
@@ -126,7 +126,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <tr>
     <td><b>Describition:</b></td>
     <td>"><"</td>
-	<td><small>Datum</small></td>
+    <td>>Datum</td>
     <td>frei wählbar</td>
 </tr>
 
@@ -145,12 +145,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ---
 
-```xml
-  <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
-  </CustomTexts>
-  ...
-```
+`CUSTOMTEXT`
 
 <table>
 
@@ -175,16 +170,15 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table> 
 
+```xml
+  <CustomTexts>
+    <CustomText key="somestr">string</CustomText>
+  </CustomTexts>
+  ...
+```
 ---
 
-```xml
- <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="user1" mode="run-demo" pw="123">
-      <Booklet>Booklet1</Booklet>
-    </Login>
- </Group>
-</Testtakers>
-```
+`GROUP`
 
 <table>
 
@@ -233,7 +227,14 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table>
 
-
+```xml
+ <Group id="frei wählbare ID" label="frei wählbarer Text Label">
+    <Login name="user1" mode="run-demo" pw="123">
+      <Booklet>Booklet1</Booklet>
+    </Login>
+ </Group>
+</Testtakers>
+```
  
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Testtakers_final.png)
 
