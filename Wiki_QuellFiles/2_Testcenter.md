@@ -146,7 +146,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Unterelement CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe:<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
+    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter Konfiguration der Testanwendung</a>
 </tr>
 <tr>
     <td>Unterelement CustomText:</td>
@@ -190,7 +190,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Unterelement login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
 </tr>
 <tr>
     <td>Unterelement login:</td>
