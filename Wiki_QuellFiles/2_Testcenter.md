@@ -209,7 +209,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td><b>login:</b></td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe:<br> <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
+    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
 </tr>
 <tr>
     <td><b>login:</b></td>
