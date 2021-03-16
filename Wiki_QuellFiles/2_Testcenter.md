@@ -118,10 +118,12 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 
 <tr>
+    <th>
     <td><b>Unterelement</b></td>
     <td><b>Name Datum/Attribut</b></td>
     <td><b>Datum/Attribut</b></td>
     <td><b>Wert</b></td>
+    </th>
 </tr>
 <tr>
     <td>Describition:</td>
