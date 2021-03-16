@@ -113,7 +113,16 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-**Hauptelement: Metadata**<br>
+```xml
+<?xml version="1.0"?>
+<Testtakers>
+  <Metadata>
+    <Description>
+     This file contains some logins for testing and works a a sample for developers.
+    </Description>		
+  </Metadata>
+  ...
+```
 
 <table>
 
@@ -132,19 +141,14 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table>
 
-```xml
-<?xml version="1.0"?>
-<Testtakers>
-  <Metadata>
-    <Description>
-     This file contains some logins for testing and works a a sample for developers.
-    </Description>		
-  </Metadata>
-  ...
-```
 ---
 
-**Hauptelement: CustomTexts**
+```xml
+  <CustomTexts>
+    <CustomText key="somestr">string</CustomText>
+  </CustomTexts>
+  ...
+```
 
 <table>
 
@@ -169,15 +173,16 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table> 
 
-```xml
-  <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
-  </CustomTexts>
-  ...
-```
 ---
 
-**Hauptelement: Group**
+```xml
+ <Group id="frei wählbare ID" label="frei wählbarer Text Label">
+    <Login name="user1" mode="run-demo" pw="123">
+      <Booklet>Booklet1</Booklet>
+    </Login>
+ </Group>
+</Testtakers>
+```
 
 <table>
 
@@ -226,15 +231,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 </table>
 
-```xml
- <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="user1" mode="run-demo" pw="123">
-      <Booklet>Booklet1</Booklet>
-    </Login>
- </Group>
-</Testtakers>
 
-```
  
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Testtakers_final.png)
 
