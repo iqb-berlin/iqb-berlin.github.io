@@ -113,11 +113,10 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
+**METADATA**
+
 <table>
 
-<tr>
-    <td align="center" colspan="4"><b>METADATA</b></td>
-</tr>
 <tr>
     <th></th>
     <th>Name Datum/Attribut</th>
