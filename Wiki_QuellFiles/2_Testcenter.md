@@ -141,18 +141,16 @@ Datum: frei wählbar
 ---
 
 **Group**<br>
-Attribute
 
 <table>
 <tr>
-    <td>**Element:Group**</td>
-</tr>
-<tr>
+    <td>group</td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
+    <td>group</td>
     <td>label</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
