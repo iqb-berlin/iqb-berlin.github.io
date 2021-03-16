@@ -140,32 +140,38 @@ Datum: frei wählbar
 ```
 ---
 
-**Group**<br>
-
 <table>
 <tr>
-    <td>group</td>
+    <td>group:</td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
 <tr>
-    <td>group</td>
+    <td>group:</td>
     <td>label</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
+<tr>
+    <td>login:</td>
+    <td>name</td>
+    <td>Attribut</td>
+    <td>frei wählbar</td>
+</tr>
+<tr>
+    <td>login:</td>
+    <td>mode</td>
+    <td>Attribut</td>
+    <td>Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+</tr>
+<tr>
+    <td>login:</td>
+    <td>pw</td>
+    <td>Attribut</td>
+    <td>frei wählbar</td>
+</tr>
 </table>
-
-
-* id:frei wählbar<br>
-* label:frei wählbar<br>
-**Login**<br>
-* name: frei wählbar<br>
-* mode: Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)<br>
-* pw:   frei wählbar<br>
-   
-
 
 ```
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
