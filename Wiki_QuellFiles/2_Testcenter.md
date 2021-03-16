@@ -110,9 +110,9 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ---
 
-### TESTTAKERS.xml
+### Die Datei TESTTAKERS.xml
 
-Element: Metadata/ Describition<br>
+**Element: Metadata/ Describition**<br>
 Datum: frei wählbar
 
 ```
@@ -124,11 +124,10 @@ Datum: frei wählbar
     </Description>		
   </Metadata>
   ...
-
 ```
 ---
 
-Element: CustomTexts/ CustomText<br>
+**Element: CustomTexts/ CustomText**<br>
 Attribut: key<br>
 Attributwert: Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung) 
 
@@ -140,17 +139,16 @@ Attributwert: Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung]
 ```
 ---
 
-**3. Element: Group**
-* Attribut: id<br>
-*Frei wählbarer Text.*
-* Attribut: label<br>
-*Frei wählbarer Text.*
-* Unterelement: Login
-  * Attribut: name<br>
-*Frei wählbarer Text.
-  * Attribut: mode
-*Vordefinierter Parameter. Parameter sind dem folgenden Kapitel zu entnehmen: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)
-  * Datum: Text. 
+**Element: Group/ Login**<br>
+* Attribut
+  * name<br>
+  frei wählbar
+  * mode<br>
+  Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)
+  * pw<br>
+  frei wählbar
+  
+
 
 ```
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
