@@ -188,7 +188,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <th>Wert</th>
 </tr>
 <tr>
-    <td><em>group:</em></td>
+    <td><b>group:</b</td>
     <td>id</td>
     <td>Attribut</td>
     <td>frei wählbar</td>
