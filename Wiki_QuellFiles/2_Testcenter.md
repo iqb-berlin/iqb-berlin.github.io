@@ -192,37 +192,37 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td><b>Group:</b</td>
     <td>id</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbare ID</td>
 </tr>
 <tr>
     <td><b>Group:</b></td>
     <td>label</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbares Label</td>
 </tr>
 <tr>
     <td><b>Login:</b></td>
     <td>name</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbarer Name für Anmeldung Testcenter</td>
 </tr>
 <tr>
     <td><b>Login:</b></td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
+    <td>Vordefinierter Modi der Test definiert. Welche Modi verwendet werden können: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a>
 </tr>
 <tr>
     <td><b>Login:</b></td>
     <td>pw</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbares Passwort für die Anmeldung Testcenter</td>
 </tr>
 <tr>
     <td><b>Booklet:</b></td>
     <td>"><"</td>
     <td>Datum</td>
-    <td>frei wählbar</td>
+    <td>frei wählbarer Name des Booklet. Dieser muss in gleicher Schreibweise auch in der Booklet.xml eingetragen werden.</td>
 </tr>
 
 </table>
@@ -235,24 +235,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
  </Group>
 </Testtakers>
 ```
- 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Testtakers_final.png)
-
 ---
-
-
-
----
-| Parameter_B<br>*(CustomTexts)*|Beschreibung|         
-| :-----------| :--------- |
-| CustomText | Welche Parameter genutzt werden können entnehmen Sie bitte dem Kapitel:<br> *[Testcenter Frontend -> Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)*|
----
-| Parameter_C<br>*(Group)*|Beschreibung|
-| :-----------| :--------- |
-|name| Username ist frei wählbar und ist zusammen mit dem Passwort im Testcenter einzugeben |
-|mode| Es dürfen nur vordefinierte Modi verwendet werden. Welche Modi das sind,<br>entnehmen Sie bitte dem Kapitel: *[Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)*|
-|pw| Das Passwort ist frei wählbar und wird zusammen mit dem Namen im Testcenter angegeben |
-|booklet| Hier wird das Booklet gewählt, welches für den entsprechenden Test (angelegter User) verwendet werden soll. Dabei ist zu beachten, dass der Name der ID in der Booklet.xml entspricht (Achten Sie auf Groß-Kleinschreibung!!!)|
 
 ### BOOKLET.xml
 
