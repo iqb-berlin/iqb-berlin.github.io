@@ -116,7 +116,13 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 **Hauptelement: Metadata**<br>
 
 <table>
-	
+
+<tr>
+    <td><b>Element</b></td>
+    <td>Name Datum/Attribut</td>
+    <td>Datum/Attribut</td>
+    <td>Wert</td>
+</tr>
 <tr>
     <td>Unterelement Describition:</td>
     <td>" "</td>
