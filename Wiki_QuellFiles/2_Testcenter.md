@@ -143,7 +143,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ```xml
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="frei wählbar für Anmeldung Testcenter" mode="!Vordefinierter Modi!" pw="frei wählbar für Anmeldung Testcenter">
+    <Login name="frei wählbar für Anmeldung im Testcenter" mode="!Vordefinierter Wert!" pw="frei wählbar für Anmeldung im Testcenter">
       <Booklet>Frei wählbar, gleicher Name (Groß-/Kleinschreibung beachten) ist in Booklet.xml zu verwenden</Booklet>
     </Login>
  </Group>
@@ -160,7 +160,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ```xml
 <Metadata>
-  <Id>Frei wählbare ID. Diese ID muss in gleicher Schreibweise auch in der Texttakers.xml angegeben werden.</Id>
+  <Id>Frei wählbare ID. Diese ID muss in gleicher Schreibweise auch in der Testtakers.xml angegeben werden.</Id>
   <Label>frei wählbares Label</Label>
   <Description>frei wählbare Describition</Description>
 </Metadata>
