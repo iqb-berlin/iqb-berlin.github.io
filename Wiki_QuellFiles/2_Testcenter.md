@@ -146,7 +146,6 @@ Attribute
 <table>
 <tr>
     <td>**Element:Group**</td>
-    
 </tr>
 <tr>
     <td>id</td>
