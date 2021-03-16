@@ -171,6 +171,12 @@ Datum: frei wählbar
     <td>Attribut</td>
     <td>frei wählbar</td>
 </tr>
+<tr>
+    <td>booklet:</td>
+    <td></td>
+    <td>Datum</td>
+    <td>frei wählbar</td>
+</tr>
 </table>
 
 ```
