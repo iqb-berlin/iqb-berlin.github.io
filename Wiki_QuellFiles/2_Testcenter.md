@@ -79,7 +79,7 @@ Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein tex
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
-1. Element ohne Attribute mit Dateninhalt:<br>
+1. Element ohne Attribute mit Daten:<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
   ```xml
@@ -134,7 +134,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
   </CustomTexts>
   ...
 ```
-`key:`Welche vordefinierten Werte in **CustomText** verwendet werden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
+**key:** Welche vordefinierten Werte in **CustomText** verwendet werden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
 [Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
 
 ---
@@ -149,7 +149,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
  </Group>
 </Testtakers>
 ```
-`mode:`Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
+**mode:** Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
 [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)
 
 ---
@@ -174,7 +174,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
   <Config key="!Vordefinierter Wert!">!Vordefinierter Wert!</Config>
 </BookletConfig>
 ```
-`key:` Welche vordefinierten Werte in der **BookletConfig** verwendet werden können, entnehmen Sie bitte der **Booklet Configuration** in dem folgenden Kapitel:
+**key:** Welche vordefinierten Werte in der **BookletConfig** verwendet werden können, entnehmen Sie bitte der **Booklet Configuration** in dem folgenden Kapitel:
 [Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
 
 ---
@@ -193,7 +193,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 		
 </Units>
 ```
-`code:` Der gewählte Code muss beim späteren Abspielen im Testcenter eingegeben werden um zur nächsten Unit zu gelangen.
+**code:** Der gewählte Code muss beim späteren Abspielen im Testcenter eingegeben werden um zur nächsten Unit zu gelangen.
 
 ---
 
