@@ -137,7 +137,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <Testtakers>
   <Metadata>
     <Description>
-     This file contains some logins for testing and works a a sample for developers.
+     Frei wählbarer Text.
     </Description>		
   </Metadata>
   ...
@@ -229,8 +229,8 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ```xml
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="user1" mode="run-demo" pw="123">
-      <Booklet>Booklet1</Booklet>
+    <Login name="frei wählbar für Anmeldung Testcenter" mode="vordefinierter Modi" pw="frei wählbar für Anmeldung Testcenter">
+      <Booklet>frei wählbar, gleicher Name (Groß-/Kleinschreibung beachten)ist in Booklet.xml zu verwenden</Booklet>
     </Login>
  </Group>
 </Testtakers>
