@@ -71,7 +71,7 @@ Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*A
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
 1. Element ohne Attribute mit Daten:<br>
-<br>
+
 Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".
 
   ```xml
@@ -79,10 +79,10 @@ Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe
   ```
 
 2. Element mit Attributen ohne Daten:<br>
-<br>
+
 Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
 Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
-Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: **`</Unit>`**, sondern nur mit: **`/>`**. 
+Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: **</Unit>**, sondern nur mit: **/>**. 
 Diese Syntax gibt an, dass keine Daten folgen.
 
 ```xml
@@ -90,7 +90,7 @@ Diese Syntax gibt an, dass keine Daten folgen.
 ```
 
 3. Element mit Daten und Attributen:<br>
-<br>
+
 Attribut ist hier: **key**. Dieses bekommt den Attributwert **force_presentation_complete** zugewiesen.
 Datum ist der Wert: **ON**.
 
