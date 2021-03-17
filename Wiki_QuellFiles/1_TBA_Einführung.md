@@ -1,8 +1,4 @@
-[![Back Home](https://img.shields.io/badge/Zurück--KapComputerbasiertesTesten-blueviolet)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.--Computerbasiertes-Testen-(TBA))
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-ComputerbasiertesTesten-brightgreen)
-
----
+# 1.TBA Einführung
 
 **Vorab:**
 
@@ -13,29 +9,26 @@ Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentw
 
 ---
 
-**Inhalt:**
-  * [1.1.1 TBA Module Aufbau](1.1.1-TBA-Module-Aufbau)
-  * [1.1.2 Datenhandshake Testcenter Teststudio](1.1.2-Datenhandshake-Testcenter-Teststudio)
-  * [1.1.3 Aktueller Entwicklungsstand](1.1.3-Aktueller-Entwicklungsstand)
-  * [1.1.4 Studiendurchführung](1.1.4-Studiendurchführung)
-  * [1.1.5 Verfügbarkeit IQB Programmierung](1.1.5-Verfügbarkeit-IQB-Programmierung)
-  * [1.1.6 Was macht VERA so speziell?](1.1.6-Was-macht-VERA-so-speziell%3F)
+<!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
 ---
 
+## 1.1 TBA Module Aufbau
 
-
-## 1.1.1 TBA Module Aufbau
-
-[![Back Home](https://img.shields.io/badge/Zurück--KapTBAEinführung-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
-
----
 Nachfolgend wird ein Überblick über die wesentlichen softwarebasierten Bestandteile des Computerbasierten Testens gegeben.
 Detaillierte Informationen zu den Software Modulen entnehmen Sie bitte den gleichnamigen Kapiteln.
 Die meisten Anwender werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen **Teststudio** und **Testcenter** in Berührung kommen. 
-
+ 
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
 
 * **IQB-Teststudio**: Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                            
@@ -49,15 +42,29 @@ Die meisten Anwender werden im Rahmen einer Testgestaltung und Testdurchführung
 
 * **IQB-Testdepot**: Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
+---
 
-
-## 1.1.2 Datenhandshake Testcenter Teststudio
-
-[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Datenaustausch-Testcenter-Teststudio">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.-TBA-Einf%C3%BChrung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
 ---
+
+## 1.2 Datenaustausch Testcenter Teststudio
+
 Nachfolgend wird der grundsätzliche Handshake zwischen den Hauptmodulen Teststudio und Testcenter, 
 beginnend mit der Dateierzeugung bis zur Dateneingabe und Bearbeitung, aufgezeigt.
 
@@ -101,15 +108,27 @@ Weitere Bearbeitung erforderlich! Stand: 01.03.21 T.Huste
 
 ---
 
-
-
-## 1.1.3 Aktueller Entwicklungsstand
-
-[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Aktueller-Entwicklungsstand">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
 ---
+
+## 1.3 Aktueller Entwicklungsstand
+
 (Februar 2021)
 ### IQB-Testcenter
 Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als stabil und produktiv einsetzbar angesehen. Nächste Entwicklungsschritte:
@@ -123,10 +142,10 @@ Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams kön
 * Konzeption eines IQB-Teststudios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
 
 ### IQB-Dateneditor
-**In Bearbeitung**
-
-THuste
-
+> **In Bearbeitung**
+> 
+> THuste
+> 
 Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
 
 Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung [ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md).
@@ -136,15 +155,26 @@ Diese Anwendungen werden derzeit konzipiert.
 
 ---
 
-
-
-## 1.1.4 Studiendurchführung
-
-[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Studiendurchführung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Datenaustausch-Testcenter-Teststudio">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
 ---
+
+## 1.4 Studiendurchführung
 
 ### Planung
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
@@ -219,13 +249,27 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ---
 
-## 1.1.5 Verfügbarkeit IQB Programmierung
-
-[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
+<!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Verfügbarkeit-IQB-Programmierung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Aktueller-Entwicklungsstand">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
 ---
+
+## 1.5 Verfügbarkeit IQB Programmierung
+
 ### Der Auftrag
 
 Das IQB ist länderfinanziert und erhält daher Aufträge stets mit Blick auf den Nutzen für die Länder der Bundesrepublik Deutschland. Dies ist insbesondere beim computerbasierten Testen im Bildungswesen der Fall. Denn wenn bisher die Aufgaben als Druckvorlagen an die Länder geliefert wurden, die jede Druckerei vervielfältigen kann, sind Testaufgaben im Online-Format nur durch spezielle Testsysteme nutzbar. Das Speicherformat muss kompatibel sein.
@@ -254,12 +298,27 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 
 ---
 
-## 1.1.6 Was macht Vera so speziell?
+<!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Was-macht-VERA-so-speziell%3F?">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Studiendurchführung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
 
-[![Back Home](https://img.shields.io/badge/Zurück--TBAEinführungHome-blue)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Einf%C3%BChrung)
-
-![Back Home](https://img.shields.io/badge/Haupt--Kapitel-TBAEinführung-brightgreen)
 ---
+
+## 1.6 Was macht VERA so speziell?
+
 Der Name VERA steht für "Vergleichsarbeiten". Diese groß angelegten Kompetenztests dienen der Qualitätssicherung auf Ebene der
 Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der [Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
 
@@ -270,4 +329,3 @@ Die ersten Ansätze der Online-Durchführung sehen eine manuelle Übertragung de
 Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies  ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/research/dm/tba21/) und wird viele Jahre in Anspruch nehmen.
 
 ![Schema Online-Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Running-VERA.png)
-
