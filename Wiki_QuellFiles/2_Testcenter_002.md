@@ -55,7 +55,7 @@ Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu lad
 Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
-[TBA Einführung -> Datenhandshake](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
+[TBA Einführung -> Datenaustausch Testcenter Teststudio](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
 
 ---
 
@@ -71,25 +71,28 @@ Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*A
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
 1. Element ohne Attribute mit Daten:<br>
-*Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
+<br>
+Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".
 
   ```xml
     <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
   ```
 
 2. Element mit Attributen ohne Daten:<br>
-*Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
-Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. 
-Das keine Daten enthalten sind, ist gut am Schließen des Elementes *Unit* zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. 
-Diese Syntax gibt an, dass keine Daten folgen.*
+<br>
+Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
+Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
+Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: **`</Unit>`**, sondern nur mit: **`/>`**. 
+Diese Syntax gibt an, dass keine Daten folgen.
 
 ```xml
    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
 3. Element mit Daten und Attributen:<br>
-*Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
-Datum ist der Wert: ON.*
+<br>
+Attribut ist hier: **key**. Dieses bekommt den Attributwert **force_presentation_complete** zugewiesen.
+Datum ist der Wert: **ON**.
 
 ```xml
     <Config key="force_presentation_complete">ON</Config>
