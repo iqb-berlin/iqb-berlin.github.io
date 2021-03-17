@@ -101,7 +101,7 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
 
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
 Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.<br>
-Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
+In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelementes und dessen Attribute und Daten (falls vorhanden).
   
 ---
 
@@ -113,7 +113,7 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 	
 <tr>
     <td>Description:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
 	<td>Datum</td>
     <td>frei wählbarer Text für die Metadaten Beschreibung</td>
 </tr>
@@ -144,7 +144,7 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 </tr>
 <tr>
     <td>CustomText:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>frei wählbar Text zur Anzeige eines Custom Text</td>
 </tr>
@@ -195,7 +195,7 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 </tr>
 <tr>
     <td>Booklet:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
 </tr>
@@ -222,19 +222,19 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 
 <tr>
     <td>Id:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Der Name muss in gleicher Schreibweise auch in der Testtakers.xml aufgeführt sein damit dieses Booklet aufgerufen werden kann!</td>
 </tr>
 <tr>
     <td>Label:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert zur Bezeichnung des Booklets.</td>
 </tr>
 <tr>
     <td>Description:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert zur weiteren Beschreibung dieses Booklets.</td>
 </tr>
@@ -263,7 +263,7 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 </tr>
 <tr>
     <td>Config:</td>
-    <td>" "</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Vordefinierter Wert. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b> im Kapitel: 
 	 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
@@ -316,7 +316,7 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
 </tr>
 <tr>
     <td>CodeToEnter:</td>
-    <td>"xxx"</td>
+    <td>xxx</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Dieser Text wird für die Codeabfrage verwendet.</td>
 </tr>
@@ -334,6 +334,52 @@ Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen 
   </Testlet>
 		
 </Units>
+```
+
+---
+
+### Attribute und Daten UNIT.xml
+
+`UNIT`
+
+<table>
+
+<tr>
+    <td>Id:</td>
+    <td>xxx</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert. Der verwendete Wert muss in gleicher Schreibweise auch in der **Booklet.xml** unter **Units** eingetragen werden.</td>
+</tr>
+<tr>
+    <td>Label:</td>
+    <td>xxx</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert zur Bezeichnung der Unit.</td>
+</tr>
+<tr>
+    <td>DefinitionRef:</td>
+    <td>player</td>
+    <td>Attribut</td>
+    <td>Auswahl des Players, welcher die Inhalte der zugehörigen **voud-Datei** abspielen kann. Dieser Player muss als Ressource mit in das Testcenter geladen werden.</td>
+</tr>
+<tr>
+    <td>DefinitionRef:</td>
+    <td>xxx</td>
+    <td>Datum</td>
+    <td>Name der zugehörigen **voud-Datei**. Die eigentliche **voud-Datei** muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
+</tr>
+
+</table>
+
+
+```xml
+<Unit>
+  <Metadata>
+    <Id>Unit1</Id>
+    <Label>erste Unit</Label>
+  </Metadata>
+  <DefinitionRef player="IQBVisualUnitPlayerV2">ER513.voud</DefinitionRef>
+</Unit>
 ```
 
 ---
