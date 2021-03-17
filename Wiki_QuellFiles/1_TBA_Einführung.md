@@ -1,6 +1,6 @@
 # 1.TBA Einführung
 
-**Vora:**
+**Vor:**
 
 Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) 
 gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. 
