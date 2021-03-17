@@ -1,69 +1,3 @@
-# 2.Testcenter
-**Vorab:**
-
-Grundlegende Informationen zum Testcenter Frontend erhalten Sie auch im TBA Einführungskapitel.
-Das Testcenter besteht aus einem Back- und einem Frontend. In diesem Kapitel wird nur auf das Frontend eingegangen,
-da Anwender vorwiegend damit in Berührung kommen.
-
----
-
-> **In Bearbeitung**
-> 
-> THuste
-> 
-
-## 2.1 Testcenter Einführung
-
-Eine grobe Einführung geben die nachfolgenden Verlinkungen.                         
-Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
-* [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
-* [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
-
-Des Weiteren gibt besteht folgende Forum:
-[Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)                      
-Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
-
-### Aufbau
-
-Nachfolgend ist der grobe Aufbau des Testcenters zu sehen. Dieses besteht aus einem Frontend und einem Backend.
-Das Frontend wird von den Endbenutzer\*innen, sprich den Testdurchführenden (Lehrer\*innen, Schüler\*innen und andere Verantwortlichkeiten), verwendet. Hier erfolgt das Hochladen, Herunterladen und Löschen der einzelnen Dateien eines Tests, die finale oder probeweise Testdurchführung und im administrativen Bereich das Verwalten von Benutzer\*innen und deren Rechten. 
-Das Backend ist der softwaretechnisch Unterbau des Frontends. Hier werden die Daten eines Tests, Benutzer\*in Daten und Metadaten gespeichert.
-Endbenutzer\*innen kommen mit diesem Teil des Testcenters nicht direkt in Berührung!
-
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Aufbau_final.png)
-
-Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
-
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
-
- 
----
-
-> **In Bearbeitung**
-> 
-> THuste
-> 
-> Stand:09.03.2021
-
----
-
-## 2.2 Laden eines Tests
-
-Nach der Anmeldung im Testcenter können Sie auf Ihren Workspace oder andere vom Administrator für Sie freigegebene Arbeitsbereiche, wie z.B Beispielaufgaben, zugreifen.
-                  
-**Der Workspace und andere Arbeitsbereiche müssen zuvor von einem IQB Administrator für Sie angelegt oder freigegeben werden!**
-
-Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu laden oder Testbestandteile aus dem Testcenter herunterzuladen. Auch die Löschung einzelner Datei ist möglich. Während des Hochladens findet eine Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das nachfolgende Bild:
-
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Dateien_final.png)
-
----
-
-> **In Bearbeitung**
-> 
-> Bearbeiter: Huste
-> Stand: 1.3.21
-
 ## 2.3 Bearbeiten eines Tests
 
 Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
@@ -118,10 +52,10 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 	
 <tr>
-    <td>Unterelement Describition:</td>
+    <td>Describition:</td>
     <td>" "</td>
-    <td>Datum</td>
-    <td>frei wählbar</td>
+	<td>Datum</td>
+    <td>frei wählbarer Text für die Metadaten Beschreibung</td>
 </tr>
 
 </table>
@@ -131,7 +65,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <Testtakers>
   <Metadata>
     <Description>
-     This file contains some logins for testing and works a a sample for developers.
+     Diese Datei enthält Informationen zur Art des Logins und der Testdurchführung.
     </Description>		
   </Metadata>
   ...
@@ -143,23 +77,23 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 <table>
 	
 <tr>
-    <td>Unterelement CustomText:</td>
+    <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
 </tr>
 <tr>
-    <td>Unterelement CustomText:</td>
+    <td>CustomText:</td>
     <td>" "</td>
     <td>Datum</td>
-    <td>frei wählbar </td>
+    <td>frei wählbar Text zur Anzeige eines Custom Text</td>
 </tr>
 
 </table> 
 
 ```xml
   <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
+    <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
   </CustomTexts>
   ...
 ```
@@ -169,45 +103,45 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 <table>
 <tr>
-    <td>Unterelement group:</td>
+    <td>Group:</td>
     <td>id</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbarer Wert</td>
 </tr>
 <tr>
-    <td>Unterelement group:</td>
+    <td>Group:</td>
     <td>label</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>frei wählbarer Wert</td>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>Login:</td>
     <td>name</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>Frei wählbarer Wert. Wird zur Anmeldung am Testcenter benötigt, um entsprechend des gewählten Testmodi einen Test durchzuführen.</td>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>Login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
 </tr>
 <tr>
-    <td>Unterelement login:</td>
+    <td>Login:</td>
     <td>pw</td>
     <td>Attribut</td>
-    <td>frei wählbar</td>
+    <td>Frei wählbares Passwort. Wird zur Anmeldung am Testcenter benötigt, um entsprechend des gewählten Testmodi einen Test durchzuführen.</td>
 </tr>
 <tr>
-    <td>Unterelement booklet:</td>
+    <td>Booklet:</td>
     <td>" "</td>
     <td>Datum</td>
-    <td>frei wählbar</td>
+    <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
 </tr>
 </table>
 
 ```xml
- <Group id="frei wählbare ID" label="frei wählbarer Text Label">
+ <Group id="Gruppe1" label="Dies ist die erste Gruppe.">
     <Login name="user1" mode="run-demo" pw="123">
       <Booklet>Booklet1</Booklet>
     </Login>
