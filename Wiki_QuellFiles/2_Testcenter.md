@@ -74,193 +74,128 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 ---
 
 **Bevor es los geht ein paar Grundlagen:**
-<p>
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
-Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgende aufgeführt:
+Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
-Element ohne Attribute mit Dateninhalt.<br>
+1. Element ohne Attribute mit Daten:<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
 
-```xml
-<Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
-```
+  ```xml
+    <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
+  ```
 
-Element mit Attributen ohne Daten.<br>
+2. Element mit Attributen ohne Daten:<br>
 *Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
 Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
 
 ```xml
-<Unit id="Unit1" label="1. Postcard" labelshort="1" />
+   <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
-Element mit Daten und Attributen.<br>
+3. Element mit Daten und Attributen:<br>
 *Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
 Datum ist der Text: ON.*
 
 ```xml
-<Config key="force_presentation_complete">ON</Config>
+    <Config key="force_presentation_complete">ON</Config>
 ````
 
 
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
-Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.
+Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen. Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
   
-</p>
-
 ---
 
 ### Attribute und Daten TESTTAKERS.xml
 
-**Hauptelement: Metadata**<br>
+`METADATA`
 
-<table>
-	
-<tr>
-    <td>Unterelement Describition:</td>
-    <td>" "</td>
-    <td>Datum</td>
-    <td>frei wählbar</td>
-</tr>
-
-</table>
 
 ```xml
 <?xml version="1.0"?>
 <Testtakers>
   <Metadata>
     <Description>
-     This file contains some logins for testing and works a a sample for developers.
+     Frei wählbarer Text.
     </Description>		
   </Metadata>
   ...
 ```
+
 ---
 
-**Hauptelement: CustomTexts**
-
-<table>
-	
-<tr>
-    <td>Unterelement CustomText:</td>
-    <td>key</td>
-    <td>Attribut</td>
-    <td>Vordefiniert, siehe: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
-</tr>
-<tr>
-    <td>Unterelement CustomText:</td>
-    <td>" "</td>
-    <td>Datum</td>
-    <td>frei wählbar </td>
-</tr>
-
-</table> 
+`CUSTOMTEXT`
 
 ```xml
   <CustomTexts>
-    <CustomText key="somestr">string</CustomText>
+    <CustomText key="!Vordefinierter Wert!">frei wählbarer Text</CustomText>
   </CustomTexts>
   ...
 ```
+**key:** Welche vordefinierten Werte in **CustomText** verwendet werden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
+[Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
+
 ---
 
-**Hauptelement: Group**
-
-<table>
-<tr>
-    <td>Unterelement group:</td>
-    <td>id</td>
-    <td>Attribut</td>
-    <td>frei wählbar</td>
-</tr>
-<tr>
-    <td>Unterelement group:</td>
-    <td>label</td>
-    <td>Attribut</td>
-    <td>frei wählbar</td>
-</tr>
-<tr>
-    <td>Unterelement login:</td>
-    <td>name</td>
-    <td>Attribut</td>
-    <td>frei wählbar</td>
-</tr>
-<tr>
-    <td>Unterelement login:</td>
-    <td>mode</td>
-    <td>Attribut</td>
-    <td>Vordefiniert, siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
-</tr>
-<tr>
-    <td>Unterelement login:</td>
-    <td>pw</td>
-    <td>Attribut</td>
-    <td>frei wählbar</td>
-</tr>
-<tr>
-    <td>Unterelement booklet:</td>
-    <td>" "</td>
-    <td>Datum</td>
-    <td>frei wählbar</td>
-</tr>
-</table>
+`GROUP`
 
 ```xml
  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="user1" mode="run-demo" pw="123">
-      <Booklet>Booklet1</Booklet>
+    <Login name="frei wählbar für Anmeldung im Testcenter" mode="!Vordefinierter Wert!" pw="frei wählbar für Anmeldung im Testcenter">
+      <Booklet>Frei wählbar, gleicher Name (Groß-/Kleinschreibung beachten) ist in Booklet.xml zu verwenden</Booklet>
     </Login>
  </Group>
 </Testtakers>
-
 ```
- 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Testtakers_final.png)
+**mode:** Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
+[Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)
 
 ---
 
+### Attribute und Daten BOOKLET.xml
 
+`METADATA`
 
----
-| Parameter_B<br>*(CustomTexts)*|Beschreibung|         
-| :-----------| :--------- |
-| CustomText | Welche Parameter genutzt werden können entnehmen Sie bitte dem Kapitel:<br> *[Testcenter Frontend -> Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)*|
----
-| Parameter_C<br>*(Group)*|Beschreibung|
-| :-----------| :--------- |
-|name| Username ist frei wählbar und ist zusammen mit dem Passwort im Testcenter einzugeben |
-|mode| Es dürfen nur vordefinierte Modi verwendet werden. Welche Modi das sind,<br>entnehmen Sie bitte dem Kapitel: *[Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)*|
-|pw| Das Passwort ist frei wählbar und wird zusammen mit dem Namen im Testcenter angegeben |
-|booklet| Hier wird das Booklet gewählt, welches für den entsprechenden Test (angelegter User) verwendet werden soll. Dabei ist zu beachten, dass der Name der ID in der Booklet.xml entspricht (Achten Sie auf Groß-Kleinschreibung!!!)|
-
-### BOOKLET.xml
-
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Xml_Booklet_final.png)
-
+```xml
+<Metadata>
+  <Id>Frei wählbare ID. Diese ID muss in gleicher Schreibweise auch in der Testtakers.xml angegeben werden.</Id>
+  <Label>frei wählbares Label</Label>
+  <Description>frei wählbare Describition</Description>
+</Metadata>
+```
 ---
 
-| Parameter_A<br>*(Metadaten)*|Beschreibung|
-| :-----------| :--------- |
-| Id | Frei wählbare ID. Die Booklet.xml wird über die Testtakers.xml aufgerufen. In der Testtakers.xml<br>muss somit zwingend die gewählte Booklet ID unter Beachtung der Groß-/Kleinschreibweise angegeben werden |
-| Label| Frei wählbar |
-| Describtion| Frei wählbar |
----
-| Parameter_B<br>*(BookletConfig)*|Beschreibung|
-| :-----------| :--------- |
-| Config| Welche Parameter genutzt werden können, entnehmen Sie bitte dem nachfolgenden Kapitel: *[Testcenter Frontend -> Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)* |
----
-| Parameter_C<br>*(Units)*|Beschreibung|
-| :-----------| :--------- |
-| | |
+`BOOKLETCONFIG`
+
+```xml
+<BookletConfig>
+  <Config key="!Vordefinierter Wert!">!Vordefinierter Wert!</Config>
+</BookletConfig>
+```
+**key:** Welche vordefinierten Werte in der **BookletConfig** verwendet werden können, entnehmen Sie bitte der **Booklet Configuration** in dem folgenden Kapitel:
+[Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
 
 ---
 
-> **in Bearbeitung**
-> 
-> T.Huste
-> 
-> Stand: 3.3.21
+`UNITS`
+
+```xml
+<Units> 
+	
+  <Unit id="Frei wählbare ID für erste Unit.!Unit muss in gleicher Schreibweise als xml-Datei vorhanden sein!" label="frei wählbares Label" />
+  <Testlet id="frei wählbare ID" label="frei wählbares Label ">
+    <Restrictions>
+      <CodeToEnter code="frei wählbarer Code !Weitere Angaben siehe unten!">frei wählbarer Text, dieser Text steht dann über der Codeabfrage</CodeToEnter>
+    </Restrictions>
+  </Testlet>
+		
+</Units>
+```
+**code:** Der gewählte Code muss beim späteren Abspielen im Testcenter eingegeben werden um zur nächsten Unit zu gelangen.
+
+---
 
 ## 2.4 Modi der Testdurchführung
 
