@@ -144,7 +144,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </tr>
 <tr>
     <td>CustomText:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>frei wählbar Text zur Anzeige eines Custom Text</td>
 </tr>
@@ -195,7 +195,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </tr>
 <tr>
     <td>Booklet:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
 </tr>
@@ -222,19 +222,19 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 <tr>
     <td>Id:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Der Name muss in gleicher Schreibweise auch in der Testtakers.xml aufgeführt sein damit dieses Booklet aufgerufen werden kann!</td>
 </tr>
 <tr>
     <td>Label:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert zur Bezeichnung des Booklets.</td>
 </tr>
 <tr>
     <td>Description:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert zur weiteren Beschreibung dieses Booklets.</td>
 </tr>
@@ -263,7 +263,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </tr>
 <tr>
     <td>Config:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Vordefinierter Wert. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b> im Kapitel: 
 	 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
@@ -316,7 +316,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </tr>
 <tr>
     <td>CodeToEnter:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Dieser Text wird für die Codeabfrage verwendet.</td>
 </tr>
@@ -346,13 +346,13 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 <tr>
     <td>Id:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert. Der verwendete Wert muss in gleicher Schreibweise auch in der **Booklet.xml** unter **Units** eingetragen werden.</td>
 </tr>
 <tr>
     <td>Label:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Wert zur Bezeichnung der Unit.</td>
 </tr>
@@ -364,7 +364,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </tr>
 <tr>
     <td>DefinitionRef:</td>
-    <td>xxx</td>
+    <td>>xxx<</td>
     <td>Datum</td>
     <td>Name der zugehörigen **voud-Datei**. Die eigentliche **voud-Datei** muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
 </tr>
