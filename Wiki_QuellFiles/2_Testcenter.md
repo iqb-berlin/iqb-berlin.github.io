@@ -143,7 +143,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: [TBA Einführung / Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
 </tr>
 <tr>
     <td>CustomText:</td>
@@ -188,7 +188,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe:<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a></td>
 </tr>
 <tr>
     <td>Login:</td>
