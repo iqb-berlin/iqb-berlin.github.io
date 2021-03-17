@@ -19,7 +19,7 @@ Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
 * [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
 * [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
 
-Des Weiteren gibt besteht folgende Forum:
+Des Weiteren besteht das folgende Forum:
 [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)                      
 Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
 
@@ -36,15 +36,6 @@ Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
- 
----
-
-> **In Bearbeitung**
-> 
-> THuste
-> 
-> Stand:09.03.2021
-
 ---
 
 ## 2.2 Laden eines Tests
@@ -59,11 +50,6 @@ Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu lad
 
 ---
 
-> **In Bearbeitung**
-> 
-> Bearbeiter: Huste
-> Stand: 1.3.21
-
 ## 2.3 Bearbeiten eines Tests
 
 Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
@@ -77,7 +63,12 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
-Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. Jedes Element kann außer den eigentlichen Daten zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
+Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, 
+in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
+Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. 
+Jedes Element kann außer den eigentlichen Daten, welche zwischen zwei spitzen Klammern innerhalb des Elements stehen, zusätzliche Attribute enthalten. 
+Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. 
+Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
 1. Element ohne Attribute mit Daten:<br>
 *Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".*
