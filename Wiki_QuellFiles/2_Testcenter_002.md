@@ -80,10 +80,10 @@ Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe
 
 2. Element mit Attributen ohne Daten:<br>
 
-  Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
-  Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
-  Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: **</Unit>**, sondern nur mit: **/>**. 
-  Diese Syntax gibt an, dass keine Daten folgen.
+   Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
+   Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
+   Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: **</Unit>**, sondern nur mit: **/>**. 
+   Diese Syntax gibt an, dass keine Daten folgen.
 
 ```xml
    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
