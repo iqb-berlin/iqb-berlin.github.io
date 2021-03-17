@@ -3,7 +3,7 @@
 Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
-[TBA Einführung -> Datenhandshake](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
+[TBA Einführung -> Datenaustausch Testcenter Teststudio](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
 
 ---
 
@@ -47,7 +47,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-**Hauptelement: Metadata**<br>
+`METADATA`<br>
 
 <table>
 	
@@ -72,7 +72,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 ```
 ---
 
-**Hauptelement: CustomTexts**
+`CUSTOMTEXTS`<br>
 
 <table>
 	
@@ -80,7 +80,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: [Testcenter->Konfiguration der Testanwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: [TBA Einführung / Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
 </tr>
 <tr>
     <td>CustomText:</td>
@@ -99,9 +99,10 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 ```
 ---
 
-**Hauptelement: Group**
+`GROUP`<br>
 
 <table>
+
 <tr>
     <td>Group:</td>
     <td>id</td>
@@ -124,7 +125,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)</td>
 </tr>
 <tr>
     <td>Login:</td>
@@ -138,6 +139,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>Datum</td>
     <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
 </tr>
+
 </table>
 
 ```xml
