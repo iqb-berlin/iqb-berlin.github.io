@@ -110,47 +110,110 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 
 ### Attribute und Daten TESTTAKERS.xml
 
-`METADATA`
+`METADATA`<br>
 
+<table>
+	
+<tr>
+    <td>Describition:</td>
+    <td>" "</td>
+	<td>Datum</td>
+    <td>frei wählbarer Text für die Metadaten Beschreibung</td>
+</tr>
+
+</table>
 
 ```xml
 <?xml version="1.0"?>
 <Testtakers>
   <Metadata>
     <Description>
-     Frei wählbarer Text.
+     Diese Datei enthält Informationen zur Art des Logins und der Testdurchführung.
     </Description>		
   </Metadata>
   ...
 ```
-
 ---
 
-`CUSTOMTEXT`
+`CUSTOMTEXTS`<br>
+
+<table>
+	
+<tr>
+    <td>CustomText:</td>
+    <td>key</td>
+    <td>Attribut</td>
+    <td>Vordefinierter Wert. erzeugt einen Custom Text. Siehe Custom Text Configuration: [TBA Einführung / Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)</td>
+</tr>
+<tr>
+    <td>CustomText:</td>
+    <td>" "</td>
+    <td>Datum</td>
+    <td>frei wählbar Text zur Anzeige eines Custom Text</td>
+</tr>
+
+</table> 
 
 ```xml
   <CustomTexts>
-    <CustomText key="!Vordefinierter Wert!">frei wählbarer Text</CustomText>
+    <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
   </CustomTexts>
   ...
 ```
-**key:** Welche vordefinierten Werte in **CustomText** verwendet werden können, entnehmen Sie bitte der **CustomText Configuration** in dem folgenden Kapitel:
-[Konfiguration der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung)
-
 ---
 
-`GROUP`
+`GROUP`<br>
+
+<table>
+
+<tr>
+    <td>Group:</td>
+    <td>id</td>
+    <td>Attribut</td>
+    <td>frei wählbarer Wert</td>
+</tr>
+<tr>
+    <td>Group:</td>
+    <td>label</td>
+    <td>Attribut</td>
+    <td>frei wählbarer Wert</td>
+</tr>
+<tr>
+    <td>Login:</td>
+    <td>name</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert. Wird zur Anmeldung am Testcenter benötigt, um entsprechend des gewählten Testmodi einen Test durchzuführen.</td>
+</tr>
+<tr>
+    <td>Login:</td>
+    <td>mode</td>
+    <td>Attribut</td>
+    <td>Vordefinierter Wert.Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: [Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)</td>
+</tr>
+<tr>
+    <td>Login:</td>
+    <td>pw</td>
+    <td>Attribut</td>
+    <td>Frei wählbares Passwort. Wird zur Anmeldung am Testcenter benötigt, um entsprechend des gewählten Testmodi einen Test durchzuführen.</td>
+</tr>
+<tr>
+    <td>Booklet:</td>
+    <td>" "</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
+</tr>
+
+</table>
 
 ```xml
- <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    <Login name="frei wählbar für Anmeldung im Testcenter" mode="!Vordefinierter Wert!" pw="frei wählbar für Anmeldung im Testcenter">
-      <Booklet>Frei wählbar, gleicher Name (Groß-/Kleinschreibung beachten) ist in Booklet.xml zu verwenden</Booklet>
+ <Group id="Gruppe1" label="Dies ist die erste Gruppe.">
+    <Login name="user1" mode="run-demo" pw="123">
+      <Booklet>Booklet1</Booklet>
     </Login>
  </Group>
 </Testtakers>
+
 ```
-**mode:** Welche vordefinierten Modi verwendet werden können, entnehmen Sie bitte dem folgenden Kapitel:
-[Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung)
 
 ---
 
