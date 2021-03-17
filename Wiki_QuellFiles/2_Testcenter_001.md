@@ -7,11 +7,6 @@ da Anwender vorwiegend damit in Berührung kommen.
 
 ---
 
-> **In Bearbeitung**
-> 
-> THuste
-> 
-
 ## 2.1 Testcenter Einführung
 
 Eine grobe Einführung geben die nachfolgenden Verlinkungen.                         
@@ -26,13 +21,18 @@ Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Eins
 ### Aufbau
 
 Nachfolgend ist der grobe Aufbau des Testcenters zu sehen. Dieses besteht aus einem Frontend und einem Backend.
-Das Frontend wird von den Endbenutzer\*innen, sprich den Testdurchführenden (Lehrer\*innen, Schüler\*innen und andere Verantwortlichkeiten), verwendet. Hier erfolgt das Hochladen, Herunterladen und Löschen der einzelnen Dateien eines Tests, die finale oder probeweise Testdurchführung und im administrativen Bereich das Verwalten von Benutzer\*innen und deren Rechten. 
-Das Backend ist der softwaretechnisch Unterbau des Frontends. Hier werden die Daten eines Tests, Benutzer\*in Daten und Metadaten gespeichert.
-Endbenutzer\*innen kommen mit diesem Teil des Testcenters nicht direkt in Berührung!
+Das Frontend wird von den Endbenutzer\*innen, sprich den Testdurchführenden (Lehrer\*innen, Schüler\*innen und andere Verantwortlichkeiten), 
+verwendet. Hier erfolgt das Hochladen, Herunterladen und Löschen der einzelnen Dateien eines Tests, die finale oder probeweise Testdurchführung und 
+im administrativen Bereich das Verwalten von Benutzer\*innen und deren Rechten. Das Backend ist der softwaretechnisch Unterbau des Frontends. 
+Hier werden die Daten eines Tests, Benutzer\*in Daten und Metadaten gespeichert. Endbenutzer\*innen kommen mit diesem Teil des Testcenters nicht direkt in Berührung!
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Aufbau_final.png)
 
-Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
+Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. 
+An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. 
+Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. 
+Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Weitere Schnittstellen und Umgebungsmodule, 
+die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
@@ -66,7 +66,7 @@ Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können 
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, 
 in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
 Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern **<*Element Start*>** eingeleitet und wie folgt beendet:**</*Element Ende*>**. 
-Jedes Element kann außer den eigentlichen Daten, welche zwischen zwei spitzen Klammern innerhalb des Elements stehen, zusätzliche Attribute enthalten. 
+Jedes Element kann außer den eigentlichen Daten, welche zwischen zwei spitzen Klammern stehen, zusätzliche Attribute enthalten. 
 Attribute werden immer in der folgenden Form ausgedrückt: *Name Attribut* = "*Attributwert*" und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. 
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
@@ -78,8 +78,10 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
   ```
 
 2. Element mit Attributen ohne Daten:<br>
-*Hier gibt es 3 Attribute: id, lable und labelshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
-Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. Das keine Daten enthalten sind, ist gut am Schließen des Elementes: Unit zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.*
+*Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
+Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attribut zugeordnet. 
+Das keine Daten enthalten sind, ist gut am Schließen des Elementes *Unit* zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. 
+Diese Syntax gibt an, dass keine Daten folgen.*
 
 ```xml
    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
@@ -87,7 +89,7 @@ Diese sind in Hochkommata gefasst und werden mit einem Istgleichzeichen dem Attr
 
 3. Element mit Daten und Attributen:<br>
 *Attribut ist hier: key. Dieses bekommt den Attributwert "force_presentation_complete" zugewiesen.
-Datum ist der Text: ON.*
+Datum ist der Wert: ON.*
 
 ```xml
     <Config key="force_presentation_complete">ON</Config>
@@ -95,7 +97,8 @@ Datum ist der Text: ON.*
 
 
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
-Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen. Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
+Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.<br>
+Links in der Tabelle steht der Name des Unterelements und den darin enthaltenen Daten oder Attributen und deren Wertevorgabe.
   
 ---
 
@@ -134,7 +137,7 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
     <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe **Custom Text Configuration** im Kapitel:<br><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
+    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration</b> im Kapitel:<br><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
 </tr>
 <tr>
     <td>CustomText:</td>
