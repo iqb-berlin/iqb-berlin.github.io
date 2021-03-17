@@ -30,7 +30,7 @@ Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 
 Nachfolgend wird ein Überblick über die wesentlichen softwarebasierten Bestandteile des Computerbasierten Testens gegeben.
 Detaillierte Informationen zu den Software Modulen entnehmen Sie bitte den gleichnamigen Kapiteln.
-Die meisten Anwender werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen **Teststudio** und **Testcenter** in Berührung kommen. 
+Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen **Teststudio** und **Testcenter** in Berührung kommen. 
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
 
@@ -97,7 +97,7 @@ Nach finaler Editierung der Aufgaben und Anforderung der Daten im Teststudio, er
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Datenstruktur_Out_final.png)
 
 ### Dateibearbeitung
-Die einzelnen Datei bzgl. Unit, Booklet etc. können hinsichtlich bestimmter Parameter bearbeitet werden.
+Die einzelnen Datei bzgl. Unit, Booklet etc. können hinsichtlich bestimmter Attribute bearbeitet werden.
 Nachfolgend finden Sie eine Übersicht welche Parameter in den einzelnen Dateien verändert werden können. 
 
 **TESTTAKERS.xml**
@@ -148,6 +148,14 @@ Weitere Bearbeitung erforderlich! Stand: 01.03.21 T.Huste
 
 ## 1.3 Aktueller Entwicklungsstand
 
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+todo:
+  - IQB-Dateneditor: Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
+```
+---
+
 (Februar 2021)
 ### IQB-Testcenter
 Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als stabil und produktiv einsetzbar angesehen. Nächste Entwicklungsschritte:
@@ -161,11 +169,6 @@ Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams kön
 * Konzeption eines IQB-Teststudios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
 
 ### IQB-Dateneditor
-> **In Bearbeitung**
-> 
-> THuste
-> 
-Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
 
 Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung [ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md).
 
