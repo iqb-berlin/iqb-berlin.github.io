@@ -348,7 +348,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>Id:</td>
     <td>>xxx<</td>
     <td>Datum</td>
-    <td>Frei wählbarer Wert. Der verwendete Wert muss in gleicher Schreibweise auch in der **Booklet.xml** unter **Units** eingetragen werden.</td>
+    <td>Frei wählbarer Wert. Der verwendete Wert muss in gleicher Schreibweise auch in der <b>Booklet.xml</b> unter <b>Units</b> eingetragen werden.</td>
 </tr>
 <tr>
     <td>Label:</td>
@@ -360,13 +360,13 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>DefinitionRef:</td>
     <td>player</td>
     <td>Attribut</td>
-    <td>Auswahl des Players, welcher die Inhalte der zugehörigen **voud-Datei** abspielen kann. Dieser Player muss als Ressource mit in das Testcenter geladen werden.</td>
+    <td>Auswahl des Players, welcher die Inhalte der zugehörigen <b>voud-Datei</b> abspielen kann. Dieser Player muss als Ressource mit in das Testcenter geladen werden.</td>
 </tr>
 <tr>
     <td>DefinitionRef:</td>
     <td>>xxx<</td>
     <td>Datum</td>
-    <td>Name der zugehörigen **voud-Datei**. Die eigentliche **voud-Datei** muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
+    <td>Name der zugehörigen <b>voud-Datei</b>. Die eigentliche <b>voud-Datei</b> muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
 </tr>
 
 </table>
