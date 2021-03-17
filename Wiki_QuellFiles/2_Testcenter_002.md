@@ -72,7 +72,7 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
 
 1. Element ohne Attribute mit Daten:<br>
 
-Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".
+   Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".
 
   ```xml
     <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
@@ -91,8 +91,8 @@ Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe
 
 3. Element mit Daten und Attributen:<br>
 
-Attribut ist hier: **key**. Dieses bekommt den Attributwert **force_presentation_complete** zugewiesen.
-Datum ist der Wert: **ON**.
+   Attribut ist hier: **key**. Dieses bekommt den Attributwert **force_presentation_complete** zugewiesen.
+   Datum ist der Wert: **ON**.
 
 ```xml
     <Config key="force_presentation_complete">ON</Config>
