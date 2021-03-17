@@ -2,7 +2,10 @@
 
 **Vorab:**
 
-Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
+Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) 
+gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. 
+Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
+
 * [TBA-Projekt 2018-2020](https://www.iqb.hu-berlin.de/research/dm/tba/)
 * [TBA-Projekt 2021-2023](https://www.iqb.hu-berlin.de/research/dm/tba21/)
 * [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
@@ -31,16 +34,32 @@ Die meisten Anwender werden im Rahmen einer Testgestaltung und Testdurchführung
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
 
-* **IQB-Teststudio**: Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                            
-*Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
+* **IQB-Teststudio**: Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
+Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. 
+Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
+Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. 
+Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                         
+*Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
 
-* **IQB-Testcenter**: Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. Der Anwender kommt nur mit dem Frontend in Berührung. Das Frontend wird über eine Internetadresse geladen. Hier können Aufgaben hochgeladen werden und "abgespielt" werden. Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. Die Testpersonen wählen sich über die angegebene Internet-Adresse ein und geben Anmeldenamen und Kennwort ein. Die Verantwortlichen für die Testdurchführung können die Units, Testhefte und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. Außerdem kann man für eine Testgruppe (z. B. Klasse/Kurs) den Fortschritt der Bearbeitung beobachten.
+* **IQB-Testcenter**: Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. 
+Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. 
+Anwender\*innen kommen nur mit dem Frontend in Berührung. Das Testcenter wird von den Verantworlichen oder den Testpersonen über eine Internetadresse geladen. 
+Die Verantwortlichen für die Testdurchführung können die Units, Testhefte (Booklets) und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. 
+Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. 
 
-* **IQB-Dateneditor**: Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
+* **IQB-Dateneditor**: Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
+beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
+Berichte, Publikationen, Rückmeldungen an Schulen.
 
-* **IQB-Testarchiv**: Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+* **IQB-Testarchiv**: Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
+Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
+der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
 
-* **IQB-Testdepot**: Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
+* **IQB-Testdepot**: Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
+Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
+Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
+es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
 ---
 
