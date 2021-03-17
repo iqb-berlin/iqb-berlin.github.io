@@ -113,7 +113,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 	
 <tr>
     <td>Description:</td>
-    <td>xxx</td>
+    <td>>xxx></td>
 	<td>Datum</td>
     <td>frei wählbarer Text für die Metadaten Beschreibung</td>
 </tr>
