@@ -10,9 +10,8 @@ Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 * [TBA-Projekt 2021-2023](https://www.iqb.hu-berlin.de/research/dm/tba21/)
 * [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
 
----
-
-Diese Kapitel soll eine Einführung in die TBA Instrumentarien des IQB geben. 
+Im Rahmen der Umstellung von papierbasierten auf technologiebasierte Kompetenzerhebungen, soll mit diesem Kapitel eine Einführung in die
+IQB TBA Instrumentarien gegeben werden.  
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
@@ -40,7 +39,14 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
 * **IQB-Teststudio**:<br> 
-    Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
+    Das Teststudio besteht aus einem Back-/ und einem Frontend. Das Backend stellt dabei den Unterbau dar, das Frontend die Benutzerschnittstelle.
+	Das Backend besteht aus einer Datenbank, Schnittstellen und anderen softwaretechnischen Bestandteilen. Anwender\*innen kommen nur mit dem Frontend in Berührung und können
+	hier Aufgaben erstellen und bearbeiten. Editierfunktionen im Frontend ermöglichen die Erstellung und Bearbeitung der interaktiven Einheiten eines Kompetenztests mit einer Vielzahl an möglichen Funktionen. 
+	Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte den weiterführenden gleichnamigen Kaptiteln. Nach finaler Editierung der Aufgaben, generiert das Teststudio
+	die Bestandteile (einzelne Datei) eines Tests in einem vepackten Dateiformat (Zip-Datei). Diese Dateien können bei Bedarf nachträglich bearbeitet und anschließend im **Testcenter ** geladen und wiedergegeben werden.
+	
+	
+	Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
     Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. 
     Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
     Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. 
