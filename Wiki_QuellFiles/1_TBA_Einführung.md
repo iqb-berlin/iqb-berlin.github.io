@@ -96,55 +96,91 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 
 ---
 
-## 1.2 Datenaustausch Testcenter Teststudio
+# 1.2 Ablauf Entwurf und Durchführung
 
-Nachfolgend wird der grundsätzliche Datenaustausch zwischen den Hauptmodulen Teststudio und Testcenter, 
-beginnend mit der Datenerzeugung bis zur Dateneingabe und Bearbeitung, aufgezeigt.
+Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob aufgezeigt:
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
 
+### Entwurf
 
-### Dateierzeugung
-Die Dateierzeugung erfolgt mittels Teststudio. Das Teststudio generiert nach finaler Aufgabenentwicklung eine ZIP-Datei.
-In dieser befinden sich alle für den Test relevanten Dateien. Folgende Dateien enthält ein Test:
-
-* Testtakers.xml
-* Booklet.xml
-* Unit.xml
-* Resourcendateien in unterschiedlichen Formaten wie .html und .voud
+In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen, bearbeitet und final ausgearbeitet.
+Anschließend werden die interaktiven Einheiten des Tests in einem Zip-Format ausgegeben. Mehr zu diesem Thema entnehmen Sie bitte dem **Teststudio** Kapitel.itte dem Kapitel zum Testcenter Frontend.
+Diese können dann vor der Eingabe in das Testcenter bearbeitet werden und an die entsprechende Testumgebung angepasst werden.
 
 Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten Dateien:
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_TS_Output_final.png)
 
-### Dateibearbeitung
-Die einzelnen Datei bzgl. Unit, Booklet etc. können hinsichtlich bestimmter Attribute bearbeitet werden.
-Nachfolgend finden Sie eine Übersicht welche Parameter in den einzelnen Dateien verändert werden können. 
+### Die Testdateien
 
-**TESTTAKERS.xml**
-* Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
-* Definition User und Testmodi
-* Definition Test Gruppe
+**Bearbeitung der Dateien**
 
-
-**BOOKLET.xml**
-* Layout des Booklets
-* Namen des Testheftes
-* Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
-* Name der Unit
-* Beschränkungen mittels Codewort
-
-**UNIT.xml**
-* Definition des zu verwendenden Players
-* Definition der zu verwendenden Ressourcen Datei
+Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung angepasst werden. 
+Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Schüler zugeordnet werden kann.
+Eventuell müssen Unitbezeichnungen oder auch Bookletbezeichnungen geändert werden. Auch die Reihenfolge der Units ist anpassbar.
+Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen um diese Änderungen durchzuführen.
+Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Tests und welche Werte in diesen Dateien beeinflusst werden können.
 
 
-### Dateieingabe
-Wie die Dateien in das Testcenter zu laden sind, entnehmen Sie bitte dem Kapitel zum Testcenter Frontend.
+* Testtakers.xml
+  
+  * Anmeldedaten
+  * Art und Weise der Testdurchführung
+  
+* Booklet.xml
+  
+  * Namensgebung Booklet
+  * Unitreihenfolge/ Unitaufruf
+  * Booklet Konfiguration
+  
+* Unit.xml
+  
+  * Einbindung Ressourcendateien (Player, zugehörige .voud-Datei mit den Testinhalten)
+
+* Unit.voud
+  
+  * Enthält die Aufgabeninhalte die im Teststudio mittels Editor entwurfen wurde. Hier sind von Hand keine Änderungen möglich.
+
+* Player.html
+  
+  * Enthält Player spezifische Parameter und sollte nicht verändert werden.
+  
+
+**Funktion der Dateien**
+
+* TESTTAKERS.xml
+  * Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
+  * Definition User und Testmodi
+  * Definition Test Gruppe
 
 
+* BOOKLET.xml
+  * Layout des Booklets
+  * Namen des Testheftes
+  * Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
+  * Name der Unit
+  * Beschränkungen mittels Codewort
 
-Weitere Bearbeitung erforderlich! Stand: 01.03.21 T.Huste
+* UNIT.xml
+  * Definition des zu verwendenden Players
+  * Definition der zu verwendenden Ressourcen Datei
+
+* Unit.voud oder Unit.htm
+  * Aufgabeninhalte und Aussehen
+
+### Durchführung
+
+Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
+mit den in der Testtakers.xml gewählten Benutzer\*innendaten an und lädt die Dateien des Test in das **Testcenter**. Anschließend kann der gesamte Test angespielt werden.
+Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der Testtakers.xml gewählte Modi.
+Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
+
+
+### Auswertung
+
+Nach einer finalen Testdurchführung sind weitere Nachbearbeitungsschritte notwendig um zu einer aussagekräftigen Auswertung zu gelangen.
+Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wichtige Rolle spielt.
 
 ---
 
