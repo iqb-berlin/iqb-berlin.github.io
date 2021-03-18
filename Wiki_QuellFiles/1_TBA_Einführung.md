@@ -2,17 +2,17 @@
 
 **Vorab:**
 
-Nach zahlreichen Vorarbeiten arbeitet seit 2018 das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) 
-gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. 
+Nach zahlreichen Vorarbeiten arbeitet das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de)
+seit 2018 gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. 
 Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 
 * [TBA-Projekt 2018-2020](https://www.iqb.hu-berlin.de/research/dm/tba/)
 * [TBA-Projekt 2021-2023](https://www.iqb.hu-berlin.de/research/dm/tba21/)
 * [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
 
-Im Rahmen der Umstellung von papierbasierten auf technologiebasierte Kompetenzerhebungen, soll mit diesem Kapitel eine Einführung in die
-IQB TBA Instrumentarien gegeben werden.  
-
+Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Kompetenzerhebung
+zum Einsatz kommen.
+ 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -40,23 +40,24 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 
 * **IQB-Teststudio**:<br> 
     Das Teststudio besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-	Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.
+	Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.<br>
 	In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
 	werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
-    Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
+    Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
 	Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte den weiterführenden gleichnamigen Kaptiteln. 
 	Nach finaler Editierung der Aufgaben, generiert das Teststudio die Einheiten eines Kompetenztests (Units und weitere für den Test erforderliche
-	Dateien) in einem vepackten Dateiformat (Zip-Datei). Diese Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
-	Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter ** geladen und wiedergegeben werden.
-	> *Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-    > Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
+	Dateien) in einem vepackten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
+	Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** geladen und wiedergegeben werden.
+	> Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+    > Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.
 
 * **IQB-Testcenter**:<br>
-     Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. 
-     Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. 
-     Anwender\*innen kommen nur mit dem Frontend in Berührung. Das Testcenter wird von den Verantworlichen oder den Testpersonen über eine Internetadresse geladen. 
-     Die Verantwortlichen für die Testdurchführung können die Units, Testhefte (Booklets) und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. 
-     Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. 
+     Mit dieser Anwendung wird der Kompetenztest durchgeführt. Das Testcenter besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
+	 Letztere wird mittels Adresseingabe im Interbrowser geöffnet. Nach Anmeldung mit entsprechenden Zugangsdaten können dann die zuvor im **Teststudio** generierten Einheiten eines Tests
+	 geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden dabei in der Datenbank gespeichert und verwaltet.
+	 In die Benutzerschnittstelle ist ein weiteres softwarebasiertes Modul intergriert, der **Verona Player**. Dieser übernimmt das Abspielen von Inhalten der zuvor geladenen Einheiten eines Tests und verfügt
+	 über eine entsprechende Schnittstelle, die alle Aktionen innerhalb des Testverlaufes handhabt und eine spätere Auswertung ermöglicht. Weiterführende Informationen zum Thema Testcenter 
+	 entnehmen Sie bitte dem gleichnamigen Kapitel. 
 
 * **IQB-Dateneditor**:<br>
     Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
@@ -65,7 +66,7 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 
 * **IQB-Testarchiv**:<br>
     Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
-    Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
+    Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards etc.. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
     der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
 
 * **IQB-Testdepot**:<br>
