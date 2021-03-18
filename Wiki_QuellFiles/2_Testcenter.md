@@ -112,6 +112,20 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 
 ---
 
+### Namenskonventionen
+
+---
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+to do:
+  - Wie sind die Dateien zu benamen, wie wird aufgerufen ID oder Dateinamen
+  
+```
+---
+
+
 **Bevor es los geht ein paar Grundlagen:**
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
