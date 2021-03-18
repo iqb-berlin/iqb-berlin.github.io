@@ -78,7 +78,7 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Datenaustausch-Testcenter-Teststudio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -114,7 +114,7 @@ Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten 
 
 ### Die Testdateien
 
-**Bearbeitung der Dateien**
+#### Bearbeitung der Dateien
 
 Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung angepasst werden. 
 Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Schüler zugeordnet werden kann.
@@ -143,7 +143,7 @@ Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Test
   
 ---
 
-**Funktion der Dateien**
+#### Funktion der Dateien
 
 `Testtakers.xml`
 * Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
@@ -172,7 +172,7 @@ Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Test
 ### Durchführung
 
 Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
-mit den in der Testtakers.xml gewählten Benutzerdaten an und lädt die Dateien des Test in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
+mit den in der Testtakers.xml gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
 Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der Testtakers.xml gewählte Modi.
 Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
 
@@ -240,7 +240,7 @@ Diese Anwendungen werden derzeit konzipiert.
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Datenaustausch-Testcenter-Teststudio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -269,7 +269,9 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Wie lautet die genaue Internet-Adresse für die Testung bzw. Befragung?
 
 ### Units gestalten mit IQB-Teststudio
+
 #### Vorbereitung
+
 * Zugangsdaten erhalten
 * Neuen Arbeitsbereich (Workspace) anlegen lassen
 * Testablauf planen: Welche Units, welche Zwischenseiten?
@@ -279,11 +281,13 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Konventionen festlegen (Einrückung, Schriftart/-größe, Zeilenabstand, Formulierung bei Instruktionen, Benennung der Units usw.)
 
 #### Übertragung organisieren
+
 * Trello, CryptPad Kanban o. ä. einrichten, um für jede Unit den aktuellen Status zu dokumentieren
 * Workflow definieren: Wer macht ersten Entwurf, wer schaut drüber, wer prüft psychometrisch, wer prüft fachdidaktisch usw.
 * Schulungen und Austausch der Autorinnen und Autoren untereinander planen
 
 #### Gestaltung
+
 * Gute Kurznamen für Units wählen, sprechende Titel
 * Voransicht nutzen, um Layout und Verhalten zu prüfen
 * Erzeugte IDs der Interaktionselemente notieren (canvasElement214...; z. B. über Excel- oder CryptPad-Tabelle)
@@ -292,36 +296,44 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Units regelmäßig als Dateien exportieren als Backup
 
 #### Export
+
 * Units exportieren mit Xml und Voud
 * (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
 
 ### Teststudio einrichten
+
 #### Vorbereitung
+
 * Zugangsdaten erhalten
 * Neuen Arbeitsbereich (Workspace) anlegen lassen
 * System-Check ggf. einrichten und freigeben
 
 #### Units hochladen
+
 * (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
 * Erst die voud-Dateien, dann die Xml-Dateien hochladen. Es könnte sonst passieren, dass eine Xml abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
 
 #### Testhefte hochladen
+
 * Eine [xlsx-Datei für die ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/docs/manual-booklet.md) kann helfen, das Testdesign transparent zu planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten Xml-Dateien hochzuladen.
 * Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
 
 ### Review und Probelauf
+
 * Allgemein bitte [diese Hinweise](https://github.com/iqb-berlin/itc-toolbox/blob/master/docs/manual-logins.md) zu Logins beachten.
 * Die Xml zu Testteilnehmern (sog. Testtaker) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/testcenter-frontend/wiki/Modi-der-Testdurchf%C3%BChrung) anlegen für alle Verantwortlichen der Studie hochladen.
 * Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die Xml-Änderungen).
 * Auch Logins im hot-restart-Modus anlegen, Real-Time-Tests durchführen und sorgfältig auswerten
 
 ### Studie durchführen
+
 * Logins für Durchführung hochladen, ggf. Zeitfenster gut dokumentieren
 * täglich Antworten und Logs ziehen und speichern
 * Probeauswertungen vornehmen: Nur so erkennt man früh, wenn bestimmmte Variablen nicht ankommen
 * Hotline auswerten, auch erste Testprotokolle analysieren
 
 ### Auswertung, Evaluation
+
 * Daten wie vorgesehen auswerten, Berichte schreiben, Rückmeldung an Schulen geben
 * Evaluieren: Dabei hilft die Vorstellung, dass man die gleiche Studie nächste Woche nochmal durchführen soll
 * Feiern...
