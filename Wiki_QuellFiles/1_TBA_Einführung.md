@@ -98,15 +98,22 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 
 ## 1.2 Datenaustausch Testcenter Teststudio
 
-Nachfolgend wird der grundsätzliche Handshake zwischen den Hauptmodulen Teststudio und Testcenter, 
-beginnend mit der Dateierzeugung bis zur Dateneingabe und Bearbeitung, aufgezeigt.
+Nachfolgend wird der grundsätzliche Datenaustausch zwischen den Hauptmodulen Teststudio und Testcenter, 
+beginnend mit der Datenerzeugung bis zur Dateneingabe und Bearbeitung, aufgezeigt.
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
 
 
 ### Dateierzeugung
-Die Dateierzeugung erfolgt mittels Teststudio (Item-Datenbank und intergriertem Editor). 
-Nach finaler Editierung der Aufgaben und Anforderung der Daten im Teststudio, erzeugt dieses die folgenden Dateien verpackt in einem Zip-Format:
+Die Dateierzeugung erfolgt mittels Teststudio. Das Teststudio generiert nach finaler Aufgabenentwicklung eine ZIP-Datei.
+In dieser befinden sich alle für den Test relevanten Dateien. Folgende Dateien enthält ein Test:
+
+* Testtakers.xml
+* Booklet.xml
+* Unit.xml
+* Resourcendateien in unterschiedlichen Formaten wie .html und .voud
+
+Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten Dateien:
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Datenstruktur_Out_final.png)
 
