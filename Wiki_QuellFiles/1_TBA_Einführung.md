@@ -141,6 +141,7 @@ Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Test
 `Player.html`
 * Enthält Player spezifische Parameter und sollte nicht verändert werden.
   
+---
 
 **Funktion der Dateien**
 
@@ -171,7 +172,7 @@ Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Test
 ### Durchführung
 
 Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
-mit den in der Testtakers.xml gewählten Benutzer\*innendaten an und lädt die Dateien des Test in das **Testcenter**. Anschließend kann der gesamte Test angespielt werden.
+mit den in der Testtakers.xml gewählten Benutzerdaten an und lädt die Dateien des Test in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
 Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der Testtakers.xml gewählte Modi.
 Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
 
