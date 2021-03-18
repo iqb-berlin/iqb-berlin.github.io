@@ -11,7 +11,7 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 # <a name="cba"></a>Computerbasiertes Testen
 #### Verstehen und Anwenden
 
-Informationen für Anwender_innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
+Informationen für Anwender\*innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
 
 ---
 
