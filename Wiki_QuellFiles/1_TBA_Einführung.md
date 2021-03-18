@@ -37,9 +37,9 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 * **Teststudio**
 * **Testcenter** 
  
-![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
+![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final)
 
-* **IQB-Teststudio**: 
+* **IQB-Teststudio**:<br> 
     Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
     Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. 
     Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
