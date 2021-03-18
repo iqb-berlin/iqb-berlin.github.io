@@ -37,7 +37,7 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 * **Teststudio**
 * **Testcenter** 
  
-![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
+![iqb online assessment](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
 * **IQB-Teststudio**:<br> 
     Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
