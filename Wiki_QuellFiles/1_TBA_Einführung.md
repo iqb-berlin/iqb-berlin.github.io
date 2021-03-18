@@ -105,7 +105,7 @@ Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob 
 ### Entwurf
 
 In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen, bearbeitet und final ausgearbeitet.
-Anschließend werden die interaktiven Einheiten des Tests in einem Zip-Format ausgegeben. Mehr zu diesem Thema entnehmen Sie bitte dem **Teststudio** Kapitel.itte dem Kapitel zum Testcenter Frontend.
+Anschließend werden die interaktiven Einheiten des Tests in einem Zip-Format ausgegeben. Mehr zu diesem Thema entnehmen Sie bitte dem **Teststudio** Kapitel.
 Diese können dann vor der Eingabe in das Testcenter bearbeitet werden und an die entsprechende Testumgebung angepasst werden.
 
 Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten Dateien:
@@ -123,51 +123,49 @@ Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen
 Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Tests und welche Werte in diesen Dateien beeinflusst werden können.
 
 
-* Testtakers.xml
+`Testtakers.xml`
+* Anmeldedaten
+* Art und Weise der Testdurchführung
   
-  * Anmeldedaten
-  * Art und Weise der Testdurchführung
-  
-* Booklet.xml
-  
+* Booklet.xml  
   * Namensgebung Booklet
-  * Unitreihenfolge/ Unitaufruf
+  * Unit Reihenfolge/ Unit Aufruf
   * Booklet Konfiguration
   
-* Unit.xml
-  
+* Unit.xml  
   * Einbindung Ressourcendateien (Player, zugehörige .voud-Datei mit den Testinhalten)
 
-* Unit.voud
-  
+* Unit.voud  
   * Enthält die Aufgabeninhalte die im Teststudio mittels Editor entwurfen wurde. Hier sind von Hand keine Änderungen möglich.
 
-* Player.html
-  
+* Player.html  
   * Enthält Player spezifische Parameter und sollte nicht verändert werden.
   
 
 **Funktion der Dateien**
 
-* TESTTAKERS.xml
+* Testtakers.xml
   * Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
   * Definition User und Testmodi
   * Definition Test Gruppe
 
 
-* BOOKLET.xml
+* Booklet.xml
   * Layout des Booklets
   * Namen des Testheftes
   * Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
   * Name der Unit
   * Beschränkungen mittels Codewort
 
-* UNIT.xml
+* Unit.xml
   * Definition des zu verwendenden Players
   * Definition der zu verwendenden Ressourcen Datei
 
 * Unit.voud oder Unit.htm
   * Aufgabeninhalte und Aussehen
+  
+* Ressourcen Dateien Player und andere
+  * Player spezifische Parameter
 
 ### Durchführung
 
