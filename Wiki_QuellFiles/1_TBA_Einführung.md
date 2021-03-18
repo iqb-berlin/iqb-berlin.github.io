@@ -12,6 +12,8 @@ Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 
 ---
 
+Diese Kapitel soll eine Einführung in die TBA Instrumentarien des IQB geben. 
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -30,17 +32,21 @@ Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 
 Nachfolgend wird ein Überblick über die wesentlichen softwarebasierten Bestandteile des Computerbasierten Testens gegeben.
 Detaillierte Informationen zu den Software Modulen entnehmen Sie bitte den gleichnamigen Kapiteln.
-Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen **Teststudio** und **Testcenter** in Berührung kommen. 
+Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den folgenden Modulen in Berührung kommen:
+
+* **Teststudio**
+* **Testcenter** 
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/IQB-OnlineTest-Apps.png)
 
-* **IQB-Teststudio**: Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
-Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. 
-Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
-Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. 
-Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                         
-*Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
+* **IQB-Teststudio**: 
+    Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
+    Mittels dieses Editors werden die interaktiven Einheiten eines Kompetenztests oder einer Befragung entworfen. Die einzelnen Einheiten eines Testheftes werden Unit genannt. 
+    Diese sog. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen, Klappfeldern oder ähnlichen Elementen einer Internet-Seite mit denen die Testperson eine Antwort auf Fragen geben kann. 
+    Im Teststudio wird von den Autoren außerdem die Aneinanderreihung der Units festgelegt, das sog. Testheft. Des Weiteren muss eine Vorschrift hinterlegt werden, wie die Antworten ggf. umgeformt werden sollen. 
+    Alle Beteiligten erhalten eine spezielle Sicht auf den Entwicklungsprozess entsprechend ihrer Rolle.                         
+    *Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+    Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
 
 * **IQB-Testcenter**: Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. 
 Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. 
