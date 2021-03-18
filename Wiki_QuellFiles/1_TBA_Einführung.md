@@ -115,7 +115,7 @@ In dieser befinden sich alle für den Test relevanten Dateien. Folgende Dateien 
 
 Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten Dateien:
 
-![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Datenstruktur_Out_final.png)
+![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_TS_Output.png)
 
 ### Dateibearbeitung
 Die einzelnen Datei bzgl. Unit, Booklet etc. können hinsichtlich bestimmter Attribute bearbeitet werden.
