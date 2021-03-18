@@ -37,7 +37,7 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 * **Teststudio**
 * **Testcenter** 
  
-![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final)
+![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
 * **IQB-Teststudio**:<br> 
     Es handelt sich hierbei um eine Datenbank mit einer Editierfunktion, welche den Aufgabenentwurf und eine Nachbearbeitung ermöglicht. 
@@ -48,24 +48,28 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
     *Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
     Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.*
 
-* **IQB-Testcenter**: Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. 
-Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. 
-Anwender\*innen kommen nur mit dem Frontend in Berührung. Das Testcenter wird von den Verantworlichen oder den Testpersonen über eine Internetadresse geladen. 
-Die Verantwortlichen für die Testdurchführung können die Units, Testhefte (Booklets) und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. 
-Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. 
+* **IQB-Testcenter**:<br>
+     Mit dieser Anwendung wird der Online-Test durchgeführt. Das Testcenter besteht aus einem Front-/ und einem Backend. 
+     Das Backend besteht aus einer entsprechenden Schnittstelle zum Frontend und einer Datenbank, in welcher Metadaten und die Testaufgaben entsprechend gespeichert werden. 
+     Anwender\*innen kommen nur mit dem Frontend in Berührung. Das Testcenter wird von den Verantworlichen oder den Testpersonen über eine Internetadresse geladen. 
+     Die Verantwortlichen für die Testdurchführung können die Units, Testhefte (Booklets) und Personendaten (Logins) hochladen, sowie die Ergebnisse herunterladen. 
+     Das Abspielen der Aufgabeninhalte übernimmt dabei ein so genannter Verona Player. Mehr zum Thema Verona finden Sie im gleichnamigen Kapitel. 
 
-* **IQB-Dateneditor**: Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
-beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
-Berichte, Publikationen, Rückmeldungen an Schulen.
+* **IQB-Dateneditor**:<br>
+    Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
+    beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
+    Berichte, Publikationen, Rückmeldungen an Schulen.
 
-* **IQB-Testarchiv**: Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
-Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
-der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+* **IQB-Testarchiv**:<br>
+    Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
+    Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards u. ä. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
+    der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
 
-* **IQB-Testdepot**: Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
-Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
-Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
-es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
+* **IQB-Testdepot**:<br>
+    Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
+    Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
+    Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
+    es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
 ---
 
