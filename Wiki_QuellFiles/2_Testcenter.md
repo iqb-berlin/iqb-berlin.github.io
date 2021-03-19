@@ -108,23 +108,9 @@ Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu lad
 Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
-[TBA Einführung -> Datenaustausch Testcenter Teststudio](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1.2-Datenhandshake-Testcenter-Teststudio)
+[TBA Einführung -> Ablauf Entwurf und Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung)
 
 ---
-
-### Namenskonventionen
-
----
-
-```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
-Stand: 17.03.2021
-to do:
-  - Wie sind die Dateien zu benamen, wie wird aufgerufen ID oder Dateinamen
-  
-```
----
-
 
 **Bevor es los geht ein paar Grundlagen:**
 
@@ -134,12 +120,12 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
 Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern `<Element Start>` eingeleitet und wie folgt beendet: `</Element Ende>`. 
 Jedes Element kann außer den eigentlichen Daten, welche zwischen zwei spitzen Klammern stehen, zusätzliche Attribute enthalten. 
-Attribute werden immer in der folgenden Form ausgedrückt: **Name Attribut = "Attributwert"** und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. 
+Attribute werden immer in der folgenden Form ausgedrückt: `Name Attribut = "Attributwert"` und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. 
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
 1. Element ohne Attribute mit Daten:<br>
 
-   Daten sind in diesem Fall der Text zwischen den spitzen Klammern: "Sekundarstufe I Englisch Ansichtsaufgaben".
+   Daten sind in diesem Fall der Text zwischen den spitzen Klammern: `"Sekundarstufe I Englisch Ansichtsaufgaben"`.
 
   ```xml
     <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
@@ -147,7 +133,7 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
 
 2. Element mit Attributen ohne Daten:<br>
 
-   Hier gibt es 3 Attribute: id, lable und lableshort. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
+   Hier gibt es 3 Attribute: `id`, `lable` und `lableshort`. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
    Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
    Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. 
    Diese Syntax gibt an, dass keine Daten folgen.
@@ -158,8 +144,8 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
 
 3. Element mit Daten und Attributen:<br>
 
-   Attribut ist hier: **key**. Dieses bekommt den Attributwert **force_presentation_complete** zugewiesen.
-   Datum ist der Wert: **ON**.
+   Attribut ist hier: `key`. Dieses bekommt den Attributwert `force_presentation_complete` zugewiesen.
+   Datum ist der Wert: `ON`.
 
 ```xml
     <Config key="force_presentation_complete">ON</Config>
@@ -451,6 +437,17 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 ---
 
+### Namensgebung
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+to do:
+  - Wie sind die Dateien zu benamen, wie wird aufgerufen ID oder Dateinamen
+  
+```
+---
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -472,7 +469,8 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 ## 2.4 Modi der Testdurchführung
 
-Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
+Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, 
+es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
 
 ### Wo wird das festgelegt?
 Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode`:
