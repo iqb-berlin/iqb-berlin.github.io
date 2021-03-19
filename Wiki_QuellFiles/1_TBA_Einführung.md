@@ -125,8 +125,8 @@ Welche Parameter das sind entnehmen Sie bitte dem Kapitel: [TBA Einführung / Be
 ### Durchführung
 
 Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
-mit den in der `Testtakers.xml` gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
-Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der `Testtakers.xml` gewählte Modi.
+mit den in der *Testtakers.xml* gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
+Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der *Testtakers.xml* gewählte Modi.
 Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
 
 
@@ -166,27 +166,27 @@ Das Teststudio erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines
 
 ### Funktion der Dateien
 
-`Testtakers.xml`
+**Testtakers.xml**
 * Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
 * Definition User und Testmodi
 * Definition Test Gruppe
 
 
-`Booklet.xml`
+**Booklet.xml**
 * Layout des Booklets
 * Namen des Testheftes
 * Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
 * Name der Unit
 * Beschränkungen mittels Codewort
 
-`Unit.xml`
+**Unit.xml**
 * Definition des zu verwendenden Players
 * Definition der zu verwendenden Ressourcen Datei
 
-`Unit.voud oder Unit.htm`
+**Unit.voud oder Unit.htm**
 * Aufgabeninhalte und Aussehen
   
-`Ressourcen.html`
+**Ressourcen.html**
 * Ressourcen für Player und anderes
 
 ---
@@ -196,23 +196,23 @@ Das Teststudio erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines
 Welche Werte in diesen Dateien beeinflusst werden können, ist nachfolgend aufgelistet.
 Mehr zu diesem Thema finden Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
 
-`Testtakers.xml`
+**Testtakers.xml**
 * Anmeldedaten
 * Art und Weise der Testdurchführung (Test Modi)
   
-`Booklet.xml`  
+**Booklet.xml**  
 * Namensgebung Booklet
 * Unit Reihenfolge/ Unit Aufruf
 * Booklet Konfiguration
   
-`Unit.xml`
+**Unit.xml**
 * Einbindung Ressourcendateien (Player, zugehörige .voud-Datei mit den Testinhalten)
 
-`Unit.voud`
+**Unit.voud**
 * Enthält die Aufgabeninhalte die im Teststudio mittels Editor entwurfen wurde.<br>
 Hier sind von Hand keine Änderungen möglich.
 
-`Player.html`
+**Player.html**
 * Enthält Player spezifische Parameter und sollte nicht verändert werden.
 
 ---
