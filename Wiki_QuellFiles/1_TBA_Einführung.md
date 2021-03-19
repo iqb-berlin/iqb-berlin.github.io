@@ -38,42 +38,47 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
-* **IQB-Teststudio**:<br> 
-    Das Teststudio besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-	Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.
-	In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
-	werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
-    Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
-	Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte den weiterführenden gleichnamigen Kaptiteln. 
-	Nach finaler Editierung der Aufgaben, generiert das Teststudio die Einheiten eines Kompetenztests (Units und weitere für den Test erforderliche
-	Dateien) in einem vepackten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
-	Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** geladen und wiedergegeben werden.
-	> Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-    > Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.
+### IQB-Teststudio
 
-* **IQB-Testcenter**:<br>
-     Mit dieser Anwendung wird der Kompetenztest durchgeführt. Das Testcenter besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-	 Letztere wird mittels Adresseingabe im Interbrowser geöffnet. Nach Anmeldung mit entsprechenden Zugangsdaten können dann die zuvor im **Teststudio** generierten Einheiten eines Tests
-	 geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden dabei in der Datenbank gespeichert und verwaltet.
-	 In die Benutzerschnittstelle ist ein weiteres softwarebasiertes Modul intergriert, der **Verona Player**. Dieser übernimmt das Abspielen von Inhalten der zuvor geladenen Einheiten eines Tests und verfügt
-	 über eine entsprechende Schnittstelle, die alle Aktionen innerhalb des Testverlaufes handhabt und eine spätere Auswertung ermöglicht. Weiterführende Informationen zum Thema Testcenter 
-	 entnehmen Sie bitte dem gleichnamigen Kapitel. 
+Das Teststudio besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
+Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.
+In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
+werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
+Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
+Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte den weiterführenden gleichnamigen Kaptiteln. 
+Nach finaler Editierung der Aufgaben, generiert das Teststudio die Einheiten eines Kompetenztests (Units und weitere für den Test erforderliche
+Dateien) in einem vepackten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
+Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** geladen und wiedergegeben werden.
+> Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+> Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.
 
-* **IQB-Dateneditor**:<br>
-    Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
-    beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
-    Berichte, Publikationen, Rückmeldungen an Schulen.
+### IQB-Testcenter
 
-* **IQB-Testarchiv**:<br>
-    Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
-    Berichte - aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards etc.. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
-    der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+Mit dieser Anwendung wird der Kompetenztest durchgeführt. Das Testcenter besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
+Letztere wird mittels Adresseingabe im Interbrowser geöffnet. Nach Anmeldung mit entsprechenden Zugangsdaten können dann die zuvor im **Teststudio** generierten Einheiten eines Tests
+geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden dabei in der Datenbank gespeichert und verwaltet.
+In die Benutzerschnittstelle ist ein weiteres softwarebasiertes Modul intergriert, der **Verona Player**. Dieser übernimmt das Abspielen von Inhalten der zuvor geladenen Einheiten eines Tests und verfügt
+über eine entsprechende Schnittstelle, die alle Aktionen innerhalb des Testverlaufes handhabt und eine spätere Auswertung ermöglicht. Weiterführende Informationen zum Thema Testcenter 
+entnehmen Sie bitte dem gleichnamigen Kapitel. 
 
-* **IQB-Testdepot**:<br>
-    Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
-    Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
-    Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
-    es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
+### IQB-Dateneditor
+
+Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
+beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
+Berichte, Publikationen, Rückmeldungen an Schulen.
+
+### IQB-Testarchiv
+
+Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
+Berichte aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards etc.. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
+der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+
+### IQB-Testdepot
+
+Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
+Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
+Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
+es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
 ---
 
