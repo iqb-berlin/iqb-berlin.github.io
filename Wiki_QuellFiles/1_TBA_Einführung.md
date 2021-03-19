@@ -45,7 +45,7 @@ Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschli
 In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
 werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
 Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
-Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte den weiterführenden gleichnamigen Kaptiteln. 
+Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte dem Kapitel: **Teststudio**. 
 Nach finaler Editierung der Aufgaben, generiert das Teststudio die Einheiten eines Kompetenztests (Units und weitere für den Test erforderliche
 Dateien) in einem vepackten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
 Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** geladen und wiedergegeben werden.
@@ -110,45 +110,61 @@ Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob 
 ### Entwurf
 
 In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen, bearbeitet und final ausgearbeitet.
-Anschließend werden die interaktiven Einheiten des Tests in einem Zip-Format ausgegeben. Mehr zu diesem Thema entnehmen Sie bitte dem **Teststudio** Kapitel.
+Mehr zu diesem Thema entnehmen Sie bitte dem Kapitel: **Teststudio**. Anschließend werden die interaktiven Testeinheiten in einem Zip-Format ausgegeben. 
 Diese können dann vor der Eingabe in das Testcenter bearbeitet werden und an die entsprechende Testumgebung angepasst werden.
+Mehr zum Thema Bearbeitung entnehmen Sie bitte dem Kapitel: **Testcenter**.
 
-Nachfolgend sehen Sie auch noch einmal eine grafische Darstellung der erzeugten Dateien:
-
-![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_TS_Output_final.png)
-
-### Die Testdateien
-
-#### Bearbeitung der Dateien
+### Bearbeitung der Testdateien
 
 Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung angepasst werden. 
 Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Schüler zugeordnet werden kann.
 Eventuell müssen Unitbezeichnungen oder auch Bookletbezeichnungen geändert werden. Auch die Reihenfolge der Units ist anpassbar.
 Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen um diese Änderungen durchzuführen.
-Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Tests und welche Werte in diesen Dateien beeinflusst werden können.
+Welche Parameter das sind entnehmen Sie bitte dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests)
+
+### Durchführung
+
+Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
+mit den in der `Testtakers.xml` gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
+Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der `Testtakers.xml` gewählte Modi.
+Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
 
 
-`Testtakers.xml`
-* Anmeldedaten
-* Art und Weise der Testdurchführung
-  
-`Booklet.xml`  
-* Namensgebung Booklet
-* Unit Reihenfolge/ Unit Aufruf
-* Booklet Konfiguration
-  
-`Unit.xml`
-* Einbindung Ressourcendateien (Player, zugehörige .voud-Datei mit den Testinhalten)
+### Auswertung
 
-`Unit.voud`
-* Enthält die Aufgabeninhalte die im Teststudio mittels Editor entwurfen wurde. Hier sind von Hand keine Änderungen möglich.
+Nach einer finalen Testdurchführung sind weitere Nachbearbeitungsschritte notwendig um zu einer aussagekräftigen Auswertung zu gelangen.
+Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wichtige Rolle spielt.
 
-`Player.html`
-* Enthält Player spezifische Parameter und sollte nicht verändert werden.
-  
 ---
 
-#### Funktion der Dateien
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+## 1.3 Bestandteile eines Tests
+
+Das Teststudio erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines Kompetenztests:
+
+![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_TS_Output_final.png)
+
+---
+
+### Funktion der Dateien
 
 `Testtakers.xml`
 * Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
@@ -173,33 +189,45 @@ Nachfolgend finden Sie eine Übersicht über alle Dateien (Einheiten) eines Test
 `Ressourcen.html`
 * Ressourcen für Player und anderes
 
+---
 
-### Durchführung
+### Parameter der Dateien
 
-Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
-mit den in der Testtakers.xml gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
-Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der Testtakers.xml gewählte Modi.
-Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
+Welche Werte in diesen Dateien beeinflusst werden können, ist nachfolgend aufgelistet.
+Mehr zu diesem Thema finden Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
 
+`Testtakers.xml`
+* Anmeldedaten
+* Art und Weise der Testdurchführung (Test Modi)
+  
+`Booklet.xml`  
+* Namensgebung Booklet
+* Unit Reihenfolge/ Unit Aufruf
+* Booklet Konfiguration
+  
+`Unit.xml`
+* Einbindung Ressourcendateien (Player, zugehörige .voud-Datei mit den Testinhalten)
 
-### Auswertung
+`Unit.voud`
+* Enthält die Aufgabeninhalte die im Teststudio mittels Editor entwurfen wurde.<br>
+Hier sind von Hand keine Änderungen möglich.
 
-Nach einer finalen Testdurchführung sind weitere Nachbearbeitungsschritte notwendig um zu einer aussagekräftigen Auswertung zu gelangen.
-Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wichtige Rolle spielt.
+`Player.html`
+* Enthält Player spezifische Parameter und sollte nicht verändert werden.
 
 ---
 
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Aktueller-Entwicklungsstand">
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Aktueller-Entwicklungsstand">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
@@ -208,7 +236,7 @@ Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wic
 
 ---
 
-## 1.3 Aktueller Entwicklungsstand
+## 1.4 Aktueller Entwicklungsstand
 
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
@@ -240,12 +268,12 @@ Diese Anwendungen werden derzeit konzipiert.
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Studiendurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Studiendurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward+++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -258,7 +286,7 @@ Diese Anwendungen werden derzeit konzipiert.
 
 ---
 
-## 1.4 Studiendurchführung
+## 1.5 Studiendurchführung
 
 ### Planung
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
@@ -346,12 +374,12 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Verfügbarkeit-IQB-Programmierung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Verfügbarkeit-IQB-Programmierung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Aktueller-Entwicklungsstand">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Aktueller-Entwicklungsstand">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -364,7 +392,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ---
 
-## 1.5 Verfügbarkeit IQB Programmierung
+## 1.6 Verfügbarkeit IQB Programmierung
 
 ### Der Auftrag
 
@@ -395,12 +423,12 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Was-macht-VERA-so-speziell%3F?">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.7-Was-macht-VERA-so-speziell%3F?">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.4-Studiendurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Studiendurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -413,7 +441,7 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 
 ---
 
-## 1.6 Was macht VERA so speziell?
+## 1.7 Was macht VERA so speziell?
 
 Der Name VERA steht für "Vergleichsarbeiten". Diese groß angelegten Kompetenztests dienen der Qualitätssicherung auf Ebene der
 Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der [Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
@@ -425,3 +453,17 @@ Die ersten Ansätze der Online-Durchführung sehen eine manuelle Übertragung de
 Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies  ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/research/dm/tba21/) und wird viele Jahre in Anspruch nehmen.
 
 ![Schema Online-Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Running-VERA.png)
+
+<!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Verfügbarkeit-IQB-Programmierung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
