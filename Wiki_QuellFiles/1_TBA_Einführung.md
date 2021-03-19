@@ -40,7 +40,7 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
 
 * **IQB-Teststudio**:<br> 
     Das Teststudio besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-	Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.<br>
+	Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.
 	In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
 	werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
     Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
