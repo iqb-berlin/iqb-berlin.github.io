@@ -7,7 +7,7 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 
 ---
 
-**Bevor es los geht ein paar Grundlagen:**
+**Bevor es los geht ein paar Grundlagen:
 <p>
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
