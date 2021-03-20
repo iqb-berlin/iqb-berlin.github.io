@@ -33,21 +33,35 @@ Des Weiteren besteht das folgende Forum:
 [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)                      
 Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
 
-### Aufbau
+---
 
-Nachfolgend ist der grobe Aufbau des Testcenters zu sehen. Dieses besteht aus einem Frontend und einem Backend.
-Das Frontend wird von den Endbenutzer\*innen, sprich den Testdurchführenden (Lehrer\*innen, Schüler\*innen und andere Verantwortlichkeiten), 
-verwendet. Hier erfolgt das Hochladen, Herunterladen und Löschen der einzelnen Dateien eines Tests, die finale oder probeweise Testdurchführung und 
-im administrativen Bereich das Verwalten von Benutzer\*innen und deren Rechten. Das Backend ist der softwaretechnisch Unterbau des Frontends. 
-Hier werden die Daten eines Tests, Benutzer\*in Daten und Metadaten gespeichert. Endbenutzer\*innen kommen mit diesem Teil des Testcenters nicht direkt in Berührung!
+### Einsatz und Aufbau des Testcenters
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Aufbau_final.png)
+Das Testcenter beinhaltet eine Datenbank, die zur Speicherung von Test und Metadaten verwendet wird.
+Des Weiteren werden mithilfe des Testcenters die interaktiven Inhalte eines Tests wiedergegeben. 
+Wobei nicht nur finale Tests durchgeführt werden können, sondern auch Probedurchläufe, die den Organisator\*innen einen Überblick 
+verschaffen an welchen Stellen des Test eventuelle noch Änderungen durchgeführt werden sollten. 
+Nachfolgend ist noch einmal aufgelistet welche Möglichkeiten das Testcenter bietet:
 
-Detailliert betrachtet besteht das Testcenter Frontend aus weiteren Komponenten. 
-An dieser Stelle sei einmal der Verona Player genannt, da dessen Funktion innerhalb des Testcenter Frontend auch den Anwender\*innen bekannt sein sollte. 
-Der Verona Player und seine definierte Schnittstelle zum Testcenter stellt die Aufgabeninhalte im Testcenter dar. 
-Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Weitere Schnittstellen und Umgebungsmodule, 
-die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend dargestellt.
+**Testdurchführung**
+
+* finale oder probeweise Testdurchführung (abspielen der Aufgaben)
+
+**Anlegen eines Tests**
+
+* upload, löschen und download der Testdateien
+
+**Administration**
+
+* Testverwaltung
+* Benutzerverwaltung/ Benutzerzugänge
+
+Detailliert betrachtet besteht das Testcenter aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
+damit nicht in Kontakt kommen dürften, einmal erwähnt werden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
+dürfte der so genannte Verona Player sein. Dieser Player ist in das Testcenter intergriert und ist für die Wiedergabe der Aufgabeninhalte
+zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das Testcenter.  
+Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, 
+die direkt oder indirekt mit dem Testcenter zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
@@ -72,13 +86,55 @@ die direkt oder indirekt mit dem Testcenter zusammenarbeiten, sind nachfolgend d
 
 ---
 
-## 2.2 Laden eines Tests
+## 2.2 Anmeldung und Laden eines Tests
 
-Nach der Anmeldung im Testcenter können Sie auf Ihren Workspace oder andere vom Administrator für Sie freigegebene Arbeitsbereiche, wie z.B Beispielaufgaben, zugreifen.
-                  
-**Der Workspace und andere Arbeitsbereiche müssen zuvor von einem IQB Administrator für Sie angelegt oder freigegeben werden!**
+### Anmeldung am Testcenter
 
-Anschließend ist es Ihnen möglich Dateien eines Tests in das Testcenter zu laden oder Testbestandteile aus dem Testcenter herunterzuladen. Auch die Löschung einzelner Datei ist möglich. Während des Hochladens findet eine Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das nachfolgende Bild:
+Wie dem Einführungskapiteln bereits zu entnehmen war, besteht ein Technologiebasierter Test aus mehreren Datei.
+Jede dieser Dateien bietet spezifische Möglichkeiten den Test bzgl. Aussehen und Ablauf zu beeinflussen. Um einen Test im Testcenter 
+abspielen zu können oder Dateien eines Tests in das Testcenter zu laden, zu löschen, oder aus dem Testcenter herunterzuladen, 
+bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschieden werden: 
+
+* der oder die Testorganisator\*in
+* die Testperson
+
+Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung, kann Dateien eines Tests bearbeiten, in das 
+Testcenter laden, Ablauf und auch Zugang zum Test für die Testpersonen festlegen. Es wird also ein Zugang zum Testcenter benötigt. Dieser Zugang
+kann nur von den Administrator\*innen des Testcenters angelegt werden. Wer ist nun aber der Administrator des Testcenters?<br> 
+Derzeitig werden die meisten Testdurchführenden auf das Testcenter zugreifen, welches die hausinternen IT-Strukturen 
+(Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
+wird der Betrieb beider Systeme, sowohl Teststudio als auch Testcenter, zunehmend in den eigenene IT-Strukturen der jeweiligen Bildungseinrichtungen 
+zum Einsatz kommen. Administrator\*innen des Testcenters und auch des Teststudios sind somit diejenigen, die für die IT-Struktur, in welcher
+die Systeme betrieben werden, verantwortlich sind. Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
+nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser, die Anmeldung am Testcenter vornehmen. Auch die einzugebene Internetadresse ist
+wiederum abhängig von der IT-Struktur in welcher das Testcenter betrieben wird. Möchten Sie das Testcenter in der IQB IT-Strukut nutzen, ist folgende
+Adresse im Browser einzugeben: https://www.iqb-testcenter.de. Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
+
+
+Die eigentliche Testdurchführung oder auch ein Probelauf für Testorganisator\*innen erfolgt mit separaten Zugangsdaten. 
+Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, 
+die Bestandteil eines jeden Tests ist. Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt und zusätzlich ein 
+Modi gesetzt werden. Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur einen Probedurchlauf für die Testorganisator\*innen
+handelt. Nachdem die Dateien eines Tests inklusive, der bzgl. des Logins angepassten *Testtakers.xml*, in das Testcenter geladen wurden, 
+können bei einer Neuanmeldung im Testcenter die in der *Testtakers.xml* gesetzten Zugangsdaten zur Anmeldung genutzt werden. 
+Anschließend wird der Test auf die über den Modi gewünschte Art und Weise abgespielt. 
+
+Bsp.:<br>
+Nehmen wir an Sie als Organisator\*in wollen für den Schüler Jakob einen finalen Test vorbereiten. 
+So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi, wie der Test ablaufen soll,
+auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das Testcenter geladen wurde, kann Jakob sich mit diesen von Ihnen
+eingetragenen Zugangsdaten am Testcenter anmelden und seinen Test in der von Ihnen gewünschten Art und Weise durchlaufen.
+
+Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
+
+### Laden eines Tests
+
+Nach der Anmeldung als Testorganisator\*in am Testcenter, können die Bestandteile (Dateien) des Tests geladen werden.
+Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das Testcenter findet eine 
+Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. 
+Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend
+die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig
+die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das nachfolgende Bild:
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Dateien_final.png)
 
@@ -193,7 +249,8 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>CustomText:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration</b> im Kapitel:<br><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
+    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration</b> im Kapitel:
+	<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
 </tr>
 <tr>
     <td>CustomText:</td>
