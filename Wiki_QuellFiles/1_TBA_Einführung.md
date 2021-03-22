@@ -34,6 +34,8 @@ Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchf
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
+---
+
 ### IQB-Teststudio
 
 Das **Teststudio** besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzeroberfläche.
@@ -47,6 +49,8 @@ geladen und wiedergegeben werden.
 > Das **Teststudio** für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
 > Die derzeitige Version nennt sich **Teststudio Lite**. Die überarbeitete Version wird dann den Namen **Teststudio Pro** tragen.
 
+---
+
 ### IQB-Testcenter
 
 Mit dieser Anwendung werden Kompetenztests durchgeführt und von den Testorganisator\*innen in den Abläufen getestet. Das **Testcenter**
@@ -58,12 +62,15 @@ Bearbeitung bestimmter Testeinheiten (Testdateien) beinflusst werden. Die Änder
 Probedurchläufen im **Testcenter** begutachtet werden. Dies trägt zu einem gesicherten Ablauf des finalen Tests bei.
 Mehr zum Thema **Testcenter** erfahren Sie im gleichnamigen Kapitel.
   
+---
 
 ### IQB-Dateneditor
 
 Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, 
 Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich 
 die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
+
+---
 
 ### IQB-Testarchiv
 
@@ -72,6 +79,8 @@ Analysedaten, Berichte aber auch Protokolle der Testdurchführung, eine Kritik d
 Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung der Daten für Sekundäranalysen in einem 
 Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, 
 besondere Formate für die Dateien usw.).
+
+---
 
 ### IQB-Testdepot
 
@@ -109,11 +118,15 @@ Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob 
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
 
+---
+
 ### Entwurf
 
 In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen und final ausgearbeitet.
 Mehr zu diesem Thema entnehmen Sie bitte dem Kapitel **Teststudio**. Anschließend werden die interaktiven Testeinheiten in einem Zip-Format ausgegeben. 
 Diese können dann vor der Eingabe in das **Testcenter** bearbeitet und an die entsprechende Testumgebung angepasst werden.
+
+---
 
 ### Bearbeitung der Testdateien
 
@@ -124,6 +137,8 @@ Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen
 Welche Parameter dies im Einzelnen sind, ist dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests) zu entnehmen.
 Mehr zum Thema Bearbeitung finden Sie auch im Kapitel **Testcenter**.
 
+---
+
 ### Durchführung
 
 Sind die Dateien entsprechend der spezifischen Testumgebung angepasst wurden, können sie im **Testcenter** abgespielt werden. 
@@ -132,6 +147,8 @@ Dabei ist es den Testorganisator\*innen möglich mittels Konfiguration einer bet
 Parameter bearbeiten und die Ergebnisse nachfolgend im **Testcenter** begutachten. Haben die Organisator\*innen die Bearbeitung
 des Test abgeschlossen, kann der finale Test gestartet werden. Testdurchführende erhalten dazu, die in der entsprechenden Datei (*Testtakers.xml*)
 von Orgnanisator\*innen festgelegten Zugangsdaten. Nach erfolgreicher Anmeldung startet der finale Test.
+
+---
 
 ### Auswertung
 
@@ -258,16 +275,23 @@ Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als
 * Einsatz eingebettet in eine fremde Anwendungsumgebung: Das Einspielen von Testinhalten und das Auslesen von Testantworten erfolgt nicht über das Verwaltungsportal des IQB-Testcenters, sondern durch Drittanwendungen über das API des IQB-Testcenters.
 * Optimierung des Installationspaketes hinsichtlich Lastverhalten während des Tests
 
+---
+
 ### IQB-Teststudio
 Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams können hinreichend schnell Aufgaben gestalten. Diese einfache Version des IQB-Teststudios wird als IQB-Teststudio-Lite weitergeführt. Nächste Entwicklungsschritte:
 * Verbesserung der Import/Export-Funktionen
 * Konzeption eines IQB-Teststudios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
 
+---
+
 ### IQB-Dateneditor
 
 Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung [ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md).
 
+---
+
 ### IQB-Testarchiv IQB-Testdepot
+
 Diese Anwendungen werden derzeit konzipiert. 
 
 ---
@@ -299,6 +323,7 @@ Stand: 17.03.2021
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
+---
 
 ### Planung
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
@@ -313,6 +338,8 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Wie hoch ist das Risiko für technische Probleme? Soll jemand aus der Systemadministration oder Programmierung ständig greifbar sein?
 * Wie lautet die genaue Internet-Adresse für die Testung bzw. Befragung?
 
+---
+
 ### Units gestalten mit IQB-Teststudio
 
 #### Vorbereitung
@@ -325,11 +352,15 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * ggf. Grafikdateien aufbereiten (Farben prüfen, Auflösung bei Zoom)
 * Konventionen festlegen (Einrückung, Schriftart/-größe, Zeilenabstand, Formulierung bei Instruktionen, Benennung der Units usw.)
 
+---
+
 #### Übertragung organisieren
 
 * Trello, CryptPad Kanban o. ä. einrichten, um für jede Unit den aktuellen Status zu dokumentieren
 * Workflow definieren: Wer macht ersten Entwurf, wer schaut drüber, wer prüft psychometrisch, wer prüft fachdidaktisch usw.
 * Schulungen und Austausch der Autorinnen und Autoren untereinander planen
+
+---
 
 #### Gestaltung
 
@@ -340,10 +371,14 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * frühzeitig einige Units in das IQB-Testcenter übertragen, um deren Verhalten zu überprüfen
 * Units regelmäßig als Dateien exportieren als Backup
 
+---
+
 #### Export
 
 * Units exportieren mit Xml und Voud
 * (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
+
+---
 
 ### Teststudio einrichten
 
@@ -353,15 +388,21 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Neuen Arbeitsbereich (Workspace) anlegen lassen
 * System-Check ggf. einrichten und freigeben
 
+---
+
 #### Units hochladen
 
 * (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/teststudio-lite-frontend/wiki/Workaround-%22Fehlerhafte-Unit-Xml%22))
 * Erst die voud-Dateien, dann die Xml-Dateien hochladen. Es könnte sonst passieren, dass eine Xml abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
 
+---
+
 #### Testhefte hochladen
 
 * Eine [xlsx-Datei für die ict-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/docs/manual-booklet.md) kann helfen, das Testdesign transparent zu planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten Xml-Dateien hochzuladen.
 * Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
+
+---
 
 ### Review und Probelauf
 
@@ -370,12 +411,16 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die Xml-Änderungen).
 * Auch Logins im hot-restart-Modus anlegen, Real-Time-Tests durchführen und sorgfältig auswerten
 
+---
+
 ### Studie durchführen
 
 * Logins für Durchführung hochladen, ggf. Zeitfenster gut dokumentieren
 * täglich Antworten und Logs ziehen und speichern
 * Probeauswertungen vornehmen: Nur so erkennt man früh, wenn bestimmmte Variablen nicht ankommen
 * Hotline auswerten, auch erste Testprotokolle analysieren
+
+---
 
 ### Auswertung, Evaluation
 
@@ -412,24 +457,37 @@ Stand: 17.03.2021
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
+---
 
 ### Der Auftrag
 
-Das IQB ist länderfinanziert und erhält daher Aufträge stets mit Blick auf den Nutzen für die Länder der Bundesrepublik Deutschland. Dies ist insbesondere beim computerbasierten Testen im Bildungswesen der Fall. Denn wenn bisher die Aufgaben als Druckvorlagen an die Länder geliefert wurden, die jede Druckerei vervielfältigen kann, sind Testaufgaben im Online-Format nur durch spezielle Testsysteme nutzbar. Das Speicherformat muss kompatibel sein.
+Das IQB ist länderfinanziert und erhält daher Aufträge stets mit Blick auf den Nutzen für die Länder der Bundesrepublik Deutschland. 
+Dies ist insbesondere beim computerbasierten Testen im Bildungswesen der Fall. Denn wenn bisher die Aufgaben als Druckvorlagen an die Länder geliefert wurden, 
+die jede Druckerei vervielfältigen kann, sind Testaufgaben im Online-Format nur durch spezielle Testsysteme nutzbar. Das Speicherformat muss kompatibel sein.
+Viele der Kompetenztestungen finden durch die Länder selbst statt ohne Beteiligung des IQB. Daher sind alle Programmierarbeiten am IQB mit der Auflage verbunden, 
+die Nutzbarkeit der Aufgaben durch die Länder sicherzustellen.
 
-Viele der Kompetenztestungen finden durch die Länder selbst statt ohne Beteiligung des IQB. Daher sind alle Programmierarbeiten am IQB mit der Auflage verbunden, die Nutzbarkeit der Aufgaben durch die Länder sicherzustellen.
+---
 
 ### Software ist frei nutzbar
 
-Der erste Schritt hierzu ist die Veröffentlichung des Codes und der Dokumentationen sowie der Installationspakete aller IQB-Anwendungen hier auf GitHub. Alle Interessierten können die Software installieren und ohne Kenntnis des IQB einsetzen. Gemäß des o. g. Auftrages sind wir sehr daran interessiert, die Nutzung durch Dritte zu unterstützen, insbesondere durch die Länder.
+Der erste Schritt hierzu ist die Veröffentlichung des Codes und der Dokumentationen sowie der Installationspakete aller IQB-Anwendungen hier auf GitHub. 
+Alle Interessierten können die Software installieren und ohne Kenntnis des IQB einsetzen. Gemäß des o. g. Auftrages sind wir sehr daran interessiert, 
+die Nutzung durch Dritte zu unterstützen, insbesondere durch die Länder.
+
+---
 
 ### Aufgabenaustausch
 
-Wie sieht es aber mit Einrichtungen aus, die eigene Anwendungen (weiter-)nutzen? Wie können hier die Aufgaben eingesetzt werden? Eine länderübergreifende Fachgruppe evaluierte die Optionen. Zunächst wurde die Nutzung eines vorhandenen Speicherstandards verworfen. Entweder erfüllt ein Standard nicht alle Anforderungen (nicht alle Interaktionsformate können abgebildet werden), oder zu dessen Verwendung ist Software nötig, die zu teuer oder nur über spezialisierte Dienstleister nutzbar ist. Einen neuen Standard für ein Speicherformat zu entwickeln, wurde ebenfalls verworfen.
+Wie sieht es aber mit Einrichtungen aus, die eigene Anwendungen (weiter-)nutzen? Wie können hier die Aufgaben eingesetzt werden? Eine länderübergreifende Fachgruppe evaluierte die Optionen. 
+Zunächst wurde die Nutzung eines vorhandenen Speicherstandards verworfen. Entweder erfüllt ein Standard nicht alle Anforderungen (nicht alle Interaktionsformate können abgebildet werden), 
+oder zu dessen Verwendung ist Software nötig, die zu teuer oder nur über spezialisierte Dienstleister nutzbar ist. Einen neuen Standard für ein Speicherformat zu entwickeln, wurde ebenfalls verworfen.
+Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmcode mitzuliefern, der zwischen Testsystem und der Aufgabe vermittelt. Für spezielle Anforderungen können also jederzeit neue 
+Speicherformate entwickelt werden, solange der erforderliche Programmcode mitgeliefert wird. Ein vorhandenes Testsystem muss nur einmalig die Schnittstelle zu derartigem Programmcode implementieren.
+Dieses modulare System analog eines Plug-In gewährleistet eine enorme Flexibilität der Aufgabenformate, ohne dass jeweils ein ganzes Testsystem angepasst werden muss. 
+Dieser Mechanismus ist [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Verona) beschrieben.
 
-Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmcode mitzuliefern, der zwischen Testsystem und der Aufgabe vermittelt. Für spezielle Anforderungen können also jederzeit neue Speicherformate entwickelt werden, solange der erforderliche Programmcode mitgeliefert wird. Ein vorhandenes Testsystem muss nur einmalig die Schnittstelle zu derartigem Programmcode implementieren.
-
-Dieses modulare System analog eines Plug-In gewährleistet eine enorme Flexibilität der Aufgabenformate, ohne dass jeweils ein ganzes Testsystem angepasst werden muss. Dieser Mechanismus ist [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Verona) beschrieben.
+---
 
 ### Lizenzen
 
@@ -468,15 +526,21 @@ Stand: 17.03.2021
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
+---
 
 Der Name VERA steht für "Vergleichsarbeiten". Diese groß angelegten Kompetenztests dienen der Qualitätssicherung auf Ebene der
-Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der [Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
+Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der 
+[Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
+Die Testaufgaben und auch die Zusammenstellungen der Aufgaben (Module, Testhefte) werden vom IQB geliefert. Die Durchführung selbst liegt in der Hand der Länder, 
+d. h. es gibt hier keine gemeinsame Infrastruktur. Beim bisherigen papierbasierten Verfahren übergibt das IQB Druckvorlagen (pdf), die in Länderregie gedruckt und verteilt werden. 
+Hier kommen mitunter Online-Portalsysteme zum Einsatz, um die Logistik zu bewältigen, aber auch um die Antworten der Schülerinnen und Schüler einzugeben und zu bewerten. 
+Die Lehrkräfte erhalten außerdem über diese Portale die Ergebnisse der Datenanalysen, aus denen sie für den Unterricht Verbesserungen ableiten können (sog. Rückmeldungen).
+Die ersten Ansätze der Online-Durchführung sehen eine manuelle Übertragung der Papierversion der Aufgaben in ein Online-Format vor. 
+Das jeweilige vorhandene Portalsystem wird um einen Onlinetest erweitert. Diese Übertragung der Aufgaben erfolgt für jedes Portalsystem für jedes Jahr. Auf diese Art können viele Länder seit einigen Jahren 
+den Schulen parallel eine Online-Durchführung von VERA anbieten.
 
-Die Testaufgaben und auch die Zusammenstellungen der Aufgaben (Module, Testhefte) werden vom IQB geliefert. Die Durchführung selbst liegt in der Hand der Länder, d. h. es gibt hier keine gemeinsame Infrastruktur. Beim bisherigen papierbasierten Verfahren übergibt das IQB Druckvorlagen (pdf), die in Länderregie gedruckt und verteilt werden. Hier kommen mitunter Online-Portalsysteme zum Einsatz, um die Logistik zu bewältigen, aber auch um die Antworten der Schülerinnen und Schüler einzugeben und zu bewerten. Die Lehrkräfte erhalten außerdem über diese Portale die Ergebnisse der Datenanalysen, aus denen sie für den Unterricht Verbesserungen ableiten können (sog. Rückmeldungen).
-
-Die ersten Ansätze der Online-Durchführung sehen eine manuelle Übertragung der Papierversion der Aufgaben in ein Online-Format vor. Das jeweilige vorhandene Portalsystem wird um einen Onlinetest erweitert. Diese Übertragung der Aufgaben erfolgt für jedes Portalsystem für jedes Jahr. Auf diese Art können viele Länder seit einigen Jahren den Schulen parallel eine Online-Durchführung von VERA anbieten.
-
-Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies  ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/research/dm/tba21/) und wird viele Jahre in Anspruch nehmen.
+Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. 
+Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies  ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/research/dm/tba21/) und wird viele Jahre in Anspruch nehmen.
 
 ![Schema Online-Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Running-VERA.png)
 
