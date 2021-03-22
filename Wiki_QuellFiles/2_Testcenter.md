@@ -19,7 +19,7 @@ Grundlegende Informationen zum **Testcenter** erhalten Sie auch im TBA Einführu
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -43,8 +43,8 @@ Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Eins
 
 Das **Testcenter** beinhaltet eine Datenbank, die zur Speicherung von Tests und Metadaten verwendet wird.
 Des Weiteren werden mithilfe des **Testcenters** die interaktiven Inhalte eines Tests wiedergegeben. 
-Wobei nicht nur finale Tests durchgeführt werden können, sondern auch Probedurchläufe, die den Organisator\*innen einen Überblick 
-verschaffen bzgl. eventueller Nachbearbeitung eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten das Testcenter bietet:
+Wobei nicht nur finale Tests, sondern auch Probedurchläufe durchgeführt werden können. Letztere verschaffen den Organisator\*innen einen Überblick 
+bzgl. eventueller Fehlabläufe und damit nötiger Nachbearbeitungen eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten das **Testcenter** bietet:
 
 **Testdurchführung**
 
@@ -59,11 +59,11 @@ verschaffen bzgl. eventueller Nachbearbeitung eines Tests. Nachfolgend ist noch 
 * Testverwaltung
 * Benutzerverwaltung/ Benutzerzugänge
 
-Detailliert betrachtet besteht das Testcenter aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
-damit nicht in Kontakt kommen dürften, einmal erwähnt werden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
-dürfte der so genannte Verona Player sein. Dieser Player ist in das Testcenter intergriert und ist für die Wiedergabe der Aufgabeninhalte
-zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das Testcenter.Näheres zum Thema Verona entnehmen Sie bitte dem 
-gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
+Detailliert betrachtet besteht das **Testcenter** aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
+damit nicht in Kontakt kommen dürften, einmal Erwähnung finden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
+dürfte der so genannte Verona Player sein. Dieser Player ist in das **Testcenter** intergriert und ist für die Wiedergabe der Aufgabeninhalte
+zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das **Testcenter**. Näheres zum Thema Verona entnehmen Sie bitte dem 
+gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
@@ -79,9 +79,9 @@ gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, die d
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -100,27 +100,33 @@ bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschied
 * Testorganisator\*innen
 * Testpersonen
 
+---
+
 #### Testorganisator\*in
 
 Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, das Laden und Löschen der Testbestandteile,
 die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, sprich wie der Test im **Testcenter** ablaufen soll.
-Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. Dieser Zugang kann nur von den Administrator\*innen des Testcenters angelegt werden.
+Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. Dieser Zugang kann nur von den Administrator\*innen des **Testcenters** angelegt werden.
 
   
-**Wer ist nun aber Administrator\*in des Testcenters?**
+*Wer ist nun aber Administrator\*in des Testcenters?*
 
 Derzeitig werden die meisten Testdurchführenden auf das **Testcenter** zugreifen, welches die hausinternen IT-Strukturen 
 (Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
 wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen der jeweiligen Bildungseinrichtungen 
 zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** sind somit diejenigen, die für die IT-Strukturen in welcher
-die Systeme betrieben werden, verantwortlich sind. Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
+die Systeme betrieben werden, verantwortlich sind. 
+
+Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
 nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. Auch die einzugebene Internetadresse ist
 wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: **https://www.iqb-testcenter.de**.
 Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
 
+---
+
 #### Testperson
 
-Die eigentliche Testdurchführung oder auch ein Probelauf für Testorganisator\*innen erfolgt mit separaten Zugangsdaten. 
+Die eigentliche Testdurchführung, oder auch ein Probelauf für Testorganisator\*innen, erfolgt mit separaten Zugangsdaten. 
 Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, die Bestandteil eines jeden Tests ist. 
 Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt und zusätzlich ein Modi gesetzt werden. 
 Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen Probedurchlauf für die Testorganisator\*innen
@@ -137,9 +143,11 @@ eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von
 
 Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
 
+---
+
 ### Laden eines Tests
 
-Nach der Anmeldung als Testorganisator\*in am **Testcenter**, können die Testbestandteile geladen werden.
+Nach der Anmeldung als Testorganisator\*in am **Testcenter** können die Testbestandteile geladen werden.
 Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das **Testcenter** findet eine 
 Plausibilitätsprüfung statt. Dabei wird überprüft ob die definierten Bestandteile in einer Datei während des Hochladens auch gefunden werden. 
 
@@ -155,7 +163,7 @@ In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu e
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Berabeiten-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -164,9 +172,9 @@ In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu e
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -306,7 +314,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>Login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.).<br>Siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a></td>
+    <td>Vordefinierter Wert. Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a></td>
 </tr>
 <tr>
     <td>Login:</td>
@@ -513,9 +521,9 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -526,6 +534,8 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, 
 es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
+
+---
 
 ### Wo wird das festgelegt?
 Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode`:
@@ -550,6 +560,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
      </Group>
    </Testtakers>
 ```
+---
 
 ### Welche Modi gibt es?
 | Modus | Erläuterung |
@@ -560,6 +571,8 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 | run-review | Zum Ausprobieren: Einige Beschränkungen gelten nicht (s. u.). |
 | run-demo | Kein Speichern, keine Beschränkungen (s. u.). |
 | monitor-group | Reserviert zur Nutzung der Testleitungskonsole. |
+
+---
 
 ### Die Modi konkret
 
@@ -587,13 +600,13 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Berabeiten-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -727,7 +740,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoption">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoptionen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -736,9 +749,9 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
@@ -747,13 +760,27 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ## 2.6 Anmeldeoptionen
 
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+todo:
+  - Was gehört hier noch her? Mit Martin klären.
+```
+---
+
 Für eine Testdurchführung erlaubt das IQB-Testcenter verschiedene Arten der Anmeldung der Testperson:
+
+---
 
 ### Klassisch: Anmeldename, Kennwort
 Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. Diese Anmeldeform wird üblicherweise erwartet. Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt aber nur Punkte, d. h. man kann nicht mitlesen.
 
+---
+
 ### Kurz: Nur Anmeldename
 Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung des Namens hinreichend ungewöhnlich ist. Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
+
+---
 
 ### Noch kürzer: Link
 Wenn nur ein Anmeldename ohne Kennwort als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken. Wenn "u8h5m2a4c3x2f2g8" der Anmeldename ist würde der Link so aussehen:
@@ -762,26 +789,192 @@ https://www.iqb-testcenter.de/#/u8h5m2a4c3x2f2g8
 ```
 Dadurch macht man es noch einfacher: Auf den Link klicken, und man muss nur noch das Testheft wählen. Diese Form der Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: Es wird nur ein Login in einer Einladungs-E-Mail verschickt, und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
 
+---
+
 ### Länger: Anmeldename, Kennwort, Personencode
 Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen und Schüler alle Computer zu starten, einen Standard-User anzumelden, den Browser zu starten und die richtige Internet-Adresse aufzurufen. Dann ist es auch hilfreich, wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. Anmeldename und Kennwort sind dann für die Gruppe gleich. Es reicht dann anschließend die Eingabe eines kurzen Personencodes durch die Testperson, um eine eindeutige Identifizierung sicherzustellen. Man spart so Testzeit und vermeidet Fehleingaben. Dieses Szenario bietet sich z. B. an, wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemieteten Computer-Lab durchführt.
 
 ---
 
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-ITC-Toolbox">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
-</a>
-</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div align='center'>
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
 
 ---
+
+## 2.7 ITC Toolbox
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+todo:
+  - Gehört das Kapitel hierher? Muss der Anwender jemals mit diesem Tool arbeiten? Mit Martin klären.
+```
+---
+
+Verlinkung zu derzeitigen Informationen:
+  * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net). Man erhält Unterstützung bei der Erstellung von Steuerdateien (Logins, Testheft-Xml) und bei der Aufbereitung der Ergebnisse.
+
+Was fehlt noch?
+
+ * Alle Informationen der README.md im Repository: Itc-Toolbox in dieses Kapitel einbringen.
+
+---
+
+## 2.8 IQB Daten Spezifikationen
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+todo:
+  - Gehört das Kapitel hierher? Ist der Inhalt vollständig? Mit Martin klären.
+```
+---
+
+### IQB-Definitionen für Verona-Daten
+
+In diesem Repository sind alle Datenformate beschrieben, die das IQB im Zusammenhang 
+mit Verona-Anwendungen nutzt. Verona steht hier für eine Initiative zur Spezifizierung 
+von Schnittstellen, die im computerbasierten Testen genutzt werden können. Weitere 
+Informationen zu Verona-Schnittstellen [hier](https://github.com/verona-interfaces/introduction).
+
+#### Unit-Definitionen
+Die Fragen eines Tests werden üblicherweise gruppiert. Obwohl auch eine Frage einzeln
+auf einer Seite präsentiert werden kann, nimmt man oft mehrere Fragen, die inhaltlich 
+eine Einheit bilden, zusammen. Diese sogenannte Unit kann man mit einer Aufgabe 
+vergleichen, die mehrere Teilaufgaben hat.
+
+Der Verona-Ansatz sieht vor, dass ein Testsystem jeweils die Daten einer Unit lädt 
+und dann eine dazu passende Komponente zur Präsentation wählt (den sog. Player). Folgende 
+Datentypen verwendet das IQB für seine Player:
+
+* [iqb-scripted](unit-defs/manual_iqb-scripted.md): Die Unit-Definition besteht aus einem Script. 
+Diese Folge von Anweisungen ist eine einfache Text-Datei, die in einem Texteditor bearbeitet
+werden kann oder aus einem Hilfsprogramm automatisiert erzeugt wird. Es gibt keine Vorschriften zur 
+Verarbeitung der Antworten (richtig/falsch usw.). Dieses Format wird vorrangig für 
+Befragungen genutzt (z. B. Evaluationen oder Protokolle von Testsitzungen).
+
+#### Player-Antwortdaten
+Während der Durchführung eines Tests oder einer Befragung gibt der Player die 
+Antwortdaten an das Testsystem zur Speicherung. Die Spezifikation dieser 
+Antwortdaten ist wichtig, um nachfolgend eine korrekte Datenverarbeitung (Kodierung,
+Analyse) zu gewährleisten:
+* [iqb-key-value](responses/manual_iqb-key-value.md): Dieses JSON-Format speichert Antworten als 
+Schlüssel-Wert-Paare in JSON-Notation. Der Schlüssel ist stets ein String, der Wert (aktuell in 
+Version 1.0) ebenfalls. Da dieses Format keine weiteren Festlegungen
+enthält, ist es zwar universell, aber erst mit vielen Zusatzinformationen aus dem 
+Erhebungszusammenhang sinnvoll zu verarbeiten.
+
+#### Steuerung für Tests/Befragungen
+Die Verona-Schnittstellen beziehen sich jeweils auf eine Unit. Das IQB wird aber auch Konventionen
+definieren, die sich auf die Unit-Abfolge im Rahmen eines Tests bzw. einer Befragung beziehen. Eine 
+IQB-Software soll dann deklarieren, ob oder wie diese Konventionen umgesetzt sind.
+
+Folgende Dokumentationen sind hierzu verfügbar:
+* (IQB-Testcenter): Optionen zur Steuerung der Testdurchführung über die Booklet-Xml 
+[hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/booklet-config.md). 
+* (IQB-Testcenter): Modi der Testdurchführung (festgelegt über Testtaker-Xml)
+[hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
+ 
+
+### IQB Verona Data Specifications
+
+Verona interfaces are specifications concerning computer based assessment. You can learn 
+more about this German initiative [here](https://github.com/verona-interfaces/introduction).
+
+The IQB uses these interface specs for it's own applications. One important feature of these 
+Verona interfaces is the black box approach for data exchange. Although the 
+applications communicate via well defined channels, the structure of the transferred 
+data is unknown. Only the name and version of data specification is needed to select 
+the matching component.  
+
+Nevertheless, every producer of data should document data structures. For the IQB, we 
+do this in this repository. The manuals are in German language, because most of the 
+people involved in data supply and processing welcome this language very much.
+
+
+## 2.9 Verona Player
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+todo:
+  - Eventuell dieses Thema hier nicht aufführen??? 
+  - Inhaltlich vollständig?
+  - Querverweise zum Repo Verona Interfaces setzen
+```
+---
+
+### Verona Player Einführung
+In Deutschland gibt es für internationale (z. B. PISA) und einheitliche nationale 
+Erhebungen (z. B. Bildungstrend) jeweils zentrale Einrichtungensdsadasdasda oder Firmen zur 
+Durchführung. Da für die Bildungspolitik aber jedes Bundesland einzeln zuständig ist, 
+werden Kompetenzerhebungen oft in Länderregie durchgeführt. Entsprechend ist die 
+Vielfalt an Anforderungen an ein technisches System zum computerbasierten Testen.    
+
+Erhebungen zum Bildungsmonitoring erfordern nicht nur die eigentliche 
+Computeranwendung zur unmittelbaren Durchführung des Tests, sondern auch komplexe Portale 
+zur Vorbereitung (Eingabe der Daten der Testgruppen bzw. -personen, Festlegungen zum 
+Inhalt und Ablauf der Tests) und zur Auswertung (anschauliche Präsentation der 
+Ergebnisse, Anregungen zur Interpretation und zur Weiterarbeit). Die erhebliche Vielfalt 
+und Komplexität der Anwendungen führt dazu, dass es keine einheitliche Software geben 
+kann, die von allen genutzt wird. Statt dessen entwickeln die Länder gemeinsam eine 
+offene und schrittweise wachsende Landschaft von Software-Modulen, die über 
+wohldefinierte Schnittstellen durch alle Beteiligten genutzt werden können.
+
+Lernstandserhebungen in den Ländern gibt es papierbasiert seit 2003. Diese 
+Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Aus der Verbindung mit 
+"Online" wurde dann die Bezeichnung "Verona" für VERA Online. Die nötigen Schnittstellen 
+(engl. Interfaces) sind in diesem Dokumenten- bzw. Codeverwaltungssystem GitHub 
+beschrieben.
+
+Da die Testsysteme eine Anpassung erfahren müssten, wenn Aufgabenformate geändert werden, kommt ein Player mit einer definierten Schnittstelle zum Einsatz. 
+Der zu verwendende Player wird in der jeweiligen Unit definiert und mit der Unit geladen. Dieser spielt dann die in der Unit definierten Aufgabenformate ab. 
+Die dazu gehörige Schnittstelle des Players gewährleistet eine Kompatibilität zu den Anwendungen, die bereits für die Vera Papierstudien genutzt wurden und weiterhin werden. 
+Der Player wird daher auch Verona-Player und die Schnittstelle auch Verona-Schnittstelle genannt. Ändert sich ein Aufgabenformat, muss somit nur noch ein dazu passender Player geladen werden, 
+der dieses Format auch abspielen kann. Durch den modularen Aufbau des Testcenters entfällt somit eine Anpassung der gesamten Testumgebung, wenn sich Aufgabenformate ändern. Stattdessen 
+wird einfach der entsprechende Player für das Format geladen und in die Oberfläche des Testcenters intergriert.
+
+Nachfolgend finden Sie einige Videos zum Thema:
+
+* [Verona-Interfaces: 1.Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
+* [Verona-Interfaces: 2.Player-Model](https://box.hu-berlin.de/f/8f4b50975e9645af803b/)
+* [Verona-Interfaces: 3.Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
+
+---
+
+### Grundsätze Player Programmierung
+
+Die folgenden Grundsätze bestimmen aktuell die Entwicklung von Verona-Playern am IQB. Sie sind nicht mit anderen Partnern bzw. Institutionen abgestimmt. 
+Die Grundsätze sind teilweise noch nicht umgesetzt, sondern werden bei künftigen Änderungen implementiert.
+
+#### Datenformat der Unit-Definition
+
+Aus der Unit-Definition müssen Anwendungen erkennen, welcher Player benutzt werden soll, um die Unit anzuzeigen bzw. auszuführen. 
+Das IQB hinterlegt hier nicht eine ID eines Players, sondern benennt das Datenformat. Dies ist universeller, denn es mag verschiedene Player geben, 
+die das Datenformat unterstützen. Außerdem ergibt sich daraus auch der notwendige Editor bzw. die Liste der möglichen Editoren für die Änderung der Unit-Defintion.
+Das Datenformat besteht aus einer ID und einer Version nach Semantic Versioning 2.0.0, getrennt durch Leerzeichen. Beispiel: `iqb-dan 3.2.3`. 
+Es werden Player bzw. andere Programmierungen als kompatibel angesehen, die mindestens diese Version unterstützen sowie maximal die letzte Version des major-Elementes der Version. 
+Für das Beispiel würde das bedeuten, dass ein Player mit dokumentiertem Datenformat `iqb-dan 3.4.0` oder `iqb-dan 3.34.7` als zulässig angesehen wird, aber die Versionen `iqb-dan 3.2.1` sowie `iqb-dan 4.0.0` nicht.
+
+#### Player-Registry
+
+Für Player und andere Module sollten Metadaten hinterlegt werden, die die Eignung für bestimmte Use Cases und Datenformate anzeigen und die Auswahl durch eine Anwendung unterstützen. 
+Wir stellen uns einen Server vor, über dessen API Anfragen gestellt und Referenzen auf Player zurückgegeben werden können. Diese Referenzen sollten vorzugsweise DOI-Kennungen sein, 
+die dann auf GitHub-Dateien aufgelöst werden. Dieses Verfahren ist in Vorbereitung, wird aber aktuell als übertrieben angesehen angesichts der geringen Anzahl der Player. 
+Wer Anwendungen für Verona-Plugins erstellt, sollte ein manuelles Einspielen der erforderlichen Player/Editoren usw. vorsehen.
+
+#### Kleine fokussierte Player
+
+Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player einsetzen. Man könnte Player konzipieren, die alle möglichen Interaktionselemente abdecken, 
+das IQB möchte aber eher typische Interaktionselemente als Basisausstattung umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. 
+Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. Wo dann genau die Grenze zu ziehen ist wird 
+sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
