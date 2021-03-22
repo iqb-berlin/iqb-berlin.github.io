@@ -1,15 +1,19 @@
 # 2.Testcenter
 
-**Vorab:**
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+todo:
+  - Was gehört hier noch her? Spezielle Infos zum Testcenter, wie z.B. Ansprechpartner, Entwicklungststände etc?
+```
 
-Grundlegende Informationen zum Testcenter Frontend erhalten Sie auch im TBA Einführungskapitel.
-Das Testcenter besteht aus einem Back- und einem Frontend. In diesem Kapitel wird nur auf das Frontend eingegangen,
-da Anwender vorwiegend damit in Berührung kommen.
+Das **Testcenter** gehört zu einem der wesentlichen TBA Bestandteile.
+Grundlegende Informationen zum **Testcenter** erhalten Sie auch im TBA Einführungskapitel.
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Testcenter-Einf%C3%BChrung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -37,11 +41,10 @@ Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Eins
 
 ### Einsatz und Aufbau des Testcenters
 
-Das Testcenter beinhaltet eine Datenbank, die zur Speicherung von Test und Metadaten verwendet wird.
-Des Weiteren werden mithilfe des Testcenters die interaktiven Inhalte eines Tests wiedergegeben. 
+Das **Testcenter** beinhaltet eine Datenbank, die zur Speicherung von Tests und Metadaten verwendet wird.
+Des Weiteren werden mithilfe des **Testcenters** die interaktiven Inhalte eines Tests wiedergegeben. 
 Wobei nicht nur finale Tests durchgeführt werden können, sondern auch Probedurchläufe, die den Organisator\*innen einen Überblick 
-verschaffen an welchen Stellen des Test eventuelle noch Änderungen durchgeführt werden sollten. 
-Nachfolgend ist noch einmal aufgelistet welche Möglichkeiten das Testcenter bietet:
+verschaffen bzgl. eventueller Nachbearbeitung eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten das Testcenter bietet:
 
 **Testdurchführung**
 
@@ -59,21 +62,20 @@ Nachfolgend ist noch einmal aufgelistet welche Möglichkeiten das Testcenter bie
 Detailliert betrachtet besteht das Testcenter aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
 damit nicht in Kontakt kommen dürften, einmal erwähnt werden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
 dürfte der so genannte Verona Player sein. Dieser Player ist in das Testcenter intergriert und ist für die Wiedergabe der Aufgabeninhalte
-zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das Testcenter.  
-Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, 
-die direkt oder indirekt mit dem Testcenter zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
+zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das Testcenter.Näheres zum Thema Verona entnehmen Sie bitte dem 
+gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem Testcenter zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Anmeldung-und-Laden-eines-Tests">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.-Testcenter">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -90,63 +92,75 @@ die direkt oder indirekt mit dem Testcenter zusammenarbeiten, diese sind für In
 
 ### Anmeldung am Testcenter
 
-Wie dem Einführungskapiteln bereits zu entnehmen war, besteht ein Technologiebasierter Test aus mehreren Datei.
-Jede dieser Dateien bietet spezifische Möglichkeiten den Test bzgl. Aussehen und Ablauf zu beeinflussen. Um einen Test im Testcenter 
-abspielen zu können oder Dateien eines Tests in das Testcenter zu laden, zu löschen, oder aus dem Testcenter herunterzuladen, 
+Wie dem Einführungskapiteln bereits zu entnehmen ist, besteht ein Technologiebasierter Test aus mehreren Dateien.
+Jede dieser Dateien bietet spezifische Möglichkeiten den Test bzgl. Struktur und Ablauf zu beeinflussen. Um einen Test im **Testcenter** 
+abspielen zu können oder Testdateien in das **Testcenter** zu laden, zu löschen, oder aus dem **Testcenter** herunterzuladen, 
 bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschieden werden: 
 
-* der oder die Testorganisator\*in
-* die Testperson
+* Testorganisator\*innen
+* Testpersonen
 
-Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung, kann Dateien eines Tests bearbeiten, in das 
-Testcenter laden, Ablauf und auch Zugang zum Test für die Testpersonen festlegen. Es wird also ein Zugang zum Testcenter benötigt. Dieser Zugang
-kann nur von den Administrator\*innen des Testcenters angelegt werden. Wer ist nun aber der Administrator des Testcenters?<br> 
-Derzeitig werden die meisten Testdurchführenden auf das Testcenter zugreifen, welches die hausinternen IT-Strukturen 
+#### Testorganisator\*in
+
+Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, das Laden und Löschen der Testbestandteile,
+die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, sprich wie der Test im **Testcenter** ablaufen soll.
+Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. Dieser Zugang kann nur von den Administrator\*innen des Testcenters angelegt werden.
+
+  
+**Wer ist nun aber Administrator\*in des Testcenters?**
+
+Derzeitig werden die meisten Testdurchführenden auf das **Testcenter** zugreifen, welches die hausinternen IT-Strukturen 
 (Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
-wird der Betrieb beider Systeme, sowohl Teststudio als auch Testcenter, zunehmend in den eigenene IT-Strukturen der jeweiligen Bildungseinrichtungen 
-zum Einsatz kommen. Administrator\*innen des Testcenters und auch des Teststudios sind somit diejenigen, die für die IT-Struktur, in welcher
+wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen der jeweiligen Bildungseinrichtungen 
+zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** sind somit diejenigen, die für die IT-Strukturen in welcher
 die Systeme betrieben werden, verantwortlich sind. Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
-nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser, die Anmeldung am Testcenter vornehmen. Auch die einzugebene Internetadresse ist
-wiederum abhängig von der IT-Struktur in welcher das Testcenter betrieben wird. Möchten Sie das Testcenter in der IQB IT-Strukut nutzen, ist folgende
-Adresse im Browser einzugeben: https://www.iqb-testcenter.de. Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
+nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. Auch die einzugebene Internetadresse ist
+wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: **https://www.iqb-testcenter.de**.
+Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
 
+#### Testperson
 
 Die eigentliche Testdurchführung oder auch ein Probelauf für Testorganisator\*innen erfolgt mit separaten Zugangsdaten. 
-Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, 
-die Bestandteil eines jeden Tests ist. Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt und zusätzlich ein 
-Modi gesetzt werden. Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur einen Probedurchlauf für die Testorganisator\*innen
-handelt. Nachdem die Dateien eines Tests inklusive, der bzgl. des Logins angepassten *Testtakers.xml*, in das Testcenter geladen wurden, 
-können bei einer Neuanmeldung im Testcenter die in der *Testtakers.xml* gesetzten Zugangsdaten zur Anmeldung genutzt werden. 
-Anschließend wird der Test auf die über den Modi gewünschte Art und Weise abgespielt. 
+Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, die Bestandteil eines jeden Tests ist. 
+Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt und zusätzlich ein Modi gesetzt werden. 
+Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen Probedurchlauf für die Testorganisator\*innen
+handelt. Nach der Bearbeitung der *Testtakers.xml* bzgl. des angepassten Logins und Modis, können die Testdateien in das **Testcenter** geladen werden.
+Anschießend können die so angelegten Zugangsdaten bei einer Neuanmeldung im **Testcenter** angegeben werden. Der Test wird dann entsprechend des gesetzten Modis abgespielt.
+Für die Testperson sollte dann also ein finaler Testdurchlauf gestartet werden.
+
 
 Bsp.:<br>
 Nehmen wir an Sie als Organisator\*in wollen für den Schüler Jakob einen finalen Test vorbereiten. 
-So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi, wie der Test ablaufen soll,
-auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das Testcenter geladen wurde, kann Jakob sich mit diesen von Ihnen
-eingetragenen Zugangsdaten am Testcenter anmelden und seinen Test in der von Ihnen gewünschten Art und Weise durchlaufen.
+So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi wie der Test ablaufen soll,
+auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, kann Jakob sich mit diesen von Ihnen
+eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen gewünschten Art und Weise durchlaufen.
 
 Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
 
 ### Laden eines Tests
 
-Nach der Anmeldung als Testorganisator\*in am Testcenter, können die Bestandteile (Dateien) des Tests geladen werden.
-Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das Testcenter findet eine 
-Plausibilitätsprüfung statt. Dabei wird überprüft ob die deklarierten Dateien in einer Datei während des Hochladens auch gefunden werden. 
-Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend
-die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. Es ist daher wichtig
-die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das nachfolgende Bild:
+Nach der Anmeldung als Testorganisator\*in am **Testcenter**, können die Testbestandteile geladen werden.
+Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das **Testcenter** findet eine 
+Plausibilitätsprüfung statt. Dabei wird überprüft ob die definierten Bestandteile in einer Datei während des Hochladens auch gefunden werden. 
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Dateien_final.png)
+Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend
+die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. 
+
+Um die Plausibilitätsprüfung beim Upload in das **Testcenter** zu bestehen, müssen die Dateien in der richtigen Reihenfolge geladen werden.
+Des Weiteren ist vor dem Upload zu prüfen ob die IDs in den Dateien richtig geschrieben (Groß-/Kleinschreibung beachten!) bzw. die Dateien richtig benannt sind.
+In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu erkennen. Außerdem ist die Abhängigkeit der IDs und der Dateinamen bzgl. der Definitionen ersichtlich.
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Berabeiten-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Testcenter-Einführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -159,9 +173,9 @@ die richtige Reihefolge beim Upload einzuhalten. Eine Übersicht verschafft das 
 
 ---
 
-## 2.3 Bearbeiten eines Tests
+## 2.3 Bearbeiten der Testdateien
 
-Die im Teststudio erzeugten Dateien können vor dem Upload in das Testcenter berarbeitet werden.<br>
+Die im **Teststudio** erzeugten Dateien können vor dem Upload in das **Testcenter** berarbeitet werden.<br>
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
 [TBA Einführung -> Ablauf Entwurf und Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung)
@@ -173,15 +187,15 @@ Betrachten Sie dazu auch noch einmal das Kapitel:
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, 
-in unserem Fall das Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
-Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern `<Element Start>` eingeleitet und wie folgt beendet: `</Element Ende>`. 
-Jedes Element kann außer den eigentlichen Daten, welche zwischen zwei spitzen Klammern stehen, zusätzliche Attribute enthalten. 
-Attribute werden immer in der folgenden Form ausgedrückt: `Name Attribut = "Attributwert"` und befinden sich innerhalb eines Elementenblocks, sprich innerhalb der beiden spitzen Klammern. 
+in unserem Fall das **Testcenter**, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
+Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern `<Element>` eingeleitet und wie folgt beendet: `</Element>`. 
+Jedes Element kann außer den eigentlichen Daten, welche sich im Elementenkörper befinden, zusätzliche Attribute enthalten. 
+Attribute werden immer in der folgenden Form ausgedrückt: `Name Attribut = "Attributwert"` und befinden sich innerhalb des Elementenaufrufs (`<Element Attribut="Attributwert">`). 
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
 1. Element ohne Attribute mit Daten:<br>
 
-   Daten sind in diesem Fall der Text zwischen den spitzen Klammern: `"Sekundarstufe I Englisch Ansichtsaufgaben"`.
+   Daten sind in diesem Fall der Text zwischen den spitzen Klammern, dem Elementenkörper: `"Sekundarstufe I Englisch Ansichtsaufgaben"`.
 
   ```xml
     <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
@@ -230,13 +244,11 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </table>
 
 ```xml
-<?xml version="1.0"?>
-<Testtakers>
-  <Metadata>
-    <Description>
-     Diese Datei enthält Informationen zur Art des Logins und der Testdurchführung.
-    </Description>		
-  </Metadata>
+<Metadata>
+  <Description>
+    Diese Datei enthält Informationen zur Art des Logins und der Testdurchführung.
+  </Description>		
+</Metadata>
   ...
 ```
 ---
@@ -250,7 +262,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>key</td>
     <td>Attribut</td>
     <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration</b> im Kapitel:
-	<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">TBA Einführung / Konfiguration der Testdurchführung</a></td   
+	<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Testcenter / Konfiguration der Testdurchführung</a></td   
 </tr>
 <tr>
     <td>CustomText:</td>
@@ -262,10 +274,9 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </table> 
 
 ```xml
-  <CustomTexts>
-    <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
-  </CustomTexts>
-  ...
+<CustomTexts>
+  <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
+</CustomTexts>
 ```
 ---
 
@@ -307,18 +318,17 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>Booklet:</td>
     <td>>xxx<</td>
     <td>Datum</td>
-    <td>Frei wählbarer Wert. Die zugehörige Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
+    <td>Frei wählbarer Wert. Die ID in der Booklet.xml muss den selben Namen tragen (Groß-/Kleinschreibung beachten!)</td>
 </tr>
 
 </table>
 
 ```xml
- <Group id="Gruppe1" label="Dies ist die erste Gruppe.">
-    <Login name="user1" mode="run-demo" pw="123">
-      <Booklet>Booklet1</Booklet>
-    </Login>
- </Group>
-</Testtakers>
+<Group id="Gruppe1" label="Dies ist die erste Gruppe.">
+  <Login name="user1" mode="run-demo" pw="123">
+    <Booklet>Booklet1</Booklet>
+  </Login>
+</Group>
 
 ```
 
@@ -358,6 +368,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
   <Description>Sekundarstufe I Englisch Ansichtsaufgaben</Description>
 </Metadata>
 ```
+
 ---
 
 `BOOKLETCONFIG`
@@ -398,7 +409,7 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
     <td>Unit:</td>
     <td>id</td>
     <td>Attribut</td>
-    <td>Frei wählbarer Wert. Bezeichnet die Unit. Die zugehörige Unit.xml muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
+    <td>Frei wählbarer Wert. Bezeichnet die Unit, die eingebunden werden soll. Die ID innerhalb der Unit.xml muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
 </tr>
 <tr>
     <td>Unit:</td>
@@ -434,15 +445,13 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 </table>
 
 ```xml
-<Units> 
-	
+<Units>
   <Unit id="Unit1" label="erste Unit" />
   <Testlet id="Testlet1" label="erstes Testlet">
     <Restrictions>
       <CodeToEnter code="Hase">Bitte geben Sie den Code ein!</CodeToEnter>
     </Restrictions>
   </Testlet>
-		
 </Units>
 ```
 
@@ -494,24 +503,13 @@ In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelemen
 
 ---
 
-### Namensgebung
-
-```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
-Stand: 17.03.2021
-to do:
-  - Wie sind die Dateien zu benamen, wie wird aufgerufen ID oder Dateinamen
-  
-```
----
-
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Anmeldung-und-Laden-eines-Tests">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -584,12 +582,12 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Berabeiten-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -652,8 +650,10 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ### Custom Text Konfigurationen
 
-Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, in welcher das Testcenter ausgeführt wird, passen.
-Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, die das Testcenter ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
+Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, in welcher das **Testcenter** 
+ausgeführt wird, passen. Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, die das **Testcenter** ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei 
+deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
+In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
 
 Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Testtakers.xml) aufgeführt:
 
@@ -727,12 +727,12 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoption">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -768,12 +768,12 @@ Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen un
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-ITC-Toolbox">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
