@@ -1,9 +1,7 @@
 # 1.TBA Einführung
 
-**Vorab:**
-
 Nach zahlreichen Vorarbeiten arbeitet das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de)
-seit 2018 gezielt im Auftrag der Ländern an der Umstellung papierbasierter Kompetenzerhebungen auf technologiebasierte Durchführung. 
+seit 2018 gezielt im Auftrag der Ländern an der Umstellung der papierbasierten Kompetenzerhebung auf eine technologiebasierte Durchführung. 
 Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 
 * [TBA-Projekt 2018-2020](https://www.iqb.hu-berlin.de/research/dm/tba/)
@@ -11,7 +9,7 @@ Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
 * [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
 
 Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Kompetenzerhebung
-zum Einsatz kommen.
+seitens des IQB zum Einsatz kommen.
  
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-TBA-Module-Aufbau">
@@ -31,54 +29,58 @@ zum Einsatz kommen.
 
 Nachfolgend wird ein Überblick über die wesentlichen softwarebasierten Bestandteile des Computerbasierten Testens gegeben.
 Detaillierte Informationen zu den Software Modulen entnehmen Sie bitte den gleichnamigen Kapiteln.
-Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den folgenden Modulen in Berührung kommen:
-
-* **Teststudio**
-* **Testcenter** 
+Die meisten Anwender\*innen werden im Rahmen einer Testgestaltung und Testdurchführung vorwiegend mit den Modulen 
+**Teststudio** und **Testcenter** in Berührung kommen.
  
 ![iqb online assessment applications with relations: testcenter, Teststudio, conding, data analysis, archive, taskpool](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Ablauf_TBA_final.png)
 
 ### IQB-Teststudio
 
-Das Teststudio besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-Letztere kann mittels einer Adresse im Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden Zugangsdaten.
-In die Benutzerschnittstelle ist ein Editor integriert mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests bearbeitet und erstellt 
-werden können. Die einzelnen Einheiten eines Testheftes werden Unit genannt. Units bestehen aus einem oder mehreren Eingabefeldern, Auswahlboxen,
-Klappfeldern oder ähnlichen Elementen einer Internet-Seite, mit denen die Testperson eine Antwort auf Fragen geben kann. 
-Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte dem Kapitel: **Teststudio**. 
-Nach finaler Editierung der Aufgaben, generiert das Teststudio die Einheiten eines Kompetenztests (Units und weitere für den Test erforderliche
-Dateien) in einem vepackten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf nachträglich bearbeitet und an die entsprechende
-Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** geladen und wiedergegeben werden.
-> Das Teststudio für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-> Die derzeitige Version nennt sich Teststudio Lite. Die überarbeitete Version wird dann den Namen Teststudio Pro tragen.
+Das **Teststudio** besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzeroberfläche.
+Letztere kann mittels einer Adresse in einem Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden 
+Zugangsdaten. In die Benutzersoberfläche ist ein Editor eingebettet mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests 
+(Units) bearbeitet und erstellt werden können. Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte dem Kapitel:
+**Teststudio**. Nach finaler Editierung der Aufgaben, generiert das **Teststudio** die Einheiten eines Kompetenztests 
+(Units und weitere für den Test erforderliche Dateien) in einem komprimierten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf 
+nachträglich bearbeitet und an die entsprechende Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** 
+geladen und wiedergegeben werden.
+> Das **Teststudio** für die Technologie basierten Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+> Die derzeitige Version nennt sich **Teststudio Lite**. Die überarbeitete Version wird dann den Namen **Teststudio Pro** tragen.
 
 ### IQB-Testcenter
 
-Mit dieser Anwendung wird der Kompetenztest durchgeführt. Das Testcenter besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzerschnittstelle.
-Letztere wird mittels Adresseingabe im Interbrowser geöffnet. Nach Anmeldung mit entsprechenden Zugangsdaten können dann die zuvor im **Teststudio** generierten Einheiten eines Tests
-geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden dabei in der Datenbank gespeichert und verwaltet.
-In die Benutzerschnittstelle ist ein weiteres softwarebasiertes Modul intergriert, der **Verona Player**. Dieser übernimmt das Abspielen von Inhalten der zuvor geladenen Einheiten eines Tests und verfügt
-über eine entsprechende Schnittstelle, die alle Aktionen innerhalb des Testverlaufes handhabt und eine spätere Auswertung ermöglicht. Weiterführende Informationen zum Thema Testcenter 
-entnehmen Sie bitte dem gleichnamigen Kapitel. 
+Mit dieser Anwendung werden Kompetenztests durchgeführt und von den Testorganisator\*innen in den Abläufen getestet. Das **Testcenter**
+besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzeroberfläche. Letztere wird mittels Adresseingabe in einem 
+Internetbrowser geöffnet. Nach Anmeldung mit den entsprechenden Zugangsdaten, können die zuvor im **Teststudio** generierten Einheiten 
+eines Tests geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden 
+dabei in der Datenbank gespeichert und verwaltet. Reihenfolgen, Bezeichnungen, Strukturen und Abläufe des Kompetenztests, können mittels 
+Bearbeitung bestimmter Testeinheiten (Testdateien) beinflusst werden. Die Änderungen können dann von den Testorganisator\*innen in 
+Probedurchläufen im **Testcenter** begutachtet werden. Dies trägt zu einem gesicherten Ablauf des finalen Tests bei.
+Mehr zum Thema **Testcenter** erfahren Sie im gleichnamigen Kapitel.
+  
 
 ### IQB-Dateneditor
 
-Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, Verifizieren, 
-beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich die gewünschten Ergebnisse der Unternehmung erzeugt: 
-Berichte, Publikationen, Rückmeldungen an Schulen.
+Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, 
+Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich 
+die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
 
 ### IQB-Testarchiv
 
-Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, Analysedaten, 
-Berichte aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards etc.. Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung 
-der Daten für Sekundäranalysen in einem Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, besondere Formate für die Dateien usw.).
+Eine Testung, Befragung oder allgemein "Studie" sollte gut dokumentiert werden. Hierzu zählen die verwendeten Units, Testhefte, Roh-/Primärdaten, 
+Analysedaten, Berichte aber auch Protokolle der Testdurchführung, eine Kritik der Analyseverfahren, Verweise auf Bildungsstandards etc.. 
+Diese dann zu archivierende Dokumentation kann auch als Basis für eine Veröffentlichung der Daten für Sekundäranalysen in einem 
+Forschungsdatenzentrum dienen. Im Testarchiv wird besonderer Wert auf eine Langzeitarchivierung gelegt (besondere Speicherverfahren, 
+besondere Formate für die Dateien usw.).
 
 ### IQB-Testdepot
 
 Wenn Aufgaben bzw. Fragebögen verwendet wurden, haben sie ihre Eignung für bestimmte Fragestellungen unter Beweis gestellt. 
-Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
-Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, 
-es kann sich aber auch um einzelne Lehrkräfte handeln, die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
+Man weiß, unter welchen Bedingungen sie bei welchen Testpersonen mit welcher Genauigkeit Erkenntnisse liefern. 
+Diese wertvollen Informationen werden als Metadaten mit den Units und Testheften in einer Datenbank gespeichert. 
+Über Suchformulare oder auch über Algorithmen können sie für andere Studien ausgewählt werden. Diese Studien mögen als 
+Großprojekte in einem Jahrgang der Schulen eines Landes angelegt sein, es kann sich aber auch um einzelne Lehrkräfte handeln, 
+die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
 ---
 
@@ -109,31 +111,33 @@ Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob 
 
 ### Entwurf
 
-In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen, bearbeitet und final ausgearbeitet.
+In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen und final ausgearbeitet.
 Mehr zu diesem Thema entnehmen Sie bitte dem Kapitel: **Teststudio**. Anschließend werden die interaktiven Testeinheiten in einem Zip-Format ausgegeben. 
-Diese können dann vor der Eingabe in das Testcenter bearbeitet werden und an die entsprechende Testumgebung angepasst werden.
-Mehr zum Thema Bearbeitung entnehmen Sie bitte dem Kapitel: **Testcenter**.
+Diese können dann vor der Eingabe in das **Testcenter** bearbeitet und an die entsprechende Testumgebung angepasst werden.
 
 ### Bearbeitung der Testdateien
 
 Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung angepasst werden. 
-Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Schüler zugeordnet werden kann.
+Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Probanden zugeordnet werden kann.
 Eventuell müssen Unitbezeichnungen oder auch Bookletbezeichnungen geändert werden. Auch die Reihenfolge der Units ist anpassbar.
 Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen um diese Änderungen durchzuführen.
 Welche Parameter das sind entnehmen Sie bitte dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests)
+Mehr zum Thema Bearbeitung finden Sie auch im Kapitel: **Testcenter**.
 
 ### Durchführung
 
-Sind die Dateien final bearbeitet können sie im **Testcenter** abgespielt werden. Dazu meldet sich der Testdurchführende oder auch der Testverantwortliche 
-mit den in der *Testtakers.xml* gewählten Benutzerdaten an und lädt die Dateien des Tests in das **Testcenter**. Anschließend kann der gesamte Test abgespielt werden.
-Über die Art und Weise wie ein Test im **Testcenter** gehandhabt wird (finaler Test, Probelauf etc.) entscheidet der in der *Testtakers.xml* gewählte Modi.
-Mehr zu diesem Thema entnehmen Sie bitte dem **Testcenter** Kapitel.
-
+Sind die Dateien entsprechend der spezifischen Testumgebung angepasst wurden, können sie im **Testcenter** abgespielt werden. 
+Dabei ist es den Testorganisator\*innen möglich mittels Konfiguration einer betimmten Datei (*Testtakers.xml*) den Ablauf eines Tests
+(Probedurchlauf, finaler Durchlauf und andere Optionen) festzulegen. Testorganisator\*innen können somit die Testdateien bzgl. bestimmter
+Parameter bearbeiten und die Ergenisse ihrer Änderungen immer wieder im **Testcenter** begutachten. Haben die Organisator\*innen die Bearbeitung
+des Test abgeschlossen, kann der finale Test gestartet werden. Testdurchführende erhalten dazu, die in der entsprechenden Datei (*Testtakers.xml*)
+von Orgnanisator\*innen festgelegten Zugangsdaten. Nach erfolgreicher Anmeldung startet der finale Test.
 
 ### Auswertung
 
 Nach einer finalen Testdurchführung sind weitere Nachbearbeitungsschritte notwendig um zu einer aussagekräftigen Auswertung zu gelangen.
-Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wichtige Rolle spielt.
+Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wichtige Rolle spielt. Es gibt auch weitere nachbearbeitende
+Schritte auf die hier nicht näher eingegangen wird.
 
 ---
 
@@ -158,7 +162,7 @@ Genannt sei hierbei die Kodierung, die für die statistische Auswertung eine wic
 
 ## 1.3 Bestandteile eines Tests
 
-Das Teststudio erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines Kompetenztests:
+Das **Teststudio** erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines Kompetenztests:
 
 ![iqb online assessment applications with relations: Einführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_TS_Output_final.png)
 
@@ -167,17 +171,17 @@ Das Teststudio erzeugt nach dem finalen Entwurf die folgenden Bestandteile eines
 ### Funktion der Dateien
 
 **Testtakers.xml**
-* Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (!ID muss entsprechend im Booklet vorhanden sein)
-* Definition User und Testmodi
-* Definition Test Gruppe
+* Aufruf gewünschtes Booklet mittels eindeutiger Booklet ID (ID muss entsprechend im Booklet vorhanden sein)
+* Definition User\*in und Testmodus
+* Definition Testgruppe
 
 
 **Booklet.xml**
 * Layout des Booklets
 * Namen des Testheftes
-* Aufruf der gewünschten Units mittels eindeutiger Unit-ID (!ID muss entsprechend in der Unit vorhanden sein)
+* Aufruf der gewünschten Units mittels eindeutiger Unit-ID (ID muss entsprechend in der Unit vorhanden sein)
 * Name der Unit
-* Beschränkungen mittels Codewort
+* Beschränkungen mittels Codewörtern
 
 **Unit.xml**
 * Definition des zu verwendenden Players
@@ -198,7 +202,7 @@ Mehr zu diesem Thema finden Sie auch im Kapitel: [Testcenter / Bearbeiten eines 
 
 **Testtakers.xml**
 * Anmeldedaten
-* Art und Weise der Testdurchführung (Test Modi)
+* Art und Weise der Testdurchführung (Testmodi)
   
 **Booklet.xml**  
 * Namensgebung Booklet
@@ -243,6 +247,7 @@ Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
 todo:
   - IQB-Dateneditor: Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
+  - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
 ---
 
@@ -287,6 +292,13 @@ Diese Anwendungen werden derzeit konzipiert.
 ---
 
 ## 1.5 Studiendurchführung
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+todo:
+  - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
+```
 
 ### Planung
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
@@ -392,6 +404,13 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ---
 
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+todo:
+  - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
+```
+
 ## 1.6 Verfügbarkeit IQB Programmierung
 
 ### Der Auftrag
@@ -442,6 +461,13 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 ---
 
 ## 1.7 Was macht VERA so speziell?
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 17.03.2021
+todo:
+  - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
+```
 
 Der Name VERA steht für "Vergleichsarbeiten". Diese groß angelegten Kompetenztests dienen der Qualitätssicherung auf Ebene der
 Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der [Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
