@@ -121,7 +121,7 @@ Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung ange
 Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Probanden zugeordnet werden kann.
 Eventuell müssen Unitbezeichnungen oder auch Bookletbezeichnungen geändert werden. Auch die Reihenfolge der Units ist anpassbar.
 Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen um diese Änderungen durchzuführen.
-Welche Parameter dies im Einzelnen sind, entnehmen Sie bitte dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests)
+Welche Parameter dies im Einzelnen sind, ist dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests) zu entnehmen.
 Mehr zum Thema Bearbeitung finden Sie auch im Kapitel **Testcenter**.
 
 ### Durchführung
@@ -246,7 +246,7 @@ Hier sind von Hand keine Änderungen möglich.
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
 todo:
-  - IQB-Dateneditor: Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
+  - IQB-Dateneditor-> Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
 ---
@@ -404,14 +404,14 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ---
 
+## 1.6 Verfügbarkeit IQB Programmierung
+
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
-
-## 1.6 Verfügbarkeit IQB Programmierung
 
 ### Der Auftrag
 
