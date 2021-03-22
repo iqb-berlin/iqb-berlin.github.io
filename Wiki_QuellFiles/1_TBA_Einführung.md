@@ -112,7 +112,7 @@ Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob 
 ### Entwurf
 
 In der Entwurfsphase wird mittels Editor im **Teststudio** die Aufgabe entworfen und final ausgearbeitet.
-Mehr zu diesem Thema entnehmen Sie bitte dem Kapitel: **Teststudio**. Anschließend werden die interaktiven Testeinheiten in einem Zip-Format ausgegeben. 
+Mehr zu diesem Thema entnehmen Sie bitte dem Kapitel **Teststudio**. Anschließend werden die interaktiven Testeinheiten in einem Zip-Format ausgegeben. 
 Diese können dann vor der Eingabe in das **Testcenter** bearbeitet und an die entsprechende Testumgebung angepasst werden.
 
 ### Bearbeitung der Testdateien
@@ -121,15 +121,15 @@ Die Dateien (Einheiten) eines Tests können bzgl. spezifischer Testumgebung ange
 Es müssen Anmeldedaten für die Testdurchführenden angelegt werden, damit abschließend jeder Test auch einem Probanden zugeordnet werden kann.
 Eventuell müssen Unitbezeichnungen oder auch Bookletbezeichnungen geändert werden. Auch die Reihenfolge der Units ist anpassbar.
 Jede Datei eine Tests verfügt über die entsprechenden Parameter und Strukturen um diese Änderungen durchzuführen.
-Welche Parameter das sind entnehmen Sie bitte dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests)
-Mehr zum Thema Bearbeitung finden Sie auch im Kapitel: **Testcenter**.
+Welche Parameter dies im Einzelnen sind, entnehmen Sie bitte dem Kapitel: [TBA Einführung / Bestandteile eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.3-Bestandteile-eines-Tests)
+Mehr zum Thema Bearbeitung finden Sie auch im Kapitel **Testcenter**.
 
 ### Durchführung
 
 Sind die Dateien entsprechend der spezifischen Testumgebung angepasst wurden, können sie im **Testcenter** abgespielt werden. 
 Dabei ist es den Testorganisator\*innen möglich mittels Konfiguration einer betimmten Datei (*Testtakers.xml*) den Ablauf eines Tests
 (Probedurchlauf, finaler Durchlauf und andere Optionen) festzulegen. Testorganisator\*innen können somit die Testdateien bzgl. bestimmter
-Parameter bearbeiten und die Ergenisse ihrer Änderungen immer wieder im **Testcenter** begutachten. Haben die Organisator\*innen die Bearbeitung
+Parameter bearbeiten und die Ergebnisse nachfolgend im **Testcenter** begutachten. Haben die Organisator\*innen die Bearbeitung
 des Test abgeschlossen, kann der finale Test gestartet werden. Testdurchführende erhalten dazu, die in der entsprechenden Datei (*Testtakers.xml*)
 von Orgnanisator\*innen festgelegten Zugangsdaten. Nach erfolgreicher Anmeldung startet der finale Test.
 
