@@ -112,7 +112,7 @@ die für einen kurzen Test in ihrem Kurs Aufgaben zusammenstellen.
 
 ---
 
-# 1.2 Ablauf Entwurf und Durchführung
+## 1.2 Ablauf Entwurf und Durchführung
 
 Nachfolgend wird der grundsätzliche Ablauf vom Entwurf bis zur Auswertung grob aufgezeigt:
 
