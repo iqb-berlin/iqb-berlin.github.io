@@ -233,6 +233,11 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
 Manche Attributwerte können frei gewählt werden, manche müssen sich an Vorgaben halten.<br> 
 Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute und Daten eingegangen.<br>
 In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelementes und dessen Attribute und Daten (falls vorhanden).
+
+Wie zu Beginn bereits erwähnt, können Sie xml-Dateien mit einem normalen Texteditor öffnen und bearbeiten.
+Zur besseren Übersichtlichkeit wird jedoch ein Xml-Editor empfohlen, da dieser die Xml typische Syntax farblich hervorhebt und somit die Arbeit deutlich erleichert wird.
+Da es sehr viele Editoren gibt, kann an dieser Stelle nur eine Empfehlung unsererseits erfolgen. Letztlich müssen Anwender\*innen den für sich geeigneten Editor finden.
+Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verfügbar.
   
 ---
 
@@ -816,7 +821,8 @@ Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen un
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
 todo:
-  - Gehört das Kapitel hierher? Muss der Anwender jemals mit diesem Tool arbeiten? Mit Martin klären.
+  - neues Kap anlegen mit dem Namen Ergebnisverarbeitung, dort kann dieses Thema Unterbringung finden.
+    Außerdem auch auf die Möglichkeiten der Vorabbearbeitung mittel toolbox im Kap Bearbeiten der Tetsdateien hinweisen
 ```
 ---
 
