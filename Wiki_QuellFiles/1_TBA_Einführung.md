@@ -215,7 +215,7 @@ Das **Teststudio** erzeugt nach dem finalen Entwurf die folgenden Bestandteile e
 ### Parameter der Dateien
 
 Welche Werte in diesen Dateien beeinflusst werden können, ist nachfolgend aufgelistet.
-Mehr zu diesem Thema finden Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
+Mehr zu diesem Thema finden Sie auch im Kapitel: [Testcenter / Vorbearbeitung der Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
 
 **Testtakers.xml**
 * Anmeldedaten
@@ -262,6 +262,7 @@ Hier sind von Hand keine Änderungen möglich.
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
+Prio: low
 todo:
   - IQB-Dateneditor-> Änderung des Links, wenn es zu diesem Thema eine eigene Wikiseite gibt!
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
@@ -320,6 +321,7 @@ Diese Anwendungen werden derzeit konzipiert.
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
+Prio: low
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
@@ -454,6 +456,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
+Prio: low
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
   - in diesem Kapitel auch alle Repos des IQB auflisten???
@@ -524,6 +527,7 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
+Prio: low
 todo:
   - Mit Martin über dieses Kapitel sprechen. Gehört es hier hin, ist es final etc?
 ```
