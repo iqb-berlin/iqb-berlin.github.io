@@ -1036,29 +1036,44 @@ Für eine Testdurchführung erlaubt das IQB-Testcenter verschiedene Arten der An
 ---
 
 ### Klassisch: Anmeldename, Kennwort
-Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. Diese Anmeldeform wird üblicherweise erwartet. Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt aber nur Punkte, d. h. man kann nicht mitlesen.
+Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. Diese Anmeldeform wird üblicherweise erwartet. 
+Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt aber nur Punkte, d. h. man kann nicht mitlesen.
 
 ---
 
 ### Kurz: Nur Anmeldename
-Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung des Namens hinreichend ungewöhnlich ist. Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
+Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung des Namens hinreichend ungewöhnlich ist. 
+Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
 
 ---
 
 ### Noch kürzer: Link
-Wenn nur ein Anmeldename ohne Kennwort als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken. Wenn "u8h5m2a4c3x2f2g8" der Anmeldename ist würde der Link so aussehen:
+Wenn nur ein Anmeldename ohne Kennwort als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken. 
+Wenn "u8h5m2a4c3x2f2g8" der Anmeldename ist würde der Link so aussehen:
 ```
 https://www.iqb-testcenter.de/#/u8h5m2a4c3x2f2g8
 ```
-Dadurch macht man es noch einfacher: Auf den Link klicken, und man muss nur noch das Testheft wählen. Diese Form der Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: Es wird nur ein Login in einer Einladungs-E-Mail verschickt, und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
+Dadurch macht man es noch einfacher: Auf den Link klicken, und man muss nur noch das Testheft wählen. Diese Form der 
+Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: Es wird nur ein Login in einer Einladungs-E-Mail verschickt, 
+und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
 
 ---
 
 ### Länger: Anmeldename, Kennwort, Personencode
-Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen und Schüler alle Computer zu starten, einen Standard-User anzumelden, den Browser zu starten und die richtige Internet-Adresse aufzurufen. Dann ist es auch hilfreich, wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. Anmeldename und Kennwort sind dann für die Gruppe gleich. Es reicht dann anschließend die Eingabe eines kurzen Personencodes durch die Testperson, um eine eindeutige Identifizierung sicherzustellen. Man spart so Testzeit und vermeidet Fehleingaben. Dieses Szenario bietet sich z. B. an, wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemieteten Computer-Lab durchführt.
+Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen und Schüler alle Computer zu starten, 
+einen Standard-User anzumelden, den Browser zu starten und die richtige Internet-Adresse aufzurufen. Dann ist es auch hilfreich, 
+wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. Anmeldename und Kennwort 
+sind dann für die Gruppe gleich. Es reicht dann anschließend die Eingabe eines kurzen Personencodes durch die Testperson, 
+um eine eindeutige Identifizierung sicherzustellen. Man spart so Testzeit und vermeidet Fehleingaben. Dieses Szenario bietet sich z. B. an, wenn man den Test nicht in der Schule, 
+sondern in dem eigenen oder einem angemieteten Computer-Lab durchführt.
 
 ---
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-IQB-Daten-Spezifikationen">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
@@ -1144,6 +1159,26 @@ Nevertheless, every producer of data should document data structures. For the IQ
 do this in this repository. The manuals are in German language, because most of the 
 people involved in data supply and processing welcome this language very much.
 
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-Verona-Player">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Anmeldeoptionen">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
 
 ## 2.9 Verona Player
 
@@ -1223,3 +1258,146 @@ Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player 
 das IQB möchte aber eher typische Interaktionselemente als Basisausstattung umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. 
 Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. Wo dann genau die Grenze zu ziehen ist wird 
 sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-System-Check">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-IQB-Daten-Spezifikationen">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+## 2.10 System Check
+
+### Was ist ein System-Check?
+Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen Online-Test nicht geeignet ist. Der System-Check ist ein Weg, vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall- und damit die Frustrate deutlich senken.
+
+### Planung
+Nach dem Einrichten eines Systemchecks erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. Man kann alle Interessierten einladen, darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen folgende Optionen zur Verfügung:
+* Probeweises Aufrufen einer Testaufgabe: Eine speziell dafür entwickelte Testaufgabe wird gezeigt und man kann die Bearbeitungselemente auswählen, ändern und so prüfen, ob die Aufgabenelemente wie erwartet funktionieren.
+* Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (wurde die Audio-Datei abgespielt?, Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden (wieviele Plätze sind im PC-Lab?, Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?, Gibt es ein Whiteboard? usw.)
+* Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung, anhand der die Zuordnung der Daten z. B. zu einer bestimmten Schule möglich ist.
+
+### XML-Definition schreiben
+Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. Die Berichte des System-Checks werden dann auch in diesem Arbeitsbereich gespeichert.
+
+Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer [Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd) festgelegt. Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SysCheck xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_SysCheck.xsd">
+	<Metadata>
+		<Id>LAL8_2021</Id>
+		<Label>System-Check für LAL8 2021</Label>
+		<Description>Version 4.2.2021</Description>
+	</Metadata>
+	<Config unit="SC3" savekey="fichtelgebirge">
+		<UploadSpeed min="1024" good="2048" maxDevianceBytesPerSecond="10000" maxErrorsPerSequence="0" maxSequenceRepetitions="15">100000, 200000, 400000, 800000</UploadSpeed>
+		<DownloadSpeed min="1024" good="2048" maxDevianceBytesPerSecond="200000" maxErrorsPerSequence="0" maxSequenceRepetitions="15">400000, 800000, 1600000, 3200000</DownloadSpeed>		
+		<Q id="1" type="header" prompt="Abschnitt I: Computerübergreifende Fragen – diese müssen nur einmal online eingegeben werden."></Q>
+		<Q id="2" type="radio" prompt="1. Wer ist an der Schule die Ansprechperson für technische Fragen?">der Schulkoordinator/die Schulkoordinatorin selbst#eine andere Person (Eingabe nächstes Feld)#es gibt keine Ansprechperson</Q>
+		<Q id="2a" type="text" prompt="Weitere Informationen zur Ansprechperson"/>
+		<Q id="3" type="string" prompt="2. In welchem Raum wurde die Systemdiagnose durchgeführt? Bitte geben Sie die Raumbezeichnung an."/>
+		<Q id="4" type="text" prompt="3. Bitte notieren Sie ggf. Informationen zur Erreichbarkeit des Raumes."/>
+		<Q id="5" type="string" prompt="4. Wie viele Computer gibt es im Raum?"/>
+		<Q id="6" type="string" prompt="5. Wie viele funktionstüchtige Computer gibt es im Raum?"/>
+		<Q id="7" type="text" prompt="6. Wie würden Sie den allgemeinen Zustand der Computer (und Bildschirme, Mäuse, Tastaturen) beschreiben? 
+	z. B. modern, veraltet, gut instandgehalten etc."/>
+
+		<Q id="8" type="header" prompt="Abschnitt II: Fragen zum Account für die Systemdiagnose"></Q>
+		<Q id="9" type="radio" prompt="1. Ist dies ein allgemeiner Account?">der Account kann für alle PC verwendet werden#der Account ist nur für bestimmte PC zur Anmeldung möglich#konnte Reichweite des Accounts nicht ermitteln</Q>
+		<Q id="10" type="radio" prompt="2. Ist dies ein Account mit Zugriff auf USB?">ein mobiler Browser konnte direkt von USB gestartet werden#ein mobiler Browser konnte auf den Desktop kopiert und ausgeführt werden#ein mobiler Browser konnte nicht gestartet werden</Q>
+		<Q id="11" type="text" prompt="3. Gibt es Änderungen dieser Situation im Testzeitraum bis Mai? Bitte beschreiben!"/>
+
+		<Q id="12" type="header" prompt="Abschnitt III: Fragen zum Funktionieren der Aufgabe"></Q>
+		<Q id="13" type="text" prompt="1. Besonderheiten beim Starten des Browsers und beim Zugriff auf das Testcenter"/>
+		<Q id="14" type="text" prompt="2. Allgemeine Auffälligkeiten bei der Darstellung der Aufgabe"/>
+		<Q id="15" type="text" prompt="3. Probleme beim Abspielen der Audio-Sequenz"/>
+		<Q id="16" type="text" prompt="4. Klarheit der Darstellung der Grafik"/>
+		<Q id="17" type="text" prompt="5. Auffälligkeiten beim Scrollen"/>
+		<Q id="18" type="text" prompt="6. Auffälligkeiten beim Navigieren zwischen Seiten"/>
+		<Q id="19" type="text" prompt="7. Anmerkungen zur Kästchendarstellung der Ankreuzoptionen"/>
+		<Q id="20" type="check" prompt="8. Nutzung des mobilen Browsers.">Beim Systemcheck musste der mobile Browser benutzt werden.</Q>
+	</Config>
+</SysCheck>
+```
+#### Kopfdeklarationen
+Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. Dazu muss der Editor die Schemadatei kennen. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
+
+Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung.
+
+#### Metadaten
+Zur Kennzeichnung und Beschreibung der Datei sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung auch der Berichte, letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen, verschiedene Versionen eines Systemchecks zu unterscheiden.
+
+#### Netzwerkverbindung
+Die Angaben in den Bereichen `UploadSpeed` und `DownloadSpeed` sind rein technischer Natur und sollten nur angepasst werden, wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team nach!
+
+#### Unit
+Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach dem Test der Verbindungsqualität die Anzeige einer Unit. Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt.
+
+Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Außerdem ist der in der Unit-Definition genannte Player im Arbeitsbereich bereitzustellen.
+
+#### Bericht speichern
+Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
+
+#### CustomTexts (in Vorbereitung)
+Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus [dieser Liste](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/custom-texts.md) die Schlüsselworte mit dem Präfix `syscheck_`.
+
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.11-Versionsstand">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-Verona-Player">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+## 2.11 Versionsstand
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 29.03.2021
+Prio: low
+todo:
+  - Was kann zum Versionsstand geschrieben werden -> mit Martin besprechen!
+
+```
+---
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-System-Check">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
