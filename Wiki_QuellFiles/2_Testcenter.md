@@ -45,7 +45,8 @@ Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Eins
 Das **Testcenter** beinhaltet eine Datenbank, die zur Speicherung von Tests und Metadaten verwendet wird.
 Des Weiteren werden mithilfe des **Testcenters** die interaktiven Inhalte eines Tests wiedergegeben. 
 Wobei nicht nur finale Tests, sondern auch Probedurchläufe durchgeführt werden können. Letztere verschaffen den Organisator\*innen einen Überblick 
-bzgl. eventueller Fehlabläufe und damit nötiger Nachbearbeitungen eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten das **Testcenter** bietet:
+bzgl. eventueller Fehlabläufe und damit nötiger Nachbearbeitungen eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten 
+das **Testcenter** bietet:
 
 **Testdurchführung**
 
@@ -63,8 +64,9 @@ bzgl. eventueller Fehlabläufe und damit nötiger Nachbearbeitungen eines Tests.
 Detailliert betrachtet besteht das **Testcenter** aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
 damit nicht in Kontakt kommen dürften, einmal Erwähnung finden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
 dürfte der so genannte Verona Player sein. Dieser Player ist in das **Testcenter** intergriert und ist für die Wiedergabe der Aufgabeninhalte
-zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das **Testcenter**. Näheres zum Thema Verona entnehmen Sie bitte dem 
-gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
+zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das **Testcenter**. 
+Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, 
+die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
@@ -105,22 +107,24 @@ bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschied
 
 #### Testorganisator\*in
 
-Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, das Laden und Löschen der Testbestandteile,
-die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, sprich wie der Test im **Testcenter** ablaufen soll.
-Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. Dieser Zugang kann nur von den Administrator\*innen des **Testcenters** angelegt werden.
+Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, 
+das Laden und Löschen der Testbestandteile, die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, 
+sprich wie der Test im **Testcenter** ablaufen soll. Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. 
+Dieser Zugang kann nur von den Administrator\*innen des **Testcenters** angelegt werden.
 
   
 *Wer ist nun aber Administrator\*in des Testcenters?*
 
 Derzeitig werden die meisten Testdurchführenden auf das **Testcenter** zugreifen, welches die hausinternen IT-Strukturen 
 (Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
-wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen der jeweiligen Bildungseinrichtungen 
-zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** sind somit diejenigen, die für die IT-Strukturen in welcher
-die Systeme betrieben werden, verantwortlich sind. 
+wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen 
+der jeweiligen Bildungseinrichtungen zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** 
+sind somit diejenigen, die für die IT-Strukturen in welcher die Systeme betrieben werden, verantwortlich sind. 
 
 Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
-nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. Auch die einzugebene Internetadresse ist
-wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: **https://www.iqb-testcenter.de**.
+nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. 
+Auch die einzugebene Internetadresse ist wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. 
+Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: https://www.iqb-testcenter.de.<br>
 Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
 
 ---
@@ -128,21 +132,24 @@ Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werd
 #### Testperson
 
 Die eigentliche Testdurchführung, oder auch ein Probelauf für Testorganisator\*innen, erfolgt mit separaten Zugangsdaten. 
-Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, die Bestandteil eines jeden Tests ist. 
-Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt und zusätzlich ein Modi gesetzt werden. 
-Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen Probedurchlauf für die Testorganisator\*innen
-handelt. Nach der Bearbeitung der *Testtakers.xml* bzgl. des angepassten Logins und Modis, können die Testdateien in das **Testcenter** geladen werden.
-Anschießend können die so angelegten Zugangsdaten bei einer Neuanmeldung im **Testcenter** angegeben werden. Der Test wird dann entsprechend des gesetzten Modis abgespielt.
+Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, 
+die Bestandteil eines jeden Tests ist. Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt 
+und zusätzlich ein Modi gesetzt werden. Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen 
+Probedurchlauf für die Testorganisator\*innen handelt. Nach der Bearbeitung der *Testtakers.xml* bzgl. des angepassten Logins und Modis, 
+können die Testdateien in das **Testcenter** geladen werden. Anschießend können die so angelegten Zugangsdaten bei einer Neuanmeldung 
+im **Testcenter** angegeben werden. Der Test wird dann entsprechend des gesetzten Modis abgespielt.
 Für die Testperson sollte dann also ein finaler Testdurchlauf gestartet werden.
 
 
-Bsp.:<br>
+**Bsp.:**<br>
 Nehmen wir an Sie als Organisator\*in wollen für den Schüler Jakob einen finalen Test vorbereiten. 
 So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi wie der Test ablaufen soll,
-auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, kann Jakob sich mit diesen von Ihnen
-eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen gewünschten Art und Weise durchlaufen.
+auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, 
+kann Jakob sich mit diesen von Ihnen eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen 
+gewünschten Art und Weise durchlaufen.
 
-Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
+Mehr zu diesem Thema erfahren Sie auch im Kapitel: 
+[Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
 
 ---
 
@@ -156,8 +163,9 @@ Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklari
 die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. 
 
 Um die Plausibilitätsprüfung beim Upload in das **Testcenter** zu bestehen, müssen die Dateien in der richtigen Reihenfolge geladen werden.
-Des Weiteren ist vor dem Upload zu prüfen ob die IDs in den Dateien richtig geschrieben (Groß-/Kleinschreibung beachten!) bzw. die Dateien richtig benannt sind.
-In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu erkennen. Außerdem ist die Abhängigkeit der IDs und der Dateinamen bzgl. der Definitionen ersichtlich.
+Des Weiteren ist vor dem Upload zu prüfen ob die IDs in den Dateien richtig geschrieben (Groß-/Kleinschreibung beachten!) bzw. die Dateien 
+richtig benannt sind. In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu erkennen. Außerdem ist die Abhängigkeit 
+der IDs und der Dateinamen bzgl. der Definitionen ersichtlich.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
 
@@ -193,12 +201,13 @@ Die Testdateien können einzeln "händisch" bearbeitet und die vorgenommenen Än
 Diese Methode verlangt etwas Basiswissen bzgl. der Syntax der einzelnen Dateien, hat aber den Vorteil Änderungen direkt und bewusst herbeizuführen.
 Diese Methode soll an dieser Stelle als: **Direktes Bearbeiten** bezeichnet werden.
 
-Eine weitere Methode ist das Verwenden von Hilfsmitteln. Eines dieser Hilfsmittel stellt das IQB zur freien Verfügung. Es trägt den Namen
-**ITC-Toolbox** und kann über den folgenden Link heruntergeladen werden: https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox<br>
-Diese Methode der Bearbeitung soll an dieser Stelle als: **Indirektes Bearbeiten** bezeichnet werden. Die Dateien werden also indirekt über das Tool
-**ITC-Toolbox** bearbeitet. Das Tool konvertiert dabei Excelinhalte in die für Testdateien benötigten Formate, in unserem Fall Xml-Formate.
-Vorteil dieser Methode: Sie müssen nicht direkt in der Testdatei arbeiten, sondern können die Werte der Testdatei mittels Excel beinflussen. 
-Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, eventuell verlangt es aber entsprechende Nachkontrollen der Testdatei.
+Eine weitere Methode ist das Verwenden von Hilfsmitteln. Eines dieser Hilfsmittel stellt das IQB zur freien Verfügung.<br>
+Es trägt den Namen **ITC-Toolbox** und kann über den folgenden Link heruntergeladen werden:<br>
+https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox. Diese Methode der Bearbeitung soll an dieser Stelle als **Indirektes Bearbeiten** 
+bezeichnet werden. Die Dateien werden also indirekt über das Tool **ITC-Toolbox** bearbeitet. Das Tool konvertiert dabei Excelinhalte in die 
+für Testdateien benötigten Formate, in unserem Fall Xml-Formate. Vorteil dieser Methode: Sie müssen nicht direkt in der Testdatei arbeiten, 
+sondern können die Werte der Testdatei mittels Excel beinflussen. Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, 
+eventuell verlangt es aber entsprechende Nachkontrollen der Testdatei.
 
 ---
 
@@ -210,12 +219,13 @@ Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein tex
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle, 
 in unserem Fall das **Testcenter**, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen. 
-Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen Klammern `<Element>` eingeleitet und wie folgt beendet: `</Element>`. 
-Jedes Element kann außer den eigentlichen Daten, welche sich im Elementenkörper befinden, zusätzliche Attribute enthalten. 
-Attribute werden immer in der folgenden Form ausgedrückt: `Name Attribut = "Attributwert"` und befinden sich innerhalb des Elementenaufrufs (`<Element Attribut="Attributwert">`). 
+Xml-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wir mit zwei spitzen 
+Klammern `<Element>` eingeleitet und wie folgt beendet: `</Element>`. Jedes Element kann außer den eigentlichen Daten, welche sich im 
+Elementenkörper befinden, zusätzliche Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: 
+`Name Attribut = "Attributwert"` und befinden sich innerhalb des Elementenaufrufs (`<Element Attribut="Attributwert">`). 
 Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Einfache Bsp. sind nachfolgend aufgeführt:
 
-1. Element ohne Attribute mit Daten:<br>
+1. Element ohne Attribute mit Daten:
 
    Daten sind in diesem Fall der Text zwischen den spitzen Klammern, dem Elementenkörper: `"Sekundarstufe I Englisch Ansichtsaufgaben"`.
 
@@ -223,18 +233,18 @@ Es gibt auch Elemente die Attribute aber keine Daten enthalten und umgekehrt. Ei
     <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
   ```
 
-2. Element mit Attributen ohne Daten:<br>
+2. Element mit Attributen ohne Daten:
 
    Hier gibt es 3 Attribute: `id`, `lable` und `lableshort`. Alle 3 Attribute enthalten in diesem Fall Attributwerte.<br>
    Diese sind in Hochkommata gefasst und werden mit einem Gleichheitszeichen dem Attribut zugeordnet. 
-   Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: `</Unit>`, sondern nur mit: `/>`. 
-   Diese Syntax gibt an, dass keine Daten folgen.
+   Das keine Daten enthalten sind, ist gut an dem Schließen des Elementes **Unit** zu erkennen. Denn das Element endet nicht mit: 
+   `</Unit>`, sondern nur mit: `/>`. Diese Syntax gibt an, dass keine Daten folgen.
 
 ```xml
    <Unit id="Unit1" label="1. Postcard" labelshort="1" />
 ```
 
-3. Element mit Daten und Attributen:<br>
+3. Element mit Daten und Attributen:
 
    Attribut ist hier: `key`. Dieses bekommt den Attributwert `force_presentation_complete` zugewiesen.
    Datum ist der Wert: `ON`.
@@ -249,15 +259,16 @@ Nachfolgend wird nun auf die Elemente unserer Testdateien und deren Attribute un
 In der Tabelle finden Sie immer das entsprechende Unterelement eines Hauptelementes und dessen Attribute und Daten (falls vorhanden).
 
 Wie zu Beginn bereits erwähnt, können Sie xml-Dateien mit einem normalen Texteditor öffnen und bearbeiten.
-Zur besseren Übersichtlichkeit wird jedoch ein Xml-Editor empfohlen, da dieser die Xml typische Syntax farblich hervorhebt und somit die Arbeit deutlich erleichert wird.
-Da es sehr viele Editoren gibt, kann an dieser Stelle nur eine Empfehlung unsererseits erfolgen. Letztlich müssen Anwender\*innen den für sich geeigneten Editor finden.
-Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verfügbar.
+Zur besseren Übersichtlichkeit wird jedoch ein Xml-Editor empfohlen, da dieser die Xml typische Syntax farblich hervorhebt und 
+somit die Arbeit deutlich erleichert wird. Da es sehr viele Editoren gibt, kann an dieser Stelle nur eine Empfehlung unsererseits erfolgen. 
+Letztlich müssen Anwender\*innen den für sich geeigneten Editor finden. Wir können den Editor Notepad++ empfehlen. 
+Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verfügbar.
   
 ---
 
 #### Attribute und Daten TESTTAKERS.xml
 
-`METADATA`<br>
+`METADATA`
 
 <table>
 	
@@ -280,7 +291,7 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 ```
 ---
 
-`CUSTOMTEXTS`<br>
+`CUSTOMTEXTS`
 
 <table>
 	
@@ -307,7 +318,7 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 ```
 ---
 
-`GROUP`<br>
+`GROUP`
 
 <table>
 
@@ -564,11 +575,12 @@ Nach Auswahl des ersten Punktes: *Booklet-Xlsx* muss der Speicherort der entspre
 **ITC-Toolbox** überprüft anschließend die Struktur der Excel-Datei und versucht die dort angegebenen Zusatzinformationen auf den anderen
 Excel Blattseiten zu finden. Können Bezeichner nicht gefunden oder zugeordnet werden, werden entsprechende Fehlermeldung generiert.
 Wurden alle Bezeichner gefunden und konnten entsprechend zugeordnet werden, erscheint eine Meldung über die erfolgreiche Erzeugung
-einer *Booklet.xml*. Die *Booklet.xml* wird dann im selben Verzeichnis gespeichert in dem sich auch die Excel-Datei, die als Vorlage diente, befindet.
+einer *Booklet.xml*. Die *Booklet.xml* wird dann im selben Verzeichnis gespeichert in dem sich auch die Excel-Datei, die als Vorlage diente, 
+befindet.
 
 Um die Inhalte und Strukturen dieser Vorlage besser zu verstehen, betrachten Sie bitte die nachfolgenden Abbildungen. Diese gehen näher 
-auf die Strukturen der Excel-Inhalte und den Auswirkungen auf die so generierte *Booklet.xml* ein. Achten Sie auch die farbliche Hervorhebung auf den 
-Excel-Blättern und im generierten Code.
+auf die Strukturen der Excel-Inhalte und den Auswirkungen auf die so generierte *Booklet.xml* ein. Achten Sie auch die farbliche Hervorhebung 
+auf den Excel-Blättern und im generierten Code.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_ToolBox_Excel_final.png)
 
@@ -599,9 +611,11 @@ sind eine Reihe von Kriterien zu beachten:
 
 * Sie müssen eindeutig sein: Kein Login-Benutzername darf doppelt vorkommen.
 * Die Zeichen müssen gut merkbar sein, damit bei der Übertragung vom Zettel in den Computer kein Fehler passiert.
-* Die Tasten sollen auf der Computer-Tastatur gut findbar sein. Es sollte zur Eingabe nur eine Taste nötig sein. Großbuchstaben und die meisten Sonderzeichen sind also ungünstig.
+* Die Tasten sollen auf der Computer-Tastatur gut findbar sein. Es sollte zur Eingabe nur eine Taste nötig sein. 
+  Großbuchstaben und die meisten Sonderzeichen sind also ungünstig.
 * Die Zeichen müssen gut lesbar sein: Optisch sehr ähnliche Zeichen wie "n" und "m" oder "1" und "l" sind zu vermeiden.
-* Die Codes müssen gut sprechbar und akustisch verständlich sein: Sollte z. B. die Testleiterin einem Schüler den Code ansagen, darf es keine Fehler geben.
+* Die Codes müssen gut sprechbar und akustisch verständlich sein: Sollte z. B. die Testleiterin einem Schüler den Code ansagen, 
+  darf es keine Fehler geben.
 * Es sollte keine Gefahr stehen, dass durch nicht erkannte Zeichenkodierung von Dateien Probleme mit Sonderzeichen (Umlaute!) auftreten.
 
 Über die Funktion "Logins-Xlsx" erzeugt die itc-ToolBox eine Excel-Tabelle mit vier 
@@ -641,25 +655,30 @@ eine Mehrfachverwendung auszuschließen.
 
 Das Testcenter gibt je nach gewähltem Durchführungsmodi am Ende eines Tests verschiedene Dateien aus. Diese dienen der Auswertung
 einer Studie. Die Dateien können im Testcenter unter der jeweiligen durchgeführten Studie gefunden werden.
-Nach Anmeldung als Testorganisator\*in stehen die Dateien in der abgeschlossenen Studie unter dem Punkt: *Ergenisse/ Antworten* zum Download bereit.
-Setzen Sie anschließend einen Haken bei dem Probanden dessen Auswertungsdaten Sie einsehen möchten. Nachfolgend werden Ihnen 3 Datensätze angeboten:
+Nach Anmeldung als Testorganisator\*in stehen die Dateien in der abgeschlossenen Studie unter dem Punkt: *Ergebnisse/ Antworten* 
+zum Download bereit. Setzen Sie anschließend einen Haken bei dem Probanden dessen Auswertungsdaten Sie einsehen möchten. 
+Nachfolgend werden Ihnen 3 Datensätze angeboten:
 
 * Anworten
 * Logs
 * Kommentare
 
-Alle 3 Datensätze können heruntergeladen werden und werden als Csv-Datei am gewählten Zielort gespeichert.
+Alle 3 Datensätze können heruntergeladen und als Csv-Datei am gewählten Ziehlort gespeichert werden.
 
 ---
 
 ### Nachberabeitung mittels Itc-Toolbox
 
 In Csv-Dateien werden Werte in einer bestimmten Art und Weise aufgelistet und voneinander abgegrenzt. Die Abgrenzung erfolgt mittels
-Semikolon, Hochkommata und Komma. Tabellenkalkulationsprogramme, wie bspw. Excel, können dieses Format lesen und erkennen über die entsprechende Zeichensetzung,
-welche Werte bspw. in den Tabellenkopf, in eine bestimmte Zeile oder Spalte gehören. Eine Csv-Datei ist vorwiegend als Werteransportmittel gedacht und ist daher nur schlecht 
-für den Menschen lesbar. Daher ist es sinnvoll diese Csv-Datei in eine entsprechende Tabelle zu überführen. Damit erhöht sich die Lesbarkeit deutlich und macht die Auswertung
-zudem deutlich weniger fehleranfällig. Das IQB bietet zur Tabellenkonvertierung ein kleines Tool mit dem Namen: *ITC-Toolbox* für Windows an. Dieses ist frei verfügbar und kann
-von Anwender\*innen genutzt werden. Sie können das Programm über die IQB-Website herunterladen: https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox
+Semikolon, Hochkommata und Komma. Tabellenkalkulationsprogramme, wie bspw. Excel, können dieses Format lesen und erkennen über die 
+entsprechende Zeichensetzung, welche Werte bspw. in den Tabellenkopf, in eine bestimmte Zeile oder Spalte gehören. 
+Eine Csv-Datei ist vorwiegend als Werteransportmittel gedacht und ist daher nur schlecht für den Menschen lesbar. 
+Daher ist es sinnvoll diese Csv-Datei in eine entsprechende Tabelle zu überführen. Damit erhöht sich die Lesbarkeit deutlich und macht 
+die Auswertung zudem deutlich weniger fehleranfällig. Das IQB bietet zur Tabellenkonvertierung ein kleines Tool mit dem Namen: 
+**ITC-Toolbox** für Windows an. Dieses ist frei verfügbar und kann von Anwender\*innen genutzt werden. Sie können das 
+Programm über die IQB-Website herunterladen:
+
+https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox
 
 Nach dem Öffnen des Programms stehen folgende Optionen zur Auswahl:
 
@@ -668,13 +687,17 @@ Nach dem Öffnen des Programms stehen folgende Optionen zur Auswahl:
 * SysCheck csv- > xlsx
 * Antworten und Logs csv -> xlsx
 
-Mittels der ersten beiden Punkte ist es zum einen möglich aus einer Excel-Tabelle eine *Booklet.xml* zu erzeugen und zum anderen die Logindaten übersichtlicher
-zu organisieren. Näheres dazu entnehmen Sie bitte dem Kapitel: [Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
+Mittels der ersten beiden Punkte ist es zum einen möglich aus einer Excel-Tabelle eine *Booklet.xml* zu erzeugen und zum 
+anderen die Logindaten übersichtlicher zu organisieren. Näheres dazu entnehmen Sie bitte dem Kapitel:
+
+[Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
 
 Mittels der letzten beiden Punkte können Csv-Dateien in Exceldateien (xlsx-Dateien) konvertiert werden. 
-Wenn Sie zuvor heruntergeladene Antworten und Logs eines Probanden in ein Xlsx-Format konvertieren möchten, betätigen Sie einfach den Button: *Antworten und Logs csv -> xlsx*.
-Anschließend wählen Sie den Ort aus an welchem sich die Dateien befinden und wählen einen Namen und einen Speicherort für die generierte Excel-Tabelle aus.
-Selbiges können Sie auch für zuvor heruntergeladene SysCheck-Dateien tun. Am Ende werden somit 3 Excel-Tabellen erzeugt, die Sie frei bezeichnen können.
+Wenn Sie zuvor heruntergeladenen Antworten und Logs eines Probanden in ein Xlsx-Format konvertieren möchten, 
+betätigen Sie einfach den Button: *Antworten und Logs csv -> xlsx*. Anschließend wählen Sie den Ort aus an welchem sich die 
+Dateien befinden und wählen einen Namen und einen Speicherort für die zu generierende Excel-Tabelle aus. 
+Selbiges können Sie auch für zuvor heruntergeladene SysCheck-Dateien tun. Am Ende werden somit 3 Excel-Tabellen erzeugt, 
+die Sie frei bezeichnen können.
 
 Wie sind die Inhalte in diesen 3 Tabellen zu deuten?
 
@@ -685,8 +708,9 @@ Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 27.03.2021
 Prio: high
 todo:
-  - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
-    haben die Spalten andere Namen als die in der Tbl aufgeführten. --> Martin berfragen ob Tbl weiterhin Gültigkeit hat????
+  - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer 
+    Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. Martin berfragen ob die Angaben nachfolgend sicher noch gültig sind???? 
 ```
 
 | Spaltenbezeichnung | Bedeutung |
@@ -707,8 +731,9 @@ Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
 Prio: high
 todo:
-  - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
-    haben die Spalten andere Namen als die in der Tbl aufgeführten. --> Martin berfragen ob Tbl weiterhin Gültigkeit hat????
+  - Die Tabellenwerte entstammen einem alten Text auf GitHub. 
+    Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. Martin berfragen ob nachfolgende Angaben sicher noch Gültigkeit haben????
 ```
 
 Für die weitere Beurteilung der Antworten schickt das IQB-Testcenter eine größere 
@@ -767,7 +792,8 @@ Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
 Prio: high
 todo:
-  - Im alten Text von Martin würde jetzt hier noch etwas von Yaml-Datei stehen -> mit Martin klären was das ist und wofür es verwendet wird.
+  - Im alten Text von Martin würde jetzt hier noch etwas von Yaml-Datei stehen 
+    mit Martin klären was das ist und wofür es verwendet wird.
 
 ```
 
@@ -795,7 +821,8 @@ todo:
 ## 2.5 Modi der Testdurchführung
 
 Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, 
-es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
+es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu 
+unterschiedlichem Verhalten führen.
 
 ---
 
@@ -806,7 +833,8 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 <?xml version="1.0" encoding="utf-8"?>
   <Testtakers
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Testtakers.xsd">
+     xsi:noNamespaceSchemaLocation=
+	 "https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Testtakers.xsd">
 
      <Metadata>
        <Description>Technischer Test Mechtel</Description>
@@ -879,7 +907,10 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 
 ### Booklet Konfiguration
 
-Es ist möglich Booklets entsprechend zu konfigurieren. Hierfür stehen einige Attribute zur Verfügung, die in der Booklet.xml (wenn gewünscht) anzugeben sind. Alle verwendbaren Attribute befinden sich in einer separaten Konfiguraionsdatei (booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie einzelne Attribute nutzen, müssen Sie das Attribut und den gewünschten Wert (Datum) in der Booklet.xml unter "BookletConfig" angeben. 
+Es ist möglich Booklets entsprechend zu konfigurieren. Hierfür stehen einige Attribute zur Verfügung, die in der Booklet.xml 
+(wenn gewünscht) anzugeben sind. Alle verwendbaren Attribute befinden sich in einer separaten Konfiguraionsdatei 
+(booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie einzelne Attribute nutzen, 
+müssen Sie das Attribut und den gewünschten Wert (Datum) in der Booklet.xml unter "BookletConfig" angeben. 
 
 Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 
@@ -904,7 +935,8 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 ---
 
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. 
+**Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
 |Attribut &nbsp; &nbsp;| Bedeutung     | Wert (Datum)    |
 | :----------------| :----------| :--------|
@@ -925,10 +957,14 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ### Custom Text Konfigurationen
 
-Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, in welcher das **Testcenter** 
-ausgeführt wird, passen. Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, die das **Testcenter** ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei 
-deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
-In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
+Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. 
+Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, 
+in welcher das **Testcenter** ausgeführt wird, passen. Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, 
+die das **Testcenter** ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei 
+deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. 
+Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
+In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". 
+CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
 
 Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Testtakers.xml) aufgeführt:
 
@@ -964,7 +1000,8 @@ Nachfolgend sind die benötigten Strukuren für `Custom Check` aufgeführt:
 
 ---
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. **Achten Sie bei der Verwendung dieser Attribute auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. 
+**Achten Sie bei der Verwendung dieser Attribute auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
 
 | Key (Attribut)  | Used for | Default |
@@ -1036,14 +1073,16 @@ Für eine Testdurchführung erlaubt das IQB-Testcenter verschiedene Arten der An
 ---
 
 ### Klassisch: Anmeldename, Kennwort
-Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. Diese Anmeldeform wird üblicherweise erwartet. 
-Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt aber nur Punkte, d. h. man kann nicht mitlesen.
+Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. 
+Diese Anmeldeform wird üblicherweise erwartet. Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt 
+aber nur Punkte, d. h. man kann nicht mitlesen.
 
 ---
 
 ### Kurz: Nur Anmeldename
-Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung des Namens hinreichend ungewöhnlich ist. 
-Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
+Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung 
+des Namens hinreichend ungewöhnlich ist. Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens 
+erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
 
 ---
 
@@ -1054,18 +1093,18 @@ Wenn "u8h5m2a4c3x2f2g8" der Anmeldename ist würde der Link so aussehen:
 https://www.iqb-testcenter.de/#/u8h5m2a4c3x2f2g8
 ```
 Dadurch macht man es noch einfacher: Auf den Link klicken, und man muss nur noch das Testheft wählen. Diese Form der 
-Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: Es wird nur ein Login in einer Einladungs-E-Mail verschickt, 
-und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
+Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: 
+Es wird nur ein Login in einer Einladungs-E-Mail verschickt, und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
 
 ---
 
 ### Länger: Anmeldename, Kennwort, Personencode
 Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen und Schüler alle Computer zu starten, 
 einen Standard-User anzumelden, den Browser zu starten und die richtige Internet-Adresse aufzurufen. Dann ist es auch hilfreich, 
-wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. Anmeldename und Kennwort 
-sind dann für die Gruppe gleich. Es reicht dann anschließend die Eingabe eines kurzen Personencodes durch die Testperson, 
-um eine eindeutige Identifizierung sicherzustellen. Man spart so Testzeit und vermeidet Fehleingaben. Dieses Szenario bietet sich z. B. an, wenn man den Test nicht in der Schule, 
-sondern in dem eigenen oder einem angemieteten Computer-Lab durchführt.
+wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. 
+Anmeldename und Kennwort sind dann für die Gruppe gleich. Es reicht dann anschließend die Eingabe eines kurzen Personencodes durch die Testperson, 
+um eine eindeutige Identifizierung sicherzustellen. Man spart so Testzeit und vermeidet Fehleingaben. Dieses Szenario bietet sich z. B. an, 
+wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemieteten Computer-Lab durchführt.
 
 ---
 
@@ -1216,11 +1255,15 @@ Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Aus der Verbindung
 (engl. Interfaces) sind in diesem Dokumenten- bzw. Codeverwaltungssystem GitHub 
 beschrieben.
 
-Da die Testsysteme eine Anpassung erfahren müssten, wenn Aufgabenformate geändert werden, kommt ein Player mit einer definierten Schnittstelle zum Einsatz. 
-Der zu verwendende Player wird in der jeweiligen Unit definiert und mit der Unit geladen. Dieser spielt dann die in der Unit definierten Aufgabenformate ab. 
-Die dazu gehörige Schnittstelle des Players gewährleistet eine Kompatibilität zu den Anwendungen, die bereits für die Vera Papierstudien genutzt wurden und weiterhin werden. 
-Der Player wird daher auch Verona-Player und die Schnittstelle auch Verona-Schnittstelle genannt. Ändert sich ein Aufgabenformat, muss somit nur noch ein dazu passender Player geladen werden, 
-der dieses Format auch abspielen kann. Durch den modularen Aufbau des Testcenters entfällt somit eine Anpassung der gesamten Testumgebung, wenn sich Aufgabenformate ändern. Stattdessen 
+Da die Testsysteme eine Anpassung erfahren müssten, wenn Aufgabenformate geändert werden, 
+kommt ein Player mit einer definierten Schnittstelle zum Einsatz. 
+Der zu verwendende Player wird in der jeweiligen Unit definiert und mit der Unit geladen. Dieser spielt dann die in der 
+Unit definierten Aufgabenformate ab. Die dazu gehörige Schnittstelle des Players gewährleistet eine Kompatibilität zu den Anwendungen, 
+die bereits für die Vera Papierstudien genutzt wurden und weiterhin werden. 
+Der Player wird daher auch Verona-Player und die Schnittstelle auch Verona-Schnittstelle genannt. 
+Ändert sich ein Aufgabenformat, muss somit nur noch ein dazu passender Player geladen werden, 
+der dieses Format auch abspielen kann. Durch den modularen Aufbau des Testcenters entfällt somit eine Anpassung 
+der gesamten Testumgebung, wenn sich Aufgabenformate ändern. Stattdessen 
 wird einfach der entsprechende Player für das Format geladen und in die Oberfläche des Testcenters intergriert.
 
 Nachfolgend finden Sie einige Videos zum Thema:
@@ -1233,31 +1276,36 @@ Nachfolgend finden Sie einige Videos zum Thema:
 
 ### Grundsätze Player Programmierung
 
-Die folgenden Grundsätze bestimmen aktuell die Entwicklung von Verona-Playern am IQB. Sie sind nicht mit anderen Partnern bzw. Institutionen abgestimmt. 
-Die Grundsätze sind teilweise noch nicht umgesetzt, sondern werden bei künftigen Änderungen implementiert.
+Die folgenden Grundsätze bestimmen aktuell die Entwicklung von Verona-Playern am IQB. Sie sind nicht mit anderen Partnern bzw. Institutionen 
+abgestimmt. Die Grundsätze sind teilweise noch nicht umgesetzt, sondern werden bei künftigen Änderungen implementiert.
 
 #### Datenformat der Unit-Definition
 
 Aus der Unit-Definition müssen Anwendungen erkennen, welcher Player benutzt werden soll, um die Unit anzuzeigen bzw. auszuführen. 
-Das IQB hinterlegt hier nicht eine ID eines Players, sondern benennt das Datenformat. Dies ist universeller, denn es mag verschiedene Player geben, 
-die das Datenformat unterstützen. Außerdem ergibt sich daraus auch der notwendige Editor bzw. die Liste der möglichen Editoren für die Änderung der Unit-Defintion.
+Das IQB hinterlegt hier nicht eine ID eines Players, sondern benennt das Datenformat. Dies ist universeller, 
+denn es mag verschiedene Player geben, die das Datenformat unterstützen. Außerdem ergibt sich daraus auch der notwendige Editor 
+bzw. die Liste der möglichen Editoren für die Änderung der Unit-Defintion.
 Das Datenformat besteht aus einer ID und einer Version nach Semantic Versioning 2.0.0, getrennt durch Leerzeichen. Beispiel: `iqb-dan 3.2.3`. 
-Es werden Player bzw. andere Programmierungen als kompatibel angesehen, die mindestens diese Version unterstützen sowie maximal die letzte Version des major-Elementes der Version. 
-Für das Beispiel würde das bedeuten, dass ein Player mit dokumentiertem Datenformat `iqb-dan 3.4.0` oder `iqb-dan 3.34.7` als zulässig angesehen wird, aber die Versionen `iqb-dan 3.2.1` sowie `iqb-dan 4.0.0` nicht.
+Es werden Player bzw. andere Programmierungen als kompatibel angesehen, die mindestens diese Version unterstützen sowie 
+maximal die letzte Version des major-Elementes der Version. Für das Beispiel würde das bedeuten, dass ein Player mit dokumentiertem 
+Datenformat `iqb-dan 3.4.0` oder `iqb-dan 3.34.7` als zulässig angesehen wird, aber die Versionen `iqb-dan 3.2.1` sowie `iqb-dan 4.0.0` nicht.
 
 #### Player-Registry
 
-Für Player und andere Module sollten Metadaten hinterlegt werden, die die Eignung für bestimmte Use Cases und Datenformate anzeigen und die Auswahl durch eine Anwendung unterstützen. 
-Wir stellen uns einen Server vor, über dessen API Anfragen gestellt und Referenzen auf Player zurückgegeben werden können. Diese Referenzen sollten vorzugsweise DOI-Kennungen sein, 
-die dann auf GitHub-Dateien aufgelöst werden. Dieses Verfahren ist in Vorbereitung, wird aber aktuell als übertrieben angesehen angesichts der geringen Anzahl der Player. 
-Wer Anwendungen für Verona-Plugins erstellt, sollte ein manuelles Einspielen der erforderlichen Player/Editoren usw. vorsehen.
+Für Player und andere Module sollten Metadaten hinterlegt werden, die die Eignung für bestimmte Use Cases und Datenformate 
+anzeigen und die Auswahl durch eine Anwendung unterstützen. Wir stellen uns einen Server vor, über dessen API Anfragen gestellt 
+und Referenzen auf Player zurückgegeben werden können. Diese Referenzen sollten vorzugsweise DOI-Kennungen sein, 
+die dann auf GitHub-Dateien aufgelöst werden. Dieses Verfahren ist in Vorbereitung, wird aber aktuell als übertrieben 
+angesehen angesichts der geringen Anzahl der Player. Wer Anwendungen für Verona-Plugins erstellt, 
+sollte ein manuelles Einspielen der erforderlichen Player/Editoren usw. vorsehen.
 
 #### Kleine fokussierte Player
 
-Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player einsetzen. Man könnte Player konzipieren, die alle möglichen Interaktionselemente abdecken, 
-das IQB möchte aber eher typische Interaktionselemente als Basisausstattung umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. 
-Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. Wo dann genau die Grenze zu ziehen ist wird 
-sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
+Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player einsetzen. Man könnte Player konzipieren, 
+die alle möglichen Interaktionselemente abdecken, das IQB möchte aber eher typische Interaktionselemente als Basisausstattung 
+umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. 
+Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. 
+Wo dann genau die Grenze zu ziehen ist wird sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-System-Check">
@@ -1281,18 +1329,36 @@ sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstell
 ## 2.10 System Check
 
 ### Was ist ein System-Check?
-Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen Online-Test nicht geeignet ist. Der System-Check ist ein Weg, vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall- und damit die Frustrate deutlich senken.
+
+Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen 
+Online-Test nicht geeignet ist. Der System-Check ist ein Weg, vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen 
+und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall- und damit die Frustrate deutlich senken.
 
 ### Planung
-Nach dem Einrichten eines Systemchecks erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. Man kann alle Interessierten einladen, darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen folgende Optionen zur Verfügung:
-* Probeweises Aufrufen einer Testaufgabe: Eine speziell dafür entwickelte Testaufgabe wird gezeigt und man kann die Bearbeitungselemente auswählen, ändern und so prüfen, ob die Aufgabenelemente wie erwartet funktionieren.
-* Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (wurde die Audio-Datei abgespielt?, Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden (wieviele Plätze sind im PC-Lab?, Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?, Gibt es ein Whiteboard? usw.)
-* Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung, anhand der die Zuordnung der Daten z. B. zu einer bestimmten Schule möglich ist.
+
+Nach dem Einrichten eines Systemchecks erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. 
+Man kann alle Interessierten einladen, darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von 
+Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen folgende Optionen zur Verfügung:
+
+* Probeweises Aufrufen einer Testaufgabe: Eine speziell dafür entwickelte Testaufgabe wird gezeigt und man kann die Bearbeitungselemente auswählen,
+  ändern und so prüfen, ob die Aufgabenelemente wie erwartet funktionieren.
+* Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. 
+  Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (wurde die Audio-Datei abgespielt? 
+  Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden 
+  (wieviele Plätze sind im PC-Lab?, Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?, Gibt es ein Whiteboard? usw.)
+* Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. 
+  Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung, anhand der die Zuordnung der Daten z. B. 
+  zu einer bestimmten Schule möglich ist.
 
 ### XML-Definition schreiben
-Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. Die Berichte des System-Checks werden dann auch in diesem Arbeitsbereich gespeichert.
 
-Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer [Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd) festgelegt. Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
+Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
+VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. 
+Die Berichte des System-Checks werden dann auch in diesem Arbeitsbereich gespeichert.
+
+Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer 
+[Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd) festgelegt. 
+Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1334,26 +1400,42 @@ Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in eine
 </SysCheck>
 ```
 #### Kopfdeklarationen
-Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. Dazu muss der Editor die Schemadatei kennen. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
 
+Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. 
+Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen 
+vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. 
+Dazu muss der Editor die Schemadatei kennen. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
 Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung.
 
 #### Metadaten
-Zur Kennzeichnung und Beschreibung der Datei sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung auch der Berichte, letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen, verschiedene Versionen eines Systemchecks zu unterscheiden.
+
+Zur Kennzeichnung und Beschreibung der Datei sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung auch der 
+Berichte, letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen, verschiedene Versionen eines 
+Systemchecks zu unterscheiden.
 
 #### Netzwerkverbindung
-Die Angaben in den Bereichen `UploadSpeed` und `DownloadSpeed` sind rein technischer Natur und sollten nur angepasst werden, wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team nach!
+
+Die Angaben in den Bereichen `UploadSpeed` und `DownloadSpeed` sind rein technischer Natur und sollten nur angepasst werden, 
+wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team nach!
 
 #### Unit
-Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach dem Test der Verbindungsqualität die Anzeige einer Unit. Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt.
 
-Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Außerdem ist der in der Unit-Definition genannte Player im Arbeitsbereich bereitzustellen.
+Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach dem Test der Verbindungsqualität die Anzeige einer Unit. 
+Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. 
+Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt.
+
+Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Außerdem ist der in der Unit-Definition genannte 
+Player im Arbeitsbereich bereitzustellen.
 
 #### Bericht speichern
-Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
+
+Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend gespeichert werden. 
+Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
 
 #### CustomTexts (in Vorbereitung)
-Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus [dieser Liste](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/custom-texts.md) die Schlüsselworte mit dem Präfix `syscheck_`.
+
+Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus 
+[dieser Liste](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/custom-texts.md) die Schlüsselworte mit dem Präfix `syscheck_`.
 
 ---
 
