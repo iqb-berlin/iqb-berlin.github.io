@@ -570,19 +570,11 @@ Um die Inhalte und Strukturen dieser Vorlage besser zu verstehen, betrachten Sie
 auf die Strukturen der Excel-Inhalte und den Auswirkungen auf die so generierte *Booklet.xml* ein. Achten Sie auch die farbliche Hervorhebung auf den 
 Excel-Blättern und im generierten Code.
 
-```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
-Stand: 27.03.2021
-Prio: high
-todo:
-  - Links zu Bilder auf das richtige Repos verweisen
-```
-
-![iqb online assessment applications with relations: testcenter](https://github.com/tobhu1981/test-wiki/blob/main/TC_FE_ToolBox_Excel_final.png)
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_ToolBox_Excel_final.png)
 
 Auf der Grundlage dieser im obigen Bild dargestellten Excel-Datei und deren Inhalten wird die folgende *Booklet.xml* erzeugt:
 
-![iqb online assessment applications with relations: testcenter](https://github.com/tobhu1981/test-wiki/blob/main/TC_FE_ToolBox_BookletXml_final.png)
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_ToolBox_BookletXml_final.png)
 
 ---
 
@@ -778,17 +770,6 @@ todo:
   - Im alten Text von Martin würde jetzt hier noch etwas von Yaml-Datei stehen -> mit Martin klären was das ist und wofür es verwendet wird.
 
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
