@@ -3,6 +3,7 @@
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
+Prio: low
 todo:
   - Was gehört hier noch her? Spezielle Infos zum Testcenter, wie z.B. Ansprechpartner, Entwicklungststände etc?
 ```
@@ -141,7 +142,7 @@ So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob,
 auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, kann Jakob sich mit diesen von Ihnen
 eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen gewünschten Art und Weise durchlaufen.
 
-Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Bearbeiten eines Tests](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-eines-Tests)
+Mehr zu diesem Thema erfahren Sie auch im Kapitel: [Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
 
 ---
 
@@ -163,7 +164,7 @@ In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu e
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -181,16 +182,29 @@ In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu e
 
 ---
 
-## 2.3 Bearbeiten der Testdateien
+## 2.3 Vorbearbeitung der Testdateien
 
 Die im **Teststudio** erzeugten Dateien können vor dem Upload in das **Testcenter** berarbeitet werden.<br>
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
 [TBA Einführung -> Ablauf Entwurf und Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung)
 
+Die Testdateien können einzeln "händisch" bearbeitet und die vorgenommenen Änderungen später im Testcenter abgespielt werden.
+Diese Methode verlangt etwas Basiswissen bzgl. der Syntax der einzelnen Dateien, hat aber den Vorteil Änderungen direkt und bewusst herbeizuführen.
+Diese Methode soll an dieser Stelle als: **Direktes Bearbeiten** bezeichnet werden.
+
+Eine weitere Methode ist das Verwenden von Hilfsmitteln. Eines dieser Hilfsmittel stellt das IQB zur freien Verfügung. Es trägt den Namen
+**ITC-Toolbox** und kann über den folgenden Link heruntergeladen werden: https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox<br>
+Diese Methode der Bearbeitung soll an dieser Stelle als: **Indirektes Bearbeiten** bezeichnet werden. Die Dateien werden also indirekt über das Tool
+**ITC-Toolbox** bearbeitet. Das Tool konvertiert dabei Excelinhalte in die für Testdateien benötigten Formate, in unserem Fall Xml-Formate.
+Vorteil dieser Methode: Sie müssen nicht direkt in der Testdatei arbeiten, sondern können die Werte der Testdatei mittels Excel beinflussen. 
+Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, eventuell verlangt es aber entsprechende Nachkontrollen der Testdatei.
+
 ---
 
-**Bevor es los geht ein paar Grundlagen:**
+### Direktes Bearbeiten
+
+**Bevor es los geht ein paar Grundlagen zu XML:**
 
 Bei den zu bearbeitenden Dateien handelt es sich um Xml-Dateien. Xml ist ein textbasiertes Datenformat.   
 Die Daten werden also in Textform in einem Text hinterlegt. Xml-Dateien können daher auch einfach mittels eines Texteditors bearbeitet werden.
@@ -241,7 +255,7 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
   
 ---
 
-### Attribute und Daten TESTTAKERS.xml
+#### Attribute und Daten TESTTAKERS.xml
 
 `METADATA`<br>
 
@@ -347,7 +361,7 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 
 ---
 
-### Attribute und Daten BOOKLET.xml
+#### Attribute und Daten BOOKLET.xml
 
 `METADATA`
 
@@ -470,7 +484,7 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 
 ---
 
-### Attribute und Daten UNIT.xml
+#### Attribute und Daten UNIT.xml
 
 `UNIT`
 
@@ -516,8 +530,104 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 
 ---
 
+### Indirektes Berabeiten
+
+#### IQB ITC-Toolbox
+
+Wie eingangs bereits erwähnt können Sie mithilfe des Tools: **ITC-Toolbox** die *Booklet.xml* indirekt bearbeiten bzw. erzeugen.
+**ITC-Toolbox** benötigt dafür eine Excel-Datei in welcher die zukünftigen Inhalte der Xml-Datei
+in einer bestimmten Anordnung zu finden sind. Nachfolgend können Sie sich eine entprechende Excel-Vorlage herunterladen: 
+
+[Excel-Vorlage für die ITC-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/Booklet-Template.xlsx)
+
+Nach der Installation und dem Start der **ITC-Toolbox** können Sie zwischen verschiedenen Optionen wählen:
+
+* Booklet-Xlsx
+* Login-Xlsx
+* SysCheck csv- > xlsx
+* Antworten und Logs csv -> xlsx
+
+In diesem Kapitel interessieren uns vor allem die beiden Punkte *Booklet-Xlsx* (erzeugt eine Booklet.xml) 
+und *Login-Xlsx* (unterstützt bei der Login-Datenverwaltung). Die letzten beiden Punkte sind für die Nachbearbeitung, 
+sprich die Bearbeitung nach Abschluss eines Tests, bestimmt und werden daher im nachfolgenden Kapitel behandelt:
+
+[Testcenter / Nachbearbeitung der Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien)
+
+Damit die ITC-Toolbox die Werte entsprechend in der Excel-Tabellen finden und zuordnen kann, darf die Grundstruktur der Excel-Vorlage 
+nicht verändert werden. Ändern Sie bitte nicht die Bezeichnungen von Zellen der Tabellenköpfe oder Bezeichner der Excel Blattseiten.
+
+---
+
+**Erzeugen / Bearbeiten der Booklet.xml**
+
+Nach Auswahl des ersten Punktes: *Booklet-Xlsx* muss der Speicherort der entsprechende Excel-Datei angegeben werden.
+**ITC-Toolbox** überprüft anschließend die Struktur der Excel-Datei und versucht die dort angegebenen Zusatzinformationen auf den anderen
+Excel Blattseiten zu finden. Können Bezeichner nicht gefunden oder zugeordnet werden, werden entsprechende Fehlermeldung generiert.
+Wurden alle Bezeichner gefunden und konnten entsprechend zugeordnet werden, erscheint eine Meldung über die erfolgreiche Erzeugung
+einer *Booklet.xml*. Die *Booklet.xml* wird dann im selben Verzeichnis gespeichert in dem sich auch die Excel-Datei, die als Vorlage diente, befindet.
+
+Um die Inhalte und Strukturen dieser Vorlage besser zu verstehen, betrachten Sie bitte die nachfolgenden Abbildungen. Diese gehen näher 
+auf die Strukturen der Excel-Inhalte und den Auswirkungen auf die so generierte *Booklet.xml* ein. Achten Sie auch die farbliche Hervorhebung auf den 
+Excel-Blättern und im generierten Code.
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 27.03.2021
+Prio: high
+todo:
+  - Links zu Bilder auf das richtige Repos verweisen
+```
+
+![iqb online assessment applications with relations: testcenter](https://github.com/tobhu1981/test-wiki/blob/main/TC_FE_ToolBox_Excel_final.png)
+
+Auf der Grundlage dieser im obigen Bild dargestellten Excel-Datei und deren Inhalten wird die folgende *Booklet.xml* erzeugt:
+
+![iqb online assessment applications with relations: testcenter](https://github.com/tobhu1981/test-wiki/blob/main/TC_FE_ToolBox_BookletXml_final.png)
+
+---
+
+**Login-Datenverwaltung**
+
+Über den Admin-Bereich des Testcenters sind die Zugangsdaten für 
+Testpersonen, aber auch für Reviewer und die Testleitung zu hinterlegen. Struturiert 
+in Gruppen, bestehen diese meist aus Benutzername und Kennwort, ggf. auch ergänzt 
+durch Personencodes.
+
+Die Verfahren zur Erzeugung und Verwaltung der Login-Daten sind sehr vielfältig. Mal 
+hat man Monitor-Accounts, mal Code-basierte, mal nicht, und die Weiterverarbeitung bzw. 
+Dokumentation (Verschicken an die Schulen, Zettelchen auf dem Platz) hat nochmal 
+gesonderte Anforderungen. Außerdem kann man oft nicht alle Logins auf einmal erzeugen, 
+weil die Rückmeldungen der Schulen nur schleppend eintreffen. Dann muss man zu 
+vorhandenen Logins neue erzeugen. Eventuell sind Aspekte des Datenschutzes zu beachten.
+
+Im Moment scheint es daher nicht sinnvoll, ein formales Verfahren für Logins festzulegen. Es 
+gibt allerdings einen Schritt hierbei, der sehr anstrengend ist: Festlegen von Codes für 
+Logins (Benutzername/-kennzeichen, Kennwort) oder Personencode. Hierbei 
+sind eine Reihe von Kriterien zu beachten:
+
+* Sie müssen eindeutig sein: Kein Login-Benutzername darf doppelt vorkommen.
+* Die Zeichen müssen gut merkbar sein, damit bei der Übertragung vom Zettel in den Computer kein Fehler passiert.
+* Die Tasten sollen auf der Computer-Tastatur gut findbar sein. Es sollte zur Eingabe nur eine Taste nötig sein. Großbuchstaben und die meisten Sonderzeichen sind also ungünstig.
+* Die Zeichen müssen gut lesbar sein: Optisch sehr ähnliche Zeichen wie "n" und "m" oder "1" und "l" sind zu vermeiden.
+* Die Codes müssen gut sprechbar und akustisch verständlich sein: Sollte z. B. die Testleiterin einem Schüler den Code ansagen, darf es keine Fehler geben.
+* Es sollte keine Gefahr stehen, dass durch nicht erkannte Zeichenkodierung von Dateien Probleme mit Sonderzeichen (Umlaute!) auftreten.
+
+Über die Funktion "Logins-Xlsx" erzeugt die itc-ToolBox eine Excel-Tabelle mit vier 
+Spalten: Zweistellige, dreistellige, vierstellige und fünfstellige Codes. Das IQB 
+verwendet eine Auswahl aus Kleinbuchstaben und Ziffern - keine Sonderzeichen und Umlaute. 
+Kleinbuchstaben wechseln sich dabei mit Ziffern ab. Die Codes kommen in der Tabelle 
+jeweils nur einmal vor.
+
+Diese Tabelle soll für eine Studie als Quelle benutzt werden, aus 
+der man nach Bedarf Codes entnimmt (Copy & Paste) und in die eigentlichen Dokumente zur 
+Login-Verwaltung überträgt. Bei Codes für Logins (Eindeutigkeit erforderlich über die 
+gesamte Studie) sollten die Codes in der Tabelle gelöscht oder markiert werden, um 
+eine Mehrfachverwendung auszuschließen.
+
+---
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -535,7 +645,173 @@ Wir können den Editor Notepad++ empfehlen. Dieser kann auch noch andere Syntax 
 
 ---
 
-## 2.4 Modi der Testdurchführung
+## 2.4 Nachbearbeitung der Testdateien
+
+Das Testcenter gibt je nach gewähltem Durchführungsmodi am Ende eines Tests verschiedene Dateien aus. Diese dienen der Auswertung
+einer Studie. Die Dateien können im Testcenter unter der jeweiligen durchgeführten Studie gefunden werden.
+Nach Anmeldung als Testorganisator\*in stehen die Dateien in der abgeschlossenen Studie unter dem Punkt: *Ergenisse/ Antworten* zum Download bereit.
+Setzen Sie anschließend einen Haken bei dem Probanden dessen Auswertungsdaten Sie einsehen möchten. Nachfolgend werden Ihnen 3 Datensätze angeboten:
+
+* Anworten
+* Logs
+* Kommentare
+
+Alle 3 Datensätze können heruntergeladen werden und werden als Csv-Datei am gewählten Zielort gespeichert.
+
+---
+
+### Nachberabeitung mittels Itc-Toolbox
+
+In Csv-Dateien werden Werte in einer bestimmten Art und Weise aufgelistet und voneinander abgegrenzt. Die Abgrenzung erfolgt mittels
+Semikolon, Hochkommata und Komma. Tabellenkalkulationsprogramme, wie bspw. Excel, können dieses Format lesen und erkennen über die entsprechende Zeichensetzung,
+welche Werte bspw. in den Tabellenkopf, in eine bestimmte Zeile oder Spalte gehören. Eine Csv-Datei ist vorwiegend als Werteransportmittel gedacht und ist daher nur schlecht 
+für den Menschen lesbar. Daher ist es sinnvoll diese Csv-Datei in eine entsprechende Tabelle zu überführen. Damit erhöht sich die Lesbarkeit deutlich und macht die Auswertung
+zudem deutlich weniger fehleranfällig. Das IQB bietet zur Tabellenkonvertierung ein kleines Tool mit dem Namen: *ITC-Toolbox* für Windows an. Dieses ist frei verfügbar und kann
+von Anwender\*innen genutzt werden. Sie können das Programm über die IQB-Website herunterladen: https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox
+
+Nach dem Öffnen des Programms stehen folgende Optionen zur Auswahl:
+
+* Booklet-Xlsx
+* Login-Xlsx
+* SysCheck csv- > xlsx
+* Antworten und Logs csv -> xlsx
+
+Mittels der ersten beiden Punkte ist es zum einen möglich aus einer Excel-Tabelle eine *Booklet.xml* zu erzeugen und zum anderen die Logindaten übersichtlicher
+zu organisieren. Näheres dazu entnehmen Sie bitte dem Kapitel: [Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
+
+Mittels der letzten beiden Punkte können Csv-Dateien in Exceldateien (xlsx-Dateien) konvertiert werden. 
+Wenn Sie zuvor heruntergeladene Antworten und Logs eines Probanden in ein Xlsx-Format konvertieren möchten, betätigen Sie einfach den Button: *Antworten und Logs csv -> xlsx*.
+Anschließend wählen Sie den Ort aus an welchem sich die Dateien befinden und wählen einen Namen und einen Speicherort für die generierte Excel-Tabelle aus.
+Selbiges können Sie auch für zuvor heruntergeladene SysCheck-Dateien tun. Am Ende werden somit 3 Excel-Tabellen erzeugt, die Sie frei bezeichnen können.
+
+Wie sind die Inhalte in diesen 3 Tabellen zu deuten?
+
+**Tabelle Anworten:**
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 27.03.2021
+Prio: high
+todo:
+  - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. --> Martin berfragen ob Tbl weiterhin Gültigkeit hat????
+```
+
+| Spaltenbezeichnung | Bedeutung |
+| :------------- | :---------- |
+|ID|Kombination aus anderen (nachfolgenden) Informationen. Diese ID wird benötigt, um eine Zeile eindeutig zu identifizieren. Es handelt sich um eine Testsitzung, also eine Testperson beantwortet ein konkretes Booklet. Diese Kombination ist nötig, weil eine Testperson mehrere Booklets haben könnte und in einem Booklet theoretisch dieselbe Unit enthalten sein kann (z. B. Motivationsabfrage). Es muss eindeutig sein, in welchem Booklet diese Unit platziert war.<br> Diese ID wird auch in den anderen zwei Tabellen verwendet, so dass hierüber eine Zusammenführung der Informationen erfolgen kann.|
+|Group|Gruppe, in der das Anmelde-Login platziert war. Dies ist normalerweise nur ein Ordnungsmerkmal für das Monitoring der Durchführung.|
+|Login+Code|Entsprechend der Anmeldung der Testperson|
+| Booklet | ID des Booklets |
+| Variablen nach dem Schema<br>`<Unit-ID>##<innere ID>`<br>z. B. `EL105R##canvasElement10` | Der Player des Testcenters speichert im bisherigen Modell die Antwortdaten als Paarung ID->Wert ab, wobei nicht definiert ist, was ID kennzeichnet (Item, Aspekt eines Items, Eingabeelement des Formulars usw.; hier mal als innere ID bezeichnet). Sicher ist nur, dass diese ID innerhalb der Unit eindeutig ist, und da die Unit-ID eindeutig für das Testheft ist, erlaubt die Kombination Unit-ID mit dieser inneren ID eine eindeutige Zuordnung des Antwort-Wertes zu einer Testperson in einem Booklet, wodurch sich die übliche zweidimensionale Struktur der Antwortdaten ergibt.<br> Es werden nur Units berücksichtigt, die tatsächlich Antwortdaten produziert haben. Reine Textseiten, die z. B. nur Instruktionen enthalten, werden nicht in die Tabelle aufgenommen.<br>Die Variablenspalten werden alphabetisch sortiert ausgegeben.<br>Sollte eine Unit mehrfach in einem Test vorkommen, fügt das System ab dem zweiten Vorkommen der Unit automatisch ein Suffix hinzu:<br>`<Unit-ID>%<n>`<br>n steht hier für die fortlaufende Nummerierung, beginnend mit 1 bei dem zweiten Vorkommen der Unit|
+
+Die Zeilen dieser Tabelle sind nach ID sortiert. Sollte eine Testperson den Test nur gestartet, aber keine Antwortdaten abgeschickt haben, erscheint sie nicht in der Liste.
+
+
+**Tabelle Logs:**
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+Prio: high
+todo:
+  - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. --> Martin berfragen ob Tbl weiterhin Gültigkeit hat????
+```
+
+Für die weitere Beurteilung der Antworten schickt das IQB-Testcenter eine größere 
+Menge zeitpunktbezogener Daten, sog. Log-Daten. Hierbei wird stets ein Zeitstempel 
+mitgeliefert (Datum und Uhrzeit auf dem Computer der Testperson) sowie Art des 
+Ereignisses und ggf. weitere Informationen. Aus dieser Folge von Ereignissen lässt 
+sich die Navigation zwischen Units und Seiten und somit die Zeit ermitteln, die eine 
+Testperson während des Tests auf einer bestimmten Seite verbracht hat.
+
+Die Tabelle TimeOnUnit listet alle Zeiten auf, die die Testpersonen auf einer Unit 
+verbracht hat. Dabei kann der Besuch einer Unit mehrfach auftreten. Folgende Spalten 
+enthalten Informationen hierzu:
+
+* `Start At`: Zeitstempel des Starts der Navigation in die Unit
+* `Player Load Time`: Anzahl Millisekunden nach Start bis zu dem Zeitpunkt, an 
+dem der Player "RUNNING" meldet
+* `Stay Time`: Verweildauer bei dieser Unit in Milisekunden. Das Verweilen beginnt 
+erst nach Laden des Players und der Unit-Daten und wird 
+als beendet angesehen, wenn eine andere Unit angewählt wurde oder der Test terminiert. 
+Achtung: Sollte der Controller ein PAUSE-Commando geben, läuft die Zeit weiter.
+* `Was Paused`: (True/False) Der Controller hat zwischendurch ein PAUSE-Commando geben.
+* `Lost Focus`: (True/False) Die Test hat einen Fokusverlust festgestellt, d. h. 
+die Testperson hat im Browser das Test-Tab verlassen oder den Browser
+* `Responses Some Time`: Zeit in Millisekunden nach Laden des Players und der 
+Unitdaten bis der Player "Responses Progress: Some" meldet
+* `Responses Complete Time`: Zeit in Millisekunden nach Laden des Players und der 
+Unitdaten bis der Player "Responses Progress: Complete" meldet
+
+**Tabelle Syscheck:**
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 27.03.2021
+Prio: high
+todo:
+  - Von Martin prüfen lassen ob Tbl+Werte noch gültig sind.
+```
+
+In dieser Tabelle sind weitere eventuell interessante Daten einer Testsitzung 
+aufgelistet:
+
+| Spaltenbezeichnung | Bedeutung |
+| :------------- | :---------- |
+|ID|ID der Testsitzung wie in den anderen Tabellen|
+|Start at|Beginn des ersten Ladens der Testinhalte nach Auswahl des Booklets durch die Testperson (Zeitstempel).|
+|loadcomplete after|Dauer des Ladevorganges in Millisekunden|
+|loadspeed|Ladegeschwindigkeit als Quotient aus Bookletgröße (aus der zusätzlich zugewiesenen txt-Datei) und Ladedauer. Wenn die Bookletgröße in Bytes und die Dauer in Millisekunden angegeben werden (wie hier aktuell im Testcenter), dann ist die Einheit des Wertes kBytes/sec|
+|firstUnitRunning after|Zeit zwischen Start des Ladens der Testinhalte und Eintritt in die erste Unit. Achtung: In Abhängigkeit von Testhefteinstellungen kann die erste Unit angezeigt werden, bevor alle Testinhalte geladen wurden.|
+|os|Betriebssystem (operating system)|
+|browser|Name und Version|
+|screen|Breite x Höhe in Pixels|
+
+
+```yaml
+Dokumentstatus: Entwurf (Tobias Huste)
+Stand: 21.03.2021
+Prio: high
+todo:
+  - Im alten Text von Martin würde jetzt hier noch etwas von Yaml-Datei stehen -> mit Martin klären was das ist und wofür es verwendet wird.
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Modi-der-Testdurchführung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+## 2.5 Modi der Testdurchführung
 
 Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, 
 es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu unterschiedlichem Verhalten führen.
@@ -600,12 +876,12 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Bearbeiten-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -618,7 +894,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 
 ---
 
-## 2.5 Konfiguration der Testdurchführung
+## 2.6 Konfiguration der Testdurchführung
 
 ### Booklet Konfiguration
 
@@ -745,12 +1021,12 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoptionen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Anmeldeoptionen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Modi-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -763,11 +1039,12 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ---
 
-## 2.6 Anmeldeoptionen
+## 2.7 Anmeldeoptionen
 
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
+Prio: low
 todo:
   - Was gehört hier noch her? Mit Martin klären.
 ```
@@ -802,7 +1079,7 @@ Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen un
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -812,26 +1089,6 @@ Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen un
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
-
----
-
-## 2.7 ITC Toolbox
-
-```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
-Stand: 21.03.2021
-todo:
-  - neues Kap anlegen mit dem Namen Ergebnisverarbeitung, dort kann dieses Thema Unterbringung finden.
-    Außerdem auch auf die Möglichkeiten der Vorabbearbeitung mittel toolbox im Kap Bearbeiten der Tetsdateien hinweisen
-```
----
-
-Verlinkung zu derzeitigen Informationen:
-  * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/README.md): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net). Man erhält Unterstützung bei der Erstellung von Steuerdateien (Logins, Testheft-Xml) und bei der Aufbereitung der Ergebnisse.
-
-Was fehlt noch?
-
- * Alle Informationen der README.md im Repository: Itc-Toolbox in dieses Kapitel einbringen.
 
 ---
 
@@ -912,6 +1169,7 @@ people involved in data supply and processing welcome this language very much.
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
+Prio: low
 todo:
   - Eventuell dieses Thema hier nicht aufführen??? 
   - Inhaltlich vollständig?
