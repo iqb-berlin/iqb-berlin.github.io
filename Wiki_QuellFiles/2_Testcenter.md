@@ -1,20 +1,101 @@
 # 2.Testcenter
 
 ```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
-Stand: 21.03.2021
-Prio: low
-todo:
-  - Was gehört hier noch her? Spezielle Infos zum Testcenter, wie z.B. Ansprechpartner, Entwicklungststände etc?
+Dokumentstatus: Review (T.Huste)
+Stand: 1.4.2021
+to do: - Auflistung "weitere Bestandteile" sinnvoll?
 ```
 
-Das **Testcenter** gehört zu einem der wesentlichen TBA Bestandteile.
-Grundlegende Informationen zum **Testcenter** erhalten Sie auch im TBA Einführungskapitel.
+Das IQB-Testcenter ist eine Web-Anwendung für die Durchführung von Kompetenztests oder Befragungen. 
+Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an, d. h. man schreibt 
+dessen Internet-Adresse in die Adresszeile eines Internet-Browsers. Dadurch werden die Programmierungen geladen 
+und man sieht ein Formular zum Anmelden. Alle Daten für einen Test sind vorher auf dem Server zu speichern. 
+Das kann über ein integriertes Verwaltungsportal erfolgen oder über andere Webanwendungen, die auf den Server zugreifen.
+
+Eine grobe Einführung in das Testcenter geben auch die nachfolgenden Verlinkungen.                        
+Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
+
+* [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
+* [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
+
+Des Weiteren besteht das folgende Forum: [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)<br> 
+Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
+
+**Installation**
+
+Das IQB hat alle Programmierungen unter einer Open Source veröffentlicht und erleichtert die Installation durch ein sog. 
+Docker-Setup. Für die Installation muss man einen Server bereitstellen (Linux oder Windows), und dieser Server muss dann über 
+eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. 
+Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. 
+Es ist weiterhin Wissen zu Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen 
+gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete gut abzusichern, 
+übernimmt aber im Schadensfall keine Verantwortung.
+
+**Verwaltung der Tests**
+
+Nach der Installation ist zunächst ein Standard-Konto für die Verwaltung von Tests angelegt. 
+Außerdem ist ein Arbeitsbereich angelegt mit einem Beispieltest. Als erste Schritte sind über ein Verwaltungsportal die Testinhalte 
+(Aufgaben, Testabläufe usw., z. B. als XML-Dateien) in das Testcenter zu laden. Nach der Durchführung des Tests kann man über 
+dieses Verwaltungsportal die Ergebnisse herunterladen (Csv-Dateien). Die Texte dieses Wikis sind vor allem für Personen gedacht, 
+die diese Verwaltungsaufgaben ausführen.
+
+Man kann eine Installation des IQB-Testcenters weitgehend anpassen. Begrüßungsnachrichten, Logo auf der Startseite und selbst der Name 
+kann an eigene Wünsche angepasst werden.
+
+**Durchführung von Tests oder Befragungen**
+
+Durch Anwählen der Internet-Adresse des Testcenter-Servers erhält man ein Anmeldeformular. 
+Eine Testperson muss über Zugangsdaten verfügen, und es startet dann das für diese Person vorbereitete Testheft 
+(d. h. die Abfolge von Aufgaben bzw. Fragen). Folgende besonderen Funktionen sind im IQB-Testcenter derzeit umgesetzt:
+
+* Verschiedene Varianten der Anmeldung: Anmeldung über einen Link, zweistufige Anmeldung zur Vereinfachung der Durchführung, 
+spezieller Modus für das Ausprobieren eines Tests (Review) usw.
+* Mehrere Testhefte: Eine Testperson kann auch mehrere Testhefte nacheinander bearbeiten mit denselben Anmeldedaten
+* zeitliche Beschränkung von Testteilen: Für eine bestimmte Anzahl Aufgaben steht der Testperson eine begrenzte Zeit zur Verfügung
+* Fortsetzung erst mit Freigabewort: Die Testdurchführung z. B. in einer Klasse kann synchronisiert werden, indem die Testleitung 
+ein Wort ansagt, mit dem dann der Test fortgesetzt werden kann
+* Fortsetzung erst nach vollständiger Anzeige: Um zu vermeiden, dass Teile einer Aufgabe übersehen werden, 
+kann das Weiterblättern solange unterbunden werden, bis alle Audio-Sequenzen abgespielt wurden und alle Seiten vollständig angezeigt wurden
+* Fortsetzung erst nach vollständiger Beantwortung
+* sofortige Speicherung: Alle Antworten werden sofort zum Testcenter-Server gesendet; 
+nach Abbruch oder Absturz eines Computers oder des Browsers kann daher der vorherige Stand wiederhergestellt werden
+
+Es können mehrere Tests oder Befragungen gleichzeitig laufen.
+
+**System-Check**
+
+Da die Programmierungen des Testcenters online in einem Browser ablaufen, ist keine vorherige Installation von Software auf einem Computer nötig, 
+mit dem der Test oder die Befragung durchgeführt werden soll. Es ist nur ein Internet-Zugriff und ein Browser nötig. Allerdings kann man bei der 
+enormen Vielfalt der Hardware (Tablet, Smartphone usw.) und Software (Apple, Linux, Android usw.) nicht garantieren, dass ein Test oder eine 
+Befragung so wie beabsichtigt funktioniert. Je nach Anforderung an den Test wird das auch nicht sinnvoll sein, z. B. wenn eine Mindestbreite 
+für den Bildschirm erforderlich ist.
+
+Das IQB bemüht sich, hier eine möglichst breite Palette an Systemen abzudecken. 
+Wenn man jedoch erfahren möchte, ob die Zielsysteme geeignet sind, kann man im IQB-Testcenter einen System-Check konfigurieren. 
+Dann können z. B. die verantwortlichen Lehrkräfte in der Vorbereitungsphase im Testcenter einen auf die speziellen Anforderungen des 
+Tests abgestimmten Check durchführen. Auch die Internetverbindung kann hierüber bewertet werden.
+
+**Testleitungskonsole**
+
+Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
+Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine 
+Sperre wieder aufheben.
+
+**Weitere Bestandteile**
+
+Detailliert betrachtet besteht das **Testcenter** aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Anwender\*innen
+damit nicht in Kontakt kommen dürften, einmal Erwähnung finden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
+dürfte der so genannte Verona Player sein. Dieser Player ist in das **Testcenter** intergriert und ist für die Wiedergabe der Aufgabeninhalte
+zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das **Testcenter**. 
+Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, 
+die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten. Diese sind für Interessierte nachfolgend dargestellt.
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Testcenter-Einf%C3%BChrung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Anmeldung-und-Laden-eines-Tests">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -27,53 +108,82 @@ Grundlegende Informationen zum **Testcenter** erhalten Sie auch im TBA Einführu
 
 ---
 
-## 2.1 Testcenter Einführung
+## 2.1 Anmeldung und Laden eines Tests
 
-Eine grobe Einführung geben die nachfolgenden Verlinkungen.                         
-Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
-* [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
-* [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
+### Anmeldung am Testcenter
 
-Des Weiteren besteht das folgende Forum:
-[Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)                      
-Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
+Wie dem Einführungskapiteln bereits zu entnehmen ist, besteht ein Technologiebasierter Test aus mehreren Dateien.
+Jede dieser Dateien bietet spezifische Möglichkeiten den Test bzgl. Struktur und Ablauf zu beeinflussen. Um einen Test im **Testcenter** 
+abspielen zu können oder Testdateien in das **Testcenter** zu laden, zu löschen, oder aus dem **Testcenter** herunterzuladen, 
+bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschieden werden: 
 
----
+* Testorganisator\*in
+* Testperson
 
-### Einsatz und Aufbau des Testcenters
+#### Testorganisator\*in
 
-Das **Testcenter** beinhaltet eine Datenbank, die zur Speicherung von Tests und Metadaten verwendet wird.
-Des Weiteren werden mithilfe des **Testcenters** die interaktiven Inhalte eines Tests wiedergegeben. 
-Wobei nicht nur finale Tests, sondern auch Probedurchläufe durchgeführt werden können. Letztere verschaffen den Organisator\*innen einen Überblick 
-bzgl. eventueller Fehlabläufe und damit nötiger Nachbearbeitungen eines Tests. Nachfolgend ist noch einmal aufgelistet, welche Möglichkeiten 
-das **Testcenter** bietet:
+Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, 
+das Laden und Löschen der Testbestandteile, die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, 
+sprich wie der Test im **Testcenter** ablaufen soll. Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. 
+Dieser Zugang kann nur von den Administrator\*innen des **Testcenters** angelegt werden.
 
-**Testdurchführung**
+  
+Wer ist nun aber Administrator\*in des Testcenters?
 
-* finale oder probeweise Testdurchführung (abspielen der Aufgaben)
+Derzeitig werden die meisten Anwender\*innen auf das **Testcenter** zugreifen, welches die hausinternen IT-Strukturen 
+(Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
+wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen 
+der jeweiligen Bildungseinrichtungen zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** 
+sind somit diejenigen, die für die IT-Strukturen in welcher die Systeme betrieben werden, verantwortlich sind. 
 
-**Anlegen eines Tests**
+Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
+nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. 
+Auch die einzugebende Internetadresse ist wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. 
+Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: https://www.iqb-testcenter.de.<br>
+Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
 
-* upload, löschen und download der Testdateien
+#### Testperson
 
-**Administration**
+Die eigentliche Testdurchführung, oder auch ein Probelauf für Testorganisator\*innen, erfolgt mit separaten Zugangsdaten.
+Testpersonen haben prinzipiell nicht die Möglichkeit auf administrative Bereiche des **Testcenters** zuzugreifen. 
+Die Zugangsdaten für Testpersonen legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, 
+die Bestandteil eines jeden Tests ist. Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt 
+und zusätzlich ein Modi gesetzt werden. Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen 
+Probedurchlauf handelt. Weitere Details zu den Modis entnehmen Sie bitte dem Kapitel: [Testcenter/Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Modi-der-Testdurchf%C3%BChrung).
+Nach der Bearbeitung der *Testtakers.xml* bzgl. des angepassten Logins und Modis, können die Testdateien in das **Testcenter** geladen werden. 
+Anschießend können die so angelegten Zugangsdaten bei einer Neuanmeldung im **Testcenter** eingegeben werden. Der Test wird dann entsprechend des gesetzten Modis abgespielt.
 
-* Testverwaltung
-* Benutzerverwaltung/ Benutzerzugänge
 
-Detailliert betrachtet besteht das **Testcenter** aus weiteren softwaretechnischen Komponenten, die hier, obwohl die meisten Andwender\*innen
-damit nicht in Kontakt kommen dürften, einmal Erwähnung finden sollten. Eine für die meisten Anwender\*innen häufig vorkommende Begrifflichkeit
-dürfte der so genannte Verona Player sein. Dieser Player ist in das **Testcenter** intergriert und ist für die Wiedergabe der Aufgabeninhalte
-zuständig. Über eine definierte Schnittstelle meldet dieser außerdem jegliche Interaktionen auf den Testseiten an das **Testcenter**. 
-Näheres zum Thema Verona entnehmen Sie bitte dem gleichnamigen Kapitel. Es gibt weitere Schnittstellen und Umgebungsmodule, 
-die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten, diese sind für Interessierte nachfolgend dargestellt.
+**Bsp.:**<br>
+Nehmen wir an Sie als Organisator\*in wollen für den Schüler Jakob einen finalen Test vorbereiten. 
+So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi wie der Test ablaufen soll,
+auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, 
+kann Jakob sich mit diesen von Ihnen eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen 
+gewünschten Art und Weise durchlaufen.
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
+Mehr zu diesem Thema erfahren Sie auch im Kapitel: 
+[Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
+
+### Laden eines Tests
+
+Nach der Anmeldung als Testorganisator\*in am **Testcenter** können die Testbestandteile geladen werden.
+Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das **Testcenter** findet eine 
+Plausibilitätsprüfung statt. Dabei wird überprüft ob die definierten Bestandteile in einer Datei während des Hochladens auch gefunden werden. 
+
+Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend
+die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. 
+
+Um die Plausibilitätsprüfung beim Upload in das **Testcenter** zu bestehen, müssen die Dateien daher in der richtigen Reihenfolge geladen werden.
+Des Weiteren ist vor dem Upload zu prüfen ob die IDs in den Dateien richtig geschrieben (Groß-/Kleinschreibung beachten!) bzw. die Dateien 
+richtig benannt sind. In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu erkennen. Außerdem ist die Abhängigkeit 
+der IDs und der Dateinamen bzgl. der Definitionen ersichtlich.
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Anmeldung-und-Laden-eines-Tests">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Vorbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -91,125 +201,27 @@ die direkt oder indirekt mit dem **Testcenter** zusammenarbeiten, diese sind fü
 
 ---
 
-## 2.2 Anmeldung und Laden eines Tests
+## 2.2 Vorbearbeitung der Testdateien
 
-### Anmeldung am Testcenter
-
-Wie dem Einführungskapiteln bereits zu entnehmen ist, besteht ein Technologiebasierter Test aus mehreren Dateien.
-Jede dieser Dateien bietet spezifische Möglichkeiten den Test bzgl. Struktur und Ablauf zu beeinflussen. Um einen Test im **Testcenter** 
-abspielen zu können oder Testdateien in das **Testcenter** zu laden, zu löschen, oder aus dem **Testcenter** herunterzuladen, 
-bedarf es unterschiedlicher Anmeldearten. Dabei muss in zwei Gruppen unterschieden werden: 
-
-* Testorganisator\*innen
-* Testpersonen
-
----
-
-#### Testorganisator\*in
-
-Der oder die Testorganisator\*in übernimmt die administrative Rolle einer Testdurchführung. Dazu gehört die Bearbeitung von Testdateien, 
-das Laden und Löschen der Testbestandteile, die Benutzerverwaltung für die Probanden und das Festlegen der Testmodi, 
-sprich wie der Test im **Testcenter** ablaufen soll. Testorganisator\*innen benötigen dafür einen Zugang zum **Testcenter**. 
-Dieser Zugang kann nur von den Administrator\*innen des **Testcenters** angelegt werden.
-
-  
-*Wer ist nun aber Administrator\*in des Testcenters?*
-
-Derzeitig werden die meisten Testdurchführenden auf das **Testcenter** zugreifen, welches die hausinternen IT-Strukturen 
-(Server, Netzwerke) des IQB nutzt. Mit der weiteren Etablierung des Technologiebasierten Testens in den Bildungseinrichtungen, 
-wird der Betrieb beider Systeme, sowohl **Teststudio** als auch **Testcenter**, zunehmend in den eigenen IT-Strukturen 
-der jeweiligen Bildungseinrichtungen zum Einsatz kommen. Administrator\*innen des **Testcenter** und auch des **Teststudios** 
-sind somit diejenigen, die für die IT-Strukturen in welcher die Systeme betrieben werden, verantwortlich sind. 
-
-Sobald Sie die entsprechenden Zugangsdaten von administrativer Seite erhalten haben, können Sie
-nach Aufruf einer entsprechenden Internetadresse in einem Webbrowser die Anmeldung am **Testcenter** vornehmen. 
-Auch die einzugebene Internetadresse ist wiederum abhängig von der IT-Struktur in welcher das **Testcenter** betrieben wird. 
-Möchten Sie das **Testcenter** in der IT-Strukur des IQB nutzen, ist folgende Adresse im Browser einzugeben: https://www.iqb-testcenter.de.<br>
-Nach erfolgreicher Anmeldung können dann Daten geladen oder auch gelöscht werden.
-
----
-
-#### Testperson
-
-Die eigentliche Testdurchführung, oder auch ein Probelauf für Testorganisator\*innen, erfolgt mit separaten Zugangsdaten. 
-Diese Zugangsdaten legen allein die Testorganisator\*innen fest. Dies erfolgt durch Anpassung einer bestimmten Datei, 
-die Bestandteil eines jeden Tests ist. Diese Datei trägt den Namen: *Testtakers.xml*. In dieser können Zugangsdaten festgelegt 
-und zusätzlich ein Modi gesetzt werden. Der Modi bestimmt den Testablauf, also ob es sich z.B. um einen finalen Test oder nur um einen 
-Probedurchlauf für die Testorganisator\*innen handelt. Nach der Bearbeitung der *Testtakers.xml* bzgl. des angepassten Logins und Modis, 
-können die Testdateien in das **Testcenter** geladen werden. Anschießend können die so angelegten Zugangsdaten bei einer Neuanmeldung 
-im **Testcenter** angegeben werden. Der Test wird dann entsprechend des gesetzten Modis abgespielt.
-Für die Testperson sollte dann also ein finaler Testdurchlauf gestartet werden.
+```yaml
+Dokumentstatus: Review (T.Huste)
+Stand: 06.04.2021
+Prio: high
+todo: - Verlinkungen in die Einführungskapitel prüfen bzgl. Änderungen der Kapitelnamen durch Martin
+```
 
 
-**Bsp.:**<br>
-Nehmen wir an Sie als Organisator\*in wollen für den Schüler Jakob einen finalen Test vorbereiten. 
-So ist in der *Texttakers.xml* des gewünschten Tests ein `Username` für Jakob, ein `pw` (Passwort) und der Modi wie der Test ablaufen soll,
-auszuwählen und einzutragen. Nachdem der Test inklusive der *Testtakers.xml* in das **Testcenter** geladen wurde, 
-kann Jakob sich mit diesen von Ihnen eingetragenen Zugangsdaten am **Testcenter** anmelden und seinen Test in der von Ihnen 
-gewünschten Art und Weise durchlaufen.
-
-Mehr zu diesem Thema erfahren Sie auch im Kapitel: 
-[Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
-
----
-
-### Laden eines Tests
-
-Nach der Anmeldung als Testorganisator\*in am **Testcenter** können die Testbestandteile geladen werden.
-Auch die Löschung einzelner Datei und das Herunterladen ist möglich. Während des Hochladens in das **Testcenter** findet eine 
-Plausibilitätsprüfung statt. Dabei wird überprüft ob die definierten Bestandteile in einer Datei während des Hochladens auch gefunden werden. 
-
-Ein einfaches Beispiel: In der Booklet.xml werden die gewünschten Units deklariert. Laden Sie zuerst die Booklet.xml und erst anschließend
-die Unit.xml wird eine Fehlermeldung generiert, weil die in der Booklet.xml deklarierten Units nicht gefunden werden. 
-
-Um die Plausibilitätsprüfung beim Upload in das **Testcenter** zu bestehen, müssen die Dateien in der richtigen Reihenfolge geladen werden.
-Des Weiteren ist vor dem Upload zu prüfen ob die IDs in den Dateien richtig geschrieben (Groß-/Kleinschreibung beachten!) bzw. die Dateien 
-richtig benannt sind. In welcher Reihenfolge die Dateien zu laden sind, ist im nachfolgenden Bild zu erkennen. Außerdem ist die Abhängigkeit 
-der IDs und der Dateinamen bzgl. der Definitionen ersichtlich.
-
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
-
----
-
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Testcenter-Einführung">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div align='center'>
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
-</a>
-</div>
-
----
-
-## 2.3 Vorbearbeitung der Testdateien
-
-Die im **Teststudio** erzeugten Dateien können vor dem Upload in das **Testcenter** berarbeitet werden.<br>
+Die im **Teststudio** erzeugten Units und die anderen zum Test gehörenden Dateien können vor dem Upload in das **Testcenter** bearbeitet werden.
 Betrachten Sie dazu auch noch einmal das Kapitel:
 
 [TBA Einführung -> Ablauf Entwurf und Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.2-Ablauf-Entwurf-und-Durchführung)
 
 Die Testdateien können einzeln "händisch" bearbeitet und die vorgenommenen Änderungen später im Testcenter abgespielt werden.
-Diese Methode verlangt etwas Basiswissen bzgl. der Syntax der einzelnen Dateien, hat aber den Vorteil Änderungen direkt und bewusst herbeizuführen.
+Diese Methode verlangt etwas Basiswissen bzgl. der Syntax der einzelnen Dateien, hat aber den Vorteil Änderungen direkt und bewusst herbeizuführen. 
 Diese Methode soll an dieser Stelle als: **Direktes Bearbeiten** bezeichnet werden.
 
-Eine weitere Methode ist das Verwenden von Hilfsmitteln. Eines dieser Hilfsmittel stellt das IQB zur freien Verfügung.<br>
-Es trägt den Namen **ITC-Toolbox** und kann über den folgenden Link heruntergeladen werden:<br>
-https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox. Diese Methode der Bearbeitung soll an dieser Stelle als **Indirektes Bearbeiten** 
-bezeichnet werden. Die Dateien werden also indirekt über das Tool **ITC-Toolbox** bearbeitet. Das Tool konvertiert dabei Excelinhalte in die 
-für Testdateien benötigten Formate, in unserem Fall Xml-Formate. Vorteil dieser Methode: Sie müssen nicht direkt in der Testdatei arbeiten, 
-sondern können die Werte der Testdatei mittels Excel beinflussen. Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, 
-eventuell verlangt es aber entsprechende Nachkontrollen der Testdatei.
-
----
+Unter Verwendung eines Hilfsmittels mit dem Namen **ITC-Toolbox** kann speziell die *Booklet.xml* noch auf eine andere Art und Weise bearbeitet bzw. erzeugt werden.
+Die *Booklet.xml* wird dabei indirekt bearbeitet oder neu generiert.
 
 ### Direktes Bearbeiten
 
@@ -344,7 +356,8 @@ Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verf�
     <td>Login:</td>
     <td>mode</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.). Siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a></td>
+    <td>Vordefinierter Wert. Bestimmt wie ein Test ablaufen soll (finaler Test oder Probetest etc.).
+	Siehe: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchf%C3%BChrung">Modi der Testdurchführung</a></td>
 </tr>
 <tr>
     <td>Login:</td>
@@ -417,8 +430,8 @@ Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verf�
     <td>Config:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Ermöglicht eine Booklet Konfiguration. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b> im Kapitel: 
-	 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
+    <td>Vordefinierter Wert. Ermöglicht eine Booklet Konfiguration. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b>
+	im Kapitel: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
 </tr>
 <tr>
     <td>Config:</td>
@@ -539,17 +552,20 @@ Dieser kann auch noch andere Syntax darstellen, wie z.B. Html und ist frei verf�
 </Unit>
 ```
 
----
-
-### Indirektes Berabeiten
-
-#### IQB ITC-Toolbox
+### IQB ITC-Toolbox
 
 Wie eingangs bereits erwähnt können Sie mithilfe des Tools: **ITC-Toolbox** die *Booklet.xml* indirekt bearbeiten bzw. erzeugen.
-**ITC-Toolbox** benötigt dafür eine Excel-Datei in welcher die zukünftigen Inhalte der Xml-Datei
-in einer bestimmten Anordnung zu finden sind. Nachfolgend können Sie sich eine entprechende Excel-Vorlage herunterladen: 
+Des Weiteren können Logindaten verwaltet werden. Das Tool steht zur freien Verfügung und kann über folgenden Link heruntergeladen werden:
+https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox
 
-[Excel-Vorlage für die ITC-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/Booklet-Template.xlsx)
+
+**ITC-Toolbox** konvertiert Excelinhalte in das für die *Booklet.xml* benötigte Format. 
+Vorteil dieser Methode: Sie müssen nicht direkt in der *Booklet.xml* arbeiten, sondern können die Werte dieser Datei mittels Excel beinflussen. 
+Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, eventuell verlangt es aber entsprechende Nachkontrollen der Testdatei.
+
+Damit **ITC-Toolbox** Excelinhalte entsprechend konvertieren kann, muss die Exceldatei über ein entsprechendes Format verfügen.
+Eine Vorlage können Sie hier herunterladen: [Excel-Vorlage für die ITC-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/Booklet-Template.xlsx)<br>
+> **Beachten Sie bitte: Änderungen an Tabellenköpfen oder Blattbezeichner, können ein ordnungsgemäßes Einlesen der Excelinhalte durch ITC-Toolbox verhindern!**
 
 Nach der Installation und dem Start der **ITC-Toolbox** können Sie zwischen verschiedenen Optionen wählen:
 
@@ -560,14 +576,7 @@ Nach der Installation und dem Start der **ITC-Toolbox** können Sie zwischen ver
 
 In diesem Kapitel interessieren uns vor allem die beiden Punkte *Booklet-Xlsx* (erzeugt eine Booklet.xml) 
 und *Login-Xlsx* (unterstützt bei der Login-Datenverwaltung). Die letzten beiden Punkte sind für die Nachbearbeitung, 
-sprich die Bearbeitung nach Abschluss eines Tests, bestimmt und werden daher im nachfolgenden Kapitel behandelt:
-
-[Testcenter / Nachbearbeitung der Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien)
-
-Damit die ITC-Toolbox die Werte entsprechend in der Excel-Tabellen finden und zuordnen kann, darf die Grundstruktur der Excel-Vorlage 
-nicht verändert werden. Ändern Sie bitte nicht die Bezeichnungen von Zellen der Tabellenköpfe oder Bezeichner der Excel Blattseiten.
-
----
+sprich die Bearbeitung nach Abschluss eines Tests, bestimmt und werden daher im nachfolgenden Kapitel behandelt: [Testcenter / Nachbearbeitung der Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien)
 
 **Erzeugen / Bearbeiten der Booklet.xml**
 
@@ -580,7 +589,7 @@ befindet.
 
 Um die Inhalte und Strukturen dieser Vorlage besser zu verstehen, betrachten Sie bitte die nachfolgenden Abbildungen. Diese gehen näher 
 auf die Strukturen der Excel-Inhalte und den Auswirkungen auf die so generierte *Booklet.xml* ein. Achten Sie auch die farbliche Hervorhebung 
-auf den Excel-Blättern und im generierten Code.
+in Bild und Code.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_ToolBox_Excel_final.png)
 
@@ -633,12 +642,12 @@ eine Mehrfachverwendung auszuschließen.
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Nachbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Anmeldung-und-Laden-eines-Tests">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Anmeldung-und-Laden-eines-Tests">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -651,7 +660,7 @@ eine Mehrfachverwendung auszuschließen.
 
 ---
 
-## 2.4 Nachbearbeitung der Testdateien
+## 2.3 Nachbearbeitung der Testdateien
 
 Das Testcenter gibt je nach gewähltem Durchführungsmodi am Ende eines Tests verschiedene Dateien aus. Diese dienen der Auswertung
 einer Studie. Die Dateien können im Testcenter unter der jeweiligen durchgeführten Studie gefunden werden.
@@ -676,8 +685,7 @@ Eine Csv-Datei ist vorwiegend als Werteransportmittel gedacht und ist daher nur 
 Daher ist es sinnvoll diese Csv-Datei in eine entsprechende Tabelle zu überführen. Damit erhöht sich die Lesbarkeit deutlich und macht 
 die Auswertung zudem deutlich weniger fehleranfällig. Das IQB bietet zur Tabellenkonvertierung ein kleines Tool mit dem Namen: 
 **ITC-Toolbox** für Windows an. Dieses ist frei verfügbar und kann von Anwender\*innen genutzt werden. Sie können das 
-Programm über die IQB-Website herunterladen:
-
+Programm über die IQB-Website herunterladen:<br>
 https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox
 
 Nach dem Öffnen des Programms stehen folgende Optionen zur Auswahl:
@@ -688,8 +696,7 @@ Nach dem Öffnen des Programms stehen folgende Optionen zur Auswahl:
 * Antworten und Logs csv -> xlsx
 
 Mittels der ersten beiden Punkte ist es zum einen möglich aus einer Excel-Tabelle eine *Booklet.xml* zu erzeugen und zum 
-anderen die Logindaten übersichtlicher zu organisieren. Näheres dazu entnehmen Sie bitte dem Kapitel:
-
+anderen die Logindaten übersichtlicher zu organisieren. Näheres dazu entnehmen Sie bitte dem Kapitel:<br>
 [Testcenter / Vorbearbeitung Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien)
 
 Mittels der letzten beiden Punkte können Csv-Dateien in Exceldateien (xlsx-Dateien) konvertiert werden. 
@@ -710,7 +717,7 @@ Prio: high
 todo:
   - Die Tabellenwerte entstammen einem alten Text auf GitHub. Nach Download einer 
     Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
-    haben die Spalten andere Namen als die in der Tbl aufgeführten. Martin berfragen ob die Angaben nachfolgend sicher noch gültig sind???? 
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. Sind diese Angaben nachfolgend sicher noch gültig??? 
 ```
 
 | Spaltenbezeichnung | Bedeutung |
@@ -733,7 +740,7 @@ Prio: high
 todo:
   - Die Tabellenwerte entstammen einem alten Text auf GitHub. 
     Nach Download einer Antwort-/ und Logdatei vom Testcenter und Konvertierung in Excel
-    haben die Spalten andere Namen als die in der Tbl aufgeführten. Martin berfragen ob nachfolgende Angaben sicher noch Gültigkeit haben????
+    haben die Spalten andere Namen als die in der Tbl aufgeführten. Sind die nachfolgenden Angaben sicher noch gültig?
 ```
 
 Für die weitere Beurteilung der Antworten schickt das IQB-Testcenter eine größere 
@@ -792,20 +799,20 @@ Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
 Prio: high
 todo:
-  - Im alten Text von Martin würde jetzt hier noch etwas von Yaml-Datei stehen 
-    mit Martin klären was das ist und wofür es verwendet wird.
-
+  - Im alten Text würde jetzt hier noch etwas über die Konfiguration mittel Yaml-Datei stehen. 
+  Muss hier noch folgen!
+    
 ```
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Modi-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Vorbearbeitung-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.2-Vorbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -818,7 +825,7 @@ todo:
 
 ---
 
-## 2.5 Modi der Testdurchführung
+## 2.4 Modi der Testdurchführung
 
 Bei der Definition der Anmeldung zur Durchführung eines Tests können verschiedene Modi gewählt werden. Die Testhefte bleiben unverändert, 
 es wird nur ein Modus für eine spezielle Testperson festgelegt. Verschiedene Anmeldungen können also mit denselben Testheften zu 
@@ -827,6 +834,7 @@ unterschiedlichem Verhalten führen.
 ---
 
 ### Wo wird das festgelegt?
+
 Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode`:
 
 ```xml
@@ -853,6 +861,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 ---
 
 ### Welche Modi gibt es?
+
 | Modus | Erläuterung |
 | ----- | -------- |
 | run-hot-return | Es wird angenommen, dass die finale Testperson den Test durchführt. Alle Beschränkungen der Testheftdefinition sind aktiv. Die Testperson kann bei einem Browserabsturz oder halt später zurückkehren und erhält alle gegebenen Antworten wieder angezeigt. |
@@ -885,12 +894,12 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Konfiguration-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Nachbearbeitung-der-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Nachbearbeitung-der-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -903,7 +912,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 
 ---
 
-## 2.6 Konfiguration der Testdurchführung
+## 2.5 Konfiguration der Testdurchführung
 
 ### Booklet Konfiguration
 
@@ -1039,12 +1048,12 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Anmeldeoptionen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoptionen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Modi-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.4-Modi-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -1057,36 +1066,32 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ---
 
-## 2.7 Anmeldeoptionen
+## 2.6 Anmeldeoptionen
 
 ```yaml
-Dokumentstatus: Entwurf (Tobias Huste)
+Dokumentstatus: Entwurf (T.Huste)
 Stand: 21.03.2021
 Prio: low
-todo:
-  - Was gehört hier noch her? Mit Martin klären.
+todo: - Was gehört hier noch her?
 ```
 ---
 
 Für eine Testdurchführung erlaubt das IQB-Testcenter verschiedene Arten der Anmeldung der Testperson:
 
----
-
 ### Klassisch: Anmeldename, Kennwort
+
 Beim Aufruf der Internet-Seite und damit der Webanwendung wird ein Formular präsentiert zur Eingabe dieser Daten. 
 Diese Anmeldeform wird üblicherweise erwartet. Der Anmeldename wird im Klartext gezeigt, die Eingabe des Kennwortes erzeugt 
 aber nur Punkte, d. h. man kann nicht mitlesen.
 
----
-
 ### Kurz: Nur Anmeldename
+
 Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung 
 des Namens hinreichend ungewöhnlich ist. Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens 
 erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
 
----
-
 ### Noch kürzer: Link
+
 Wenn nur ein Anmeldename ohne Kennwort als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken. 
 Wenn "u8h5m2a4c3x2f2g8" der Anmeldename ist würde der Link so aussehen:
 ```
@@ -1096,9 +1101,8 @@ Dadurch macht man es noch einfacher: Auf den Link klicken, und man muss nur noch
 Anmeldung kann z. B. bei Befragungen in Kombination mit dem Durchführungsmodus `run-hot-restart` verwendet werden: 
 Es wird nur ein Login in einer Einladungs-E-Mail verschickt, und eine vorher unbekannte Anzahl Personen kann die Befragung starten.
 
----
-
 ### Länger: Anmeldename, Kennwort, Personencode
+
 Es kann sein, dass die Testleitung Zeit hat, vor Eintreffen der Schülerinnen und Schüler alle Computer zu starten, 
 einen Standard-User anzumelden, den Browser zu starten und die richtige Internet-Adresse aufzurufen. Dann ist es auch hilfreich, 
 wenn auf jedem Computer schon Anmeldename und Kennwort eingegeben werden kann und also ein Anmeldeprozess gestartet wird. 
@@ -1109,12 +1113,12 @@ wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemie
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-IQB-Daten-Spezifikationen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-IQB-Daten-Spezifikationen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Konfiguration-der-Testdurchführung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchführung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -1127,13 +1131,12 @@ wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemie
 
 ---
 
-## 2.8 IQB Daten Spezifikationen
+## 2.7 IQB Daten Spezifikationen
 
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 21.03.2021
-todo:
-  - Gehört das Kapitel hierher? Ist der Inhalt vollständig? Mit Martin klären.
+todo: - Gehört das Kapitel hierher? Ist der Inhalt vollständig?
 ```
 ---
 
@@ -1145,6 +1148,7 @@ von Schnittstellen, die im computerbasierten Testen genutzt werden können. Weit
 Informationen zu Verona-Schnittstellen [hier](https://github.com/verona-interfaces/introduction).
 
 #### Unit-Definitionen
+
 Die Fragen eines Tests werden üblicherweise gruppiert. Obwohl auch eine Frage einzeln
 auf einer Seite präsentiert werden kann, nimmt man oft mehrere Fragen, die inhaltlich 
 eine Einheit bilden, zusammen. Diese sogenannte Unit kann man mit einer Aufgabe 
@@ -1161,6 +1165,7 @@ Verarbeitung der Antworten (richtig/falsch usw.). Dieses Format wird vorrangig f
 Befragungen genutzt (z. B. Evaluationen oder Protokolle von Testsitzungen).
 
 #### Player-Antwortdaten
+
 Während der Durchführung eines Tests oder einer Befragung gibt der Player die 
 Antwortdaten an das Testsystem zur Speicherung. Die Spezifikation dieser 
 Antwortdaten ist wichtig, um nachfolgend eine korrekte Datenverarbeitung (Kodierung,
@@ -1172,6 +1177,7 @@ enthält, ist es zwar universell, aber erst mit vielen Zusatzinformationen aus d
 Erhebungszusammenhang sinnvoll zu verarbeiten.
 
 #### Steuerung für Tests/Befragungen
+
 Die Verona-Schnittstellen beziehen sich jeweils auf eine Unit. Das IQB wird aber auch Konventionen
 definieren, die sich auf die Unit-Abfolge im Rahmen eines Tests bzw. einer Befragung beziehen. Eine 
 IQB-Software soll dann deklarieren, ob oder wie diese Konventionen umgesetzt sind.
@@ -1201,12 +1207,12 @@ people involved in data supply and processing welcome this language very much.
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-Verona-Player">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Verona-Player">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Anmeldeoptionen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Anmeldeoptionen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -1219,20 +1225,20 @@ people involved in data supply and processing welcome this language very much.
 
 ---
 
-## 2.9 Verona Player
+## 2.8 Verona Player
 
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 17.03.2021
 Prio: low
-todo:
-  - Eventuell dieses Thema hier nicht aufführen??? 
-  - Inhaltlich vollständig?
-  - Querverweise zum Repo Verona Interfaces setzen
+todo: - Eventuell dieses Thema hier nicht aufführen??? 
+      - Inhaltlich vollständig?
+      - Querverweise zum Repo Verona Interfaces setzen
 ```
 ---
 
 ### Verona Player Einführung
+
 In Deutschland gibt es für internationale (z. B. PISA) und einheitliche nationale 
 Erhebungen (z. B. Bildungstrend) jeweils zentrale Einrichtungensdsadasdasda oder Firmen zur 
 Durchführung. Da für die Bildungspolitik aber jedes Bundesland einzeln zuständig ist, 
@@ -1308,12 +1314,12 @@ Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden
 Wo dann genau die Grenze zu ziehen ist wird sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-System-Check">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-IQB-Daten-Spezifikationen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-IQB-Daten-Spezifikationen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -1326,7 +1332,7 @@ Wo dann genau die Grenze zu ziehen ist wird sich zeigen, aber tendenziell möcht
 
 ---
 
-## 2.10 System Check
+## 2.9 System Check
 
 ### Was ist ein System-Check?
 
@@ -1440,12 +1446,12 @@ Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.11-Versionsstand">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-Versionsstand">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-Verona-Player">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Verona-Player">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -1458,20 +1464,19 @@ Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus
 
 ---
 
-## 2.11 Versionsstand
+## 2.10 Versionsstand
 
 ```yaml
 Dokumentstatus: Entwurf (Tobias Huste)
 Stand: 29.03.2021
 Prio: low
-todo:
-  - Was kann zum Versionsstand geschrieben werden -> mit Martin besprechen!
+todo:  - Was kann zum Versionsstand geschrieben werden -> mit Martin besprechen!
 
 ```
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.10-System-Check">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
