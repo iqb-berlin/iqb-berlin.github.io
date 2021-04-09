@@ -82,7 +82,23 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
   </BookletConfig>
 
   <Units>
-      ...
+  
+	<Unit id="Startunit" label="Startunit" />
+	
+    <Testlet id="Examples" label="Beispiele">
+		<Restrictions>
+			<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+		</Restrictions>
+		<Unit id="Unit_Allg_Anweisung" label="Platzhalter Allgemeine Anweisungen" />
+	</Testlet>
+	
+	<Testlet id="Deutsch" label="Deutsch lesen">
+		<Restrictions>
+			<CodeToEnter code="Deutschland">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+		</Restrictions>
+		<Unit id="Deutsch Teil 1" label="Platzhalter Allgemeine Anweisungen" />
+	</Testlet>
+	
   </Units>
 
 </Booklet>
@@ -144,32 +160,6 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
 ```
 ---
 
-`CUSTOMTEXTS`
-
-<table>
-	
-<tr>
-    <td>CustomText:</td>
-    <td>key</td>
-    <td>Attribut</td>
-    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration.</a></td   
-</tr>
-<tr>
-    <td>CustomText:</td>
-    <td>>xxx<</td>
-    <td>Datum</td>
-    <td>frei wählbar Text zur Anzeige eines Custom Text</td>
-</tr>
-
-</table> 
-
-```xml
-<CustomTexts>
-  <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
-</CustomTexts>
-```
----
-
 `GROUP`
 
 <table>
@@ -221,6 +211,32 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
   </Login>
 </Group>
 
+```
+---
+
+`CUSTOMTEXTS`
+
+<table>
+	
+<tr>
+    <td>CustomText:</td>
+    <td>key</td>
+    <td>Attribut</td>
+    <td>Vordefinierter Wert. Erzeugt einen Custom Text. Siehe <b>Custom Text Configuration.</a></td   
+</tr>
+<tr>
+    <td>CustomText:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>frei wählbar Text zur Anzeige eines Custom Text</td>
+</tr>
+
+</table> 
+
+```xml
+<CustomTexts>
+  <CustomText key="app_title">Hier steht ein Custom Text</CustomText>
+</CustomTexts>
 ```
 
 ### Custom Text Konfigurationen
