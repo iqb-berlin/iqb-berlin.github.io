@@ -118,7 +118,7 @@ Das Erstellen von Logins wird unterstützt über das Windows-Programm [itc-ToolB
 
 Diese [Xml-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) legt die Reihenfolge der Aufgaben (Units) fest. Man kann die Aufgaben bzw. Zwischenseiten auch in Blöcke (Testlets) gruppieren. Dann kann man festlegen, dass ein Block nur nach Eingabe eines Code-Wortes betreten werden kann oder dass es ein Zeitlimit für die Bearntwortung gibt. Außerdem kann über die Test-Definition festgelegt werden, dass eine navigation zur nächsten Aufgabe/Seite erst erlaubt ist, wenn alle Teile der Aufgabe angezeigt/präsentiert wurden (auch z. B. eine Audio-Sequenz) oder wenn alle erforderlichen Antworten gegeben wurden.
 
-> In der Grafik ist dargestellt, dass die Definition von Tests über das IQB-Teststudio erfolge. Das wird in zukünftigen Versionen der Fall sein. Die aktuelle Version IQB-Teststudio-Lite unterstützt dies nicht, sondern man muss die Xml-Datei für die Test-Definition manuell erzeugen.
+> **In der Grafik ist dargestellt, dass die Definition von Tests über das IQB-Teststudio erfolge. Das wird in zukünftigen Versionen der Fall sein. Die aktuelle Version IQB-Teststudio-Lite unterstützt dies nicht, sondern man muss die Xml-Datei für die Test-Definition manuell erzeugen.**
 
 ### Unit-Definition
 
