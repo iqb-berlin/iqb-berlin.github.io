@@ -57,8 +57,8 @@ Zugangsdaten. In die Benutzersoberfläche ist ein Editor eingebettet, mit dessen
 (Units und weitere für den Test erforderliche Dateien) in einem komprimierten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf 
 nachträglich bearbeitet und an die entsprechende Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** 
 geladen und wiedergegeben werden.
-> Das **Teststudio** für die Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-> Die derzeitige Version nennt sich **Teststudio Lite**.
+> **Das Teststudio für die Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
+> Die derzeitige Version nennt sich Teststudio Lite.**
 
 #### IQB-Testcenter
 
@@ -77,7 +77,7 @@ Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Be
 Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich 
 die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
 
-> Diese Web-Anwendung ist noch im Entwurfsstadium. Die Aufbereitung der Ergebnisse wird derzeit durch die Windows-Anwendung `itc-Toolbox` unterstützt.
+> **Diese Web-Anwendung ist noch im Entwurfsstadium. Die Aufbereitung der Ergebnisse wird derzeit durch die Windows-Anwendung `itc-Toolbox` unterstützt.**
 
 #### Archivierung und Veröffentlichung
 
