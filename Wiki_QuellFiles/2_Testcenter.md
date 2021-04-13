@@ -381,12 +381,6 @@ Stand: 6.4.2021
 
 # 2.7 System-Check
 
-```yaml
-Dokumentstatus: Review (T.Huste)
-Stand: 6.4.2021
-todo:
-  - Links prüfen
-```
 ## Was ist ein System-Check?
 
 Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen 
@@ -415,8 +409,7 @@ Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-D
 VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. 
 Die Berichte des System-Checks werden dann auch in diesem Arbeitsbereich gespeichert.
 
-Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer 
-[Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd) festgelegt. 
+Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer Schema Definition festgelegt.
 Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
 
 ```xml
@@ -490,11 +483,6 @@ Player im Arbeitsbereich bereitzustellen.
 
 Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend gespeichert werden. 
 Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
-
-#### CustomTexts (in Vorbereitung)
-
-Hierüber werden einige Textbausteine geliefert. Bitte wählen Sie aus 
-[dieser Liste](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/custom-texts.md) die Schlüsselworte mit dem Präfix `syscheck_`.
 
 ---
 
