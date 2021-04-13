@@ -347,7 +347,7 @@ Wie sieht es aber mit Einrichtungen aus, die eigene Anwendungen (weiter-)nutzen?
 
 Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmcode mitzuliefern, der zwischen Testsystem und der Aufgabe vermittelt. Für spezielle Anforderungen können also jederzeit neue Speicherformate entwickelt werden, solange der erforderliche Programmcode mitgeliefert wird. Ein vorhandenes Testsystem muss nur einmalig die Schnittstelle zu derartigem Programmcode implementieren.
 
-Dieses modulare System analog eines Plug-In gewährleistet eine enorme Flexibilität der Aufgabenformate, ohne dass jeweils ein ganzes Testsystem angepasst werden muss. Dieser Mechanismus ist [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Verona) beschrieben.
+Mehr zu diesem Thema entnehmen Sie bitte diesem [Kapitel](1.7-Technische-Details)
 
 ### Lizenzen
 
@@ -412,3 +412,16 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 </div>
 
 ---
+
+# 1.7 Technische Details
+
+```yaml
+Dokumentstatus: Entwurf
+Stand: 6.4.2021
+todo: - hier müssen noch Texte entworfen werden
+```
+
+Ideen zu vielleicht hier gesetzten Verlinkungen:
+
+[Verona Interface Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
+[Xml Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)
