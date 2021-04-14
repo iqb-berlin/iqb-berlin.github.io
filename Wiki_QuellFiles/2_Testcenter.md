@@ -329,6 +329,11 @@ todo:
     - Konsequenzen für das Hochladen (Player muss stets dabei sein)
 ```
 
+In jedem Fall im späteren Text die Verlinkungen zu den Ressourcendateien anlegen!!!
+* [Ressourcendatei Verona Player Simple (noch nicht vorhanden an dieser Stelle!)](https://github.com/iqb-berlin/verona-player-simple/releases/tag/1.1.0)
+* [Ressourcendatei Verona Player Dan)](https://github.com/iqb-berlin/verona-player-dan/releases/tag/v2.99.2)
+* [Ressourcendatei Verona Player Abi)](https://github.com/iqb-berlin/verona-player-abi/releases/tag/3.2.1)
+
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
