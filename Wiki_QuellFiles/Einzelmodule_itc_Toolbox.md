@@ -228,7 +228,15 @@ Dies erhöht für einige Anwender\*innen die Übersichtlichkeit, eventuell verla
 
 Damit itc-Toolbox Excelinhalte entsprechend konvertieren kann, muss die Exceldatei über ein entsprechendes Format verfügen.
 Eine Vorlage können Sie hier herunterladen: [Excel-Vorlage für die ITC-Toolbox](https://github.com/iqb-berlin/itc-toolbox/blob/master/Booklet-Template.xlsx)<br>
-> **Beachten Sie bitte: Änderungen an Tabellenköpfen oder Blattbezeichner, können ein ordnungsgemäßes Einlesen der Excelinhalte durch ITC-Toolbox verhindern!**
+
+**Beachten Sie bitte:** Änderungen an Tabellenkopfbezeichner und Spalten, können ein ordnungsgemäßes Einlesen der Excelinhalte durch ITC-Toolbox verhindern! Betrachten Sie dazu das nachfolgende Bild. In diesem sind Spalten, Zellen und Blattbezeichner farblich gekennzeichnet. Die Farben haben die folgende Bedeutung:<br>
+
+* rot: Diese Spalten dürfen nicht gelöscht werden!
+* gelb: Die textuellen Inhalten dürfen nicht verändert werden!
+* blau: Die textuellen Inhalten können geändert werden. **itc-Toolbox** findet die entsprechenden für die Xml-Dateien benötigten Inhalte. Um die Excel-Dateien einheitlich zu halten, wird jedoch von einer Unbenennung abgeraten. 
+
+[Wichtiges zum Editieren der Excel-Vorlage](https://github.com/iqb-berlin/iqb-berlin.github.io/tree/master/assets/TC_FE_ToolBox_ExcelEdit_final.png)
+
 
 Nach der Installation und dem Start der **itc-Toolbox** können Sie zwischen verschiedenen Optionen wählen:
 
