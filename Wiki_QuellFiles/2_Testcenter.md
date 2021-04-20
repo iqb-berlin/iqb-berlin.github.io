@@ -513,12 +513,19 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 # 2.8 Testleitkonsole
 
 ```yaml
-Dokumentstatus: Entwurf
-Stand: 6.4.2021
+Dokumentstatus: Entwurf TH
+Stand: 16.4.2021
+todo: - es fehlen noch Bilder bzgl. Bedienung und genereller Übersicht
 ```
+
+Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
+Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
+
 Unter dem nachfolgenden Link finden Sie ein Einleitungsvideo:
 
 [Einführung in die Nutzung der Testleitungskonsole](https://box.hu-berlin.de/f/3f23e8a85edb445ebc81/)
+
+Die Testleitkonsole wird in einer [XML-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) der entsprechenden Testgruppe zugeordnet.
 
 ---
 
