@@ -129,12 +129,17 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 # Testtaker-Xml (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-```yaml
-Dokumentstatus: Überarbeitung THuste
-Stand: 8.4.2021
-```
-Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
+<table>
+  <tr>
+    <td><a href="#Attr_Daten">Attribute und Daten</a></td>
+    <td><a href="#Einr_Tlk">Einrichten der Testleitkonsole</a></td>
+  </tr>
+</table>
 
+
+### <a name="Attr_Daten"></a>Attribute und Daten
+
+Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
 
 
 `METADATA`
@@ -239,7 +244,7 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
 </CustomTexts>
 ```
 
-### Custom Text Konfigurationen
+#### Custom Text Konfigurationen
 
 Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. 
 Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, 
@@ -249,26 +254,6 @@ deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung 
 Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
 In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". 
 CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
-
-Nachfolgend sind die benötigten Strukuren für CustomText via `Login.xml` (Testtakers.xml) aufgeführt:
-
-```xml
-<Testtakers>
-  <Metadata>
-    ...		
-  </Metadata>
-	
-  <CustomTexts>
-    <CustomText key="app_title">Titel der Anwendung</CustomText>
-    ...
-  </CustomTexts>
-	
-  <Group id="frei wählbare ID" label="frei wählbarer Text Label">
-    ...	
-  </Group>
-
-</Testtakers>
-```
 
 Nachfolgend sind die benötigten Strukuren für `Custom Check` aufgeführt:
 
@@ -320,6 +305,45 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 |`syscheck_questionsintro`|Aufforderung, die Fragen (Questionnaire) zu beantworten|Bitte bearbeiten Sie die nachfolgenden Fragen.|
 |`syscheck_unitPrompt`|Titelzeile über der Aufgabe|Bitte prüfen Sie die folgenden Aufgaben-Elemente|
 
+
+### <a name="Einr_Tlk"></a>Einrichten der Testleitkonsole
+
+Die Testleitung kann in der **Testtaker.xml** über den Modus: **Monitor-Group** (mehr Informationen zum Thema Modi der Testdurchführung finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) festlegen welche Testgruppen der Testleitkonsole hinzugefügt werden sollen. Dazu wird in der entsprechenden Gruppe dieser Modus angegeben. Nachfolgend finden Sie zwei Beispiele wie Gruppen angelegt werden können:
+
+Ohne Passwort. Sinnvoll wenn nur Links an die Testpersonen versendet werden.
+
+```xml
+<Group id="iqb-intern1" label="IQB intern Gruppe 1">
+		
+	<Login mode="run-hot-return" name="Testgruppe-1">
+		<Booklet codes="Testperson_a Testperson_b Testperson_c">THETLK</Booklet>
+	</Login>
+
+	<Login mode="monitor-group" name="group-monitor_1" />
+
+</Group>
+
+```
+
+Jede Testperson erhält ein eigenes Passwort. Dies stellt die gängigste Methode dar.
+
+
+```xml
+<Group id="iqb-intern1" label="IQB intern Gruppe 1">
+			
+	<Login mode="run-hot-return" name="Testperson_a" pw="123">
+		<Booklet>THETLK</Booklet>
+	</Login>
+	<Login mode="run-hot-return" name="Testperson_b" pw="124">
+		<Booklet>THETLK</Booklet>
+	</Login>
+	<Login mode="run-hot-return" name="Testperson_c" pw="125">
+		<Booklet>THETLK</Booklet>
+	</Login>
+						
+	<Login mode="monitor-group" name="group-monitor_1" />
+</Group>
+```
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Unit-Xml (Abschnittsmarker)
