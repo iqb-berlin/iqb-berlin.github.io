@@ -60,7 +60,153 @@ Außerdem muss für die automatische Validierung ein Editor verwendet werden, de
 # Booklet-Xml (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+<table>
+  <tr>
+    <td><a href="#Attr_Daten">Attribute und Daten</a></td>    
+	<td><a href="#Konfiguration">Booklet Konfiguration</a></td>
+  </tr>
+</table>
+
 Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
+
+### <a name="Attr_Daten"></a>Attribute und Daten
+
+`METADATA`
+
+<table>
+
+<tr>
+    <td>Id:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert. Der Name muss in gleicher Schreibweise auch in der Testtakers.xml aufgeführt sein damit dieses Booklet aufgerufen werden kann!</td>
+</tr>
+<tr>
+    <td>Label:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert zur Bezeichnung des Booklets.</td>
+</tr>
+<tr>
+    <td>Description:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Wert zur weiteren Beschreibung dieses Booklets.</td>
+</tr>
+
+</table>
+
+```xml
+<Metadata>
+  <Id>Booklet1</Id>
+  <Label>Sekundarstufe I Englisch Ansichtsaufgaben</Label>
+  <Description>Sekundarstufe I Englisch Ansichtsaufgaben</Description>
+</Metadata>
+```
+
+---
+
+`UNITS`
+
+<table>
+
+<tr>
+    <td>Unit:</td>
+    <td>ID</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert. Wert muss in gleicher Schreibweise auch in der entsprechenden Unit unter ID aufgeführt sein!</td>
+</tr>
+<tr>
+    <td>Unit:</td>
+    <td>Label</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert zur Bezeichnung der Unit.</td>
+</tr>
+
+</table>
+
+```xml
+<Unit id="Unit_Start" label="Beispielhafte Startseite" />
+```
+
+<table>
+
+<tr>
+    <td>Testlet:</td>
+    <td>ID</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert.</td>
+</tr>
+<tr>
+    <td>Testlet:</td>
+    <td>Label</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert zur Bezeichnung des Testlets.</td>
+</tr>
+
+</table>
+
+```xml
+<Testlet id="Examples" label="Beispiele">
+	
+</Testlet>
+```
+
+<table>
+
+<tr>
+    <td>CodeToEnter:</td>
+    <td>code</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Code.</td>
+</tr>
+<tr>
+    <td>CodeToEnter:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>Frei wählbarer Text. Wird als Text zur Codeeingabe angegeben.</td>
+</tr>
+
+</table>
+
+```xml
+<Restrictions>
+	<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+</Restrictions>
+```
+---
+
+`BOOKLETCONFIG`
+
+<table>
+
+<tr>
+    <td>Config:</td>
+    <td>key</td>
+    <td>Attribut</td>
+    <td>Vordefinierter Wert. Ermöglicht eine Booklet Konfiguration. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b>
+	im Kapitel: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
+</tr>
+<tr>
+    <td>Config:</td>
+    <td>>xxx<</td>
+    <td>Datum</td>
+    <td>Vordefinierter Wert. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b> im Kapitel: 
+	 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
+</tr>
+
+</table>
+
+
+```xml
+<BookletConfig>
+  <Config key="force_responses_complete">OFF</Config>
+</BookletConfig>
+```
+
+---
+
+### <a name="Konfiguration"></a>Booklet Konfiguration
 
 Es ist möglich Booklets zu konfigurieren. Hierfür stehen einige Attribute zur Verfügung, die in der Booklet.xml 
 (wenn gewünscht) anzugeben sind. Alle verwendbaren Attribute befinden sich in einer separaten Konfiguraionsdatei 
@@ -105,8 +251,6 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
 ```
 ---
 
-### Booklet Konfiguration
-
 Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. 
 **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
@@ -131,8 +275,9 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 <table>
   <tr>
-    <td><a href="#Attr_Daten">Attribute und Daten</a></td>
-    <td><a href="#Einr_Tlk">Einrichten der Testleitkonsole</a></td>
+    <td><a href="#Attr_Daten">Attribute und Daten</a></td>    
+	<td><a href="#CustomText">Custom Text Konfigurationen</a></td>
+	<td><a href="#Einr_Tlk">Einrichten der Testleitkonsole</a></td>
   </tr>
 </table>
 
@@ -244,7 +389,7 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
 </CustomTexts>
 ```
 
-#### Custom Text Konfigurationen
+### <a name ="CustomText"></a>Custom Text Konfigurationen
 
 Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. 
 Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, 
