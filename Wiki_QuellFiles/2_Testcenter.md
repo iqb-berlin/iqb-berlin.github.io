@@ -510,22 +510,133 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 
 ---
 
-# 2.8 Testleitkonsole
+# 2.8 Testleitungskonsole
 
 ```yaml
 Dokumentstatus: Entwurf TH
-Stand: 16.4.2021
-todo: - es fehlen noch Bilder bzgl. Bedienung und genereller Übersicht
+Stand: 04.5.2021
+todo: - Bilder Verlauf Testleitungsonsole einbinden.
 ```
 
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
 
-Unter dem nachfolgenden Link finden Sie ein Einleitungsvideo:
+Unter dem nachfolgenden Link finden Sie ein kurzes Einleitungsvideo:
 
 [Einführung in die Nutzung der Testleitungskonsole](https://box.hu-berlin.de/f/3f23e8a85edb445ebc81/)
 
-Die Testleitkonsole wird in einer [XML-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) der entsprechenden Testgruppe zugeordnet.
+
+## Einrichten der Testleitungskonsole
+
+Die Testleitungskonsole wird mittels der **Testtakers.xml** eingerichtet. Diese gehört zu den für einen Test erforderlichen Dateien. Nachfolgend ist eine Beispielkonfiguration bzw. Syntax zu sehen, an der wir uns im weiteren Verlaufes dieses Kapitels orientieren werden.
+
+```xml
+<Testtakers>
+.
+.
+.
+	<Group id="Testgruppe_1" label="Gruppe 1">
+			
+		<Login mode="run-hot-return" name="Testperson_a" pw="123">
+			<Booklet>THETLK</Booklet>
+		</Login>
+		
+		<Login mode="run-hot-return" name="Testperson_c" pw="125">
+			<Booklet>THETLK</Booklet>
+		</Login>
+							
+		<Login mode="monitor-group" name="group-monitor_1" pw="567"/>
+	
+	</Group>
+.
+.
+.	
+</Testtakers>
+```
+
+Die Testleitungskonsole wird mittels Modus: `monitor-group` für die jeweilige Gruppe aktiviert. In diesem Fall befindet sich der Login mit diesem Modus in der Group: `Testgruppe_1`. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen die sich in der Group: `Testgruppe_1` befinden.
+Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das Testcenter zu laden.
+
+
+>Der oben gezeigte Code ist nur ein Bsp.! Es können weitere Gruppen, Testpersonen etc. angelegt werden und für jede dieser Gruppe kann ein eigener >Testmonitor angelegt werden!
+
+Weitere Informationen zur Konfiguration der Testtaker.xml finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml).
+
+
+## Starten der Testleitungskonsole
+
+Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am Testcenter erfolgen. Zur Anmeldung sind dann die Zugangsdaten zu verwenden, welche für die Testleitungskonsole in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
+
+Nach der Anmeldung kann die Gruppe, welche dieser Testleitungskonsole zugeordnet ist ausgewählt werden.
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Anmeldung.png)
+
+Nach der Auswahl der gewünschten Gruppe (in diesem Fall gibt es nur diese eine Gruppe) ist die Testleitungskonsole zu sehen.
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht1.png)
+
+### Was ist nun zu sehen?
+
+Nachfolgend erfolgt eine Auflistung, welche Bestandteile resultierend aus der Konfiguration innerhalb der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
+
+* die beobachtete Gruppe -> Dieser Name wurde über das Group Label gesetzt. In diesem Fall Gruppe 1.
+* Benutzername der Testleitungskonsole -> Dieser Name wurde über den Login Namen der Monitor-Group gesetzt.
+* die Testpersonen -> Diese Namen wurden über die Login Namen innerhalb zu überwachenden Gruppe gesetzt.
+
+Zu Erklärung weiterer Darstellungen innerhalb der Testleitungskonsole, muss nun ein Einblick  in die **Booklet.xml** genommen werden, welche in diesem Beispiel gemeinsam mit der **Testtakers.xml** und den einzelnen **Unit.xml** in das Testcenter geladen wurde. 
+
+>Es wird nur der Code innerhalb der **Booklet.xml** aufgezeigt, der für die Beschreibung notwendig ist! Natürlich steht noch mehr in der **Booklet.xml**.
+
+```xml
+<Booklet>
+.
+.
+.
+  <Units>
+	<!-- diese Units werden in der Unit Verlaufsschiene im Testcenter angezeigt. 
+	In diesem Fall werden in der Verlaufsschiene 14 Striche angezeigt
+	Wird im Unitaufruf ein Labelshort definiert, wird der darin gesetzte Text
+	statts des Striches in der Verlaufsschiene angezeigt
+	-->
+    <Unit id="Unit_Start" label="Beispielhafte Startseite" />
+		
+	<Testlet id="Examples" label="Beispiele">
+		<Restrictions>
+			<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+		</Restrictions>
+		<Unit id="Unit1" label="Postcard" labelshort="1" />
+	</Testlet>
+	
+	<Unit id="Unit_Ende" label="Ende des Reviews" />
+
+  </Units>
+.
+.
+.
+</Booklet>
+```
+
+Die im Bild rot markierten Bestandteile der `Testperson_a` entsprechen einer einzelnen Unit. In diesem Fall der `Unit_Start` und der `Unit_Ende`.<br>
+Der gelb markierte Bestandteil entspricht dem Testlet: `Examples`. Die enthaltende Zahl in der geleben Markierung entspricht der Unit welche in dem Testlet angelegt ist. In diesem Fall gibt es nur eine Unit mit Namen: `Unit1`.
+
+
+## Arbeiten mit der Testleitungskonsole
+
+Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nachdem sich diese am Testcenter angemeldet haben, ist der Bearbeitungsstand ihres Tests in der Testleitungskonsole zu sehen.
+
+> **Ablauf, Struktur und Kontrolle eines Tests, können von den Verantwortlichen individuell gestaltet werden. An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden! Die Durchführung sollte genauestens geplant und überdacht sein, um einen reibungslosen Ablauf und repräsentative Ergebnisse zu gewährleisten.**
+
+In diesem Bsp. hat sich nur  Testperson_c angemeldet. Nachfolgend wird der Ablauf in der Testleitungskonsole aufgezeigt:
+
+* 1. Testperson hat den Test noch nicht gestartet.
+
+
+
+* 2. Testperson befindet sich in der ersten Unit.
+
+
+
+* 3. Testperson hat den Test abgeschlossen.
 
 ---
 
