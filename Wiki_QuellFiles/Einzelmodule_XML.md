@@ -453,7 +453,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ### <a name="Einr_Tlk"></a>Einrichten der Testleitkonsole
 
-Die Testleitung kann in der **Testtaker.xml** über den Modus: **Monitor-Group** (mehr Informationen zum Thema Modi der Testdurchführung finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) festlegen welche Testgruppen der Testleitkonsole hinzugefügt werden sollen. Dazu wird in der entsprechenden Gruppe dieser Modus angegeben. Nachfolgend finden Sie zwei Beispiele wie Gruppen angelegt werden können:
+Die Testleitung kann in der **Testtaker.xml** über den Modus: **Monitor-Group** (mehr Informationen zum Thema Modi der Testdurchführung finden Sie [hier])(https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) festlegen welche Testgruppen der Testleitkonsole hinzugefügt werden sollen. Dazu wird in der entsprechenden Gruppe dieser Modus angegeben. Nachfolgend finden Sie zwei Beispiele wie Gruppen angelegt werden können:
 
 Ohne Passwort. Sinnvoll wenn nur Links an die Testpersonen versendet werden.
 
