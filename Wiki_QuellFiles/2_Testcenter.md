@@ -621,10 +621,11 @@ An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden
 
 In diesem Bsp. hat sich nur  Testperson c angemeldet und befindet sich in der Unit 1 innerhalb des Testlets.<br>
 Testperson_a hat seinen Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt, auch zu sehen an dem kleinen Schlosssymbol.
+Durch markieren einer Testperson, kann der Ablauf für diese Testperson mithilfe der Steuersymbole auf der linken Seite gesteuert werden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
-Weitere Symbol Erklärungen:
+Weitere Symbol Erklärungen (dies ist nur eine bspw. Darstellung, Symbole können nicht alle gemeinsam auftreten!):
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
