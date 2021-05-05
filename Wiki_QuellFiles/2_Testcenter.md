@@ -526,7 +526,7 @@ Hier finden Sie ein kurzes [Einleitungsvideo](https://box.hu-berlin.de/f/3f23e8a
 
 ## Einrichten der Testleitungskonsole
 
-Die Testleitungskonsole wird mittels der **Testtakers.xml** eingerichtet. Diese gehört zu den für einen Test erforderlichen Dateien. Nachfolgend ist eine Beispielkonfiguration bzw. Syntax zu sehen, an der wir uns im weiteren Verlauf dieses Kapitels orientieren werden.
+Die Testleitungskonsole wird mittels **Testtakers.xml** eingerichtet. Diese gehört zu den Testdateien, wie auch die **Booklet.xml** und die **Unit.xml**. Nachfolgend ist eine Beispielkonfiguration bzw. Syntax der **Testtakers.xml** zu sehen, an der eine Orientierung im weiteren Verlauf dieses Kapitels erfolgen wird.
 
 ```xml
 <Testtakers>
@@ -552,20 +552,17 @@ Die Testleitungskonsole wird mittels der **Testtakers.xml** eingerichtet. Diese 
 </Testtakers>
 ```
 
-Die Testleitungskonsole wird mittels Modus: `monitor-group` für die jeweilige Gruppe aktiviert. In diesem Fall befindet sich der Login mit diesem Modus in der Group: Testgruppe_1. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen die sich in dieser Testgruppe_1 befinden.
-Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das Testcenter zu laden.
-
+Zum Einrichten der Testleitungskonsole wird ein Login mit dem Modus:`monitor-group` in der zu beobachtenden Gruppe angelegt.In diesem Fall befindet sich der Login mit diesem Modus in der Group: Testgruppe_1. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen die sich in dieser Testgruppe_1 befinden. Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das Testcenter zu laden.
 
 >Der oben gezeigte Code ist nur ein Bsp.! Es können weitere Gruppen, Testpersonen etc. angelegt werden und für jede dieser Gruppen kann ein eigener Testmonitor angelegt werden!
 
 Weitere Informationen zur Konfiguration der **Testtaker.xml** finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml).
 
-
 ## Starten der Testleitungskonsole
 
-Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am Testcenter erfolgen. Zur Anmeldung sind dann die Zugangsdaten zu verwenden, welche für die Testleitungskonsole in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
+Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am Testcenter erfolgen. Anschließend sind die Zugangsdaten zu verwenden, welche als Login für die Testleitungskonsole (`monitor-group`) in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
 
-Nach der Anmeldung kann die Gruppe, welche dieser Testleitungskonsole zugeordnet ist ausgewählt werden.
+Nach der Anmeldung kann die Gruppe, welche dieser Testleitungskonsole zugeordnet ist, ausgewählt werden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Anmeldung.png)
 
@@ -575,13 +572,13 @@ Nachdem die gewünschte Gruppe gewählt wurde (in diesem Fall gibt es nur eine G
 
 ### Was ist nun zu sehen?
 
-Nachfolgend erfolgt eine Auflistung, welche Bestandteile resultierend aus der Konfiguration innerhalb der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
+Nachfolgend erfolgt eine Auflistung, welche Bestandteile resultierend aus der Konfiguration der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
 
 * die beobachtete Gruppe -> Dieser Name wurde über das Group Label gesetzt. In diesem Fall Gruppe 1.
 * Benutzername der Testleitungskonsole -> Dieser Name wurde über den Login Namen der `monitor-group` gesetzt.
 * die Testpersonen -> Diese Namen wurden über die Login Namen innerhalb der zu überwachenden Gruppe gesetzt.
 
-Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole, muss nun ein Einblick  in die **Booklet.xml** genommen werden, welche in diesem Beispiel gemeinsam mit der **Testtakers.xml** und den einzelnen **Unit.xml`s** in das Testcenter geladen wurde. 
+Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einblick  in die **Booklet.xml** genommen werden, die zusammen mit der **Testtakers.xml** und den **Unit.xml`s** für dieses Bsp. in das Testcenter geladen wurde.
 
 >Es wird nur der Code innerhalb der **Booklet.xml** aufgezeigt der für die Beschreibung notwendig ist!
 
@@ -617,24 +614,20 @@ Das gelb markierte Symbol entspricht dem Testlet: Examples. Die enthaltende Zahl
 
 ## Arbeiten mit der Testleitungskonsole
 
-Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung, ist der Bearbeitungsstand ihres Tests in der Testleitungskonsole zu sehen.
+Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung, ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich.
 
 > **Ablauf, Struktur und Kontrolle eines Tests können von den Verantwortlichen individuell gestaltet werden.<br> 
 An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden! Die Durchführung sollte genauestens geplant und überdacht sein, um einen reibungslosen Ablauf und repräsentative Ergebnisse zu gewährleisten.**
 
-In diesem Bsp. hat sich nur  Testperson c angemeldet. Nachfolgend wird der Ablauf in der Testleitungskonsole in Abhängigkeit vom Fortschritt der Testperson c aufgezeigt:
+In diesem Bsp. hat sich nur  Testperson c angemeldet und befindet sich in der Unit 1 innerhalb des Testlets.<br>
+Testperson_a hat seinen Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt, auch zu sehen an dem kleinen Schlosssymbol.
 
-1. Testperson hat den Test noch nicht gestartet.
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
-Bild fehlt!
+Weitere Symbol Erklärungen:
 
-2. Testperson befindet sich in der ersten Unit.
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
-Bild fehlt!
-
-3. Testperson hat den Test abgeschlossen.
-
-Bild fehlt!
 
 ---
 
