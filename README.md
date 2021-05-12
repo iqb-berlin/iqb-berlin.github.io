@@ -4,38 +4,34 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
 
 Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick auf die Links begeben Sie sich in Wikis, Code-Repositorien und Foren oder zu einer Videopräsentation zum jeweiligen Thema.
 
+# Computerbasiertes Testen
+## Verstehen und Anwenden: [Wiki IQB TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
 
-| :----: | :----: | :----: | :----: |
-| [Computerbasiertes Testen](#cba) | [Metadaten-Kataloge](#metadata) | [R-Programmierungen zur Datenanalyse](#rcode) | [Übergreifende Programmierungen/ Spezifikationen](#components) | 
+## Installieren
+* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter-setup) - Webanwendung zum Durchführen von Leistungstests und Befragungen 
+* [IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-setup) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
+* [ict-ToolBox](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox) - Windows-Programm zum Aufbereiten der Ergebnisse u. a.
+* Verona-Player – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio (Voransicht)
+  + [Dan Player](https://github.com/iqb-berlin/verona-player-dan/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+  + [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
+  + [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases/latest) - Player für eine spezielle Scriptsprache
+* Verona-Editoren – zur Verwendung im IQB-Teststudio
+  + [Dan Editor](https://github.com/iqb-berlin/verona-editor-dan/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+  * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text 
 
-# <a name="cba"></a>Computerbasiertes Testen
-#### Verstehen und Anwenden
-
-Informationen für Anwender\*innen rund um das Thema TBA, finden Sie im nachfolgenden Wiki:
-
----
-
- **[Wiki IQB TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)**
-
----
-
-#### Programmieren und Installieren
-* IQB-Testcenter:
-  * Programmcode: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), [Docker-Setup](https://github.com/iqb-berlin/testcenter-setup)
-  * Installation (Video-Präsentationen auf HU-Box): [Einführung in die Architektur](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/), [Optionen der Einbindung](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)  
-* IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), [Docker-Setup](https://github.com/iqb-berlin/teststudio-lite-setup)
-* [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox): Windows-Desktop-Anwendung zur Unterstützung der Nutzung des IQB-Testcenters (vb.net)
+## Entwicklung
+* IQB-Testcenter: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), 
+* IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
+* [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
 * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
 * IQB-Verona-Player: [abi](https://github.com/iqb-berlin/verona-player-abi), [dan](https://github.com/iqb-berlin/verona-player-dan), [simple](https://github.com/iqb-berlin/verona-player-simple)
-* [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications): Ergänzende Spezifikationen zu Datenformaten rund um Verona 
 
-#### Konzipieren: Verona-Interfaces
-* Video-Präsentationen: [Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/), [Player-Modell](https://box.hu-berlin.de/f/8f4b50975e9645af803b/), [Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
+## Verona Interfaces Specification
 * [Player-Spezifikation](https://github.com/verona-interfaces/player)
 * [Editor-Spezifikation](https://github.com/verona-interfaces/editor)
-* [IQB-Daten-Spezifikationen](https://github.com/iqb-berlin/verona-data-specifications): Ergänzende Spezifikationen zu Datenformaten rund um Verona 
+* Video-Präsentationen: [Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/), [Player-Modell](https://box.hu-berlin.de/f/8f4b50975e9645af803b/), [Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
  
-# <a name="metadata"></a>Metadaten-Kataloge
+# <a name="metadata"></a>Metadaten
 * [Spezifikation und Erläuterung](https://github.com/iqb-berlin/mdc-schemadefinition)
 * Aktive Kataloge: [Kernkatalog](https://github.com/iqb-berlin/mdc-core), [Copyright-Datenbank](https://github.com/iqb-berlin/mdc-copyright), [Forschungsdaten](https://github.com/iqb-berlin/mdc-researchdata)
 * Kataloge Entwurfsstadium: [Bildungsstandards](https://github.com/iqb-berlin/mdc-educational-standards)
