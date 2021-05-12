@@ -8,8 +8,8 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 ## Verstehen und Anwenden: [Wiki IQB TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
 
 ## Installieren
-* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter-setup) - Webanwendung zum Durchführen von Leistungstests und Befragungen 
-* [IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-setup) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
+* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter-setup#readme) - Webanwendung zum Durchführen von Leistungstests und Befragungen 
+* [IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-setup#readme) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
 * [ict-ToolBox](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox) - Windows-Programm zum Aufbereiten der Ergebnisse u. a.
 * Verona-Player – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio (Voransicht)
   + [Dan Player](https://github.com/iqb-berlin/verona-player-dan/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
@@ -19,7 +19,7 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
   + [Dan Editor](https://github.com/iqb-berlin/verona-editor-dan/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text 
 
-## Entwicklung
+## Entwicklung/Quellcode
 * IQB-Testcenter: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), 
 * IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
 * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
