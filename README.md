@@ -24,7 +24,8 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 * IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
 * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
 * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
-* IQB-Verona-Player: [abi](https://github.com/iqb-berlin/verona-player-abi), [dan](https://github.com/iqb-berlin/verona-player-dan), [simple](https://github.com/iqb-berlin/verona-player-simple)
+* Verona-Player: [abi](https://github.com/iqb-berlin/verona-player-abi), [dan](https://github.com/iqb-berlin/verona-player-dan), [simple](https://github.com/iqb-berlin/verona-player-simple)
+* Verona-Editoren: [dan](https://github.com/iqb-berlin/verona-editor-dan), [plaintext](https://github.com/iqb-berlin/verona-editor-plaintext)
 
 ## Verona Interfaces Specification
 * [Player-Spezifikation](https://github.com/verona-interfaces/player)
