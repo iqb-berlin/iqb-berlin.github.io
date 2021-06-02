@@ -221,3 +221,14 @@ Dieses Verfahren ist in Vorbereitung, wird aber aktuell als übertrieben angeseh
 Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player einsetzen. Man könnte Player konzipieren, die alle möglichen Interaktionselemente abdecken, das IQB möchte aber eher typische Interaktionselemente als Basisausstattung umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. Wo dann genau die Grenze zu ziehen ist wird sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
 
 
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+# Newsletter Archiv
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+# Newsletter IQB-Programmierungen zum computerbasierten Testen
+## 2021/1 - 18.5.2021
+### Teststudio-Lite 1.0
+Die IQB-Anwendung zum Erstellen von Aufgaben bzw. Seiten hat den Status "Prototyp" verlassen und ist jetzt in der Version 1.0 verfügbar. Die Installation als "Docker-Setup" ist jetzt erweitert um ein Update-Script, um alte Inhalte oder Einstellungen zu respektieren. Neue Funktionen u. a.:
+* Import von Aufgaben/Seiten
+* Vereinfachtes Einspielen von Verona-Modulen
+* Anpassbarkeit Startseite, Impressum 
