@@ -287,7 +287,6 @@ Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
 * [Allgemeine Hinweise für die Bearbeitung von XML-Dateien](Arbeiten-mit-Xml%E2%80%90Dateien)
 * Units: 
   * [Bearbeiten der XML-Datei](Unit%E2%80%90Xml)
-  * [Nachbearbeitung nach Export aus Teststudio](Workaround-Unit%E2%80%90Xml)
 * Booklets:
   * [Bearbeiten der XML-Datei](Booklet%E2%80%90Xml)
   * [Unterstützung durch itc-ToolBox](itc%E2%80%90ToolBox%3A-Booklets)
