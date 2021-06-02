@@ -1,24 +1,16 @@
 # 1. Einführung
 
-## Zum Begriff TBA
-
+### Zum Begriff TBA
 TBA steht für Technology Based Assessment, also technologie- oder technikbasiertes Testen. Damit ist nicht nur der Computer als Testinstrument gemeint, sondern auch andere digitale Hilfsmittel wie z. B. Stifte, die beim Schreiben scannen. Am IQB wird zur Zeit nur der Computer (Desktop, Tablet, Notebook) als Medium eingesetzt. Daher kann man CBA - Computer Based Assessement - hier als Synonym betrachten für TBA. Andere Begriffe wie Digital Assessment sind ebenfalls zutreffend.
 
 ## Projektbezug
-
 Nach zahlreichen Vorarbeiten arbeitet das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de)
 seit 2018 gezielt im Auftrag der Ländern an der Umstellung der papierbasierten Kompetenzerhebung auf eine technologiebasierte Durchführung. 
-Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte hier:
-
-* [TBA-Projekt 2018-2020](https://www.iqb.hu-berlin.de/research/dm/tba/)
-* [TBA-Projekt 2021-2023](https://www.iqb.hu-berlin.de/research/dm/tba21/)
-* [VERA online](https://www.iqb.hu-berlin.de/vera/online/)
+Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte [den TBA-Projektseiten des IQB](https://www.iqb.hu-berlin.de/tba/)!
 
 Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Kompetenzerhebung
 seitens des IQB zum Einsatz kommen.
-
----
-
+ 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.1-Überblick">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -222,7 +214,7 @@ Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie bef
 ```yaml
 Dokumentstatus: Review (THuste)
 Stand: 8.4.2021
-todo: - Planung / 2.Punkt > Hier fehlt noch ein entsprechender Text!
+todo: - Planung / 2.Punkt > Verlinkung: Hier fehlt noch ein entsprechender Text!
 ```
 
 Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen IQB-Teststudio und IQB-Testcenter. Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammen arbeiten:
@@ -274,7 +266,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 ### Export
 
 * Units exportieren mit Xml und Voud
-* (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Workaround-Unit%E2%80%90Xml))
+* Der Export im Teststudio erlaubt es, eine Booklet-Xml und eine Testtaker-Xml zu erzeugen, die zu den exportierten Units passt. Diese Dateien sind allerdings nur ein Vorschlag und sollten bearbeitet werden.
 
 ## Testcenter konfigurieren
 
@@ -358,7 +350,7 @@ Wie sieht es aber mit Einrichtungen aus, die eigene Anwendungen (weiter-)nutzen?
 
 Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmcode mitzuliefern, der zwischen Testsystem und der Aufgabe vermittelt. Für spezielle Anforderungen können also jederzeit neue Speicherformate entwickelt werden, solange der erforderliche Programmcode mitgeliefert wird. Ein vorhandenes Testsystem muss nur einmalig die Schnittstelle zu derartigem Programmcode implementieren.
 
-Mehr zu diesem Thema entnehmen Sie bitte diesem [Kapitel](1.7-Technische-Details)
+Mehr zu diesem Thema entnehmen Sie bitte diesem [Kapitel](1.7-Technische-Details).
 
 ### Lizenzen
 
@@ -391,7 +383,6 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 
 # 1.6 Herausforderung VERA
 
-
 ```yaml
 Dokumentstatus: Review
 Stand: 1.4.2021
@@ -404,7 +395,7 @@ Die Testaufgaben und auch die Zusammenstellungen der Aufgaben (Module, Testhefte
 
 Die ersten Ansätze der Online-Durchführung sehen eine manuelle Übertragung der Papierversion der Aufgaben in ein Online-Format vor. Das jeweilige vorhandene Portalsystem wird um einen Onlinetest erweitert. Diese Übertragung der Aufgaben erfolgt für jedes Portalsystem für jedes Jahr. Auf diese Art können viele Länder seit einigen Jahren den Schulen parallel eine Online-Durchführung von VERA anbieten.
 
-Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies  ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/research/dm/tba21/) und wird viele Jahre in Anspruch nehmen.
+Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Format. Angesichts der Vielfalt der vorhandenen technischen Lösungen ist dies ein anspruchsvolles [Vorhaben](https://www.iqb.hu-berlin.de/tba/online/) und wird viele Jahre in Anspruch nehmen.
 
 ![Schema Online-Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Running-VERA.png)
 
