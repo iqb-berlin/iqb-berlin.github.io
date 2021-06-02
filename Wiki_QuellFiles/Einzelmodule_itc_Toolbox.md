@@ -237,7 +237,7 @@ Eine Vorlage können Sie hier herunterladen: [Excel-Vorlage für die ITC-Toolbox
 
 ![Wichtiges zum Editieren der Excel-Vorlage](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_ToolBox_ExcelEdit_final.png)
 
-Nach der Installation und dem Start der **itc-Toolbox** können Sie zwischen verschiedenen Optionen wählen:
+Nach der Installation und dem Start der **ITC-Toolbox** können Sie zwischen verschiedenen Optionen wählen:
 
 * Booklet-Xlsx
 * Login-Xlsx
