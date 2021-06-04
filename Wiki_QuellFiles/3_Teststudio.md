@@ -72,7 +72,7 @@ Stand: 6.4.2021
 
 # 3.2 Portal zur Verwaltung
 
-````yaml
+```yaml
 Dokumentstatus: Entwurf T.Huste
 Stand: 03.06.2021
 ```
@@ -89,7 +89,7 @@ In den Arbeitsbereichen können Units angelegt, gelöscht oder bestehende Units 
 Wurde ein Arbeitsbereich geöffnet, sind alle in diesem Bereich befindlichen Units auf der linken Seite des Portals zu sehen.
 Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
-![iqb online assessment applications with relations: Teststudio](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_Verwaltung.png)
+![iqb online assessment applications with relations: Teststudio](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_Verwaltung_final.png)
 
 ### Verschieben
 
