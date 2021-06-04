@@ -6,6 +6,7 @@ Dokumentstatus: Review (THuste)
 Stand: 02.06.2021
 todo:
 ```
+
 Das IQB-Teststudio ist eine Web-Anwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an, d. h. man schreibt dessen Internet-Adresse in die Adresszeile eines Internet-Browsers. Dadurch werden die Programmierungen geladen und man sieht ein Formular zum Anmelden.
 
 Eine grobe Einführung in das Teststudio geben auch die nachfolgenden Verlinkungen.
@@ -104,6 +105,12 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 
 > **Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei geladen werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!.**
 
+## System-Admin
+
+Wenn das eigene Verwaltungskonto ein kleines Zahnradsymbol aufweist, ist über dieses Symbol ein Zugriff auf die Systemverwaltung möglich. In der Systemverwaltung werden Nutzerkonten und Arbeitsbereiche angezeigt. Hier können Zugriffsrechte auf Arbeitsbereiche für die angelegten Personen festgelegt werden. Es können auch neue Nutzer\*innen und Arbeitsbereiche angelegt werden.
+
+> **Personen die Zugriff auf die Systemverwaltung erhalten sollen, können nur von dem Administrator\*innen des Teststudios festgelegt werden!**
+
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -127,9 +134,6 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 
 
 # 3.3 Allgemeine Arbeitsweise
-
-
-
 
 
 ---
