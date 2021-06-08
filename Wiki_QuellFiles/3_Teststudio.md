@@ -96,27 +96,29 @@ Verfügen Personen über einen Standardzugriff, können diese nach Anmeldung am 
 
 ## <a name="Arbeitsber"></a>Arbeitsbereiche
 
-Um mehreren für die Aufgabenentwicklung verantwortlichen Personen die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe, sprich Units, befinden sich dann in diesen Arbeitsbereichen. Im Sinne einer besseren Organisation bzw. Übersichtlichkeit, ist es außerdem möglich eine Gruppeaufteilung der Arbeitsbereiche vorzunehmen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
+Um mehreren für die Aufgabenentwicklung verantwortlichen Personen die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit wird außerdem eine Gruppenaufteilung in entsprechende Themen vorgenommen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
 
 > Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".
 
 Nach der Anmeldung präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche für die angemeldete Person (Zugriffsrechte). Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
 
 
-Ein geöffntere Arbeistbereich sieht dann wie folgt aus:
+Ein geöffneter Arbeistbereich sieht dann wie folgt aus:
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
 
 Das Fenster der Arbeitsplatzansicht unterteilt sich in zwei Bereiche:
 
- * rot markiert: Organisations Bereich für die Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
- * grün markiert: Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
+ * rot markiert:<br>
+   Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
+ * grün markiert:<br>
+   Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
 
-### Bereich der Unit Berabeitung (grün markiert)
+### Bereich der Unit Bearbeitung (grün markiert)
 
 #### Eigenschaften
 
-Unter den Eigenschaften einer Unit werden einerseits Metadaten wie Namen und Beschreibung festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
+Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung, festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
 
 Kurzname:<br>
 Eindeutiger (ID-fähiger )und schlüssiger Kurzname der Unit. Dieser sollte keine Leerzeichen oder Unterstriche enthalten. Über diesen Namen wird die Aufgabe im Testheft identifiziert.
@@ -134,11 +136,11 @@ Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Edit
   Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente verändert werden.
 
 Player:<br>
-Damit die Aufgabe auch wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt sind.
+Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist.
 Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:
  
 * IQB Player Dan v3.0.0<br>
-  Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editors erfolgte.
+  Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
 
 * IQB Player Abi v3.3.3<br>
   Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Plain Text Editor erfolgte.
@@ -152,9 +154,18 @@ Hierüber gelangt man zu den Funktionen des in den Eigenschaften festgelegten Ed
 Während der Erstellung einer Aufgabe, kann die Aufgabe ohne Speicherung einer aktuellen Änderungen in der Voransicht begutachtet werden.<br>
 > Um die Aufgabe auch in der Vorschau korrekt darstellen zu können, müssen in den Eigenschaften gewählter Editor und Player zueinander passen!
 
+Nachfolgendes Bild zeigt die Voransicht und deren Bestandteile:
+
+![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editor_Voransicht_final.png)
+
+Beschreibung des grün markierten Bereiches:<br>
+**P:** zeigt die Vollständigkeit der Präsentation/Anzeige an, d. h. es wird angezeigt, ob alle Audios abgespielt wurden und/oder ob alle Viewpoints (unsichtbar) angezeigt wurden (d. h. ob gescrollt und alle Textteile, Items etc. gesehen wurden): grün = ja, vollständig; rot = nein, unvollständig;<br>
+**R:** zeigt die Vollständigkeit der Reaktionen an, d. h. es wird angezeigt, ob alle Input-Felder/Anklick-Optionen bedient wurden: grün = ja, alle; gelb = ja, teilweise; rot = nein, keine.<br>
+**F:** zeigt an, ob sich der Fokus noch im aktuellen Fenster befindet. Dient der Kontrolle bei der späteren Testdurchführung, ob sich die Testperson immer noch im Fenster der Testdurchführung befindet oder ob diese das Testfenster verlassen hat und stattdessen ein anderes Fenter geöffnet hat (andere Website etc.)
+
 ### Bereich der Unit Organisation (rot markiert)
 
-In diesem Bereich können Units verwaltet werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
+In diesem Bereich können Units verwaltet bzw. organisiert werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Funktionen_Arbeitsbereich_final.png)
 
@@ -168,20 +179,31 @@ Markierte Units können kopiert werden. Alle Inhalte dieser Unit werden dabei in
 
 #### Unit importieren
 
-Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden.
+Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei, sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden. Der gewählte Name der Zip-Datei spielt dabei keine Rolle.
 
 > Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!
+
+#### Unit exportieren
+
+Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei zumeist aus einer Xml-Datei und einer Voud-Datei. Die Zip-Datei wird automatisch wie folgt benannt: aktuelles Datum UnitDefs.voud.zip
+
 
 ## <a name="FuncEditor"></a>Funktionen des Editors
 
 > Vorab! Hier wird nur die Arbeit mit dem Editor: **IQB Editor Dan v3.1.0** aufgezeigt. Es wird nicht auf den Plain Text Editor eingegangen.
 
-Der Editor wird über den Tab: **Editor** im Funktionsbereichs der Unit (grün markiert im oberen Bild) geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
+Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung (grün markiert im oberen Bild) geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
 
 ![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editieransicht_final.png)
 
-Grün markiert sind die vorgefertigten Elemente wie Textfelder, Multiple-Choise-Felder etc. zu sehen. Diese können via Drag-and-Drop auf die gewünschte Seite der Unit gezogen und positioniert werden. Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden. 
+Grün markiert:<br>
+ * im oberen Bereichereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc.
+ * im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente
+ * im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann,
+ * ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
 
+Gelb markiert:<br>
+Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
 
 ---
 
