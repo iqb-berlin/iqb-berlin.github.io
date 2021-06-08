@@ -76,6 +76,14 @@ Stand: 6.4.2021
 Dokumentstatus: Entwurf T.Huste
 Stand: 03.06.2021
 ```
+
+<table>
+  <tr>
+    <td><a href="#Arbeitsber">Arbeitsbereiche</a></td>    
+	<td><a href="#FuncEditor">Funktionen des Editors</a></td>
+  </tr>
+</table>
+
 ## Zugriffsrechte
 
 ### System-Admin<br>
@@ -86,7 +94,7 @@ Wenn das eigene Verwaltungskonto ein kleines Zahnradsymbol aufweist, ist über d
 ### Standardzugriff<br>
 Verfügen Personen über einen Standardzugriff, können diese nach Anmeldung am Teststudio die Gruppen und Arbeitsbereich sehen, die für sie von dem System-Admin freigegeben wurden. Auf diese können dann zugergiffen und die enthaltenen Aufgaben bearbeitet werden.
 
-## Arbeitsbereiche
+## <a name="Arbeitsber"></a>Arbeitsbereiche
 
 Um mehreren für die Aufgabenentwicklung verantwortlichen Personen die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe, sprich Units, befinden sich dann in diesen Arbeitsbereichen. Im Sinne einer besseren Organisation bzw. Übersichtlichkeit, ist es außerdem möglich eine Gruppeaufteilung der Arbeitsbereiche vorzunehmen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
 
@@ -94,11 +102,17 @@ Um mehreren für die Aufgabenentwicklung verantwortlichen Personen die Möglichk
 
 Nach der Anmeldung präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche für die angemeldete Person (Zugriffsrechte). Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
 
-In den Arbeitsbereichen können Units angelegt, gelöscht oder bestehende Units bearbeitet und exportiert werden. Dazu stehen über Funktionsschaltflächen entsprechende Funktionen zur Verfügung. Um die Eigenschaften einer Unit zu verändern oder eine Unit inhaltlich zu bearbeiten stehen weitere Funktionen zur Verfügung. Nachfolgend ist ein geöffneter Arbeitsbereich mit dem Namen "Schulungen: Juni 2021", dessen Funktionen und Aufteilung zu sehen.
 
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Funktionen_Arbeitsbereiche_Units_final.png)
+Ein geöffntere Arbeistbereich sieht dann wie folgt aus:
 
-### Funktionen einer Unit (grün markiert)
+![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
+
+Das Fenster der Arbeitsplatzansicht unterteilt sich in zwei Bereiche:
+
+ * rot markiert: Organisations Bereich für die Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
+ * grün markiert: Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
+
+### Bereich der Unit Berabeitung (grün markiert)
 
 #### Eigenschaften
 
@@ -138,7 +152,7 @@ Hierüber gelangt man zu den Funktionen des in den Eigenschaften festgelegten Ed
 Während der Erstellung einer Aufgabe, kann die Aufgabe ohne Speicherung einer aktuellen Änderungen in der Voransicht begutachtet werden.<br>
 > Um die Aufgabe auch in der Vorschau korrekt darstellen zu können, müssen in den Eigenschaften gewählter Editor und Player zueinander passen!
 
-### Funktionen des Arbeitsbereichs (rot markiert)
+### Bereich der Unit Organisation (rot markiert)
 
 In diesem Bereich können Units verwaltet werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
@@ -157,6 +171,17 @@ Markierte Units können kopiert werden. Alle Inhalte dieser Unit werden dabei in
 Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden.
 
 > Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!
+
+## <a name="FuncEditor"></a>Funktionen des Editors
+
+> Vorab! Hier wird nur die Arbeit mit dem Editor: **IQB Editor Dan v3.1.0** aufgezeigt. Es wird nicht auf den Plain Text Editor eingegangen.
+
+Der Editor wird über den Tab: **Editor** im Funktionsbereichs der Unit (grün markiert im oberen Bild) geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
+
+![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editieransicht_final.png)
+
+Grün markiert sind die vorgefertigten Elemente wie Textfelder, Multiple-Choise-Felder etc. zu sehen. Diese können via Drag-and-Drop auf die gewünschte Seite der Unit gezogen und positioniert werden. Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden. 
+
 
 ---
 
@@ -181,6 +206,62 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 
 # 3.3 Allgemeine Arbeitsweise
 
+```yaml
+Dokumentstatus: Review (THuste)
+Stand: 03.06.2021
+todo: - Verweis auf Konventionen erhalten
+      - weiter mit Leben füllen
+```
+## Anlegen einer Unit
+
+Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus-Schaltfläche im linken Teil des Arbeitsbereichs eine neue Unit angelegt werden. Nach der Anlage sollten die Eigenschaften hinsichtlich Namensgebung, Auswahl des Editors und Players erfolgen. Anschließend können die Editierfunktionen geöffnet werden mittels Klick auf den Tab: Editor. 
+
+
+## IQB Konventionen
+
+Ein Zusatzdokument welches die IQB Konventionen beschreibt finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung)
+
+## Workarounds
+
+Das aktuelle IQB-Teststudio wurde zwar bereits für diverse Studien verwendet, befindet sich aber noch im Entwicklungsstadium "Prototyp". Es ist völlig klar, dass viele Funktionen fehlen oder nicht die erwarteten Ergebnisse liefern. Im Projektzeitraum 2021-2023 wird diese Web-Anwendung grundlegend überarbeitet und die aktuelle Version "IQB-Teststudio-Lite" nur bei dringendem Bedarf geändert.
+
+### Metadaten reduzieren
+
+Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen Testcenter akzeptiert werden. Das liegt daran, dass die zulässigen Metadaten auf das Nötigste reduziert wurden. Die Elemente `Lastchange`, `Owner` und `Project` müssen entfernt werden:
+
+#### Vorher
+```
+<Unit>
+  <Metadata>
+    <Id>Yoyo</Id>
+    <Label>Geobrettfigur auslegen</Label>
+    <Lastchange>2020-07-02T00:41:16+02:00</Lastchange>
+    <Owner>Institut zur Qualit&#xE4;tsentwicklung im Bildungswesen IQB</Owner>
+    <Project>Demo-Aufgaben f&#xFC;r die &#xD6;ffentlichkeit</Project>
+  </Metadata>
+  <DefinitionRef player="IQBVisualUnitPlayerV2">Yoyo.voud</DefinitionRef>
+</Unit>
+```
+#### Nachher
+```
+<Unit>
+  <Metadata>
+    <Id>Yoyo</Id>
+    <Label>Geobrettfigur auslegen</Label>
+  </Metadata>
+  <DefinitionRef player="IQBVisualUnitPlayerV2">Yoyo.voud</DefinitionRef>
+</Unit>
+```
+### Empfehlung: Verweis zur Validierung
+Nach dem Hochladen in das Testcenter erhält man noch eine Warnung "File has no link to XSD-Schema...". Diese Warnung bedeutet, dass die Xml-Datei keinen expliziten Verweis auf eine Xsd-Datei enthält. Eine solche Xsd-Datei definiert die möglichen Elemente und Attribute einer Xml-Datei und kann daher zur Prüfung der Xml-Datei auf Korrektheit verwendet werden. Das IQB stellt solche Xsd-Dateien bereit. 
+
+Die Deklaration der Xsd-Datei erfolgt im Haupt-Element einer Xml-Datei. Für die Unit-Xml heißt das Hauptelement `Unit` und muss folgendermaßen geändert werden:
+```
+<Unit 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Unit.xsd">
+```
+Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von Xml-Dateien (z. B. Notepad++, Sublime) nun eine Validierung vornehmen können. Man kann also vor dem Hochladen eine Validierung bereits beim Schreiben einer Xml-Datei vornehmen lassen.
 
 ---
 
@@ -190,7 +271,7 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Portal-zur-Verwaltung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Übersicht-der-Webanwendung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
