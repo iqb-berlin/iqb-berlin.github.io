@@ -79,6 +79,7 @@ Stand: 03.06.2021
 
 <table>
   <tr>
+    <td><a href="#Zugriffsrechte">Zugriffsrechte</a></td>
     <td><a href="#Arbeitsber">Arbeitsbereiche</a></td>    
 	<td><a href="#FuncEditor">Funktionen des Editors</a></td>
   </tr>
@@ -86,12 +87,14 @@ Stand: 03.06.2021
 
 ## Zugriffsrechte
 
-### System-Admin<br>
+### <a name="Zugriffsrechte"></a>System-Admin
+
 Wenn das eigene Verwaltungskonto ein kleines Zahnradsymbol aufweist, ist über dieses Symbol ein Zugriff auf die Systemverwaltung möglich. In der Systemverwaltung werden Nutzerkonten und Arbeitsbereiche angezeigt. Hier können Zugriffsrechte auf Arbeitsbereiche für die angelegten Personen festgelegt werden. Es können auch neue Nutzer\*innen und Arbeitsbereiche angelegt werden.
 
 > Personen die Zugriff auf die Systemverwaltung erhalten sollen, können nur von dem Administrator\*innen des Teststudios festgelegt werden!
 
-### Standardzugriff<br>
+### Standardzugriff
+
 Verfügen Personen über einen Standardzugriff, können diese nach Anmeldung am Teststudio die Gruppen und Arbeitsbereich sehen, die für sie von dem System-Admin freigegeben wurden. Auf diese können dann zugergiffen und die enthaltenen Aufgaben bearbeitet werden.
 
 ## <a name="Arbeitsber"></a>Arbeitsbereiche
@@ -159,6 +162,7 @@ Nachfolgendes Bild zeigt die Voransicht und deren Bestandteile:
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editor_Voransicht_final.png)
 
 Beschreibung des grün markierten Bereiches:<br>
+
 **P:** zeigt die Vollständigkeit der Präsentation/Anzeige an, d. h. es wird angezeigt, ob alle Audios abgespielt wurden und/oder ob alle Viewpoints (unsichtbar) angezeigt wurden (d. h. ob gescrollt und alle Textteile, Items etc. gesehen wurden): grün = ja, vollständig; rot = nein, unvollständig;<br>
 **R:** zeigt die Vollständigkeit der Reaktionen an, d. h. es wird angezeigt, ob alle Input-Felder/Anklick-Optionen bedient wurden: grün = ja, alle; gelb = ja, teilweise; rot = nein, keine.<br>
 **F:** zeigt an, ob sich der Fokus noch im aktuellen Fenster befindet. Dient der Kontrolle bei der späteren Testdurchführung, ob sich die Testperson immer noch im Fenster der Testdurchführung befindet oder ob diese das Testfenster verlassen hat und stattdessen ein anderes Fenter geöffnet hat (andere Website etc.)
