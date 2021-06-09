@@ -81,7 +81,7 @@ Stand: 03.06.2021
   <tr>
     <td><a href="#Zugriffsrechte">Zugriffsrechte</a></td>
     <td><a href="#Arbeitsber">Arbeitsbereiche</a></td>    
-	<td><a href="#FuncEditor">Funktionen des Editors</a></td>
+	<td><a href="#Editor">Der Editor</a></td>
   </tr>
 </table>
 
@@ -110,7 +110,7 @@ Ein geöffneter Arbeistbereich sieht dann wie folgt aus:
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
 
-Das Fenster der Arbeitsplatzansicht unterteilt sich in zwei Bereiche:
+Das Fenster eines geöffneten Arbeitsbereichs unterteilt sich in zwei Bereiche:
 
  * rot markiert:<br>
    Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
@@ -192,22 +192,43 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei zumeist aus einer Xml-Datei und einer Voud-Datei. Die Zip-Datei wird automatisch wie folgt benannt: aktuelles Datum UnitDefs.voud.zip
 
 
-## <a name="FuncEditor"></a>Funktionen des Editors
+## <a name="Editor"></a>Der Editor
 
 > Vorab! Hier wird nur die Arbeit mit dem Editor: **IQB Editor Dan v3.1.0** aufgezeigt. Es wird nicht auf den Plain Text Editor eingegangen.
 
+### Übersicht
+
 Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung (grün markiert im oberen Bild) geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
 
-![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editieransicht_final.png)
+![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editoransicht_final.png)
 
-Grün markiert:<br>
- * im oberen Bereichereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc.
- * im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente
- * im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann,
- * ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
-
-Gelb markiert:<br>
+Grün markiert:
+ * Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc..Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten.
+ * Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente.
+ * Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann.
+ * Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
+ 
+Gelb markiert:
 Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
+
+### Elemente einer Aufgabe
+
+Aufgabenelemente stehen über eine kleine Box (im oberen Bild grün markiert) bereit. Diese Box stellt nicht nur die Elemente, sondern auch weitere Funktionen zur Verfügung.
+Nachfolgend eine Übersicht aller Elemente und weiterer Funktionen:
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
