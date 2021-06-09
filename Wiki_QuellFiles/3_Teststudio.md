@@ -81,7 +81,7 @@ Stand: 03.06.2021
   <tr>
     <td><a href="#Zugriffsrechte">Zugriffsrechte</a></td>
     <td><a href="#Arbeitsber">Arbeitsbereiche</a></td>    
-	<td><a href="#Editor">Der Editor</a></td>
+	<td><a href="#edit">Der Editor</a></td>
   </tr>
 </table>
 
@@ -112,10 +112,11 @@ Ein geöffneter Arbeistbereich sieht dann wie folgt aus:
 
 Das Fenster eines geöffneten Arbeitsbereichs unterteilt sich in zwei Bereiche:
 
- * rot markiert:<br>
-   Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
- * grün markiert:<br>
-   Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
+rot markiert:
+- Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
+
+grün markiert:
+- Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
 
 ### Bereich der Unit Bearbeitung (grün markiert)
 
@@ -123,30 +124,25 @@ Das Fenster eines geöffneten Arbeitsbereichs unterteilt sich in zwei Bereiche:
 
 Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung, festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
 
-Kurzname:<br>
-Eindeutiger (ID-fähiger )und schlüssiger Kurzname der Unit. Dieser sollte keine Leerzeichen oder Unterstriche enthalten. Über diesen Namen wird die Aufgabe im Testheft identifiziert.
+Kurzname:
+- Eindeutiger (ID-fähiger )und schlüssiger Kurzname der Unit. Dieser sollte keine Leerzeichen oder Unterstriche enthalten. Über diesen Namen wird die Aufgabe im Testheft identifiziert.
 
-Name:<br>
-Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser Name kann aber auch nachträglich noch geändert werden.
+Name:
+- Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser Name kann aber auch nachträglich noch geändert werden.
 
-Editor:<br>
-Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Editoren zur Verfügung:
+Editor:
+- Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Editoren zur Verfügung:
+    - IQB Editor Plain Text v1.0.1<br>
+	Aufgaben können mittels einer Scriptsprache (deshalb auch der Name "...Plain Text..") erstellt werden. Es stehen also bspw. keine grafischen Elemente zur Erstellung eines Textfeldes oder eines Buttons zur Verfügung. Die Erzeugung solcher Elemente wird rein textuell realisiert.
+	- IQB Editor Dan v3.1.0<br>
+	Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente verändert werden.
 
-* IQB Editor Plain Text v1.0.1<br>
-  Aufgaben können mittels einer Scriptsprache (deshalb auch der Name "...Plain Text..") erstellt werden. Es stehen also bspw. keine grafischen Elemente zur Erstellung eines Textfeldes oder eines Buttons zur Verfügung. Die Erzeugung solcher Elemente wird rein textuell realisiert.
-
-* IQB Editor Dan v3.1.0<br>
-  Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente verändert werden.
-
-Player:<br>
-Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist.
-Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:
- 
-* IQB Player Dan v3.0.0<br>
-  Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
-
-* IQB Player Abi v3.3.3<br>
-  Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Plain Text Editor erfolgte.
+Player:
+- Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:
+	- IQB Player Dan v3.0.0<br>
+	Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
+	- IQB Player Abi v3.3.3<br>
+	Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Plain Text Editor erfolgte.
 
 #### Editor
 
@@ -192,7 +188,7 @@ Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importieren
 Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei zumeist aus einer Xml-Datei und einer Voud-Datei. Die Zip-Datei wird automatisch wie folgt benannt: aktuelles Datum UnitDefs.voud.zip
 
 
-## <a name="Editor"></a>Der Editor
+## <a name="edit"></a>Der Editor
 
 > Vorab! Hier wird nur die Arbeit mit dem Editor: **IQB Editor Dan v3.1.0** aufgezeigt. Es wird nicht auf den Plain Text Editor eingegangen.
 
@@ -202,32 +198,52 @@ Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung (grün 
 
 ![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editoransicht_final.png)
 
-Grün markiert:
- * Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc..Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten.
- * Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente.
- * Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann.
- * Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
+* Grün markiert:
+	* Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc..Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten.
+	* Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente.
+	* Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann.
+	* Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
  
-Gelb markiert:
-Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
+* Gelb markiert:
+	* Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
+
+* Blau markiert:
+	* Eigenschaften eines Elements. Wird bspw. ein Textfeld Element einer Seite hinzugefügt, kann über die Eigenschaften das Textfeld nachträglich bearbeitet werden. Es kann die Größe, Position etc. angepasst werden.
 
 ### Elemente einer Aufgabe
 
 Aufgabenelemente stehen über eine kleine Box (im oberen Bild grün markiert) bereit. Diese Box stellt nicht nur die Elemente, sondern auch weitere Funktionen zur Verfügung.
 Nachfolgend eine Übersicht aller Elemente und weiterer Funktionen:
 
-
- 
-
-
-
-
-
-
-
-
-
-
+1. Elemente zum Einfügen<br>
+	1.1 Text hinzufügen
+    Zum Erstelllen einer Textbox für jeglichen Text (Aufgabenstellung, Stimulus, Fragen, ...).<br>
+	1.2 Bild hinzufügen<br>
+	1.3 Audio hinzufügen<br>
+	1.4 Video hinzufügen<br>
+	1.5 Textbox hinzufügen. Für einzeilige Antwortfelder mit erwarteten Antworten von 3-4 Wörtern Länge<br>
+	1.6 Multiline Textbox hinzufügen. Für (mehrzeilige) Antwortfelder mit längeren erwarteten Antworten<br>
+	1.7 Checkbox hinzufügen. Für Multiple-Choice-Aufgaben bei der mehrere Optionen ausgewählt werden sollen<br>
+	1.8 Multiple Choice hinzufügen. Für Multiple-Choice-Aufgaben bei denen nur eine Option ausgewählt werden soll. Zu einer Option gehörende Buttons müssen hierbei denselben Gruppennamen bekommen.<br>
+	1.9 Dropdown hinzufügen<br>
+	1.10 Tabelle hinzufügen. Bitte wenn möglich vermeiden<br>
+	1.11 html-Element hinzufügen<br>
+	1.12 Viewpoint hinzufügen. Bei einer Seitenlänge von mehr als 1000 px im unteren Bereich einen Viewpoint platzieren. Dadurch wird sichergestellt, dass alle Teile einer Aufgabe gesehen werden bevor Seitenwechsel folgt.<br>
+	1.13 Button hinzufügen
+2. Kopieren<br>
+	2.1 Eigenschaften übertragen. Überträgt die Eigenschaften des ausgewählten Elements auf alle Elemente der Seite<br>
+	2.2 Kopiere Element. Kopiert das ausgewählt Element in den Zwischenspeicher<br>
+	2.3 Füge Element ein.Fügt das zwischengespeicherte Element ein.<br>
+	2.4 Kopieren und wiedereinfügen. Kopiert das ausgewählte Element und fügt es direkt wieder ein
+3. Elemente verschieben<br>
+	3.1 Verschiebe alle Elemente auf der Seite um 10 px nach oben<br>
+	3.2 Verschiebe alle Elemente auf der Seite um 10 px nach unten<br>
+	3.3 Verschiebe alle Elemente auf der Seite um 10 px nach rechts<br>
+	3.4 Verschiebe alle Elemente auf der Seite um 10 px nach links
+4. Element löschen
+5. Backup<br>
+	5.1 lade eine Aufgabendatei hoch (vom eigenen Computer)<br>
+	5.2 lade die Aufgabendatei runter (auf den eigenen Computer)<br>
 
 
 ---
