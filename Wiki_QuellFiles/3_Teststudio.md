@@ -112,36 +112,40 @@ Ein geöffneter Arbeistbereich sieht dann wie folgt aus:
 
 Das Fenster eines geöffneten Arbeitsbereichs unterteilt sich in zwei Bereiche:
 
-rot markiert:
-- Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
+* rot markiert:<br>
+	Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
 
-grün markiert:
-- Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
+* grün markiert:<br>
+	Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
 
-### Bereich der Unit Bearbeitung (grün markiert)
+### Unit Bearbeitung (grün markierter Bereich)
 
 #### Eigenschaften
 
 Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung, festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
 
-Kurzname:
-- Eindeutiger (ID-fähiger )und schlüssiger Kurzname der Unit. Dieser sollte keine Leerzeichen oder Unterstriche enthalten. Über diesen Namen wird die Aufgabe im Testheft identifiziert.
+* Kurzname:<br>
+  Eindeutiger (ID-fähiger )und schlüssiger Kurzname der Unit. Dieser sollte keine Leerzeichen oder Unterstriche enthalten. Über diesen Namen wird die Aufgabe im Testheft identifiziert.
 
-Name:
-- Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser Name kann aber auch nachträglich noch geändert werden.
+* Name:<br>
+	Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser Name kann aber auch nachträglich noch geändert werden.
 
-Editor:
-- Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Editoren zur Verfügung:
-    - IQB Editor Plain Text v1.0.1<br>
+* Editor:<br>
+	Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Editoren zur Verfügung:<br>
+	
+	IQB Editor Plain Text v1.0.1<br>
 	Aufgaben können mittels einer Scriptsprache (deshalb auch der Name "...Plain Text..") erstellt werden. Es stehen also bspw. keine grafischen Elemente zur Erstellung eines Textfeldes oder eines Buttons zur Verfügung. Die Erzeugung solcher Elemente wird rein textuell realisiert.
-	- IQB Editor Dan v3.1.0<br>
+	
+	IQB Editor Dan v3.1.0<br>
 	Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente verändert werden.
 
-Player:
-- Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:
-	- IQB Player Dan v3.0.0<br>
+* Player:<br>
+	Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
+	
+	IQB Player Dan v3.0.0<br>
 	Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
-	- IQB Player Abi v3.3.3<br>
+	
+	IQB Player Abi v3.3.3<br>
 	Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Plain Text Editor erfolgte.
 
 #### Editor
@@ -163,7 +167,7 @@ Beschreibung des grün markierten Bereiches:<br>
 **R:** zeigt die Vollständigkeit der Reaktionen an, d. h. es wird angezeigt, ob alle Input-Felder/Anklick-Optionen bedient wurden: grün = ja, alle; gelb = ja, teilweise; rot = nein, keine.<br>
 **F:** zeigt an, ob sich der Fokus noch im aktuellen Fenster befindet. Dient der Kontrolle bei der späteren Testdurchführung, ob sich die Testperson immer noch im Fenster der Testdurchführung befindet oder ob diese das Testfenster verlassen hat und stattdessen ein anderes Fenter geöffnet hat (andere Website etc.)
 
-### Bereich der Unit Organisation (rot markiert)
+### Unit Organisation (rot markierter Bereich)
 
 In diesem Bereich können Units verwaltet bzw. organisiert werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
@@ -198,52 +202,53 @@ Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung (grün 
 
 ![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editoransicht_final.png)
 
-* Grün markiert:
-	* Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc..Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten.
-	* Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente.
-	* Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann.
-	* Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. 
- 
-* Gelb markiert:
-	* Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
+* Grün markiert:<br>
+	Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc. Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente. Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann. Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten. 
+	 
+* Gelb markiert:<br>
+	Wenn eine Unit neu angelegt wird, besteht diese zu Anfang immer nur aus einer Seite. Die Seiten können anschließend mithilfe des kleinen Pluszeichens im gelb markierten Bereich beliebig erhöht werden.
 
-* Blau markiert:
-	* Eigenschaften eines Elements. Wird bspw. ein Textfeld Element einer Seite hinzugefügt, kann über die Eigenschaften das Textfeld nachträglich bearbeitet werden. Es kann die Größe, Position etc. angepasst werden.
+* Blau markiert:<br>
+	Eigenschaften eines Elements. Wird bspw. ein Textfeld Element einer Seite hinzugefügt, kann über die Eigenschaften das Textfeld nachträglich bearbeitet werden. Es kann die Größe, Position etc. angepasst werden.
 
-### Elemente einer Aufgabe
+### Erstellung Aufgabenelemente
 
 Aufgabenelemente stehen über eine kleine Box (im oberen Bild grün markiert) bereit. Diese Box stellt nicht nur die Elemente, sondern auch weitere Funktionen zur Verfügung.
 Nachfolgend eine Übersicht aller Elemente und weiterer Funktionen:
 
-1. Elemente zum Einfügen<br>
-	1.1 Text hinzufügen
-    Zum Erstelllen einer Textbox für jeglichen Text (Aufgabenstellung, Stimulus, Fragen, ...).<br>
-	1.2 Bild hinzufügen<br>
-	1.3 Audio hinzufügen<br>
-	1.4 Video hinzufügen<br>
-	1.5 Textbox hinzufügen. Für einzeilige Antwortfelder mit erwarteten Antworten von 3-4 Wörtern Länge<br>
-	1.6 Multiline Textbox hinzufügen. Für (mehrzeilige) Antwortfelder mit längeren erwarteten Antworten<br>
-	1.7 Checkbox hinzufügen. Für Multiple-Choice-Aufgaben bei der mehrere Optionen ausgewählt werden sollen<br>
-	1.8 Multiple Choice hinzufügen. Für Multiple-Choice-Aufgaben bei denen nur eine Option ausgewählt werden soll. Zu einer Option gehörende Buttons müssen hierbei denselben Gruppennamen bekommen.<br>
-	1.9 Dropdown hinzufügen<br>
-	1.10 Tabelle hinzufügen. Bitte wenn möglich vermeiden<br>
-	1.11 html-Element hinzufügen<br>
-	1.12 Viewpoint hinzufügen. Bei einer Seitenlänge von mehr als 1000 px im unteren Bereich einen Viewpoint platzieren. Dadurch wird sichergestellt, dass alle Teile einer Aufgabe gesehen werden bevor Seitenwechsel folgt.<br>
-	1.13 Button hinzufügen
-2. Kopieren<br>
-	2.1 Eigenschaften übertragen. Überträgt die Eigenschaften des ausgewählten Elements auf alle Elemente der Seite<br>
-	2.2 Kopiere Element. Kopiert das ausgewählt Element in den Zwischenspeicher<br>
-	2.3 Füge Element ein.Fügt das zwischengespeicherte Element ein.<br>
-	2.4 Kopieren und wiedereinfügen. Kopiert das ausgewählte Element und fügt es direkt wieder ein
-3. Elemente verschieben<br>
-	3.1 Verschiebe alle Elemente auf der Seite um 10 px nach oben<br>
-	3.2 Verschiebe alle Elemente auf der Seite um 10 px nach unten<br>
-	3.3 Verschiebe alle Elemente auf der Seite um 10 px nach rechts<br>
-	3.4 Verschiebe alle Elemente auf der Seite um 10 px nach links
-4. Element löschen
-5. Backup<br>
-	5.1 lade eine Aufgabendatei hoch (vom eigenen Computer)<br>
-	5.2 lade die Aufgabendatei runter (auf den eigenen Computer)<br>
+1 Elemente zum Einfügen<br>
+1.1 Text hinzufügen<
+Zum Erstelllen einer Textbox für jeglichen Text (Aufgabenstellung, Stimulus, Fragen, ...).<br>
+1.2 Bild hinzufügen<br>
+1.3 Audio hinzufügen<br>
+1.4 Video hinzufügen<br>
+1.5 Textbox hinzufügen. Für einzeilige Antwortfelder mit erwarteten Antworten von 3-4 Wörtern Länge<br>
+1.6 Multiline Textbox hinzufügen. Für (mehrzeilige) Antwortfelder mit längeren erwarteten Antworten<br>
+1.7 Checkbox hinzufügen. Für Multiple-Choice-Aufgaben bei der mehrere Optionen ausgewählt werden sollen<br>
+1.8 Multiple Choice hinzufügen. Für Multiple-Choice-Aufgaben bei denen nur eine Option ausgewählt werden soll. Zu einer Option gehörende Buttons müssen hierbei denselben Gruppennamen bekommen.<br>
+1.9 Dropdown hinzufügen<br>
+1.10 Tabelle hinzufügen. Bitte wenn möglich vermeiden<br>
+1.11 html-Element hinzufügen<br>
+1.12 Viewpoint hinzufügen. Bei einer Seitenlänge von mehr als 1000 px im unteren Bereich einen Viewpoint platzieren. Dadurch wird sichergestellt, dass alle Teile einer Aufgabe gesehen werden bevor Seitenwechsel folgt.<br>
+1.13 Button hinzufügen<br>
+
+2 Kopieren<br>
+2.1 Eigenschaften übertragen. Überträgt die Eigenschaften des ausgewählten Elements auf alle Elemente der Seite<br>
+2.2 Kopiere Element. Kopiert das ausgewählt Element in den Zwischenspeicher<br>
+2.3 Füge Element ein.Fügt das zwischengespeicherte Element ein.<br>
+2.4 Kopieren und wiedereinfügen. Kopiert das ausgewählte Element und fügt es direkt wieder ein<br>
+
+3 Elemente verschieben<br>
+3.1 Verschiebe alle Elemente auf der Seite um 10 px nach oben<br>
+3.2 Verschiebe alle Elemente auf der Seite um 10 px nach unten<br>
+3.3 Verschiebe alle Elemente auf der Seite um 10 px nach rechts<br>
+3.4 Verschiebe alle Elemente auf der Seite um 10 px nach links<br>
+
+4 Element löschen<br>
+
+5 Backup<br>
+5.1 lade eine Aufgabendatei hoch (vom eigenen Computer)<br>
+5.2 lade die Aufgabendatei runter (auf den eigenen Computer)<br>
 
 
 ---
@@ -277,7 +282,42 @@ todo: - Verweis auf Konventionen erhalten
 ```
 ## Anlegen einer Unit
 
-Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus-Schaltfläche im linken Teil des Arbeitsbereichs eine neue Unit angelegt werden. Nach der Anlage sollten die Eigenschaften hinsichtlich Namensgebung, Auswahl des Editors und Players erfolgen. Anschließend können die Editierfunktionen geöffnet werden mittels Klick auf den Tab: Editor. 
+Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus-Schaltfläche im linken Teil des Arbeitsbereichs eine neue Unit angelegt werden. Nach der Anlage sollten die Eigenschaften hinsichtlich Namensgebung, Auswahl des Editors und Players erfolgen. Anschließend können die Editierfunktionen geöffnet werden mittels Klick auf den Tab: Editor. Nachfolgend können dann gewünschte Aufgabenelemente auf den Seiten einer Unit platziert werden und dessen Eigenschaften angepasst werden.
+
+### Text hinzufügen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## IQB Konventionen
