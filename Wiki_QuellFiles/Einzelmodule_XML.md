@@ -184,15 +184,13 @@ Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung vo
     <td>Config:</td>
     <td>key</td>
     <td>Attribut</td>
-    <td>Vordefinierter Wert. Ermöglicht eine Booklet Konfiguration. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b>
-	im Kapitel: <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
+    <td>Vordefinierter Wert. Ermöglicht eine Booklet Konfiguration. Die möglichen zu verwendenden Werte sind im nächsten Abschnitt zu finden.</td>
 </tr>
 <tr>
     <td>Config:</td>
     <td>>xxx<</td>
     <td>Datum</td>
-    <td>Vordefinierter Wert. Die möglichen zu verwendenden Werte entnehmen Sie bitte der <b>Booklet Konfiguration</b> im Kapitel: 
-	 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Konfiguration-der-Testdurchf%C3%BChrung">Konfiguration der Testdurchführung</a></td>
+    <td>Vordefinierter Wert. Die möglichen zu verwendenden Werte sind im nächsten Abschnitt zu finden.</td>
 </tr>
 
 </table>
