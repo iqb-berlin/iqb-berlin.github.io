@@ -74,7 +74,7 @@ Stand: 6.4.2021
 
 ```yaml
 Dokumentstatus: Entwurf T.Huste
-Stand: 03.06.2021
+Stand: 11.06.2021
 ```
 
 <table>
@@ -214,7 +214,7 @@ Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung (grün 
 ### Erstellung Aufgabenelemente
 
 Aufgabenelemente stehen über eine kleine Box (im oberen Bild grün markiert) bereit. Diese Box stellt nicht nur die Elemente, sondern auch weitere Funktionen zur Verfügung.
-Nachfolgend eine Übersicht aller Elemente und weiterer Funktionen:
+Nachfolgend eine Übersicht aller Elemente und weiterer Funktionen (die Nummerierung bezieht sich auf den grün markierten Bereich im oberen Bild):
 
 1 Elemente zum Einfügen<br>
 1.1 Text hinzufügen<
@@ -287,7 +287,7 @@ Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus
 ### Text hinzufügen
 
 
-
+![iqb online assessment applications with relations: Teststudio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften.png)
 
 
 
