@@ -287,7 +287,7 @@ Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus
 ### Text hinzufügen
 
 
-![iqb online assessment applications with relations: Teststudio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften.png)
+![iqb online assessment applications with relations: Teststudio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften_final.png)
 
 
 
