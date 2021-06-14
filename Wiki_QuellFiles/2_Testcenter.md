@@ -1,10 +1,5 @@
 # 2 Testcenter
 
-```yaml
-Dokumentstatus: Review (T.Huste)
-Stand: 6.4.2021
-```
-
 Das IQB-Testcenter ist eine Web-Anwendung für die Durchführung von Kompetenztests oder Befragungen. 
 Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an, d. h. man schreibt 
 dessen Internet-Adresse in die Adresszeile eines Internet-Browsers. Dadurch werden die Programmierungen geladen 
@@ -96,10 +91,6 @@ Sperre wieder aufheben.
 
 # 2.1 Daten und Prozesse
 
-```yaml
-Dokumentstatus: Review (T.Huste)
-Stand: 6.4.2021
-```
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Umgebungsmodule_final.png)
 
 ## Daten-Input für das Testcenter
@@ -218,10 +209,6 @@ Sollte es mal technische Probleme mit dem Computer geben (z. B. Audio-Buchse def
 
 # 2.3 Portal zur Verwaltung
 
-```yaml
-Dokumentstatus: Entwurf MM
-Stand: 7.4.2021
-```
 Auf einem Testcenter müssen die Inhalte für Tests geladen werden und es muss einen Weg geben, die Antworten zu erhalten. Für diese Aufgaben ist ein Verwaltungsportal eingerichtet. Die Verantwortlichen für eine Studie melden sich am Testsystem an derselben Stelle an, wo auch eine Testperson sich anmelden würde. Das System erkennt, dass die Anmeldedaten zu einem Konto für die Verwaltung gehören und lädt entsprechend die Funktionen dafür.
 
 ## Arbeitsbereiche
@@ -275,10 +262,6 @@ Wenn das eigene Verwaltungskonto die Markierung "System-Administration" hat, dan
 
 # 2.4 Testinhalte hochladen
 
-```yaml
-Dokumentstatus: Entwurf
-Stand: 6.4.2021
-```
 Wie in der [Einführung](2.1-Daten-und-Prozesse) erläutert, besteht die Definition eines Tests oder einer Befragung aus dem Hochladen spezieller Dateien. Die Verwaltung der Dateien erfolgt im [Verwaltungsportal](2.3-Portal-zur-Verwaltung). Die folgende Darstellung zeigt die Zusammenhänge der Dateien untereinander: Units definieren jeweils eine Aufgabe bzw. eine Seite, Booklets definieren die Aneinanderreihung der Aufgaben und Logins definieren den Zugriff einer Testperson auf ein Booklet.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
@@ -358,8 +341,10 @@ In jedem Fall im späteren Text die Verlinkungen zu den Ressourcendateien anlege
 
 ```yaml
 Dokumentstatus: Entwurf
-Stand: 6.4.2021
+Stand: 14.6.2021
+todo: -klären ob Kapitel bestehen bleibt oder Inhalt mit in das Kap Portal zur Verwaltung kommen soll
 ```
+
 Über das [Verwaltungsportal](2.3-Portal-zur-Verwaltung) können die Antworten und Logs heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
 
 ---
@@ -511,12 +496,6 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 
 # 2.8 Testleitungskonsole
 
-```yaml
-Dokumentstatus: Entwurf TH
-Stand: 04.5.2021
-todo: - Bilder Verlauf Testleitungsonsole einbinden.
-```
-
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
 
@@ -624,7 +603,7 @@ Durch markieren einer Testperson, kann der Ablauf für diese Testperson mithilfe
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
-Weitere Symbol Erklärungen (dies ist nur eine bspw. Darstellung, Symbole können nicht alle gemeinsam auftreten!):
+Weitere Symbol Erklärungen (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
