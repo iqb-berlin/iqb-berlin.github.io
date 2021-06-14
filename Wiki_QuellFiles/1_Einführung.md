@@ -211,12 +211,6 @@ Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie bef
 
 # 1.4 Studie durchführen Schritt für Schritt
 
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 8.4.2021
-todo: - Planung / 2.Punkt > Verlinkung: Hier fehlt noch ein entsprechender Text!
-```
-
 Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen IQB-Teststudio und IQB-Testcenter. Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammen arbeiten:
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
@@ -226,8 +220,7 @@ Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig s
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
 
 * Soll ein System-Check durchgeführt werden?
-* Wie genau erfolgt die Anmeldung der Testperson (durch die Testaufsicht, oder nur teilweise, oder nur durch Link usw., 
-  siehe [hier](https://github.com/iqb-berlin/testcenter-frontend/wiki/Varianten-der-Anmeldung-einer-Testperson))?
+* Wie genau erfolgt die Anmeldung der Testperson (durch die Testaufsicht, oder nur teilweise, oder nur durch Link usw.?
 * Soll der Testablauf einer Testgruppe beobachtet oder gesteuert werden (Testleitungskonsole)?
 * Erhalten die Schulen eine Rückmeldung? Wie sieht die aus?
 * Welche Zusatzmaterialien werden vor Ort benötigt: Taschenrechner, Lineal, Notizpapier, Kopfhörer?
