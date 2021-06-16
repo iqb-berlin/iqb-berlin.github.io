@@ -278,7 +278,19 @@ Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
   * [Unterstützung durch itc-ToolBox](itc%E2%80%90ToolBox%3A-Logins)
   * [Anmeldeverfahren](Login%3A-Anmeldeverfahren)
   * [Modi der Testdurchführung](Login%3A-Modi-der-Testdurchf%C3%BChrung)
-  
+
+**Empfehlung: Verweis zur Validierung**
+
+Eventuell wird nach dem Hochladen in das Testcenter eine Warnung "File has no link to XSD-Schema..." angezeigt. Diese Warnung bedeutet, dass die Xml-Datei keinen expliziten Verweis auf eine Xsd-Datei enthält. Eine solche Xsd-Datei definiert die möglichen Elemente und Attribute einer Xml-Datei und kann daher zur Prüfung der Xml-Datei auf Korrektheit verwendet werden. Das IQB stellt solche Xsd-Dateien bereit. 
+
+Die Deklaration der Xsd-Datei erfolgt im Haupt-Element einer Xml-Datei. Für die Unit-Xml heißt das Hauptelement `Unit` und muss folgendermaßen geändert werden:
+```
+<Unit 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Unit.xsd">
+```
+Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von Xml-Dateien (z. B. Notepad++, Sublime) nun eine Validierung vornehmen können. Man kann also vor dem Hochladen eine Validierung bereits beim Schreiben einer Xml-Datei vornehmen lassen.
+
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -592,7 +604,7 @@ Das gelb markierte Symbol entspricht dem Testlet: Examples. Die enthaltende Zahl
 
 ## Arbeiten mit der Testleitungskonsole
 
-Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung, ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich.
+Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung, ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich. Über das kleine Zahnradsymbol oben rechts, kann die Ansicht individuell angepasst werden. Es können weitere Informationen ein- oder ausgeblendet werden. 
 
 > **Ablauf, Struktur und Kontrolle eines Tests können von den Verantwortlichen individuell gestaltet werden.<br> 
 An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden! Die Durchführung sollte genauestens geplant und überdacht sein, um einen reibungslosen Ablauf und repräsentative Ergebnisse zu gewährleisten.**
@@ -603,10 +615,13 @@ Durch markieren einer Testperson, kann der Ablauf für diese Testperson mithilfe
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
-Weitere Symbol Erklärungen (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
+> **Werden mehrere Testhefte mit ähnlicher Struktur verwendet, ist es eventuell nicht möglich alle Testpersonen gleichzeitig zu steuern. In diesem Fall müssen die zu steuernden Testpersonen einzeln markiert (Haken setzen vor der Testperson) und dann die Steuerbefehle (Pause, springe zu etc.) abgesetzt werden.**
+
+Die folgenden Stati können während eines Testablaufs angezeigt werden (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
+Weitere detailierte Informationen zu den den Stati finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
 
 ---
 
