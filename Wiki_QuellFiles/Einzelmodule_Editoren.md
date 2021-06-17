@@ -88,4 +88,4 @@ Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint au
 
 ### IQB Konventionen
 
-Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf steht ein Zusatzdokument mit IQB Emfehlungen bereit. Zu finden ist diese Dokument [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung).
+Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, steht ein Zusatzdokument mit IQB Emfehlungen bereit. Zu finden ist diese Dokument [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung).
