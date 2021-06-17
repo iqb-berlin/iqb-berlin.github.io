@@ -117,7 +117,7 @@ Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden 
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_bearbeiten_final.png)
 
-**Eigenschaften**
+### Tab Eigenschaften
 
 Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung, festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
 
@@ -131,17 +131,29 @@ Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser N
 
 **Editor**
 	
-Es stehen mehrere Editoren zur Verfügung. Eine Aufteilung bzgl. Arbeitsweise dieser Editoren kann hauptsächlich in zwei Gruppen erfolgen.
+Für die Aufgabengestaltung können je nach Bedarf unterschiedliche Editoren genutzt werden. Diese unterscheiden sich hinsichtlich Funktionalität und Ausstattung. Prinzipiell kann man die angebotenen Editoren in zwei Gruppen einteilen:
 
-* Editor grafischer Entwurf
+* grafischer Entwurf
 	* Alle für den Entwurf benötigten Elemente einer Aufgabe (Textfelder, Grafiken, Multiple-Choice-Felder etc.) stehen über ein Menu symbolisch zur Verfügung und können mittels drag-and-drop in der Aufgabe positioniert werden und deren Eigenschaften über entsprechende Menus verändert werden.
 	
-* Editor textueller Entwurf
+* textueller Entwurf
 	* Alle für den Entwurf benötigten Elemente einer Aufgabe können über eine Scriptsprache erstellt werden. Es gibt keine vorgefertigten Elemente, alle Eigenschaften werden rein textuell beschrieben. Kenntnisse bzlg. Syntax der Scriptsprache sind zwingend erforderlich.
 
-> **Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel Editor.**
-	
-**Vorschau**
+Welcher Editor gewählt wird, orientiert sich an der gewünschten Aufgabengestaltung (Aus welchen Elementen soll die Aufgabe bestehen?) und der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf). Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
+
+> Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel *Editor*.
+
+**Player**
+
+Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testcenter abgespielt werden kann, wird ein Player benötigt. Dieser ist in die jeweilige Webanwendung intergriert und gibt die Aufgabe mit all ihren Elementen wieder. Der Player muss dabei zwingend zum Editor passen mit dem die Aufgabe entworfen wurde. Wurde eine Aufgabe bspw. mit einem Script Editor entworfen, muss auch ein Script Player verwendet.
+
+> **Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel Player.**
+
+### Tab Editor
+
+> Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel *Editor*.
+
+### Tab Vorschau
 
 Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung einer aktuellen Änderungen in der Voransicht begutachtet werden.<br>
 > Um die Aufgabe auch in der Vorschau korrekt darstellen zu können, müssen in den Eigenschaften gewählter Editor und Player zueinander passen!
