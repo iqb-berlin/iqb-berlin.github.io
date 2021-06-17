@@ -3,7 +3,7 @@
 ```yaml
 Achtung: Noch nicht aktualisiert auf 1.0
 Dokumentstatus: Review (THuste)
-Stand: 15.06.2021
+Stand: 17.06.2021
 todo:
 ```
 
@@ -62,8 +62,10 @@ In den nachfolgenden Kapiteln wird detailierte auf diese Aufteilung eingegangen.
 ## 3.1 Unit Organisation
 
 ```yaml
-Dokumentstatus: Entwurf T.Huste
-Stand: 11.06.2021
+Achtung: Noch nicht aktualisiert auf 1.0
+Dokumentstatus: Review (THuste)
+Stand: 17.06.2021
+todo:
 ```
 
 > Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
@@ -112,6 +114,13 @@ Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden 
 ---
 
 ## 3.2 Unit Bearbeitung
+
+```yaml
+Achtung: Noch nicht aktualisiert auf 1.0
+Dokumentstatus: Review (THuste)
+Stand: 17.06.2021
+todo:
+```
 
 > Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
 
@@ -203,7 +212,7 @@ Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. D
 
 ```yaml
 Dokumentstatus: Review (THuste)
-Stand: 16.06.2021
+Stand: 17.06.2021
 todo: - Eventuell ist das Anpassen der Metadaten nicht mehr erforderlich und kann entfernt werden!
       
 ```
@@ -274,7 +283,7 @@ Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen 
 
 ```yaml
 Dokumentstatus: Review (THuste)
-Stand: 16.06.2021
+Stand: 17.06.2021
 todo: - Verweis auf Einzeldokumente anlegen
       
 ```
