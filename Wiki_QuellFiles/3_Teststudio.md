@@ -24,12 +24,12 @@ Das IQB hat alle Programmierungen unter einer Open Source veröffentlicht und er
 
 **Arbeitsbereiche**
 
-Um mehreren für die Aufgabenentwicklung verantwortlichen Personen die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit wird außerdem eine Gruppenaufteilung in entsprechende Themen vorgenommen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
+Um Entwicklerteams die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit wird außerdem eine Gruppenaufteilung in entsprechende Themen vorgenommen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
 Bsph. können dann nur alle zum Team Englisch gehörenden Entwickler\*innen die Arbeitsbereiche für den Fachbereich Englisch sehen.
 
 > Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".
 
-Nach der Anmeldung mit den personenspezifischen Zugangsdaten, präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche für die angemeldete Person. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
+Nach der Anmeldung mit den personenspezifischen Zugangsdaten, präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man durch einen Klick auf das IQB-Logo oben links zurück.
 
 Ein geöffneter Arbeitsbereich teilt sich in zwei Fenster auf:
 
@@ -66,7 +66,7 @@ Dokumentstatus: Entwurf T.Huste
 Stand: 11.06.2021
 ```
 
-> Rot markiertes Fenster eines Arbeitsbereiches, siehe Kapitel: 3 Teststudio.
+> Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
 
 In diesem Bereich können Units verwaltet bzw. organisiert werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
@@ -82,13 +82,13 @@ Markierte Units können kopiert werden. Alle Inhalte dieser Unit werden dabei in
 
 **Unit importieren**
 
-Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei, sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden. Der gewählte Name der Zip-Datei spielt dabei keine Rolle.
+Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei, sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden. Der gewählte Name der Zip-Datei spielt dabei keine Rolle, sollte aber einer gewissen Logik folgen um den Überblick zu behalten.
 
 > Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!
 
 **Unit exportieren**
 
-Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei zumeist aus einer Xml-Datei und einer Voud-Datei. Die Zip-Datei wird automatisch wie folgt benannt: aktuelles Datum UnitDefs.voud.zip
+Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei aus einer Xml-Datei und einer Voud-Datei. Die Zip-Datei wird automatisch wie folgt benannt:<br> **aktuelles Datum***UnitDefs.voud.zip*. Es ist auch möglich eine passende Testtakers.xml und Booklet.xml mit ausgeben zu lassen. In der Booklet.xml sind dann bspw. alle zum Paket gehörenden Units bereits eingebunden. Um diese Dateien zu erzeugen, muss im Exportfenster der Haken bei "Als Paket für Testcenter" gesetzt werden.
 
 ---
 
@@ -113,7 +113,9 @@ Werden Units exportiert, verpackt das Teststudio die zu dieser Unit gehörenden 
 
 ## 3.2 Unit Bearbeitung
 
-> Grün markiertes Fenster eines Arbeitsbereiches, siehe Kapitel: 3 Teststudio.
+> Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
+
+![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_bearbeiten_final.png)
 
 **Eigenschaften**
 
