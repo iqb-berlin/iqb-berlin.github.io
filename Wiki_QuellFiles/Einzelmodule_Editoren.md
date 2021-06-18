@@ -1,6 +1,13 @@
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-# Verona Dan Editor (Abschnittsmarker)
+# Verona Dan Editor v3.1 (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+```yaml
+Dokumentstatus: Review (THuste)
+Stand: 18.06.2021
+todo: - Weiter abgleichen mit Informationen die sich bereits in PbWorks befinden!
+      
+```
 
 [Hier](https://github.com/iqb-berlin/verona-editor-dan) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
 
@@ -64,6 +71,8 @@ Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint au
 
 ![iqb online assessment applications with relations: Teststudio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften_final.png)
 
+> Die nachfolgende Beschreibung enthält Vorschlagswerte, die auf Erfahrungen des IQB beruhen und daher nur als Empfehlung anzusehen sind.
+
 1. Breite: Die Breite des Textfeldes, höchstens Breite der Seite - 60
 2. Erste Zeile: Die Einrückung der ersten Zeile
 3. Fettgedruckt: Wenn das gesamte Textfeld fettgedruckt sein soll "true" auswählen, für einzelne Wörter siehe 13
@@ -89,3 +98,17 @@ Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint au
 ### IQB Konventionen
 
 Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, steht ein Zusatzdokument mit IQB Emfehlungen bereit. Zu finden ist diese Dokument [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung).
+
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+#  Verona Editor PlainText v1.0(Abschnittsmarker)
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+```yaml
+Dokumentstatus: Review (THuste)
+Stand: 18.06.2021
+todo: - Weiter mit Leben füllen!
+      
+```
+
+[Hier](https://github.com/iqb-berlin/verona-editor-plaintext) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
