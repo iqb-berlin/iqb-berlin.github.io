@@ -143,24 +143,24 @@ Dieser Name wird im Testcenter beim Abspielen dieser Aufgabe angezeigt. Dieser N
 Für die Aufgabengestaltung können je nach Bedarf unterschiedliche Editoren genutzt werden. Diese unterscheiden sich hinsichtlich Funktionalität und Ausstattung. Prinzipiell kann man die angebotenen Editoren in zwei Gruppen einteilen:
 
 * grafischer Entwurf
-	* Alle für den Entwurf benötigten Elemente einer Aufgabe (Textfelder, Grafiken, Multiple-Choice-Felder etc.) stehen über ein Menu symbolisch zur Verfügung und können mittels drag-and-drop in der Aufgabe positioniert werden und deren Eigenschaften über entsprechende Menus verändert werden.
+	* Alle für den Entwurf benötigten Elemente einer Aufgabe (Textfelder, Grafiken, Multiple-Choice-Felder etc.) stehen über ein Menu symbolisch zur Verfügung und können mittels drag-and-drop in der Aufgabe positioniert werden. Die Eigenschaften der Elemente können über entsprechende Menus verändert werden.
 	
 * textueller Entwurf
 	* Alle für den Entwurf benötigten Elemente einer Aufgabe können über eine Scriptsprache erstellt werden. Es gibt keine vorgefertigten Elemente, alle Eigenschaften werden rein textuell beschrieben. Kenntnisse bzlg. Syntax der Scriptsprache sind zwingend erforderlich.
 
 Welcher Editor gewählt wird, orientiert sich an der gewünschten Aufgabengestaltung (Aus welchen Elementen soll die Aufgabe bestehen?) und der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf). Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
 
-> Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel *Editor*.
+> Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel. Editor
 
 **Player**
 
 Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testcenter abgespielt werden kann, wird ein Player benötigt. Dieser ist in die jeweilige Webanwendung integriert und gibt die Aufgabe mit all ihren Elementen wieder. Der Player muss dabei zwingend zum Editor passen mit dem die Aufgabe entworfen wurde. Wurde eine Aufgabe bspw. mit einem Script Editor entworfen, muss auch ein Script Player verwendet.
 
-> Mehr zum Thema Player entnehmen Sie bitte dem Kapitel *Player*.
+> Mehr zum Thema Player entnehmen Sie bitte dem Kapitel: Player.
 
 ### Tab Editor
 
-> Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel *Editor*.
+> Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel: Editor.
 
 ### Tab Vorschau
 
@@ -183,7 +183,7 @@ Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus
 
 #### Unit Bezeichner
 
-Jedes Aufgabenelement, sei es ein Textfeld, ein Button etc., erhält einen eindeutigen Bezeichner. Dieser setzt sich wie folgt zusammen: *canvasElement* + fortlaufende Nummer
+Jedes Aufgabenelement, sei es ein Textfeld, ein Button etc., erhält einen eindeutigen Bezeichner. Dieser setzt sich wie folgt zusammen: *canvasElement* + *fortlaufende Nummer*
 
 Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. Der Bezeichner eines Elements ist auch immer im Eigenschaftenfenster des Elementes ersichtlich. Dieser Bezeichner muss einer im Sinne der Auswertung relevanten Aufgabe zugeordnet werden, bspw: Aufgabe 1a = canvasElement9. Es sollten also während der Aufgabenerstellung immer parallel Liste geführt werden, die diese Zuordnung aufzeigen.
 
@@ -213,21 +213,25 @@ Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. D
 ```yaml
 Dokumentstatus: Review (THuste)
 Stand: 17.06.2021
-todo: - Eventuell ist das Anpassen der Metadaten nicht mehr erforderlich und kann entfernt werden!
+todo: - Eventuell ist das Anpassen der Metadaten nicht mehr erforderlich und kann entfernt werden? Lastchange ist zwar in den Metadaten auch mit dem neuen Teststudio noch enthalten, aber die Unit kann im Testcenter trotzdem abgespielt werden.
       
 ```
 
 Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Editoren zur Verfügung:<br>
 
-**IQB Editor Plain Text v1.0.1**<br>
-Aufgaben können mittels einer Scriptsprache (deshalb auch der Name "...Plain Text..") erstellt werden. Es stehen also bspw. keine grafischen Elemente zur Erstellung eines Textfeldes oder eines Buttons zur Verfügung. Die Erzeugung solcher Elemente wird rein textuell realisiert.
+**Verona Editor Plain Text v1.0.1**<br>
+Aufgaben können mittels einer Scriptsprache (deshalb auch der Name "...Plain Text..") erstellt werden. Es stehen keine grafischen Elemente zur Erstellung eines Textfeldes, Buttons oder anderen Elementen zur Verfügung. Die Erzeugung solcher Elemente wird rein textuell realisiert. Auch die Beschreibung der Eigenschaften eines Elementes erfolgt auf diese Weise.
+
+Detailierte Informationen zum Plain Text Editor finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Plaintext-v1.0).
 	
-**IQB Editor Dan v3.1.0**<br>
-Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente verändert werden.
+**Verona Editor Dan v3.1.0**<br>
+Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente über entsprechende Toolboxen verändert werden. 
 
-Detailierte Informationen zu den Editoren finden Sie in den gleichnamigen Einzeldokumenten [hier](Verona-Editor-Dan).
+Detailierte Informationen zum Dan Editor finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Dan-v3.1).
 
-> **In [dieser](https://github.com/iqb-berlin) Übersicht finden Sie alle GitHub Repositories des IQB. Hier finden Sie auch die Repositories zu den IQB Editoren, deren letzten Versionen und weitere Informationen.**
+Hinweis: In naher Zukunft wird der Dan Editor durch den neu entwickelten Aspect Editor abgewechselt werden!
+
+> In [dieser](https://github.com/iqb-berlin) Übersicht finden Sie alle GitHub Repositories des IQB. Hier finden Sie auch die Repositories zu den IQB Editoren, deren letzten Versionen und weitere Informationen.
 
 ### Metadaten reduzieren
 
@@ -283,18 +287,22 @@ Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen 
 
 ```yaml
 Dokumentstatus: Review (THuste)
-Stand: 17.06.2021
-todo: - Verweis auf Einzeldokumente anlegen
+Stand: 18.06.2021
+todo: - Gibt es hier noch mehr zu sagen???
       
 ```
 
-Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem IQB Editor Plain Text v1.0.1 erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
+Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem Plain Text Editor erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
 	
-**IQB Player Dan v3.0.0**<br>
+**Verona Player Dan v3.0.0**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
+
+Detailierte Informationen zum Dan Player finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Dan-v3.0).
 	
-**IQB Player Abi v3.3.3**<br>
+**Verona Player Abi v3.3.3**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Plain Text Editor erfolgte.
+
+Detailierte Informationen Abi Player finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Abi-v3.3).
 
 ---
 
