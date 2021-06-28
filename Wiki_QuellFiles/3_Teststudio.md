@@ -148,7 +148,7 @@ Für die Aufgabengestaltung können je nach Bedarf unterschiedliche Editoren gen
 * textueller Entwurf
 	* Alle für den Entwurf benötigten Elemente einer Aufgabe können über eine Scriptsprache erstellt werden. Es gibt keine vorgefertigten Elemente, alle Eigenschaften werden rein textuell beschrieben. Kenntnisse bzlg. Syntax der Scriptsprache sind zwingend erforderlich.
 
-Welcher Editor gewählt wird, orientiert sich an der gewünschten Aufgabengestaltung (Aus welchen Elementen soll die Aufgabe bestehen?) und der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf). Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
+Welcher Editor gewählt wird, orientiert sich an den Anforderungen an die Aufgabe, sprich welche Aufgabenelemente müssen enthalten sein und welcher Editor stellt diese Elemente bereit. Können mehrere Editoren die erforderlichen Elemente liefern, ist die Entscheidung für einen Editor allein von der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf) abhängig. Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
 
 > Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel. Editor
 
@@ -265,7 +265,7 @@ Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Player">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -283,12 +283,12 @@ Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen 
 
 ---
 
-# 3.4 Player
+# 3.4 Player Vorschau (Verona)
 
 ```yaml
 Dokumentstatus: Review (THuste)
 Stand: 18.06.2021
-todo: - Gibt es hier noch mehr zu sagen???
+todo: - Soll hier auch der Verona Player Simple aufgeführt werden?
       
 ```
 
