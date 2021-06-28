@@ -326,20 +326,21 @@ todo:
 
 ```
 
-Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung intergriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen. Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
+Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung intergriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann die Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen.<br>
+Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final)
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final.png)
 
-Rot markiert:<br>
+**Rot markiert:**<br>
 Bereich der Webanwendung zur Steuerung des Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
 
-Blau markiert:<br>
+**Blau markiert:**<br>
 Bereich des Players zur Wiedergabe der Aufgabe.
 
 Der Vorteil dieser Aufteilung besteht hauptsächlich darin:<br>
 Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten Testcenter angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
 
-Die in das Testcenter geladene Units enthalten Informationen darüber, welcher Player für diese Unit verwendet werden muss. Damit der entsprechende Player auch im Testcenter "geladen" werden kann, verlangt das Testcenter zu einer Unit.xml oder Unit.voud immer die Ressourcendatei für den in der Unit definierten Player. Die Ressourcendateien können von GitHub herunter geladen werden:
+Die in das Testcenter geladenen Units enthalten Informationen darüber, welcher Player für diese Units verwendet werden muss. Damit der entsprechende Player auch im Testcenter "geladen" werden kann, verlangt das Testcenter zu einer Unit.xml oder Unit.voud immer die Ressourcendatei für den in der Unit definierten Player. Die Ressourcendateien können von GitHub herunter geladen werden:
 
 * [Ressourcendatei Verona Player Simple (noch nicht vorhanden an dieser Stelle!)](https://github.com/iqb-berlin/verona-player-simple/releases/tag/1.1.0)
 * [Ressourcendatei Verona Player Dan)](https://github.com/iqb-berlin/verona-player-dan/releases/tag/v2.99.2)
