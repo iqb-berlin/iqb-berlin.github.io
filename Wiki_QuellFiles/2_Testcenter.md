@@ -121,7 +121,7 @@ In der Grafik ist dargestellt, dass das Testcenter intern eine Komponente "Playe
 
 Für die Vorbereitung eines Tests bedeutet dies, dass
 1. jede Unit-Definition einen Verweis auf das Datenformat und damit auf den erforderlichen Player enthalten muss und
-2. alle Player, die von Units gebraucht werden, vorab in das Testcenter zu laden sind.
+2. alle Player, die von Units benötigt werden, müssen vorab als Ressourcendatei in das Testcenter geladen werden
 
 ## Daten-Output des Testcenters
 
@@ -239,6 +239,10 @@ Hier können Antworten und Logs, die über die Tests bzw. Befragungen dieses Arb
 
 Wenn das eigene Verwaltungskonto die Markierung "System-Administration" hat, dann wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet, mit dem man in die Systemverwaltung kommt. Hierüber werden die Nutzerkonten angelegt (Benutzername und Kennwort), die Arbeitsbereiche angelegt sowie die Rechte vergeben, wer auf welchen Arbeitsbereich zugreifen kann.
 
+## Ergebnisse herunterladen
+
+Es können Antwort- und Logdateien heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
+
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -294,7 +298,7 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-(Verona)">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-Testwiedergabe-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -312,26 +316,41 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 
 ---
 
-# 2.5 Player (Verona)
+# 2.5 Player Testwiedergabe (Verona)
 
 ```yaml
+
 Dokumentstatus: Entwurf
 Stand: 6.4.2021
 todo:
-    - Erläuterung der Fachgruppen-Initiative
-    - Erläuterung des Prinzips, Vorteile
-    - Konsequenzen für das Hochladen (Player muss stets dabei sein)
+
 ```
 
-In jedem Fall im späteren Text die Verlinkungen zu den Ressourcendateien anlegen!!!
+Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung intergriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen. Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final)
+
+Rot markiert:<br>
+Bereich der Webanwendung zur Steuerung des Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
+
+Blau markiert:<br>
+Bereich des Players zur Wiedergabe der Aufgabe.
+
+Der Vorteil dieser Aufteilung besteht hauptsächlich darin:<br>
+Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten Testcenter angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
+
+Die in das Testcenter geladene Units enthalten Informationen darüber, welcher Player für diese Unit verwendet werden muss. Damit der entsprechende Player auch im Testcenter "geladen" werden kann, verlangt das Testcenter zu einer Unit.xml oder Unit.voud immer die Ressourcendatei für den in der Unit definierten Player. Die Ressourcendateien können von GitHub herunter geladen werden:
+
 * [Ressourcendatei Verona Player Simple (noch nicht vorhanden an dieser Stelle!)](https://github.com/iqb-berlin/verona-player-simple/releases/tag/1.1.0)
 * [Ressourcendatei Verona Player Dan)](https://github.com/iqb-berlin/verona-player-dan/releases/tag/v2.99.2)
 * [Ressourcendatei Verona Player Abi)](https://github.com/iqb-berlin/verona-player-abi/releases/tag/3.2.1)
 
+Weitere Informationen zu den Playern finden Sie auch in den gleichnamigen Einzeldokumenten unter "Weiter zu einzelnen Seiten".
+
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Ergebnisse-herunterladen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -349,38 +368,7 @@ In jedem Fall im späteren Text die Verlinkungen zu den Ressourcendateien anlege
 
 ---
 
-# 2.6 Ergebnisse herunterladen
-
-```yaml
-Dokumentstatus: Entwurf
-Stand: 14.6.2021
-todo: -klären ob Kapitel bestehen bleibt oder Inhalt mit in das Kap Portal zur Verwaltung kommen soll
-```
-
-Über das [Verwaltungsportal](2.3-Portal-zur-Verwaltung) können die Antworten und Logs heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
-
----
-
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System‐Check">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-(Verona)">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div align='center'>
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
-</a>
-</div>
-
----
-
-# 2.7 System-Check
+# 2.6 System Check
 
 ## Was ist ein System-Check?
 
@@ -488,12 +476,12 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Testleitungskonsole">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Ergebnisse-herunterladen">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-Testwiedergabe-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -506,7 +494,7 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 
 ---
 
-# 2.8 Testleitungskonsole
+# 2.7 Testleitungskonsole
 
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
@@ -626,7 +614,7 @@ Weitere detailierte Informationen zu den den Stati finden Sie auch [hier](https:
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System‐Check">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
