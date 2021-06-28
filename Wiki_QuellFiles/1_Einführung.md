@@ -241,7 +241,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Entscheidungen treffen: Welcher Player, welcher Editor?, ggf. in das IQB-Teststudio hochladen lassen
 * ggf. Audios aufbereiten: Größe reduzieren, Exif-Metadaten eintragen
 * ggf. Grafikdateien aufbereiten (Farben prüfen, Auflösung bei Zoom)
-* Konventionen festlegen (Einrückung, Schriftart/-größe, Zeilenabstand, Formulierung bei Instruktionen, Benennung der Units usw.). Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen)
+* Konventionen festlegen (Einrückung, Schriftart/-größe, Zeilenabstand, Formulierung bei Instruktionen, Benennung der Units usw.). Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung)
 
 ### Übertragung organisieren
 
@@ -378,11 +378,6 @@ Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch e
 
 # 1.6 Herausforderung VERA
 
-```yaml
-Dokumentstatus: Review
-Stand: 1.4.2021
-```
-
 Der Name VERA steht für "Vergleichsarbeiten". Diese groß angelegten Kompetenztests dienen der Qualitätssicherung auf Ebene der
 Schulen. Weitere Informationen finden Sie beim [IQB](https://www.iqb.hu-berlin.de/vera/) und bei der [Kultusministerkonferenz](https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2015/2015_06_11-Gesamtstrategie-Bildungsmonitoring.pdf). 
 
@@ -396,6 +391,11 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 
 ---
 
+<!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.7-Technische-Details">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.5-Copyright,-Lizenz">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
@@ -415,10 +415,25 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 ```yaml
 Dokumentstatus: Entwurf
 Stand: 6.4.2021
-todo: - hier müssen noch Texte entworfen werden
+todo: - weitere techn. details einbringen
 ```
 
 Ideen zu vielleicht hier gesetzten Verlinkungen:
 
-[Verona Interface Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
-[Xml Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)
+* [Verona Interface Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
+* [Xml Schemadefinition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)
+
+---
+<!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Herausforderung-Vera">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++++home+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
