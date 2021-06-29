@@ -27,7 +27,7 @@ Das IQB hat alle Programmierungen unter einer Open Source veröffentlicht und er
 Um Entwicklerteams die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit wird außerdem eine Gruppenaufteilung in entsprechende Themen vorgenommen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der Verwaltung, also den Administrator\*innen, für diese Personen freigegeben wurden.
 Bsph. können dann nur alle zum Team Englisch gehörenden Entwickler\*innen die Arbeitsbereiche für den Fachbereich Englisch sehen.
 
-> Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".
+> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".**
 
 Nach der Anmeldung mit den personenspezifischen Zugangsdaten, präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man durch einen Klick auf das IQB-Logo oben links zurück.
 
@@ -68,7 +68,7 @@ Stand: 17.06.2021
 todo:
 ```
 
-> Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
+> **Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.**
 
 In diesem Bereich können Units verwaltet bzw. organisiert werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
 
@@ -86,7 +86,7 @@ Markierte Units können kopiert werden. Alle Inhalte dieser Unit werden dabei in
 
 Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer xml-/ und einer voud-Datei, sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden. Der gewählte Name der Zip-Datei spielt dabei keine Rolle, sollte aber einer gewissen Logik folgen um den Überblick zu behalten.
 
-> Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!
+> **Voud-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen Xml-Datei importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!**
 
 **Unit exportieren**
 
@@ -122,7 +122,7 @@ Stand: 17.06.2021
 todo:
 ```
 
-> Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
+> **Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.**
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_bearbeiten_fina.png)
 
@@ -150,7 +150,7 @@ Für die Aufgabengestaltung können je nach Bedarf unterschiedliche Editoren gen
 
 Welcher Editor gewählt wird, orientiert sich an den Anforderungen an die Aufgabe, sprich welche Aufgabenelemente müssen enthalten sein und welcher Editor stellt diese Elemente bereit. Können mehrere Editoren die erforderlichen Elemente liefern, ist die Entscheidung für einen Editor allein von der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf) abhängig. Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
 
-> Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel. Editor
+> **Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel. Editor**
 
 **Player**
 
@@ -164,8 +164,9 @@ Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testce
 
 ### Tab Vorschau
 
-Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung einer aktuellen Änderungen in der Voransicht begutachtet werden.<br>
-> Um die Aufgabe auch in der Vorschau korrekt darstellen zu können, müssen in den Eigenschaften gewählter Editor und Player zueinander passen!
+Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung einer aktuellen Änderungen in der Voransicht begutachtet werden.
+
+> **Um die Aufgabe auch in der Vorschau korrekt darstellen zu können, müssen in den Eigenschaften gewählter Editor und Player zueinander passen!**
 
 Nachfolgendes Bild zeigt die Voransicht und deren Bestandteile:
 
@@ -292,7 +293,7 @@ todo: - Soll hier auch der Verona Player Simple aufgeführt werden?
       
 ```
 
-Damit die Aufgabe wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem Plain Text Editor erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltene Syntax nicht bekannt ist. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
+Damit die Aufgabe in der Vorschau wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem Plain Text Editor erstellt wurde, kann nicht von einem Dan Player wiedergegeben werden, da ihm schlicht die enthaltenen Elemente nicht bekannt sind. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
 	
 **Verona Player Dan v3.0.0**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels Dan Editor erfolgte.
