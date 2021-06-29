@@ -107,7 +107,7 @@ Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, 
 ```yaml
 Dokumentstatus: Review (THuste)
 Stand: 18.06.2021
-todo: - Weiter mit Leben füllen!
+todo: - Weiter mit Leben füllen! Wo finde ich Informationen bzgl. Syntax Scriptsprache???
       
 ```
 
