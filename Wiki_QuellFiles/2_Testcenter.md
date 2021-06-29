@@ -169,6 +169,8 @@ Nun kommt es auf die richtige Internet-Adresse an. Die soll bitte nicht in das S
 
 Das Startbild ist sehr reduziert. Rechts ein paar allgemeine Informationen, so wie Datenschutz und so etwas, aber links nur Eingabefelder für Name und Kennwort. Nach der Eingabe wird ein großer Schalter präsentiert, der das Testheft symbolisiert, das gestartet werden soll. Daran erkennt man, dass die Anmeldung erfolgreich war.
 
+> Weitere Informationen zur Anmeldung dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren)
+
 Mögliche Probleme:
 * Wenn das Startbild zu sehen ist, dann ist schonmal klar, dass die Internet-Verbindung funktioniert. Ansonsten sollte man mal die Kabel prüfen.
 * Wenn das Startbild einigermaßen gut aussieht (nichts verrutscht, nichts überlagert), dann ist auch der Browser nicht zu alt. 
@@ -211,15 +213,15 @@ Sollte es mal technische Probleme mit dem Computer geben (z. B. Audio-Buchse def
 
 Auf einem Testcenter müssen die Inhalte für Tests geladen werden und es muss einen Weg geben, die Antworten zu erhalten. Für diese Aufgaben ist ein Verwaltungsportal eingerichtet. Die Verantwortlichen für eine Studie melden sich am Testsystem an derselben Stelle an, wo auch eine Testperson sich anmelden würde. Das System erkennt, dass die Anmeldedaten zu einem Konto für die Verwaltung gehören und lädt entsprechend die Funktionen dafür.
 
-## Arbeitsbereiche
+## Arbeitsbereich
 
 Damit mehrere Studien gleichzeitig auf einem Testsystem durchgeführt bzw. vorbereitet werden können, sind sog. Arbeitsbereiche vorbereitet. Die Benennung richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch". Für jedes Verwaltungskonto ist festgelegt, welche Arbeitsbereiche eingesehen (Nur-Lese-Modus) bzw. geändert werden können (Lesen-Und-Schreiben-Modus).
 
 Nach der Anmeldung präsentiert das System eine Liste aller Arbeitsbereiche, auf die die Person mit den Anmeldedaten Zugriff hat. Mit Klick auf einen Schalter wird der Arbeitsbereich geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
 
-Der Arbeitsbereich hat drei Grundfunktionen, die man mit Klick oben auf ein Register auswählt: Dateien, System-Check Berichte und Ergebnisse/Antworten.
+Der Arbeitsbereich hat drei Grundfunktionen, die man mit Klick oben auf den entsprechenden Tab auswählt: Dateien, System-Check Berichte und Ergebnisse/Antworten.
 
-## Register Dateien
+### Tab Dateien
 
 Alle Testinhalte und Definitionen eines Tests bzw. einer Befragung werden über Dateien in das System hochgeladen. Sie müssen also ersteinmal auf dem eigenen Computer vorbereitet werden, z. B. über einen Download aus einer anderen Webanwendung (Units). Meist handelt es sich um XML-Dateien, die einer fest vorgeschriebenen Syntax folgen und aus denen das Testsystem alle notwendigen Informationen liest. Die Bedeutung der Dateien entnehmen Sie bitte den anderen Kapiteln dieses Wikis.
 
@@ -227,21 +229,17 @@ Sobald eine Datei hochgeladen ist, ist sie wirksam. D. h. unmittelbar nachdem ei
 
 Beim Hochladen werden die XML-Dateien geprüft. Eine Datei kann abgewiesen werden, wenn sie syntaktisch oder inhaltlich fehlerhaft ist. Z. B. wird eine Testtaker-Datei abgewiesen, wenn sie Anmeldedaten enthält, die bereits in einem anderen Arbeitsbereich verwendet wurden. Es wird auch eine Booklet-Datei abgewiesen, wenn sie auf Units verweist, die nicht im Arbeitsbereich gefunden wurden. Daher spielt die Reihenfolge des Hochladens eine Rolle.
 
-## Register System-Check Berichte
+### Tab System-Check Berichte
 
 Hier können die Berichte, die über einen System-Check dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
 
-## Register Ergebnisse/Antworten
+### Tab Ergebnisse/Antworten
 
 Hier können Antworten und Logs, die über die Tests bzw. Befragungen dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
 
 ## System-Admin
 
 Wenn das eigene Verwaltungskonto die Markierung "System-Administration" hat, dann wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet, mit dem man in die Systemverwaltung kommt. Hierüber werden die Nutzerkonten angelegt (Benutzername und Kennwort), die Arbeitsbereiche angelegt sowie die Rechte vergeben, wer auf welchen Arbeitsbereich zugreifen kann.
-
-## Ergebnisse herunterladen
-
-Es können Antwort- und Logdateien heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
 
 ---
 
@@ -298,7 +296,7 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-Testwiedergabe-(Verona)">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Ergebnisse-herunterladen">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -316,42 +314,22 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 
 ---
 
-# 2.5 Player Testwiedergabe (Verona)
+# 2.5 Ergebnisse herunterladen
+
 
 ```yaml
-
-Dokumentstatus: Entwurf
-Stand: 6.4.2021
-todo:
-
+Dokumentstatus: Review (THuste)
+Stand: 29.06.2021
+todo: - Weiter mit Inhalt füllen      
 ```
 
-Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung intergriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann die Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen.<br>
-Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
+Es können Antwort- und Logdateien heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
 
-![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final.png)
-
-**Rot markiert:**<br>
-Bereich der Webanwendung zur Steuerung des Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
-
-**Blau markiert:**<br>
-Bereich des Players zur Wiedergabe der Aufgabe.
-
-Der Vorteil dieser Aufteilung besteht hauptsächlich darin:<br>
-Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten Testcenter angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
-
-Die in das Testcenter geladenen Units enthalten Informationen darüber, welcher Player für diese Units verwendet werden muss. Damit der entsprechende Player auch im Testcenter "geladen" werden kann, verlangt das Testcenter zu einer Unit.xml oder Unit.voud immer die Ressourcendatei für den in der Unit definierten Player. Die Ressourcendateien können von GitHub herunter geladen werden:
-
-* [Ressourcendatei Verona Player Simple (noch nicht vorhanden an dieser Stelle!)](https://github.com/iqb-berlin/verona-player-simple/releases/tag/1.1.0)
-* [Ressourcendatei Verona Player Dan)](https://github.com/iqb-berlin/verona-player-dan/releases/tag/v2.99.2)
-* [Ressourcendatei Verona Player Abi)](https://github.com/iqb-berlin/verona-player-abi/releases/tag/3.2.1)
-
-Weitere Informationen zu den Playern finden Sie auch in den gleichnamigen Einzeldokumenten unter "Weiter zu einzelnen Seiten".
 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-System-Check">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Player-Testwiedergabe-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -369,7 +347,53 @@ Weitere Informationen zu den Playern finden Sie auch in den gleichnamigen Einzel
 
 ---
 
-# 2.6 System Check
+# 2.6 Player Testwiedergabe (Verona)
+
+```yaml
+
+Dokumentstatus: Entwurf
+Stand: 6.4.2021
+todo:
+
+```
+
+Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung integriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann die Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen. Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
+
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final.png)
+
+**Rot markiert:**<br>
+Bereich der Webanwendung zur Steuerung des Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
+
+**Blau markiert:**<br>
+Bereich des Players zur Wiedergabe der Aufgabe.
+
+Der Vorteil dieser Aufteilung besteht hauptsächlich darin:<br>
+Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten Testcenter angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
+
+> **Weitere Informationen zu den angebotenen Playern finden Sie auch in den gleichnamigen Einzeldokumenten unter "Direkt zu anderen Seiten".**
+
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Ergebnisse-herunterladen">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+# 2.7 System Check
 
 ## Was ist ein System-Check?
 
@@ -477,12 +501,12 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-Testleitungskonsole">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.5-Player-Testwiedergabe-(Verona)">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-Player-Testwiedergabe-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -495,7 +519,7 @@ Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein K
 
 ---
 
-# 2.7 Testleitungskonsole
+# 2.8 Testleitungskonsole
 
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
@@ -615,7 +639,7 @@ Weitere detailierte Informationen zu den den Stati finden Sie auch [hier](https:
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.6-System-Check">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
