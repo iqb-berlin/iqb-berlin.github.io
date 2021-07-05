@@ -471,7 +471,7 @@ Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validie
 Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen 
 vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. 
 Dazu muss der Editor die Schemadatei kennen. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
-Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung.
+Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung. Weitere Informationen dazu finden Sie auch in den Einzeldokumenten [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Arbeiten-mit-Xml%E2%80%90Dateien)
 
 #### Metadaten
 
@@ -495,7 +495,7 @@ Player im Arbeitsbereich bereitzustellen.
 
 #### Bericht speichern
 
-Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend gespeichert werden. 
+Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. 
 Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
 
 ---
