@@ -4,7 +4,7 @@
 
 > XML ist ein Standardformat und wird durch Texteditoren sehr gut unterstützt. Daher sind einige Dateien für die Definition von Daten in den IQB-Anwendungen in diesem Format hinterlegt. Der folgende Text soll Neulingen dieses Format nahebringen.
 
-XML ist ein textbasiertes Dateiformat. Die Daten können also einfach mittels eines Texteditors bearbeitet werden. Beispiele sind Notepad++ oder Sublime. Viele Editoren bieten Ergänzungsmodule für die Arbeit mit XML-Dateien. Dann sind z. B. die Schlüssel-Zeichen in anderen Farben dargestellt und es werden Fehler in der Syntax (z. B. schließendes Element fehlt) gemeldet.
+XML ist ein textbasiertes Datenformat. Die Daten können einfach mittels eines Texteditors bearbeitet werden. Beispiele sind Notepad++ oder Sublime. Viele Editoren bieten Ergänzungsmodule für die Arbeit mit XML-Dateien. Diese erleichtern die Bearbeitung durch farbliche Hervorhebung der Xml typischen Bestandteile und erkennen Fehler in der Xml-Syntax (z. B. schließendes Element fehlt) gemeldet.
 
 Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle - z. B. das IQB-Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen.
 * Elemente: XML-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wird mit zwei spitzen Klammern `<Element>` eingeleitet und wie folgt beendet: `</Element>`.
