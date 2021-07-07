@@ -493,10 +493,13 @@ Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine
 Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Außerdem ist der in der Unit-Definition genannte 
 Player im Arbeitsbereich bereitzustellen.
 
-#### Bericht speichern
+## Bericht speichern
 
-Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. 
-Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
+Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
+
+## Ergebnisse herunterladen
+
+Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen diese Ergebnisse in Form einer csv-Datei in dem Arbeitsbereich in den die System-Check Xml-Definition geladen wurde. Die csv-Datei ist dann im jeweiligen Arbeitsbereich unter dem Tab: System-Check Berichte zu finden und kann dort mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Da eine csv-Datei nicht sehr gut lesbar ist, kann diese Datei auch in eine xlsx-Datei gewandelt werden. Dies kann mit dem IQB Tool **Itc-Toolbox** erfolgen. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc-Toolbox:-SysCheck).
 
 ---
 
