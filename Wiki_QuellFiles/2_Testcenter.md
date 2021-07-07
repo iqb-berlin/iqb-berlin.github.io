@@ -316,7 +316,6 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 
 # 2.5 Ergebnisse herunterladen
 
-
 ```yaml
 Dokumentstatus: Review (THuste)
 Stand: 29.06.2021
@@ -421,10 +420,9 @@ Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen folgende Option
 
 Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
 VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. 
-Die Berichte des System-Checks werden dann auch in diesem Arbeitsbereich gespeichert.
+Nach Abmeldung am Testcenter ist dann ein Schalter auf der rechte Seite des Testcenters mit dem Namen: System-Check zu finden. Die Berichte des System-Checks können nach Abschluss in diesem Arbeitsbereich gespeichert werden.
 
-Der genaue Aufbau und die möglichen Parameter der System-Check-XML sind in einer Schema Definition festgelegt.
-Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
+Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parameter können den Bedürfnissen entsprechend angepasst werden.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -465,7 +463,8 @@ Anhand einer Beispieldatei sollen nachfolgend die Optionen beschrieben werden:
 	</Config>
 </SysCheck>
 ```
-#### Kopfdeklarationen
+
+> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heisst: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
 
 Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. 
 Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen 
