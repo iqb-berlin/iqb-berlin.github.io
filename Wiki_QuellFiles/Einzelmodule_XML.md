@@ -69,6 +69,8 @@ Außerdem muss für die automatische Validierung ein Editor verwendet werden, de
 
 Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
 
+> **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Booklet.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Booklet.xsd) ersichtlich.**
+ 
 ### <a name="Attr_Daten"></a>Attribute und Daten
 
 `METADATA`
@@ -279,11 +281,11 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
   </tr>
 </table>
 
-
-### <a name="Attr_Daten"></a>Attribute und Daten
-
 Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
 
+> **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Testtakers.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Testtakers.xsd) ersichtlich.**
+
+### <a name="Attr_Daten"></a>Attribute und Daten
 
 `METADATA`
 
@@ -527,13 +529,10 @@ Jede Testperson erhält ein eigenes Passwort. Dies stellt die gängigste Methode
 # Unit-Xml (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-```yaml
-Dokumentstatus: Überarbeitung MM
-Stand: 7.4.2021
-todo:
-  - noch einzubinden
-```
 Die Unitdefinition besteht aus mindestens einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
+
+> **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Unit.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Unit.xsd) ersichtlich.**
+
 <table>
 
 <tr>
