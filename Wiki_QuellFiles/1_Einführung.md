@@ -160,15 +160,20 @@ Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt a
     <td><a href="#Unit">Unit</a></td>
     <td><a href="#Testheft">Testheft/ Booklet</a></td>
     <td><a href="#Testperson">Testperson/ Testtaker</a></td>
+	<td><a href="#Verona">Verona</a></td>
+	<td><a href="#Player">Player</a></td>
+	
   </tr>
 </table>
 
 ---
 
 ```yaml
+
 Dokumentstatus: Entwurf (TH 8.4.2021)
 Stand: 1.4.2021
 todo: - weitere wichtige Schlüsselthemen einbringen
+
 ```
 
 ## <a name="Unit"></a>Unit / Aufgabe / Seite
@@ -189,6 +194,14 @@ Für die Testdurchführung ist es notwendig, die Abfolge der Aufgaben/Seiten/Uni
 ## <a name="Testperson"></a>Testperson / Testtaker / Testee / Befragte*r
 
 Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie befragt bzw. getestet wird. Die Antworten dieser Person bilden den Rohdatensatz der Studie. Um einen Testablauf zu erproben oder zu evaluieren, kann natürlich auch jemand aus dem Autorenteam diese Rolle einnehmen. Dann könnte die Durchführung modifiziert werden, damit z. B. nicht alle Hörtexte jedesmal gehört werden müssen oder die Navigation ist unbeschränkt. 
+
+## <a name="Verona"></a>Verona
+
+Lernstandserhebungen in den Ländern gibt es papierbasiert seit 2003. Diese Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Aus der Verbindung mit "Online" wurde dann die Bezeichnung "Verona" für VERA Online. Alles was technologiebasiert mit Vera zu tun hat, wird also immer mit einem vorangestelltem "Verona" bezeichnet. Es gibt bspw. Verona-Schnittstellen und Verona-Player die für die technologie basierte Testung zum Einsatz kommen.
+
+## <a name="Player"></a>Player
+
+Player sind softwarebasierte Module, welche eingebettet in webbasierte Anwendung, betimmte Inhalte wiedergeben können. Das IQB setzt zur Wiedergabe einer Aufgabe einen eigens dafür entwickelten Player (Verona-Player) in den IQB Testsystemen ein. Dieser ist modular in die Testanwendungen intergriert und spielt die in einer Aufgabe enthaltenen Elemente ab. Außerdem stellt der Player bestimmte Schnittstellen zur Verfügung. Er "überwacht" bspw. die Aktivitäten (scrollen, Seitenwechsel, setzen von Antworten) der Testperson auf der Testseite und sendet diese Informationen über die Schnittstelle an das System in welches er eingebettet ist. So zum Einsatz kommt er in den Systemen: **Testcenter** und **Teststudio**. Im **Testcenter** spielt er die eigentlichen Aufgaben ab, im **Teststudio** spielt er während der Aufgabenentwicklung die Aufgaben im Vorschaumodus ab.
 
 ---
 
@@ -414,40 +427,15 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 
 ```yaml
 Dokumentstatus: Entwurf
-Stand: 6.4.2021
+Stand: 08.07.2021
 todo: - weitere techn. details einbringen
 ```
+Dieses Kapitel richtet sich an technisch Interessierte. Hier erfahren Sie mehr über die technischen Hintergründe, Aufbauten und Strukturen.
 
-Ideen zu vielleicht hier gesetzten Verlinkungen:
+## Verona
 
-* [Verona Interface Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
+Techn. Details zum Thema Verona finden Sie im Einzeldokument [Verona](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona).
 
-## Verona Interfaces
-
-[Text von:](http://iqbstaff.pbworks.com/w/page/143201397/TBA-Tools#VeronaInterfaces)
-
-Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles was zum TBA-testen nötig ist) kann man entweder das IQB-Testcenter benutzen ("Auswertuns-/Kodierungsgmodul" fehlt allerdings noch) oder eine Verona Interface Schnittstelle nutzen um ein eigens programmiertes Testcenter zu nutzen und die IQB-Tests "abzuspielen". Ein Video von Martin auf GitHub (ca. 9 Minuten) Testcenter oder Verona? erläutert beide Szenarien (sehr technisch bzw. konzeptionell, wohl eher für auswertenden Einrichtungen relevant) 
-
-    Verona steht für VERA-Online 
-    Verona Interfaces sind Schnittstellen zu Programmen/Modulen vom IQB zur VERA-Testungen im TBA-Format
-    daher fand Modularisierung der Komponenten des Testcenters statt
-    Grund: Flexibilität z.B. in Verwendung neuer Aufgabenformate zu haben 
-    dazu Entkopplung innerhalb des Testcenters von Präsentation der Aufgabe (Player) & Testsystem (Login, Aufgabe laden, Antworten/Log speichern usw.)
-    zwischen Testsystem und Player muss Kommunikation bestehen, passiert in Form von Schnittstelle (=Plug-In-Schnittstelle)
-    IQB liefert also immer auch den Player aus (+ Testsystem), Länder müssen Schnittstellendefinition noch leisten
-    der Player ändert sich also, wenn beispielsweise ein neues Testformat entwickelt wurde, das Testsystem muss jedoch nicht "nachprogrammiert" werden, allerdings die Schnittstelle 
-    das IQB hat ein Testsystem (dies heißt Testcenter, siehe oben) für seine eigenen Bedürfnisse, die Länder können ein (oder mehrere) eigene/andere Testsysteme haben, dafür muss nur die Schnittstelle bedient werden und nicht grundsätzlich eine neues Testsystem aufgebaut werden (Ansteuerung und Anpassung des Testsystems über eine Schnittstelle) 
-    die Schnittstelle ist vor allem auch dafür verantwortlich, dass Antworten, die in Form von Rohdaten vorliegen, in ein Standardformat umgewandelt werden (Response Converter)
-    auch muss die Antwortverarbeitung vorab geplant werden (im VERA-Paper-Pencil-Prozess heißt es Antwortschema), ein Responce Scheme (wie es hier im TBA-Kontext genannt wird) ist als extra Modul also auch notwendig 
-    insgesamt besteht die Schnittstelle aus 4 Modulen: Editor, Player, Response Scheme, Response Converter
-    ein Testsystem (z.B. Testcenter zu nennen, wie im IQB) in dem der Test durchgeführt werden kann (Pilotierung im IQB, Hauptdurchgang in einem Land) bräuchte einen Player und einen Response Converter
-    ein Teststudio in dem die Aufgaben und Tests entwickelt werden, bräuchte Editor (Authoring), Response Scheme und Player (für Demo-Voransicht der Aufgaben) 
-    Video Verona Interfaces: Einführung auf GitHub von Martin (ca. 14 Minuten)
-    weitere Videos in der Reihe zeigen 
-         Aufbau und Funktionsweise des Players (ca. 17 Minuten): Verona Interfaces 2. Player: Modell 
-        weiteres zum Player und Beschreibung des API (Backend-Programmierung) (ca. 24 Minuten): Verona Interfaces 3. Player: API
-
-               (alle Videos sind auch eher technisch bzw. konzeptionell, wohl auch eher für auswertenden Einrichtungen relevant) 
 ---
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/1.6-Herausforderung-Vera">
