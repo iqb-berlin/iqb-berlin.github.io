@@ -158,10 +158,15 @@ wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemie
 # Verona (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-```yaml
-Dokumentstatus: Standby
-Stand: 6.4.2021
-```
+<table>
+  <tr>
+    <td><a href="#Allgem">Allgemeines</a></td>    
+	<td><a href="#TechnDetails">Technische Details</a></td>
+  </tr>
+</table>
+
+## <a name="Allgem"></a>Allgemeines
+
 In Deutschland gibt es für internationale (z. B. PISA) und einheitliche nationale 
 Erhebungen (z. B. Bildungstrend) jeweils zentrale Einrichtungen oder Firmen zur 
 Durchführung. Da für die Bildungspolitik aber jedes Bundesland einzeln zuständig ist, 
@@ -186,13 +191,35 @@ beschrieben.
 
 Da die Testsysteme eine Anpassung erfahren müssten, wenn Aufgabenformate geändert werden, kommt ein Player mit einer definierten Schnittstelle zum Einsatz. Der zu verwendende Player wird in der jeweiligen Unit definiert und mit der Unit geladen. Dieser spielt dann die in der Unit definierten Aufgabenformate ab. Die dazu gehörige Schnittstelle des Players gewährleistet eine Kompatibilität zu den Anwendungen, die bereits für die Vera Papierstudien genutzt wurden und weiterhin werden. Der Player wird daher auch Verona-Player und die Schnittstelle auch Verona-Schnittstelle genannt. Ändert sich ein Aufgabenformat, muss somit nur noch ein dazu passender Player geladen werden, der dieses Format auch abspielen kann. Durch den modularen Aufbau des Testcenters entfällt somit eine Anpassung der gesamten Testumgebung, wenn sich Aufgabenformate ändern. Stattdessen wird einfach der entsprechende Player für das Format geladen und in die Oberfläche des Testcenters intergriert.
 
-Nachfolgend finden Sie einige Videos zum Thema:
+## <a name="TechnDetails"></a>Technische Details
+
+Dieser Abschnitt richtet sich an technisch Interessierte. Hier erhalten Sie einen tieferen Einblick in die techn. Funktionsweisen und die techn. Strukturen.
+
+### Verona Schnittstelle
+
+Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles was zum TBA-testen nötig ist) kann man entweder das **IQB-Testcenter** benutzen ("Auswertuns-/Kodierungsgmodul" fehlt allerdings noch) oder eine Verona Interface Schnittstelle nutzen um ein eigens programmiertes Testcenter zu nutzen und die IQB-Tests "abzuspielen". Folgendes [Video](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/) verschafft einen groben Überblick über dieses Thema.
+
+* Verona steht für VERA-Online 
+* Verona Interfaces sind Schnittstellen zu Programmen/Modulen vom IQB zur VERA-Testungen im TBA-Format
+* daher fand Modularisierung der Komponenten des Testcenters statt
+* Grund: Flexibilität z.B. in Verwendung neuer Aufgabenformate zu haben 
+* dazu Entkopplung innerhalb des Testcenters von Präsentation der Aufgabe (Player) & Testsystem (Login, Aufgabe laden, Antworten/Log speichern usw.)
+* zwischen Testsystem und Player muss Kommunikation bestehen, passiert in Form von Schnittstelle (=Plug-In-Schnittstelle)
+* IQB liefert also immer auch den Player aus (+ Testsystem), Länder müssen Schnittstellendefinition noch leisten
+* der Player ändert sich also, wenn beispielsweise ein neues Testformat entwickelt wurde, das Testsystem muss jedoch nicht "nachprogrammiert" werden, allerdings die Schnittstelle 
+* das IQB hat ein Testsystem (Testcenter) für seine eigenen Bedürfnisse, die Länder können ein (oder mehrere) eigene/andere Testsysteme haben, dafür muss nur die Schnittstelle bedient werden und nicht grundsätzlich eine neues Testsystem aufgebaut werden (Ansteuerung und Anpassung des Testsystems über eine Schnittstelle) 
+* die Schnittstelle ist vor allem auch dafür verantwortlich, dass Antworten, die in Form von Rohdaten vorliegen, in ein Standardformat umgewandelt werden (Response Converter)
+* auch muss die Antwortverarbeitung vorab geplant werden (im VERA-Paper-Pencil-Prozess heißt es Antwortschema), ein Responce Scheme (wie es hier im TBA-Kontext genannt wird) ist als extra Modul also auch notwendig 
+* insgesamt besteht die Schnittstelle aus 4 Modulen: Editor, Player, Response Scheme, Response Converter
+* ein Testsystem (z.B. Testcenter zu nennen, wie im IQB) in dem der Test durchgeführt werden kann (Pilotierung im IQB, Hauptdurchgang in einem Land) bräuchte einen Player und einen Response Converter
+* ein Teststudio in dem die Aufgaben und Tests entwickelt werden, bräuchte Editor (Authoring), Response Scheme und Player (für Demo-Voransicht der Aufgaben) 
+    
+Folgende Videos verschaffen weitere Einblicke:
 
 * [Verona-Interfaces: 1.Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
 * [Verona-Interfaces: 2.Player-Model](https://box.hu-berlin.de/f/8f4b50975e9645af803b/)
 * [Verona-Interfaces: 3.Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
-
-
+	
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # xIQB Grundsätze Player Programmierung (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -232,3 +259,5 @@ Die IQB-Anwendung zum Erstellen von Aufgaben bzw. Seiten hat den Status "Prototy
 * Import von Aufgaben/Seiten
 * Vereinfachtes Einspielen von Verona-Modulen
 * Anpassbarkeit Startseite, Impressum 
+
+
