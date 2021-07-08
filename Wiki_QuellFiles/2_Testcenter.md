@@ -316,17 +316,11 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 
 # 2.5 Ergebnisse herunterladen
 
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 29.06.2021
-todo: - Weiter mit Inhalt füllen      
-```
-
-Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Testcenter** in dem Arbeitsbereich gespeichert in dem auch die Testdateien für den Test geladen wurde.
+Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Testcenter** in dem Arbeitsbereich gespeichert in dem auch die Testdateien für den Test geladen wurden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Ergebnisse_final.png)
 
-> ** Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den Modi: 'run-hot-return' und 'run-hot-restart' statt!**
+> **Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den Modi: 'run-hot-return' und 'run-hot-restart' statt!**
 
 Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als csv-Dateien gespeichert und können im Sinne einer besseren Übersichtlichkeit mit dem IQB Tool **itc-Toolbox** in eine xlsx-Datei gewandelt werden. Mehr dazu erfahren Sie auch in dem folgenden [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Antworten-und-Logs).
 
