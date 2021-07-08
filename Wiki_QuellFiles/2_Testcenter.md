@@ -322,8 +322,13 @@ Stand: 29.06.2021
 todo: - Weiter mit Inhalt füllen      
 ```
 
-Es können Antwort- und Logdateien heruntergeladen werden. Es handelt sich um CSV-Dateien. Für die Aufbereitung der Daten steht eine Windows-Software zur Verfügung: [itc-ToolBox](itc%E2%80%90ToolBox%3A-Antworten-und-Logs).
+Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Testcenter** in dem Arbeitsbereich gespeichert in dem auch die Testdateien für den Test geladen wurde.
 
+![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Ergebnisse_final.png)
+
+> ** Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den Modi: 'run-hot-return' und 'run-hot-restart' statt!**
+
+Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als csv-Dateien gespeichert und können im Sinne einer besseren Übersichtlichkeit mit dem IQB Tool **itc-Toolbox** in eine xlsx-Datei gewandelt werden. Mehr dazu erfahren Sie auch in dem folgenden [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Antworten-und-Logs).
 
 ---
 
