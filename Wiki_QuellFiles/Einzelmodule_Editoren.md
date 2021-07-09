@@ -130,41 +130,41 @@ Jede Zeile enthält als Erstes ein Schlüsselwort und kann dahinter weitere Para
 <table>
 	<thead>
 		<tr>
-		  <th>Schlüsselwort</th>
-		  <th>Bedeutung</th>
-		  <th>Parameter</th>
+		<th>Schlüsselwort</th>
+		<th>Bedeutung</th>
+		<th>Parameter</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-		  <td><code>title</code></td>
-		  <td>eine Zeile Text als oberste Gliederungsüberschrift</td>
-		  <td><I>Text des Titels (optional)</I></td>
+		<td><code>title</code></td>
+		<td>eine Zeile Text als oberste Gliederungsüberschrift</td>
+		<td><I>Text des Titels (optional)</I></td>
 		</tr>
 		<tr>
-		  <td><code>header</code></td>
-		  <td>eine Zeile Text als zweite Gliederungsüberschrift</td>
-		  <td><I>Text der Überschrift (optional)</I></td>
+		<td><code>header</code></td>
+		<td>eine Zeile Text als zweite Gliederungsüberschrift</td>
+		<td><I>Text der Überschrift (optional)</I></td>
 		</tr>
 		<tr>
-		  <td><code>text</code></td>
-		  <td>Standard-Text</td>
-		  <td><I>Text (optional)</I></td>
+		<td><code>text</code></td>
+		<td>Standard-Text</td>
+		<td><I>Text (optional)</I></td>
 		</tr>
 		<tr>
-		  <td><code>html</code></td>
-		  <td>wird genau so in das Formular übernommen; dient der Lösung besonderer Layout-Probleme; Achtung: unsichere Inhalte wie Links werden herausgefiltert</td>
-		  <td><I>Html-Text (optional)</I></td>
+		<td><code>html</code></td>
+		<td>wird genau so in das Formular übernommen; dient der Lösung besonderer Layout-Probleme; Achtung: unsichere Inhalte wie Links werden herausgefiltert</td>
+		<td><I>Html-Text</I></td>
 		</tr>
 		<tr>
-		  <td><code>hr</code></td>
-		  <td>stellt eine horizontale Linie dar</td>
-		  <td><I>keine</I></td>
+		<td><code>hr</code></td>
+		<td>stellt eine horizontale Linie dar</td>
+		<td><I>keine</I></td>
 		</tr>
 		<tr>
-		  <td><code>rem</code></td>
-		  <td>leitet einen Kommentar ein, der bei der Verarbeitung ignoriert wird</td>
-		  <td></td>
+		<td><code>rem</code></td>
+		<td>leitet einen Kommentar ein, der bei der Verarbeitung ignoriert wird</td>
+		<td></td>
 		</tr>
 	</tbody>
 </table>
@@ -184,73 +184,73 @@ header::Abschnitt 223
 ### Eingabe von Text oder Zahl
 
 <table>
-  <thead>
-    <tr>
-      <th>Schlüsselwort</th>
-      <th>Parameter</th>
-      <th>Standardwert</th>
-    </tr>
+	<thead>
+	<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		<th>Standardwert</th>
+	</tr>
 	</thead>
 	<tbody>
 		<tr>
-		  <td><code>input-text</code></td>
-		  <td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
-		  <td><I>Angabe ist erforderlich</I></td>
+		<td><code>input-text</code></td>
+		<td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		<td><I>Angabe ist erforderlich</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>2. Pflichtfeld: 0=nein, 1=ja</td>
-		  <td><I>0</I></td>
+		<td></td>
+		<td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		<td><I>0</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
-		  <td><I>kein Text</I></td>
+		<td></td>
+		<td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		<td><I>kein Text</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>4. Text nach dem Eingabefeld</td>
-		  <td><I>kein Text</I></td>
+		<td></td>
+		<td>4. Text nach dem Eingabefeld</td>
+		<td><I>kein Text</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>5. Anzahl von Zeilen (>1 bedeutet mehrzeiliges Eingabefeld)</td>
-		  <td><I>1</I></td>
+		<td></td>
+		<td>5. Anzahl von Zeilen (>1 bedeutet mehrzeiliges Eingabefeld)</td>
+		<td><I>1</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>6. maximale Anzahl von Zeichen bei der Eingabe</td>
-		  <td><I>unbegrenzt</I></td>
+		<td></td>
+		<td>6. maximale Anzahl von Zeichen bei der Eingabe</td>
+		<td><I>unbegrenzt</I></td>
 		</tr>
 		<tr>
-		  <td><code>input-number</code></td>
-		  <td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
-		  <td><I>Angabe ist erforderlich</I></td>
+		<td><code>input-number</code></td>
+		<td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		<td><I>Angabe ist erforderlich</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>2. Pflichtfeld: 0=nein, 1=ja</td>
-		  <td><I>0</I></td>
+		<td></td>
+		<td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		<td><I>0</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
-		  <td><I>kein Text</I></td>
+		<td></td>
+		<td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		<td><I>kein Text</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>4. Text nach dem Eingabefeld</td>
-		  <td><I>kein Text</I></td>
+		<td></td>
+		<td>4. Text nach dem Eingabefeld</td>
+		<td><I>kein Text</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>5. Minimalwert</td>
-		  <td><I>kein</I></td>
+		<td></td>
+		<td>5. Minimalwert</td>
+		<td><I>kein</I></td>
 		</tr>
 		<tr>
-		  <td></td>
-		  <td>6. Maximalwert</td>
-		  <td><I>kein</I></td>
+		<td></td>
+		<td>6. Maximalwert</td>
+		<td><I>kein</I></td>
 		</tr>
 	</tbody>
 </table>
@@ -275,11 +275,258 @@ Ein Pflichtfeld ist zunächst nicht hervorgehoben. Erst wenn das Eingabefeld bes
   
 ### Ankreuzen/Auswählen
 
+Bei einer `checkbox` kreuzt man nur an. Bei `multiple-choice` werden die Optionen untereinander dargestellt und es kann nur eine Option ausgewählt werden. Bei `drop-down` werden die Optionen in eine Klappbox gepackt, was Platz spart.
+
+<table>
+	<thead>
+	<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		<th>Standardwert</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><code>checkbox</code></td>
+		<td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		<td><I>Angabe ist erforderlich</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		<td><I>0</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>Achtung: Pflichtfeld bedeutet hier, dass die Checkbox ausgewählt/angekreuzt sein muss (z. B. Zustimmung zu Datenschutzfragen).</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		<td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>4. Text nach dem Eingabefeld</td>
+		<td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>Achtung: Als Wert der Variablen wird 'true' oder 'false' gespeichert. Der Wert der Variable ist im Ausgangszustand immer 'false'.</td>
+		<td></td>
+		</tr>
+		<tr>
+		<td><code>multiple-choice</code> oder <code>drop-down</code></td>
+		<td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		<td><I>Angabe ist erforderlich</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		<td><I>0</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>3. Text vor Optionsliste (Eingabeaufforderung)</td>
+		<td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>4. Liste der Optionen, jeweils getrennt durch ##</td>
+		<td><I>keine</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>Achtung: Als Wert der Variablen wird die Position der gewählten Option gespeichert, beginnend mit 1.</td>
+		<td></td>
+	</tbody>
+</table>
+
+**Beispiele:**
+
+```
+checkbox::task162ahmfF::0::Sie fühlen sich beunruhigt
+multiple-choice::task3wtrtimeS::1::Ich fühle mich heute großartig::trifft gar nicht zu##trifft eher nicht zu##trifft eher zu##trifft voll zu
+drop-down::ta33S::1::Ich fühlte mich gestern großartig::##trifft gar nicht zu##trifft eher nicht zu##trifft eher zu##trifft voll zu
+
+```
+
+### Likert-Skala
+
+Mit dem `likert` Element kann eine Liste von Fragen mit einer einheitlichen Antwortskala definiert werden. Sie funktioniert ähnlich wie eine Liste von exklusiven Checkboxen mit dem Unterschied, dass Antworten-Optionen nur einmal im Tabellenkopf definiert werden müssen. Diese Form ist sehr platzsparend und kann schnell beantwortet werden.
+
+<table>
+	<thead>
+		<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		<th>Standardwert</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><code>likert-start</code></td>
+		<td>1. Liste der Antwortoptionen jeweils getrennt durch ##</td>
+		<td><I>Angabe erforderlich</I></td>
+		</tr>
+		<tr>
+		<td><code>likert</code></td>
+		<td>1. Name der Variable, in die die Eingabe gespeichert werden soll 2. (Frage)Text</td>
+		<td><I>mindestens eine Angabe erforderlich</I></td>
+		</tr>
+		<tr>
+		<td><code>likert-end</code></td>
+		<td>1.keine</td>
+		<td><I>Angabe ist erforderlich</I></td>
+		</tr>
+	</tbody>
+</table>
 
 
+**Beispiele:**
+
+```
+likert-start::sehr hilfreich##eher hilfreich##teilweise hilfreich##eher nicht hilfreich##nicht hilfreich
+    likert::task2useA::Abschnitt 1: Einleitung
+    likert::task2useB::Abschnitt 2: Starten der Computer
+    likert::task2useC::Abschnitt 3: Anmeldung
+    likert::task2useD::Abschnitt 4: Steuerung über Testleitungskonsole
+    likert::task2useE::Abschnitt 5: Speichern/Beenden
+likert-end
+
+```
+
+### Schleifen
+
+`repeat-start` und `repeat-end` markieren einen Block von Elementen, der während der Beantwortung dynamisch mehrfach erzeugt wird. Dazu muss die befragte Person eine Zahl eingeben, die die Anzahl der Wiederholungen steuert. Alle Variablennamen der im Block befindlichen Eingabeelemente erhalten für den jeweiligen Blockdurchlauf einen Suffix: `_ +` laufende Nummer des aktuellen Blockdurchlaufes, beginnend mit `_1`.
+
+Innerhalb des Blocks ist es möglich Ein- und Ausblendungen vorzunehmen (s. u.). Hierbei ist möglich sich auf Variablen innerhalb des Blocks oder Variablen auf höchster Ebene zu beziehen. Bei Verschachtelung mehrerer Schleifen kann man sich nicht auf Variablen anderer Schachtelungsebenen beziehen.
+
+<table>
+	<thead>
+		<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		<th>Standardwert</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><code>repeat-start</code></td>
+		<td>1. Name der Variablen, in die die Eingabe (Anzahl) gespeichert werden soll</td>
+		<td><I>Angabe erforderlich</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>2. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		<td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>3. Text für die Überschrift zu Beginn jeden Blockes (Blocknummer wird jeweils dynamisch dahinter gesetzt)</td>
+		<td>`Block`</td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>4. Maximalwert für die Anzahl der Blöcke</td>
+		<td><I>10</I></td>
+		</tr>
+		<tr>
+		<td><code>repeat-end</code></td>
+		<td>keine</td>
+		<td></td>
+		</tr>
+	</tbody>
+</table>
 
 
+**Beispiel:**
 
+```
+rem::Schleife für alle Prüflinge
+repeat-start::examineecount::Wie viele Prüflinge gibt es?::Angaben zu Prüfling::20??Sie können Angaben zu maximal 20 Prüflingen eintragen. Sollten sich im Kurs mehr als 20 Prüflinge befinden, ist eine Auswahl vorzunehmen. Diese Auswahl sollte so erfolgen, dass ein möglichst breites Leistungsspektrum abgebildet wird. Vermieden werden sollte eine selektive Berücksichtigung bzw. Nichtberücksichtigung bestimmter Gruppen (z. B. besonders leistungsschwache oder leistungsstarke Prüflinge, Schülerinnen und Schüler mit nichtdeutscher Herkunftssprache).
+    input-number::task1::1::Teilaufgabe 1::::0::10
+    input-number::task2::1::Teilaufgabe 2::::0::10
+    input-number::task3::1::Teilaufgabe 3::::0::10
+repeat-end
+
+```
+
+führt z. B. zu folgenden Daten:
+
+```
+
+examineecount;3
+task1_1;3
+task2_1;4
+task3_1;5
+task1_2;3
+task2_2;1
+task3_2;5
+task1_3;1
+task2_3;4
+task3_3;6
+
+````
+
+### Ausblenden/Einblenden
+
+`if-start` und `if-end` markieren einen Block von Elementen, der in Abhängigkeit des Wertes einer Variablen gezeigt oder ausgeblendet wird. Dabei wird der eingegebene Wert mit einem Sollwert verglichen. Mit `if-else` können Elemente ein-/ausgeblendet werden, wenn der Wert **nicht** mit dem Sollwert übereinstimmt.
+
+<table>
+	<thead>
+		<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><code>if-start</code></td>
+		<td>1. Name der Variablen, der Wert geprüft werden soll</td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>2. Wert</td>
+		</tr>
+		<tr>
+		<td><code>if-else</code></td>
+		<td>keine</td>
+		</tr>
+		<tr>
+		<td><code>if-end</code></td>
+		<td>keine</td>
+		</tr>
+	</tbody>
+</table>
+
+### Navigation
+
+nav-button-group ermöglicht das Einfügen von Navigationselementen. Art und Reihenfolge können gewählt werden. Mögliche Bedienelemente sind: `next`, `previous`, `first`, `last` und `end`.
+
+<table>
+	<thead>
+		<tr>
+		<th>Schlüsselwort</th>
+		<th>Parameter</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><code>nav-button-group</code></td>
+		<td>1. Liste der Optionen, jeweils getrennt durch ##</td>
+		</tr>
+	</tbody>
+</table>
+
+**Beispiel:**
+
+```
+nav-button-group::previous##next##first##last##end
+nav-button-group::next
+
+```
 
 ### Wiedergabe der Inhalte
 
