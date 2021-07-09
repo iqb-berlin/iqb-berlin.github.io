@@ -2,13 +2,6 @@
 # Verona Dan Editor v3.1 (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 18.06.2021
-todo: - Weiter abgleichen mit Informationen die sich bereits in PbWorks befinden!
-      
-```
-
 [Hier](https://github.com/iqb-berlin/verona-editor-dan) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
 
 ### Übersicht
@@ -95,6 +88,10 @@ Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint au
 20. z-Index
 21. Neue Eigenschaften einsetzen: "Speichern" Taste für die Eigenschaften, muss nach Verändern eines Elements zum Speichern gedrückt werden, sonst gehen alle Änderungen verloren
 
+### Wiedergabe der Inhalte
+
+Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den Dan Editor muss der Player **Verona Dan Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Dan-v3.0).
+
 ### IQB Konventionen
 
 Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, steht ein Zusatzdokument mit IQB Emfehlungen bereit. Zu finden ist diese Dokument [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung).
@@ -106,9 +103,184 @@ Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, 
 
 ```yaml
 Dokumentstatus: Review (THuste)
-Stand: 18.06.2021
-todo: - Weiter mit Leben füllen! Wo finde ich Informationen bzgl. Syntax Scriptsprache???
+Stand: 09.07.2021
+todo: - Weiter mit Leben füllen!
       
 ```
 
 [Hier](https://github.com/iqb-berlin/verona-editor-plaintext) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
+
+## Erstellung der Aufgabenelemente
+
+ > Vorab: Dieser Editor verwendet eine Scriptsprache zur Erstellung von Elementen. Für die Aufgabengestaltung mit diesem Editor sind also zwingend Kenntnisse bzgl. Aufbau und Struktur dieser Scriptsprache erforderlich.
+
+Bei der Unit-Definition handelt es sich um eine normale Text-Datei. Jede Zeile enthält die Definition eines Eingabeelementes, eines Textes oder eines Elementes zur Strukturierung.
+
+### Grundsätzlicher Aufbau einer Zeile
+
+Jede Zeile enthält als Erstes ein Schlüsselwort und kann dahinter weitere Parameter enthalten, jeweils getrennt mit ::.
+
+* Die erste Zeile MUSS lauten iqb-scripted::1.0.
+* Am Ende einer Definitionszeile kann nach ?? noch weiterer Text angefügt werden, der als Hilfe-/Hinweistext verwendet wird (mouse-over).
+* Eine leere Zeile erzeugt einen Abstand im Formular in der Höhe eines Text-Elementes.
+* Vor dem Schlüsselwort können Leer- oder Tabzeichen eingefügt werden, um die Lesbarkeit des Scriptes zu erhöhen. Sie werden bei der Auswertung ignoriert.
+
+### Statische Texte, Linien, Kommentare
+
+<table>
+	<thead>
+		<tr>
+		  <th>Schlüsselwort</th>
+		  <th>Bedeutung</th>
+		  <th>Parameter</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		  <td><code>title</code></td>
+		  <td>eine Zeile Text als oberste Gliederungsüberschrift</td>
+		  <td><I>Text des Titels (optional)</I></td>
+		</tr>
+		<tr>
+		  <td><code>header</code></td>
+		  <td>eine Zeile Text als zweite Gliederungsüberschrift</td>
+		  <td><I>Text der Überschrift (optional)</I></td>
+		</tr>
+		<tr>
+		  <td><code>text</code></td>
+		  <td>Standard-Text</td>
+		  <td><I>Text (optional)</I></td>
+		</tr>
+		<tr>
+		  <td><code>html</code></td>
+		  <td>wird genau so in das Formular übernommen; dient der Lösung besonderer Layout-Probleme; Achtung: unsichere Inhalte wie Links werden herausgefiltert</td>
+		  <td><I>Html-Text (optional)</I></td>
+		</tr>
+		<tr>
+		  <td><code>hr</code></td>
+		  <td>stellt eine horizontale Linie dar</td>
+		  <td><I>keine</I></td>
+		</tr>
+		<tr>
+		  <td><code>rem</code></td>
+		  <td>leitet einen Kommentar ein, der bei der Verarbeitung ignoriert wird</td>
+		  <td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+**Beispiele:**
+
+```
+title::na sowas!
+html::And now <strong>this text here is bolded</strong>
+hr
+text::Einfach nur so mal Text, der aber - wenn zu wenig Platz ist - auch mal umgebrochen wird.??Aber nicht vergessen: Ab und zu mit der Maus drüber!
+rem::ab hier noch Nummern der Fragen prüfen!!!!!
+header::Abschnitt 223
+```
+
+### Eingabe von Text oder Zahl
+
+<table>
+  <thead>
+    <tr>
+      <th>Schlüsselwort</th>
+      <th>Parameter</th>
+      <th>Standardwert</th>
+    </tr>
+	</thead>
+	<tbody>
+		<tr>
+		  <td><code>input-text</code></td>
+		  <td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		  <td><I>Angabe ist erforderlich</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		  <td><I>0</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		  <td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>4. Text nach dem Eingabefeld</td>
+		  <td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>5. Anzahl von Zeilen (>1 bedeutet mehrzeiliges Eingabefeld)</td>
+		  <td><I>1</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>6. maximale Anzahl von Zeichen bei der Eingabe</td>
+		  <td><I>unbegrenzt</I></td>
+		</tr>
+		<tr>
+		  <td><code>input-number</code></td>
+		  <td>1. Name der Variablen, in die die Eingabe gespeichert werden soll</td>
+		  <td><I>Angabe ist erforderlich</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>2. Pflichtfeld: 0=nein, 1=ja</td>
+		  <td><I>0</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>3. Text vor dem Eingabefeld (Eingabeaufforderung)</td>
+		  <td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>4. Text nach dem Eingabefeld</td>
+		  <td><I>kein Text</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>5. Minimalwert</td>
+		  <td><I>kein</I></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>6. Maximalwert</td>
+		  <td><I>kein</I></td>
+		</tr>
+	</tbody>
+</table>
+ 
+  
+**Beispiele:**
+
+```
+input-number::task12ahmfA::1::Teilaufgabe 1.2a (Analysis)::::0::10
+input-text::note::0::Weitere Kommentare zu den Prüfungsaufgaben (optional)::::20??Abschließend haben Sie an dieser Stelle die Möglichkeit, zusätzliche Hinweise und Kommentare zu den Prüfungsaufgaben und Erwartungshorizonten festzuhalten.
+input-number::A155f::1::Wieviel wiegt ungefähr eine Kuh?::kg::1::1000
+
+```
+  
+Mehrzeilige Eingabefelder sind mindestens zwei Zeilen hoch, auch wenn sie leer sind. Bei der Eingabe vergrößert sich dann das Eingabefeld nach Bedarf. Die angegebene Obergrenze gilt nur für die Darstellung, nicht für den Inhalt, d. h. sollte mehr eingegeben werden, als in die angegebenen Zeilen passt, wird ein Scrollbalken eingeblendet und die weitere Eingabe ist nicht blockiert.
+
+Ungültige Eingaben (z. B. Grenze des numerischen Feldes überschritten) erzeugen einen roten Hinweistext. Der eingegebene Wert wird nicht gespeichert.
+
+Bei numerischen Eingaben ist als Dezimaltrennzeichen sowohl ein Komma als auch ein Punkt erlaubt. Bei der Auswertung muss beides vorgesehen werden.
+
+Ein Pflichtfeld ist zunächst nicht hervorgehoben. Erst wenn das Eingabefeld besucht und ohne eine Eingabe verlassen wurde, ist ein roter Hinweistext eingeblendet.
+  
+### Ankreuzen/Auswählen
+
+
+
+
+
+
+
+### Wiedergabe der Inhalte
+
+Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den Dan Editor muss der Player **Verona Abi Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
