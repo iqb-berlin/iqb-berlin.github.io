@@ -150,17 +150,17 @@ Für die Aufgabengestaltung können je nach Bedarf unterschiedliche Editoren gen
 
 Welcher Editor gewählt wird, orientiert sich an den Anforderungen an die Aufgabe, sprich welche Aufgabenelemente müssen enthalten sein und welcher Editor stellt diese Elemente bereit. Können mehrere Editoren die erforderlichen Elemente liefern, ist die Entscheidung für einen Editor allein von der gewünschten Entwurfsmethode (rein grafischer oder rein textueller Entwurf) abhängig. Die Auswahl des Editors erfolgt dann im rechten Teil der Eigenschaftsbearbeitung.
 
-> **Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel. Editor**
+> Mehr zur Arbeit mit dem Editor entnehmen Sie bitte dem Kapitel **Editor**
 
 **Player**
 
 Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testcenter abgespielt werden kann, wird ein Player benötigt. Dieser ist in die jeweilige Webanwendung integriert und gibt die Aufgabe mit all ihren Elementen wieder. Der Player muss dabei zwingend zum Editor passen mit dem die Aufgabe entworfen wurde. Wurde eine Aufgabe bspw. mit einem Script Editor entworfen, muss auch ein Script Player verwendet.
 
-> Mehr zum Thema Player entnehmen Sie bitte dem Kapitel: Player.
+> Mehr zum Thema Player entnehmen Sie bitte dem Kapitel **Player.**
 
 ### Tab Editor
 
-> Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel: Editor.
+> Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel **Editor.**
 
 ### Tab Vorschau
 
