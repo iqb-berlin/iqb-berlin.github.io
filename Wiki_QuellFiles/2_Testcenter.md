@@ -423,6 +423,8 @@ Nach Abmeldung am Testcenter ist dann ein Schalter auf der rechte Seite des Test
 
 Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parameter können den Bedürfnissen entsprechend angepasst werden.
 
+> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heisst: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SysCheck xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -463,8 +465,6 @@ Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parame
 </SysCheck>
 ```
 
-> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heisst: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
-
 Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. 
 Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen 
 vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. 
@@ -493,7 +493,7 @@ Player im Arbeitsbereich bereitzustellen.
 
 ## Bericht speichern
 
-Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird ein Kennwort erfragt.
+Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird der Savekey abgefragt.
 
 ## Ergebnisse herunterladen
 
