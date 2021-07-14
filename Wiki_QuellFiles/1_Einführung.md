@@ -157,12 +157,16 @@ Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt a
 
 <table>
   <tr>
-    <td><a href="#Unit">Unit</a></td>
-    <td><a href="#Testheft">Testheft/ Booklet</a></td>
-    <td><a href="#Testperson">Testperson/ Testtaker</a></td>
-	<td><a href="#Verona">Verona</a></td>
-	<td><a href="#Player">Player</a></td>
-	
+    <td><a href="#backend">Backend</a></td>
+	<td><a href="#frontend">Frontend</a></td>
+	<td><a href="#player">Player</a></td>
+	<td><a href="#responsivität">Responsivität</a></td>
+    <td><a href="#testheft">Testheft/ Booklet</a></td>
+    <td><a href="#testperson">Testperson/ Testtaker</a></td>	
+	<td><a href="#unit">Unit</a></td>
+	<td><a href="#verona">Verona</a></td>
+	<td><a href="#voud">Voud</a></td>
+		
   </tr>
 </table>
 
@@ -175,8 +179,34 @@ Stand: 1.4.2021
 todo: - weitere wichtige Schlüsselthemen einbringen
 
 ```
+## <a name="backend"></a>Backend
 
-## <a name="Unit"></a>Unit / Aufgabe / Seite
+Als Backend wird der Teil einer Software bezeichnet, den Anwender\*innen in der Regel nicht sehen und somit auch nicht darauf zugreifen können. Man könnte es auch Unterbau oder Fundament einer Software ansehen. Die IQB-Testsysteme bestehen immer aus einem Backend und einem Frontend. Das Backend kann bspw. eine Datenbank sein, welche im Hintergund die im Frontend gemachten Angaben oder Daten speichert. Anwender\*innen enzieht sich dieser im Hintergrund laufende Prozess.
+
+## <a name="frontend"></a>Frontend
+
+Als Frontend wird der Teil einer Software bezeichnet, der eine direkte Interaktion mit den Anwender\*innen ermöglicht. Es wird auch gerne von der Benutzeroberfläche oder Benutzerschnittstelle gesprochen. Die IQB Testsysteme bestehen immer aus einem Frontend und einem Backend. Wobei das Frontend die Eingabe bzw. Bearbeitung von Daten und die Wiedergabe von Inhalten ermöglicht, also eine Interaktion der Software gewährleistet.
+
+## <a name="player"></a>Player
+
+Player sind softwarebasierte Module, welche eingebettet in webbasierte Anwendung, betimmte Inhalte wiedergeben können. Das IQB setzt zur Wiedergabe einer Aufgabe einen eigens dafür entwickelten Player (Verona-Player) in den IQB Testsystemen ein. Dieser ist modular in die Testanwendungen intergriert und spielt die in einer Aufgabe enthaltenen Elemente ab. Außerdem stellt der Player bestimmte Schnittstellen zur Verfügung. Er "überwacht" bspw. die Aktivitäten (scrollen, Seitenwechsel, setzen von Antworten) der Testperson auf der Testseite und sendet diese Informationen über die Schnittstelle an das System in welches er eingebettet ist. So zum Einsatz kommt er in den Systemen: **Testcenter** und **Teststudio**. Im **Testcenter** spielt er die eigentlichen Aufgaben ab, im **Teststudio** spielt er während der Aufgabenentwicklung die Aufgaben im Vorschaumodus ab.
+
+## <a name="responsivität"></a>Responsivität
+
+In der Webprogrammierung bezeichnet dieser Begriff die Fähigkeit einer Website auf unterschiedliche Bildschirmgrößen zu reagieren. Die Inhalte verhalten sich dynamisch und werden an die aktuelle Bildschirmauflösung angepasst (skaliert).
+
+## <a name="testheft"></a>Testheft / Booklet / Testablauf / Aufgabenfolge
+
+Für die Testdurchführung ist es notwendig, die Abfolge der Aufgaben/Seiten/Units festzulegen. Es können außerdem Festlegungen getroffen wie
+* Zeitbeschränkung: Die Testperson hat nur eine bestimmte Zeit für die Beantwortung
+* Freigabewort: Die Navigation wird erst erlaubt, wenn ein (von der Testleitung angesagtes) Codewort eingegeben wird. Darüber kann der Testablauf innerhalb einer Testgruppe (Klasse) zeitlich synchronisiert werden.
+* Bedingte Fortsetzung/Filterführung: Nur bei bestimmten Antworten ist die Navigation insgesamt oder zu bestimmten Testblöcken erlaubt.
+
+## <a name="testperson"></a>Testperson / Testtaker / Testee / Befragte*r
+
+Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie befragt bzw. getestet wird. Die Antworten dieser Person bilden den Rohdatensatz der Studie. Um einen Testablauf zu erproben oder zu evaluieren, kann natürlich auch jemand aus dem Autorenteam diese Rolle einnehmen. Dann könnte die Durchführung modifiziert werden, damit z. B. nicht alle Hörtexte jedesmal gehört werden müssen oder die Navigation ist unbeschränkt. 
+
+## <a name="unit"></a>Unit / Aufgabe / Seite
 
 Eine Frage an die Testperson ist stets auf einer Seite platziert. Es ist nun meist nicht ökonomisch, nur eine Frage pro Seite vorzusehen, d. h. man gruppiert mehrere Fragen zusammen auf eine Seite. Es gibt noch weitere Seitenelemente, z. B. Fotos oder Sachtexte, die gleichzeitig zu den Fragen präsentiert werden sollen. In den IQB-Anwendungen nennen wir eine solche Gruppe von Elementen, die stets zusammen der Testperson präsentiert werden sollen, eine *Unit*. Diese Unit wird als Ganzes entwickelt, also in den Anwendungen als ein Paket editiert, importiert, exportiert usw. 
 
@@ -184,24 +214,13 @@ Es kann sich bei der Unit um eine einzelne *Seite nur mit Text* handeln - dann d
 
 Innerhalb einer Unit kann es sinnvoll sein, die Frage-Elemente auf mehrere Seiten zu verteilen. Z. B. soll ein Lesetext links ständig zu sehen sein, und rechts sollen nach und nach Seiten mit Fragen dazu präsentiert werden. Im Schulkontext ist dies weit verbreitet. In diesem Fall gibt es für den Gesamttest eine Navigation zwischen den Units, und innerhalb einer Unit außerdem eine Navigation zwischen den Seiten einer Unit.
 
-## <a name="Testheft"></a>Testheft / Booklet / Testablauf / Aufgabenfolge
-
-Für die Testdurchführung ist es notwendig, die Abfolge der Aufgaben/Seiten/Units festzulegen. Es können außerdem Festlegungen getroffen wie
-* Zeitbeschränkung: Die Testperson hat nur eine bestimmte Zeit für die Beantwortung
-* Freigabewort: Die Navigation wird erst erlaubt, wenn ein (von der Testleitung angesagtes) Codewort eingegeben wird. Darüber kann der Testablauf innerhalb einer Testgruppe (Klasse) zeitlich synchronisiert werden.
-* Bedingte Fortsetzung/Filterführung: Nur bei bestimmten Antworten ist die Navigation insgesamt oder zu bestimmten Testblöcken erlaubt.
-
-## <a name="Testperson"></a>Testperson / Testtaker / Testee / Befragte*r
-
-Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie befragt bzw. getestet wird. Die Antworten dieser Person bilden den Rohdatensatz der Studie. Um einen Testablauf zu erproben oder zu evaluieren, kann natürlich auch jemand aus dem Autorenteam diese Rolle einnehmen. Dann könnte die Durchführung modifiziert werden, damit z. B. nicht alle Hörtexte jedesmal gehört werden müssen oder die Navigation ist unbeschränkt. 
-
-## <a name="Verona"></a>Verona
+## <a name="verona"></a>Verona
 
 Lernstandserhebungen in den Ländern gibt es papierbasiert seit 2003. Diese Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Aus der Verbindung mit "Online" wurde dann die Bezeichnung "Verona" für VERA Online. Alles was technologiebasiert mit Vera zu tun hat, wird also immer mit einem vorangestelltem "Verona" bezeichnet. Es gibt bspw. Verona-Schnittstellen und Verona-Player die für die technologie basierte Testung zum Einsatz kommen.
 
-## <a name="Player"></a>Player
+## <a name="voud"></a>Voud
 
-Player sind softwarebasierte Module, welche eingebettet in webbasierte Anwendung, betimmte Inhalte wiedergeben können. Das IQB setzt zur Wiedergabe einer Aufgabe einen eigens dafür entwickelten Player (Verona-Player) in den IQB Testsystemen ein. Dieser ist modular in die Testanwendungen intergriert und spielt die in einer Aufgabe enthaltenen Elemente ab. Außerdem stellt der Player bestimmte Schnittstellen zur Verfügung. Er "überwacht" bspw. die Aktivitäten (scrollen, Seitenwechsel, setzen von Antworten) der Testperson auf der Testseite und sendet diese Informationen über die Schnittstelle an das System in welches er eingebettet ist. So zum Einsatz kommt er in den Systemen: **Testcenter** und **Teststudio**. Im **Testcenter** spielt er die eigentlichen Aufgaben ab, im **Teststudio** spielt er während der Aufgabenentwicklung die Aufgaben im Vorschaumodus ab.
+Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung von Aufgabeninhalten (Aufgabenlementen) wie bspw. Audio, Grafiken, Multiple-Choice Elementen und mehr. Die Bezeichnung **voud** steht für: **Verona Online Unit Definition**. Bei der Erzeugung einer Unit mittels **Testsudio** generiert das **Teststudio** immer einer Unit.xml und eine Unit.voud. Die Unit.xml enthält Werte die den "Rahmen" der Unit betreffen. Hier können der Unitname und einige, die Unit betreffende Werte, gesetzt werden. Zu letzteren gehören die Playerdefinition und auch die Benennung der zugehörigen Voud-Dateien (Unit.voud). Die Unit.voud enthält dann die eigentlichen Aufgabenlemente.
 
 ---
 
