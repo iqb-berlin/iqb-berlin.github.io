@@ -168,12 +168,19 @@ Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung vo
     <td>Datum</td>
     <td>Frei wählbarer Text. Wird als Text zur Codeeingabe angegeben.</td>
 </tr>
+<tr>
+    <td>TimeMax:</td>
+    <td>minutes</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert in Minuten.</td>
+</tr>
 
 </table>
 
 ```xml
 <Restrictions>
 	<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+	<TimeMax minutes="20"/>
 </Restrictions>
 ```
 ---
