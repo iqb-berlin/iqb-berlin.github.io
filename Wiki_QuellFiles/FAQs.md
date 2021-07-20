@@ -1,6 +1,8 @@
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-# FAQs (Abschnittsmarker)
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+```yaml
+Dokumentstatus: Review (THuste)
+Stand: 20.07.2021
+todo: - Weiter mit Inhalten füllen      
+```
 
 <table>
   <tr>
@@ -209,7 +211,7 @@
 </th>    
 </tr>
 <tr>
-<td>
+<td>Hier muss noch was hin.
 
 </td></tr>
 </table>
@@ -225,8 +227,7 @@
 </th>    
 </tr>
 <tr>
-<td>
+<td>Hier muss noch was hin.                                                                                                                         
 
 </td></tr>
 </table>
-
