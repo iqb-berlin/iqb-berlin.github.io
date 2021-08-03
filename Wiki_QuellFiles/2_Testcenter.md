@@ -350,12 +350,12 @@ Die Ergebnisse können mittels der üblichen Browserfunktionalitäten herunterge
 ```yaml
 
 Dokumentstatus: Entwurf
-Stand: 6.4.2021
+Stand: 02.08.2021
 todo:
 
 ```
 
-Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung integriert ist. Der Player übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Stellen Sie sich das Testcenter als einen CD-Player vor. Das Gehäuse mit allen Funktionstasten (Pause, Play etc.) ist die eigentliche Webanwendung Testcenter. Hierüber kann die Wiedergabe einer CD gesteuert werden. Das Gehäuse ermöglicht den Einbau eines CD-Laufwerkes, welches die CDs wiedergeben kann. Die eingelegte CD entspricht dann einer in das Testcenter hochgeladenen Unit. Die CD kann über die Tasten am Gehäuse, also die Webanwendung gestartet werden. Die Wiedergabe kann nur erfolgen, wenn Laufwerk und CD zueinander passen. Nachfolgend sind die Bereiche der Webanwendung und der Bereich des Players zu sehen:
+Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung integriert ist. Der Player ist ein Stück Software und übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Er verfügt des Weiteren über entsprechende Schnittstellen über die er mit dem **Testcenter** verbunden ist. So kann der Player bspw. Aktionen innerhalb des Playerbereiches (der Testseite) aufzeichnen. Zu diesen Aktionen gehören bspw. das Setzen von Anwortoptionen, das Scrollen zum Seitenende, die Verweildauer auf einer Testseite und einige mehr. Der Player trägt mit seinen Schnittstellen also erheblich zur Auswertungsmöglichkeit eines Tests bei. 
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final.png)
 
