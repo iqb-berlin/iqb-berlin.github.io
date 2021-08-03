@@ -234,35 +234,6 @@ Hinweis: In naher Zukunft wird der Dan Editor durch den neu entwickelten Aspect 
 
 > In [dieser](https://github.com/iqb-berlin) Übersicht finden Sie alle GitHub Repositories des IQB. Hier finden Sie auch die Repositories zu den IQB Editoren, deren letzten Versionen und weitere Informationen.
 
-### Metadaten reduzieren
-
-Die aktuelle Version des Teststudios erzeugt Unit-Xmls, die nicht vom aktuellen Testcenter akzeptiert werden. Das liegt daran, dass die zulässigen Metadaten auf das Nötigste reduziert wurden. Die Elemente `Lastchange`, `Owner` und `Project` müssen entfernt werden:
-
-#### Vorher
-```
-<Unit>
-  <Metadata>
-    <Id>Yoyo</Id>
-    <Label>Geobrettfigur auslegen</Label>
-    <Lastchange>2020-07-02T00:41:16+02:00</Lastchange>
-    <Owner>Institut zur Qualit&#xE4;tsentwicklung im Bildungswesen IQB</Owner>
-    <Project>Demo-Aufgaben f&#xFC;r die &#xD6;ffentlichkeit</Project>
-  </Metadata>
-  <DefinitionRef player="IQBVisualUnitPlayerV2">Yoyo.voud</DefinitionRef>
-</Unit>
-```
-#### Nachher
-
-```
-<Unit>
-  <Metadata>
-    <Id>Yoyo</Id>
-    <Label>Geobrettfigur auslegen</Label>
-  </Metadata>
-  <DefinitionRef player="IQBVisualUnitPlayerV2">Yoyo.voud</DefinitionRef>
-</Unit>
-```
-
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
