@@ -4,7 +4,7 @@ Stand: 20.07.2021
 todo: - Weiter mit Inhalten füllen      
 ```
 
-<table>
+<table border=1>
   <tr>
     <td><a href="#Allgemein">Allgemein</a></td>    
 	<td><a href="#Testcenter">Testcenter</a></td>
@@ -26,7 +26,7 @@ todo: - Weiter mit Inhalten füllen
 </th>    
 </tr>
 <tr>
-<td border=10>
+<td>
 
 #### Wo finde ich Ansprechpartner zum Thema TBA?
 > Sie finden die entsprechenden Ansprechpartner auf der Startseite des [IQB GitHub Wikis](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki). Hier finden Sie auch Kontaktdaten zu unserem Support Team. Weitere Informationen finden Sie auch auf der [IQB Webseite](https://www.iqb.hu-berlin.de/institut/staff/).
