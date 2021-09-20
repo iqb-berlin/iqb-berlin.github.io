@@ -1,6 +1,6 @@
 # 2 Testcenter
 
-Das IQB-Testcenter ist eine Web-Anwendung für die Durchführung von Kompetenztests oder Befragungen. 
+Das IQB-Testcenter ist eine Webanwendung für die Durchführung von Kompetenztests oder Befragungen. 
 Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an, d. h. man schreibt 
 dessen Internet-Adresse in die Adresszeile eines Internet-Browsers. Dadurch werden die Programmierungen geladen 
 und man sieht ein Formular zum Anmelden. Alle Daten für einen Test sind vorher auf dem Server zu speichern. 
@@ -12,13 +12,11 @@ Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
 * [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
 * [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
 
-Des Weiteren besteht das folgende Forum: [Testcenter-Forum](https://github.com/iqb-berlin/testcenter-frontend/discussions)<br> 
-Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Testcenters.
 
 **Installation**
 
-Das IQB hat alle Programmierungen unter einer Open Source veröffentlicht und erleichtert die Installation durch ein sog. 
-Docker-Setup. Für die Installation muss man einen Server bereitstellen (Linux oder Windows), und dieser Server muss dann über 
+Das IQB hat alle Programmierungen unter der Open Source-Lizenz [MIT](https://opensource.org/licenses/MIT) veröffentlicht und erleichtert die Installation durch ein sog. 
+Docker-Setup. Für die Installation muss man einen Server bereitstellen (Linux oder Windows) und dieser Server muss dann über 
 eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. 
 Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. 
 Es ist weiterhin Wissen zu Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen 
@@ -28,18 +26,17 @@ gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die In
 **Verwaltung der Tests**
 
 Nach der Installation ist zunächst ein Standard-Konto für die Verwaltung von Tests angelegt. 
-Außerdem ist ein Arbeitsbereich angelegt mit einem Beispieltest. Als erste Schritte sind über ein Verwaltungsportal die Testinhalte 
-(Aufgaben, Testabläufe usw., z. B. als XML-Dateien) in das Testcenter zu laden. Nach der Durchführung des Tests kann man über 
-dieses Verwaltungsportal die Ergebnisse herunterladen (Csv-Dateien). Die Texte dieses Wikis sind vor allem für Personen gedacht, 
+Außerdem ist ein Arbeitsbereich angelegt mit einem Beispieltest. Im ersten Schritt sind über ein Verwaltungsportal die Testinhalte 
+(Aufgaben, Testabläufe usw., z. B. als XML-Dateien) in das Testcenter zu laden. Nach der Durchführung des Tests, können über
+dieses Verwaltungsportal die Ergebnisse heruntergeladen werden (Csv-Dateien). Die Texte dieser Wiki sind vor allem für Personen gedacht, 
 die diese Verwaltungsaufgaben ausführen.
 
-Man kann eine Installation des IQB-Testcenters weitgehend anpassen. Begrüßungsnachrichten, Logo auf der Startseite und selbst der Name 
-kann an eigene Wünsche angepasst werden.
+Man kann eine Installation des IQB-Testcenters weitgehend anpassen. Begrüßungsnachrichten, Hintergrundfarbe, Logo auf der Startseite und selbst der Name der Anwendung kann an eigene Wünsche angepasst werden.
 
 **Durchführung von Tests oder Befragungen**
 
 Durch Anwählen der Internet-Adresse des Testcenter-Servers erhält man ein Anmeldeformular. 
-Eine Testperson muss über Zugangsdaten verfügen, und es startet dann das für diese Person vorbereitete Testheft 
+Eine Testperson muss über Zugangsdaten verfügen und es startet dann das für diese Person vorbereitete Testheft 
 (d. h. die Abfolge von Aufgaben bzw. Fragen). Folgende besonderen Funktionen sind im IQB-Testcenter derzeit umgesetzt:
 
 * Verschiedene Varianten der Anmeldung: Anmeldung über einen Link, zweistufige Anmeldung zur Vereinfachung der Durchführung, 
@@ -64,7 +61,7 @@ enormen Vielfalt der Hardware (Tablet, Smartphone usw.) und Software (Apple, Lin
 Befragung so wie beabsichtigt funktioniert. Je nach Anforderung an den Test wird das auch nicht sinnvoll sein, z. B. wenn eine Mindestbreite 
 für den Bildschirm erforderlich ist.
 
-Das IQB bemüht sich, hier eine möglichst breite Palette an Systemen abzudecken. 
+Das IQB bemüht sich hier eine möglichst breite Palette an Systemen abzudecken. 
 Wenn man jedoch erfahren möchte, ob die Zielsysteme geeignet sind, kann man im IQB-Testcenter einen System-Check konfigurieren. 
 Dann können z. B. die verantwortlichen Lehrkräfte in der Vorbereitungsphase im Testcenter einen auf die speziellen Anforderungen des 
 Tests abgestimmten Check durchführen. Auch die Internetverbindung kann hierüber bewertet werden.
@@ -107,19 +104,20 @@ Das Erstellen von Logins wird unterstützt über das Windows-Programm [itc-ToolB
 
 ### Test-Definition
 
-Diese [Xml-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) legt die Reihenfolge der Aufgaben (Units) fest. Man kann die Aufgaben bzw. Zwischenseiten auch in Blöcke (Testlets) gruppieren. Dann kann man festlegen, dass ein Block nur nach Eingabe eines Code-Wortes betreten werden kann oder dass es ein Zeitlimit für die Bearntwortung gibt. Außerdem kann über die Test-Definition festgelegt werden, dass eine navigation zur nächsten Aufgabe/Seite erst erlaubt ist, wenn alle Teile der Aufgabe angezeigt/präsentiert wurden (auch z. B. eine Audio-Sequenz) oder wenn alle erforderlichen Antworten gegeben wurden.
+Diese [XML-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) legt die Reihenfolge der Aufgaben (Units) fest. Man kann die Aufgaben bzw. Zwischenseiten auch in Blöcke (Testlets) gruppieren. Innerhalb dieser Blöcke (Testlets) können dann Beschränkungen festgelegt werden. Bspw. kann ein Block dann nur nach Eingabe eines Code-Wortes betreten werden oder es gilt eine zeitliche Beschränkung für einen Block. Außerdem kann über die Test-Definition das Weiterblättern auf Folgeseiten mit Bedingungen verknüpft werden. Das Springen (scrollen) an das Seitenende könnte bspw. eine solche Bedingung darstellen. Diese Bedingung würde sicherstellen, dass die Testperson den gesamten Inhalt der Seite wahrgenommen hat. Auch das Beendigen von Audio-Sequenzen oder die Beantwortung aller Fragen, könnte eine solche Bedingung sein.
 
-> **In der Grafik ist dargestellt, dass die Definition von Tests über das IQB-Teststudio erfolge. Das wird in zukünftigen Versionen der Fall sein. Die aktuelle Version IQB-Teststudio-Lite unterstützt dies nicht, sondern man muss die Xml-Datei für die Test-Definition manuell erzeugen.**
+> **In der Grafik ist dargestellt, dass die Definition von Tests über das IQB-Teststudio erfolgt. Das wird in zukünftigen Versionen der Fall sein. Die aktuelle Version IQB-Teststudio-Lite unterstützt dies nicht, sondern man muss die XML-Datei für die Test-Definition manuell erzeugen.**
 
 ### Unit-Definition
 
-Eine Unit-Definition besteht aus einer [Xml-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Unit%E2%80%90Xml) und einer Voud-Datei. Erstere enthält Metadaten wie die interne ID und den Datentyp der Unit, letztere ist ein internes Format, das manuell kaum editierbar ist. Es muss statt dessen über einen Editor erzeugt werden. Das IQB-Teststudio bietet derartige Editoren.
+Eine Unit-Definition besteht aus einer [XML-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Unit%E2%80%90Xml) und einer Voud-Datei. Erstere enthält Metadaten, wie die interne ID und den Datentyp der Unit. Bei der Voud-Datei handelt es sich um ein internes Format, welches manuell kaum editierbar ist. Es muss stattdessen über einen Editor erzeugt werden. Das IQB-Teststudio bietet derartige Editoren.
 
 ### Player
 
-In der Grafik ist dargestellt, dass das Testcenter intern eine Komponente "Player" enthält. Grundidee dieser Teilung ist, dass das interne Format einer Unit-Definition nicht direkt vom Testcenter selbst verarbeitet wird, sondern von einem Plug-In, das je nach Unit-Datentyp hinzugeladen wird. Durch diese Technik wird eine hohe Flexibilität erreicht: Änderungen der unitbezogenen Programmierung führen nicht zu einem neuen Testcenter, sondern nur der Plug-In-Code des Players wird ausgetauscht. Näheres hierzu im Abschnitt [2.5 Player (Verona)](2.5-Player-(Verona)).
+In der Grafik ist dargestellt, dass das Testcenter intern eine Komponente "Player" enthält. Grundidee dieser Teilung ist, dass das interne Format einer Unit-Definition nicht direkt vom Testcenter selbst verarbeitet wird, sondern von einem Plug-In, welches je nach Unit-Datentyp hinzugeladen wird. Durch diese Technik wird eine hohe Flexibilität erreicht: Änderungen der unitbezogenen Programmierung führen nicht zu einem neuen Testcenter, sondern nur der Plug-In-Code des Players wird ausgetauscht. Näheres hierzu im Abschnitt [2.5 Player (Verona)](2.5-Player-(Verona)).
 
-Für die Vorbereitung eines Tests bedeutet dies, dass
+Für die Vorbereitung eines Tests bedeutet dies:
+
 1. jede Unit-Definition einen Verweis auf das Datenformat und damit auf den erforderlichen Player enthalten muss und
 2. alle Player, die von Units benötigt werden, müssen vorab als Ressourcendatei in das Testcenter geladen werden
 
@@ -127,7 +125,7 @@ Für die Vorbereitung eines Tests bedeutet dies, dass
 
 ### Logs
 
-Ereignisse sowohl innerhalb einer Unit als auch insgesamt eines Tests werden in ein Protokoll geschrieben. Dieses sog. "Logging" kann reduziert und auch ganz abgestellt werden, um die Datenmenge zu reduzieren. Welche Ereignisse genau gespeichert werden, ist auch vom Player abhängig. Folgende Erkenntnisse lassen sich beispielsweise aus den Log-Daten ablesen:
+Ereignisse innerhalb einer Unit und auch insgesamt innerhalb eines Tests, werden in ein Protokoll geschrieben. Dieses sog. "Logging" kann reduziert und auch ganz abgestellt werden, um die Datenmenge zu reduzieren. Welche Ereignisse genau gespeichert werden, ist auch vom Player abhängig. Folgende Erkenntnisse lassen sich beispielsweise aus den Log-Daten ablesen:
 * Version des Betriebssystems und des Browsers
 * Verweildauer auf einer Seite
 * Zeitpunkt des Beendens der Beantwortung
@@ -135,6 +133,11 @@ Ereignisse sowohl innerhalb einer Unit als auch insgesamt eines Tests werden in 
 ### Antworten
 
 Als Antworten werden Zustandsänderungen der Eingabe-Elemente der Units verstanden. Wenn die Testperson ein Ankreuzkästchen wählt, eine Linie mit der Maus verschiebt oder mehrere Sätze in ein Eingabefeld schreibt - all diese Eingaben werden mit dem jeweils letzten Stand gespeichert.
+
+### Weitere Daten
+
+* **Kommentare, Review**: Wenn ein Test im Review-Modus durchgeführt wird, können zu Aufgaben oder zum gesamten Test Kommentare gegeben werden. Auch diese Kommentare sind über den Management-Bereich abrufbar.
+* **System-Check Berichte**: Nach der Durchführung eines System-Checks werden bei Bedarf die Daten in der Datenbank gespeichert und sind ebenfalls abrufbar.
 
 ---
 
@@ -157,36 +160,46 @@ Als Antworten werden Zustandsänderungen der Eingabe-Elemente der Units verstand
 
 ---
 
+
 # 2.2 Die Sicht der Testperson
 
 ## Computer starten
 
-Zunächst muss man sich am Computer, an dem der Test durchgeführt werden soll, anmelden. Sollte man die Account-Daten nicht parat haben, braucht's erstmal etwas Zeit, dass neue beschafft werden (ist die ITG-Lehrerin da?). Der Computer ist dann hochgefahren und ein einigermaßen moderner Browser ist installiert. Hoffentlich fängt der jetzt nicht an, Updates zu laden und zu installieren, dann sollte man lieber einen anderen nehmen.
+Zunächst muss man sich am Computer, an dem der Test durchgeführt werden soll, anmelden. Sollte man die Account-Daten nicht parat haben, braucht es erstmal etwas Zeit, um neue Daten zu beschaffen (Ist die ITG-Lehrerin da?). Der Computer ist dann hochgefahren und ein einigermaßen moderner Browser ist installiert.
 
 ## Am Testsystem anmelden
 
-Nun kommt es auf die richtige Internet-Adresse an. Die soll bitte nicht in das Suchfeld von Google oder einer anderen Suchmaschine eingegeben werden, denn dann gibt es eine Trefferliste mit ungewissem Ausgang. Also besser oben in die Adressleiste eintragen, genau wie auf dem Zettel steht.
+Nun kommt es auf die richtige Internet-Adresse an. Diese sollte bitte nicht in das Suchfeld von Google oder einer anderen Suchmaschine eingegeben werden, denn dann gibt es eine Trefferliste mit ungewissem Ausgang. Die Adresse ist also besser oben in die Adressleiste des Browsers einzutragen.
 
-Das Startbild ist sehr reduziert. Rechts ein paar allgemeine Informationen, so wie Datenschutz und so etwas, aber links nur Eingabefelder für Name und Kennwort. Nach der Eingabe wird ein großer Schalter präsentiert, der das Testheft symbolisiert, das gestartet werden soll. Daran erkennt man, dass die Anmeldung erfolgreich war.
+Das Startbild ist sehr reduziert. Rechts ein paar allgemeine Informationen (Version, Datenschutz etc.), links nur Eingabefelder für Name und Kennwort. Nach der Eingabe wird ein großer Schalter präsentiert, der das Testheft symbolisiert, das gestartet werden soll. Die Anzeige des Testheftes signalisiert auch eine erfolgreiche Anmeldung.
 
-> Weitere Informationen zur Anmeldung dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren)
+> Weitere Informationen zur Anmeldung finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren)
 
 Mögliche Probleme:
-* Wenn das Startbild zu sehen ist, dann ist schonmal klar, dass die Internet-Verbindung funktioniert. Ansonsten sollte man mal die Kabel prüfen.
+
+* Wenn das Startbild zu sehen ist, ist schonmal eine funktionierende Internet-Verbindung anzunehmen. Ist dies nicht der Fall, sollten entsprechende Routinen zur Fehlerbehebung beginnen (lose Kabel etc.).
 * Wenn das Startbild einigermaßen gut aussieht (nichts verrutscht, nichts überlagert), dann ist auch der Browser nicht zu alt. 
-* Wenn gleich zu Anfang vor der Anmeldung ein roter Balken oben zu sehen ist, dann stimmt etwas nicht mit der Programmierung. Das sollten dann alle in der Klasse auch haben. Die Hotline muss unbedingt kontaktiert werden.
-* Wenn für die Anmeldedaten kein Testheft gefunden wurde, dann gibt es eine rote Ausschrift, die genau das meldet. Dann sollte man nochmal prüfen, ob die Eingabe richtig war.
-* Wenn der Schalter für das Testheft ausgegraut ist, dann ist dieser Test gesperrt oder noch nicht freigegeben. Für Tests könnte ein Zeitfenster definiert sein. Dann nochmal die Anweisungen studieren und ggf. bei der Hotline nachfragen.
+* Wenn gleich zu Anfang vor der Anmeldung ein roter Balken oben zu sehen ist, dann stimmt etwas nicht mit der Programmierung. Diese Erscheinung sollte dann an allen Arbeitsplätze auftreten. In diesem Fall sollte unbedingt die Hotline kontaktiert werden.
+* Wenn für die Anmeldedaten kein Testheft gefunden wurde, dann gibt es eine rote Ausschrift, die genau das meldet. Es ist dann zu prüfen, ob die Eingabe richtig war.
+* Wenn der Schalter für das Testheft ausgegraut ist, dann ist dieser Test gesperrt oder noch nicht freigegeben. Für Tests könnte ein Zeitfenster definiert sein. Es sollte dann nochmal einmal die Anweisungen studiert und ggf. bei der Hotline nachgefragt werden.
 
 ## Durchführen des Testheftes bzw. der Befragung
 
-Mit Klick auf den Schalter des Testheftes werden alle Testinhalte geladen. Sobald möglich, wird auch die erste Seite schon gezeigt und das Laden wird im Hintergrund fortgesetzt. Jeder Computer im Raum lädt immer nur die Daten für eine Aufgabe. Obwohl theoretisch ein Browser mehrere Aufgaben gleichzeitig laden könnte, wird das unterbunden, damit sich einzelne Computer nicht vordrängeln und die anderen ausbremsen. Ein Computer, der später mit dem Herunterladen startet, wäre sonst erstmal blockiert bis die anderen fertig sind.
+Mit Klick auf die Schaltfläche des Testheftes werden alle Testinhalte geladen. Sobald möglich wird auch die erste Seite schon gezeigt und das Laden wird im Hintergrund fortgesetzt. Jeder Computer im Raum lädt immer nur die Daten für eine Aufgabe. Obwohl theoretisch ein Browser mehrere Aufgaben gleichzeitig laden könnte, wird dies unterbunden, damit sich einzelne Computer nicht vordrängeln und andere ausbremsen. Ein Computer, der später mit dem Herunterladen startet, wäre sonst erstmal blockiert bis andere fertig sind.
 
 Während des Tests werden keine weiteren Inhalte vom Server geladen, sondern nur die Antworten gespeichert.
 
-Die Navigation erfolgt rechts oben für die Aufgaben, und sollte eine Aufgabe aus mehreren Seiten bestehen, dann kann man rechts unten mit entsprechenden Schaltern blättern.
+Die Aufgabennavigation erfolgt rechts oben. Sollte eine Aufgabe aus mehreren Seiten bestehen, dann kann man rechts unten mit entsprechenden Schaltern blättern. Manchmal ist die Bearbeitungszeit begrenzt, dann werden rechtzeitig (5 min und 1 min vor Ende) Hinweise eingeblendet.
 
-Sollte es mal technische Probleme mit dem Computer geben (z. B. Audio-Buchse defekt), dann kann man jederzeit den Browser schließen und den Test auf einem anderen Computer neu starten. Die schon gegebenen Antworten werden geladen.
+Sollten technische Probleme mit dem Computer auftreten (z. B. Audio-Buchse defekt), dann kann jederzeit der Browser geschlossen und der Test auf einem anderen Computer neu gestartet werden. Die schon gegebenen Antworten werden geladen.
+
+## Steuerung durch Testleitungskonsole
+
+Die Testleitung hat eventuell mittels separater Anmeldung die sog. Testleitungskonsole gestartet. Das kann dazu führen, dass bswp. für eine Ansage die Bearbeitung für alle gestoppt wird und erst einmal nichts mehr beantwortet werden kann. Später wird eventuell eine Fortsetzung mit einer ganz anderen Aufgabe erzwungen. Es wird dann bspw. auch bemerkt, wenn ein anderes Browserfenster geöffnet wird.
+
+## Test oder Befragung beenden
+
+Die Beantwortung kann jederzeit beendet werden. Die Antworten werden stets sofort gespeichert und es ist hierfür kein Kommando erforderlich. Manchmal gibt es am Ende einen Schalter "Test beenden" oder "Befragung verlassen". Dann kehrt man zur Auswahl des Testheftes zurück.
 
 ---
 
@@ -211,35 +224,38 @@ Sollte es mal technische Probleme mit dem Computer geben (z. B. Audio-Buchse def
 
 # 2.3 Portal zur Verwaltung
 
-Auf einem Testcenter müssen die Inhalte für Tests geladen werden und es muss einen Weg geben, die Antworten zu erhalten. Für diese Aufgaben ist ein Verwaltungsportal eingerichtet. Die Verantwortlichen für eine Studie melden sich am Testsystem an derselben Stelle an, wo auch eine Testperson sich anmelden würde. Das System erkennt, dass die Anmeldedaten zu einem Konto für die Verwaltung gehören und lädt entsprechend die Funktionen dafür.
+In das **Testcenter** müssen die Inhalte für Tests geladen werden und es muss einen Weg geben, die Antworten zu erhalten. Für diese Aufgaben ist ein Verwaltungsportal eingerichtet. Die Verantwortlichen für eine Studie melden sich am Testsystem an derselben Stelle an, an welcher sich auch die Testperson anmelden würde. Das System erkennt, dass die Anmeldedaten zu einem Konto für die Verwaltung gehören und lädt entsprechend die Funktionen dafür.
 
 ## Arbeitsbereich
 
 Damit mehrere Studien gleichzeitig auf einem Testsystem durchgeführt bzw. vorbereitet werden können, sind sog. Arbeitsbereiche vorbereitet. Die Benennung richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch". Für jedes Verwaltungskonto ist festgelegt, welche Arbeitsbereiche eingesehen (Nur-Lese-Modus) bzw. geändert werden können (Lesen-Und-Schreiben-Modus).
 
-Nach der Anmeldung präsentiert das System eine Liste aller Arbeitsbereiche, auf die die Person mit den Anmeldedaten Zugriff hat. Mit Klick auf einen Schalter wird der Arbeitsbereich geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
+Nach der Anmeldung präsentiert das System eine Liste aller Arbeitsbereiche, die für diese Person freigegeben sind. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
 
-Der Arbeitsbereich hat drei Grundfunktionen, die man mit Klick oben auf den entsprechenden Tab auswählt: Dateien, System-Check Berichte und Ergebnisse/Antworten.
+Der Arbeitsbereich hat drei Grundfunktionen. Diese können mit einem Klick auf den entsprechenden Tab ausgewählt werden:
+* Dateien
+* System-Check Berichte
+* Ergebnisse/Antworten
 
 ### Tab Dateien
 
-Alle Testinhalte und Definitionen eines Tests bzw. einer Befragung werden über Dateien in das System hochgeladen. Sie müssen also ersteinmal auf dem eigenen Computer vorbereitet werden, z. B. über einen Download aus einer anderen Webanwendung (Units). Meist handelt es sich um XML-Dateien, die einer fest vorgeschriebenen Syntax folgen und aus denen das Testsystem alle notwendigen Informationen liest. Die Bedeutung der Dateien entnehmen Sie bitte den anderen Kapiteln dieses Wikis.
+Alle Testinhalte und Definitionen eines Tests bzw. einer Befragung, werden über Dateien in das System hochgeladen. Sie müssen also erst einmal auf dem eigenen Computer vorbereitet werden (bspw. über einen Download aus einer anderen Webanwendung (Units)). Meist handelt es sich um XML-Dateien, die einer fest vorgeschriebenen Syntax folgen und aus denen das Testsystem alle notwendigen Informationen liest. Die Bedeutung der Dateien sind den Einzeldokumenten in dieser Wiki zu entnehmen.
 
-Sobald eine Datei hochgeladen ist, ist sie wirksam. D. h. unmittelbar nachdem eine Datei mit Login-Daten hochgeladen wurde, kann sich eine Testperson mit diesen Daten anmelden. Sollte man feststellen, dass eine Unit Fehler enthält, kann man die Unit-Datei neu hochladen. Durch das Überschreiben wird sofort jeder danach gestartete Test die neue Unit verwenden.
+Sobald eine Datei hochgeladen ist, ist sie wirksam. D. h. unmittelbar nachdem eine Datei mit Login-Daten hochgeladen wurde, kann sich eine Testperson mit diesen Daten anmelden. Sollte man feststellen, dass eine Unit Fehler enthält, kann man die Unit-Datei überarbeiten und erneut in das **Testcenter** laden. Jeder danach gestartete Test, wird dann die neue Unit verwenden.
 
-Beim Hochladen werden die XML-Dateien geprüft. Eine Datei kann abgewiesen werden, wenn sie syntaktisch oder inhaltlich fehlerhaft ist. Z. B. wird eine Testtaker-Datei abgewiesen, wenn sie Anmeldedaten enthält, die bereits in einem anderen Arbeitsbereich verwendet wurden. Es wird auch eine Booklet-Datei abgewiesen, wenn sie auf Units verweist, die nicht im Arbeitsbereich gefunden wurden. Daher spielt die Reihenfolge des Hochladens eine Rolle.
+Beim Laden in das **Testcenter** werden die XML-Dateien geprüft. Eine Datei kann abgewiesen werden, wenn sie syntaktisch oder inhaltlich fehlerhaft ist. Z. B. wird eine Testtaker-Datei abgewiesen, wenn sie Anmeldedaten enthält, die bereits in einem anderen Arbeitsbereich verwendet wurden. Es wird auch eine Booklet-Datei abgewiesen, wenn sie bspw. auf Units verweist, die nicht im Arbeitsbereich gefunden wurden. Daher spielt die Reihenfolge des Hochladens eine wichtige Rolle.
 
 ### Tab System-Check Berichte
 
-Hier können die Berichte, die über einen System-Check dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
+Hier können die Berichte, die über einen System-Check abgeschickt wurden, heruntergeladen werden.
 
 ### Tab Ergebnisse/Antworten
 
-Hier können Antworten und Logs, die über die Tests bzw. Befragungen dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
+Hier können Antworten und Logs, die über die Tests bzw. Befragungen innerhalb dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
 
 ## System-Admin
 
-Wenn das eigene Verwaltungskonto die Markierung "System-Administration" hat, dann wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet, mit dem man in die Systemverwaltung kommt. Hierüber werden die Nutzerkonten angelegt (Benutzername und Kennwort), die Arbeitsbereiche angelegt sowie die Rechte vergeben, wer auf welchen Arbeitsbereich zugreifen kann.
+Wurden Ihnen admministrative Rechte zugewiesen, wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet. Über diesen Schalter gelangen Sie zur Systemverwaltung. Dort können Nutzerkonten (Benutzername und Kennwort) und Arbeitsbereiche angelegt werden. Auch der Zugriff auf diese Arbeitsbereiche kann für die jeweiligen Personenkreise festgelegt werden.
 
 ---
 
@@ -264,11 +280,16 @@ Wenn das eigene Verwaltungskonto die Markierung "System-Administration" hat, dan
 
 # 2.4 Testinhalte hochladen
 
-Wie in der [Einführung](2.1-Daten-und-Prozesse) erläutert, besteht die Definition eines Tests oder einer Befragung aus dem Hochladen spezieller Dateien. Die Verwaltung der Dateien erfolgt im [Verwaltungsportal](2.3-Portal-zur-Verwaltung). Die folgende Darstellung zeigt die Zusammenhänge der Dateien untereinander: Units definieren jeweils eine Aufgabe bzw. eine Seite, Booklets definieren die Aneinanderreihung der Aufgaben und Logins definieren den Zugriff einer Testperson auf ein Booklet.
+Wie im Abschnitt [Daten und Prozesse](2.1-Daten-und-Prozesse) beschrieben, besteht die Definition eines Tests oder einer Befragung aus speziellen Dateien, welche in das **Testcenter** geladen werden müssen. Die Verwaltung der Dateien erfolgt dabei im [Verwaltungsportal](2.3-Portal-zur-Verwaltung). Die Dateien weisen dabei untereinander Abhängigkeiten auf. Diese sind grob:
+
+* Units definieren jeweils eine Aufgabe bzw. eine Seite
+* Booklets definieren die Anordnung der Units
+* Logins definieren den Zugriff einer Testperson auf ein Booklet.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Upload_Ablauf_final.png)
 
 Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
+
 * [Allgemeine Hinweise für die Bearbeitung von XML-Dateien](Arbeiten-mit-Xml%E2%80%90Dateien)
 * Units: 
   * [Bearbeiten der XML-Datei](Unit%E2%80%90Xml)
@@ -283,15 +304,17 @@ Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
 
 **Empfehlung: Verweis zur Validierung**
 
-Eventuell wird nach dem Hochladen in das Testcenter eine Warnung "File has no link to XSD-Schema..." angezeigt. Diese Warnung bedeutet, dass die Xml-Datei keinen expliziten Verweis auf eine Xsd-Datei enthält. Eine solche Xsd-Datei definiert die möglichen Elemente und Attribute einer Xml-Datei und kann daher zur Prüfung der Xml-Datei auf Korrektheit verwendet werden. Das IQB stellt solche Xsd-Dateien bereit. 
+Eventuell wird nach dem Hochladen in das Testcenter eine Warnung "File has no link to XSD-Schema..." angezeigt. Diese Warnung bedeutet, dass die XML-Datei keinen expliziten Verweis auf eine XSD-Datei enthält. Eine solche XSD-Datei definiert die möglichen Elemente und Attribute einer XML-Datei und kann daher zur Prüfung der XML-Datei verwendet werden. Das IQB stellt solche XSD-Dateien bereit. 
 
-Die Deklaration der Xsd-Datei erfolgt im Haupt-Element einer Xml-Datei. Für die Unit-Xml heißt das Hauptelement `Unit` und muss folgendermaßen geändert werden:
+Die Deklaration der XSD-Datei erfolgt im Haupt-Element einer XML-Datei. Für die Unit-XML heißt das Hauptelement `Unit` und muss folgendermaßen geändert werden:
+
 ```
 <Unit 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Unit.xsd">
 ```
-Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von Xml-Dateien (z. B. Notepad++, Sublime) nun eine Validierung vornehmen können. Man kann also vor dem Hochladen eine Validierung bereits beim Schreiben einer Xml-Datei vornehmen lassen.
+
+Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von XML-Dateien (z. B. Notepad++, Sublime) nun eine Validierung vornehmen können. Man kann also bereits vor dem Hochladen eine Validierung bereits beim Schreiben einer XML-Datei vornehmen lassen.
 
 ---
 
@@ -316,13 +339,13 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 
 # 2.5 Ergebnisse herunterladen
 
-Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Testcenter** in dem Arbeitsbereich gespeichert in dem auch die Testdateien für den Test geladen wurden.
+Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Testcenter** in dem Arbeitsbereich gespeichert, in den auch die Testdateien für den Test geladen wurden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Ergebnisse_final.png)
 
-> **Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den Modi: 'run-hot-return' und 'run-hot-restart' statt!**
+> **Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den beiden Modi: 'run-hot-return' und 'run-hot-restart' statt!**
 
-Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als csv-Dateien gespeichert und können im Sinne einer besseren Übersichtlichkeit mit dem IQB Tool **itc-Toolbox** in eine xlsx-Datei gewandelt werden. Mehr dazu erfahren Sie auch in dem folgenden [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Antworten-und-Logs).
+Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als CSV-Dateien gespeichert und können im Sinne einer besseren Übersichtlichkeit mit dem IQB Tool **itc-Toolbox** in eine XLSX-Datei gewandelt werden. Mehr dazu erfahren Sie auch in dem folgenden [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Antworten-und-Logs).
 
 ---
 
@@ -347,26 +370,18 @@ Die Ergebnisse können mittels der üblichen Browserfunktionalitäten herunterge
 
 # 2.6 Player Testwiedergabe (Verona)
 
-```yaml
-
-Dokumentstatus: Entwurf
-Stand: 02.08.2021
-todo:
-
-```
-
-Das Testcenter ist modular aufgebaut. Es besteht zum einen aus der eigentlichen Webanwendung und einem Player, welcher in die Webanwendung integriert ist. Der Player ist ein Stück Software und übernimmt die Wiedergabe der Aufgaben und visualisiert diese. Er verfügt des Weiteren über entsprechende Schnittstellen über die er mit dem **Testcenter** verbunden ist. So kann der Player bspw. Aktionen innerhalb des Playerbereiches (der Testseite) aufzeichnen. Zu diesen Aktionen gehören bspw. das Setzen von Anwortoptionen, das Scrollen zum Seitenende, die Verweildauer auf einer Testseite und einige mehr. Der Player trägt mit seinen Schnittstellen also erheblich zur Auswertungsmöglichkeit eines Tests bei. 
+Das Testcenter ist modular aufgebaut. Es besteht aus der eigentlichen Webanwendung und einem Player. Letzterer ist dabei in die Webanwendung eingebettet. Der Player ist ein Stück Software und übernimmt die Wiedergabe der Aufgaben. Er verfügt des Weiteren über entsprechende Schnittstellen, die ihn mit dem **Testcenter** verbinden. So kann der Player bspw. Aktionen innerhalb einer Aufgabe aufzeichnen. Zu diesen Aktionen gehören bspw. das Setzen von Anwortoptionen, das Scrollen zum Seitenende, die Verweildauer auf einer Testseite und einige mehr. Der Player trägt mit seinen Schnittstellen also auch erheblich zur Auswertungsmöglichkeit eines Tests bei. 
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Bereich_Player_final.png)
 
 **Rot markiert:**<br>
-Bereich der Webanwendung zur Steuerung des Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
+Bereich der Webanwendung zur Steuerung eines Tests mittels Funktionsschaltknöpfen und Informationen zum Test.
 
 **Blau markiert:**<br>
-Bereich des Players zur Wiedergabe der Aufgabe.
+Bereich des Players zum Abspielen einer Aufgabe.
 
-Der Vorteil dieser Aufteilung besteht hauptsächlich darin:<br>
-Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten Testcenter angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
+Welche Vorteile bietet diese Aufteilung?<br>
+Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten **Testcenter** angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
 
 > **Weitere Informationen zu den angebotenen Playern finden Sie auch in den gleichnamigen Einzeldokumenten unter "Direkt zu anderen Seiten".**
 
@@ -396,34 +411,34 @@ Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter n
 ## Was ist ein System-Check?
 
 Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen 
-Online-Test nicht geeignet ist. Der System-Check ist ein Weg, vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen 
-und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall- und damit die Frustrate deutlich senken.
+Online-Test nicht geeignet ist. Der System-Check ist ein Weg vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen 
+und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall-/ und damit die Frustrate deutlich senken.
 
 ## Planung
 
-Nach dem Einrichten eines Systemchecks erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. 
-Man kann alle Interessierten einladen, darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von 
-Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen folgende Optionen zur Verfügung:
+Nach dem Einrichten eines System-Check erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. 
+Man kann alle Interessierten einladen darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von 
+Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen die folgenden Optionen zur Verfügung:
 
 * Probeweises Aufrufen einer Testaufgabe: Eine speziell dafür entwickelte Testaufgabe wird gezeigt und man kann die Bearbeitungselemente auswählen,
   ändern und so prüfen, ob die Aufgabenelemente wie erwartet funktionieren.
 * Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. 
-  Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (wurde die Audio-Datei abgespielt? 
+  Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (Wurde die Audio-Datei abgespielt?;
   Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden 
-  (wieviele Plätze sind im PC-Lab?, Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?, Gibt es ein Whiteboard? usw.)
+  (Wieviele Plätze sind im PC-Lab?; Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?; Gibt es ein Whiteboard? usw.)
 * Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. 
-  Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung, anhand der die Zuordnung der Daten z. B. 
-  zu einer bestimmten Schule möglich ist.
+  Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung anhand derer die Zuordnung der Daten z. B. 
+  zu einer bestimmten Schule möglich wird.
 
 ### XML-Definition schreiben
 
 Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
-VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das Testcenter zu laden. 
-Nach Abmeldung am Testcenter ist dann ein Schalter auf der rechte Seite des Testcenters mit dem Namen: System-Check zu finden. Die Berichte des System-Checks können nach Abschluss in diesem Arbeitsbereich gespeichert werden.
+VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das **Testcenter** zu laden. 
+Nach Abmeldung am **Testcenter** ist dann ein Schalter auf der rechte Seite des Testcenters mit dem Namen: System-Check zu finden. Die Berichte des System-Checks können nach Abschluss in diesem Arbeitsbereich gespeichert werden.
 
 Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parameter können den Bedürfnissen entsprechend angepasst werden.
 
-> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heisst: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
+> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heißt: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -465,22 +480,22 @@ Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parame
 </SysCheck>
 ```
 
-Die XML-Datei sollte man mit einem Editor bearbeiten, der zumindest eine Validierung vornehmen kann. 
-Das bedeutet, dass nicht nur die allgemeine Syntax geprüft wird (stets schließende Tags, keine Leerzeichen 
-vor/hinter einem Attribut usw.), sondern nur Elemente und Attribute akzeptiert werden, die in einer System-Check-XML erlaubt sind. 
-Dazu muss der Editor die Schemadatei kennen. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
+Die XML-Datei sollte mit einem Editor bearbeitet werden, der zumindest eine Validierung vornehmen kann. 
+Dies bedeutet: Es wird nicht nur die XML-Syntax geprüft (beginnende und schließende Tags, keine Leerzeichen 
+vor/hinter einem Attribut usw.), sondern auch ob die verwendeten Elemente und Attribute in dieser System-Check-XML erlaubt sind. 
+Dazu muss im Editor der Pfad zur jeweiligen Schemadatei angegeben werden. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
 Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung. Weitere Informationen dazu finden Sie auch in den Einzeldokumenten [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Arbeiten-mit-Xml%E2%80%90Dateien)
 
 #### Metadaten
 
-Zur Kennzeichnung und Beschreibung der Datei sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung auch der 
-Berichte, letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen, verschiedene Versionen eines 
-Systemchecks zu unterscheiden.
+Zur Kennzeichnung und Beschreibung der Datei, sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung, auch der 
+Berichte. Letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen verschiedene Versionen eines 
+System-Check zu unterscheiden.
 
 #### Netzwerkverbindung
 
 Die Angaben in den Bereichen `UploadSpeed` und `DownloadSpeed` sind rein technischer Natur und sollten nur angepasst werden, 
-wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team nach!
+wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team ab!
 
 #### Unit
 
@@ -488,8 +503,8 @@ Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach de
 Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. 
 Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt.
 
-Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Außerdem ist der in der Unit-Definition genannte 
-Player im Arbeitsbereich bereitzustellen.
+Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Der in der Unit-Definition genannte 
+Player, muss dann auch im Arbeitsbereich zur Verfügung gestellt werden.
 
 ## Bericht speichern
 
@@ -497,7 +512,7 @@ Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die 
 
 ## Ergebnisse herunterladen
 
-Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen diese Ergebnisse in Form einer csv-Datei in dem Arbeitsbereich in den die System-Check Xml-Definition geladen wurde. Die csv-Datei ist dann im jeweiligen Arbeitsbereich unter dem Tab: System-Check Berichte zu finden und kann dort mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Da eine csv-Datei nicht sehr gut lesbar ist, kann diese Datei auch in eine xlsx-Datei gewandelt werden. Dies kann mit dem IQB Tool **Itc-Toolbox** erfolgen. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc-Toolbox:-SysCheck).
+Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen diese Ergebnisse in Form einer CSV-Datei in dem Arbeitsbereich in den die System-Check Xml-Definition geladen wurde. Die CSV-Datei ist dann im jeweiligen Arbeitsbereich unter dem Tab: System-Check Berichte zu finden und kann dort mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Da eine CSV-Datei nicht sehr gut lesbar ist, kann diese Datei auch in eine XLSX-Datei gewandelt werden. Dies kann mit dem IQB Tool **Itc-Toolbox** erfolgen. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc-Toolbox:-SysCheck).
 
 ---
 
@@ -556,7 +571,7 @@ Die Testleitungskonsole wird mittels **Testtakers.xml** eingerichtet. Diese geh�
 </Testtakers>
 ```
 
-Zum Einrichten der Testleitungskonsole wird ein Login mit dem Modus:`monitor-group` in der zu beobachtenden Gruppe angelegt.In diesem Fall befindet sich der Login mit diesem Modus in der Group: Testgruppe_1. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen die sich in dieser Testgruppe_1 befinden. Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das Testcenter zu laden.
+Zum Einrichten der Testleitungskonsole wird ein Login mit dem Modus:`monitor-group` in der zu beobachtenden Gruppe angelegt. In diesem Fall befindet sich der Login mit diesem Modus in der Group: Testgruppe_1. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen, die sich in dieser Testgruppe_1 befinden. Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das **Testcenter** zu laden.
 
 >Der oben gezeigte Code ist nur ein Bsp.! Es können weitere Gruppen, Testpersonen etc. angelegt werden und für jede dieser Gruppen kann ein eigener Testmonitor angelegt werden!
 
@@ -564,7 +579,7 @@ Weitere Informationen zur Konfiguration der **Testtaker.xml** finden Sie auch [h
 
 ## Starten der Testleitungskonsole
 
-Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am Testcenter erfolgen. Anschließend sind die Zugangsdaten zu verwenden, welche als Login für die Testleitungskonsole (`monitor-group`) in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
+Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am **Testcenter** erfolgen. Anschließend sind die Zugangsdaten zu verwenden, welche als Login für die Testleitungskonsole (`monitor-group`) in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
 
 Nach der Anmeldung kann die Gruppe, welche dieser Testleitungskonsole zugeordnet ist, ausgewählt werden.
 
@@ -576,13 +591,13 @@ Nachdem die gewünschte Gruppe gewählt wurde (in diesem Fall gibt es nur eine G
 
 ### Was ist nun zu sehen?
 
-Nachfolgend erfolgt eine Auflistung, welche Bestandteile resultierend aus der Konfiguration der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
+Nachfolgend erfolgt eine Auflistung der Bestandteile, welche resultierend aus der Konfiguration der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
 
 * die beobachtete Gruppe -> Dieser Name wurde über das Group Label gesetzt. In diesem Fall Gruppe 1.
 * Benutzername der Testleitungskonsole -> Dieser Name wurde über den Login Namen der `monitor-group` gesetzt.
 * die Testpersonen -> Diese Namen wurden über die Login Namen innerhalb der zu überwachenden Gruppe gesetzt.
 
-Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einblick  in die **Booklet.xml** genommen werden, die zusammen mit der **Testtakers.xml** und den **Unit.xml`s** für dieses Bsp. in das Testcenter geladen wurde.
+Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einblick  in die **Booklet.xml** genommen werden, die zusammen mit der **Testtakers.xml** und den **Unit.xml`s** für dieses Bsp. in das **Testcenter** geladen wurde.
 
 >Es wird nur der Code innerhalb der **Booklet.xml** aufgezeigt der für die Beschreibung notwendig ist!
 
@@ -618,24 +633,24 @@ Das gelb markierte Symbol entspricht dem Testlet: Examples. Die enthaltende Zahl
 
 ## Arbeiten mit der Testleitungskonsole
 
-Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung, ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich. Über das kleine Zahnradsymbol oben rechts, kann die Ansicht individuell angepasst werden. Es können weitere Informationen ein- oder ausgeblendet werden. 
+Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich. Über das kleine Zahnradsymbol oben rechts, kann die Ansicht individuell angepasst werden. Es können weitere Informationen ein- oder ausgeblendet werden. 
 
 > **Ablauf, Struktur und Kontrolle eines Tests können von den Verantwortlichen individuell gestaltet werden.<br> 
 An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden! Die Durchführung sollte genauestens geplant und überdacht sein, um einen reibungslosen Ablauf und repräsentative Ergebnisse zu gewährleisten.**
 
 In diesem Bsp. hat sich nur  Testperson c angemeldet und befindet sich in der Unit 1 innerhalb des Testlets.<br>
-Testperson_a hat seinen Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt, auch zu sehen an dem kleinen Schlosssymbol.
+Testperson_a hat seinen Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt. Dies ist auch zu sehen an dem kleinen Schlosssymbol.
 Durch markieren einer Testperson, kann der Ablauf für diese Testperson mithilfe der Steuersymbole auf der linken Seite gesteuert werden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
 > **Werden mehrere Testhefte mit ähnlicher Struktur verwendet, ist es eventuell nicht möglich alle Testpersonen gleichzeitig zu steuern. In diesem Fall müssen die zu steuernden Testpersonen einzeln markiert (Haken setzen vor der Testperson) und dann die Steuerbefehle (Pause, springe zu etc.) abgesetzt werden.**
 
-Die folgenden Stati können während eines Testablaufs angezeigt werden (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
+Die folgenden Status können während eines Testablaufs angezeigt werden (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
-Weitere detailierte Informationen zu den den Stati finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
+Weitere detailierte Informationen zu den Status finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
 
 ---
 
