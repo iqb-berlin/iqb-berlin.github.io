@@ -1,11 +1,13 @@
 # 1. Einführung
 
-### Zum Begriff TBA
+## Zum Begriff TBA
+
 TBA steht für Technology Based Assessment, also technologie- oder technikbasiertes Testen. Damit ist nicht nur der Computer als Testinstrument gemeint, sondern auch andere digitale Hilfsmittel wie z. B. Stifte, die beim Schreiben scannen. Am IQB wird zur Zeit nur der Computer (Desktop, Tablet, Notebook) als Medium eingesetzt. Daher kann man CBA - Computer Based Assessement - hier als Synonym betrachten für TBA. Andere Begriffe wie Digital Assessment sind ebenfalls zutreffend.
 
 ## Projektbezug
+
 Nach zahlreichen Vorarbeiten arbeitet das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de)
-seit 2018 gezielt im Auftrag der Ländern an der Umstellung der papierbasierten Kompetenzerhebung auf eine technologiebasierte Durchführung. 
+seit 2018 gezielt im Auftrag der Länder an der Umstellung der papierbasierten Kompetenzerhebung auf eine technologiebasierte Durchführung. 
 Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte [den TBA-Projektseiten des IQB](https://www.iqb.hu-berlin.de/tba/)!
 
 Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Kompetenzerhebung
@@ -37,7 +39,7 @@ seitens des IQB zum Einsatz kommen.
 
 ## IQB-Anwendungen 
 
-Einen groben Überblick der Testsysteme und deren Zusammenwirken verschafft auch dieses Video:
+Einen groben Überblick der Testsysteme und deren Zusammenwirken verschafft auch dieses Video: 
 * [Einführung in die IQB TBA-Systeme](https://box.hu-berlin.de/f/8bd6e578d5d94780b0b6/)
 
 ![iqb applications: testcenter, teststudio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
@@ -46,9 +48,9 @@ Einen groben Überblick der Testsysteme und deren Zusammenwirken verschafft auch
 
 Das **Teststudio** besteht vereinfacht ausgedrückt aus einer Datenbank und einer Benutzeroberfläche.
 Letztere kann mittels einer Adresse in einem Internetbrowser geöffnet werden. Anschließend erfolgt eine Anmeldung mit den entsprechenden 
-Zugangsdaten. In die Benutzersoberfläche ist ein Editor eingebettet, mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests 
-(Units) bearbeitet und erstellt werden können. Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben entnehmen Sie bitte dem Kapitel:
-**Teststudio**. Nach finaler Editierung der Aufgaben generiert das **Teststudio** die Einheiten eines Kompetenztests 
+Zugangsdaten. In die Benutzeroberfläche ist ein Editor eingebettet, mit dessen Hilfe die interaktiven Einheiten eines Kompetenztests 
+(Units) bearbeitet und erstellt werden können. Nähere Informationen zur Bearbeitung und Erstellung von Aufgaben sind dem Kapitel:
+**Teststudio** zu entnehmen. Nach finaler Editierung der Aufgaben erzeugt das **Teststudio** die Einheiten eines Kompetenztests 
 (Units und weitere für den Test erforderliche Dateien) in einem komprimierten Dateiformat (Zip-Datei). Die Einheiten können bei Bedarf 
 nachträglich bearbeitet und an die entsprechende Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** 
 geladen und wiedergegeben werden.
@@ -59,17 +61,15 @@ geladen und wiedergegeben werden.
 
 Mit dieser Anwendung werden Kompetenztests durchgeführt und von den Testorganisator\*innen in den Abläufen getestet. Das **Testcenter**
 besteht wieder vereinfacht ausgedrückt aus einer Datenbank und einer Benutzeroberfläche. Letztere wird mittels Adresseingabe in einem 
-Internetbrowser geöffnet. Nach Anmeldung mit den entsprechenden Zugangsdaten, können die zuvor im **Teststudio** generierten Einheiten 
-eines Tests geladen, gelöscht oder bestehende Dateien heruntergeladen werden. Die Einheiten, Metadaten und Konfigurationen des Tests werden 
-dabei in der Datenbank gespeichert und verwaltet. Reihenfolgen, Bezeichnungen, Strukturen und Abläufe des Kompetenztests, können mittels 
-Bearbeitung bestimmter Testeinheiten (Testdateien) beinflusst werden. Die Änderungen können dann von den Testorganisator\*innen in 
-Probedurchläufen im **Testcenter** begutachtet werden. Dies trägt zu einem gesicherten Ablauf des finalen Tests bei.
+Internetbrowser geöffnet. Nach Anmeldung mit den entsprechenden Zugangsdaten unterscheidet das System zwischen Testperson (die Aufgaben/Seiten werden zur Bearbeitung präsentiert) und Verwaltung (die zuvor im **Teststudio** generierten Einheiten 
+eines Tests werden geladen, gelöscht oder Antwortdaten heruntergeladen). Die Einheiten, Metadaten und Konfigurationen des Tests, sowie die gegebenen Antworten, werden dabei in der Datenbank gespeichert und verwaltet.
+
 Mehr zum Thema **Testcenter** erfahren Sie im gleichnamigen Kapitel.
 
 #### IQB-Kodierbox
 
-Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechen ihrer Rolle Funktionen wie Kodieren, 
-Verifizieren, beschreibende Statistik abrufen oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich 
+Die Antworten müssen geprüft und aufbereitet werden. Hierzu stehen für die Beteiligten entsprechend ihrer Rolle Funktionen wie Kodierung, 
+Verifizierung, beschreibende Statistik oder Export als Excel-Datei zur Verfügung. Aus den aufbereiteten Daten werden schließlich 
 die gewünschten Ergebnisse der Unternehmung erzeugt: Berichte, Publikationen, Rückmeldungen an Schulen.
 
 > **Diese Web-Anwendung ist noch im Entwurfsstadium. Die Aufbereitung der Ergebnisse wird derzeit durch die Windows-Anwendung `itc-Toolbox` unterstützt.**
@@ -171,34 +171,27 @@ Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt a
   </tr>
 </table>
 
----
-
-```yaml
-
-Dokumentstatus: Entwurf (TH 8.4.2021)
-Stand: 1.4.2021
-todo: - weitere wichtige Schlüsselthemen einbringen
-
-```
 ## <a name="backend"></a>Backend
 
-Als Backend wird der Teil einer Software bezeichnet, den Anwender\*innen in der Regel nicht sehen und somit auch nicht darauf zugreifen können. Man könnte es auch Unterbau oder Fundament einer Software ansehen. Die IQB-Testsysteme bestehen immer aus einem Backend und einem Frontend. Das Backend kann bspw. eine Datenbank sein, welche im Hintergund die im Frontend gemachten Angaben oder Daten speichert. Anwender\*innen enzieht sich dieser im Hintergrund laufende Prozess.
+Die Online-Programmierungen des IQB bestehen stets aus einer Serverkomponente ("Backend") und einer Clientkomponente ("Frontend"). Die Serverkomponente besteht aus Code, enthält aber auch eine Datenbank. Die Funktionen des Backends sind verdeckt: Anwender\*innen interagieren nur mit dem was im Browser geladen ist. Die Kommunikation mit dem Server (Anmeldeprozess, Holen von Daten, Speichern von Änderungen usw.) läuft im Hintergrund.
 
 ## <a name="frontend"></a>Frontend
 
-Als Frontend wird der Teil einer Software bezeichnet, der eine direkte Interaktion mit den Anwender\*innen ermöglicht. Es wird auch gerne von der Benutzeroberfläche oder Benutzerschnittstelle gesprochen. Die IQB Testsysteme bestehen immer aus einem Frontend und einem Backend. Wobei das Frontend die Eingabe bzw. Bearbeitung von Daten und die Wiedergabe von Inhalten ermöglicht, also eine Interaktion der Software gewährleistet.
+Die Online-Programmierungen des IQB bestehen stets aus einer Serverkomponente ("Backend") und einer Clientkomponente ("Frontend"). Die Clientkomponente ist der Programmcode, der beim Aufruf einer Seite in den Browser geladen wird und mit dem danach die Anwender\*innen interagieren. Das IQB gestaltet diese Seiten so, dass jeder Klick oder jede Eingabe zunächst durch Programmcode im Browser verarbeitet wird und erst später je nach Bedarf ein Datentransfer mit dem Server angestoßen wird. Diese Art Webanwendungen nennt man "Single Page Application", da ein Klick keine wirkliche Navigation im Sinne einer Webseite auslöst, sondern die Programmierung die Ansicht wechselt.
 
 ## <a name="player"></a>Player
 
-Player sind softwarebasierte Module, welche eingebettet in webbasierte Anwendung, betimmte Inhalte wiedergeben können. Das IQB setzt zur Wiedergabe einer Aufgabe einen eigens dafür entwickelten Player (Verona-Player) in den IQB Testsystemen ein. Dieser ist modular in die Testanwendungen intergriert und spielt die in einer Aufgabe enthaltenen Elemente ab. Außerdem stellt der Player bestimmte Schnittstellen zur Verfügung. Er "überwacht" bspw. die Aktivitäten (scrollen, Seitenwechsel, setzen von Antworten) der Testperson auf der Testseite und sendet diese Informationen über die Schnittstelle an das System in welches er eingebettet ist. So zum Einsatz kommt er in den Systemen: **Testcenter** und **Teststudio**. Im **Testcenter** spielt er die eigentlichen Aufgaben ab, im **Teststudio** spielt er während der Aufgabenentwicklung die Aufgaben im Vorschaumodus ab.
+Ein Player ist eine Html-Datei mit JavaScript-Programmierung. Diese wird in einer Webanwendung (z. B. Testcenter, Teststudio) für die Darstellung der Aufgaben / Units / Seiten verwendet. Das "Abspielen" der Unit deckt auch sämtliche Interaktionen der Testperson ab, z. B. Texteingaben. Zwischen Player und Webanwendung ist der Datenaustausch standardisiert (sog. Verona-Schnittstelle). Dadurch ist gesichert, dass die Antworten gespeichert werden.
+
+Die Trennung der Programmierung an dieser Stelle hat den großen Vorteil, dass sehr verschiedene Aufgabentypen in einem Test flexibel verwendet werden können. Von einfachen Formularen bis zu komplexen Zeichnungen können Aufgaben passend zu den Anforderungen gestaltet werden. Jede Verona-kompatible Webanwendung kann neue und exotische Aufgaben ohne eine Neuinstallation einsetzen. Es müssen nur jeweils zu den Aufgabendefinitionen passende Player bereitgestellt werden.
 
 ## <a name="responsivität"></a>Responsivität
 
-In der Webprogrammierung bezeichnet dieser Begriff die Fähigkeit einer Website auf unterschiedliche Bildschirmgrößen zu reagieren. Die Inhalte verhalten sich dynamisch und werden an die aktuelle Bildschirmauflösung angepasst (skaliert).
+In der Webprogrammierung bezeichnet dieser Begriff die Fähigkeit einer Website auf unterschiedliche Bildschirmgrößen zu reagieren. Die Inhalte verhalten sich dynamisch und werden an die aktuelle Bildschirmauflösung angepasst (skaliert). Bei Webanwendungen für Kompetenztests spielt die Steuerung dieser Anpassung eine große Rolle, da sie großen Einfluss auf die Antworten hat.
 
 ## <a name="testheft"></a>Testheft / Booklet / Testablauf / Aufgabenfolge
 
-Für die Testdurchführung ist es notwendig, die Abfolge der Aufgaben/Seiten/Units festzulegen. Es können außerdem Festlegungen getroffen wie
+Für die Testdurchführung ist es notwendig die Abfolge der Aufgaben/Seiten/Units festzulegen. Es können außerdem Festlegungen getroffen werden wie
 * Zeitbeschränkung: Die Testperson hat nur eine bestimmte Zeit für die Beantwortung
 * Freigabewort: Die Navigation wird erst erlaubt, wenn ein (von der Testleitung angesagtes) Codewort eingegeben wird. Darüber kann der Testablauf innerhalb einer Testgruppe (Klasse) zeitlich synchronisiert werden.
 * Bedingte Fortsetzung/Filterführung: Nur bei bestimmten Antworten ist die Navigation insgesamt oder zu bestimmten Testblöcken erlaubt.
@@ -209,19 +202,21 @@ Mit diesen Begriffen wird die Person bezeichnet, die als Endzweck der Studie bef
 
 ## <a name="unit"></a>Unit / Aufgabe / Seite
 
-Eine Frage an die Testperson ist stets auf einer Seite platziert. Es ist nun meist nicht ökonomisch, nur eine Frage pro Seite vorzusehen, d. h. man gruppiert mehrere Fragen zusammen auf eine Seite. Es gibt noch weitere Seitenelemente, z. B. Fotos oder Sachtexte, die gleichzeitig zu den Fragen präsentiert werden sollen. In den IQB-Anwendungen nennen wir eine solche Gruppe von Elementen, die stets zusammen der Testperson präsentiert werden sollen, eine *Unit*. Diese Unit wird als Ganzes entwickelt, also in den Anwendungen als ein Paket editiert, importiert, exportiert usw. 
+Eine Frage an die Testperson ist stets auf einer Seite platziert. Es ist nun meist nicht ökonomisch nur eine Frage pro Seite vorzusehen, besser man gruppiert mehrere Fragen zusammen auf eine Seite. Es gibt noch weitere Seitenelemente, z. B. Fotos oder Sachtexte, die gleichzeitig zu den Fragen präsentiert werden sollen. In den IQB-Anwendungen nennen wir eine solche Gruppe von Elementen, die stets zusammen mit der Testperson präsentiert werden sollen, eine *Unit*. Diese Unit wird als Ganzes entwickelt, also in den Anwendungen als ein Paket editiert, importiert, exportiert usw..
 
-Es kann sich bei der Unit um eine einzelne *Seite nur mit Text* handeln - dann dient die Unit z. B. als Begrüßungsseite am Beginn des Tests oder als Ankündigung von Hörverstehensaufgaben mit der Aufforderung, die Kopfhörer aufzusetzen. Es können auch Frage-Elemente enthalten sein, deren Antworten für Kompetenztests ausgewertet werden - dann kann man die Unit eine *Aufgabe* nennen. Sollte es sich nicht um einen Kompetenztest, sondern um eine Befragung handeln, dann wird die Unit vielleicht *Abschnitt* genannt, denn es sind hier keine Aufgaben zu lösen.
+Es kann sich bei der Unit um eine einzelne *Seite nur mit Text* handeln - dann dient die Unit z. B. als Begrüßungsseite am Beginn des Tests oder als Ankündigung von Hörverstehensaufgaben mit der Aufforderung bspw. die Kopfhörer aufzusetzen. Es können auch Frage-Elemente enthalten sein, deren Antworten für Kompetenztests ausgewertet werden - dann kann man die Unit eine *Aufgabe* nennen. Sollte es sich nicht um einen Kompetenztest, sondern um eine Befragung handeln, dann wird die Unit vielleicht *Abschnitt* genannt, denn es sind hier keine Aufgaben zu lösen.
 
-Innerhalb einer Unit kann es sinnvoll sein, die Frage-Elemente auf mehrere Seiten zu verteilen. Z. B. soll ein Lesetext links ständig zu sehen sein, und rechts sollen nach und nach Seiten mit Fragen dazu präsentiert werden. Im Schulkontext ist dies weit verbreitet. In diesem Fall gibt es für den Gesamttest eine Navigation zwischen den Units, und innerhalb einer Unit außerdem eine Navigation zwischen den Seiten einer Unit.
+Innerhalb einer Unit kann es sinnvoll sein die Frage-Elemente auf mehrere Seiten zu verteilen. Bspw. soll ein Lesetext links ständig zu sehen sein, und rechts sollen nach und nach Seiten mit Fragen dazu präsentiert werden. Im Schulkontext ist dies weit verbreitet. In diesem Fall gibt es für den Gesamttest eine Navigation zwischen den Units und innerhalb einer Unit, außerdem eine Navigation zwischen den Seiten einer Unit.
 
 ## <a name="verona"></a>Verona
 
-Lernstandserhebungen in den Ländern gibt es papierbasiert seit 2003. Diese Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Aus der Verbindung mit "Online" wurde dann die Bezeichnung "Verona" für VERA Online. Alles was technologiebasiert mit Vera zu tun hat, wird also immer mit einem vorangestelltem "Verona" bezeichnet. Es gibt bspw. Verona-Schnittstellen und Verona-Player die für die technologie basierte Testung zum Einsatz kommen.
+Lernstandserhebungen in den Ländern als Teil des nationalen Bildungsmonitorings gibt es papierbasiert seit 2003. Diese Vergleichsarbeiten werden mit der Abkürzung VERA bezeichnet. Die Bemühungen um computerbasierte Erhebungen von Kompetenzen starteten zuerst im VERA-Kontext. Aus der Verbindung mit "Online" wurde dann die Bezeichnung "Verona" für VERA Online.
+
+Inzwischen werden die technischen Spezifikationen und auch die Webanwendungen so offen gestaltet, dass auch Tests aus anderen Projekten möglich sind. Beispielsweise können auch Befragungen damit durchgeführt werden, die nichts mit VERA zu tun haben. Trotzdem hat sich die Bezeichnung für Anwendungen und Module erhalten, die sich an die Verona-Spezifikationen für Schnittstellen und Datenformate halten.
 
 ## <a name="voud"></a>Voud
 
-Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung von Aufgabeninhalten (Aufgabenlementen) wie bspw. Audio, Grafiken, Multiple-Choice Elementen und mehr. Die Bezeichnung **voud** steht für: **Verona Online Unit Definition**. Bei der Erzeugung einer Unit mittels **Testsudio** generiert das **Teststudio** immer einer Unit.xml und eine Unit.voud. Die Unit.xml enthält Werte die den "Rahmen" der Unit betreffen. Hier können der Unitname und einige, die Unit betreffende Werte, gesetzt werden. Zu letzteren gehören die Playerdefinition und auch die Benennung der zugehörigen Voud-Dateien (Unit.voud). Die Unit.voud enthält dann die eigentlichen Aufgabenlemente.
+Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung von Aufgabeninhalten (Aufgabenlementen) wie bspw. Audio, Grafiken, Multiple-Choice Elementen und mehr. Die Bezeichnung **voud** steht für: **VerOna Unit Definition**. Bei der Erzeugung einer Unit mittels **Teststudio** generiert das **Teststudio** meist eine Unit.xml und eine Unit.voud. Die Unit.xml enthält Metadaten zur allgemeinen Beschreibung der Unit, z. B. Name, Titel und Zeitpunkt der letzten Änderung. Die Voud-Datei enthält alle Daten, die bei der Ausführung der Unit durch den Player erforderlich sind.
 
 ---
 
@@ -246,7 +241,7 @@ Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung vo
 
 # 1.4 Studie durchführen Schritt für Schritt
 
-Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen IQB-Teststudio und IQB-Testcenter. Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammen arbeiten:
+Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: IQB-Teststudio und IQB-Testcenter. Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammen arbeiten:
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
 
@@ -255,9 +250,9 @@ Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig s
 Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereitet, durchgeführt und ausgewertet wird. Hierzu sind zunächst eine Reihe von Fragen zu beantworten und ggf. bestimmte Schritte vorzuziehen. Mitunter müssen die Festlegungen in Dokumenten festgehalten und verschickt werden: allg. Handreichungen, Manual für die Testleitung, Anschreiben für System-Check, Anträge beim Datenschutz, Elternanschreiben, usw.
 
 * Soll ein System-Check durchgeführt werden?
-* Wie genau erfolgt die Anmeldung der Testperson (durch die Testaufsicht, oder nur teilweise, oder nur durch Link usw.?
+* Wie genau erfolgt die Anmeldung der Testperson (durch die Testaufsicht, oder nur teilweise, oder nur durch Link usw.)?
 * Soll der Testablauf einer Testgruppe beobachtet oder gesteuert werden (Testleitungskonsole)?
-* Erhalten die Schulen eine Rückmeldung? Wie sieht die aus?
+* Erhalten die Schulen eine Rückmeldung? Wie sieht diese aus?
 * Welche Zusatzmaterialien werden vor Ort benötigt: Taschenrechner, Lineal, Notizpapier, Kopfhörer?
 * Stehen für die Durchführung Testleiterinnen oder Testleiter oder zumindest Coaches zur Verfügung?
 * Soll es eine Hotline geben? Für welchen Zeitraum?
@@ -278,7 +273,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ### Übertragung organisieren
 
-* Trello, CryptPad Kanban o. ä. einrichten, um für jede Unit den aktuellen Status zu dokumentieren
+* Trello, CryptPad, Kanban o. ä. einrichten, um für jede Unit den aktuellen Status zu dokumentieren
 * Workflow definieren: Wer macht ersten Entwurf, wer schaut drüber, wer prüft psychometrisch, wer prüft fachdidaktisch usw.
 * Schulungen und Austausch der Autorinnen und Autoren untereinander planen
 
@@ -293,8 +288,8 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ### Export
 
-* Units exportieren mit Xml und Voud
-* Der Export im Teststudio erlaubt es, eine Booklet-Xml und eine Testtaker-Xml zu erzeugen, die zu den exportierten Units passt. Diese Dateien sind allerdings nur ein Vorschlag und sollten bearbeitet werden.
+* Units exportieren mit XML und Voud
+* Der Export im Teststudio erlaubt es, eine Booklet-XML und eine Testtaker-XML zu erzeugen, die zu den exportierten Units passt. Diese Dateien sind allerdings nur ein Vorschlag und sollten bearbeitet werden.
 
 ## Testcenter konfigurieren
 
@@ -306,29 +301,29 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 ### Units hochladen
 
-* (Stand Februar 2021) Xml nachbearbeiten (s. [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Workaround-Unit%E2%80%90Xml))
-* Erst die voud-Dateien, dann die Xml-Dateien hochladen. Es könnte sonst passieren, dass eine Xml abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
+* (Stand Februar 2021) XML nachbearbeiten (s. [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Unit%E2%80%90Xml))
+* Erst die voud-Dateien, dann die XML-Dateien hochladen. Es könnte sonst passieren, dass eine XML abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
 
 ### Testhefte hochladen
 
 * Eine xlsx-Datei für die **ict-Toolbox** kann helfen, das Testdesign transparent zu 
-  planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten Xml-Dateien hochzuladen.
+  planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten XML-Dateien hochzuladen.
 * Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
 
 ### Review und Probelauf
 
 * Allgemein bitte [diese Hinweise](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren) zu Logins beachten.
-* Die Xml zu Testteilnehmern (sog. Testtaker) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) anlegen für alle Verantwortlichen der Studie hochladen.
+* Die XML zu Testteilnehmer\*innen (die sog. Testtaker.xml) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) anlegen und für alle Verantwortlichen der Studie hochladen.
 * Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE 
-  neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die Xml-Änderungen).
+  neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die XML-Änderungen).
 * Auch Logins im hot-restart-Modus anlegen, Real-Time-Tests durchführen und sorgfältig auswerten
 
 ## Studie durchführen
 
 * Logins für Durchführung hochladen, ggf. Zeitfenster gut dokumentieren
-* täglich Antworten und Logs ziehen und speichern
+* täglich Antworten und Logs herunterladen und speichern
 * Probeauswertungen vornehmen: Nur so erkennt man früh, wenn bestimmmte Variablen nicht ankommen
-* Hotline auswerten, auch erste Testprotokolle analysieren
+* Test auswerten, auch erste Testprotokolle analysieren
 
 ## Auswertung, Evaluation
 
@@ -358,12 +353,6 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 # 1.5 Copyright, Lizenz
 
-```yaml
-Dokumentstatus: Review
-Stand: 1.4.2021
-todo: - Aufgabenaustausch > Wo soll dortiger Link hin verweisen?
-```
-
 Das IQB ist länderfinanziert und erhält daher Aufträge stets mit Blick auf den Nutzen für die Länder der Bundesrepublik Deutschland. Dies ist insbesondere beim computerbasierten Testen im Bildungswesen der Fall. Denn wenn bisher die Aufgaben als Druckvorlagen an die Länder geliefert wurden, die jede Druckerei vervielfältigen kann, sind Testaufgaben im Online-Format nur durch spezielle Testsysteme nutzbar. Das Speicherformat muss kompatibel sein.
 
 Viele der Kompetenztestungen finden durch die Länder selbst statt ohne Beteiligung des IQB. Daher sind alle Programmierarbeiten am IQB mit der *Auflage verbunden, die Nutzbarkeit der Aufgaben durch die Länder sicherzustellen*.
@@ -378,7 +367,7 @@ Wie sieht es aber mit Einrichtungen aus, die eigene Anwendungen (weiter-)nutzen?
 
 Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmcode mitzuliefern, der zwischen Testsystem und der Aufgabe vermittelt. Für spezielle Anforderungen können also jederzeit neue Speicherformate entwickelt werden, solange der erforderliche Programmcode mitgeliefert wird. Ein vorhandenes Testsystem muss nur einmalig die Schnittstelle zu derartigem Programmcode implementieren.
 
-Mehr zu diesem Thema entnehmen Sie bitte diesem [Kapitel](1.7-Technische-Details).
+Weitere technische Informationen finden Sie [hier](1.7-Technische-Details).
 
 ### Lizenzen
 
@@ -422,6 +411,21 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 
 ![Schema Online-Durchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Running-VERA.png)
 
+## Modelle der Durchführung
+
+### Nutzung des IQB-Testcenters
+
+Für die Testdurchführung kann das IQB-Testcenter verwendet werden. Die [Lizenz MIT](https://opensource.org/licenses/MIT) erlaubt dies ohne Einschränkungen. Allerdings bietet das IQB keinen Serverdienst an, d. h. die Testungen laufen nicht am IQB. Es muss das IQB-Testcenter auf einem landeseigenen oder angemieteten Server installiert werden. Dafür stellt das IQB ein [Setup-Paket](https://github.com/iqb-berlin/testcenter-setup#readme) zur Verfügung.
+
+Die Installation kann weitgehend an das Länder-Design angepasst werden: Durch Änderung von Farben, Bezeichnungen und dem Logo merken die Testpersonen nicht, dass es sich um eine IQB-Programmierung handelt. Die Bezeichnung "IQB-Testcenter" z. B. ist ersetzbar.
+
+Die Definitionen für die Aufgaben, Tests, Testpersonen und ggf. System-Checks können über das Verwaltungsportal der Anwendung in das Testcenter übertragen werden. Soll dieser Datentransfer und auch das Herunterladen der Antworten nicht manuell, sondern über andere Programmierungen erfolgen (z. B. Schulportale), dann kann das IQB-Testcenter auch über ein API angesprochen werden. Die Dokumentation dazu finden Sie [hier](https://iqb-berlin.github.io/testcenter-backend/api/).
+
+### Durchführung in eigenem Testsystem
+
+Wenn die gelieferten IQB-Aufgaben in einer eigenen Testanwendung genutzt werden sollen, dann muss diese die Verona-Schnittstelle unterstützen. Vor dem Laden einer Aufgabe wird dann das zugehörige Player-Modul geladen. Die Dokumentation der Schnittstelle finden Sie [hier](https://github.com/verona-interfaces/player/#readme).
+
+
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -445,16 +449,29 @@ Der nächste Schritt ist die Lieferung der Aufgaben durch das IQB im Online-Form
 
 # 1.7 Technische Details
 
-```yaml
-Dokumentstatus: Entwurf
-Stand: 08.07.2021
-todo: - weitere techn. details einbringen
-```
-Dieses Kapitel richtet sich an technisch Interessierte. Hier erfahren Sie mehr über die technischen Hintergründe, Aufbauten und Strukturen.
+Die Anwendungen des IQB sind so programmiert und veröffentlicht, dass es möglichst einfach ist, sie zu installieren, anzupassen und ggf. neue Versionen einzuspielen.
 
-## Verona
+## Installation
 
-Techn. Details zum Thema Verona finden Sie im Einzeldokument [Verona](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona).
+Wir veröffentlichen sog. Docker-Setups. Ein Server muss nur die Virtualisierungslösung [Docker](https://www.docker.com/) unterstützen. Durch die Installation werden dann automatisch die einzelnen Systeme (Frontend, Datenbank, Backend, ggf. zweites Backend, Routing über Traefik) installiert. Die Installationsanleitung (z. B. für das Testcenter [hier](https://github.com/iqb-berlin/testcenter-setup#readme)) gibt dann detaillierte Hinweise für Anpassungen nach der Installation.
+
+### Update
+
+Es werden kontinuierlich neue Versionen veröffentlicht. Es handelt sich dann um Funktionserweiterungen, aber auch Fehler werden regelmäßig zu beheben sein. Im Installationspaket sind Skripte für den Update-Vorgang hinterlegt, die die lokalen Einstellungen und die vorhandenen Daten erhalten. Sollten Änderungen der Datenbank erforderlich sein, werden diese gezielt so vorgenommen, dass die alten Daten erhalten oder ggf. transformiert werden.
+
+## Verona-Module
+
+Programmierungen, die die Darstellung einzelner Aufgaben betreffen, sind nicht fester Bestandteil der Installationen. Auch das Editieren eines speziellen Aufgabentyps ist in separate Programm-Module ausgelagert. Diese Module müssen nach der Installation über das Verwaltungsportal in das System eingespielt werden. Ein solches Plug-In-Verfahren hat den großen Vorteil, dass Änderungen an den Programmierungen nicht über die Serveradministration eingespielt werden müssen, sondern die inhaltlich Verantwortlichen jederzeit diese Programmteile hinzufügen oder ersetzen können.
+
+Voraussetzung für dieses Modul-System ist die Definition einer Schnittstelle, die wir in Zusammenhang mit dem computerbasierten Testen "Verona" nennen. Definitionen finden Sie [hier](https://github.com/verona-interfaces).
+
+## Computersprachen
+
+Wir programmieren die Frontends und die Verona-Module in *Angular*. Dieses Framework benutzt TypeScript als Sprache und erzeugt sehr effizienten JavaScript-Code. Es gibt Erweiterungen für das Styling (Angular Material, Flex-Layout).
+
+Im Backend benutzen wir *php* mit der Erweiterung *Slim*. Außerdem kommt zunehmend *NestJS* zum Einsatz, das node.js erweitert und womit man TypeScript auf eine Angular-ähnliche Art nutzen kann. Als Datenbank nehmen wir MySQL oder PostgreSQL, manchmal SQLite.
+
+Die Prototypen der Webanwendungen sind ohne Unit- und E2E-Tests entstanden, was wir schrittweise beheben. Wir sehen eine hohe Testabdeckung als Voraussetzung für hohe Codequalität. Im Rahmen der Pull-Requests und damit des Peer-Reviews beachten wir die Grundsätze des Clean Code.
 
 ---
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
