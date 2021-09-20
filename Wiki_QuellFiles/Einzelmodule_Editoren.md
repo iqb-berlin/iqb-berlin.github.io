@@ -4,6 +4,14 @@
 
 [Hier](https://github.com/iqb-berlin/verona-editor-dan) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
 
+Die folgenden Videos werden direkt zum **Dan-Editor** angeboten:
+
+* [Schulung Teststudio Editor Dan2](https://box.hu-berlin.de/f/edc2409b79954dc3b3a1/)  
+
+Die folgenden Videos beschäftigen sich vorwiegend mit dem Aufgabenentwurf, aber auch hier werden Aufgaben mit den **Dan-Editor** erzeugt:
+
+* [Aufgabenentwurf mit dem Teststudio](https://moodle.hu-berlin.de/course/view.php?id=107279)
+  
 ### Übersicht
 
 Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
