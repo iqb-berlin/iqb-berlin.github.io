@@ -84,7 +84,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 
 | Modus | Erläuterung |
 | ----- | -------- |
-| run-hot-return | Es wird angenommen, dass die finale Testperson den Test durchführt. Alle Beschränkungen der Testheftdefinition sind aktiv. Die Testperson kann bei einem Browserabsturz oder halt später zurückkehren und erhält alle gegebenen Antworten wieder angezeigt. |
+| run-hot-return | Es wird angenommen, dass die finale Testperson den Test durchführt. Alle Beschränkungen der Testheftdefinition sind aktiv. Die Testperson kann bei einem Browserabsturz oder später zurückkehren und erhält alle gegebenen Antworten wieder angezeigt. |
 | run-hot-restart | Wie oben, nur dass bei einer erneuten Anmeldung die vorherigen Daten nicht geladen werden. Statt dessen wird eine neue Person angenommen und die Antworten unter einer neuen Kennung gespeichert. Dadurch ist es möglich, dieselben Zugangsdaten an viele Menschen zu schicken (z. B. bei Befragungen einer nicht genau bekannten Gruppe). |
 | run-trial | Zum Ausprobieren: Viele Beschränkungen gelten (s. u.). |
 | run-review | Zum Ausprobieren: Einige Beschränkungen gelten nicht (s. u.). |
@@ -197,7 +197,7 @@ Dieser Abschnitt richtet sich an technisch Interessierte. Hier erhalten Sie eine
 
 ### Verona Schnittstelle
 
-Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles was zum TBA-testen nötig ist) kann man entweder das **IQB-Testcenter** benutzen ("Auswertuns-/Kodierungsgmodul" fehlt allerdings noch) oder eine Verona Interface Schnittstelle nutzen um ein eigens programmiertes Testcenter zu nutzen und die IQB-Tests "abzuspielen". Folgendes [Video](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/) verschafft einen groben Überblick über dieses Thema.
+Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles was zum TBA-testen nötig ist) kann man entweder das **IQB-Testcenter** benutzen ("Auswertungs-/Kodierungsgmodul" fehlt allerdings noch) oder eine Verona Schnittstelle nutzen um ein eigens programmiertes **Testcenter** zu nutzen und die IQB-Tests "abzuspielen". Folgendes [Video](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/) verschafft einen groben Überblick über dieses Thema.
 
 * Verona steht für VERA-Online 
 * Verona Interfaces sind Schnittstellen zu Programmen/Modulen vom IQB zur VERA-Testungen im TBA-Format
