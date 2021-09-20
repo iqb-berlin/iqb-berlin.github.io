@@ -2,11 +2,11 @@
 # Arbeiten mit Xml-Dateien (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-> XML ist ein Standardformat und wird durch Texteditoren sehr gut unterstützt. Daher sind einige Dateien für die Definition von Daten in den IQB-Anwendungen in diesem Format hinterlegt. Der folgende Text soll Neulingen dieses Format nahebringen.
+> XML ist ein Standardformat und wird durch Texteditoren unterstützt. Daher sind einige Dateien für die Definition von Daten in den IQB-Anwendungen in diesem Format hinterlegt. Der folgende Text soll Neulingen dieses Format nahebringen.
 
-XML ist ein textbasiertes Datenformat. Die Daten können einfach mittels eines Texteditors bearbeitet werden. Beispiele sind Notepad++ oder Sublime. Viele Editoren bieten Ergänzungsmodule für die Arbeit mit XML-Dateien. Diese erleichtern die Bearbeitung durch farbliche Hervorhebung der Xml typischen Bestandteile und erkennen Fehler in der Xml-Syntax (z. B. schließendes Element fehlt) gemeldet.
+XML ist ein textbasiertes Datenformat. Die Daten können einfach mittels eines Texteditors bearbeitet werden. Beispiele sind Notepad++ oder Sublime. Viele Editoren bieten Ergänzungsmodule für die Arbeit mit XML-Dateien. Diese erleichtern die Bearbeitung durch farbliche Hervorhebung der XML typischen Bestandteile und erkennen Fehler in der XML-Syntax (z. B. schließendes Element fehlt) gemeldet.
 
-Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle - z. B. das IQB-Testcenter, mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen.
+Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur eingehalten werden. Anschließend kann eine entsprechende Gegenstelle z.B. das IQB-Testcenter mittels eindeutiger Schlüsselwörter (Tags oder Elemente) die Daten im Text finden und nutzen.
 * Elemente: XML-Dateien bestehen immer aus Elementen und ggf. mehreren Unterelementen. Der Beginn eines Elements wird mit zwei spitzen Klammern `<Element>` eingeleitet und wie folgt beendet: `</Element>`.
 * Attribute: Jedes Element kann außer den eigentlichen Daten, welche sich im Elementenkörper befinden, Attribute enthalten. Attribute werden immer in der folgenden Form ausgedrückt: `Name Attribut = "Attributwert"` und befinden sich innerhalb des Elementenaufrufs (`<Element Attribut="Attributwert">`). Es gibt auch Elemente, die Attribute aber keine Daten enthalten und umgekehrt.
 
@@ -44,7 +44,7 @@ Damit die Daten im Text gefunden werden können, muss eine bestimmte Struktur ei
 
 Die Abfolge der Elemente und Attribute einer IQB-XML-Datei ist streng geregelt. Damit ist sichergestellt, dass die Informationen durch alle beteiligten Komponenten korrekt interpretiert werden. Damit nicht erst bei der Verarbeitung oder beim Hochladen einer XML-Datei die Fehler bemerkt werden, kann man die Prüfung auf syntaktische Fehler (sog. "Validierung") auch automatisieren. Hierzu wurden sog. "Schema-Dateien" eingeführt. Eine Schema-Datei enthält in einer speziellen Beschreibungssprache alle Festlegungen zur Gestaltung der XML-Datei.
 
-Um eine Validierung anzustoßen, fügt man zunächst in den Kopf der XML-Datei (also in das Wurzelelement) einen Verweis auf die Schema-Datei ein. Das IQB hat für alle XML-Dateien solche Schema-Dateien entwickelt. Für eine Unit-Xml wäre z. B. das Hauptelement folgendermaßen zu ändern:
+Um eine Validierung anzustoßen, fügt man zunächst in den Kopf der XML-Datei (also in das Wurzelelement) einen Verweis auf die Schema-Datei ein. Das IQB hat für alle XML-Dateien solche Schema-Dateien entwickelt. Für eine `Unit-Xml` wäre z. B. das Hauptelement folgendermaßen zu ändern:
 
 ```xml
     <Unit
@@ -290,7 +290,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
 
-> **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Testtakers.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Testtakers.xsd) ersichtlich.**
+> **Die in der XML-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die `Testtakers.xml` ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Testtakers.xsd) ersichtlich.**
 
 ### <a name="Attr_Daten"></a>Attribute und Daten
 
@@ -400,14 +400,14 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
 
 Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. 
 Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, 
-in welcher das **Testcenter** ausgeführt wird, passen. Alle möglichen CustomText Attribute sind in einer Konfigurationsdatei deklariert, 
+in welcher das **Testcenter** ausgeführt wird, passen. Alle möglichen `CustomText` Attribute sind in einer Konfigurationsdatei deklariert, 
 die das **Testcenter** ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei 
 deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. 
 Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
 In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". 
 CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
 
-Nachfolgend sind die benötigten Strukuren für `Custom Check` aufgeführt:
+Nachfolgend sind die benötigten Strukturen für `CustomCheck` aufgeführt:
 
 ```xml
 <Config>
@@ -495,7 +495,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 
 ### <a name="Einr_Tlk"></a>Einrichten der Testleitkonsole
 
-Die Testleitung kann in der **Testtaker.xml** über den Modus: **Monitor-Group** (mehr Informationen zum Thema Modi der Testdurchführung finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) festlegen welche Testgruppen der Testleitkonsole hinzugefügt werden sollen. Dazu wird in der entsprechenden Gruppe dieser Modus angegeben. Nachfolgend finden Sie zwei Beispiele wie Gruppen angelegt werden können:
+Die Testleitung kann in der `Testtaker.xml` über den Modus: **Monitor-Group** (mehr Informationen zum Thema Modi der Testdurchführung finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) festlegen welche Testgruppen der Testleitkonsole hinzugefügt werden sollen. Dazu wird in der entsprechenden Gruppe dieser Modus angegeben. Nachfolgend finden Sie zwei Beispiele wie Gruppen angelegt werden können:
 
 Ohne Passwort. Sinnvoll wenn nur Links an die Testpersonen versendet werden.
 
