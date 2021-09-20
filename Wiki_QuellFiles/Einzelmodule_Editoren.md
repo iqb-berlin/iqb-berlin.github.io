@@ -43,7 +43,7 @@ Zum Erstelllen einer Textbox für jeglichen Text (Aufgabenstellung, Stimulus, Fr
 2 Kopieren<br>
 2.1 Eigenschaften übertragen. Überträgt die Eigenschaften des ausgewählten Elements auf alle Elemente der Seite<br>
 2.2 Kopiere Element. Kopiert das ausgewählt Element in den Zwischenspeicher<br>
-2.3 Füge Element ein.Fügt das zwischengespeicherte Element ein.<br>
+2.3 Füge Element ein. Fügt das zwischengespeicherte Element ein.<br>
 2.4 Kopieren und wiedereinfügen. Kopiert das ausgewählte Element und fügt es direkt wieder ein<br>
 
 3 Elemente verschieben<br>
@@ -90,7 +90,7 @@ Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint au
 
 ### Wiedergabe der Inhalte
 
-Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den Dan Editor muss der Player **Verona Dan Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Dan-v3.0).
+Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den **Dan-Editor** muss der **Verona Dan-Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Dan-v3.0).
 
 ### IQB Konventionen
 
@@ -100,13 +100,6 @@ Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 #  Verona Editor PlainText v1.0(Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 09.07.2021
-todo: - Weiter mit Leben füllen!
-      
-```
 
 [Hier](https://github.com/iqb-berlin/verona-editor-plaintext) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
 
@@ -154,7 +147,7 @@ Jede Zeile enthält als Erstes ein Schlüsselwort und kann dahinter weitere Para
 		<tr>
 		<td><code>html</code></td>
 		<td>wird genau so in das Formular übernommen; dient der Lösung besonderer Layout-Probleme; Achtung: unsichere Inhalte wie Links werden herausgefiltert</td>
-		<td><I>Html-Text</I></td>
+		<td><I>Html-Text (optional)</I></td>
 		</tr>
 		<tr>
 		<td><code>hr</code></td>
@@ -380,6 +373,21 @@ Mit dem `likert` Element kann eine Liste von Fragen mit einer einheitlichen Antw
 		<td>1.keine</td>
 		<td><I>Angabe ist erforderlich</I></td>
 		</tr>
+		<tr>
+		<td><code>html</code></td>
+		<td>wird genau so in das Formular übernommen; dient der Lösung besonderer Layout-Probleme; Achtung: unsichere Inhalte wie Links werden herausgefiltert</td>
+		<td><I>Html-Text (optional)</I></td>
+		</tr>
+		<tr>
+		<td><code>hr</code></td>
+		<td>stellt eine horizontale Linie dar</td>
+		<td><I>keine</I></td>
+		</tr>
+		<tr>
+		<td><code>rem</code></td>
+		<td>leitet einen Kommentar ein, der bei der Verarbeitung ignoriert wird</td>
+		<td></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -530,4 +538,4 @@ nav-button-group::next
 
 ### Wiedergabe der Inhalte
 
-Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den Dan Editor muss der Player **Verona Abi Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
+Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den **PlainText-Editor** muss zwingend der Player **Verona Abi-Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
