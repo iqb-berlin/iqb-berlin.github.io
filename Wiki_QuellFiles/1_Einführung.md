@@ -241,7 +241,15 @@ Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung vo
 
 # 1.4 Studie durchführen Schritt für Schritt
 
-Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: IQB-Teststudio und IQB-Testcenter. Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammen arbeiten:
+Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: IQB-Teststudio und IQB-Testcenter. 
+
+Ein Schulungsvideo welches Schritt für Schritt den Aufgabenentwurf und die Testdurchführung beschreibt, finden Sie hier:
+
+* [Vom Entwurf zur Testdurchführung](https://moodle.hu-berlin.de/course/view.php?id=107279)
+
+>Beachten Sie der zweite Teil des Videos befindet sich in Bearbeitung und wird demnächst verfügbar sein!
+
+Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammenarbeiten:
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
 
