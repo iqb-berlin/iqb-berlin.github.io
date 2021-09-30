@@ -70,7 +70,9 @@ Außerdem muss für die automatische Validierung ein Editor verwendet werden, de
 Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
 
 > **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Booklet.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Booklet.xsd) ersichtlich.**
- 
+
+Nachfolgend werden die Attribute und deren Bedeutung beschrieben. Die Zuordnung der Attribute erfolgt nach Element.
+
 ### <a name="Attr_Daten"></a>Attribute und Daten
 
 `METADATA`
@@ -124,11 +126,23 @@ Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung vo
     <td>Attribut</td>
     <td>Frei wählbarer Wert zur Bezeichnung der Unit.</td>
 </tr>
+<tr>
+    <td>Unit:</td>
+    <td>labelshort</td>
+    <td>Attribut</td>
+    <td>Frei wählbarer Wert zur Bezeichnung der Navigationsleiste im Testcenter.</td>
+</tr>
+<tr>
+    <td>Unit:</td>
+    <td>alias</td>
+    <td>Attribut</td>
+    <td></td>
+</tr>
 
 </table>
 
 ```xml
-<Unit id="Unit_Start" label="Beispielhafte Startseite" />
+<Unit id="Unit_Start" label="Beispielhafte Startseite" labelshort="1" alias=""/>
 ```
 
 <table>
@@ -154,21 +168,30 @@ Die Testheft-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung vo
 </Testlet>
 ```
 
+Ein _Testlet_ ist eine Gruppe von Units mit gemeinsamen Restriktionen, beispielsweise einer gemeinsamen Zeitbegrenzung. _Testlets_ können auch rekursiv geschachtelt werden, mit anderen Worten: Ein Testlet kann weitere Testlets enthalten. 
+
+Die Testlets der obersten Ebene werden auch Test_blöcke_ genannt.
+
+Zeitbegrenzungen (Restrictions/TimeMax) in geschachtelten Testlets werden ignoriert, sofern diese ebenfalls eine Zeitbegrezung haben.
+
 <table>
 
 <tr>
+	<td>Restrictions:</td>
     <td>CodeToEnter:</td>
     <td>code</td>
     <td>Attribut</td>
     <td>Frei wählbarer Code.</td>
 </tr>
 <tr>
+	<td>Restrictions:</td>
     <td>CodeToEnter:</td>
     <td>>xxx<</td>
     <td>Datum</td>
     <td>Frei wählbarer Text. Wird als Text zur Codeeingabe angegeben.</td>
 </tr>
 <tr>
+	<td>Restrictions:</td>
     <td>TimeMax:</td>
     <td>minutes</td>
     <td>Attribut</td>
