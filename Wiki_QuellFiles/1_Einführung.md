@@ -40,7 +40,7 @@ seitens des IQB zum Einsatz kommen.
 ## IQB-Anwendungen 
 
 Einen groben Überblick der Testsysteme und deren Zusammenwirken verschafft auch dieses Video: 
-* [Einführung in die IQB TBA-Systeme](https://box.hu-berlin.de/f/8bd6e578d5d94780b0b6/)
+* [Einführung in die IQB TBA-Systeme](https://box.hu-berlin.de/f/07de21dff3c948d2bff4/)
 
 ![iqb applications: testcenter, teststudio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
 
@@ -241,13 +241,11 @@ Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung vo
 
 # 1.4 Studie durchführen Schritt für Schritt
 
-Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: IQB-Teststudio und IQB-Testcenter. 
+Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: **IQB-Teststudio** und **IQB-Testcenter**. 
 
 Ein Schulungsvideo welches Schritt für Schritt den Aufgabenentwurf und die Testdurchführung beschreibt, finden Sie hier:
 
 * [Vom Entwurf zur Testdurchführung](https://moodle.hu-berlin.de/course/view.php?id=107279)
-
->Beachten Sie der zweite Teil des Videos befindet sich in Bearbeitung und wird demnächst verfügbar sein!
 
 Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammenarbeiten:
 
