@@ -42,7 +42,7 @@
 
 **Link:**
 
-> https://box.hu-berlin.de/f/8bd6e578d5d94780b0b6/
+> https://box.hu-berlin.de/f/07de21dff3c948d2bff4/
 
 </td>
 </tr>
@@ -279,28 +279,49 @@
 
 **Inhalt:**
 
+> Einführung IQB TBA-Systeme
+
 Teil 1:
 > Aufgabenentwurf mit dem Teststudio<br>
-> Bearbeitung der erzeugten Testdateien
 
 Teil 2:
-> Laden der Testdateien in das Testcenter<br>
-> Testdurchführung mit dem Testcenter<br>
-> Auswertung des Tests
+> Bearbeitung der erzeugten Testdateien
+
+Teil 3:
+> Erprobung eines Testdurchlaufs mit dem Testcenter<br>
+> Nachbearbeiten der Testdateien
+
+Teil 4:
+> Finale Testdurchführung mit dem Testcenter<br>
+> Auswertung des Tests<br>
+> Durchführung System-Check<br>
+> Zuschalten Testleitungskonsole
 
 </td></tr>
 <td>
 
 **Format:**
 
+Einführungvideo:<br>
+> 4:3<br>
+> UT: nein<br>
+> Inhaltsverzeichnis: nein<br>
+> Kategorie: Einführung<br>
+> Sprache: Deutsch<br>
+> techn. Niveau: niedrig<br>
+> Dauer: 11:19 [h]:[min]
+
+Video Teil 1 - 4:<br>
 > 16:9<br>
 > UT: ja<br>
 > Inhaltsverzeichnis: ja<br>
 > Kategorie: Schulung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer Teil 1: 41:29 [h]:[min]<br>
-> Dauer Teil 2: in Arbeit [h]:[min]
+> Dauer Teil 1: 15:37 [h]:[min]<br>
+> Dauer Teil 2: 29:21 [h]:[min]<br>
+> Dauer Teil 3: 33:30 [h]:[min]<br>
+> Dauer Teil 4: in Vorbereitung
 
 </td></tr>
 <tr>
