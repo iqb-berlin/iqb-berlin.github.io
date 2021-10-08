@@ -1,8 +1,24 @@
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+# Verona Editor Aspect XXX (Abschnittsmarker)
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+```yaml
+Dokumentstatus: Entwurf(THuste)
+Stand: 08.10.2021
+todo: - Arbeiten mit dem Aspect Editor
+      
+```
+Hier entstehen bald mehr Informationen.
+
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** der Link zum GitHub Repository.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases)** finden Sie die letzten aktuellen Versionsstände.
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Verona Dan Editor v3.1 (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-[Hier](https://github.com/iqb-berlin/verona-editor-dan) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
+> **[Hier](https://github.com/iqb-berlin/verona-editor-dan)** der Link zum GitHub Repository.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-editor-dan/releases)** finden Sie die letzten aktuellen Versionsstände.
 
 Die folgenden Videos werden direkt zum **Dan-Editor** angeboten:
 
@@ -104,12 +120,12 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 
 Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, steht ein Zusatzdokument mit IQB Emfehlungen bereit. Zu finden ist diese Dokument [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/IQB-Konventionen-Aufgabengestaltung).
 
-
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 #  Verona Editor PlainText v1.0(Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-[Hier](https://github.com/iqb-berlin/verona-editor-plaintext) der Link zum GitHub Repository. Hier sind der aktuelle Versionsstand und weitere Informationen zu finden.
+> **[Hier](https://github.com/iqb-berlin/verona-editor-plaintext)** der Link zum GitHub Repository.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-editor-plaintext/releases)** finden Sie die letzten aktuellen Versionsstände.
 
 ## Erstellung der Aufgabenelemente
 
