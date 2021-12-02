@@ -290,14 +290,18 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 |`logPolicy`|Erfassen und Speichern von Log-Daten| **disabled:** Ausgeschaltet;<br>**lean:** Nur wichtige Meldungen;<br>**rich(default):** Alles außer debug-informationen;<br>**debug:** Auch debug-informationen |
 |`pagingMode`|pagingMode (https://verona-interfaces.github.io/player/#operation-publish-vopStartCommand)|**separate(default):** pages are separated;<br>**concat-scroll:** concat-scroll;<br>**concat-scroll-snap:** concat-scroll-snap |
 |`stateReportPolicy`|stateReportPolicy (https://verona-interfaces.github.io/player/#operation-publish-vopStartCommand)|**none:** pages are separated;<br>**eager(default):** concat-scroll;<br>**on-demand:** concat-scroll-snap|
-|`page_navibuttons`|Navigationsbuttons für die Seitennavigation (innerhalb einer Aufgabe)|**OFF:** Keine Seitennavigation unterstützen (übernimmt ggf. die Aufgabe selbst);<br>**MERGED:** Die Seitennavigation wird durch die Aufgabennavigation mit übernommen;<br>**SEPARATE_TOP:** Seitennavigation über getrennte Button-Leiste - oben;<br>**SEPARATE_BOTTOM(default):** Seitennavigation über getrennte Button-Leiste - unten|
+|`page_navibuttons`|Navigationsbuttons für die Seitennavigation (innerhalb einer Aufgabe)|**OFF:** Keine Seitennavigation unterstützen (übernimmt ggf. die Aufgabe selbst);<br>**SEPARATE_BOTTOM(default):** Seitennavigation über getrennte Button-Leiste - unten|
 |`unit_navibuttons`|Navigationsbuttons für die Navigation zwischen den Aufgaben|**OFF:** Keine Buttons für Aufgabennavigation anzeigen (übernimmt ggf. die Aufgabe selbst);<br>**ARROWS_ONLY:** Nur die Buttons für 'Weiter' und 'Zurück' anzeigen;<br>**FULL(default):** Buttons für 'Weiter' und 'Zurück' und dazwischen kleine Buttons für jede Aufgabe anzeigen|
-|`unit_menu`|Extra-Seite mit großen Buttons für Aufgaben zum direkten Springen|**OFF(default):** Ausgeschaltet;<br>**ENABLED_ONLY:** Eingeschaltet - nur die Aufgaben anzeigen, die noch freigegeben sind;<br>**FULL:** Eingeschaltet - auch die Aufgaben anzeigen, die nicht mehr freigegeben sind (gegraut)|
-|`force_presentation_complete`|Verhalten, wenn noch nicht alle Elemente der Aufgabe angezeigt wurden|**OFF(default):** Ignorieren - Weiterblättern möglich;<br>**ON:** Weiterblättern verhindern, bis Anzeige vollständig|
-|`force_responses_complete`|Verhalten, wenn noch nicht alle Antworten der Aufgabe vollständig gegeben wurden|**OFF(default):** Ignorieren - Weiterblättern möglich;<br>**SOME:** Weiterblättern erst möglich, wenn einige Antworten gegeben wurden;<br>**COMPLETE:** Weiterblättern erst möglich, wenn alle Antworten gegeben wurden; hier wird angenommen, dass die Antworten auch als gültig eingeschätzt wurden|
-|`unit_screenheader`|Legt fest, ob im obersten Seitenbereich Platz für Logo, Navigations-Buttons u. ä. gelassen wird.|**OFF:** Kein Seitenkopf. Achtung: Logo bleibt sichtbar (überlappt);<br>**WITH_UNIT_TITLE:** Seitenkopf wird angezeigt mit Titel der Unit (s. Booklet-XML);<br> **WITH_BOOKLET_TITLE:** Seitenkopf wird angezeigt mit Titel des Booklets (s. Booklet-XML);<br>**EMPTY (default):** Seitenkopf wird angezeigt (leer)|
-|`unit_title`|Festlegung, ob oberhalb des Unitbereiches eine Zeile mit dem Unit-Titel gezeigt werden soll| **OFF:** Keine Titelzeile;<br> **ON(default):** Eine Zeile wird eingeblendet mit dem Unit-Titel (s. Booklet-XML)|
+|`unit_menu`|Extra-Seite mit großen Buttons für Aufgaben zum direkten Springen|**OFF(default):** Ausgeschaltet;<br>**FULL:** Eingeschaltet - auch die Aufgaben anzeigen, die nicht mehr freigegeben sind (gegraut)|
+|`force_presentation_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht vollständig angezeigt wurde.|**OFF(default):** Das Verlassen der unvollständig betrachteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig betrachteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll;<br>**ALWAYS:** Das Verlassen der unvollständig betrachteten Aufgabe nicht verhindert|
+|`force_responses_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht beantwortet wurde.|**OFF(default):** Das Verlassen der unvollständig beantworteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig beantworteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll; <br>**ALWAYS:** Das Verlassen der unvollständig beantworteten Aufgabe nicht verhindert |
+|`unit_screenheader`|Legt fest, ob im obersten Seitenbereich Platz für Logo, Navigations-Buttons u. ä. gelassen wird.|**OFF:** Kein Seitenkopf. Achtung: Logo bleibt sichtbar (überlappt);<br>**WITH_UNIT_TITLE:(default)** Seitenkopf wird angezeigt mit Titel der Unit (s. Booklet-XML);<br>**WITH_BOOKLET_TITLE:** Seitenkopf wird angezeigt mit Titel des Booklets (s. Booklet-XML);<br>**WITH_BLOCK_TITLE:** Seitenkopf wird angezeigt mit Titel des Aufgabenblocks (s. Booklet-XML);<br>**EMPTY:** Seitenkopf wird angezeigt (leer)|
+|`unit_title`|Festlegung, ob oberhalb des Unitbereiches eine Zeile mit dem Unit-Titel gezeigt werden soll| **OFF:** Keine Titelzeile;<br> **ON:(default)** Eine Zeile wird eingeblendet mit dem Unit-Titel (s. Booklet-XML)|
 |`unit_show_time_left`|Festlegung, ob im obersten Seitenbereich bei einer festgelegten Maximalzeit für einen Testbereich die verbleibende Zeit angezeigt wird.| **OFF(default):** Die verbleibende Zeit wird nicht angezeigt;<br>**ON:** Die verbleibende Zeit wird angezeigt|
+|`show_end_button_in_player`|Manche Player können einen Test-Beenden anzeigen, wenn es es ihnen vom Testcenter erlaubt wird. Diese Einstellung legt fest, wann das der Fall ist.| **OFF(default):** Den Test-Beenden-Button im Player nie anzeigen;<br>**ALWAYS:** Den Test-Beenden-Button im Player immer anzeigen.;<br>**ONLY_LAST_UNIT:** Den Test-Beenden-Button im Player nur in der letzten Unit anzeigen.|
+|`restore_current_page_on_return`|Legt fest, ob, wenn (z. B.) nach einem Neuladen eine Unit wieder geöffnet wird, zur letzten geöffneten Seite gesprungen werden soll.| **OFF(default):** Beim Zurückkehren zur Unit auf Seite 1 beginnen;<br>**ON:** Beim Zurückkehren zur Unit auf der letzten gesehenen Seite beginnen|
+|`allow_player_to_terminate_test`|Legt fest, ob der Player des laufenden Test beenden darf, in dem er z. B. einen entsprechenden Navigationsknopf zeigt.| **OFF:** Der Player darf den laufenden Test nicht beenden;<br>**ON:(default)** Der Player darf den laufenden Test immer beenden. (`force_presentation_complete` und `force_response_complete` gelten trotzdem!)<br>**LAST_UNIT:** Der Player darf den laufenden Test nur Beenden, wenn die letzte Unit erreicht ist|
+
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Testtaker-Xml (Abschnittsmarker)
@@ -422,25 +426,29 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
 ### <a name ="CustomText"></a>Custom Text Konfigurationen
 
 Diese Anwendung ermöglicht es zur Laufzeit Änderungen an Texten durchzuführen. 
-Dies kann notwendig sein, wenn Standardtitel, Eingabeauffforderungen oder Erklärungen nicht zur spezifischen Umgebung, 
-in welcher das **Testcenter** ausgeführt wird, passen. Alle möglichen `CustomText` Attribute sind in einer Konfigurationsdatei deklariert, 
-die das **Testcenter** ausliest. Daher können auch nur CustomText Attribute verwendet werden, die in dieser Datei 
-deklariert sind. Eine Übersicht der verfügbaren Attribute und deren Bedeutung entnehmen Sie bitte der Liste weiter unten. 
-Nach dem Attribut kann dann ein frei gewählter Text angegeben werden. 
-In dem unteren Code würde nun der Titel der Hauptwanwendung (Attribut: app_title) wie folgt lauten: "Titel der Anwendung". 
-CustomText kann in der Login.xml (Testtakers.xml) oder im Systemcheck konfiguriert werden.
+Dies kann notwendig sein, wenn Standardtitel, Eingabeaufforderungen oder Erklärungen nicht zur spezifischen Umgebung, in welcher das **Testcenter** ausgeführt wird, passen. Welche Textteile innerhalb des **Testcenters** ersetzt werden sollen, wird mit dem Attribut: `key` festgelegt. Dazu werden dem Attribut: `key` definierte Atributwerte zugewiesen. Die möglichen Attributwerte entnehmen Sie bitte der Tabelle weiter unten. Nach Festlegung, welcher Text innerhalb des **Testcenters** auf diese Weise verändert werden soll, kann der gewünschte Text dann als Datum (gefasst in Hochkommata) angegeben werden. Nachfolgend ein Bsp..
 
-Nachfolgend sind die benötigten Strukturen für `CustomCheck` aufgeführt:
+```xml
+<CustomTexts>
+    <CustomText key="login_testEndButtonText">Test beenden</CustomText>
+    <CustomText key="login_bookletSelectPrompt">Bitte wählen</CustomText>
+...
+</CustomTexts>
+```
+Hier wird nun also der Text für den "Test beenden"-Button in den Text: "Test beenden" geändert. Außerdem wird der Text: "Bitte wählen" für die Booklet-Auswahl-Anzeige festgelegt.
+
+Innerhalb des **Testcenters** kann auch ein System-Check durchgeführt werden. Auch Texte innerhalb dieses System-Checks können auf die gleichen Weise individualisiert werden. Dazu nachfolgend ein Bsp.:
 
 ```xml
 <Config>
     <UploadSpeed ...
     <DownloadSpeed ...
-    <CustomText key="syscheck_questionsintro">...</CustomText>
-    <CustomText key="app_intro1">...</CustomText>
+    <CustomText key="syscheck_questionsintro">"Bitte beantworten Sie alle Fragen"</CustomText>
+    <CustomText key="app_intro1">"Willkommen zu diesem System-Check"</CustomText>
 ...
 </Config>
 ```
+Hier werden zwei Texte festgelegt, die innerhalb des System-Checks angezeigt werden. Einmal der Text auf der System-Check eigenen Frageseite und des Weiteren der Text innerhalb der Einführungsseite des System-Checks.
 
 ---
 
@@ -454,6 +462,8 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 |`booklet_codeToEnterPrompt`|Aufforderung für die Eingabe eines Freigabewortes (Dialog-Box)|Bitte gib das Freigabewort ein, das angesagt wurde!|
 |`booklet_codeToEnterTitle`|Titel der Dialogbox für die Eingabe eines Freigabewortes|Freigabewort|
 |`booklet_errormessage`|Nachricht an die Testperson, wenn ein schwerer Fehler aufgetreten ist|Es ist ein schwerer Fehler aufgetreten. Bitte rufe die Aufsichtsperson und beschreibe das Problem!|
+|`booklet_loadingBlock`|Meldung wenn ein Zeitgesteuerter Block betreten wurde, der noch nicht geladen wurde|Aufgabenblock wird geladen|
+|`booklet_loadingUnit`|Meldung wenn eine Unit betreten wird, die noch nicht geladen wurde|Aufgabe wird geladen|
 |`booklet_msgPresentationNotCompleteTextNext`|Nachrichttext, dass nicht weitergeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Du kannst erst weiterblättern, wenn Audio-Dateien vollständig abgespielt wurden und wenn du in allen Fenstern bis ganz nach unten gescrollt hast.|
 |`booklet_msgPresentationNotCompleteTextPrev`|Nachrichttext, dass nicht zurückgeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Eine Audio-Datei ist noch nicht bis zu Ende abgespielt oder Seiten wurden noch nicht vollständig gezeigt. Wenn du jetzt zurückblätterst, kannst Du später Audio-Dateien nicht nocheinmal starten.|
 |`booklet_msgPresentationNotCompleteTitleNext`|Titel der Nachricht (Dialogbox), dass nicht weitergeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Weiterblättern nicht möglich!|
@@ -465,6 +475,9 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 |`booklet_msgTimerStarted`|Nachricht, dass der Timer für die Bearbeitung eines Abschnittes gestartet wurde|Die Bearbeitungszeit für diesen Abschnitt hat begonnen: |
 |`booklet_pausedmessage`|Nachricht an die Testperson, wenn der Test vom System unterbrochen wurde|Der Test wurde kurz angehalten.|
 |`booklet_tasklisttitle`|Titel für die Auflistung der Aufgaben (Schalter)|Aufgaben|
+|`booklet_unitLoading`|Untertitel des Ladebalkens, wird geladen|geladen|
+|`booklet_unitLoadingPending`|Untertitel des Ladebalkens, wenn Aufgabe geladen werden wird, aber noch nicht dran ist|in der Warteschleife|
+|`booklet_unitLoadingUnknownProgress`|Untertitel des Ladebalkens, wenn Aufgabe geladen wird, Fortschritt aber unbekannt|wird geladen|
 |`booklet_warningLeaveTimerBlockTextPrompt`|Schalterbeschriftung für 'Zurück zum Test'|Du verlässt einen zeitbeschränkten Bereich und kannst nicht zurückkehren. Trotzdem weiterblättern?|
 |`booklet_warningLeaveTimerBlockTitle`|Titel für Warnung (Dialogbox) vor dem vorzeitigen Verlassen eines Abschnittes mit Timer|Aufgabenabschnitt verlassen?|
 |`gm_auto_checkall`|Der 'Immer alle Auswählen'-Schalter|Alle Tests gleichzeitig steuern|
