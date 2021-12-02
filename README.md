@@ -12,11 +12,11 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 * [IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-setup#readme) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
 * [ict-ToolBox](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox) - Windows-Programm zum Aufbereiten der Ergebnisse u. a.
 * Verona-Player – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio (Voransicht)
-  + [Dan Player](https://github.com/iqb-berlin/verona-player-dan/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+  + [Aspect Player](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   + [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
   + [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases/latest) - Player für eine spezielle Scriptsprache
 * Verona-Editoren – zur Verwendung im IQB-Teststudio
-  + [Dan Editor](https://github.com/iqb-berlin/verona-editor-dan/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+  + [Aspect Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text 
 
 ## Entwicklung/Quellcode
@@ -24,12 +24,10 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 * IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
 * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
 * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
-* Verona-Player: [abi](https://github.com/iqb-berlin/verona-player-abi), [dan](https://github.com/iqb-berlin/verona-player-dan), [simple](https://github.com/iqb-berlin/verona-player-simple)
-* Verona-Editoren: [dan](https://github.com/iqb-berlin/verona-editor-dan), [plaintext](https://github.com/iqb-berlin/verona-editor-plaintext)
+* Verona-Module: [aspect](https://github.com/iqb-berlin/verona-modules-aspect), [abi-player](https://github.com/iqb-berlin/verona-player-abi), [simple-player](https://github.com/iqb-berlin/verona-player-simple), [plaintext-editor](https://github.com/iqb-berlin/verona-editor-plaintext)
 
 ## Verona Interfaces Specification
-* [Player-Spezifikation](https://github.com/verona-interfaces/player)
-* [Editor-Spezifikation](https://github.com/verona-interfaces/editor)
+* [Player](https://github.com/verona-interfaces/player), [Editor](https://github.com/verona-interfaces/editor), [Metadaten](https://github.com/verona-interfaces/metadata)
 * Video-Präsentationen: [Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/), [Player-Modell](https://box.hu-berlin.de/f/8f4b50975e9645af803b/), [Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
  
 # <a name="metadata"></a>Metadaten
