@@ -26,9 +26,8 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
 * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
 * Verona-Module: [aspect](https://github.com/iqb-berlin/verona-modules-aspect), [abi-player](https://github.com/iqb-berlin/verona-player-abi), [simple-player](https://github.com/iqb-berlin/verona-player-simple), [plaintext-editor](https://github.com/iqb-berlin/verona-editor-plaintext)
 
-## Verona Interfaces Specification
-* [Player](https://github.com/verona-interfaces/player), [Editor](https://github.com/verona-interfaces/editor), [Metadaten](https://github.com/verona-interfaces/metadata)
-* Video-Präsentationen: [Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/), [Player-Modell](https://box.hu-berlin.de/f/8f4b50975e9645af803b/), [Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
+## Verona Interfaces Specs
+Das IQB implementiert die Spezifikationen, die im Rahmen der Verona-Initiative entwickelt werden. Dokumentationen und die Spezifikationen selbst finden Sie [hier](https://verona-interfaces.github.io/).
  
 # <a name="metadata"></a>Metadaten
 * [Spezifikation und Erläuterung](https://github.com/iqb-berlin/mdc-schemadefinition)
