@@ -230,7 +230,7 @@ Zeitbegrenzungen (Restrictions/TimeMax) in geschachtelten Testlets werden ignori
 
 ```xml
 <BookletConfig>
-  <Config key="force_responses_complete">OFF</Config>
+  <Config key="force_response_complete">OFF</Config>
 </BookletConfig>
 ```
 
@@ -252,7 +252,7 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
   </Metadata>
 
   `<BookletConfig>`
-      <Config key="force_responses_complete">OFF</Config>
+      <Config key="force_response_complete">OFF</Config>
       <Config key="unit_navibuttons">ARROWS_ONLY</Config>
       ...
   </BookletConfig>
@@ -294,7 +294,7 @@ Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und dere
 |`unit_navibuttons`|Navigationsbuttons für die Navigation zwischen den Aufgaben|**OFF:** Keine Buttons für Aufgabennavigation anzeigen (übernimmt ggf. die Aufgabe selbst);<br>**ARROWS_ONLY:** Nur die Buttons für 'Weiter' und 'Zurück' anzeigen;<br>**FULL(default):** Buttons für 'Weiter' und 'Zurück' und dazwischen kleine Buttons für jede Aufgabe anzeigen|
 |`unit_menu`|Extra-Seite mit großen Buttons für Aufgaben zum direkten Springen|**OFF(default):** Ausgeschaltet;<br>**FULL:** Eingeschaltet - auch die Aufgaben anzeigen, die nicht mehr freigegeben sind (gegraut)|
 |`force_presentation_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht vollständig angezeigt wurde.|**OFF(default):** Das Verlassen der unvollständig betrachteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig betrachteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll;<br>**ALWAYS:** Das Verlassen der unvollständig betrachteten Aufgabe nicht verhindert|
-|`force_responses_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht beantwortet wurde.|**OFF(default):** Das Verlassen der unvollständig beantworteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig beantworteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll; <br>**ALWAYS:** Das Verlassen der unvollständig beantworteten Aufgabe nicht verhindert |
+|`force_response_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht beantwortet wurde.|**OFF(default):** Das Verlassen der unvollständig beantworteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig beantworteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll; <br>**ALWAYS:** Das Verlassen der unvollständig beantworteten Aufgabe nicht verhindert |
 |`unit_screenheader`|Legt fest, ob im obersten Seitenbereich Platz für Logo, Navigations-Buttons u. ä. gelassen wird.|**OFF:** Kein Seitenkopf. Achtung: Logo bleibt sichtbar (überlappt);<br>**WITH_UNIT_TITLE:(default)** Seitenkopf wird angezeigt mit Titel der Unit (s. Booklet-XML);<br>**WITH_BOOKLET_TITLE:** Seitenkopf wird angezeigt mit Titel des Booklets (s. Booklet-XML);<br>**WITH_BLOCK_TITLE:** Seitenkopf wird angezeigt mit Titel des Aufgabenblocks (s. Booklet-XML);<br>**EMPTY:** Seitenkopf wird angezeigt (leer)|
 |`unit_title`|Festlegung, ob oberhalb des Unitbereiches eine Zeile mit dem Unit-Titel gezeigt werden soll| **OFF:** Keine Titelzeile;<br> **ON:(default)** Eine Zeile wird eingeblendet mit dem Unit-Titel (s. Booklet-XML)|
 |`unit_show_time_left`|Festlegung, ob im obersten Seitenbereich bei einer festgelegten Maximalzeit für einen Testbereich die verbleibende Zeit angezeigt wird.| **OFF(default):** Die verbleibende Zeit wird nicht angezeigt;<br>**ON:** Die verbleibende Zeit wird angezeigt|
