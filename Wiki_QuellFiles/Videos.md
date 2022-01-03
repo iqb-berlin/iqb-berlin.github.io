@@ -302,26 +302,16 @@ Teil 4:
 
 **Format:**
 
-Einführungvideo:<br>
-> 4:3<br>
-> UT: nein<br>
-> Inhaltsverzeichnis: nein<br>
-> Kategorie: Einführung<br>
-> Sprache: Deutsch<br>
-> techn. Niveau: niedrig<br>
-> Dauer: 11:19 [h]:[min]
-
-Video Teil 1 - 4:<br>
 > 16:9<br>
 > UT: ja<br>
 > Inhaltsverzeichnis: ja<br>
 > Kategorie: Schulung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer Teil 1: 15:37 [h]:[min]<br>
-> Dauer Teil 2: 29:21 [h]:[min]<br>
-> Dauer Teil 3: 33:30 [h]:[min]<br>
-> Dauer Teil 4: in Vorbereitung
+> Dauer Teil1: 15:37 [h]:[min]<br>
+> Dauer Teil2: 29:21 [h]:[min]<br>
+> Dauer Teil3: 33:30 [h]:[min]<br>
+> Dauer Teil4: in Vorbereitung
 
 </td></tr>
 <tr>
@@ -342,8 +332,6 @@ Video Teil 1 - 4:<br>
 </td>
 </tr>
 </table>
-
-<!--##################################################################################################################-->
 
 <table border=1>
 <tr>
@@ -389,6 +377,56 @@ Video Teil 1 - 4:<br>
 **Link:**
 
 > https://box.hu-berlin.de/f/edc2409b79954dc3b3a1/
+
+</td>
+</tr>
+</table>
+
+<table border=1>
+<tr>
+<th align=left width=1000>
+
+### Aspect-Editor
+
+</th>
+</tr>
+<tr>
+<td>
+
+**Inhalt:**
+
+> Einführung in den Aspect-Editor<br>
+* Grundlegende Funktionen und Bedienung des Editors
+* Aufbau einer Beispielaufgabe mit häufig eingesetzten Elementen
+
+</td></tr>
+<td>
+
+**Format:**
+
+> 16:9<br>
+> UT: nein<br>
+> Inhaltsverzeichnis: ja<br>
+> Kategorie: Schulung<br>
+> Sprache: Deutsch<br>
+> techn. Niveau: niedrig<br>
+> Dauer: 42:00 [h]:[min]<br>
+
+</td></tr>
+<tr>
+<td>
+
+**Stand:**
+
+> Dezember 2021
+
+</td></tr>
+<tr>
+<td>
+
+**Link:**
+
+> https://moodle.hu-berlin.de/course/view.php?id=107227
 
 </td>
 </tr>
