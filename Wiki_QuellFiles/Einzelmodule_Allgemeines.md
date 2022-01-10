@@ -165,7 +165,7 @@ wenn man den Test nicht in der Schule, sondern in dem eigenen oder einem angemie
   </tr>
 </table>
 
-## <a name="Allgem"></a>Allgemeines
+## <a name="Allgem"></a>Allgemeine
 
 In Deutschland gibt es für internationale (z. B. PISA) und einheitliche nationale 
 Erhebungen (z. B. Bildungstrend) jeweils zentrale Einrichtungen oder Firmen zur 
