@@ -571,14 +571,16 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 ```yaml
 Dokumentstatus: Entwurf(THuste)
 Stand: 11.01.2022
-todo:
-      
+todo: 
 ```
-
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** der Link zum GitHub Repository.<br>
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** letzte aktuelle Versionsstände.
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** ist der Link zum GitHub Repository.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.
 
 Einführende Videos zum Aspect Editor sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/SCHULUNGSVIDEOS) zu finden.
+
+## Überblick
+
+**Diese Beschreibung basiert auf der Editorversion v1.21.**
 
 ## Überblick
 
@@ -600,6 +602,8 @@ Tab 1 beinhaltet Standardelemente die häufig zu Einsatz kommen und Tab 2 enthä
 **Rechts:** Eigenschaften/ Einstellungen zu den Items
 * Aufführung der Item-Parameter, aufgeteilt in Funktionen (Verhalten, Positionierung Layout) 
 * Grundlegende Funktionen wie Duplizieren und Löschen eines Items
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Aufbau_Aspect_Editor.gif)
 
 
 ### Dynamisch vs statisch
