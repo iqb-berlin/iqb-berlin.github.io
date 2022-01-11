@@ -245,17 +245,19 @@ Sobald eine Datei hochgeladen ist, ist sie wirksam. D. h. unmittelbar nachdem ei
 
 Beim Laden in das **Testcenter** werden die XML-Dateien geprüft. Eine Datei kann abgewiesen werden, wenn sie syntaktisch oder inhaltlich fehlerhaft ist. Z. B. wird eine Testtaker-Datei abgewiesen, wenn sie Anmeldedaten enthält, die bereits in einem anderen Arbeitsbereich verwendet wurden. Es wird auch eine Booklet-Datei abgewiesen, wenn sie bspw. auf Units verweist, die nicht im Arbeitsbereich gefunden wurden. Daher spielt die Reihenfolge des Hochladens eine wichtige Rolle.
 
+Probleme kann es geben, wenn ein Test gestartet wurde (also ein Login verwendet wurde), und dann durch Hochladen einer neuen Testtaker-Datei die Testheftzuweisung oder der Durchführungsmodus geändert wird. In diesem Fall sollten statt dessen neue Logins angelegt werden.
+
 ### Tab System-Check Berichte
 
-Hier können die Berichte, die über einen System-Check abgeschickt wurden, heruntergeladen werden.
+Hier können die Berichte, die über einen System-Check abgeschickt wurden, heruntergeladen werden. Es handelt sich um CSV-Dateien, die man sich gleich z. B. in Microsoft Excel anschauen kann.
 
 ### Tab Ergebnisse/Antworten
 
-Hier können Antworten und Logs, die über die Tests bzw. Befragungen innerhalb dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden.
+Hier können Antworten und Logs, die über die Tests bzw. Befragungen innerhalb dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden. Auch hier ist das Dateiformat CSV. Sollte das Testcenter über ein Länderportal verwaltet werden, dann steht hier auch ein Download im JSON-Format zur Verfügung.
 
 ## System-Admin
 
-Wurden Ihnen admministrative Rechte zugewiesen, wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet. Über diesen Schalter gelangen Sie zur Systemverwaltung. Dort können Nutzerkonten (Benutzername und Kennwort) und Arbeitsbereiche angelegt werden. Auch der Zugriff auf diese Arbeitsbereiche kann für die jeweiligen Personenkreise festgelegt werden.
+Wurden Ihnen Rechte für die Verwaltung des Gesamtsystems zugewiesen (sog. Super-Admin), wird am Ende der Liste der Arbeitsbereiche ein Schalter eingeblendet. Über diesen Schalter gelangen Sie zur Systemverwaltung. Dort können Nutzerkonten (Benutzername und Kennwort) und Arbeitsbereiche angelegt werden. Auch der Zugriff auf diese Arbeitsbereiche kann für die jeweiligen Personenkreise festgelegt und grundsätzliche Systemeinstellungen (Hintergrundfarbe, Logo) vorgenommen werden.
 
 ---
 

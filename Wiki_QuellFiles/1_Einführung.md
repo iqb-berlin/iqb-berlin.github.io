@@ -119,14 +119,16 @@ In einer [ersten Projektphase](https://www.iqb.hu-berlin.de/research/dm/tba/) ha
 ## IQB-Testcenter
 
 Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als stabil und produktiv einsetzbar angesehen. Nächste Entwicklungsschritte:
-* Massiver Ausbau der Dokumentation/ Wissensbasis, z. B. Entwicklung typischer Einsatzszenarien mit ausführlicher Verfahrensbeschreibung einschl. Datensicherheitskonzept
+* Ausbau der Dokumentation/ Wissensbasis, z. B. Entwicklung typischer Einsatzszenarien mit ausführlicher Verfahrensbeschreibung einschl. Datensicherheitskonzept
 * Einsatz eingebettet in eine fremde Anwendungsumgebung: Das Einspielen von Testinhalten und das Auslesen von Testantworten erfolgt nicht über das Verwaltungsportal des IQB-Testcenters, sondern durch Drittanwendungen über das API des IQB-Testcenters.
-* Optimierung des Installationspaketes hinsichtlich Lastverhalten während des Tests
+* Verbesserung des Lastverhalten bei der Anmeldung
+* Download der Antworten bereits teilweise kodiert und bewertet
 
 ## IQB-Teststudio
 
 Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams können hinreichend schnell Aufgaben gestalten. Diese einfache Version des IQB-Teststudios wird als IQB-Teststudio-Lite weitergeführt. Nächste Entwicklungsschritte:
 * Verbesserung der Import/Export-Funktionen
+* Editieren des Antwortschemas zur Unterstützung der automatisierten Kodierung
 * Konzeption eines IQB-Teststudios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
 
 ## IQB-Kodierbox
@@ -189,6 +191,10 @@ Die Trennung der Programmierung an dieser Stelle hat den großen Vorteil, dass s
 
 In der Webprogrammierung bezeichnet dieser Begriff die Fähigkeit einer Website auf unterschiedliche Bildschirmgrößen zu reagieren. Die Inhalte verhalten sich dynamisch und werden an die aktuelle Bildschirmauflösung angepasst (skaliert). Bei Webanwendungen für Kompetenztests spielt die Steuerung dieser Anpassung eine große Rolle, da sie großen Einfluss auf die Antworten hat.
 
+## <a name="syscheck"></a>System-Check
+
+Computerbasierte Lernstandserhebungen stellen bestimmte Anforderungen an die Hardware und Software sowie die Internet-Verbindung vor Ort an der Schule. Über einen System-Check lassen sich diese Anforderungen überprüfen. Daher bieten viele TBA-Systeme diese Funktion an.
+
 ## <a name="testheft"></a>Testheft / Booklet / Testablauf / Aufgabenfolge
 
 Für die Testdurchführung ist es notwendig die Abfolge der Aufgaben/Seiten/Units festzulegen. Es können außerdem Festlegungen getroffen werden wie
@@ -243,10 +249,6 @@ Bei diesem Dateiformat handelt es sich um eine IQB-Definition zur Speicherung vo
 
 Dieser Text fasst alle Schritte zusammen, die für eine kleinere Studie nötig sind. Es werden dabei nicht nur technische Aspekte angesprochen, sondern es fließen auch Erfahrungen im allgemeinen Testmanagement ein. Voraussetzung für diese Schritte sind die erfolgreichen Installationen der IQB-Anwendungen: **IQB-Teststudio** und **IQB-Testcenter**. 
 
-Ein Schulungsvideo welches Schritt für Schritt den Aufgabenentwurf und die Testdurchführung beschreibt, finden Sie hier:
-
-* [Vom Entwurf zur Testdurchführung](https://moodle.hu-berlin.de/course/view.php?id=107279)
-
 Nachfolgend finden Sie eine grobe Übersicht wie die IQB Instrumentarien zusammenarbeiten:
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/EF_Datenaust_TS_TC_final.png)
@@ -287,7 +289,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 
 * Gute Kurznamen für Units wählen, sprechende Titel
 * Voransicht nutzen, um Layout und Verhalten zu prüfen
-* Erzeugte IDs der Interaktionselemente notieren (canvasElement214...; z. B. über Excel- oder CryptPad-Tabelle)
+* Erzeugte IDs der Interaktionselemente prüfen, um die Antwortverarbeitung zu steuern (z. B. über Excel- oder CryptPad-Tabelle)
 * Beteiligte sollten sich regelmäßig ihre Units zeigen und Erfahrungen austauschen
 * frühzeitig einige Units in das IQB-Testcenter übertragen, um deren Verhalten zu überprüfen
 * Units regelmäßig als Dateien exportieren als Backup
@@ -305,20 +307,16 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Neuen Arbeitsbereich (Workspace) anlegen lassen
 * System-Check ggf. einrichten und freigeben
 
-### Units hochladen
+### Units und Testhefte hochladen
 
-* (Stand Februar 2021) XML nachbearbeiten (s. [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Unit%E2%80%90Xml))
-* Erst die voud-Dateien, dann die XML-Dateien hochladen. Es könnte sonst passieren, dass eine XML abgewiesen wird, wenn sie auf eine nicht vorhandene Voud-Datei verweist.
-
-### Testhefte hochladen
-
+* Hier ist Reihenfolge der Dateien wichtig, da eine Prüfung der Abhängigkeiten der Dateien untereinander erfolgt und ggf. das Hochladen abgelehnt wird.
 * Eine xlsx-Datei für die **ict-Toolbox** kann helfen, das Testdesign transparent zu 
   planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten XML-Dateien hochzuladen.
 * Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
+* Bitte [diese Hinweise](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren) zu Logins beachten.
 
 ### Review und Probelauf
 
-* Allgemein bitte [diese Hinweise](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren) zu Logins beachten.
 * Die XML zu Testteilnehmer\*innen (die sog. Testtaker.xml) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) anlegen und für alle Verantwortlichen der Studie hochladen.
 * Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE 
   neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die XML-Änderungen).
@@ -469,15 +467,15 @@ Es werden kontinuierlich neue Versionen veröffentlicht. Es handelt sich dann um
 
 Programmierungen, die die Darstellung einzelner Aufgaben betreffen, sind nicht fester Bestandteil der Installationen. Auch das Editieren eines speziellen Aufgabentyps ist in separate Programm-Module ausgelagert. Diese Module müssen nach der Installation über das Verwaltungsportal in das System eingespielt werden. Ein solches Plug-In-Verfahren hat den großen Vorteil, dass Änderungen an den Programmierungen nicht über die Serveradministration eingespielt werden müssen, sondern die inhaltlich Verantwortlichen jederzeit diese Programmteile hinzufügen oder ersetzen können.
 
-Voraussetzung für dieses Modul-System ist die Definition einer Schnittstelle, die wir in Zusammenhang mit dem computerbasierten Testen "Verona" nennen. Definitionen finden Sie [hier](https://github.com/verona-interfaces).
+Voraussetzung für dieses Modul-System ist die Definition einer Schnittstelle, die wir in Zusammenhang mit dem computerbasierten Testen "Verona" nennen. Definitionen finden Sie [hier](https://verona-interfaces.github.io/).
 
 ## Computersprachen
 
-Wir programmieren die Frontends und die Verona-Module in *Angular*. Dieses Framework benutzt TypeScript als Sprache und erzeugt sehr effizienten JavaScript-Code. Es gibt Erweiterungen für das Styling (Angular Material, Flex-Layout).
+Wir programmieren die Frontends und die Verona-Module in *Angular*. Dieses Framework benutzt TypeScript als Sprache und erzeugt sehr effizienten JavaScript-Code. Es gibt Erweiterungen für das Styling (Angular Material, Flex-Layout). Im Backend haben wir bis 2021 *php* mit der Erweiterung *Slim* genutzt. Jetzt kommt zunehmend *NestJS* zum Einsatz, das node.js erweitert und womit man TypeScript auf eine Angular-ähnliche Art nutzen kann.
 
-Im Backend benutzen wir *php* mit der Erweiterung *Slim*. Außerdem kommt zunehmend *NestJS* zum Einsatz, das node.js erweitert und womit man TypeScript auf eine Angular-ähnliche Art nutzen kann. Als Datenbank nehmen wir MySQL oder PostgreSQL, manchmal SQLite.
+Als Datenbank haben wir bisher MySQL oder PostgreSQL genutzt. Neue Anwendungen (Teststudio, Kodierbox) speichern die Daten in MongoDB. Auch SQLite kommt punktuell zum Einsatz, vor allem als Austauschformat für die Ergebnisdaten.
 
-Die Prototypen der Webanwendungen sind ohne Unit- und E2E-Tests entstanden, was wir schrittweise beheben. Wir sehen eine hohe Testabdeckung als Voraussetzung für hohe Codequalität. Im Rahmen der Pull-Requests und damit des Peer-Reviews beachten wir die Grundsätze des Clean Code.
+Die Prototypen der Webanwendungen sind ohne Unit- und E2E-Tests entstanden, was wir schrittweise beheben. Wir sehen eine hohe Testabdeckung als Voraussetzung für hohe Codequalität. Im Rahmen der Pull-Requests und damit des Peer-Reviews beachten wir die Grundsätze des Clean Code. Viele Prozesse sind automatisiert (Continuous Integration).
 
 ---
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->

@@ -563,3 +563,48 @@ nav-button-group::next
 ### Wiedergabe der Inhalte
 
 Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den **PlainText-Editor** muss zwingend der Player **Verona Abi-Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+#  Verona Editor Aspect (Abschnittsmarker)
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+```yaml
+Dokumentstatus: Entwurf(THuste)
+Stand: 11.01.2022
+todo:
+      
+```
+
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** der Link zum GitHub Repository.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** letzte aktuelle Versionsstände.
+
+Einführende Videos zum Aspect Editor sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/SCHULUNGSVIDEOS) zu finden.
+
+## Überblick
+
+Hier soll ein grundlegender Überblick über den Editor verschafft werden.
+
+### Aufbau
+
+Der Editor ist wie folgt aufgebaut:
+
+**Mitte:** Leinwand, auch genannt Abschnitt
+* hier erfolgt die Anordnung der Aufgabenelemente, auch genannt Items
+* die Anordnung kann dabei dynamisch oder auch statisch erfolgen
+
+**Links:** Elemente oder auch Items
+* Auswahl aller von diesem Editor zur Verfügung gestellten Items
+* Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit
+Tab 1 beinhaltet Standardelemente die häufig zu Einsatz kommen und Tab 2 enthält Elemente die etwas spezieller sind und weniger häufig zur Anwendung kommen
+
+**Rechts:** Eigenschaften/ Einstellungen zu den Items
+* Aufführung der Item-Parameter, aufgeteilt in Funktionen (Verhalten, Positionierung Layout) 
+* Grundlegende Funktionen wie Duplizieren und Löschen eines Items
+
+
+### Dynamisch vs statisch
+
+### Grid Layout
+
+### Aufteilung einer Aufgabe
+
