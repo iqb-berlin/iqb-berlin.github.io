@@ -603,7 +603,7 @@ Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoption
 Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden.
 Das wird dann auch Grid Layout genannt.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_01.gif)
 
 In den so entstandenen Zellen können anschließend Items positioniert werden.
 
