@@ -1,19 +1,4 @@
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-# Verona Editor Aspect XXX (Abschnittsmarker)
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-```yaml
-Dokumentstatus: Entwurf(THuste)
-Stand: 08.10.2021
-todo: - Arbeiten mit dem Aspect Editor
-      
-```
-Hier entstehen bald mehr Informationen.
-
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** der Link zum GitHub Repository.<br>
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases)** finden Sie die letzten aktuellen Versionsstände.
-
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Verona Dan Editor v3.1 (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
@@ -580,10 +565,6 @@ Einführende Videos zum Aspect Editor sind [hier](https://github.com/iqb-berlin/
 
 ## Überblick
 
-**Diese Beschreibung basiert auf der Editorversion v1.21.**
-
-## Überblick
-
 Hier soll ein grundlegender Überblick über den Editor verschafft werden.
 
 ### Aufbau
@@ -603,12 +584,35 @@ Tab 1 beinhaltet Standardelemente die häufig zu Einsatz kommen und Tab 2 enthä
 * Aufführung der Item-Parameter, aufgeteilt in Funktionen (Verhalten, Positionierung Layout) 
 * Grundlegende Funktionen wie Duplizieren und Löschen eines Items
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Aufbau_Aspect_Editor.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_05.gif)
 
 
 ### Dynamisch vs statisch
 
+Dieser Editor bietet die Möglichkeit Aufgaben statisch oder dynamisch anzulegen. 
+
+Worin besteht der Unterschied?
+
+Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
+Werden hingehen dynamische Abschnitte ausgewählt, werden die Items nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ und Fenstergrößen an. 
+
+Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt (siehe Bild Grid Layout).
+
 ### Grid Layout
+
+Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden.
+Das wird dann auch Grid Layout genannt.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch.gif)
+
+In den so entstandenen Zellen können anschließend Items positioniert werden.
+
+Wozu wird das Grid Layout verwendet?
+
+Da die dynamische Anordnung der Items ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Items bestimmten Bereichen im Abschnitt und somit auf dem Bildschirm zuzuweisen, wird das Grid Layout verwendet.
 
 ### Aufteilung einer Aufgabe
 
+Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden, wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden. 
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
