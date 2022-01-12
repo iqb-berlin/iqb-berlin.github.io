@@ -616,3 +616,11 @@ Da die dynamische Anordnung der Items ein entsprechender Algorithmus übernimmt 
 Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden, wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden. 
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
+
+## Die Items
+
+Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.
+
+Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_01.gif)
