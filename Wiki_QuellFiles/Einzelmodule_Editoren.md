@@ -621,6 +621,6 @@ Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kan
 
 Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.
 
-Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen.
+Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen (hier gekennzeichnet mit A,B,C).
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_01.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
