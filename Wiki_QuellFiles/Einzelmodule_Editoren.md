@@ -564,7 +564,9 @@ todo:
 	<tr>
 		<td><a href="#Überblick">Überblick</a></td>
 		<td><a href="#Die Items">Die Items</a></td>
-		<td><a href="#Item:TEXT">Item:TEXT</a></td>
+		<td><a href="#Item:Eingabefeld">Item: Eingabefeld</a></td>
+		<td><a href="#Item:Optionsfeld (Bild)">Item: Optionsfeld (Bild)</a></td>
+		<td><a href="#Item:Ablegeliste">Item: Ablegeliste</a></td>
 	</tr>
 </table>
 
@@ -645,38 +647,51 @@ Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items 
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
 
-**A:** Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
+**A:**<br> Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
 
-**B:** Hier können Parameter zur Positionierung des Items bedient werden.
+**B:**<br> Hier können Parameter zur Positionierung des Items bedient werden.
 
-**C:** Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
+**C:**<br> Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
 
 ### Globale Parameter
 
 Nachfolgend sind Parameter erklärt, die jedes Item besitzt und die nicht unbedingt selbsterklärend sind.
 
-**A: ID:**
+**A: ID:** <br>
 Jedes Item besitzt eine eindeutige ID. Über diese ID wird das Item identifiziert. Bei der Auswertung können die Antworten so einem Item zugeordnet werden.
 Die ID kann individuell angepasst werden. **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
 
-**B: Mindestbreite:**
+**B: Mindestbreite:** <br>
 Legt die Mindestbreite eines Items fest. Wird im dynamischen Layout das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Item nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint ein horizontaler Schieber. Über diesen kann dann im Bild navigiert werden.
 
-**B: Mindesthöhe:**
+**B: Mindesthöhe:**<br>
 Gleich wie Mindestbreite, nur bezogen auf die Höhe des Items.
 
-**B: Raster:**
+**B: Raster:**<br>
 Legt fest über welche Bereiche im Grid Layout sich das Item erstreckt. Ein Item kann sich auch über mehrere Spalten und Zeilen erstrecken.
 
-**B: Abstand:**
+**B: Abstand:**<br>
 Legt die X-/ Y-Position eines Items innerhalb einer Grid Layout Zelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
 
-**B: Z-Index:**
+**B: Z-Index:**<br>
 Werden Items (Elemente) übereinander gestapelt, kann mit diesem Index festgelegt werden, welches Item sich in der Ebene ganz oben befindet. 
 
-### <a name="Item:EINGABEFELD"></a>Item:EINGABEFELD
+### <a name="Item:Eingabefeld"></a>Item: Eingabefeld
 
-**B: Muster:**
+**B: Muster:**<br>
 Hier können reguläre Java Script Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
 Da es sehr viele Ausdruckvarianten gibt, werden diese an dieser Stelle nicht aufgeführt. Entsprechende Listen sind im Internet zugängig.
 
+### <a name="Item:Optionsfeld (Bild)"></a>Item: Optionsfeld (Bild)
+
+**A: Spalten:**<br>
+Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die Spalteneinstellungen erfolgen.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_01.png)
+
+### <a name="Item:Ablegeliste"></a>Item: Ablegeliste
+
+**A: Verbundene Ablegeliste:**<br>
+Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
+
+> Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie in den Eigenschaften der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
