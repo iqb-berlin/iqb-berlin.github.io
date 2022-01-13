@@ -611,6 +611,8 @@ Wozu wird das Grid Layout verwendet?
 
 Da die dynamische Anordnung der Items ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Items bestimmten Bereichen im Abschnitt und somit auf dem Bildschirm zuzuweisen, wird das Grid Layout verwendet.
 
+Es ist auch möglich auf einer Seite mehrere Abschnitte mit unterschiedlicher Aufteilung (Zeilen, Spalten) anzulegen. Dies erhöht die Gestaltungsmöglichkeiten auf einer Seite deutlich.
+
 ### Aufteilung einer Aufgabe
 
 Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden, wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden. 
