@@ -558,12 +558,24 @@ Dokumentstatus: Entwurf(THuste)
 Stand: 11.01.2022
 todo: 
 ```
+---
+
+<table>
+	<tr>
+		<td><a href="#Überblick">Überblick</a></td>
+		<td><a href="#Die Items">Die Items</a></td>
+		<td><a href="#Item:TEXT">Item:TEXT</a></td>
+	</tr>
+</table>
+
+---
+
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** ist der Link zum GitHub Repository.<br>
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.
 
 Einführende Videos zum Aspect Editor sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/SCHULUNGSVIDEOS) zu finden.
 
-## Überblick
+## <a name="Überblick"></a>Überblick
 
 Hier soll ein grundlegender Überblick über den Editor verschafft werden.
 
@@ -575,7 +587,7 @@ Der Editor ist wie folgt aufgebaut:
 * hier erfolgt die Anordnung der Aufgabenelemente, auch genannt Items
 * die Anordnung kann dabei dynamisch oder auch statisch erfolgen
 
-**Links:** Elemente oder auch Items
+**Links:** Elemente oder auch genannt Items
 * Auswahl aller von diesem Editor zur Verfügung gestellten Items
 * Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit
 Tab 1 beinhaltet Standardelemente die häufig zu Einsatz kommen und Tab 2 enthält Elemente die etwas spezieller sind und weniger häufig zur Anwendung kommen
@@ -596,14 +608,18 @@ Worin besteht der Unterschied?
 Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
 Werden hingehen dynamische Abschnitte ausgewählt, werden die Items nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ und Fenstergrößen an. 
 
-Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt (siehe Bild Grid Layout).
+Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt (siehe Bild Grid Layout). Der Abschnitt ist statisch solange der Haken bei "dynamisch" nicht gesetzt ist.
+
+Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel oder in Bildanteilen angegeben werden.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch.gif)
 
 ### Grid Layout
 
 Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden.
 Das wird dann auch Grid Layout genannt.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_03.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_04.gif)
 
 In den so entstandenen Zellen können anschließend Items positioniert werden.
 
@@ -619,10 +635,48 @@ Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kan
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
 
-## Die Items
+## <a name="Die Items"></a>Die Items
 
-Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.
+Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. 
+
+**An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
 
 Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen (hier gekennzeichnet mit A,B,C).
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
+
+**A:** Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
+
+**B:** Hier können Parameter zur Positionierung des Items bedient werden.
+
+**C:** Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
+
+### Globale Parameter
+
+Nachfolgend sind Parameter erklärt, die jedes Item besitzt und die nicht unbedingt selbsterklärend sind.
+
+**A: ID:**
+Jedes Item besitzt eine eindeutige ID. Über diese ID wird das Item identifiziert. Bei der Auswertung können die Antworten so einem Item zugeordnet werden.
+Die ID kann individuell angepasst werden. **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
+
+**B: Mindestbreite:**
+Legt die Mindestbreite eines Items fest. Wird im dynamischen Layout das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Item nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint ein horizontaler Schieber. Über diesen kann dann im Bild navigiert werden.
+
+**B: Mindesthöhe:**
+Gleich wie Mindestbreite, nur bezogen auf die Höhe des Items.
+
+**B: Raster:**
+Legt fest über welche Bereiche im Grid Layout sich das Item erstreckt. Ein Item kann sich auch über mehrere Spalten und Zeilen erstrecken.
+
+**B: Abstand:**
+Legt die X-/ Y-Position eines Items innerhalb einer Grid Layout Zelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
+
+**B: Z-Index:**
+Werden Items (Elemente) übereinander gestapelt, kann mit diesem Index festgelegt werden, welches Item sich in der Ebene ganz oben befindet. 
+
+### <a name="Item:EINGABEFELD"></a>Item:EINGABEFELD
+
+**B: Muster:**
+Hier können reguläre Java Script Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+Da es sehr viele Ausdruckvarianten gibt, werden diese an dieser Stelle nicht aufgeführt. Entsprechende Listen sind im Internet zugängig.
+
