@@ -566,7 +566,9 @@ todo:
 		<td><a href="#Die Items">Die Items</a></td>
 		<td><a href="#Item:Eingabefeld">Item: Eingabefeld</a></td>
 		<td><a href="#Item:Optionsfeld (Bild)">Item: Optionsfeld (Bild)</a></td>
-		<td><a href="#Item:Ablegeliste">Item: Ablegeliste</a></td>
+		<td><a href="#Item:Bild">Item: Bild</a></td>
+		<td><a href="#Item:Audio">Item: Audio</a></td>
+		<td><a href="#Item:Audio">Item: Video</a></td>
 	</tr>
 </table>
 
@@ -639,6 +641,10 @@ Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kan
 
 ## <a name="Die Items"></a>Die Items
 
+Die Items unterteilen sich in zwei Gruppen. Eine Gruppe (**1.Tab**) enthält Items die häufig zum Einsatz kommen. Die zweite Gruppe (**2.Tab**) enthält Items, die etwas spezieller sind und nicht so häufig zum Einsatz kommen.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente.gif)
+
 Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. 
 
 **An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
@@ -659,7 +665,8 @@ Nachfolgend sind Parameter erklärt, die jedes Item besitzt und die nicht unbedi
 
 **A: ID:** <br>
 Jedes Item besitzt eine eindeutige ID. Über diese ID wird das Item identifiziert. Bei der Auswertung können die Antworten so einem Item zugeordnet werden.
-Die ID kann individuell angepasst werden. **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
+Die ID kann individuell angepasst werden. 
+> **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
 
 **B: Mindestbreite:** <br>
 Legt die Mindestbreite eines Items fest. Wird im dynamischen Layout das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Item nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint ein horizontaler Schieber. Über diesen kann dann im Bild navigiert werden.
@@ -695,3 +702,33 @@ Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt wer
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
 
 > Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie in den Eigenschaften der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
+
+### <a name="Item:Bild"></a>Item: Bild
+
+**A: Skalieren:**<br>
+
+
+
+### <a name="Item:Audio"></a>Item: Audio
+
+**A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
+
+
+
+**A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
+Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
+
+**A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
+Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Audio mindestens so oft abgespielt wurde, wie hier eingetragen ist.
+
+### <a name="Item:Video"></a>Item: Video
+
+**A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
+
+
+
+**A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
+Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
+
+**A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
+Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Video mindestens so oft abgespielt wurde, wie hier eingetragen ist.
