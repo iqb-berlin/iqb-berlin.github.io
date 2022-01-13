@@ -616,14 +616,14 @@ Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoption
 
 Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel oder in Bildanteilen angegeben werden.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
 
 ### Grid Layout
 
 Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden.
 Das wird dann auch Grid Layout genannt.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_04.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
 
 In den so entstandenen Zellen können anschließend Items positioniert werden.
 
@@ -643,7 +643,7 @@ Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kan
 
 Die Items unterteilen sich in zwei Gruppen. Eine Gruppe (**1.Tab**) enthält Items die häufig zum Einsatz kommen. Die zweite Gruppe (**2.Tab**) enthält Items, die etwas spezieller sind und nicht so häufig zum Einsatz kommen.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
 
 Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. 
 
@@ -694,7 +694,7 @@ Da es sehr viele Ausdruckvarianten gibt, werden diese an dieser Stelle nicht auf
 **A: Spalten:**<br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die Spalteneinstellungen erfolgen.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_01.png)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.png)
 
 ### <a name="Item:Ablegeliste"></a>Item: Ablegeliste
 
