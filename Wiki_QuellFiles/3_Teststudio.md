@@ -133,7 +133,7 @@ Welcher Editor gewählt wird, orientiert sich an den Anforderungen an die Aufgab
 
 **Player**
 
-Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testcenter abgespielt werden kann, wird ein Player benötigt. Dieser ist in die wird in die jeweilige Webanwendung integriert und gibt die Aufgabe mit all ihren Elementen wieder. Der Player muss dabei zwingend zum Editor passen mit dem die Aufgabe entworfen wurde. Wurde eine Aufgabe bspw. mit einem Script Editor entworfen, muss auch ein Script Player verwendet werden.
+Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testcenter abgespielt werden kann, wird ein Player benötigt. Dieser ist in die jeweilige Webanwendung integriert und gibt die Aufgabe mit all ihren Elementen wieder. Der Player muss dabei zwingend zum Editor passen mit dem die Aufgabe entworfen wurde. Wurde eine Aufgabe bspw. mit einem Script Editor entworfen, muss auch ein Script Player verwendet werden.
 
 > Mehr zum Thema Player entnehmen Sie bitte dem Kapitel **Player.**
 
@@ -205,7 +205,7 @@ Detailierte Informationen zum **Dan-Editor** finden Sie in dem gleichnamigen [Ei
 **Verona Aspect Editor**<br>
 Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt werden. Die bereitgestellten Elemente können dabei einfach mittels Drag-and-Drop der Aufgabe hinzugefügt werden. Anschließend können diese Elemente in ihren Eigenschaften verändert werden. Es können dann bspw. Größe, Farbe, Position und weitere Eigenschaften der Elemente über entsprechende Toolboxen verändert werden. Bzgl. Responsivität ist es auch möglich dynamische Felder zu erzeugen und Elemente in diesen anzuordnen. Die angelegten Elemente skalieren sich dann automatisch und passen sich an veränderte Fenstergrößen oder wechselnde Bildschirme an.
 
-Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Aspect-XXX).
+Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Aspect-v1.21).
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Player-Vorschau-(Verona)">
@@ -228,13 +228,6 @@ Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen 
 
 # 3.4 Player Vorschau (Verona)
 
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 18.06.2021
-todo: - Soll hier auch der Verona Player Simple aufgeführt werden?
-      
-```
-
 Damit die Aufgabe in der Vorschau wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem **PlainText-Editor** erstellt wurde, kann nicht von einem **Dan-Player** wiedergegeben werden, da ihm schlicht die enthaltenen Elemente nicht bekannt sind. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
 	
 **Verona Player Dan**<br>
@@ -247,7 +240,7 @@ Detailierte Informationen zum **Abi-Player** finden Sie in dem gleichnamigen [Ei
 
 **Verona Player Aspect**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels **Aspect-Editor** erfolgte.<br>
-Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Aspect-XXX).
+Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Aspect-v1.15).
 
 ---
 

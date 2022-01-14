@@ -593,8 +593,7 @@ Der Editor ist wie folgt aufgebaut:
 
 **Links:** Elemente oder auch genannt Items
 * Auswahl aller von diesem Editor zur Verfügung gestellten Items
-* Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit
-Tab 1 beinhaltet Standardelemente die häufig zu Einsatz kommen und Tab 2 enthält Elemente die etwas spezieller sind und weniger häufig zur Anwendung kommen
+* Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit (2 Gruppen/ Tabs)
 
 **Rechts:** Eigenschaften/ Einstellungen zu den Items
 * Aufführung der Item-Parameter, aufgeteilt in Funktionen (Verhalten, Positionierung Layout) 
@@ -612,7 +611,7 @@ Worin besteht der Unterschied?
 Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
 Werden hingehen dynamische Abschnitte ausgewählt, werden die Items nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ und Fenstergrößen an. 
 
-Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt (siehe Bild Grid Layout). Der Abschnitt ist statisch solange der Haken bei "dynamisch" nicht gesetzt ist.
+Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt. Der Abschnitt ist statisch solange der Haken bei "dynamisch" nicht gesetzt ist.
 
 Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel oder in Bildanteilen angegeben werden.
 
@@ -620,8 +619,7 @@ Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und H�
 
 ### Grid Layout
 
-Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden.
-Das wird dann auch Grid Layout genannt.
+Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden. Das wird dann auch Grid Layout genannt.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
 
@@ -647,17 +645,25 @@ Die Items unterteilen sich in zwei Gruppen. Eine Gruppe (**1.Tab**) enthält Ite
 
 Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. 
 
-**An dieser Stelle wird nicht auf jeden Parameter der einzelnen Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
+**An dieser Stelle wird nicht auf jeden Parameter jedes Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
 
 Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen (hier gekennzeichnet mit A,B,C).
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
 
-**A:**<br> Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
+> **A:**
 
-**B:**<br> Hier können Parameter zur Positionierung des Items bedient werden.
+Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
 
-**C:**<br> Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
+> **B:**
+
+Hier können Parameter zur Positionierung des Items bedient werden.
+
+> **C:**
+ 
+Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
+
+**Die nachfolgend beschriebenen Parameter, beginnen immer mit dem Namen der Gruppe, in der sie zu finden sind (A,B,C).**
 
 ### Globale Parameter
 
@@ -706,14 +712,12 @@ Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen mi
 ### <a name="Item:Bild"></a>Item: Bild
 
 **A: Skalieren:**<br>
-
-
+Ist diese Funktion aktiv und ist genügend Platz für ein Bild vorhanden, kann das Bild aufskaliert werden. Es kann dann auch seine ursprüngliche Größe überschreiten. Eventuell leidet darunter aber die Qualität des Bildes.
 
 ### <a name="Item:Audio"></a>Item: Audio
 
 **A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
-
-
+Hat aktuell keine Funktion und wird demnächst entfallen.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
@@ -724,8 +728,7 @@ Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` ak
 ### <a name="Item:Video"></a>Item: Video
 
 **A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
-
-
+Hat aktuell keine Funktion und wird demnächst entfallen.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
 Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
