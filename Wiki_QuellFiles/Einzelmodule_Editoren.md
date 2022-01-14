@@ -568,7 +568,9 @@ todo:
 		<td><a href="#Item:Optionsfeld (Bild)">Item: Optionsfeld (Bild)</a></td>
 		<td><a href="#Item:Bild">Item: Bild</a></td>
 		<td><a href="#Item:Audio">Item: Audio</a></td>
-		<td><a href="#Item:Audio">Item: Video</a></td>
+		<td><a href="#Item:Video">Item: Video</a></td>
+		<td><a href="#Item:Optionstabelle">Item: Optionstabelle</a></td>
+		<td><a href="#Item:Lückentext">Item: Lückentext</a></td>
 	</tr>
 </table>
 
@@ -697,6 +699,8 @@ Da es sehr viele Ausdruckvarianten gibt, werden diese an dieser Stelle nicht auf
 
 ### <a name="Item:Optionsfeld (Bild)"></a>Item: Optionsfeld (Bild)
 
+**Gut zu wissen:** Wie können Bilder eingefügt werden?
+
 **A: Spalten:**<br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die Spalteneinstellungen erfolgen.
 
@@ -735,3 +739,39 @@ Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Sola
 
 **A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
 Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Video mindestens so oft abgespielt wurde, wie hier eingetragen ist.
+
+### <a name="Item:Optionstabelle"></a>Item: Optionstabelle
+
+**Gut zu wissen:** Kann auch die ID einer Zeile geändert werden?
+
+**A: Zeilen:** <br>
+In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann auch die ID der Zeile individuell vergeben werden.
+
+**Gut zu wissen:** Wie können Bilder eingefügt werden?
+
+**A: Spalten:**<br>
+Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
+
+### <a name="Item:Lückentext"></a>Item: Lückentext
+
+**A: Text:** <br>
+In einen Lückentext können bestimmte Elemente integriert werden.
+Dazu gehören die folgenden 3:
+
+* Optionsfeld (\r)
+* Ablegefeld (\z)
+* Eingabefeld (\i)
+
+Diese Elemente können wie gewünscht im Text eingeordnet werden. Mittels definierter Zeichenfolge werden die Elemente an den entsprechenden Stellen im Text gesetzt.
+Die Zeichenfolgen sind oben hinter den Elementen zu sehen. Entweder werden diese Zeichenfolgen im Text direkt angegeben oder sie werden mittels Klick auf ein Symbol erzeugt.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
+
+**A: toogle-button (Optionsfeld)
+Werden in einen Lückentext Optionsfelder eingefügt mittels Zeichenfolge `\r` , können diese Felder natürlich auch noch den gewünschten Inhalt erhalten.
+Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend können in den erweiterten Einstellungen dieser Felder entsprechende Texte vergeben werden.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
+
+**A: Ablegefeld:**<br>
+Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
