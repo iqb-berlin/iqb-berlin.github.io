@@ -553,24 +553,17 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 #  Verona Editor Aspect (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-```yaml
-Dokumentstatus: Entwurf(THuste)
-Stand: 11.01.2022
-todo: 
-```
 ---
 
 <table>
 	<tr>
-		<td><a href="#Überblick">Überblick</a></td>
-		<td><a href="#Die Items">Die Items</a></td>
-		<td><a href="#Item:Eingabefeld">Item: Eingabefeld</a></td>
-		<td><a href="#Item:Optionsfeld (Bild)">Item: Optionsfeld (Bild)</a></td>
-		<td><a href="#Item:Bild">Item: Bild</a></td>
-		<td><a href="#Item:Audio">Item: Audio</a></td>
-		<td><a href="#Item:Video">Item: Video</a></td>
-		<td><a href="#Item:Optionstabelle">Item: Optionstabelle</a></td>
-		<td><a href="#Item:Lückentext">Item: Lückentext</a></td>
+		<td><a href="#Item:Eingabefeld">Eingabefeld</a></td>
+		<td><a href="#Item:Optionsfeld (Bild)">Optionsfeld (Bild)</a></td>
+		<td><a href="#Item:Bild">Bild</a></td>
+		<td><a href="#Item:Audio">Audio</a></td>
+		<td><a href="#Item:Video">Video</a></td>
+		<td><a href="#Item:Optionstabelle">Optionstabelle</a></td>
+		<td><a href="#Item:Lückentext">Lückentext</a></td>
 	</tr>
 </table>
 
@@ -665,7 +658,7 @@ Hier können Parameter zur Positionierung des Items bedient werden.
  
 Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
 
-**Die nachfolgend beschriebenen Parameter, beginnen immer mit dem Namen der Gruppe, in der sie zu finden sind (A,B,C).**
+**Die nachfolgend beschriebenen Parameter beginnen immer mit dem Namen der Gruppe in der sie zu finden sind (A,B,C).**
 
 ### Globale Parameter
 
@@ -767,11 +760,11 @@ Die Zeichenfolgen sind oben hinter den Elementen zu sehen. Entweder werden diese
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
 
-**A: toogle-button (Optionsfeld)
+**A: toogle-button(Optionsfeld):**<br>
 Werden in einen Lückentext Optionsfelder eingefügt mittels Zeichenfolge `\r` , können diese Felder natürlich auch noch den gewünschten Inhalt erhalten.
 Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend können in den erweiterten Einstellungen dieser Felder entsprechende Texte vergeben werden.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_02.gif)
 
 **A: Ablegefeld:**<br>
-Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
+Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es später möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
