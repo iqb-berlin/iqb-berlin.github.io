@@ -570,9 +570,8 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 ---
 
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** ist der Link zum GitHub Repository.<br>
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.
-
-Einführende Videos zum Aspect Editor sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/SCHULUNGSVIDEOS) zu finden.
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.<br>
+> **[Hier](https://moodle.hu-berlin.de/course/view.php?id=107227)** ist ein einführendes Video zu finden.<br>
 
 ## <a name="Überblick"></a>Überblick
 
@@ -586,7 +585,7 @@ Der Editor ist wie folgt aufgebaut:
 * hier erfolgt die Anordnung der Aufgabenelemente, auch genannt Items
 * die Anordnung kann dabei dynamisch oder auch statisch erfolgen
 
-**Links:** Elemente oder auch genannt Items
+**Links:** Elemente, auch genannt Items
 * Auswahl aller von diesem Editor zur Verfügung gestellten Items
 * Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit (2 Gruppen/ Tabs)
 
@@ -603,7 +602,7 @@ Dieser Editor bietet die Möglichkeit Aufgaben statisch oder dynamisch anzulegen
 
 Worin besteht der Unterschied?
 
-Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
+Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. im Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
 Werden hingehen dynamische Abschnitte ausgewählt, werden die Items nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ und Fenstergrößen an. 
 
 Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt. Der Abschnitt ist statisch solange der Haken bei "dynamisch" nicht gesetzt ist.
@@ -626,9 +625,9 @@ Da die dynamische Anordnung der Items ein entsprechender Algorithmus übernimmt 
 
 Es ist auch möglich auf einer Seite mehrere Abschnitte mit unterschiedlicher Aufteilung (Zeilen, Spalten) anzulegen. Dies erhöht die Gestaltungsmöglichkeiten auf einer Seite deutlich.
 
-### Aufteilung einer Aufgabe
+### Aufteilung einer Unit (Aufgabe)
 
-Aufgaben, auch genannt Units, können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden, wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden. 
+Units können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
 
@@ -688,7 +687,7 @@ Werden Items (Elemente) übereinander gestapelt, kann mit diesem Index festgeleg
 
 **B: Muster:**<br>
 Hier können reguläre Java Script Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
-Da es sehr viele Ausdruckvarianten gibt, werden diese an dieser Stelle nicht aufgeführt. Entsprechende Listen sind im Internet zugängig.
+Da es sehr viele Ausdrucksvarianten gibt, werden diese an dieser Stelle nicht aufgeführt. Entsprechende Listen sind im Internet zugängig.
 
 ### <a name="Item:Optionsfeld (Bild)"></a>Item: Optionsfeld (Bild)
 
@@ -720,7 +719,7 @@ Hat aktuell keine Funktion und wird demnächst entfallen.
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
-Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Audio mindestens so oft abgespielt wurde, wie hier eingetragen ist.
+Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Audio mindestens so oft abgespielt wurde wie hier eingetragen ist.
 
 ### <a name="Item:Video"></a>Item: Video
 
@@ -731,7 +730,7 @@ Hat aktuell keine Funktion und wird demnächst entfallen.
 Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
-Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Video mindestens so oft abgespielt wurde, wie hier eingetragen ist.
+Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Video mindestens so oft abgespielt wurde wie hier eingetragen ist.
 
 ### <a name="Item:Optionstabelle"></a>Item: Optionstabelle
 
@@ -767,4 +766,4 @@ Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_02.gif)
 
 **A: Ablegefeld:**<br>
-Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es später möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
+Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item-Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
