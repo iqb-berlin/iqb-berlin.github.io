@@ -557,20 +557,22 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 
 <table>
 	<tr>
-		<td><a href="#Item:Eingabefeld">Eingabefeld</a></td>
-		<td><a href="#Item:Optionsfeld (Bild)">Optionsfeld (Bild)</a></td>
-		<td><a href="#Item:Bild">Bild</a></td>
-		<td><a href="#Item:Audio">Audio</a></td>
-		<td><a href="#Item:Video">Video</a></td>
-		<td><a href="#Item:Optionstabelle">Optionstabelle</a></td>
-		<td><a href="#Item:Lückentext">Lückentext</a></td>
+		<td><a href="#Element:Eingabefeld">Eingabefeld</a></td>
+		<td><a href="#Element:Optionsfeld (Bild)">Optionsfeld (Bild)</a></td>
+		<td><a href="#Element:Bild">Bild</a></td>
+		<td><a href="#Element:Audio">Audio</a></td>
+		<td><a href="#Element:Video">Video</a></td>
+		<td><a href="#Element:Optionstabelle">Optionstabelle</a></td>
+		<td><a href="#Element:Lückentext">Lückentext</a></td>
 	</tr>
 </table>
 
 ---
 
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** ist der Link zum GitHub Repository.<br>
-> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.<br>
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** ist der Link zum GitHub Repository.
+
+> **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.
+
 > **[Hier](https://moodle.hu-berlin.de/course/view.php?id=107227)** ist ein einführendes Video zu finden.<br>
 
 ## <a name="Überblick"></a>Überblick
@@ -581,115 +583,106 @@ Hier soll ein grundlegender Überblick über den Editor verschafft werden.
 
 Der Editor ist wie folgt aufgebaut:
 
-**Mitte:** Leinwand, auch genannt Abschnitt
-* hier erfolgt die Anordnung der Aufgabenelemente, auch genannt Items
-* die Anordnung kann dabei dynamisch oder auch statisch erfolgen
+**Mitte:** Seitenansicht mit Abschnitt
+* Ansicht der Seite einer Unit und des Abschnitts auf dieser Seite
+* auf einer Seite können mehrere Abschnitte angelegt und Elemente darin angeordnet werden
+* die Abschnitte können dynamisch oder statisch angelegt werden
 
-**Links:** Elemente, auch genannt Items
-* Auswahl aller von diesem Editor zur Verfügung gestellten Items
-* Aufteilung der Items nach Funktionalität oder auch Einsatzhäufigkeit (2 Gruppen/ Tabs)
+**Links:** Aufgabenelemente
+* Auswahl aller von diesem Editor zur Verfügung gestellten Elementen
+* Unterteilung der Elemente in 2 Gruppen/ Reiter
 
-**Rechts:** Eigenschaften/ Einstellungen zu den Items
-* Aufführung der Item-Parameter, aufgeteilt in Funktionen (Verhalten, Positionierung Layout) 
-* Grundlegende Funktionen wie Duplizieren und Löschen eines Items
+**Rechts:** Eigenschaftenbereich der Elemente
+* Aufführung der Eigenschaften eines Elements, aufgeteilt in Gruppen (spez. Parameter des Elements, Positionierung und Dimensionierung, Gestaltung) 
+* Grundlegende Funktionen wie Duplizieren und Löschen eines Elements
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_05.gif)
 
-
-### Dynamisch vs statisch
-
-Dieser Editor bietet die Möglichkeit Aufgaben statisch oder dynamisch anzulegen. 
-
-Worin besteht der Unterschied?
-
-Werden Aufgaben statisch angelegt, sind die Items dieser Aufgabe fix mit einem bestimmten Pixelwertes (x, y) auf der Leinwand bzw. im Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Aufgabe angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Items der neuen Größe nicht an. In einem solchen Fall wird die Aufgabe schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Schieber in der Aufgabe navigieren.
-Werden hingehen dynamische Abschnitte ausgewählt, werden die Items nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ und Fenstergrößen an. 
-
-Ob der Abschnitt statisch oder dynamisch sein soll, wird in den Abschnittsoptionen festgelegt. Der Abschnitt ist statisch solange der Haken bei "dynamisch" nicht gesetzt ist.
-
-Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel oder in Bildanteilen angegeben werden.
-
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
-
-### Grid Layout
-
-Wird ein dynamischer Abschnitt angelegt, kann dieser in Zeilen und Spalten aufgeteilt werden. Das wird dann auch Grid Layout genannt.
-
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
-
-In den so entstandenen Zellen können anschließend Items positioniert werden.
-
-Wozu wird das Grid Layout verwendet?
-
-Da die dynamische Anordnung der Items ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Items bestimmten Bereichen im Abschnitt und somit auf dem Bildschirm zuzuweisen, wird das Grid Layout verwendet.
-
-Es ist auch möglich auf einer Seite mehrere Abschnitte mit unterschiedlicher Aufteilung (Zeilen, Spalten) anzulegen. Dies erhöht die Gestaltungsmöglichkeiten auf einer Seite deutlich.
-
-### Aufteilung einer Unit (Aufgabe)
+### Aufteilung einer Unit in Seiten
 
 Units können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
 
-## <a name="Die Items"></a>Die Items
+### Verhalten des Abschnitts
 
-Die Items unterteilen sich in zwei Gruppen. Eine Gruppe (**1.Tab**) enthält Items die häufig zum Einsatz kommen. Die zweite Gruppe (**2.Tab**) enthält Items, die etwas spezieller sind und nicht so häufig zum Einsatz kommen.
+Der Editor bietet die Möglichkeit Abschnitte statisch oder dynamisch anzulegen.<br>
+Ob ein Abschnitt statisch oder dynamisch ist, wird in den Abschnittsoptionen (rotes Menu zum Abschnitt) festgelegt.<br>
+Ein Abschnitt ist statisch solange der Haken bei "dynamisch" in den Abschnittsoptionen <u>nicht</u> gesetzt ist. 
+
+#### Statisch
+
+Werden Abschnitte statisch angelegt, sind die Elemente dieser Unit fix mit einem bestimmten Pixelwertes (x, y) im Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Unit angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Elemente der neuen Größe nicht an. In einem solchen Fall wird die Unit schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Bildlaufleisten in der Unit navigieren.
+
+#### Dynamisch
+
+Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ bzw. Fenstergrößen an.
+Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Bildschirm zuzuweisen, kann der dynamische Abschnitt in Zeilen und Spalten unterteilt werden. Auf diese Weise entsteht ein Raster. In diesem Rasten können dann die Aufgabenelemente positioniert werden. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
+
+Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel angegeben werden. 
+
+Die Breiten und Höhen der Spalten bzw. Zeilen können außerdem in Bildanteilen angegeben werden. 
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
+
+## <a name="Die Aufgabenelemente"></a>Die Aufgabenelemente
+
+Die Elemente werden auf 2 Gruppen aufgeteilt (Reiter 1 und 2). 
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
 
-Jedes Item stellt spezifische Parameter in den Eigenschaften zur Verfügung. Hierüber kann dann bspw. das Layout und das Verhalten eines Items verändert werden. 
+Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
 
-**An dieser Stelle wird nicht auf jeden Parameter jedes Items eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
-
-Die hier beschriebenen Parameter sind in den Eigenschaften des jeweiligen Items zu finden.<br> Die Eigenschaften unterteilen sich nach Funktionen (hier gekennzeichnet mit A,B,C).
+**An dieser Stelle wird nicht auf jeden Parameter jedes Elements eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
 
 > **A:**
 
-Hier sind die eigentlichen Funktionen eines Items zu finden. Am Bsp. eines Text-Items könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
+Hier sind die eigentlichen Funktionen eines Elements zu finden. Am Bsp. eines Text-Elements könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
 
 > **B:**
 
-Hier können Parameter zur Positionierung des Items bedient werden.
+Hier können Parameter zur Positionierung und Dimensionierung des Elements bedient werden.
 
 > **C:**
  
-Hier können Einstellungen zum Layout des Items vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen etc. gesetzt werden.
+Hier können Einstellungen bzgl. der Gestaltung eines Elements vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen usw. gesetzt werden.
 
-**Die nachfolgend beschriebenen Parameter beginnen immer mit dem Namen der Gruppe in der sie zu finden sind (A,B,C).**
+**Die nachfolgend beschriebenen Parameter beginnen immer mit dem Buchstaben des Reiters unter dem  sie zu finden sind (A,B,C).**
 
 ### Globale Parameter
 
-Nachfolgend sind Parameter erklärt, die jedes Item besitzt und die nicht unbedingt selbsterklärend sind.
+Nachfolgend sind Parameter erklärt, die jedes Element besitzt und die nicht zwingend selbsterklärend sind.
 
 **A: ID:** <br>
-Jedes Item besitzt eine eindeutige ID. Über diese ID wird das Item identifiziert. Bei der Auswertung können die Antworten so einem Item zugeordnet werden.
+Jedes Element besitzt eine eindeutige ID. Über diese ID wird das E identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
 Die ID kann individuell angepasst werden. 
 > **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
 
 **B: Mindestbreite:** <br>
-Legt die Mindestbreite eines Items fest. Wird im dynamischen Layout das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Item nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint ein horizontaler Schieber. Über diesen kann dann im Bild navigiert werden.
+Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann dann im Bild navigiert werden.
 
 **B: Mindesthöhe:**<br>
-Gleich wie Mindestbreite, nur bezogen auf die Höhe des Items.
+Gleich wie Mindestbreite, nur bezogen auf die Höhe des Elements.
 
 **B: Raster:**<br>
-Legt fest über welche Bereiche im Grid Layout sich das Item erstreckt. Ein Item kann sich auch über mehrere Spalten und Zeilen erstrecken.
+Legt fest über welche Bereiche im Abschnittsraster sich das Element erstreckt. Ein Element kann sich auch über mehrere Spalten und Zeilen erstrecken.
 
 **B: Abstand:**<br>
-Legt die X-/ Y-Position eines Items innerhalb einer Grid Layout Zelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
+Legt die X-/ Y-Position eines Elements innerhalb einer Rasterzelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
 
 **B: Z-Index:**<br>
-Werden Items (Elemente) übereinander gestapelt, kann mit diesem Index festgelegt werden, welches Item sich in der Ebene ganz oben befindet. 
+Werden Elemente übereinander gestapelt, kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
 
-### <a name="Item:Eingabefeld"></a>Item: Eingabefeld
+### <a name="Element:Eingabefeld"></a>Element: Eingabefeld
 
 **B: Muster:**<br>
-Hier können reguläre Java Script Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
-Da es sehr viele Ausdrucksvarianten gibt, werden diese an dieser Stelle nicht aufgeführt. Entsprechende Listen sind im Internet zugängig.
+Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
 
-### <a name="Item:Optionsfeld (Bild)"></a>Item: Optionsfeld (Bild)
+### <a name="Element:Optionsfeld (Bild)"></a>Element: Optionsfeld (Bild)
 
 **Gut zu wissen:** Wie können Bilder eingefügt werden?
 
@@ -698,41 +691,35 @@ Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt wer
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.png)
 
-### <a name="Item:Ablegeliste"></a>Item: Ablegeliste
+### <a name="Element:Ablegeliste"></a>Element: Ablegeliste
 
 **A: Verbundene Ablegeliste:**<br>
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
 
-> Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie in den Eigenschaften der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
+> Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie im Eigenschaftenbereich der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
 
-### <a name="Item:Bild"></a>Item: Bild
+### <a name="Element:Bild"></a>Element: Bild
 
 **A: Skalieren:**<br>
 Ist diese Funktion aktiv und ist genügend Platz für ein Bild vorhanden, kann das Bild aufskaliert werden. Es kann dann auch seine ursprüngliche Größe überschreiten. Eventuell leidet darunter aber die Qualität des Bildes.
 
-### <a name="Item:Audio"></a>Item: Audio
-
-**A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
-Hat aktuell keine Funktion und wird demnächst entfallen.
+### <a name="Element:Audio"></a>Element: Audio
 
 **A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
-Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Audio mindestens so oft abgespielt wurde wie hier eingetragen ist.
+Hierüber kann festgelegt werden, wie oft das Audio mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
-### <a name="Item:Video"></a>Item: Video
-
-**A: Symbol Schraubenschlüssel: Verhalten: Weitere Seiten verbergen:**<br>
-Hat aktuell keine Funktion und wird demnächst entfallen.
+### <a name="Element:Video"></a>Element: Video
 
 **A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
 Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
-Ist in der Booklet-Konfiguration der Parameter: `force_presentation_complete` aktiv, kann bei der Wiedergabe der Unit erst in die nächste Unit gesprungen werden, wenn das Video mindestens so oft abgespielt wurde wie hier eingetragen ist.
+Hierüber kann festgelegt werden, wie oft das Video mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
-### <a name="Item:Optionstabelle"></a>Item: Optionstabelle
+### <a name="Element:Optionstabelle"></a>Element: Optionstabelle
 
 **Gut zu wissen:** Kann auch die ID einer Zeile geändert werden?
 
@@ -744,7 +731,14 @@ In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann 
 **A: Spalten:**<br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
 
-### <a name="Item:Lückentext"></a>Item: Lückentext
+### <a name="Element:Lückentext"></a>Element: Lückentext
+
+```yaml
+Dokumentstatus: Entwurf(THuste)
+Stand: 18.01.22
+todo: Anpassen an neue Editorversion
+      
+```
 
 **A: Text:** <br>
 In einen Lückentext können bestimmte Elemente integriert werden.
@@ -766,4 +760,4 @@ Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_02.gif)
 
 **A: Ablegefeld:**<br>
-Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Item-Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
+Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Element-Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
