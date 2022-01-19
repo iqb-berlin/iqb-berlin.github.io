@@ -3,15 +3,17 @@
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 ```yaml
-Dokumentstatus: Entwurf(THuste)
-Stand: 08.10.2021
-todo: - 
+Dokumentstatus: Review (THuste)
+Stand: 19.01.22
+todo: - weitere Inhalte
       
 ```
-Hier entstehen bald mehr Informationen.
-
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect)** der Link zum GitHub Repository.<br>
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases)** finden Sie die letzten aktuellen Versionsstände.
+
+## Einbinden des Players in das Testcenter
+
+Die in das Testcenter geladenen Units enthalten Informationen darüber, welcher Player für diese Units verwendet werden muss. Damit der entsprechende Player auch im Testcenter geladen werden kann, verlangt das Testcenter zu einer Unit.xml oder Unit.voud immer die Ressourcendatei für den in der Unit definierten Player. Die Ressourcendatei kann von GitHub heruntergeladen werden, siehe obiger Link zu den aktuellen Versionen.
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Verona Player Dan v3.0 (Abschnittsmarker)
