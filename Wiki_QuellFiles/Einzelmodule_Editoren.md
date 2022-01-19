@@ -698,10 +698,9 @@ Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt wer
 
 **A: Vorbelegung:**<br>
 In den erweiterten Einstellungen einer Vorbelegung können Bilder hinzugefügt werden.<br>
-Zu beachten ist dabei: Eingefügte Bilder überdecken den Text der Vorbelegung, dieser ist dann nicht mehr sichtbar. Auch bei sehr kleinen Bildern wird der Text überdeckt.
+Zu beachten ist dabei: Eingefügte Bilder überdecken den Text der Vorbelegung, dieser ist dann nicht mehr sichtbar.<br> Auch bei sehr kleinen Bildern wird der Text überdeckt.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Ablegeliste_Bilder.png)
-
 
 **A: Verbundene Ablegeliste:**<br>
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
