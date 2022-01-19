@@ -577,7 +577,7 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 
 ## <a name="Überblick"></a>Überblick
 
-Hier soll ein grundlegender Überblick über den Editor verschafft werden.
+An dieser Stelle soll ein allgemeiner Überblick bzgl. Aufbau, Bedienung und Funktion des Aspect Editors stattfinden. 
 
 ### Aufbau
 
@@ -604,36 +604,37 @@ Units können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Se
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
 
-### Verhalten des Abschnitts
+### Aufteilung einer Seite in Abschnitte
 
-Der Editor bietet die Möglichkeit Abschnitte statisch oder dynamisch anzulegen.<br>
-Ob ein Abschnitt statisch oder dynamisch ist, wird in den Abschnittsoptionen (rotes Menu zum Abschnitt) festgelegt.<br>
+Wird ein Abschnitt auf einer Seite angelegt, muss eine wesentliche Festlegung getroffen werden, wie sich der Abschnitt verhalten soll. Der Editor bietet die Möglichkeit Abschnitte statisch oder dynamisch anzulegen. Ob ein Abschnitt statisch oder dynamisch ist, wird in den Abschnittsoptionen (rotes Menu zum Abschnitt) festgelegt.
+
 Ein Abschnitt ist statisch solange der Haken bei "dynamisch" in den Abschnittsoptionen <u>nicht</u> gesetzt ist. 
 
 #### Statisch
 
-Werden Abschnitte statisch angelegt, sind die Elemente dieser Unit fix mit einem bestimmten Pixelwertes (x, y) im Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Unit angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Elemente der neuen Größe nicht an. In einem solchen Fall wird die Unit schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Bildlaufleisten in der Unit navigieren.
+Werden Abschnitte statisch angelegt, sind die Elemente fix mit einem bestimmten Pixelwertes (x, y) im Abschnitt angeordnet. Verändert sich das Endgerät auf dem die Unit angezeigt wird und steht damit bspw. ein kleinerer Monitor zur Verfügung, passen sich die Elemente der neuen Größe nicht an. In einem solchen Fall wird die Unit schnell unübersichtlich und verliert ihren ursprünglich angedachten Gesamteindruck. Benutzer\*innen müssen dann mittels vertikaler und horizontaler Bildlaufleisten in der Unit navigieren.
 
 #### Dynamisch
 
 Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ bzw. Fenstergrößen an.
-Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Bildschirm zuzuweisen, kann der dynamische Abschnitt in Zeilen und Spalten unterteilt werden. Auf diese Weise entsteht ein Raster. In diesem Rasten können dann die Aufgabenelemente positioniert werden. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
+
+Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann der dynamische Abschnitt in Zeilen und Spalten unterteilt werden. Auf diese Weise entsteht ein Raster. In diesem Rasten können dann die Aufgabenelemente positioniert werden. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
 
-Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten fixe Werte erhalten. Die Werte können dann in Pixel angegeben werden. 
+Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten <u>statische</u> Werte erhalten. Die Werte können dann in Pixel angegeben werden. 
 
-Die Breiten und Höhen der Spalten bzw. Zeilen können außerdem in Bildanteilen angegeben werden. 
+Die Breiten und Höhen der Spalten bzw. Zeilen können außerdem in <u>dynamischen</u> Bildanteilen angegeben werden. 
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
 
 ## <a name="Die Aufgabenelemente"></a>Die Aufgabenelemente
 
-Die Elemente werden auf 2 Gruppen aufgeteilt (Reiter 1 und 2). 
+Die Elemente werden auf 2 Gruppen verteilt (Reiter 1 und 2). 
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
 
-Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
+Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Gruppen oder Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
 
 **An dieser Stelle wird nicht auf jeden Parameter jedes Elements eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
 
@@ -658,7 +659,7 @@ Hier können Einstellungen bzgl. der Gestaltung eines Elements vorgenommen werde
 Nachfolgend sind Parameter erklärt, die jedes Element besitzt und die nicht zwingend selbsterklärend sind.
 
 **A: ID:** <br>
-Jedes Element besitzt eine eindeutige ID. Über diese ID wird das E identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
+Jedes Element besitzt eine eindeutige ID. Über diese ID wird das Element identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
 Die ID kann individuell angepasst werden. 
 > **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
 
@@ -692,6 +693,15 @@ Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt wer
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.png)
 
 ### <a name="Element:Ablegeliste"></a>Element: Ablegeliste
+
+**Gut zu wissen:** Wie können Bilder eingefügt werden?
+
+**A: Vorbelegung:**<br>
+In den erweiterten Einstellungen einer Vorbelegung können Bilder hinzugefügt werden.<br>
+Zu beachten ist dabei: Eingefügte Bilder überdecken den Text der Vorbelegung, dieser ist dann nicht mehr sichtbar. Auch bei sehr kleinen Bildern wird der Text überdeckt.
+
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Ablegeliste_Bilder.png)
+
 
 **A: Verbundene Ablegeliste:**<br>
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
