@@ -238,12 +238,12 @@ Zeitbegrenzungen (Restrictions/TimeMax) in geschachtelten Testlets werden ignori
 
 ### <a name="Konfiguration"></a>Booklet Konfiguration
 
-Es ist möglich Booklets zu konfigurieren. Hierfür stehen einige Attribute zur Verfügung, die in der Booklet.xml 
-(wenn gewünscht) anzugeben sind. Alle verwendbaren Attribute befinden sich in einer separaten Konfiguraionsdatei 
-(booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie einzelne Attribute nutzen, 
-müssen Sie das Attribut und den gewünschten Wert (Datum) in der Booklet.xml unter "BookletConfig" angeben. 
+Es ist möglich Booklets zu konfigurieren. Hierfür stehen einige Parameter (Attribute) zur Verfügung, die in der Booklet.xml 
+angegeben werden können. Alle verwendbaren Parameter befinden sich in einer separaten Konfiguraionsdatei 
+(booklet-config.json) auf die das Testcenter zugreifen kann. Möchten Sie die Bookletkonfiguration bzgl. spezifisches Eigenschaften ändern, 
+müssen Sie den gewünschten Parameter mit dem gewünschten Wert in der Booklet.xml unter `BookletConfig` angeben. Ein Parameter setzt sich zusammen aus einem Attribut, einem Attributwert und einem entsprechenden Datum. Wie am nachfolgenden Bsp. zu sehen ist, ist `key` das Attribut. Als Attribuwerte können nur vordefinierte Werte verwendet werden. Diese sind der weiter unten aufgeführten Tabelle zu entnehmen. Im nachfolgenden Code wäre der Attributwert bspw. `force_response_complete`. Das Datum ist in diesem Fall `OFF`. Auch das mögliche Datum für den jeweiligen Attributwert, ist der unten aufgeführten Tabelle zu entnehmen. Alle Parameter werden global in der Booklet.xml angelegt. Sie gelten dann für jedes in der Booklet.xml definierte Testlet. Eine Ausnahme stellen die beiden Parameter: `force_response_complete` und `force_presentation_complete` dar. Diese können auch Testletspezifisch angelegt werden. 
 
-Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
+Nachfolgend ist eine Bookletkonfiguration zu sehen, die global für das gesamte Booklet und damit für alle Testlets gilt:
 
 ```xml
 <Booklet>
@@ -257,31 +257,40 @@ Nachfolgend sehen Sie die entsprechend benötigte Struktur in der Booklet.xml:
       ...
   </BookletConfig>
 
-  <Units>
+	<Units>
   
-	<Unit id="Startunit" label="Startunit" />
+		<Unit id="Startunit" label="Startunit" />
+		
+		<Testlet id="Examples" label="Beispiele">
+			<Restrictions>
+				<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+			</Restrictions>
+			<Unit id="Unit_Allg_Anweisung" label="Platzhalter Allgemeine Anweisungen" />
+		</Testlet>
+	
+	</Units>
+
+</Booklet>
+```
+Nachfolgend ist zu sehen wie die Parameter: `force_response_complete` und `force_presentation_complete` Testletspezifisch angelegt werden können:
+
+```xml
 	
     <Testlet id="Examples" label="Beispiele">
 		<Restrictions>
 			<CodeToEnter code="Hase">Bitte 1. Freigabewort eingeben!</CodeToEnter>
+			<DenyNavigationOnIncomplete presentation="ON" response="OFF" />
 		</Restrictions>
 		<Unit id="Unit_Allg_Anweisung" label="Platzhalter Allgemeine Anweisungen" />
 	</Testlet>
 	
-	<Testlet id="Deutsch" label="Deutsch lesen">
-		<Restrictions>
-			<CodeToEnter code="Deutschland">Bitte 1. Freigabewort eingeben!</CodeToEnter>
-		</Restrictions>
-		<Unit id="Deutsch Teil 1" label="Platzhalter Allgemeine Anweisungen" />
-	</Testlet>
-	
-  </Units>
-
-</Booklet>
 ```
+
+** Werden Parameter nicht in der Bookelt.xml angegeben, gelten die Default-Werte (siehe Tabelle unten)!**
+
 ---
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. 
+Nachfolgend finden Sie eine Übersicht über die verwendbaren Parameter (Attribute) und deren Bedeutung. 
 **Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
 |Attribut &nbsp; &nbsp;| Bedeutung     | Wert (Datum)    |
