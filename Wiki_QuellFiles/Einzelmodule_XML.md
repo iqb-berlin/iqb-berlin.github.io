@@ -290,28 +290,9 @@ Nachfolgend ist zu sehen wie die Parameter: `force_response_complete` und `force
 
 ---
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Parameter (Attribute) und deren Bedeutung. 
-**Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+**[Hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/booklet-config.md) finden Sie eine Übersicht über die verwendbaren Parameter (Attribute) und deren Bedeutung.**
 
-|Attribut &nbsp; &nbsp;| Bedeutung     | Wert (Datum)    |
-| :----------------| :----------| :--------|
-|`loading_mode`|Ladeverhalten beim Start| **LAZY(default):** Start sobald wie möglich, Laden im Hintergrund fortsetzen;<br>**EAGER:** Testheft erst dann starten, wenn alle Inhalte geladen sind |
-|`logPolicy`|Erfassen und Speichern von Log-Daten| **disabled:** Ausgeschaltet;<br>**lean:** Nur wichtige Meldungen;<br>**rich(default):** Alles außer debug-informationen;<br>**debug:** Auch debug-informationen |
-|`pagingMode`|pagingMode (https://verona-interfaces.github.io/player/#operation-publish-vopStartCommand)|**separate(default):** pages are separated;<br>**concat-scroll:** concat-scroll;<br>**concat-scroll-snap:** concat-scroll-snap |
-|`stateReportPolicy`|stateReportPolicy (https://verona-interfaces.github.io/player/#operation-publish-vopStartCommand)|**none:** pages are separated;<br>**eager(default):** concat-scroll;<br>**on-demand:** concat-scroll-snap|
-|`page_navibuttons`|Navigationsbuttons für die Seitennavigation (innerhalb einer Aufgabe)|**OFF:** Keine Seitennavigation unterstützen (übernimmt ggf. die Aufgabe selbst);<br>**SEPARATE_BOTTOM (default):** Seitennavigation über getrennte Button-Leiste unten|
-|`unit_navibuttons`|Navigationsbuttons für die Navigation zwischen den Aufgaben|**OFF:** Keine Buttons für Aufgabennavigation anzeigen (übernimmt ggf. die Aufgabe selbst); <br>**ARROWS_ONLY:** Nur die Buttons für 'Weiter' und 'Zurück' anzeigen;<br>**FULL(default):** Buttons für 'Weiter' und 'Zurück' und dazwischen kleine Buttons für jede Aufgabe anzeigen|
-|`unit_menu`|Navigationsbutton für die Navigation zwischen Aufgaben|**OFF (default):** Nein; <br>**FULL:** Eingeschaltet - auch die Aufgaben anzeigen, die nicht mehr freigegeben sind (gegraut)|
-|`force_presentation_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht vollständig angezeigt wurde.|**OFF(default):** Das Verlassen der unvollständig betrachteten Aufgabe wird nicht verhindert;<br>**ON:** Das Verlassen der unvollständig betrachteten Aufgabe wird verhindert, wenn vorwärts geblättert werden soll;<br> **ALWAYS:** Das Verlassen der unvollständig betrachteten Aufgabe wird verhindert, wenn rückwärts geblättert werden soll;|
-|`force_response_complete`|Legt fest, ob eine eine Aufgabe verlassen werden darf, die noch nicht beantwortet wurde.|**OFF(default):** Das Verlassen der unvollständig beantworteten Aufgabe wird nicht verhindert;<br>**ON:** Vorwärtsblättern ist erst möglich, wenn Pflichtfelder ausgefüllt wurden; <br>**ALWAYS:** Rückwärtsblättern ist erst möglich, wenn Pflichtfelder ausgefüllt wurden;|
-|`controller_design`|Über diesen Parameter können verschiedene Design-Einstellungen gemeinsam festgelegt werden. |**2018:** Runde Schalter für die Unit-Navigation<br>**2022 (default):** Eckige Schalter für die Unit-Navigation|
-|`unit_screenheader`|Legt fest, ob im obersten Seitenbereich Platz für Logo, Navigations-Buttons u. ä. gelassen wird.|**OFF:** Kein Seitenkopf. Achtung: Logo bleibt sichtbar (überlappt);<br>**WITH_UNIT_TITLE:** Seitenkopf wird angezeigt mit Titel der Unit (s. Booklet-XML);<br>**WITH_BOOKLET_TITLE:** Seitenkopf wird angezeigt mit Titel des Booklets (s. Booklet-XML);<br> **WITH_BLOCK_TITLE:** Seitenkopf wird angezeigt mit Titel des Aufgabenbloks (s.Booklet-XML)<br>**EMPTY (default):** Seitenkopf wird angezeigt (leer)|
-|`unit_title`|Festlegung, ob oberhalb des Unitbereiches eine Zeile mit dem Unit-Titel gezeigt werden soll| **OFF:** Keine Titelzeile;<br> **ON(default):** Eine Zeile wird eingeblendet mit dem Unit-Titel (s. Booklet-XML)|
-|`unit_show_time_left`|Festlegung, ob im obersten Seitenbereich bei einer festgelegten Maximalzeit für einen Testbereich die verbleibende Zeit angezeigt wird.| **OFF(default):** Die verbleibende Zeit wird nicht angezeigt;<br>**ON:** Die verbleibende Zeit wird angezeigt|
-|`show_end_button_in_player`|Manche Player können einen Test-Beenden anzeigen, wenn es es ihnen vom Testcenter erlaubt wird. Diese Einstellung legt fest, wann das der Fall ist.| **OFF(default):** Den Test-Beenden-Button im Player nie anzeigen; <br> **ALWAYS:** Den Test-Beenden-Button im Player immer anzeigen; <br> **ONLY_LAST_UNIT:** Den Test-Beenden-Button im Player nur in der letzten Unit anzeigen.|
-|`restore_current_page_on_return`|Legt fest, ob, wenn (z. B.) nach einem Neuladen eine Unit wieder geöffnet wird, zur letzten geöffneten Seite gesprungen werden soll.| **OFF(default):** Beim Zurückkehren zur Unit auf Seite 1 beginnen; <br> **ON:** Beim Zurückkehren zur Unit auf der letzten gesehenen Seite beginnen|
-|`allow_player_to_terminate_test`|Legt fest, ob der Player des laufenden Test beenden darf, in dem er z. B. einen entsprechenden Navigationsknopf zeigt.| **OFF:** Der Player darf den laufenden Test nicht beenden;<br> **LAST_UNIT:** Der Player darf den laufenden Test nur Beenden, wenn die letzte Unit erreicht ist;<br>**ON(default):** Der Player darf den laufenden Test immer beenden. (`force_presentation_complete` und `force_response_complete` gelten trotzdem!)|
-|`lock_test_on_termination`|Legt fest, ob der Test gesperrt werden soll, wenn er beendet wird. Dies ist mit Vorsicht zu benutzen.| **ON:** Ja, der Test soll gesperrt werden, wenn er beendet wird. Dies ist mit Vorsicht zu benutzen;<br> **OFF(default):** Nein, der Test kann nach dem Beenden wieder aufgerufen werden, so lange der account aktiv ist|
+**Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Testtaker-Xml (Abschnittsmarker)
@@ -462,82 +443,11 @@ Hier werden zwei Texte festgelegt, die innerhalb des System-Checks angezeigt wer
 
 ---
 
-Nachfolgend finden Sie eine Übersicht über die verwendbaren Attribute und deren Bedeutung. 
-**Achten Sie bei der Verwendung dieser Attribute auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
+**[Hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/custom-texts.md) finden Sie eine Übersicht über die verwendbaren Parameter (Attribute) und deren Bedeutung.**
 
-| Key       | Used for     | Default     |
-| :------------- | :---------- | :----------- |
-|`app_intro1`|Begrüßungstext auf der Startseite (Text nach IQB-Link)|betreibt auf diesen Seiten eine Anwendung für das computerbasierte Leistungstesten von Schülerinnen und Schülern. Der Zugang zu einem Test ist nur möglich, wenn Sie von Testverantwortlichen Zugangsdaten erhalten haben. Es sind keine weiteren Seiten öffentlich verfügbar.|
-|`app_title`|Titel der Hauptanwendung|IQB-Testcenter|
-|`booklet_codeToEnterPrompt`|Aufforderung für die Eingabe eines Freigabewortes (Dialog-Box)|Bitte gib das Freigabewort ein, das angesagt wurde!|
-|`booklet_codeToEnterTitle`|Titel der Dialogbox für die Eingabe eines Freigabewortes|Freigabewort|
-|`booklet_errormessage`|Nachricht an die Testperson, wenn ein schwerer Fehler aufgetreten ist|Es ist ein schwerer Fehler aufgetreten. Bitte rufe die Aufsichtsperson und beschreibe das Problem!|
-|`booklet_loadingBlock`|Meldung wenn ein Zeitgesteuerter Block betreten wurde, der noch nicht geladen wurde|Aufgabenblock wird geladen|
-|`booklet_loadingUnit`|Meldung wenn eine Unit betreten wird, die noch nicht geladen wurde|Aufgabe wird geladen|
-|`booklet_msgPresentationNotCompleteTextNext`|Nachrichttext, dass nicht weitergeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Du kannst erst weiterblättern, wenn Audio-Dateien vollständig abgespielt wurden und wenn du in allen Fenstern bis ganz nach unten gescrollt hast.|
-|`booklet_msgPresentationNotCompleteTextPrev`|Nachrichttext, dass nicht zurückgeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Eine Audio-Datei ist noch nicht bis zu Ende abgespielt oder Seiten wurden noch nicht vollständig gezeigt. Wenn du jetzt zurückblätterst, kannst Du später Audio-Dateien nicht nocheinmal starten.|
-|`booklet_msgPresentationNotCompleteTitleNext`|Titel der Nachricht (Dialogbox), dass nicht weitergeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Weiterblättern nicht möglich!|
-|`booklet_msgPresentationNotCompleteTitlePrev`|Titel der Nachricht (Dialogbox), dass nicht zurückgeblättert werden kann, solange die Präsentation des Aufgabeninhaltes nicht abgeschlossen ist|Zurückblättern - Warnung|
-|`booklet_msgSoonTimeOver1Minute`|Nachricht, dass für die Bearbeitung eines Abschnittes noch 1 min Zeit ist|Du hast noch 1 Minute Zeit für die Bearbeitung der Aufgaben in diesem Abschnitt.|
-|`booklet_msgSoonTimeOver5Minutes`|Nachricht, dass für die Bearbeitung eines Abschnittes noch 5 min Zeit sind|Du hast noch 5 Minuten Zeit für die Bearbeitung der Aufgaben in diesem Abschnitt.|
-|`booklet_msgTimeOver`|Nachricht, dass die Bearbeitungszeit für einen Abschnitt abgelaufen ist.|Die Bearbeitung des Abschnittes ist beendet.|
-|`booklet_msgTimerCancelled`|Nachricht, dass die Bearbeitung eines Abschnittes mit Timer abgebrochen wurde|Die Bearbeitung des Abschnittes wurde abgebrochen.|
-|`booklet_msgTimerStarted`|Nachricht, dass der Timer für die Bearbeitung eines Abschnittes gestartet wurde|Die Bearbeitungszeit für diesen Abschnitt hat begonnen: |
-|`booklet_pausedmessage`|Nachricht an die Testperson, wenn der Test vom System unterbrochen wurde|Der Test wurde kurz angehalten.|
-|`booklet_tasklisttitle`|Titel für die Auflistung der Aufgaben (Schalter)|Aufgaben|
-|`booklet_unitLoading`|Untertitel des Ladebalkens, wird geladen|geladen|
-|`booklet_unitLoadingPending`|Untertitel des Ladebalkens, wenn Aufgabe geladen werden wird, aber noch nicht dran ist|in der Warteschleife|
-|`booklet_unitLoadingUnknownProgress`|Untertitel des Ladebalkens, wenn Aufgabe geladen wird, Fortschritt aber unbekannt|wird geladen|
-|`booklet_warningLeaveTimerBlockTextPrompt`|Schalterbeschriftung für 'Zurück zum Test'|Du verlässt einen zeitbeschränkten Bereich und kannst nicht zurückkehren. Trotzdem weiterblättern?|
-|`booklet_warningLeaveTimerBlockTitle`|Titel für Warnung (Dialogbox) vor dem vorzeitigen Verlassen eines Abschnittes mit Timer|Aufgabenabschnitt verlassen?|
-|`gm_auto_checkall`|Der 'Immer alle Auswählen'-Schalter|Alle Tests gleichzeitig steuern|
-|`gm_booklet_error_general`|Fehleranzeige im Gruppen monitor: unbekannter Fehler|Fehler beim Zugriff aus Testheft-Datei!|
-|`gm_booklet_error_missing_file`|Fehleranzeige im Gruppen monitor: Kein Zugriff auf Testheft-Datei!|Kein Zugriff auf Testheft-Datei!|
-|`gm_booklet_error_missing_id`|Fehleranzeige im Gruppen monitor: Kein Testheft zugeordnet|Kein Testheft zugeordnet!|
-|`gm_booklet_error_xml`|Fehleranzeige im Gruppen monitor: Invalides XML|Konnte Testheft-Datei nicht lesen!|
-|`gm_col_activity`|Spalte: Aktivität|Aktivität|
-|`gm_col_booklet`|Spalte: Testheft|Testheft|
-|`gm_col_group`|Spalte: Gruppe|Gruppe|
-|`gm_col_person`|Spalte: Teilnehmer|Teilnehmer|
-|`gm_col_testlet`|Spalte: Block|Block|
-|`gm_col_unit`|Spalte: Aufgabe|Aufgabe|
-|`gm_control_finish_everything`|Control: Testung beenden|Testung beenden|
-|`gm_control_goto`|Control: Springe zu Block|Springe zu|
-|`gm_control_goto_tooltip`|Tooltip über dem 'Springe zu'-Knopf, der erscheint, wenn kein Block gewählt ist|Bitte Block auswählen|
-|`gm_control_pause`|Control: pause|pause|
-|`gm_control_resume`|Control: weiter|weiter|
-|`gm_control_unlock`|Control: Entsperren|Test Entsperren|
-|`gm_control_unlock_success_warning`|Wird angezeigt, wenn tests entsperrt wurden|ACHTUNG! Die betreffenden Browser müssen ggf. neu gestartet werden.|
-|`gm_control_unlock_tooltip`|Tooltip: Freigeben|Test Freigeben|
-|`gm_controls`|Überschrift: Test-Steuerung|Test-Steuerung|
-|`gm_filter_locked`|Filter: gesperrte ausblenden|gesperrte|
-|`gm_filter_pending`|Filter: nicht gestartete ausblenden|nicht gestartete|
-|`gm_headline`|Überschrift: Gruppenmonitor|IQB-Testcenter Gruppenüberwachung|
-|`gm_hide_controls_tooltip`|Tooltip: Test-Steuerung verbergen|Test-Steuerung verbergen|
-|`gm_menu_activity`|Meinueintrag: Aktivität|Aktivität|
-|`gm_menu_cols`|Meinueintrag: Spalten|Spalten|
-|`gm_menu_filter`|Meinueintrag: Sitzungen ausblenden|Sitzungen ausblenden|
-|`gm_multiple_booklet_species_warning`|Tooltip über dem 'Immer alle Auswählen'-Schalter, der erscheint, wenn dieser deaktiviert ist| - Die verwendeten Booklets sind zu unterschiedlich, um gemeinsam gesteuert zu werden.|
-|`gm_scroll_down`|Control: Ganz nach unten|Ganz nach unten|
-|`gm_selection_info`|Information gewählte Tests. Text-Substitutionen: (Alle/''), Anzahl, (''/s), Anzahl, (''/e)|%s %s Test%s mit %s Testheft%s ausgewählt.|
-|`gm_selection_info_none`|Information gewählte Tests: Keiner|Kein Test gewählt.|
-|`gm_settings_tooltip`|Control: Ansicht|Ansicht|
-|`gm_timeleft_tooltip`|Tooltip: verbleibende Zeit|Verbleibende Zeit|
-|`gm_view_full`|Ansicht: Vollständig|Vollständig|
-|`gm_view_medium`|Ansicht: Nur Blöcke|Nur Blöcke|
-|`gm_view_small`|Ansicht: Kurz|Kurz|
-|`login_bookletSelectPromptMany`|Aufforderung, aus der Liste der gefundenen Tests einen auszusuchen (auf Schalter klicken)|Bitte klicke auf eine der Schaltflächen auf der linken Seite, um einen Test zu starten!|
-|`login_bookletSelectPromptNull`|Nachricht für den Fall, dass Booklet(s) beendet wurden und keine weiteren zur Verfügung stehen|Beendet. Es können keine weiteren Testhefte gestartet werden.|
-|`login_bookletSelectPromptOne`|Aufforderung, den einen gefundenen Test anzuklicken (auf Schalter klicken)|Bitte klicke auf die Schaltfläche auf der linken Seite, um den Test zu starten!|
-|`login_codeInputPrompt`|Aufforderung, Code einzugeben (bei einem zweistufigen Login-Prozess)|Bitte Log-in eingeben, der auf dem Zettel steht!|
-|`login_codeInputTitle`|Titel des Eingabeformulars für den Code|Log-in eingeben|
-|`login_pagesNaviPrompt`|Aufforderungstext, weitere Seiten einer Unit auszuwählen, z. B. 'Wähle hier andere Seiten dieser Aufgabe:'|Weitere Seiten:|
-|`login_testEndButtonLabel`|Schalterbeschriftung für 'Test beenden'|Test beenden|
-|`syscheck_intro`|Text auf der ersten Seite des System-Checks|Dieser Systemcheck soll gewährleisten, dass der von Ihnen verwendete Computer für eine bestimmte Befragung oder Testung geeignet ist.|
-|`syscheck_questionsRequiredMessage`|Nachricht an die Testperson, wenn einige Fragen, die als 'required' markiert sind, nicht beantwortet wurden|Bitte prüfen Sie die Eingaben (unvollständig):|
-|`syscheck_questionsintro`|Aufforderung, die Fragen (Questionnaire) zu beantworten|Bitte bearbeiten Sie die nachfolgenden Fragen.|
-|`syscheck_unitPrompt`|Titelzeile über der Aufgabe|Bitte prüfen Sie die folgenden Aufgaben-Elemente|
+**Achten Sie bei der Verwendung dieser Parameter auf die richtige Schreibweise (Groß-/Kleinschreibung)!**
 
+---
 
 ### <a name="Einr_Tlk"></a>Einrichten der Testleitkonsole
 
