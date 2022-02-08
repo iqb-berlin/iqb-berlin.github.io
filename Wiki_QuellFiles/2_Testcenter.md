@@ -255,7 +255,7 @@ Hier können die Berichte, die über einen System-Check abgeschickt wurden, heru
 
 Hier können Antworten und Logs, die über die Tests bzw. Befragungen innerhalb dieses Arbeitsbereiches abgeschickt wurden, heruntergeladen werden. Auch hier ist das Dateiformat CSV. Sollte das Testcenter über ein Länderportal verwaltet werden, dann steht hier auch ein Download im JSON-Format zur Verfügung.
 
-## System-Admin
+## System-Admin (Super-Admin)
 
 Wurden Ihnen Rechte für die Verwaltung des Gesamtsystems zugewiesen (sog. Super-Admin), wird am Ende der Liste der Arbeitsbereiche ein System-Admin-Schalter eingeblendet. Über diesen Schalter gelangen Sie zur Systemverwaltung. Dort können Nutzerkonten (Benutzername und Kennwort) und Arbeitsbereiche angelegt werden. Auch der Zugriff auf diese Arbeitsbereiche kann für die jeweiligen Personenkreise festgelegt und grundsätzliche Systemeinstellungen (Hintergrundfarbe, Logo) vorgenommen werden.
 
