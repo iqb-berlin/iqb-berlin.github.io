@@ -352,6 +352,24 @@ Die Testtaker-Definition besteht aus einer XML-Datei. Hinweise zur Bearbeitung v
     <td>frei wählbarer Wert</td>
 </tr>
 <tr>
+    <td>Group:</td>
+    <td>validTo</td>
+    <td>Attribut</td>
+    <td>Bestimmt wie lange ein Zugang gültig ist. Frei wählbarer Wert im Format:<br> dd/mm/yyyy hh:mm</td>
+</tr>
+<tr>
+    <td>Group:</td>
+    <td>validFrom</td>
+    <td>Attribut</td>
+    <td>Bestimmt ab wann ein Zugang gültig ist. Frei wählbarer Wert im Format:<br> dd/mm/yyyy hh:mm</td>
+</tr>
+<tr>
+    <td>Group:</td>
+    <td>validFor</td>
+    <td>Attribut</td>
+    <td>Bestimmt einen Zeitraum für einen Zugang. Frei wählbarer Minutenwert im Format: Integer</td>
+</tr>
+<tr>
     <td>Login:</td>
     <td>name</td>
     <td>Attribut</td>
