@@ -618,13 +618,11 @@ Werden Abschnitte statisch angelegt, sind die Elemente fix mit einem bestimmten 
 
 Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ bzw. Fenstergrößen an.
 
-Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann der dynamische Abschnitt in Zeilen und Spalten unterteilt werden. Auf diese Weise entsteht ein Raster. In diesem Rasten können dann die Aufgabenelemente positioniert werden. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
+Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann in den Eigenschaften eines Elements die Position im Abschnitt festgelegt werden. Auf diese Weise findet eine Unterteilung des Abschnittes in Zeilen und Spalten statt. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
 
-Es ist auch möglich teildynamisch zu arbeiten. Hier können dann Breiten und Höhen der Zeilen und Spalten <u>statische</u> Werte erhalten. Die Werte können dann in Pixel angegeben werden. 
-
-Die Breiten und Höhen der Spalten bzw. Zeilen können außerdem in <u>dynamischen</u> Bildanteilen angegeben werden. 
+Es ist auch möglich teildynamisch zu arbeiten. Die Spaltenbreite und Zeilenhöhe kann auch <u>statische</u> Werte erhalten. Diese Werte können entweder in Bildanteilen oder in Bildpunkten angegeben werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
 
@@ -634,60 +632,75 @@ Die Elemente werden auf 2 Gruppen verteilt (Reiter 1 und 2).
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
 
-Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Gruppen oder Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
+Nach der Auswahl eines Elements (linke Maustaste) wird es im Abschnitt angelegt. Ist der Abschnitt dynamisch, wird das zuerst gewählte Element in der ersten Abschnittszeile angelegt. Kommen weitere Elemente hinzu, werden diese aufsteigend der nächsten Zeile innerhalb des Abschnittes zugeordnet. Die so angelegten Elemente haben noch keine feste Positionszuordnung im Abschnitt. Sie werden erst einmal in eine freie Zeile des Abschnittes gelegt, damit sie dort markiert und deren Eigenschaften verändert werden können. In den Eigenschaften des Elements kann dann die finale Position festgelegt werden. Die Positionierung erfolgt innerhalb eines dynamischen Abschnitts in Zeilen und Spalten. Innerhalb eines statischen Abschnitts erfolgt die Positionierung in X-, und Y-Position.
 
-**An dieser Stelle wird nicht auf jeden Parameter jedes Elements eingegangen, weil die meisten Parameter selbsterklärend sein sollten.**
+### Elementen Eigenschaften (Parameter)
+
+Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Gruppen oder Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
 
-> **A:**
-
+**A** <br>
 Hier sind die eigentlichen Funktionen eines Elements zu finden. Am Bsp. eines Text-Elements könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
 
-> **B:**
-
+**B** <br>
 Hier können Parameter zur Positionierung und Dimensionierung des Elements bedient werden.
 
-> **C:**
- 
+**C** <br>
 Hier können Einstellungen bzgl. der Gestaltung eines Elements vorgenommen werden, bspw. können hier Hintergrundfarben, Schriftgrößen usw. gesetzt werden.
 
-**Die nachfolgend beschriebenen Parameter beginnen immer mit dem Buchstaben des Reiters unter dem  sie zu finden sind (A,B,C).**
+> **Alle nachfolgend beschriebenen Parameter beginnen immer mit dem Buchstaben des Reiters unter dem  sie zu finden sind (A,B,C).**
 
-### Globale Parameter
+> **Da die meisten Parameter selbsterklärend sind, werden wir an dieser Stelle nicht auf jeden Parameter eingehen. Bspw. dürfte klar sein, was der Parameter: *Schriftfarbe* zu bedeuten hat.**
 
-Nachfolgend sind Parameter erklärt, die jedes Element besitzt und die nicht zwingend selbsterklärend sind.
+#### Basis-Parameter
 
-**A: ID:** <br>
+Einige Parameter sind für jedes Element zu finden. Bspw. hat jedes Element eine ID und Parameter, die die Position eines Elementes angeben. Diese Parameter werden an dieser Stelle als **Basis-Parameter** beschrieben. Außerdem gibt es **spezifische Parameter**, die nur dem entsprechenden Element zur Verfügung stehen. Damit nicht für jedes Element die **Basis-Parameter** beschrieben werden müssen (diese weisen ja immer die selbe Funktionalität auf), soll vorab eine Zusammenstellung und Beschreibung dieser erfolgen. Die **spezifischen Parameter** und deren Funktionen, werden dann in den Beschreibungen zu den Elementen behandelt.
+
+**A:** `ID:` <br>
 Jedes Element besitzt eine eindeutige ID. Über diese ID wird das Element identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
 Die ID kann individuell angepasst werden. 
 > **IDs können nicht doppelt vergeben werden innerhalb einer Unit.**
 
-**B: Mindestbreite:** <br>
+**A:** `Pflichtfeld:` <br>
+Wird dieser Parameter aktiviert, kann bei der späteren Testdurchführung im **Testcenter** die Navigation zur nächsten Aufgabe blockiert werden. Die Navigation ist dann erst möglich, wenn dieses Element bedient wurde. Bspw. gilt ein *Eingabefeld* als bedient, wenn in dieses ein oder mehrere Zeichen eingegeben wurden.
+
+**A:** `Schreibschutz:` <br>
+Dieser Parameter ist eigentlich selbsterklärend. Er weist allerdings noch einige Besonderheiten auf, die an dieser Stelle genannt werden sollten.
+ 
+Wird dieser Parameter aktiviert, werden Eingaben mittels Tastatur nicht angenommen. Auch wenn der Parameter: `Tastatur einblenden` aktiviert ist, wird die virtuelle Tastatur nicht eingeblendet. Einzige Eingabemöglichkeit stellt die Auswahl einer *Eingabehilfe* dar. Ist eine Eingabehilfe aktiviert, wird diese auch bei Schreibschutz eingeblendet und entsprechende Zeichen können in das Feld eingegeben werden. Hintergrund: Auf diese Weise ist es möglich nur bestimmte gewünschte Eingaben zuzulassen. <br>
+
+**A:** `Tastatur einblenden:` <br>
+Dieser Parameter wird hauptsächlich für die Nutzung an einem Tablet verwendet. Es kann gewünscht sein, dass Eingaben über die Tablet eigene Tastatur nicht erlaubt sind. Bspw. können die Automatismen bzgl. Groß-/ Kleinschreibung, die auf einer Tablet-Tastatur zum Einsatz kommen können, während einer Deutsch Rechtschreibtestung problematisch sein. Das IQB hat für diesen Zweck eine eigene Tastur programmiert, die an dieser Stelle einmal als IQB-Tastatur bezeichnet werden soll. Ist diese Tastatur aktiv, wird die Tastatur nur an Geräten angezeigt an denen keine "echte" Tastatur erkannt wird. An einem Tablet ohne angeschlossene Tastatur würde somit die Tabelt eigene Tastatur unterdrück und nur die IQB-Tastatur angezeigt werden. Ist an einem Tablet zusätzlich noch eine "echte" Tastatur angeschlossen, wird bei einem Klick in das entsprechende Eingabefeld zuerst die IQB-Tastatur angezeigt. Erfolgt ein Tastendruck auf der "echten" Tastatur, wird diese erkannt und die IQB-Tastatur wird wieder ausgeblendet.
+
+**A:** `Eingabehilfe:` <br>
+Es können verschiedene Eingabehilfen aus deiner Liste gewählt werden. Wurde eine Eingabehilfe gewählt, wird diese auch bei Elementen mit Schreibschutz eingeblendet.
+
+**B:** `Mindestbreite:` <br>
 Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann dann im Bild navigiert werden.
 
-**B: Mindesthöhe:**<br>
+**B:** `Mindesthöhe:` <br>
 Gleich wie Mindestbreite, nur bezogen auf die Höhe des Elements.
 
-**B: Raster:**<br>
-Legt fest über welche Bereiche im Abschnittsraster sich das Element erstreckt. Ein Element kann sich auch über mehrere Spalten und Zeilen erstrecken.
+**B:** `Raster:` <br>
+Die hier enthalten Parameter: *Spalte, Zeile, Spalten- und Zeilenspanne* legen fest, in welcher Zeile und Spalte sich das Element befinden soll. Hier kann auch festgelegt werden, ob sich das Element über mehrere Spalten bzw. Zeilen erstrecken soll.
 
-**B: Abstand:**<br>
+**B:** `Abstand:` <br>
 Legt die X-/ Y-Position eines Elements innerhalb einer Rasterzelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
 
-**B: Z-Index:**<br>
+**B:** `Z-Index:` <br>
 Werden Elemente übereinander gestapelt, kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
 
 ### <a name="Element:Eingabefeld"></a>Element: Eingabefeld
 
-**B: Muster:**<br>
+**B:** `Muster:` <br>
 Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
 
 ### <a name="Element:Optionsfeld (Bild)"></a>Element: Optionsfeld (Bild)
 
 **Gut zu wissen:** Wie können Bilder eingefügt werden?
 
-**A: Spalten:**<br>
+**A:** `Spalten:` <br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die Spalteneinstellungen erfolgen.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.png)
@@ -696,48 +709,48 @@ Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt wer
 
 **Gut zu wissen:** Wie können Bilder eingefügt werden?
 
-**A: Vorbelegung:**<br>
+**A:** `Vorbelegung:` <br>
 In den erweiterten Einstellungen einer Vorbelegung können Bilder hinzugefügt werden.<br>
 Zu beachten ist dabei: Eingefügte Bilder überdecken den Text der Vorbelegung, dieser ist dann nicht mehr sichtbar.<br> Auch bei sehr kleinen Bildern wird der Text überdeckt.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Ablegeliste_Bilder.png)
 
-**A: Verbundene Ablegeliste:**<br>
+**A:** `Verbundene Ablegeliste:` <br>
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
 
 > Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie im Eigenschaftenbereich der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
 
 ### <a name="Element:Bild"></a>Element: Bild
 
-**A: Skalieren:**<br>
+**A:** `Skalieren:` <br>
 Ist diese Funktion aktiv und ist genügend Platz für ein Bild vorhanden, kann das Bild aufskaliert werden. Es kann dann auch seine ursprüngliche Größe überschreiten. Eventuell leidet darunter aber die Qualität des Bildes.
 
 ### <a name="Element:Audio"></a>Element: Audio
 
-**A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
+**A:** `Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:` <br>
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
-**A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
+**A:** `Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:` <br>
 Hierüber kann festgelegt werden, wie oft das Audio mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
 ### <a name="Element:Video"></a>Element: Video
 
-**A: Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:**<br>
+**A:** `Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:` <br>
 Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
-**A: Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:**<br>
+**A:** `Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:` <br>
 Hierüber kann festgelegt werden, wie oft das Video mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
 ### <a name="Element:Optionstabelle"></a>Element: Optionstabelle
 
 **Gut zu wissen:** Kann auch die ID einer Zeile geändert werden?
 
-**A: Zeilen:** <br>
+**A:** `Zeilen:` <br>
 In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann auch die ID der Zeile individuell vergeben werden.
 
 **Gut zu wissen:** Wie können Bilder eingefügt werden?
 
-**A: Spalten:**<br>
+**A:** `Spalten:` <br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
 
 ### <a name="Element:Lückentext"></a>Element: Lückentext
@@ -749,7 +762,7 @@ todo: Anpassen an neue Editorversion
       
 ```
 
-**A: Text:** <br>
+**A:** `Text:` <br>
 In einen Lückentext können bestimmte Elemente integriert werden.
 Dazu gehören die folgenden 3:
 
@@ -762,11 +775,11 @@ Die Zeichenfolgen sind oben hinter den Elementen zu sehen. Entweder werden diese
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
 
-**A: toogle-button(Optionsfeld):**<br>
+**A:** `toogle-button(Optionsfeld):` <br>
 Werden in einen Lückentext Optionsfelder eingefügt mittels Zeichenfolge `\r` , können diese Felder natürlich auch noch den gewünschten Inhalt erhalten.
 Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend können in den erweiterten Einstellungen dieser Felder entsprechende Texte vergeben werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_02.gif)
 
-**A: Ablegefeld:**<br>
+**A:** `Ablegefeld:` <br>
 Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Element-Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
