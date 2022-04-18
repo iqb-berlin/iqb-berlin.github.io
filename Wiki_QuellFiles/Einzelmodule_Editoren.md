@@ -557,8 +557,10 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 
 <table>
 	<tr>
+		<td><a href="#Element:Text">Text</a></td>
 		<td><a href="#Element:Eingabefeld">Eingabefeld</a></td>
 		<td><a href="#Element:Optionsfeld (Bild)">Optionsfeld (Bild)</a></td>
+		<td><a href="#Element:Ablegeliste">Ablegeliste</a></td>
 		<td><a href="#Element:Bild">Bild</a></td>
 		<td><a href="#Element:Audio">Audio</a></td>
 		<td><a href="#Element:Video">Video</a></td>
@@ -641,7 +643,7 @@ Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eig
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
 
 **A** <br>
-Hier sind die eigentlichen Funktionen eines Elements zu finden. Am Bsp. eines Text-Elements könnte hier der enthaltene Text festgelegt und Markierungsoptionen zugeschaltet werden.
+Hier sind die spezifischen Parameter eines Elements zu finden. Am Bsp. eines Text-Elements könnte hier der enthaltene Text festgelegt und Markierungsoptionen aktiviert werden.
 
 **B** <br>
 Hier können Parameter zur Positionierung und Dimensionierung des Elements bedient werden.
@@ -655,7 +657,7 @@ Hier können Einstellungen bzgl. der Gestaltung eines Elements vorgenommen werde
 
 #### Basis-Parameter
 
-Einige Parameter sind für jedes Element zu finden. Bspw. hat jedes Element eine ID und Parameter, die die Position eines Elementes angeben. Diese Parameter werden an dieser Stelle als **Basis-Parameter** beschrieben. Außerdem gibt es **spezifische Parameter**, die nur dem entsprechenden Element zur Verfügung stehen. Damit nicht für jedes Element die **Basis-Parameter** beschrieben werden müssen (diese weisen ja immer die selbe Funktionalität auf), soll vorab eine Zusammenstellung und Beschreibung dieser erfolgen. Die **spezifischen Parameter** und deren Funktionen, werden dann in den Beschreibungen zu den Elementen behandelt.
+Einige Parameter sind in jedem Element zu finden. Bspw. hat jedes Element eine ID und Parameter, die die Position eines Elementes angeben. Diese Parameter werden an dieser Stelle als **Basis-Parameter** beschrieben. Die meisten **Basis-Parameter** sind unter den Reitern **B** und **C** zu finden. Außerdem gibt es **spezifische Parameter** die nur dem entsprechenden Element zur Verfügung stehen. Damit nicht für jedes Element die **Basis-Parameter** beschrieben werden müssen (diese weisen ja immer die selbe Funktionalität auf), soll vorab eine Zusammenstellung und Beschreibung dieser erfolgen. Die **spezifischen Parameter** und deren Funktionen werden dann in den Beschreibungen zu den Elementen gesondert behandelt.
 
 **A:** `ID:` <br>
 Jedes Element besitzt eine eindeutige ID. Über diese ID wird das Element identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
@@ -666,18 +668,18 @@ Die ID kann individuell angepasst werden.
 Wird dieser Parameter aktiviert, kann bei der späteren Testdurchführung im **Testcenter** die Navigation zur nächsten Aufgabe blockiert werden. Die Navigation ist dann erst möglich, wenn dieses Element bedient wurde. Bspw. gilt ein *Eingabefeld* als bedient, wenn in dieses ein oder mehrere Zeichen eingegeben wurden.
 
 **A:** `Schreibschutz:` <br>
-Dieser Parameter ist eigentlich selbsterklärend. Er weist allerdings noch einige Besonderheiten auf, die an dieser Stelle genannt werden sollten.
+Dieser Parameter ist eigentlich selbsterklärend. Er weist allerdings einige Besonderheiten auf, die an dieser Stelle genannt werden sollten.
  
-Wird dieser Parameter aktiviert, werden Eingaben mittels Tastatur nicht angenommen. Auch wenn der Parameter: `Tastatur einblenden` aktiviert ist, wird die virtuelle Tastatur nicht eingeblendet. Einzige Eingabemöglichkeit stellt die Auswahl einer *Eingabehilfe* dar. Ist eine Eingabehilfe aktiviert, wird diese auch bei Schreibschutz eingeblendet und entsprechende Zeichen können in das Feld eingegeben werden. Hintergrund: Auf diese Weise ist es möglich nur bestimmte gewünschte Eingaben zuzulassen. <br>
+Wird dieser Parameter aktiviert, werden Eingaben mittels Tastatur nicht angenommen. Auch wenn der Parameter: `Tastatur einblenden` aktiviert ist, wird die virtuelle Tastatur nicht eingeblendet. Einzige Eingabemöglichkeit stellt die Auswahl einer *Eingabehilfe* dar. Ist eine Eingabehilfe aktiviert, wird diese auch bei Schreibschutz eingeblendet und entsprechende Zeichen können in das Feld eingegeben werden. Hintergrund: Auf diese Weise ist es möglich nur bestimmte gewünschte Eingaben für ein Inputfeld zuzulassen. <br>
 
 **A:** `Tastatur einblenden:` <br>
 Dieser Parameter wird hauptsächlich für die Nutzung an einem Tablet verwendet. Es kann gewünscht sein, dass Eingaben über die Tablet eigene Tastatur nicht erlaubt sind. Bspw. können die Automatismen bzgl. Groß-/ Kleinschreibung, die auf einer Tablet-Tastatur zum Einsatz kommen können, während einer Deutsch Rechtschreibtestung problematisch sein. Das IQB hat für diesen Zweck eine eigene Tastur programmiert, die an dieser Stelle einmal als IQB-Tastatur bezeichnet werden soll. Ist diese Tastatur aktiv, wird die Tastatur nur an Geräten angezeigt an denen keine "echte" Tastatur erkannt wird. An einem Tablet ohne angeschlossene Tastatur würde somit die Tabelt eigene Tastatur unterdrück und nur die IQB-Tastatur angezeigt werden. Ist an einem Tablet zusätzlich noch eine "echte" Tastatur angeschlossen, wird bei einem Klick in das entsprechende Eingabefeld zuerst die IQB-Tastatur angezeigt. Erfolgt ein Tastendruck auf der "echten" Tastatur, wird diese erkannt und die IQB-Tastatur wird wieder ausgeblendet.
 
 **A:** `Eingabehilfe:` <br>
-Es können verschiedene Eingabehilfen aus deiner Liste gewählt werden. Wurde eine Eingabehilfe gewählt, wird diese auch bei Elementen mit Schreibschutz eingeblendet.
+Es können verschiedene Eingabehilfen aus einer Liste gewählt werden. Wurde eine Eingabehilfe gewählt, wird diese auch bei Elementen mit Schreibschutz eingeblendet.
 
 **B:** `Feste Abmessungen: Mindestbreite:` <br>
-Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann dann im Bild navigiert werden.
+Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann im Bild navigiert werden.
 
 **B:** `Mindesthöhe:` <br>
 Gleich wie Mindestbreite, nur bezogen auf die Höhe des Elements.
@@ -691,7 +693,7 @@ Legt die X-/ Y-Position eines Elements innerhalb einer Zelle (Zeile, Spalte) fes
 **B:** `Z-Index:` <br>
 Werden Elemente übereinander gestapelt, kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
 
-## <a name="Element:Text"></a>Element: Text
+### <a name="Element:Text"></a>Element: Text
 
 **A:** `Anzahl der Spalten:` <br>
 Es ist möglich den im Textelement enthaltenen Text in Spalten anzuordnen. Um den Text sinnvoll einer Spalte zuordnen zu können, müssen an den gewünschten Stellen im Text Zeilenumbrüche vorhanden sein.
@@ -704,10 +706,10 @@ Es ist möglich den im Textelement enthaltenen Text in Spalten anzuordnen. Um de
 Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
 
 **A:** `Minimallänge:` <br>
-Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+Werden weniger Zeichen eingegeben, als hier festgelegt ist, erscheint eine Warnung.
 
 **A:** `Maximalwert:` <br>
-Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+Werden mehr Zeichen eingegeben, als hier festgelegt ist, erscheint eine Warnung.
 
 **A:** `Eingabehilfe:` <br>
 Siehe Beschreibungen zu den Basis-Parameter.
@@ -736,7 +738,7 @@ Zu beachten ist dabei: Eingefügte Bilder überdecken den Text der Vorbelegung, 
 **A:** `Verbundene Ablegeliste:` <br>
 Es ist möglich ein oder mehrere Listen miteinander zu verbinden. Sind Listen miteinander verbunden, können Inhalte via drag-and-drop von einer in die andere Liste bewegt werden. Zur Verbindung muss die ID der jeweiligen Liste eingetragen und anschließend das Pluszeichen betätigt werden.
 
-> Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden, wie sie im Eigenschaftenbereich der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden, damit die ID final übernommen wird.
+> Die ID muss in gleicher Schreibweise (auch Groß-/ Kleinschreibung beachten) angegeben werden wie sie im Eigenschaftenbereich der jeweiligen Liste zu finden ist! Es reicht nicht aus die ID hinter das Pluszeichen zu setzen. Das Pluszeichen muss auch betätigt werden damit die ID final übernommen wird.
 
 ### <a name="Element:Bild"></a>Element: Bild
 
@@ -751,7 +753,7 @@ Hier ist eine Vielzahl spezifischer Parameter zu finden. Wie bereits erwähnt si
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A:** `Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:` <br>
-Hierüber kann festgelegt werden, wie oft das Audio mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
+Hierüber kann festgelegt werden wie oft das Audio mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
 ### <a name="Element:Video"></a>Element: Video
 
@@ -759,7 +761,7 @@ Hierüber kann festgelegt werden, wie oft das Audio mindestens abgespielt werden
 Hier kann ein Video angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
 **A:** `Symbol Schraubenschlüssel: Verhalten: Minimale Anzahl Durchläufe:` <br>
-Hierüber kann festgelegt werden, wie oft das Video mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
+Hierüber kann festgelegt werden wie oft das Video mindestens abgespielt werden muss, damit der Player bei der Wiedergabe "Presentation complete" meldet.
 
 ### <a name="Element:Optionstabelle"></a>Element: Optionstabelle
 
@@ -779,24 +781,19 @@ Hier kann das Verhältnis der ersten Spalte in Bildanteilen angegeben werden.
 
 ### <a name="Element:Lückentext"></a>Element: Lückentext
 
-**A:** `Text:` <br>
-In einen Lückentext können bestimmte Elemente integriert werden.
+**A:** Symbol: Schraubenschlüssel: <br>
+Hier wird ein Lückentext erstellt. Die Lücken im Text können mit bestimmten Elementen besetzt werden.
 Dazu gehören die folgenden 3:
 
-* Optionsfeld (\r)
-* Ablegefeld (\z)
-* Eingabefeld (\i)
+* Eingabefeld
+* Ablegeliste
+* Optionsfeld
 
-Diese Elemente können wie gewünscht im Text eingeordnet werden. Mittels definierter Zeichenfolge werden die Elemente an den entsprechenden Stellen im Text gesetzt.
-Die Zeichenfolgen sind oben hinter den Elementen zu sehen. Entweder werden diese Zeichenfolgen im Text direkt angegeben oder sie werden mittels Klick auf ein Symbol erzeugt.
+Diese Elemente können wie gewünscht im Text eingeordnet werden. Dazu werden die Elemente mittels Schaltfläche an gewünschter Stelle im Text positioniert.
+Nachdem der Lückentext gespeichert wurde, kann durch Markierung der Elemente im Text, auf deren Parameter zugegriffen werden.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.gif)
+> Die so eingefügten Elemente enthalten die gleichen Parameter wie die Einzelelemente: Eingabefeld, Ablegeliste und Optionsfeld.
 
-**A:** `toogle-button(Optionsfeld):` <br>
-Werden in einen Lückentext Optionsfelder eingefügt mittels Zeichenfolge `\r` , können diese Felder natürlich auch noch den gewünschten Inhalt erhalten.
-Dazu sind die zuvor im Text erzeugten Felder einmal zu markieren. Anschließend können in den erweiterten Einstellungen dieser Felder entsprechende Texte vergeben werden.
+![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_01.png)
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Lückentext_Part_02.gif)
-
-**A:** `Ablegefeld:` <br>
-Kommt ein Ablegefeld innerhalb des Lückentextes zum Einsatz, kann auch dieses parametriert werden. Wie schon zuvor am Optionsfeld gezeigt, ist dazu auf das Ablegefeld im Text zu klicken. Anschließend erscheinen erweiterte Einstellungen für diese Liste. Die dortigen Einstellungen unterscheiden sich nur unwesentlich von denen einer Ablegeliste aus der Element-Standardgruppe. Hier kann dann auch eine Liste mit dieser Liste verbunden werden. Somit ist es anschließend möglich aus einer entfernten Liste vordefinierte Antworten in diese Liste im Lückentext zu schieben.
