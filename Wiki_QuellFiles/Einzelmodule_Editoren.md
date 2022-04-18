@@ -676,7 +676,7 @@ Dieser Parameter wird hauptsächlich für die Nutzung an einem Tablet verwendet.
 **A:** `Eingabehilfe:` <br>
 Es können verschiedene Eingabehilfen aus deiner Liste gewählt werden. Wurde eine Eingabehilfe gewählt, wird diese auch bei Elementen mit Schreibschutz eingeblendet.
 
-**B:** `Mindestbreite:` <br>
+**B:** `Feste Abmessungen: Mindestbreite:` <br>
 Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann dann im Bild navigiert werden.
 
 **B:** `Mindesthöhe:` <br>
@@ -686,24 +686,42 @@ Gleich wie Mindestbreite, nur bezogen auf die Höhe des Elements.
 Die hier enthalten Parameter: *Spalte, Zeile, Spalten- und Zeilenspanne* legen fest, in welcher Zeile und Spalte sich das Element befinden soll. Hier kann auch festgelegt werden, ob sich das Element über mehrere Spalten bzw. Zeilen erstrecken soll.
 
 **B:** `Abstand:` <br>
-Legt die X-/ Y-Position eines Elements innerhalb einer Rasterzelle fest. Soll bspw. ein Abstand zu einem benachbarten Element erzeugt werden, wäre das eine Möglichkeit.
+Legt die X-/ Y-Position eines Elements innerhalb einer Zelle (Zeile, Spalte) fest. Auf diese Weise kann ein Element zu benachbarten Elementen positioniert werden.
 
 **B:** `Z-Index:` <br>
 Werden Elemente übereinander gestapelt, kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
 
+## <a name="Element:Text"></a>Element: Text
+
+**A:** `Anzahl der Spalten:` <br>
+Es ist möglich den im Textelement enthaltenen Text in Spalten anzuordnen. Um den Text sinnvoll einer Spalte zuordnen zu können, müssen an den gewünschten Stellen im Text Zeilenumbrüche vorhanden sein.
+
+![Text:Spalten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Text_Spalten.gif)
+
 ### <a name="Element:Eingabefeld"></a>Element: Eingabefeld
 
-**B:** `Muster:` <br>
+**A:** `Muster:` <br>
 Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+
+**A:** `Minimallänge:` <br>
+Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+
+**A:** `Maximalwert:` <br>
+Hier können reguläre Ausdrücke eingetragen werden. Mittels dieser kann dann bestimmt werden, welche Eingaben im Eingaberfeld erlaubt sind.
+
+**A:** `Eingabehilfe:` <br>
+Siehe Beschreibungen zu den Basis-Parameter.
+
+**A:** `Tastatur einblenden:` <br>
+Siehe Beschreibungen zu den Basis-Parameter.
 
 ### <a name="Element:Optionsfeld (Bild)"></a>Element: Optionsfeld (Bild)
 
-**Gut zu wissen:** Wie können Bilder eingefügt werden?
+Dieses Element unterteilt sich noch einmal in "einfach" und "komplex". Ein "einfaches" Optionsfeld bietet die Möglichkeit einzelne Felder anzulegen und anschließend die Ausrichtung (Spalte, Zeile) dieser Felder festzulegen. In "komplexen" Optionsfeldern können die Felder nur in Spalten angeordnet werden. Der jeweiligen Spalte können dann noch zusätzlich Bilder hinzugefügt werden. Nachfolgend wird gezeigt wie ein Bild für ein komplexes Optionsfeld einer Spalte zugeordnet werden kann.
 
-**A:** `Spalten:` <br>
-Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die Spalteneinstellungen erfolgen.
+**A:** `Spalten:` *Einstellungen:*
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.png)
+![Optionsfeld komplex Spalteneinstellungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Optionsfeld_Bild_02.gif)
 
 ### <a name="Element:Ablegeliste"></a>Element: Ablegeliste
 
@@ -727,6 +745,8 @@ Ist diese Funktion aktiv und ist genügend Platz für ein Bild vorhanden, kann d
 
 ### <a name="Element:Audio"></a>Element: Audio
 
+Hier ist eine Vielzahl spezifischer Parameter zu finden. Wie bereits erwähnt sind die meisten jedoch selbsterklärend und werden daher an dieser Stelle nicht beschrieben.
+
 **A:** `Symbol Schraubenschlüssel: Verhalten: Abspielbar nach:` <br>
 Hier kann ein Audio angegeben werden, welches zuvor abgespielt werden muss. Solange dieses nicht abgespielt wird, ist der Play-Button inaktiv.
 
@@ -743,24 +763,21 @@ Hierüber kann festgelegt werden, wie oft das Video mindestens abgespielt werden
 
 ### <a name="Element:Optionstabelle"></a>Element: Optionstabelle
 
-**Gut zu wissen:** Kann auch die ID einer Zeile geändert werden?
+**Gut zu wissen:** Ändern der Zeilen-ID und hinzufügen von Bildern:
 
 **A:** `Zeilen:` <br>
-In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann auch die ID der Zeile individuell vergeben werden.
-
-**Gut zu wissen:** Wie können Bilder eingefügt werden?
+In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann die ID der Zeile individuell vergeben werden.
+Außerdem können hier auch Bilder hinzugefügt werden.
 
 **A:** `Spalten:` <br>
 Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
 
-### <a name="Element:Lückentext"></a>Element: Lückentext
+**Gut zu wissen:** Ändern der Breite der ersten Spalte:
 
-```yaml
-Dokumentstatus: Entwurf(THuste)
-Stand: 18.01.22
-todo: Anpassen an neue Editorversion
-      
-```
+**A:** `Anteil der ersten Spalte:`
+Hier kann das Verhältnis der ersten Spalte in Bildanteilen angegeben werden.
+
+### <a name="Element:Lückentext"></a>Element: Lückentext
 
 **A:** `Text:` <br>
 In einen Lückentext können bestimmte Elemente integriert werden.
