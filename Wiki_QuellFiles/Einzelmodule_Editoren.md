@@ -608,7 +608,7 @@ Units können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Se
 
 ### Aufteilung einer Seite in Abschnitte
 
-Wird ein Abschnitt auf einer Seite angelegt, muss eine wesentliche Festlegung getroffen werden, wie sich der Abschnitt verhalten soll. Der Editor bietet die Möglichkeit Abschnitte statisch oder dynamisch anzulegen. Ob ein Abschnitt statisch oder dynamisch ist, wird in den Abschnittsoptionen (rotes Menu zum Abschnitt) festgelegt.
+Wird ein Abschnitt auf einer Seite angelegt muss eine wesentliche Festlegung getroffen werden, wie sich der Abschnitt verhalten soll. Der Editor bietet die Möglichkeit Abschnitte statisch oder dynamisch anzulegen. Ob ein Abschnitt statisch oder dynamisch ist, wird in den Abschnittsoptionen (rotes Menu zum Abschnitt) festgelegt.
 
 Ein Abschnitt ist statisch solange der Haken bei "dynamisch" in den Abschnittsoptionen <u>nicht</u> gesetzt ist. 
 
@@ -618,9 +618,9 @@ Werden Abschnitte statisch angelegt, sind die Elemente fix mit einem bestimmten 
 
 #### Dynamisch
 
-Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im Abschnitt angeordnet, sondern passen sich immer den gegebenen Bildschirm-/ bzw. Fenstergrößen an.
+Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im Abschnitt angeordnet sondern passen sich immer den gegebenen Bildschirm-/ bzw. Fenstergrößen an.
 
-Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann in den Eigenschaften eines Elements die Position im Abschnitt festgelegt werden. Auf diese Weise findet eine Unterteilung des Abschnittes in Zeilen und Spalten statt. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
+Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben, die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann in den Eigenschaften eines Elements die Position im Abschnitt festgelegt werden. Auf diese Weise findet eine Unterteilung des Abschnittes in Zeilen und Spalten statt. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
 
@@ -634,7 +634,7 @@ Die Elemente werden auf 2 Gruppen verteilt (Reiter 1 und 2).
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
 
-Nach der Auswahl eines Elements (linke Maustaste) wird es im Abschnitt angelegt. Ist der Abschnitt dynamisch, wird das zuerst gewählte Element in der ersten Abschnittszeile angelegt. Kommen weitere Elemente hinzu, werden diese aufsteigend der nächsten Zeile innerhalb des Abschnittes zugeordnet. Die so angelegten Elemente haben noch keine feste Positionszuordnung im Abschnitt. Sie werden erst einmal in eine freie Zeile des Abschnittes gelegt, damit sie dort markiert und deren Eigenschaften verändert werden können. In den Eigenschaften des Elements kann dann die finale Position festgelegt werden. Die Positionierung erfolgt innerhalb eines dynamischen Abschnitts in Zeilen und Spalten. Innerhalb eines statischen Abschnitts erfolgt die Positionierung in X-, und Y-Position.
+Nach der Auswahl eines Elements, linke Maustaste, wird es im Abschnitt angelegt. Ist der Abschnitt dynamisch, wird das zuerst gewählte Element in der ersten Abschnittszeile angelegt. Kommen weitere Elemente hinzu, werden diese aufsteigend der nächsten Zeile innerhalb des Abschnittes zugeordnet. Die so angelegten Elemente haben noch keine feste Positionszuordnung im Abschnitt. Sie werden erst einmal in eine freie Zeile des Abschnittes gelegt, damit sie dort markiert und deren Eigenschaften verändert werden können. In den Eigenschaften des Elements kann dann die finale Position festgelegt werden. Die Positionierung erfolgt innerhalb eines dynamischen Abschnitts in Zeilen und Spalten. Innerhalb eines statischen Abschnitts erfolgt die Positionierung in X-, und Y-Position.
 
 ### Elementen Eigenschaften (Parameter)
 
@@ -657,7 +657,7 @@ Hier können Einstellungen bzgl. der Gestaltung eines Elements vorgenommen werde
 
 #### Basis-Parameter
 
-Einige Parameter sind in jedem Element zu finden. Bspw. hat jedes Element eine ID und Parameter, die die Position eines Elementes angeben. Diese Parameter werden an dieser Stelle als **Basis-Parameter** beschrieben. Die meisten **Basis-Parameter** sind unter den Reitern **B** und **C** zu finden. Außerdem gibt es **spezifische Parameter** die nur dem entsprechenden Element zur Verfügung stehen. Damit nicht für jedes Element die **Basis-Parameter** beschrieben werden müssen (diese weisen ja immer die selbe Funktionalität auf), soll vorab eine Zusammenstellung und Beschreibung dieser erfolgen. Die **spezifischen Parameter** und deren Funktionen werden dann in den Beschreibungen zu den Elementen gesondert behandelt.
+Einige Parameter sind in jedem Element zu finden. Bspw. hat jedes Element eine ID und Parameter, die die Position eines Elementes angeben. Diese Parameter werden an dieser Stelle als **Basis-Parameter** beschrieben. Die meisten **Basis-Parameter** sind unter den Reitern **B** und **C** zu finden. Außerdem gibt es **spezifische Parameter** die nur dem entsprechenden Element zur Verfügung stehen. Damit nicht für jedes Element die **Basis-Parameter** beschrieben werden müssen, diese weisen ja immer die selbe Funktionalität auf, soll vorab eine Zusammenstellung und Beschreibung dieser erfolgen. Die **spezifischen Parameter** und deren Funktionen werden dann in den Beschreibungen zu den Elementen gesondert behandelt.
 
 **A:** `ID:` <br>
 Jedes Element besitzt eine eindeutige ID. Über diese ID wird das Element identifiziert. Bei der Auswertung können die Antworten so einem Element zugeordnet werden.
@@ -673,13 +673,13 @@ Dieser Parameter ist eigentlich selbsterklärend. Er weist allerdings einige Bes
 Wird dieser Parameter aktiviert, werden Eingaben mittels Tastatur nicht angenommen. Auch wenn der Parameter: `Tastatur einblenden` aktiviert ist, wird die virtuelle Tastatur nicht eingeblendet. Einzige Eingabemöglichkeit stellt die Auswahl einer *Eingabehilfe* dar. Ist eine Eingabehilfe aktiviert, wird diese auch bei Schreibschutz eingeblendet und entsprechende Zeichen können in das Feld eingegeben werden. Hintergrund: Auf diese Weise ist es möglich nur bestimmte gewünschte Eingaben für ein Inputfeld zuzulassen. <br>
 
 **A:** `Tastatur einblenden:` <br>
-Dieser Parameter wird hauptsächlich für die Nutzung an einem Tablet verwendet. Es kann gewünscht sein, dass Eingaben über die Tablet eigene Tastatur nicht erlaubt sind. Bspw. können die Automatismen bzgl. Groß-/ Kleinschreibung, die auf einer Tablet-Tastatur zum Einsatz kommen können, während einer Deutsch Rechtschreibtestung problematisch sein. Das IQB hat für diesen Zweck eine eigene Tastur programmiert, die an dieser Stelle einmal als IQB-Tastatur bezeichnet werden soll. Ist diese Tastatur aktiv, wird die Tastatur nur an Geräten angezeigt an denen keine "echte" Tastatur erkannt wird. An einem Tablet ohne angeschlossene Tastatur würde somit die Tabelt eigene Tastatur unterdrück und nur die IQB-Tastatur angezeigt werden. Ist an einem Tablet zusätzlich noch eine "echte" Tastatur angeschlossen, wird bei einem Klick in das entsprechende Eingabefeld zuerst die IQB-Tastatur angezeigt. Erfolgt ein Tastendruck auf der "echten" Tastatur, wird diese erkannt und die IQB-Tastatur wird wieder ausgeblendet.
+Dieser Parameter wird hauptsächlich für die Nutzung an einem Tablet verwendet. Es kann gewünscht sein, dass Eingaben über die Tablet eigene Tastatur nicht erlaubt sind. Bspw. können die Automatismen bzgl. Groß-/ Kleinschreibung, die auf einer Tablet-Tastatur zum Einsatz kommen können, während einer Deutsch Rechtschreibtestung problematisch sein. Das IQB hat für diesen Zweck eine eigene Tastur programmiert, die an dieser Stelle einmal als IQB-Tastatur bezeichnet werden soll. Ist diese Tastatur aktiv, wird die Tastatur nur an Geräten angezeigt an denen keine "echte" Tastatur erkannt wird. An einem Tablet ohne angeschlossene Tastatur würde somit die Tablet eigene Tastatur unterdrückt und nur die IQB-Tastatur angezeigt werden. Ist an einem Tablet zusätzlich noch eine "echte" Tastatur angeschlossen, wird bei einem Klick in das entsprechende Eingabefeld zuerst die IQB-Tastatur angezeigt. Erfolgt ein Tastendruck auf der "echten" Tastatur, wird diese erkannt und die IQB-Tastatur wird wieder ausgeblendet.
 
 **A:** `Eingabehilfe:` <br>
 Es können verschiedene Eingabehilfen aus einer Liste gewählt werden. Wurde eine Eingabehilfe gewählt, wird diese auch bei Elementen mit Schreibschutz eingeblendet.
 
 **B:** `Feste Abmessungen: Mindestbreite:` <br>
-Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste. Über diese kann im Bild navigiert werden.
+Legt die Mindestbreite eines Elements fest. Wird im dynamischen Abschnitt das Wiedergaberfenster oder der Bildschirm verkleinert, verkleinert sich dieses Element nur bis zu diesem festgelegten Wert. Ist das Fenster kleiner als dieser Wert erscheint eine horizontale Bildlaufleiste, über diese kann im Element navigiert werden.
 
 **B:** `Mindesthöhe:` <br>
 Gleich wie Mindestbreite, nur bezogen auf die Höhe des Elements.
@@ -691,7 +691,7 @@ Die hier enthalten Parameter: *Spalte, Zeile, Spalten- und Zeilenspanne* legen f
 Legt die X-/ Y-Position eines Elements innerhalb einer Zelle (Zeile, Spalte) fest. Auf diese Weise kann ein Element zu benachbarten Elementen positioniert werden.
 
 **B:** `Z-Index:` <br>
-Werden Elemente übereinander gestapelt, kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
+Werden Elemente übereinander gestapelt kann mit diesem Index festgelegt werden, an welcher Stelle im Stapel sich das Element befinden soll. 
 
 ### <a name="Element:Text"></a>Element: Text
 
@@ -772,7 +772,7 @@ In den erweiterten Einstellungen zu den Zeilen (Schraubenschlüsselsymbol) kann 
 Außerdem können hier auch Bilder hinzugefügt werden.
 
 **A:** `Spalten:` <br>
-Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden, kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
+Bilder können einzelnen Spalten zugewiesen werden. Sollen Bilder eingefügt werden kann dies über die erweiterten Spalteneinstellungen (Schraubenschlüsselsymbol) erfolgen.
 
 **Gut zu wissen:** Ändern der Breite der ersten Spalte:
 
@@ -790,7 +790,7 @@ Dazu gehören die folgenden 3:
 * Optionsfeld
 
 Diese Elemente können wie gewünscht im Text eingeordnet werden. Dazu werden die Elemente mittels Schaltfläche an gewünschter Stelle im Text positioniert.
-Nachdem der Lückentext gespeichert wurde, kann durch Markierung der Elemente im Text, auf deren Parameter zugegriffen werden.
+Nachdem der Lückentext gespeichert wurde, kann durch Markierung der Elemente im Text auf deren Parameter zugegriffen werden.
 
 > Die so eingefügten Elemente enthalten die gleichen Parameter wie die Einzelelemente: Eingabefeld, Ablegeliste und Optionsfeld.
 
