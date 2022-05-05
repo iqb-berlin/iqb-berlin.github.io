@@ -88,7 +88,7 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 | run-hot-restart | Wie oben, nur dass bei einer erneuten Anmeldung die vorherigen Daten nicht geladen werden. Statt dessen wird eine neue Person angenommen und die Antworten unter einer neuen Kennung gespeichert. Dadurch ist es möglich, dieselben Zugangsdaten an viele Menschen zu schicken (z. B. bei Befragungen einer nicht genau bekannten Gruppe). |
 | run-trial | Zum Ausprobieren: Viele Beschränkungen gelten (s. u.). |
 | run-review | Zum Ausprobieren: Einige Beschränkungen gelten nicht (s. u.). |
-| run-demo | Kein Speichern, keine Beschränkungen (s. u.). |
+| run-demo | Zum Ausprobieren: kein Speichern, keine Beschränkungen (s. u.). |
 | monitor-group | Reserviert zur Nutzung der Testleitungskonsole. |
 
 ---
@@ -101,15 +101,16 @@ Die Festlegung erfolgt in der Testtaker-Xml im Element `Login` im Attribut `mode
 * `TRIAL`: Prüfdurchgang mit Speichern
 
 
-|  | `DEMO` | `HOT` | `REVIEW` | `TRIAL` | 
-| :------------- | :-------------: | :-------------: | :-------------: | :-------------: |
-|Es können Reviews abgegeben werden (Kommentare/Einschätzungen zur Unit bzw. zum Test)|  |  |X |  |
-|Es werden Antworten und Logs gespeichert.|  |X |  |X |
-|Alle Zeitbeschränkungen für Testabschnitte werden angewendet.|  |X |  |X |
-|Alle Navigationsbeschränkungen des Booklets werden angewendet (z. B. erst weiter, wenn vollständig angezeigt).|  |X |  |X |
-|Sollte ein Testabschnitt mit einem Freigabewort geschützt sein, wird dieses bei der Eingabebox schon eingetragen.|X |  |X |X |
-|Sollte eine Maximalzeit für einen Testabschnitt festgelegt sein, wird die verbleibende Zeit angezeigt, auch wenn die Booklet-Konfiguration dies unterbindet.|X |  |X |  |
-|Die Seite mit der Aufgaben-Übersicht wird erlaubt, auch wenn das Booklet dies unterbindet.|  |  |X |  |
+|  | `DEMO` | `MONITOR-GROUP` | `HOT` | `REVIEW` | `TRIAL` | 
+| :------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+|Es können Reviews abgegeben werden (Kommentare/Einschätzungen zur Unit bzw. zum Test)|  |  |  |X |  |
+|Es werden Antworten und Logs gespeichert.|  |  |X |  |X |
+|Alle Zeitbeschränkungen für Testabschnitte werden angewendet.|  |  |X |  |X |
+|Alle Navigationsbeschränkungen des Booklets werden angewendet (z. B. erst weiter, wenn vollständig angezeigt).|  |  |X |  |X |
+|Sollte ein Testabschnitt mit einem Freigabewort geschützt sein, wird dieses bei der Eingabebox schon eingetragen.|X |X |  |X |X |
+|Sollte eine Maximalzeit für einen Testabschnitt festgelegt sein, wird die verbleibende Zeit angezeigt, auch wenn die Booklet-Konfiguration dies unterbindet.|  |X |  |X |  |
+|Die Seite mit der Aufgaben-Übersicht wird erlaubt, auch wenn das Booklet dies unterbindet.|  |  |  |X |  |
+|Kann aus dem Gruppen-Monitor aus gesteuert werden|  |  |X |  |  |
 
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
