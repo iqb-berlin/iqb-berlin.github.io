@@ -55,22 +55,35 @@ Es können mehrere Tests oder Befragungen gleichzeitig laufen.
 
 **System-Check**
 
-Da die Programmierungen des Testcenters online in einem Browser ablaufen, ist keine vorherige Installation von Software auf einem Computer nötig, 
-mit dem der Test oder die Befragung durchgeführt werden soll. Es ist nur ein Internet-Zugriff und ein Browser nötig. Allerdings kann man bei der 
-enormen Vielfalt der Hardware (Tablet, Smartphone usw.) und Software (Apple, Linux, Android usw.) nicht garantieren, dass ein Test oder eine 
-Befragung so wie beabsichtigt funktioniert. Je nach Anforderung an den Test wird das auch nicht sinnvoll sein, z. B. wenn eine Mindestbreite 
+Man kann bei der enormen Vielfalt der Hardware (Tablet, Smartphone usw.) und Software (Apple, Linux, Android usw.) nicht garantieren, dass ein Test oder eine Befragung so wie beabsichtigt funktioniert. Je nach Anforderung an den Test wird das auch nicht sinnvoll sein, z. B. wenn eine Mindestbreite 
 für den Bildschirm erforderlich ist.
 
-Das IQB bemüht sich hier eine möglichst breite Palette an Systemen abzudecken. 
-Wenn man jedoch erfahren möchte, ob die Zielsysteme geeignet sind, kann man im IQB-Testcenter einen System-Check konfigurieren. 
+Wenn man erfahren möchte, ob die Zielsysteme geeignet sind, kann man im IQB-Testcenter einen System-Check konfigurieren. 
 Dann können z. B. die verantwortlichen Lehrkräfte in der Vorbereitungsphase im Testcenter einen auf die speziellen Anforderungen des 
 Tests abgestimmten Check durchführen. Auch die Internetverbindung kann hierüber bewertet werden.
+
+Ein System-Check sollte aber auch nicht überbewertet werden. Ein positiver Befund ist keine Garantie dafür, dass am Tag der Durchführung alles glatt läuft. Die Leistungsfähigkeit der Internetverbindung beispielsweise hängt davon ab, was parallel in der Schule gerade an Bandbreite für andere Zwecke (z. B. automatische System-Updates) belegt ist. Außerdem erhöht ein System-Check den ohnehin hohen Aufwand einer Testung und könnte die Teilnahmemotivation weiter senken.
 
 **Testleitungskonsole**
 
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine 
 Sperre wieder aufheben.
+
+**<a name="system-requirements"></a>Systemanforderungen**
+
+Da die Programmierungen des Testcenters online in einem Browser ablaufen, ist keine vorherige Installation von Software auf einem Computer nötig, 
+mit dem der Test oder die Befragung durchgeführt werden soll. Es ist nur ein Internet-Zugriff und ein Browser nötig.
+
+Es gibt immer wieder die Diskussion darüber, ob bzw. in welchem Maße ältere Browser bzw. Browserversionen unterstützt werden sollen. Hier wird argumentiert, dass Schulen bzw. deren Träger oft nicht in der Lage seien, die Verwendung aktueller Browser sicherzustellen. Aus dieser Realität ergebe sich, dass die Programmierungen für TBA stets ein Maximum an Abdeckung auch für alte Browser leisten müssten.
+
+Das IQB folgt hier jedoch den Anforderungen an die Datensicherheit, so wie es z. B. das [Bundesamt für Sicherheit in der Informationstechnik](https://www.bsi.bund.de/) formuliert:
+
+> "Der Internet-Browser ist die zentrale Komponente für die Nutzung von Online-Angeboten und stellt somit eins der beliebtesten Ziele für Cyber-Angriffe dar. Hieraus ergibt sich ein besonders hohes Gefahrenpotenzial." [Quelle](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Updates-Browser-Open-Source-Software/Der-Browser/der-browser_node.html)
+
+> "Installieren Sie alle Updates sofort oder zeitnah nach ihrer Veröffentlichung, sowohl die für Ihren Browser, als auch für alle Erweiterungen und natürlich Ihr Betriebssystem. Verwenden Sie stets die neuste Version Ihres Browsers." [Quelle](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Updates-Browser-Open-Source-Software/updates-browser-open-source-software_node.html)
+
+Das IQB unterstützt daher nur die jeweils letzten beiden Hauptversionen eines Browsers bzw. - bei Chrome und Firefox - die Versionen der letzten 12 Monate. Beispielsweise werden derzeit (Stand April 2022) bei Safari nur die Versionen 14 (Veröffentlichung September 2020) und 15 unterstützt. 
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Daten-und-Prozesse">
@@ -548,17 +561,17 @@ Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen
 
 ---
 
-# 2.8 Testleitungskonsole
+# 2.8 Testleitungskonsole (TLK)
 
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
-Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder eine Sperre wieder aufheben.
+Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder Testhefte sperren bzw. freigeben.
 
 Hier finden Sie ein kurzes [Einleitungsvideo](https://box.hu-berlin.de/f/3f23e8a85edb445ebc81/).
 
 
-## Einrichten der Testleitungskonsole
+## Einrichten der Testleitungskonsole (TLK)
 
-Die Testleitungskonsole wird mittels **Testtakers.xml** eingerichtet. Diese gehört zu den Testdateien, wie auch die **Booklet.xml** und die **Unit.xml**. Nachfolgend ist eine Beispielkonfiguration bzw. Syntax der **Testtakers.xml** zu sehen, an der eine Orientierung im weiteren Verlauf dieses Kapitels erfolgen wird.
+Die Testleitungskonsole wird mittels **Testtakers.xml** eingerichtet. Diese gehört neben der **Booklet.xml**, der **Unit.xml** und weiteren Ressourcen zu den Testdateien. Nachfolgend ist eine Beispielkonfiguration der **Testtakers.xml** zu sehen.
 
 ```xml
 <Testtakers>
@@ -584,35 +597,35 @@ Die Testleitungskonsole wird mittels **Testtakers.xml** eingerichtet. Diese geh�
 </Testtakers>
 ```
 
-Zum Einrichten der Testleitungskonsole wird ein Login mit dem Modus:`monitor-group` in der zu beobachtenden Gruppe angelegt. In diesem Fall befindet sich der Login mit diesem Modus in der Group: Testgruppe_1. Daraus folgt: Die Testleitungskonsole überwacht alle Testpersonen, die sich in dieser Testgruppe_1 befinden. Die final bearbeitete **Testtakers.xml** ist anschließend mit den anderen Testdateien in das **Testcenter** zu laden.
+Zum Einrichten der Testleitungskonsole (TLK) wird ein entsprechender Login:`monitor-group` in der zu beobachtenden Gruppe angelegt. In diesem Fall befindet sich der TLK-Login in der Gruppe: Testgruppe_1. Daraus folgt:<br> Die TLK überwacht alle Testpersonen, die sich in dieser Testgruppe befinden. Der auf diese Weise angelegte TLK-Login in der **Testtakers.xml** muss anschließend in das **Testcenter** geladen werden. 
 
->Der oben gezeigte Code ist nur ein Bsp.! Es können weitere Gruppen, Testpersonen etc. angelegt werden und für jede dieser Gruppen kann ein eigener Testmonitor angelegt werden!
+> Der oben gezeigte Code ist nur ein Bsp.! Es können weitere Gruppen, Testpersonen etc. angelegt werden und für jede dieser Gruppen kann ein eigener Testmonitor angelegt werden!
 
-Weitere Informationen zur Konfiguration der **Testtaker.xml** finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml).
+Weitere Informationen zur Konfiguration der **Testtakers.xml** finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml).
 
 ## Starten der Testleitungskonsole
 
-Um die Testleitungskonsole zu starten, muss eine Neuanmeldung am **Testcenter** erfolgen. Anschließend sind die Zugangsdaten zu verwenden, welche als Login für die Testleitungskonsole (`monitor-group`) in der **Testtakers.xml** festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
+Um die TLK zu starten, muss eine Neuanmeldung am **Testcenter** erfolgen. Anschließend sind die Zugangsdaten zu verwenden, die für den Login der Testleitungskonsole (`monitor-group`) festgelegt wurden. In diesem Fall muss zur Anmeldung der Name: *group-monitor_1* und das Passwort: *567* verwendet werden. 
 
-Nach der Anmeldung kann die Gruppe, welche dieser Testleitungskonsole zugeordnet ist, ausgewählt werden.
+Nach der Anmeldung kann die Gruppe, der die TLK zugeordnet wurde, ausgewählt werden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Anmeldung.png)
 
-Nachdem die gewünschte Gruppe gewählt wurde (in diesem Fall gibt es nur eine Gruppe), ist die Testleitungskonsole zu sehen.
+Anschließend ist die Oberfläche der TLK zu sehen:
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht1.png)
 
-### Was ist nun zu sehen?
+### Ansicht der TLK
 
-Nachfolgend erfolgt eine Auflistung der Bestandteile, welche resultierend aus der Konfiguration der **Testtakers.xml** in der Testleitungskonsole zu sehen sind:
+Schauen wir uns an was in der TLK zu sehen ist:
 
 * die beobachtete Gruppe -> Dieser Name wurde über das Group Label gesetzt. In diesem Fall Gruppe 1.
 * Benutzername der Testleitungskonsole -> Dieser Name wurde über den Login Namen der `monitor-group` gesetzt.
 * die Testpersonen -> Diese Namen wurden über die Login Namen innerhalb der zu überwachenden Gruppe gesetzt.
 
-Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einblick  in die **Booklet.xml** genommen werden, die zusammen mit der **Testtakers.xml** und den **Unit.xml`s** für dieses Bsp. in das **Testcenter** geladen wurde.
+Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einblick  in die zugehörige **Booklet.xml** genommen werden. 
 
->Es wird nur der Code innerhalb der **Booklet.xml** aufgezeigt der für die Beschreibung notwendig ist!
+> Es wird nur der Code innerhalb der **Booklet.xml** aufgezeigt der für diese Beschreibung notwendig ist!
 
 ```xml
 <Booklet>
@@ -639,31 +652,31 @@ Zu Erklärung weiterer Symbole innerhalb der Testleitungskonsole muss ein Einbli
 </Booklet>
 ```
 
-Die im Bild rot markierten Symbole der Testperson_a entsprechen einer einzelnen Unit. In diesem Fall der Start- und Endunit.
+Die im Bild rot markierten Symbole der *Testperson_a* entsprechen einer einzelnen Unit. In diesem Fall der Start- und Endunit.
 
 Das gelb markierte Symbol entspricht dem Testlet: Examples. Die enthaltende Zahl in der gelben Markierung entspricht der Unit innerhalb des Testlets. In diesem Fall gibt es nur die Unit 1.
 
 
 ## Arbeiten mit der Testleitungskonsole
 
-Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich. Über das kleine Zahnradsymbol oben rechts, kann die Ansicht individuell angepasst werden. Es können weitere Informationen ein- oder ausgeblendet werden. 
+Nachdem die Konsole gestartet wurde, können die Zugangsdaten für die Testpersonen vergeben werden. Nach Anmeldung ist der Bearbeitungsstand des Tests durch die Testperson ersichtlich. Über das kleine Zahnradsymbol oben rechts kann die Ansicht individuell angepasst werden. Es können weitere Informationen ein- oder ausgeblendet werden. 
 
 > **Ablauf, Struktur und Kontrolle eines Tests können von den Verantwortlichen individuell gestaltet werden.<br> 
 An dieser Stelle können nur Empfehlungen auf Erfahrungsgrundlage gegeben werden! Die Durchführung sollte genauestens geplant und überdacht sein, um einen reibungslosen Ablauf und repräsentative Ergebnisse zu gewährleisten.**
 
-In diesem Bsp. hat sich nur  Testperson c angemeldet und befindet sich in der Unit 1 innerhalb des Testlets.<br>
-Testperson_a hat seinen Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt. Dies ist auch zu sehen an dem kleinen Schlosssymbol.
-Durch markieren einer Testperson, kann der Ablauf für diese Testperson mithilfe der Steuersymbole auf der linken Seite gesteuert werden.
+In diesem Bsp. hat sich nur  *Testperson_c* angemeldet und befindet sich in der Unit 1 innerhalb des *Testlets*.<br>
+*Testperson_a* hat den Test schon abgeschlossen. Da der Modus: `run-hot-return` verwendet wurde, ist der Test nach Abschluss gesperrt. Dies ist auch zu sehen an dem Schlosssymbol.
+Durch Markierung einer Testperson kann der Ablauf für diese Testperson mithilfe der Steuersymbole auf der linken Seite gesteuert werden.
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht2.png)
 
 > **Werden mehrere Testhefte mit ähnlicher Struktur verwendet, ist es eventuell nicht möglich alle Testpersonen gleichzeitig zu steuern. In diesem Fall müssen die zu steuernden Testpersonen einzeln markiert (Haken setzen vor der Testperson) und dann die Steuerbefehle (Pause, springe zu etc.) abgesetzt werden.**
 
-Die folgenden Status können während eines Testablaufs angezeigt werden (dies ist nur eine bsph. Darstellung, die aufgezeigten Symbole können nicht gemeinsam auftreten!):
+Nachfolgend sind die möglichen Symbole für den Teststatus zu sehen:
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Testleitkonsole_Ansicht3.png)
 
-Weitere detailierte Informationen zu den Status finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
+Weitere Informationen zum Teststatus finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
 
 ---
 
