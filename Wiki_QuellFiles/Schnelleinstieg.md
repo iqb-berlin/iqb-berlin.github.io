@@ -154,17 +154,13 @@ Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichn
 
 ![TS_Editorreiter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_Reiter.png)
 
-Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an. Ich wähle einmal ein Textelement.
+Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. Ich wähle einmal ein Textelement.
 
-![TS_Elementauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementauswahl.gif)
-
-:heavy_exclamation_mark: Speichern Sie die Aufgabe mal wieder!
+![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl.gif)
 
 Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Dann klicken Sie auf den Reiter Vorschau.
 
 ![TS_Editorvorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorvorschau.gif)
-
-
 
 </td></tr>
 <tr>
@@ -177,7 +173,7 @@ Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird?
 
 Jetzt können Sie Ihre Aufgabe mit dem **Teststudio** ausgeben lassen.
 
-
+![TS_Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output.gif)
 
 Was hat das **Teststudio** erzeugt?
 
