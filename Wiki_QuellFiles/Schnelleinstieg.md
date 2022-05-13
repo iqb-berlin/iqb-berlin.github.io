@@ -177,7 +177,9 @@ Jetzt können Sie Ihre Aufgabe mit dem **Teststudio** ausgeben lassen.
 
 Was hat das **Teststudio** erzeugt?
 
-Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. Außerdem werden noch 2 andere Dateien erzeugt, eine `Testtakers.xml` und eine `Booklet.xml`. Im Schnelleinstieg zum **Testcenter** werden wir uns diese beiden Dateien noch einmal näher anschauen. Alles wird in einer Zip-Datei verpackt ausgegeben.
+Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. Außerdem werden noch 3 andere Dateien erzeugt, eine `Testtakers.xml`, eine `Booklet.xml` und eine `iqb-player-aspect@1.24.html` . Im Schnelleinstieg zum **Testcenter** werden wir uns diese Dateien noch einmal näher anschauen. Alles wird in einer Zip-Datei verpackt ausgegeben.
+
+![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien.gif)
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
 
