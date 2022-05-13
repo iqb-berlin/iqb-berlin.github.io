@@ -133,6 +133,8 @@ Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Edito
 
 Ist der Editor ausgewählt muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann in der Vorschau, aber auch später bei der Testdurchführung im **Testcenter** wieder.
 
+![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_01.gif)
+
 
 :heavy_exclamation_mark: Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
 
@@ -150,12 +152,19 @@ Ist der Editor ausgewählt muss auch ein zum Editor passender Player gewählt we
 
 Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichnamigen Reiters.
 
+![TS_Editorreiter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_Reiter.png)
 
 Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an. Ich wähle einmal ein Textelement.
 
-
+![TS_Elementauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementauswahl.gif)
 
 :heavy_exclamation_mark: Speichern Sie die Aufgabe mal wieder!
+
+Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Dann klicken Sie auf den Reiter Vorschau.
+
+![TS_Editorvorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorvorschau.gif)
+
+
 
 </td></tr>
 <tr>
