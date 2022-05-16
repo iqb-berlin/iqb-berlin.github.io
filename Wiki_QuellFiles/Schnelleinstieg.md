@@ -36,9 +36,9 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** doch einmal kurz k
 !<--###################################################################################################################### -->
 
 ```yaml
-Dokumentstatus: in Bearbeitung (THuste)
-Stand: 13.05.22
-todo: - weitere Inhalte
+Dokumentstatus: Review (THuste)
+Stand: 16.05.22
+todo: - warte auf Feedback
       
 ```
 <table border=1>
@@ -58,31 +58,14 @@ todo: - weitere Inhalte
 </td></tr>
 <tr>
 <td>
-test
-</td></tr>
-<tr>
-<td>
 
 Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-teststudio.de**
  
 :heavy_exclamation_mark: Das Teststudio muss dazu auf Ihrem Server installiert sein.
 
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Anmeldung
-
-</td></tr>
-<tr>
-<td>
-
-Melden Sie sich mit Ihren Zugangsdaten am Teststudio an.
+Melden Sie sich anschließend mit Ihren Zugangsdaten am Teststudio an.
 
 :heavy_exclamation_mark: Die Zugangsdaten erhalten Sie von Ihren Adminstrator\*innen.
-
-![TS_Anmeldung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Anmeldung.gif)
-
 
 </td></tr>
 <tr>
@@ -94,11 +77,11 @@ Melden Sie sich mit Ihren Zugangsdaten am Teststudio an.
 <tr>
 <td>
 
-Wählen Sie Ihren Arbeitsbereich aus.
+Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeitsbreich: *Tobias* öffnen.
 
-:heavy_exclamation_mark: Die Administrator\*innen geben Bereiche für Sie frei.
+:heavy_exclamation_mark: Die Administrator\*innen geben die Bereiche für Sie frei.
 
-![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_01.png)
+![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_03.png)
 
 
 </td></tr>
@@ -113,11 +96,13 @@ Wählen Sie Ihren Arbeitsbereich aus.
 
 Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch Markierung der Aufgabe.
 
+Es besteht bereits eine Aufgabe mit dem Namen: *Aufgabe 1* in meinem Arbeitsbereich und ich füge eine weiterer Aufgabe mit dem Namen: *Aufgabe 2* hinzu.
+
 :information_source: Eine Aufgabe wird auch Unit genannt!
 
 ![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen.gif)
 
-:heavy_exclamation_mark: Vergeben Sie für den Kurznamen eindeutige ID-fähige Namen. Der hier aufgezeigte Name soll nur als Beispiel dienen und wäre eigentlich nicht günstig.
+:heavy_exclamation_mark: Vergeben Sie für den Kurznamen eindeutige ID-fähige Namen. Der hier aufgezeigte Name soll an dieser Stelle nur als Beispiel dienen und ist daher nicht repräsentativ. Wählen Sie kurze Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.
 
 </td></tr>
 <tr>
@@ -129,9 +114,9 @@ Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch
 <tr>
 <td>
 
-Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über eigene Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und Sie responsives Verhalten wünschen . Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf responsives Verhalten verzichten können.
+Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über eigene Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufagebansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
 
-Ist der Editor ausgewählt muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann in der Vorschau, aber auch später bei der Testdurchführung im **Testcenter** wieder.
+Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
 
 ![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_01.gif)
 
@@ -158,9 +143,8 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 ![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl.gif)
 
-Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Dann klicken Sie auf den Reiter Vorschau.
+Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Klicken Sie dazu auf den Reiter: *Vorschau*. Dort wird Ihre Aufgabe genau so angezeigt wie sie auch im **Testcenter** angezeigt werden würde.
 
-![TS_Editorvorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorvorschau.gif)
 
 </td></tr>
 <tr>
@@ -179,7 +163,7 @@ Was hat das **Teststudio** erzeugt?
 
 Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. Außerdem werden noch 3 andere Dateien erzeugt, eine `Testtakers.xml`, eine `Booklet.xml` und eine `iqb-player-aspect@1.24.html` . Im Schnelleinstieg zum **Testcenter** werden wir uns diese Dateien noch einmal näher anschauen. Alles wird in einer Zip-Datei verpackt ausgegeben.
 
-![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien.gif)
+![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_02.gif)
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
 
