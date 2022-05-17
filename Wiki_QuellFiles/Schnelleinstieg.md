@@ -149,7 +149,7 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Klicken Sie dazu auf den Reiter: *Vorschau*. Dort wird Ihre Aufgabe genau so angezeigt wie sie auch im **Testcenter** angezeigt werden würde.
 
-![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau.gif)
+![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_01.gif)
 
 </td></tr>
 <tr>
