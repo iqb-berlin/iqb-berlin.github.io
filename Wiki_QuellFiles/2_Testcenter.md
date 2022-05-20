@@ -105,6 +105,9 @@ Das IQB unterstützt daher nur die jeweils letzten beiden Hauptversionen eines B
 
 ## Daten-Input für das Testcenter
 
+Das **Teststudio** gibt nach dem Aufgabenentwurf Dateien aus. Diese Dateien müssen zur Testdurchführung in das **Testcenter** geladen werden. Nachfolgend werden die Funktionen dieser Dateien beschrieben. Schauen Sie sich auch gerne dieses kurze [**Video**](https://box.hu-berlin.de/f/2f2e553260584d20a762/) zum besseren Verständis dieser Dateien an.
+
+
 ### Logins
 
 Jede Person, die an einem Test bzw. einer Befragung beteiligt ist, muss Zugangsdaten erhalten. Diese Informationen sind in einer [XML-Datei](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) festgelegt. Folgende Arten des Zugriffs (Rollen) werden unterschieden:

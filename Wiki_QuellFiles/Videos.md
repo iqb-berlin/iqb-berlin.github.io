@@ -30,7 +30,7 @@
 > Kategorie: Einführung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: niedrig<br>
-> Dauer: 11:14 [h]:[min]
+> Dauer: 11:14 [min]:[s]
 
 </td></tr>
 <tr>
@@ -82,7 +82,7 @@
 > Kategorie: Einführung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer: 19:27 [h]:[min]
+> Dauer: 19:27 [min]:[s]
 
 </td></tr>
 <tr>
@@ -136,7 +136,7 @@
 > Kategorie: Einführung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer: 23:06 [h]:[min]
+> Dauer: 23:06 [min]:[s]
 
 </td></tr>
 <tr>
@@ -153,6 +153,57 @@
 **Link:**
 
 > https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/
+
+</td>
+</tr>
+
+</table>
+
+<!--###################################################################################################-->
+
+<table border=1>
+<tr>
+<th align=left width=1000>
+
+### Dateninput für das Testcenter (Testdateien)
+
+</th>
+</tr>
+<tr>
+<td>
+
+**Inhalt:**
+
+> Beschreibung der Funktionen der Testdateien
+
+</td></tr>
+<td>
+
+**Format:**
+
+> 16:9<br>
+> UT: nein<br>
+> Inhaltsverzeichnis: nein<br>
+> Kategorie: Einführung<br>
+> Sprache: Deutsch<br>
+> techn. Niveau: niedrig<br>
+> Dauer: 04:33 [min]:[s]
+
+</td></tr>
+<tr>
+<td>
+
+**Stand:**
+
+> Mai 2022
+
+</td></tr>
+<tr>
+<td>
+
+**Link:**
+
+> https://box.hu-berlin.de/f/2f2e553260584d20a762/
 
 </td>
 </tr>
@@ -187,7 +238,7 @@
 > Kategorie: Einführung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer: 13:49 [h]:[min]
+> Dauer: 13:49 [min]:[s]
 
 </td></tr>
 <tr>
@@ -239,7 +290,7 @@
 > Kategorie: Einführung<br>
 > Sprache: Deutsch<br>
 > techn. Niveau: mittel<br>
-> Dauer: 09:37 [h]:[min]
+> Dauer: 09:37 [min]:[s]
 
 </td></tr>
 <tr>
