@@ -39,8 +39,8 @@ seitens des IQB zum Einsatz kommen.
 
 ## IQB-Anwendungen 
 
-Einen groben Überblick der Testsysteme und deren Zusammenwirken verschafft auch dieses Video: 
-* [Einführung in die IQB TBA-Systeme](https://box.hu-berlin.de/f/07de21dff3c948d2bff4/)
+Hier finden Sie einführende Videos zu den IQB-Anwendungen
+* [Einführung in die IQB TBA-Systeme](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung)
 
 ![iqb applications: testcenter, teststudio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
 

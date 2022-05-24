@@ -569,7 +569,7 @@ Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen
 Soll ein Test für eine bestimmte Personengruppe (z. B. Klasse) gleichzeitig stattfinden, kann ein Monitor dafür eingerichtet werden. 
 Die Testleitung kann dann für jede Testperson den Fortschritt beobachten, ggf. das Weiterblättern erzwingen, Personen ausschließen oder Testhefte sperren bzw. freigeben.
 
-Hier finden Sie ein kurzes [Einleitungsvideo](https://box.hu-berlin.de/f/3f23e8a85edb445ebc81/).
+Hier finden Sie [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Testleitungskonsole) zur Testleitungskonsole.
 
 
 ## Einrichten der Testleitungskonsole (TLK)

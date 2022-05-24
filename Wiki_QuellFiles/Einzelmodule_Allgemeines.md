@@ -266,11 +266,7 @@ Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles 
 * ein Testsystem (z.B. Testcenter zu nennen, wie im IQB) in dem der Test durchgeführt werden kann (Pilotierung im IQB, Hauptdurchgang in einem Land) bräuchte einen Player und einen Response Converter
 * ein Teststudio in dem die Aufgaben und Tests entwickelt werden, bräuchte Editor (Authoring), Response Scheme und Player (für Demo-Voransicht der Aufgaben) 
     
-Folgende Videos verschaffen weitere Einblicke:
-
-* [Verona-Interfaces: 1.Einführung](https://box.hu-berlin.de/f/a6de8bd03626451a93d0/)
-* [Verona-Interfaces: 2.Player-Model](https://box.hu-berlin.de/f/8f4b50975e9645af803b/)
-* [Verona-Interfaces: 3.Player-API](https://box.hu-berlin.de/f/6c71fcdb9d7944d69dec/)
+Weitere Informationen und Videos finden Sie im [Wiki](https://github.com/verona-interfaces/verona-interfaces.github.io/wiki) zum Verona Interfaces
 	
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # xIQB Grundsätze Player Programmierung (Abschnittsmarker)

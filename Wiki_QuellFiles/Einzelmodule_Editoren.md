@@ -5,13 +5,9 @@
 > **[Hier](https://github.com/iqb-berlin/verona-editor-dan)** der Link zum GitHub Repository.<br>
 > **[Hier](https://github.com/iqb-berlin/verona-editor-dan/releases)** finden Sie die letzten aktuellen Versionsstände.
 
-Die folgenden Videos werden direkt zum **Dan-Editor** angeboten:
+Die folgenden [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editor:-Dan) werden direkt zum **Dan-Editor** angeboten
 
-* [Schulung Teststudio Editor Dan2](https://box.hu-berlin.de/f/edc2409b79954dc3b3a1/)  
-
-Die folgenden Videos beschäftigen sich vorwiegend mit dem Aufgabenentwurf, aber auch hier werden Aufgaben mit den **Dan-Editor** erzeugt:
-
-* [Aufgabenentwurf mit dem Teststudio](https://moodle.hu-berlin.de/course/view.php?id=107279)
+Das folgende [Video: Vom Entwurf zum Test](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung) beschäftigt sich vorwiegend mit dem Aufgabenentwurf, aber auch hier werden auch Aufgaben mit den **Dan-Editor** erzeugt:
   
 ### Übersicht
 
@@ -550,7 +546,7 @@ nav-button-group::next
 Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den **PlainText-Editor** muss zwingend der Player **Verona Abi-Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-#  Verona Editor Aspect (Abschnittsmarker)
+#  Verona Editor Aspect v1.30 (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 ---
@@ -575,7 +571,7 @@ Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorsch
 
 > **[Hier](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor%2F1.21.0%2Bplayer%2F1.15.0)** sind die letzten aktuellen Versionsstände zu finden.
 
-> **[Hier](https://moodle.hu-berlin.de/course/view.php?id=107227)** ist ein einführendes Video zu finden.<br>
+> **[Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editor:-Aspect)** sind Videos zu finden.<br>
 
 ## <a name="Überblick"></a>Überblick
 
@@ -602,7 +598,7 @@ Der Editor ist wie folgt aufgebaut:
 
 ### Aufteilung einer Unit in Seiten
 
-Units können in Seiten aufgeteilt werden. Jede Unit kann aus 1 oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden.
+Units können in Seiten aufgeteilt werden. Jede Unit kann aus einer oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten.gif)
 
