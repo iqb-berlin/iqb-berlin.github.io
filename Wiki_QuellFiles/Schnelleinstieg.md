@@ -164,7 +164,7 @@ Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. All
 
 ![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
 
-**Wollen Sie noch etwas mehr zu den Testdateien erfahren? Dann ist vielleicht dieses kleine [Video](https://box.hu-berlin.de/f/2f2e553260584d20a762/) hilfreich.**
+**Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.**
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
 

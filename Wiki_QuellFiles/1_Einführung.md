@@ -133,7 +133,7 @@ Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams kön
 
 ## IQB-Kodierbox
 
-Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung mit dem Namen: **itc-Toolbox**.
+Diese Anwendung wird derzeit konzipiert. Die Ergebnisverarbeitung unterstützt aktuell eine Windows-Desktop-Anwendung mit dem Namen: **itc-Toolbox**. Mehr Informationen dazu erhalten Sie [hier](https://github.com/iqb-berlin/itc-toolbox#readme)
 
 ---
 

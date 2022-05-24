@@ -7,11 +7,7 @@ und man sieht ein Formular zum Anmelden. Alle Daten für einen Test sind vorher 
 Das kann über ein integriertes Verwaltungsportal erfolgen oder über andere Webanwendungen, die auf den Server zugreifen.
 
 Eine grobe Einführung in das Testcenter geben auch die nachfolgenden Verlinkungen.                        
-Das IQB bietet folgende Video-Präsentationen bzgl. des Testcenters an:
-
-* [Einführung in das IQB-Testcenter](https://box.hu-berlin.de/f/a8f7aea9c751493c8d35/)
-* [Diskussion der Optionen Testcenter-Einsatz oder Implementation der Verona-Schnittstelle](https://box.hu-berlin.de/f/d23af87168fa4e9f9bb0/)
-
+Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Testcenter) bzgl. des Testcenters an.
 
 **Installation**
 
@@ -105,8 +101,7 @@ Das IQB unterstützt daher nur die jeweils letzten beiden Hauptversionen eines B
 
 ## Daten-Input für das Testcenter
 
-Das **Teststudio** gibt nach dem Aufgabenentwurf Dateien aus. Diese Dateien müssen zur Testdurchführung in das **Testcenter** geladen werden. Nachfolgend werden die Funktionen dieser Dateien beschrieben. Schauen Sie sich auch gerne dieses kurze [**Video**](https://box.hu-berlin.de/f/2f2e553260584d20a762/) zum besseren Verständis dieser Dateien an.
-
+Das **Teststudio** gibt nach dem Aufgabenentwurf Dateien aus. Diese Dateien müssen zur Testdurchführung in das **Testcenter** geladen werden. Nachfolgend werden die Funktionen dieser Dateien beschrieben. Zum besseren Verständnis schauen Sie sich auch gerne die [**Videos**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zum Thema Testdateien an .
 
 ### Logins
 
@@ -116,7 +111,7 @@ Jede Person, die an einem Test bzw. einer Befragung beteiligt ist, muss Zugangsd
 * Review: Zum Ausprobieren eines Tests können spezielle Logins vorbereitet werden. Man kann dann Kommentare zu den Aufgaben und dem Test vergeben und es sind einige Navigationsbeschränkungen unwirksam, wie z. B. Zeitlimits.
 * Demo: Man kann den Test aufrufen, aber die Antworten werden nicht dauerhaft gespeichert. Ruft eine andere Person mit denselben Login-Daten den Test auf, werden keine älteren Antworten geladen.
 
-Das Erstellen von Logins wird unterstützt über das Windows-Programm [itc-ToolBox](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Logins).
+Das Erstellen von Logins wird unterstützt über das Windows-Programm [itc-ToolBox](https://github.com/iqb-berlin/itc-toolbox#readme).
 
 ### Test-Definition
 
@@ -324,10 +319,10 @@ Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
   * [Bearbeiten der XML-Datei](Unit%E2%80%90Xml)
 * Booklets:
   * [Bearbeiten der XML-Datei](Booklet%E2%80%90Xml)
-  * [Unterstützung durch itc-ToolBox](itc%E2%80%90ToolBox%3A-Booklets)
+  * [Unterstützung durch itc-ToolBox](https://github.com/iqb-berlin/itc-toolbox#readme)
 * Logins:
   * [Bearbeiten der XML-Datei](Testtaker%E2%80%90Xml)
-  * [Unterstützung durch itc-ToolBox](itc%E2%80%90ToolBox%3A-Logins)
+  * [Unterstützung durch itc-ToolBox](https://github.com/iqb-berlin/itc-toolbox#readme)
   * [Anmeldeverfahren](Login%3A-Anmeldeverfahren)
   * [Modi der Testdurchführung](Login%3A-Modi-der-Testdurchf%C3%BChrung)
 
