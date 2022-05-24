@@ -1,7 +1,7 @@
 # TBA Schnelleinstieg
 
 ```yaml
-Doumentstatus: in Bearbeitung (THuste)
+Dokumentstatus: in Bearbeitung (THuste)
 Stand: 13.05.22
 todo: - weitere Inhalte
       
