@@ -1,9 +1,3 @@
-```yaml
-Dokumentstatus: Review (THuste)
-Stand: 20.07.2021
-todo: - Weiter mit Inhalten füllen      
-```
-
 <table border=1>
   <tr>
     <td><a href="#Allgemein">Allgemein</a></td>    
@@ -43,7 +37,7 @@ todo: - Weiter mit Inhalten füllen
 <td>
 
 #### Gibt es einführende Videos zu den IQB Testsystemen?
-> Ja. Ein Video ist [hier](https://box.hu-berlin.de/f/2530ebf557404b1bac8b/) zu finden.
+> Ja. Ein Video ist [hier](https://box.hu-berlin.de/f/07de21dff3c948d2bff4/) zu finden.
 
 </td>
 </tr>
