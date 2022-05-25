@@ -202,7 +202,7 @@ todo: - warte auf Feedback
 <tr>
 <td>
 
-### :heavy_check_mark: Die Testdateien: Testtakers: Testpersonen anlegen
+### :heavy_check_mark: Die Testdateien: Testtakers: Group anlegen
 
 </td></tr>
 <tr>
@@ -212,7 +212,25 @@ Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab di
 
 :information_source: Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
 
-Öffnen wir zuerst einmal die Testtakers1.xml mit einem Editor. Anschließend legen wir eine Testperson an. Durch das **Teststudio** wurden bereits einige zufällig 6 generierte Logins mit einem Passwort erzeugt. In diesem Fall nutzen wir diese und ändern Sie nicht.
+Es können für die Testung Gruppen angelegt werden, die einen bestimmten Personenkreis (Logins) enthalten.
+
+![TC_Testdateien_Testtakers_Group](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Group.gif)
+
+
+:heavy_exclamation_mark: Das **Testcenter** prüft ob der Gruppenname bereits in einem anderen Arbeitsbereich besteht. Verwenden Sie daher für den Gruppennamen Bezeichner die die Wahrscheinlichkeit verringern, dass eine solche Gruppe bereits existiert. Ein schlechter Name wäre bspw. ""Gruppe1".
+
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Die Testdateien: Testtakers: Testpersonen anlegen
+
+</td></tr>
+<tr>
+<td>
+
+Durch das **Teststudio** wurden bereits 6 zufällig generierte Logins mit einem Passwort erzeugt. In diesem Fall nutzen wir diese und ändern Sie nicht.
 
 ![TC_Testdateien_Testtakers_Login](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Login.gif)
 
@@ -234,7 +252,6 @@ Für jede Testung kann mithilfe eines festgelegten Modus bestimmt werden wie die
 :information_source: Mehr über die Modi und deren Funktionen erfahren Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung)
 
 Wir wollen hier einmal einmal einmal eine finale Testung durchführen und wählen hierfür den Modus: run-hot-return
-
 
 
 </td></tr>
