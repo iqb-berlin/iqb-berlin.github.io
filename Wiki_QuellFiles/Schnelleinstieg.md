@@ -202,29 +202,50 @@ todo: - warte auf Feedback
 <tr>
 <td>
 
-### :heavy_check_mark: Die Testdateien
+### :heavy_check_mark: Die Testdateien: Testtakers: Testpersonen anlegen
 
 </td></tr>
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. Zum besseren Verständnis folgt nun eine kurze Beschreibung der Dateien. Wir orientieren uns hierfür an den zuvor durch das **Teststudio** ausgegebenen Dateien.
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
-![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
+:information_source: Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
 
+Öffnen wir zuerst einmal die Testtakers1.xml mit einem Editor. Anschließend legen wir eine Testperson an. Durch das **Teststudio** wurden bereits einige zufällig 6 generierte Logins mit einem Passwort erzeugt. In diesem Fall nutzen wir diese und ändern Sie nicht.
 
+![TC_Testdateien_Testtakers_Login](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Login.gif)
 
-
-
-
-
-
+:heavy_exclamation_mark: Wählen Sie als Loginname möglichst ID-fähige Namen und vermeiden Sie Klarnamen. Das **Testcenter** prüft ob der Login bereits in einem anderen Arbeitsbereich existiert. So verringern Sie die Wahrscheinlichkeit eines Duplikates.
 
 
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Die Testdateien: Testtakers: Testmodus festlegen
+
+</td></tr>
+<tr>
+<td>
+
+Für jede Testung kann mithilfe eines festgelegten Modus bestimmt werden wie die Testung ablaufen soll. Soll es sich bspw. nur um einen Probelauf oder um eine finale Testung handeln.
+
+:information_source: Mehr über die Modi und deren Funktionen erfahren Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung)
+
+Wir wollen hier einmal einmal einmal eine finale Testung durchführen und wählen hierfür den Modus: run-hot-return
 
 
 
+</td></tr>
+<tr>
+<td>
 
+### :heavy_check_mark: Öffnen des Testcenters
+
+</td></tr>
+<tr>
+<td>
 
 Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-teststudio.de**
  
@@ -252,96 +273,6 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeit
 
 
 </td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Aufgabe anlegen
-
-</td></tr>
-<tr>
-<td>
-
-Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch Markierung der Aufgabe.
-
-Es besteht bereits eine Aufgabe mit dem Namen: *UEA01* in meinem Arbeitsbereich und ich füge eine weiterer Aufgabe mit dem Namen: *MEA* hinzu.
-
-:information_source: Eine Aufgabe wird auch Unit genannt!
-
-![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen_01.gif)
-
-:heavy_exclamation_mark: Wählen Sie kurze ID-fähige Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.
-
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Auswahl Editor und Player
-
-</td></tr>
-<tr>
-<td>
-
-Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über eigene Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufagebansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
-
-Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
-
-![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_02.gif)
-
-
-:heavy_exclamation_mark: Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
-
-:heavy_exclamation_mark: An dieser Stelle können Sie die Aufgabe auch schon einmal speichern.
-
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Der Editor
-
-</td></tr>
-<tr>
-<td>
-
-Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichnamigen Reiters.
-
-![TS_Editorreiter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_Reiter_01.png)
-
-Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, wählen Sie zuvor einen dynamischen Abschnitt aus.
-
-![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch.gif)
-
-Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. Ich wähle einmal ein Optionsfeld.
-
-![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_02.gif)
-
-Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Klicken Sie dazu auf den Reiter: *Vorschau*. Dort wird Ihre Aufgabe genau so angezeigt wie sie auch im **Testcenter** angezeigt werden würde.
-
-![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_04.gif)
-
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Ausgabe der Aufgabe
-
-</td></tr>
-<td>
-
-Jetzt können Sie Ihre Aufgabe mit dem **Teststudio** ausgeben lassen.
-
-![TS_Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_01.gif)
-
-Was hat das **Teststudio** erzeugt?
-
-Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine `Testtakers.xml`, eine `Booklet.xml` und eine `iqb-player-aspect@1.24.html` . Im Schnelleinstieg zum **Testcenter** werden wir uns diese Dateien noch einmal näher anschauen. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
-
-![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
-
-:information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
-
-</td></tr>
-
-
 </table>
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
