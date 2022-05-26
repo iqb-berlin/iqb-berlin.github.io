@@ -217,7 +217,7 @@ Es können für die Testung Gruppen angelegt werden, die einen bestimmten Person
 ![TC_Testdateien_Testtakers_Group](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Group.gif)
 
 
-:heavy_exclamation_mark: Das **Testcenter** prüft ob der Gruppenname bereits in einem anderen Arbeitsbereich besteht. Verwenden Sie daher für den Gruppennamen Bezeichner die die Wahrscheinlichkeit verringern, dass eine solche Gruppe bereits existiert. Ein schlechter Name wäre bspw. ""Gruppe1".
+:heavy_exclamation_mark: Das **Testcenter** prüft ob der Gruppenname bereits in einem anderen Arbeitsbereich besteht. Verwenden Sie daher für den Gruppennamen Bezeichner, die die Wahrscheinlichkeit verringern, dass eine solche Gruppe bereits existiert. Ein schlechter Name wäre bspw. ""Gruppe1".
 
 
 </td></tr>
