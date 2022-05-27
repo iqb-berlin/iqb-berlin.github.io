@@ -1,11 +1,5 @@
 # TBA Schnelleinstieg
 
-```yaml
-Dokumentstatus: in Bearbeitung (THuste)
-Stand: 13.05.22
-todo: - weitere Inhalte
-      
-```
 Im Rahmen der digitalisierten Testung hat das **IQB** zwei webbasierte Anwendungen entwickelt.
 
 Eine Anwendung wird für das Aufgabenmanagement und die Aufgabenentwicklung verwendet und trägt den Namen **Teststudio**. Ein integrierter **Editor** übernimmt dabei den eigentlichen Aufgabenentwurf. 
@@ -15,25 +9,50 @@ Eine weitere Anwendung trägt den Namen **Testcenter** und wird für die Testdur
 Sind Aufgaben mit dem **Teststudio** final entworfen, können diese abschließend in einem bestimmten Dateiformat vom **Teststudio** ausgegeben werden. Die so ausgegebenen Dateien können bei Bedarf nachträglich verändert werden. Zur Testdurchführung werden diese Dateien dann in das **Testcenter** geladen und wiedergegeben.
 
 
-Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** doch einmal kurz kennen:
+Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitung der **Testdateien** doch einmal kurz kennen:
 
 <table border=0 >
     <tr>
-        <th align=center width=500>
-            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Teststudio">Das Teststudio</a>
+        <th align=center>
+            <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Symbol_001.png" alt="Alt-Text" title="Teststudio Symbol" />
         </th>
-        <th align=center width=500>
-             <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Testcenter">Das Testcenter</a>
+        <th align=center>
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_Symbol_003.png" alt="Alt-Text" title="TS Output Symbol" />
+        </th>
+        <th align=center>
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testdateien_Symbol_001.png" alt="Alt-Text" title="Die Testdateien" />
+        </th>
+        <th align=center>
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_Symbol_003.png" alt="Alt-Text" title="Output Symbol" />
+        </th>
+        <th align=center>
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Symbol_001.png" alt="Alt-Text" title="Testcenter Symbol" />
+        </th>
+    </tr>
+    <tr>
+        <th align=center>
+            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Teststudio">Teststudio</a>
+        </th>
+        <th align=center>
+           <a href="">Output</a>
+        </th>
+        <th align=center>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Die-Testdateien">Testdateien</a>
+        </th>
+        <th align=center>
+           <a href="">Upload</a>
+        </th>
+        <th align=center>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Testcenter">Testcenter</a>
         </th>
     </tr>
 </table>
 
-
 :information_source: Detailiertere Informationen zu den Anwendungen finden Sie in den gleichnamigen Kapiteln dieser Wiki.
 
-!<--###################################################################################################################### -->
+<!--###################################################################################################################### -->
 ## Schnelleinstieg: Das Teststudio
-!<--###################################################################################################################### -->
+<!--###################################################################################################################### -->
 
 <table border=1>
 <tr>
