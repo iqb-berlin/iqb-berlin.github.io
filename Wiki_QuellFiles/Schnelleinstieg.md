@@ -14,19 +14,19 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
 <table border=0 >
     <tr>
         <th align=center>
-            <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Symbol_001.png" alt="Alt-Text" title="Teststudio Symbol" />
+            <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Symbol_004.png" alt="Alt-Text" title="Teststudio Symbol" />
         </th>
         <th align=center>
-           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_Symbol_003.png" alt="Alt-Text" title="TS Output Symbol" />
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_Symbol_004.png" alt="Alt-Text" title="TS Output Symbol" />
         </th>
         <th align=center>
-           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testdateien_Symbol_001.png" alt="Alt-Text" title="Die Testdateien" />
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testdateien_Symbol_002.png" alt="Alt-Text" title="Die Testdateien" />
         </th>
         <th align=center>
-           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_Symbol_003.png" alt="Alt-Text" title="Output Symbol" />
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Input_Symbol_001.png" alt="Alt-Text" title="Output Symbol" />
         </th>
         <th align=center>
-           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Symbol_001.png" alt="Alt-Text" title="Testcenter Symbol" />
+           <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Symbol_002.png" alt="Alt-Text" title="Testcenter Symbol" />
         </th>
     </tr>
     <tr>
@@ -34,13 +34,13 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
             <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Teststudio">Teststudio</a>
         </th>
         <th align=center>
-           <a href="">Output</a>
+           <a href=""></a>
         </th>
         <th align=center>
            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Die-Testdateien">Testdateien</a>
         </th>
         <th align=center>
-           <a href="">Upload</a>
+           <a href=""></a>
         </th>
         <th align=center>
            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Testcenter">Testcenter</a>
@@ -206,8 +206,8 @@ Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. All
 ```yaml
 Dokumentstatus: In Bearbeitung (THuste)
 Stand: 16.05.22
-todo: - warte auf Feedback
-      
+todo: - weitere Inhalte
+
 ```
 <table border=1>
 <tr>
@@ -216,64 +216,7 @@ todo: - warte auf Feedback
 ### Führen Sie die erste Testung durch
 
 </th>
-
 </tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Die Testdateien: Testtakers: Group anlegen
-
-</td></tr>
-<tr>
-<td>
-
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
-
-:information_source: Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
-
-Es können für die Testung Gruppen angelegt werden, die einen bestimmten Personenkreis (Logins) enthalten.
-
-![TC_Testdateien_Testtakers_Group](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Group.gif)
-
-
-:heavy_exclamation_mark: Das **Testcenter** prüft ob der Gruppenname bereits in einem anderen Arbeitsbereich besteht. Verwenden Sie daher für den Gruppennamen Bezeichner, die die Wahrscheinlichkeit verringern, dass eine solche Gruppe bereits existiert. Ein schlechter Name wäre bspw. ""Gruppe1".
-
-
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Die Testdateien: Testtakers: Testpersonen anlegen
-
-</td></tr>
-<tr>
-<td>
-
-Durch das **Teststudio** wurden bereits 6 zufällig generierte Logins mit einem Passwort erzeugt. In diesem Fall nutzen wir diese und ändern Sie nicht.
-
-![TC_Testdateien_Testtakers_Login](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Testtakers_Login.gif)
-
-:heavy_exclamation_mark: Wählen Sie als Loginname möglichst ID-fähige Namen und vermeiden Sie Klarnamen. Das **Testcenter** prüft ob der Login bereits in einem anderen Arbeitsbereich existiert. So verringern Sie die Wahrscheinlichkeit eines Duplikates.
-
-
-</td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Die Testdateien: Testtakers: Testmodus festlegen
-
-</td></tr>
-<tr>
-<td>
-
-Für jede Testung kann mithilfe eines festgelegten Modus bestimmt werden wie die Testung ablaufen soll. Soll es sich bspw. nur um einen Probelauf oder um eine finale Testung handeln.
-
-:information_source: Mehr über die Modi und deren Funktionen erfahren Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung)
-
-Wir wollen hier einmal einmal einmal eine finale Testung durchführen und wählen hierfür den Modus: run-hot-return
-
-
-</td></tr>
 <tr>
 <td>
 
