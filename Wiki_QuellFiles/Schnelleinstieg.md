@@ -219,25 +219,71 @@ todo: - weitere Inhalte
 <tr>
 <td>
 
-### :heavy_check_mark: Kurze Einführung
+### :heavy_check_mark: Kurze Einführung zu den Testdateien
 
 </td></tr>
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. Welche Funktionen haben diese Testdateien?
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
-:information_source: Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
+:information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
 
-Die Funktionen der Testdateien:
+</td></tr>
+<tr>
+<td>
 
-Voud.xml
-* Inhalte einer Aufgabe (Aufgabenelemente
+### :heavy_check_mark: Ressourcendatei für den Player
 
-Unit.xml
+</td></tr>
+<tr>
+<td>
 
-* Verweis auf entsprechende Ressourcen, wie die zugehörige Voud-Datei und der verwendete Player
-* ID der Unit
+Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Teststudio** in den Metadaten zur Aufgabe hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter** ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels Ressourcendatei zum Player. In unserem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
+
+:heavy_exclamation_mark: Werden Aufgaben in das **Testcenter** geladen, muss auch immer die zugehörige Ressourcendatei für den Player mit das **Testcenter** geladen werden. 
+
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Aufgaben XML-/ und VOUD-Datei
+
+</td></tr>
+<tr>
+<td>
+
+Zu jeder im **Teststudio** erzeugten Aufgabe werden jeweils eine Xml-Datei und eine Voud-Datei erzeugt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten, wie bspw. der Aufgabenname, eine Kurzbeschreibung der Aufgabe, der Editor und der Player mit dem die Aufgabe erstellt wurde und einige weitere angelegt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend werden die wichtigsten änderbaren Stellen in unserer zur Aufgabe erzeugten Xml-Datei: **UEA01.xml** einmal aufgezeigt.
+
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Kurze Einführung in die Booklet.xml
+
+</td></tr>
+<tr>
+<td>
+
+Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet.xml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. 
+Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
+
+:information_source: Die heir gezeigte **Booklet.xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
+
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Booklet: Testheft hinzufügen
+
+</td></tr>
+<tr>
+<td>
+
+
 
 </td></tr>
 <tr>
@@ -303,7 +349,7 @@ Wir wollen hier einmal einmal einmal eine finale Testung durchführen und wähle
 <tr>
 <td>
 
-Jeder angelegten Testperson kann ein entsprechendes Booklet zugewiesen werden.
+Jeder angelegten Testperson kann ein entsprechendes Booklet zugewiesen werden. Die Testpersonen sind entsprechenden In diesem Booklet sind dann die Aufgaben für jeweilige Testpersongebündelt 
 
 </td></tr>
 </table>
