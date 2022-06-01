@@ -435,10 +435,69 @@ Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter n
 ## Was ist ein System-Check?
 
 Es ist bitter, wenn man erst während der Studiendurchführung bemerkt, dass die Hardware oder die Software-Ausstattung für einen 
-Online-Test nicht geeignet ist. Der System-Check ist ein Weg vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen 
+Online-Test nicht geeignet ist. Der **System-Check** ist ein Weg vorab diese Eignung zu prüfen. Man kann natürlich nicht alle Probleme erkennen 
 und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber man kann die Ausfall-/ und damit die Frustrate deutlich senken.
 
 ## Planung
+
+Bzgl. Personen-, Aufgaben- und Bookletanzahl ist jede Testung anders und stellt daher auch unterschiedliche Anforderungen an die testdurchführenden IT-Systeme. Die Testleitung muss daher die Anforderungen an das testdurchführende IT-System individuell für ihre Testung ermitteln. Ist bspw. eine Testung mit 10 Schüler\*innen und einem Booklet mit jeweils 10 Units geplant, stellt dies sicherlich eine geringere Anforderung an die IT-Systeme dar, als eine Testung mit 100 Schüler\*innen und mehreren Booklets. In diesem Zusammenhang dürfte die Bandbreite der Internetverbindung eine der wichtigsten Kriterien bzgl. Durchführbarkeit einer Testung sein. Aber auch Betriebssystem, Browserversion und Bildschirmauflösung stellen wichtige Kriterien dar.
+
+:heavy_exclamation_mark: Der **System-Check** kann keine Aussage darüber machen ob das gewählte IT-System geeignet ist oder nicht. Der **System-Check** ermittelt nur den Ist-Zustand des Systems. Mithilfe dieser Daten müssen Sie entscheiden ob eine Eignung vorliegt oder nicht.
+
+Es sollten also seitens der Testleitung vor der Testdurchführungen Überlegungen bzgl. der Anforderungen an die eigene Testung angestellt werden.
+
+### Welche Fragen sollte sie sich in diesem Zusammenhang stellen und wo erhalten Sie Antworten?
+
+**Ist das Betriebssystem und der Browser für die Testung geeignet?**
+
+Diese Frage hängt weniger von Ihrem Test, als vielmehr von der eigentlichen Anwendung: **Testcenter** ab. Daher finden Sie diese Informationen auch in diesem [Wiki](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter "Anforderungen".
+
+**Handelt es sich um einen PC oder vielleicht ein Tablet?**
+
+Diese Frage ist eigentlich nur dann interessant, wenn die Aufgaben zuvor im **Teststudio** nicht dynamisch entworfen wurden. Dann verhalten sich die Aufgabeninhalte nicht responsiv und werden bspw. auf einem Tablet eventuell nicht so dargestellt wie ursprünglich angedacht.
+
+**Wie hoch ist die Auflösung des Wiedergabebildschirms?**
+
+Diese Frage spielt eine wichtige Rolle bzgl. der Darstellung und Lesbarkeit Ihrer Aufgaben. Mittels **System-Check** ist es möglich, als kritisch eingestufte Aufgabe hinsichtlich der Lesbarkeit, während des **System-Checks** abzuspielen. Dazu können dann noch Fragen während des "System-Checks" gestellt werden. Bspw.: Konnte alles gelesen und abgespielt werden? Die Antworten werden dann im Rahmen des **System-Checks** gespeichert und können dann ausgewertet werden.
+
+**Welche Internet-Bandbreite wird für die Testung mindestens benötigt?**
+
+Das ist wohl eine der wichtigsten Fragen, die Sie sich stellen sollten. Ist die Bandbreite zu gering, kann im schlimmsten Fall die Testung am jeweiligen PC nicht durchgeführt werden. Um die benötigte Bandbreite aus Ihrer Testung abzuleiten bedarf es weiterer Überlegungen. Entscheidend sind dabei die folgenden Punkte:
+
+* Wie viele Booklets werden während der Testung voraussichtlich gleichzeitig gestartet?
+* Wie groß sind diese Booklets?
+* Wie viele Testpersonen werden an der Testung gleichzeitig teilnehmen?
+* Wie lang sollen die Ladezeiten für jede Testperson maximal sein?
+
+Aus all diesen Fragen eine benötigte Bandbreite abzuleiten kann immer nur ein grober Richtwert sein. Zu viele Faktoren spielen dabei eine große Rolle. Bspw. kann am Tag der Testdurchführung die schulische Internetanbindung ganz anders ausgelastet sein als am Tag des **System-Checks**. Daher sollten immer entsprechende Reserven eingeplant werden. Die so ermittelten Anforderungen an die Bandbreite können dann als Grenzwerte im **System-Check** hinterlegt werden. Auf dieser Grenzwerte gibt der **System-Check** abschließend aus ob die Bandbreite ausreichend ist oder nicht.
+
+Nachfolgend finden Sie ein kleines Beispiel wie eine Berechnung angestellt werden könnten.
+
+---
+
+Testszenario:<br> 
+* 10 Testpersonen, 1 Booklet, Bookletgröße = 6 MByte, max. Ladezeiten = 30s
+* alle Testpersonen sollen den Test zeitgleich starten
+
+:information_source: Haben Sie das/ die verwendet_en Booklets in das **Testcenter** geladen, sehen sie rechts daneben die Größe in MByte.
+
+---
+
+Berechnungen:<br>
+Die Grenzwertangaben im **System-Check** müssen in Bytes pro Sekunde angegeben werden. Daher müssen wir erst einmal alle Einheiten in diese Einheit überführen.
+
+Die Bookletgröße beträgt: 6 MByte <br>
+Umgerechnet entspricht dies: 6.291.456 Bytes (1024 Byte = 1 kByte)
+
+10 Testpersonen nutzen das Booklet zeitgleich <br>
+Das ergibt eine Gesamtdatenlast für den Test von: 10 x 6.291.456 Bytes = 62.914.560 Bytes
+
+Diese Datenmenge muss nun innerhalb der max. Ladezeit von 30 s übertragen werden <br>
+62.914.560 Bytes / 30s = 2.097.152 Bytes/ s
+
+
+
+Im **System-Check** könnten anschließend diese Grenzwerte als Mindestanforderung an die Bandbreite hinterlegt werden. Nach dem Start des **System-Checks** würden dann ermittelte Geschwindigkeitswerte über dem Grenzwert als "Gut" bezeichnet werden. 
 
 Nach dem Einrichten eines System-Check erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. 
 Man kann alle Interessierten einladen darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von 
@@ -454,10 +513,18 @@ Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen die folgenden O
   Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung anhand derer die Zuordnung der Daten z. B. 
   zu einer bestimmten Schule möglich wird.
 
-### XML-Definition schreiben
+### Einrichten des System-Checks: XML-Definition schreiben
 
-Ein System-Check wird über eine XML-Datei gesteuert. Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
-VOUD-Datei und zugehöriger Player). All diese Dateien sind über einen beliebigen Arbeitsbereich in das **Testcenter** zu laden. 
+
+
+
+Ein System-Check wird über eine XML-Datei gesteuert. Hier kann die Testleitung einige Eckdaten angeben, die nach Auswertung des System-Checks angeben, ob das System auf dem die Testung durchgeführt werden soll, geeignet ist oder nicht.  
+
+
+
+
+  Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
+VOUD-Datei und zugehöriger Player).  in All diese Dateien sind über einen beliebigen Arbeitsbereich in das **Testcenter** zu laden. 
 Nach Abmeldung am **Testcenter** ist dann ein Schalter auf der rechte Seite des Testcenters mit dem Namen: System-Check zu finden. Die Berichte des System-Checks können nach Abschluss in diesem Arbeitsbereich gespeichert werden.
 
 Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parameter können den Bedürfnissen entsprechend angepasst werden.
