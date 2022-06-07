@@ -56,7 +56,7 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
 
 <table border=1>
 <tr>
-<th align=center width=1000>
+<th align=center>
 
 ### Entwerfen Sie Ihre erste Aufgabe mit dem Teststudio
 
@@ -211,7 +211,7 @@ todo: - weitere Inhalte
 
 <table border=1>
 <tr>
-<th align=center width=1000>
+<th align=center>
 
 ### Passen Sie die Testung Ihren Bedürfnissen an
 
@@ -373,7 +373,7 @@ todo: - weitere Inhalte
 ```
 <table border=1>
 <tr>
-<th align=center width=1000>
+<th align=center>
 
 ### Führen Sie die erste Testung durch
 
