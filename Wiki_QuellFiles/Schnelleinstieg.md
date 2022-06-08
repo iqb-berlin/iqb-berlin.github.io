@@ -134,7 +134,7 @@ Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt w
 ![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_02.gif)
 
 
-:heavy_exclamation_mark: Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
+ Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
 
 :heavy_exclamation_mark: An dieser Stelle können Sie die Aufgabe auch schon einmal speichern.
 
@@ -233,13 +233,26 @@ Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab di
 <tr>
 <td>
 
+### :heavy_check_mark: XML-Schema Definition
+
+</td></tr>
+<tr>
+<td>
+
+Die verwendeten Testdateien sind XML-Dateien. Damit diese XML-Dateien auch vom **Testcenter** gelesen werden können, dürfen diese nur definierte Inhalte aufweisen. Welche Inhalte erlaubt sind, legt eine so genannte Schema-Definition fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende Xml-Datei auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens bei Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden Xml-Datei mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
+
+
+</td></tr>
+<tr>
+<td>
+
 ### :heavy_check_mark: Ressourcendatei für den Player
 
 </td></tr>
 <tr>
 <td>
 
-Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Teststudio** in den Metadaten zur Aufgabe hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter** ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels Ressourcendatei zum Player. In unserem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
+Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Teststudio** in den Metadaten zur Aufgabe hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter**, ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels Ressourcendatei zum Player. In unserem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
 
 :heavy_exclamation_mark: Werden Aufgaben in das **Testcenter** geladen, muss auch immer die zugehörige Ressourcendatei für den Player mit das **Testcenter** geladen werden. 
 
@@ -254,14 +267,16 @@ Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Ed
 <tr>
 <td>
 
-Zu jeder im **Teststudio** erzeugten Aufgabe werden jeweils eine Xml-Datei und eine Voud-Datei erzeugt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten, wie bspw. der Aufgabenname, eine Kurzbeschreibung der Aufgabe, der Editor und der Player mit dem die Aufgabe erstellt wurde und einige weitere angelegt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend werden die wichtigsten änderbaren Stellen in unserer zur Aufgabe erzeugten Xml-Datei: **UEA01.xml** einmal aufgezeigt.
+Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung XML und eine weitere mit der Endung VOUD. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname, eine Kurzbeschreibung der Aufgabe, der Editor und der Player mit dem die Aufgabe erstellt wurde und ein Verweis auf die zugehörige Voud-Datei angelegt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal eine zu unserer Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
+
+![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml.png)
 
 
 </td></tr>
 <tr>
 <td>
 
-### :heavy_check_mark: Kurze Einführung in die Booklet.xml
+### :heavy_check_mark: Die Booklet.xml
 
 </td></tr>
 <tr>
@@ -270,20 +285,33 @@ Zu jeder im **Teststudio** erzeugten Aufgabe werden jeweils eine Xml-Datei und e
 Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet.xml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. 
 Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 
-:information_source: Die heir gezeigte **Booklet.xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
+:information_source: Die hier gezeigte **Booklet.xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
+
+![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml.png)
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Booklet.xml: Testheft hinzufügen
+
+</td></tr>
+<tr>
+<td>
+
 
 
 </td></tr>
 <tr>
 <td>
 
-### :heavy_check_mark: Booklet: Testheft hinzufügen
+### :heavy_check_mark: Die Testtaker.xml
 
 </td></tr>
 <tr>
 <td>
 
-
+In der Testtakers können Logins für die Testpersonen angelegt werden. Es stehen verschiedenste Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Es kann bspw. festgelegt werden ob es sich nur um einen Probelauf oder um eine finale Testung handelt. Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Hier ist dann die Rede von **CustomText**. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**.
 
 </td></tr>
 <tr>

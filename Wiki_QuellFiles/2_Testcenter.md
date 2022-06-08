@@ -335,7 +335,7 @@ Die Deklaration der XSD-Datei erfolgt im Haupt-Element einer XML-Datei. Für die
 ```
 <Unit 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Unit.xsd">
+    xsi:noNamespaceSchemaLocation= "https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_Unit.xsd">
 ```
 
 Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von XML-Dateien (z. B. Notepad++, Sublime) nun eine Validierung vornehmen können. Man kann also bereits vor dem Hochladen eine Validierung bereits beim Schreiben einer XML-Datei vornehmen lassen.
@@ -442,15 +442,15 @@ und vielleicht hat man für bestimmte Probleme auch keine Lösung parat, aber ma
 
 Bzgl. Personen-, Aufgaben- und Bookletanzahl ist jede Testung anders und stellt daher auch unterschiedliche Anforderungen an die testdurchführenden IT-Systeme. Die Testleitung muss daher die Anforderungen an das testdurchführende IT-System individuell für ihre Testung ermitteln. Ist bspw. eine Testung mit 10 Schüler\*innen und einem Booklet mit jeweils 10 Units geplant, stellt dies sicherlich eine geringere Anforderung an die IT-Systeme dar, als eine Testung mit 100 Schüler\*innen und mehreren Booklets. In diesem Zusammenhang dürfte die Bandbreite der Internetverbindung eine der wichtigsten Kriterien bzgl. Durchführbarkeit einer Testung sein. Aber auch Betriebssystem, Browserversion und Bildschirmauflösung stellen wichtige Kriterien dar.
 
-:heavy_exclamation_mark: Der **System-Check** kann keine Aussage darüber machen ob das gewählte IT-System geeignet ist oder nicht. Der **System-Check** ermittelt nur den Ist-Zustand des Systems. Mithilfe dieser Daten müssen Sie entscheiden ob eine Eignung vorliegt oder nicht.
+Es sollten also seitens der Testleitung vor der Testdurchführung Überlegungen bzgl. der Anforderungen an die eigene Testung angestellt werden.
 
-Es sollten also seitens der Testleitung vor der Testdurchführungen Überlegungen bzgl. der Anforderungen an die eigene Testung angestellt werden.
+:heavy_exclamation_mark: Der **System-Check** kann **keine** Aussage darüber machen, ob das gewählte IT-System geeignet ist oder nicht. Der **System-Check** ermittelt nur den Ist-Zustand des Systems. Mithilfe dieser Daten müssen Sie entscheiden, ob eine Eignung vorliegt oder nicht.
 
 ### Welche Fragen sollte sie sich in diesem Zusammenhang stellen und wo erhalten Sie Antworten?
 
 **Ist das Betriebssystem und der Browser für die Testung geeignet?**
 
-Diese Frage hängt weniger von Ihrem Test, als vielmehr von der eigentlichen Anwendung: **Testcenter** ab. Daher finden Sie diese Informationen auch in diesem [Wiki](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter "Anforderungen".
+Diese Frage hängt weniger von Ihrem Test, als vielmehr von der eigentlichen Anwendung: **Testcenter** ab. Daher finden Sie diese Informationen auch in diesem [Wiki](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter "Systemanforderungen".
 
 **Handelt es sich um einen PC oder vielleicht ein Tablet?**
 
@@ -458,91 +458,74 @@ Diese Frage ist eigentlich nur dann interessant, wenn die Aufgaben zuvor im **Te
 
 **Wie hoch ist die Auflösung des Wiedergabebildschirms?**
 
-Diese Frage spielt eine wichtige Rolle bzgl. der Darstellung und Lesbarkeit Ihrer Aufgaben. Mittels **System-Check** ist es möglich, als kritisch eingestufte Aufgabe hinsichtlich der Lesbarkeit, während des **System-Checks** abzuspielen. Dazu können dann noch Fragen während des "System-Checks" gestellt werden. Bspw.: Konnte alles gelesen und abgespielt werden? Die Antworten werden dann im Rahmen des **System-Checks** gespeichert und können dann ausgewertet werden.
+Diese Frage spielt eine wichtige Rolle bzgl. der Darstellung und Lesbarkeit Ihrer Aufgaben. Mittels **System-Check** ist es möglich als kritisch eingestufte Aufgabe hinsichtlich der Lesbarkeit während des **System-Checks** abzuspielen. Während des **System-Checks** können dann vordefinierte Fragen zur Darstellung der Aufgabe beantwortet werden. Konnte alles gelesen und abgespielt werden? Die Antworten werden dann im Rahmen des **System-Checks** gespeichert und können abschließend ausgewertet werden.
 
 **Welche Internet-Bandbreite wird für die Testung mindestens benötigt?**
 
-Das ist wohl eine der wichtigsten Fragen, die Sie sich stellen sollten. Ist die Bandbreite zu gering, kann im schlimmsten Fall die Testung am jeweiligen PC nicht durchgeführt werden. Um die benötigte Bandbreite aus Ihrer Testung abzuleiten bedarf es weiterer Überlegungen. Entscheidend sind dabei die folgenden Punkte:
+Ist die Bandbreite zu gering, kann im schlimmsten Fall die Testung am jeweiligen PC nicht durchgeführt werden. Die Interpretation der Netzwerkverbindung ist allerdings sehr unsicher. Man ist ja in der Durchführung nicht nur vom Computer abhängig, auf dem der Check läuft, sondern auch von der Last, die gerade durch andere Computer verursacht wird. Das kann dieselbe Testung sein, aber auch ein ungeplantes System-Update irgendwo anders im Haus, das einen umfangreichen Download auslöst.
 
-* Wie viele Booklets werden während der Testung voraussichtlich gleichzeitig gestartet?
-* Wie groß sind diese Booklets?
-* Wie viele Testpersonen werden an der Testung gleichzeitig teilnehmen?
-* Wie lang sollen die Ladezeiten für jede Testperson maximal sein?
+Eine erste Warnung wird ausgelöst, wenn die Netzwerkverbindung stark schwankt. Für die Ermittlung einer als kritisch anzusehenden Bandbreite kann man folgendermaßen vorgehen:
+1. Ermittlung der Größe des größten Booklets: Im Testcenter wird in der Liste der Dateien des Arbeitsbereiches eine Spalte "Größe" angezeigt. Diese Größe ist bei allen Dateien die tatsächliche Größe der Datei **außer** bei den Booklets: Hier wird die Summe aller Dateien angezeigt, die für dieses Booklet geladen werden müssen (Booklet-Xml, Unit-Xmls, Unit-Vouds, Player). Beispiel: (A) 23,4 MB
+2. Festlegung der maximalen Zeit in Sekunden, nach der dieses Booklet geladen sein soll. Beispiel: (B) 20 sec
+3. Die Formel `A * 8 / B` ergibt den Mindestwert für den Download. Für das Beispiel 9,36 MBit/s
 
-Aus all diesen Fragen eine benötigte Bandbreite abzuleiten kann immer nur ein grober Richtwert sein. Zu viele Faktoren spielen dabei eine große Rolle. Bspw. kann am Tag der Testdurchführung die schulische Internetanbindung ganz anders ausgelastet sein als am Tag des **System-Checks**. Daher sollten immer entsprechende Reserven eingeplant werden. Die so ermittelten Anforderungen an die Bandbreite können dann als Grenzwerte im **System-Check** hinterlegt werden. Auf dieser Grenzwerte gibt der **System-Check** abschließend aus ob die Bandbreite ausreichend ist oder nicht.
-
-Nachfolgend finden Sie ein kleines Beispiel wie eine Berechnung angestellt werden könnten.
-
----
-
-Testszenario:<br> 
-* 10 Testpersonen, 1 Booklet, Bookletgröße = 6 MByte, max. Ladezeiten = 30s
-* alle Testpersonen sollen den Test zeitgleich starten
-
-:information_source: Haben Sie das/ die verwendet_en Booklets in das **Testcenter** geladen, sehen sie rechts daneben die Größe in MByte.
-
----
-
-Berechnungen:<br>
-Die Grenzwertangaben im **System-Check** müssen in Bytes pro Sekunde angegeben werden. Daher müssen wir erst einmal alle Einheiten in diese Einheit überführen.
-
-Die Bookletgröße beträgt: 6 MByte <br>
-Umgerechnet entspricht dies: 6.291.456 Bytes (1024 Byte = 1 kByte)
-
-10 Testpersonen nutzen das Booklet zeitgleich <br>
-Das ergibt eine Gesamtdatenlast für den Test von: 10 x 6.291.456 Bytes = 62.914.560 Bytes
-
-Diese Datenmenge muss nun innerhalb der max. Ladezeit von 30 s übertragen werden <br>
-62.914.560 Bytes / 30s = 2.097.152 Bytes/ s
-
-
+Dieses Verfahren ist einigermaßen verlässlich, weil die Ermittlung der Download-Geschwindigkeit das Ladeverhalten des Testcenters nachbildet. Die Pakete werden beispielsweise nacheinander geladen und nicht parallel.
 
 Im **System-Check** könnten anschließend diese Grenzwerte als Mindestanforderung an die Bandbreite hinterlegt werden. Nach dem Start des **System-Checks** würden dann ermittelte Geschwindigkeitswerte über dem Grenzwert als "Gut" bezeichnet werden. 
 
-Nach dem Einrichten eines System-Check erscheint auf der Seite der Webanwendung (hier: IQB-Testcenter) ein neuer Schalter `System-Check`. 
-Man kann alle Interessierten einladen darüber zumindest eine Prüfung der Internetanbindung vorzunehmen (Bandbreite) und eine Anzahl von 
-Hardware- und Softwareinformationen anzuzeigen. Außerdem stehen die folgenden Optionen zur Verfügung:
-
-* Probeweises Aufrufen einer Testaufgabe: Eine speziell dafür entwickelte Testaufgabe wird gezeigt und man kann die Bearbeitungselemente auswählen,
-  ändern und so prüfen, ob die Aufgabenelemente wie erwartet funktionieren.
-* Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. 
-  Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (Wurde die Audio-Datei abgespielt?;
-  Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden 
-  (Wieviele Plätze sind im PC-Lab?; Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?; Gibt es ein Whiteboard? usw.)
-* Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. 
-  Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung anhand derer die Zuordnung der Daten z. B. 
-  zu einer bestimmten Schule möglich wird.
-
 ### Einrichten des System-Checks: XML-Definition schreiben
 
+Ein System-Check wird über eine XML-Datei gesteuert. Hier kann die Testleitung einige Eckdaten angeben, die nach Auswertung des System-Checks angeben, ob das System auf dem die Testung durchgeführt werden soll geeignet ist oder nicht.  
 
+**Folgendes kann über diese XML individuell angelegt werden:**
 
+**A: Metadaten** <br>
+Zur Kennzeichnung und Beschreibung der Datei, sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung, auch der 
+Berichte. Letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen verschiedene Versionen eines 
+System-Check zu unterscheiden.
 
-Ein System-Check wird über eine XML-Datei gesteuert. Hier kann die Testleitung einige Eckdaten angeben, die nach Auswertung des System-Checks angeben, ob das System auf dem die Testung durchgeführt werden soll, geeignet ist oder nicht.  
+**B: Unit Wiedergabe** <br>
+Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach dem Test der Verbindungsqualität die Anzeige einer Unit. 
+Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. 
+Es ist also z. B. hier unnötig eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt. So können die Aufgabenelemente bzgl. Funktion und Aussehen vorab geprüft werden. Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Der in der Unit-Definition genannte 
+Player, muss dann auch im Arbeitsbereich zur Verfügung gestellt werden.
 
+**C: Bericht speichern**<br>
+Bericht abschicken: Es kann festgelegt sein, dass die Daten gespeichert werden zur späteren Auswertung. 
+Dazu sollte ein Kennwort vergeben werden und eine weitere Kennung anhand derer die Zuordnung der Daten z. B. 
+zu einer bestimmten Schule möglich wird. Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird der Savekey abgefragt.
 
+**D: Netzwerkgeschwindigkeit**<br>
+Festlegung von individuellen Grenzwerte zur Beurteilung der Internetbandbreite. Hier kann die min. erforderliche Bandbreite für Ihre Testung angegeben werden. Außerdem ein Wert ab welcher Bandbreite die Verbindung als "gut" gilt.
 
+**E: Fragebogen**<br>
+Fragebogen beantworten: Die Person, die den System-Check durchführt, kann eine Liste von Fragen beantworten. Die Fragen können sich zunächst auf die vorherige Testaufgabe beziehen (Wurde die Audio-Datei abgespielt?; Passte alles auf den Bildschirm? usw.), aber auch weitere Informationen zur Ausstattung vor Ort können erfragt werden 
+(Wieviele Plätze sind im PC-Lab?; Können die Testpersonen sich gegenseitig auf den Bildschirm schauen?; Gibt es ein Whiteboard? usw.)
 
-  Außerdem kann eine Unit-Definition hinzugelegt werden (XML-Datei, 
-VOUD-Datei und zugehöriger Player).  in All diese Dateien sind über einen beliebigen Arbeitsbereich in das **Testcenter** zu laden. 
-Nach Abmeldung am **Testcenter** ist dann ein Schalter auf der rechte Seite des Testcenters mit dem Namen: System-Check zu finden. Die Berichte des System-Checks können nach Abschluss in diesem Arbeitsbereich gespeichert werden.
+Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Sie finden die gerade benannten Punkte als Kommentar in dieser System-Check-XML!
 
-Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parameter können den Bedürfnissen entsprechend angepasst werden.
-
-> **Für diese XML-Datei ist eine Schema-Definition angelegt. Das heißt: Es können nur erlaubte Attribute und Daten in dieser Datei verwendet werden. Was erlaubt ist und was nicht entnehmen Sie bitte dieser [Schema-Definition](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!**
+:information_source: Welche Atribute und Daten Sie in dieser XML verwenden dürfen, entnehmen Sie bitte der XML Schema-Definition. Diese finden Sie [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_SysCheck.xsd)!
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SysCheck xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.1.1/definitions/vo_SysCheck.xsd">
+
+	<!-- A: -->
 	<Metadata>
 		<Id>LAL8_2021</Id>
 		<Label>System-Check für LAL8 2021</Label>
 		<Description>Version 4.2.2021</Description>
 	</Metadata>
+
+	<!-- B: Unit Wiedergabe  C: Kennwort zum Speichern eines Berichts  -->
 	<Config unit="SC3" savekey="fichtelgebirge">
+
+		<!-- D: Festlegung Grenzwerte für die Internet Bandbreite  -->
 		<UploadSpeed min="1024" good="2048" maxDevianceBytesPerSecond="10000" maxErrorsPerSequence="0" maxSequenceRepetitions="15">100000, 200000, 400000, 800000</UploadSpeed>
-		<DownloadSpeed min="1024" good="2048" maxDevianceBytesPerSecond="200000" maxErrorsPerSequence="0" maxSequenceRepetitions="15">400000, 800000, 1600000, 3200000</DownloadSpeed>		
+		<DownloadSpeed min="1024" good="2048" maxDevianceBytesPerSecond="200000" maxErrorsPerSequence="0" maxSequenceRepetitions="15">400000, 800000, 1600000, 3200000</DownloadSpeed>
+
+		<!-- E: Fragebogen anlegen  -->
 		<Q id="1" type="header" prompt="Abschnitt I: Computerübergreifende Fragen – diese müssen nur einmal online eingegeben werden."></Q>
 		<Q id="2" type="radio" prompt="1. Wer ist an der Schule die Ansprechperson für technische Fragen?">der Schulkoordinator/die Schulkoordinatorin selbst#eine andere Person (Eingabe nächstes Feld)#es gibt keine Ansprechperson</Q>
 		<Q id="2a" type="text" prompt="Weitere Informationen zur Ansprechperson"/>
@@ -571,39 +554,11 @@ Nachfolgend ist eine System-Check-XML einmal bspw. aufgeführt. Texte und Parame
 </SysCheck>
 ```
 
-Die XML-Datei sollte mit einem Editor bearbeitet werden, der zumindest eine Validierung vornehmen kann. 
-Dies bedeutet: Es wird nicht nur die XML-Syntax geprüft (beginnende und schließende Tags, keine Leerzeichen 
-vor/hinter einem Attribut usw.), sondern auch ob die verwendeten Elemente und Attribute in dieser System-Check-XML erlaubt sind. 
-Dazu muss im Editor der Pfad zur jeweiligen Schemadatei angegeben werden. Dies erfolgt üblicherweise über die Deklaration `noNamespaceSchemaLocation` wie im Beispiel gezeigt.
-Gute Editoren unterstützen die Bearbeitung dann außerdem mit automatischer Vervollständigung. Weitere Informationen dazu finden Sie auch in den Einzeldokumenten [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Arbeiten-mit-Xml%E2%80%90Dateien)
+Wurde diese System-Check-XML in einen beliebigen Arbeitsplatz des **Testcenters** geladen, erscheint nach Abmeldung am **Testcenter** ein neuer Schalter `System-Check`. Wird dieses Schalter betätigt startet der **System-Check** mit der in der XML definierten Konfiguration.
 
-#### Metadaten
+## Auswertung
 
-Zur Kennzeichnung und Beschreibung der Datei, sollen eine ID und ein Label vergeben werden. Ersteres dient der internen Zuordnung, auch der 
-Berichte. Letzteres wird bei der Beschriftung des Start-Schalters verwendet. Eine Beschriftung kann helfen verschiedene Versionen eines 
-System-Check zu unterscheiden.
-
-#### Netzwerkverbindung
-
-Die Angaben in den Bereichen `UploadSpeed` und `DownloadSpeed` sind rein technischer Natur und sollten nur angepasst werden, 
-wenn die Ergebnisse überwiegend unerwartet sind. Bitte fragen Sie die Spezifikation beim Entwickler-Team ab!
-
-#### Unit
-
-Wenn im Element `Config` ein Attribut `unit` gefunden wird, dann erfolgt nach dem Test der Verbindungsqualität die Anzeige einer Unit. 
-Diese Befragungsseite bzw. Testaufgabe soll möglichst alle Element-Typen enthalten, die später auch im Test bzw. der Befragung benutzt werden. 
-Es ist also z. B. hier unnötig, eine Audio-Datei einzubauen, wenn im Test keine Hörverstehensaufgabe vorkommt.
-
-Es muss natürlich in den Arbeitsbeich auch eine Unit mit dieser ID hochgeladen werden. Der in der Unit-Definition genannte 
-Player, muss dann auch im Arbeitsbereich zur Verfügung gestellt werden.
-
-## Bericht speichern
-
-Wenn im Element `Config` ein Attribut `savekey` gefunden wird, dann können die Ergebnisse des System-Checks abschließend mithilfe dieses Savekeys gespeichert werden. Die letzte Seite enthält dann einen Schalter `Bericht senden` und es wird der Savekey abgefragt.
-
-## Ergebnisse herunterladen
-
-Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen diese Ergebnisse in Form einer CSV-Datei in dem Arbeitsbereich in den die System-Check Xml-Definition geladen wurde. Die CSV-Datei ist dann im jeweiligen Arbeitsbereich unter dem Tab: System-Check Berichte zu finden und kann dort mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Da eine CSV-Datei nicht sehr gut lesbar ist, kann diese Datei auch in eine XLSX-Datei gewandelt werden. Dies kann mit dem IQB Tool **Itc-Toolbox** erfolgen. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc-Toolbox:-SysCheck).
+Werden am Ende eines System-Checks die Ergebnisse gesendet (gespeichert), landen diese Ergebnisse in Form einer CSV-Datei in dem Arbeitsbereich in den die System-Check XML geladen wurde. Die CSV-Datei ist dann im jeweiligen Arbeitsbereich unter dem Tab: System-Check Berichte zu finden und kann dort mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Da eine CSV-Datei nicht sehr gut lesbar ist, kann diese Datei auch in eine XLSX-Datei gewandelt werden. Dies kann mit dem IQB Tool **Itc-Toolbox** erfolgen. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc-Toolbox:-SysCheck).
 
 ---
 
@@ -743,8 +698,14 @@ Nachfolgend sind die möglichen Symbole für den Teststatus zu sehen:
 
 Weitere Informationen zum Teststatus finden Sie auch [hier](https://iqb-berlin.github.io/testcenter-frontend/super-states).
 
+
 ---
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.9-Typische-Probleme---Troubleshooting">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
@@ -758,3 +719,53 @@ Weitere Informationen zum Teststatus finden Sie auch [hier](https://iqb-berlin.g
 </div>
 
 ---
+
+# 2.9 Typische Probleme - Troubleshooting
+
+Die Online-Testung mit dem IQB-Testcenter erfolgt über den Browser. Es handelt sich also beim Testcenter nicht um eine unabhängige Software. Der Vorteil ist, dass man nichts installieren muss vorher und der Test durch Software erfolgen kann, die auf jedem Computer verfügbar ist. Der Nachteil ist, dass das Funktionieren der Testung von vielen Faktoren abhängig ist, auf die die Programmierung keinen oder wenig Einfluss hat. Es sind viele Betriebssysteme in Nutzung, viele Versionen, viele Browser, und man kann durch Einstellungen auf dem System das Verhalten dieser Komponenten und damit des Tests drastisch verändern. Im Extremfall kann durch ein Update irgendeines Browsers die Testung komplett scheitern.
+
+## Generelle Hinweise
+
+1. Ein einfaches **Neuladen der Seite** hilft manchmal. Eine Testperson muss sich in diesem Fall nicht neu anmelden und landet sofort bei der Aufgabe, die zuletzt bearbeitet wurde. Wenn für die Bearbeitung einer Aufgabenfolge eine Maximalzeit gesetzt wurde, dann wird die vor dem Neuladen verstrichene Zeit abgezogen und man startet also nicht neu.
+2. Zwischenspeicher (**Cache**) des Browsers löschen: Manchmal speichert der Browser Teile der Programmierung. Sollte aber auf dem Server eine neue Version dieser Programmierung vorliegen, muss diese unbedingt geladen werden - sonst funktioniert die Kommunkation mit dem Server nicht. Die Vorgehensweise ist [hier](https://www.go4u.de/browser-cache-leeren.htm) beschrieben. 
+3. Browser-**Plugins** deaktivieren/deinstallieren: Es gibt abenteuerliche Erweiterungen für Browser, die mehr Sicherheit, bessere Performance, weniger Werbung, mehr Privatsphäre usw. versprechen. Oft greifen diese Erweiterungen aber massiv in die Kommunikation des Browsers mit dem Server ein und verfälschen Daten. Bei Problemen sollte man also diese Add-Ons usw. zumindest zeitweise deaktivieren.
+4. **Anderen Browser** benutzen: Die Web-Standards werden unterschiedlich durch die Browser implementiert. Daher lohnt es sich bei Problemen, auf einen anderen Browser zu wechseln.
+
+## Fehler berichten
+
+### Hotline
+
+Die Verantwortlichen einer Studie bzw. die Kolleg:innen der Hotline können oft helfen, wenn sie Informationen über das Problem bekommen. Bei einem Fehlerbericht sollten stets folgende Informationen dabei sein:
+
+* Name und Version des Betriebssystems, z. B. Windows 10
+* Name und Version des Browsers, z. B. Firefox 100.0.2 (64-Bit)
+* Version des Testcenters (zu finden bei Startbildschirm, dann Impressum/Datenschutz), z. B. Version 12.1.7/12.4.1/4.0.3
+
+Es reicht ein Screenshot mit einem Handy, dann spart man sich viel Text. Ansonsten bitte die Fehlersituation so genau wie möglich beschreiben.
+
+### Meldung an das Entwicklerteam
+
+Über die obigen Daten hinaus kann man noch mehr Informationen schicken, wenn das Problem dem Entwicklerteam vorgelegt werden soll:
+
+* Interne Meldungen des Browsers: Man kann (außer bei iPads) bei Browsern ein Fenster öffnen, wo der Browser eventuell weitere Fehlermeldungen hineinschreibt. Wie man diese sog. Konsole aktiviert, ist [hier](https://support.monday.com/hc/de/articles/360002197259-So-%C3%B6ffnet-man-die-Entwicklerkonsole) beschrieben.
+* Protokolle des Servers: Die Person, die die Installation auf dem Server vorgenommen hat, kann in den Docker-Containern für die Datenbank, den Broadcasting-Service und die API (php) die Logs einsehen und schicken.
+
+---
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+---
+
+
