@@ -10,4 +10,3 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
   </Metadata>
   <DefinitionRef player="iqb-player-aspect@1.24" editor="iqb-editor-aspect@1.30" type="iqb-player-aspect@1.24">MEA.voud</DefinitionRef>
 </Unit>
-´´´
