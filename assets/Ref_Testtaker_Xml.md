@@ -6,7 +6,7 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
         <Description>Erzeugt mit Teststudio 25.05.2022</Description>
     </Metadata>
             
-	<Group id="TestakerGroup1" label="TestakerGroup1">
+    <Group id="TestakerGroup1" label="TestakerGroup1">
 		<Login mode="run-review" name="v2z2b" pw="q5e6">
             <Booklet>Booklet1</Booklet>
         </Login>
@@ -25,7 +25,7 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
 		<Login mode="run-review" name="b4x4s" pw="b5x4">
             <Booklet>Booklet1</Booklet>
         </Login>
-	</Group>
+     </Group>
 	
 </Testtakers>
 
