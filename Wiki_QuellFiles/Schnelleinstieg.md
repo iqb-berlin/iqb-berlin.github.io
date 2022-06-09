@@ -267,10 +267,11 @@ Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Ed
 <tr>
 <td>
 
-Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung XML und eine weitere mit der Endung VOUD. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname, eine Kurzbeschreibung der Aufgabe, der Editor und der Player mit dem die Aufgabe erstellt wurde und ein Verweis auf die zugehörige Voud-Datei angelegt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal eine zu unserer Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
+Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung XML und eine weitere mit der Endung VOUD. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zu unserer Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
 
-![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml.png)
+![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_01.png)
 
+> [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Unit_Xml_01.md) können Sie den Code kopieren.
 
 </td></tr>
 <tr>
@@ -289,6 +290,8 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 
 ![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml.png)
 
+> [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Xml.md) können Sie den Code kopieren.
+
 </td></tr>
 <tr>
 <td>
@@ -299,7 +302,11 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 <tr>
 <td>
 
+Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.xml** noch kein Testheft angelegt, sondern nur unsere Aufgabe. Wir fügen nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben wir unsere Aufgabe in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
 
+![Booklet:Testheft](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_03.gif)
+
+> [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Testheft_Xml.md) können Sie den Code kopieren.
 
 </td></tr>
 <tr>
@@ -311,7 +318,11 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 <tr>
 <td>
 
-In der Testtakers können Logins für die Testpersonen angelegt werden. Es stehen verschiedenste Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Es kann bspw. festgelegt werden ob es sich nur um einen Probelauf oder um eine finale Testung handelt. Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Hier ist dann die Rede von **CustomText**. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**.
+In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der CustomText Konfiguration geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**. 
+
+![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml.png)
+
+> [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml.md) können Sie den Code kopieren.
 
 </td></tr>
 <tr>
