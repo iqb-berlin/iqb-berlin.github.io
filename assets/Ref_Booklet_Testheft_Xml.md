@@ -15,14 +15,14 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
   
   <Testlet id="Aufgaben" label="Aufgaben">
 		
-		<Restrictions>
+	<Restrictions>
            <CodeToEnter code="Hase">Bitte gib das Freigabewort ein.</CodeToEnter>
-		   <TimeMax minutes="10"/>
-		</Restrictions>
+	   <TimeMax minutes="10"/>
+	</Restrictions>
 		
-		<Unit id="MEA" label="1. Meine erste Aufgabe"/>
+	<Unit id="MEA" label="1. Meine erste Aufgabe"/>
 				
-	</Testlet>
+  </Testlet>
 
 </Booklet>
 
