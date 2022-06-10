@@ -122,7 +122,7 @@ aber nur Punkte, d. h. man kann nicht mitlesen.
 
 Das Kennwort kann weggelassen werden. Hier hat man keine geringere Sicherheit, wenn die Länge und Zeichenzusammensetzung 
 des Namens hinreichend ungewöhnlich ist. Eine laufende Nummer am Ende ist z. B. problematisch, denn sie kann bei Kenntnis eines Namens 
-erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
+erraten werden. Die Länge sollte dann min. 8 Zeichen betragen. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des Kennwortes stört.
 
 ```xml
    <Group id="TestakerGroup1" label="TestakerGroup1">
@@ -134,7 +134,7 @@ erraten werden. Diese Anmeldeform sollte gewählt werden, wenn das Verbergen des
 
 ### Noch kürzer: Link
 
-Wenn nur ein Anmeldename ohne Kennwort (das Attribut: **pw** darf dann nicht aufgeführt sein) als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken.
+Wenn nur ein Anmeldename ohne Kennwort (das Attribut: **pw** muss leer oder gar nicht vorhanden sein) als Login festgelegt wurde, dann kann man auch einen Link an die Testpersonen verschicken. Zu beachten ist hierbei, dass der Name aus Sicherheitsgründen min. 8 Zeichen lang sein sollte und die Zeichenzusammensetzung hinreichend ungewöhnlich ist.
 
 ```xml
    <Group id="TestakerGroup1" label="TestakerGroup1">
@@ -175,7 +175,7 @@ Es kann eine zeitliche Gültigkeit für eine Anmeldung bestimmt werden. Hierfür
 ```xml
    <Group id="TestakerGroup1" label="TestakerGroup1" validFrom="17/02/2022 10:00">
 	<Login mode="run-review" name="e3p2p" pw="h7u5">
-            <Booklet codes="TestpersonA TestpersonB TestpersonC>Booklet1</Booklet>
+            <Booklet codes="TestpersonA TestpersonB TestpersonC">Booklet1</Booklet>
         </Login>
    </Group>
 ``` 
@@ -185,7 +185,7 @@ Gültig für 20 Minuten:
 ```xml
    <Group id="TestakerGroup1" label="TestakerGroup1" validFor="20">
 	<Login mode="run-review" name="e3p2p" pw="h7u5">
-            <Booklet codes="TestpersonA TestpersonB TestpersonC>Booklet1</Booklet>
+            <Booklet codes="TestpersonA TestpersonB TestpersonC">Booklet1</Booklet>
         </Login>
    </Group>
 ``` 
