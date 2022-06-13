@@ -78,7 +78,7 @@ Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-teststudio.de**
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Teststudio an.
 
-:heavy_exclamation_mark: Die Zugangsdaten erhalten Sie von Ihren Adminstrator\*innen.
+:information_source: Die Zugangsdaten erhalten Sie von Ihren Adminstrator\*innen.
 
 </td></tr>
 <tr>
@@ -188,8 +188,6 @@ Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. All
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
 
 </td></tr>
-
-
 </table>
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -201,13 +199,6 @@ Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. All
 !<--###################################################################################################################### -->
 ## Schnelleinstieg: Die Testdateien
 !<--###################################################################################################################### -->
-
-```yaml
-Dokumentstatus: In Bearbeitung (THuste)
-Stand: 27.05.22
-todo: - weitere Inhalte
-      
-```
 
 <table border=1>
 <tr>
@@ -225,7 +216,15 @@ todo: - weitere Inhalte
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Teststudio** bereits beschrieben wurde, gibt das **Teststudio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Tesstudio** nicht nur die Aufgaben-Xml`s ausgegeben, sondern auch noch die Steuerdateien **Booklet-Xml** und **Testtakers-Xml** werden automatisch Abhängigkeiten zwischen den Testdateien hergestellt.
+
+Folgende Anhängigkeiten werden zwischen den Testdateien erzeugt: 
+
+![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_02.png)
+
+Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die **Ressourcen-Dateien** ein.
+
+Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
 
@@ -288,7 +287,7 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 
 :information_source: Die hier gezeigte **Booklet.xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
 
-![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml.png)
+![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml_01.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Xml.md) können Sie den Code kopieren.
 
@@ -320,9 +319,21 @@ Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.
 
 In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der CustomText Konfiguration geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**. 
 
-![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_01.png)
+![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_02.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml.md) können Sie den Code kopieren.
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Weitere Infos zu den Testdateien
+
+</td></tr>
+<tr>
+<td>
+
+Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten der Bearbeitung detailliert aufgeführt. Mehr Details erfahren Sie auch in diesem Wiki unter: **Direkt zu anderen Seiten / Booklet-Xml, Testtaker-Xml, Unit-Xml**.
 
 </td></tr>
 </table>
@@ -333,3 +344,87 @@ In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei st
 </a>
 </div>
 
+
+!<--###################################################################################################################### -->
+## Schnelleinstieg: Das Testcenter
+!<--###################################################################################################################### -->
+
+```yaml
+Dokumentstatus: In Bearbeitung (THuste)
+Stand: 13.06.22
+todo: - weitere Inhalte
+      
+```
+
+<table border=1>
+<tr>
+<th align=center>
+
+### Führen Sie die erste Testung durch!
+
+</th>
+
+</tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Testcenter öffnen
+
+</td></tr>
+<tr>
+<td>
+
+Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-testcenter.de**
+ 
+:heavy_exclamation_mark: Das Testcenter muss dazu auf Ihrem Server installiert sein.
+
+Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an.
+
+:information_source: Die Zugangsdaten erhalten Sie von Ihren Adminstrator\*innen.
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Arbeitsbereich wählen
+
+</td></tr>
+<tr>
+<td>
+
+Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeitsbreich: *Sandbox Tobias* öffnen.
+
+:heavy_exclamation_mark: Die Administrator\*innen geben die Bereiche für Sie frei.
+
+![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_AB_Auswahl_01.png)
+
+
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Laden der Testdateien
+
+</td></tr>
+<tr>
+<td>
+
+Nun ist es an der Zeit die Testdateien: **Testtakers.xml**, **Booklet.xml**, **MEA01.xml** und die zugehörigen Ressourcen: **MEA01.voud** und **Player.html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen sollen. Das Laden der Dateien findet im Arbeitsbereich unter dem **Reiter: Dateien** statt.
+
+:heavy_exclamation_mark: Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das **Testcenter** laden. Wird dies nicht bachtet, lehnt das **Testcenter** die Datei mit einem entsprechendem Hinweis ab.   
+
+Wurden alle Dateien in das Testcenter geladen, sieht das Ergebnis so aus:
+
+![TC_Laden_Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Laden_Testdateien_01.png)
+
+:information_source: Möchten Sie die Dateien nicht einzeln in das **Testcenter** laden, ist es auch möglich diese in einem Zip-Format zu verpacken und die gesamte Zip-Datei zu laden.
+
+
+</td></tr>
+</table>
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
