@@ -304,7 +304,7 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 
 Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.xml** noch kein Testheft angelegt, sondern nur unsere Aufgabe. Wir fügen nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben wir unsere Aufgabe in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
 
-![Booklet:Testheft](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_03.gif)
+![Booklet:Testheft](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_04.gif)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Testheft_Xml.md) können Sie den Code kopieren.
 
@@ -320,7 +320,7 @@ Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.
 
 In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der CustomText Konfiguration geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**. 
 
-![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml.png)
+![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_01.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml.md) können Sie den Code kopieren.
 
@@ -332,3 +332,4 @@ In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei st
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
+
