@@ -7,22 +7,22 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
     </Metadata>
             
     <Group id="TestakerGroup1" label="TestakerGroup1">
-		<Login mode="run-review" name="v2z2b" pw="q5e6">
+	<Login mode="run-review" name="v2z2b" pw="q5e6">
             <Booklet>Booklet1</Booklet>
         </Login>
-		<Login mode="run-review" name="y4e3x" pw="e9z5">
+	<Login mode="run-review" name="y4e3x" pw="e9z5">
             <Booklet>Booklet1</Booklet>
         </Login>
-		<Login mode="run-review" name="b7u4z" pw="b4c6">
+	<Login mode="run-review" name="b7u4z" pw="b4c6">
             <Booklet>Booklet1</Booklet>
         </Login>
-		<Login mode="run-review" name="b6b9g" pw="x5u7">
+	<Login mode="run-review" name="b6b9g" pw="x5u7">
             <Booklet>Booklet1</Booklet>
         </Login>
-		<Login mode="run-review" name="z6g4f" pw="x3e6">
+	<Login mode="run-review" name="z6g4f" pw="x3e6">
             <Booklet>Booklet1</Booklet>
         </Login>
-		<Login mode="run-review" name="b4x4s" pw="b5x4">
+	<Login mode="run-review" name="b4x4s" pw="b5x4">
             <Booklet>Booklet1</Booklet>
         </Login>
      </Group>
