@@ -9,7 +9,7 @@ Eine weitere Anwendung trägt den Namen **Testcenter** und wird für die Testdur
 Sind Aufgaben mit dem **Teststudio** final entworfen, können diese abschließend in einem bestimmten Dateiformat vom **Teststudio** ausgegeben werden. Die so ausgegebenen Dateien können bei Bedarf nachträglich verändert werden. Zur Testdurchführung werden diese Dateien dann in das **Testcenter** geladen und wiedergegeben.
 
 
-Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitung der **Testdateien** doch einmal kurz kennen:
+Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitung der **Testdateien** doch einmal anhand eines sehr vereinfachten Beispiels kurz kennen:
 
 <table border=0 >
     <tr>
@@ -327,6 +327,20 @@ In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei st
 <tr>
 <td>
 
+### :heavy_check_mark: Die Testtaker.xml: Testmodus ändern
+
+</td></tr>
+<tr>
+<td>
+
+Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). Da wir mit den hier verwendeten Dateien später im **Testcenter** eine Testung starten wollen und uns abschließend auch die gespeicherten Antworten ansehen möchten, werden wir den Testmodus nun für eine Testperson ändern.
+
+![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.gif)
+
+</td></tr>
+<tr>
+<td>
+
 ### :heavy_check_mark: Weitere Infos zu den Testdateien
 
 </td></tr>
@@ -409,16 +423,43 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeit
 <tr>
 <td>
 
-Nun ist es an der Zeit die Testdateien: **Testtakers.xml**, **Booklet.xml**, **MEA01.xml** und die zugehörigen Ressourcen: **MEA01.voud** und **Player.html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen sollen. Das Laden der Dateien findet im Arbeitsbereich unter dem **Reiter: Dateien** statt.
+Nun ist es an der Zeit die Testdateien: **Testtakers.xml**, **Booklet.xml**, **MEA01.xml** und die zugehörigen Ressourcen: **MEA01.voud** und **Player.html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnimmt. Das Laden der Dateien findet im Arbeitsbereich unter dem **Reiter: Dateien** statt.
 
 :heavy_exclamation_mark: Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das **Testcenter** laden. Wird dies nicht bachtet, lehnt das **Testcenter** die Datei mit einem entsprechendem Hinweis ab.   
 
-Wurden alle Dateien in das Testcenter geladen, sieht das Ergebnis so aus:
+Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle für den Test benötigten Dateien gruppiert im Arbeitsbereich:
 
 ![TC_Laden_Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_Laden_Testdateien_01.png)
 
 :information_source: Möchten Sie die Dateien nicht einzeln in das **Testcenter** laden, ist es auch möglich diese in einem Zip-Format zu verpacken und die gesamte Zip-Datei zu laden.
 
+</td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Starten der Testdurchführung
+
+</td></tr>
+<tr>
+<td>
+
+In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im **Schnelleinstieg: Testdateien** aufgezeigt, haben wir den Testmodus für eine Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden wir uns nun also als diese Testperson an. Dazu öffnen wir noch einmal die **Testtaker-Xml** und kopieren oder notieren uns die Zugangsdaten für diese Testperson.
+
+![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren.gif)
+
+Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQB-Logo oben links und melden Sie sich mit den notierten Zugangsdaten erneut an. 
+
+:information_source: Testpersonen melden sich über die **Schaltfläche: Weiter** am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die **Schaltfläche: Weiter als Admin**!
+
+Nach der Anmeldung wird Ihnen das zu dieser Person angegebene Booklet angeboten. Das Booklet trägt dann den Namen der unter `Label` eingetragen ist.
+
+![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_06.png)
+
+Nach Auswahl des Booklets müssen Sie wie in der **Booklet-Xml** angegeben ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Unit angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
+
+![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_01.png)
+
+Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf Test beenden. Sie werden daraufhin gewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
 </td></tr>
 </table>

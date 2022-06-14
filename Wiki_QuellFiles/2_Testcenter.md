@@ -407,6 +407,15 @@ Bereich des Players zum Abspielen einer Aufgabe.
 Welche Vorteile bietet diese Aufteilung?<br>
 Werden Aufgaben erstellt und dabei neue Elemente verwendet, die dem Testcenter noch unbekannt sind, muss nicht der Programmcode des gesamten **Testcenter** angepasst werden, sondern nur der Programmcode des verwendeten Players. Bei der Aufgabenerstellung im **Teststudio** kommen unterschiedliche Editoren zum Einsatz. Diese Editoren bieten unterschiedliche Funktionen und Aufgabenelemente. Zu jedem Editor gehört ein entsprechender Player, welcher die Funktionen und Elemente des verwendeten Editors kennt und diese daher später auch wiedergeben kann. 
 
+In der **Aufgaben-Xml** wird angegeben, welcher Player bei der Aufgabenerstellung im **Teststudio** gewählt wurde. Wird die **Aufgaben-Xml** in das **Testcenter** geladen, prüft das **Testcenter**, ob der in der **Aufgaben-Xml** angegebene Player auch im Arbeitsbereich vorhanden ist. Es ist möglich Aufgaben mit unterschiedlichen Playern in einen gemeinsamen Arbeitsbereich zu laden. Dazu müssen nur die entsprechenden Player-Ressourcen mit in diesen Arbeitsbereich geladen werden. Es kann dann vorkommen, dass eine Aufgabe eine neuere und eine andere eine ältere Playerversion verwendet. Das **Testcenter** muss dann einer gewissen Logik bei der Auswahl der richtigen Player-Ressource folgen. Nachfolgend ist einmal aufgeführt wie dabei vorgegangen wird.
+
+Beispiel: (links die verfügbaren Dateien, oben das gesetzte Attribut in der Aufgaben-xml, in der Tabelle was gewählt werden würde. Fett, wenn  Regel 1 greift.)
+|                                                         	| xx-1.html | xx-1.2.html 	| xx-1.2.0.html 	| xx-1.2.1.html 	| xx-1.2.3.html 	|
+|---------------------------------------------------------	|--------------------	|----------------------	|------------------------	|------------------------	|------------------------	|
+| xx-1.2.0.html xx-1.2.3.html xx-1.2.4.html xx-1.3.0.html 	| xx-1.3.0.html      	| xx-1.2.4.html        	| **xx-1.2.0.html**      	| xx-1.2.4.html          	| **xx-1.2.3.html**      	|
+| xx-1.2.html xx-1.2.3.html xx-1.2.4.html xx-1.3.0.html   	| xx-1.3.0.html      	| **xx-1.2.html**      	| xx-1.2.4.html          	| xx-1.2.4.html          	| **xx-1.2.3.html**      	|
+
+
 > **Weitere Informationen zu den angebotenen Playern finden Sie auch in den gleichnamigen Einzeldokumenten unter "Direkt zu anderen Seiten".**
 
 ---
