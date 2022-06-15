@@ -31,19 +31,19 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
     </tr>
     <tr>
         <th align=center>
-            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Teststudio">Teststudio</a>
+            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Teststudio">Teststudio</a>
         </th>
         <th align=center>
            <a href=""></a>
         </th>
         <th align=center>
-           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Die-Testdateien">Testdateien</a>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">Testdateien</a>
         </th>
         <th align=center>
            <a href=""></a>
         </th>
         <th align=center>
-           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Das-Testcenter">Testcenter</a>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testcenter">Testcenter</a>
         </th>
     </tr>
 </table>
@@ -183,16 +183,25 @@ Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. All
 
 ![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
 
-**Wollen Sie noch etwas mehr zu den Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.**
-
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Teststudio** abgeschlossen!
 
 </td></tr>
 </table>
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
 
@@ -226,7 +235,7 @@ Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet
 
 Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
-:information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne die [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.
+:information_source: **Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [Video](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.**
 
 </td></tr>
 <tr>
@@ -319,7 +328,7 @@ Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.
 
 In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der CustomText Konfiguration geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**. 
 
-![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_02.png)
+![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml.md) können Sie den Code kopieren.
 
@@ -352,9 +361,20 @@ Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten de
 </td></tr>
 </table>
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testcenter">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Teststudio">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
 
@@ -376,9 +396,31 @@ todo: - weitere Inhalte
 
 ### Führen Sie die erste Testung durch!
 
-</th>
+</th></tr>
+<tr>
+<td>
 
-</tr>
+### :heavy_check_mark: Vorbereitung und Hilfsmittel
+
+</td></tr>
+<tr>
+<td>
+
+#### Anforderungen an die IT-Systeme
+
+Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine weitere interne Komponente mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**.
+
+Welche Anforderungen das **Testcenter** stellt, finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
+
+#### Zugang für die Testpersonen
+
+Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt ein weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/itc-toolbox).
+
+#### Teststeuerung
+
+Die Anwendung **Testcenter** beinhaltet neben dem **System-Check** noch einer weitere Komponente, die es erlaubt die Testung zu steuern. Diese Komponente trägt den Namen **Testleitungskonsole**. Mittels dieser kann die Testleitung den Test für bestimmte Personengruppen pausieren oder an eine andere Stelle im Test springen und einiges mehr. Mehr Informationen dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
+
+</td></tr>
 <tr>
 <td>
 
@@ -392,7 +434,7 @@ Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-testcenter.de**
  
 :heavy_exclamation_mark: Das Testcenter muss dazu auf Ihrem Server installiert sein.
 
-Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an.
+Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätigen Sie nach Eingabe Ihrer Zugangsdaten die Schaltfläche: **Weiter als Admin**. Die Schaltfläche **Weiter** ist für die Anmeldung der Testpersonen gedacht.
 
 :information_source: Die Zugangsdaten erhalten Sie von Ihren Adminstrator\*innen.
 
@@ -462,10 +504,43 @@ Nach Auswahl des Booklets müssen Sie wie in der **Booklet-Xml** angegeben ein F
 Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf Test beenden. Sie werden daraufhin gewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
 </td></tr>
+<tr>
+<td>
+
+### :heavy_check_mark: Auswertung der Testung
+
+</td></tr>
+<tr>
+<td>
+
+Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Wechseln Sie dazu zum Reiter: **Ergebnisse/Antworten**. Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben und von mir unbenannt in **MEG**.
+
+![Testtakers Group-ID](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtakers_Group-ID.png)
+
+Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor der Login-Gruppe **MEG** und betätigen Sie die Schaltfläche **Antworten**. Die Datei wird dann im angegebenen Verzeichnis gespeichert. Anschließend kann diese Datei mit Excel geöffnet werden.
+
+![gespeicherte Anworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten.png)
+
+In der Spalte **Responses** befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile angezeigt werden, die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
+
+![gespeicherte Anworten Wandlung itc](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten_itc.png)
+
+Hier ist nun eindeutig zu sehen, dass ich während der Testung die Option 1 gewählt habe. Damit ist nun auch die Auswertung abgeschlossen.
+
+Sie haben nun Ihre erste eigene Testung durchgeführt. Da hier nur ein sehr einfaches Bsp. zum Einsatz kam, probieren Sie gerne einmal mehr aus und binden Sie weitere Aufgaben zu Testheften und Booklets zusammen und führen Sie größere Testungen durch.
+
+</td></tr>
+
 </table>
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
