@@ -326,7 +326,11 @@ Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.
 <tr>
 <td>
 
-In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der CustomText Konfiguration geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom Text Konfiguration**. 
+In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
+
+Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+
+Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der **Custom-Text Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom-Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text Konfiguration**. 
 
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
@@ -342,7 +346,9 @@ In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei st
 <tr>
 <td>
 
-Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). Da wir mit den hier verwendeten Dateien später im **Testcenter** eine Testung starten wollen und uns abschließend auch die gespeicherten Antworten ansehen möchten, werden wir den Testmodus nun für eine Testperson ändern.
+Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
+
+Da wir mit den hier verwendeten Dateien später im **Testcenter** eine Testung starten wollen und uns abschließend auch die gespeicherten Antworten ansehen möchten, werden wir den Testmodus nun für eine Testperson ändern.
 
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.gif)
 
@@ -383,13 +389,6 @@ Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten de
 ## Schnelleinstieg: Das Testcenter
 !<--###################################################################################################################### -->
 
-```yaml
-Dokumentstatus: In Bearbeitung (THuste)
-Stand: 13.06.22
-todo: - weitere Inhalte
-      
-```
-
 <table border=1>
 <tr>
 <th align=center>
@@ -408,13 +407,11 @@ todo: - weitere Inhalte
 
 #### Anforderungen an die IT-Systeme
 
-Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine weitere interne Komponente mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**.
-
-Welche Anforderungen das **Testcenter** stellt, finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
+Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine weitere interne Komponente mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das **Testcenter** stellt, finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
 
 #### Zugang für die Testpersonen
 
-Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt ein weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/itc-toolbox).
+Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/itc-toolbox).
 
 #### Teststeuerung
 
@@ -450,10 +447,9 @@ Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätige
 
 Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeitsbreich: *Sandbox Tobias* öffnen.
 
-:heavy_exclamation_mark: Die Administrator\*innen geben die Bereiche für Sie frei.
-
 ![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_AB_Auswahl_01.png)
 
+:information_source: Die Administrator\*innen geben die Bereiche für Sie frei.
 
 </td></tr>
 <tr>
@@ -465,7 +461,7 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeit
 <tr>
 <td>
 
-Nun ist es an der Zeit die Testdateien: **Testtakers.xml**, **Booklet.xml**, **MEA01.xml** und die zugehörigen Ressourcen: **MEA01.voud** und **Player.html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnimmt. Das Laden der Dateien findet im Arbeitsbereich unter dem **Reiter: Dateien** statt.
+Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
 
 :heavy_exclamation_mark: Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das **Testcenter** laden. Wird dies nicht bachtet, lehnt das **Testcenter** die Datei mit einem entsprechendem Hinweis ab.   
 
@@ -491,13 +487,13 @@ In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die 
 
 Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQB-Logo oben links und melden Sie sich mit den notierten Zugangsdaten erneut an. 
 
-:information_source: Testpersonen melden sich über die **Schaltfläche: Weiter** am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die **Schaltfläche: Weiter als Admin**!
+:information_source: Testpersonen melden sich über die Schaltfläche: **Weiter** am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die Schaltfläche: **Weiter als Admin**!
 
-Nach der Anmeldung wird Ihnen das zu dieser Person angegebene Booklet angeboten. Das Booklet trägt dann den Namen der unter `Label` eingetragen ist.
+Nach der Anmeldung wird Ihnen das zu dieser Person angegebene Booklet angeboten. Das Booklet trägt dann den Namen der unter `Label` in der **Booklet-Xml** eingetragen ist.
 
 ![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_06.png)
 
-Nach Auswahl des Booklets müssen Sie wie in der **Booklet-Xml** angegeben ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Unit angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
+Nach Auswahl des Booklets müssen Sie wie in der **Booklet-Xml** angegeben ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Aufgabe (MEA-Xml) angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
 
 ![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_01.png)
 
@@ -513,7 +509,7 @@ Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf Te
 <tr>
 <td>
 
-Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Wechseln Sie dazu zum Reiter: **Ergebnisse/Antworten**. Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben und von mir unbenannt in **MEG**.
+Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche: **Weiter als Admin**) an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter: **Ergebnisse/Antworten**. Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben und von mir unbenannt in **MEG**.
 
 ![Testtakers Group-ID](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtakers_Group-ID.png)
 
@@ -521,11 +517,13 @@ Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor de
 
 ![gespeicherte Anworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten.png)
 
-In der Spalte **Responses** befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile angezeigt werden, die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
+In der Spalte **Responses** befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden, die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
 
 ![gespeicherte Anworten Wandlung itc](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten_itc.png)
 
 Hier ist nun eindeutig zu sehen, dass ich während der Testung die Option 1 gewählt habe. Damit ist nun auch die Auswertung abgeschlossen.
+
+:information_source: Jedes Aufgabenelement in einer Aufgabe wird über die Aufgabenelement-ID eindeutig identifiziert. In der Auswertung kann dann über diese ID die Auswertung des entsprechenden Aufgabenelements erfolgen.
 
 Sie haben nun Ihre erste eigene Testung durchgeführt. Da hier nur ein sehr einfaches Bsp. zum Einsatz kam, probieren Sie gerne einmal mehr aus und binden Sie weitere Aufgaben zu Testheften und Booklets zusammen und führen Sie größere Testungen durch.
 
