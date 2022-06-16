@@ -48,7 +48,7 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
     </tr>
 </table>
 
-:information_source: Detailiertere Informationen zu den Anwendungen finden Sie in den gleichnamigen Kapiteln dieser Wiki.
+:information_source: Detailliertere Informationen zu den Anwendungen finden Sie in den gleichnamigen Kapiteln dieser Wiki.
 
 <!--###################################################################################################################### -->
 ## Schnelleinstieg: Das Teststudio
@@ -72,9 +72,9 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
 <tr>
 <td>
 
-Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-teststudio.de**
+Eingabe der Adresse des Teststudios in einen Browser: **www.iqb-teststudio.de**
  
-:heavy_exclamation_mark: Das Teststudio muss dazu auf Ihrem Server installiert sein.
+:heavy_exclamation_mark: **Das Teststudio muss dazu auf Ihrem Server installiert sein.**
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Teststudio an.
 
@@ -90,9 +90,9 @@ Melden Sie sich anschließend mit Ihren Zugangsdaten am Teststudio an.
 <tr>
 <td>
 
-Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeitsbreich: *Tobias* öffnen.
+Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel öffne ich den Arbeitsbereich: "Tobias".
 
-:heavy_exclamation_mark: Die Administrator\*innen geben die Bereiche für Sie frei.
+:information_source: Die Administrator\*innen geben die Bereiche für Sie frei.
 
 ![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_03.png)
 
@@ -109,13 +109,13 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeit
 
 Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch Markierung der Aufgabe.
 
-Es besteht bereits eine Aufgabe mit dem Namen: *UEA01* in meinem Arbeitsbereich und ich füge eine weiterer Aufgabe mit dem Namen: *MEA* hinzu.
+In diesem Beispiel besteht bereits eine Aufgabe mit dem Namen: "UEA01" in dem geöffneten Arbeitsbereich. Legen Sie nun einmal eine neue Aufgabe an und geben Sie der Aufgabe einen eindeutigen Namen. Bsph. könnte hier der Name: "MEA" gewählt werden.
 
 :information_source: Eine Aufgabe wird auch Unit genannt!
 
 ![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen_01.gif)
 
-:heavy_exclamation_mark: Wählen Sie kurze ID-fähige Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.
+:heavy_exclamation_mark: **Wählen Sie kurze ID-fähige Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.**
 
 </td></tr>
 <tr>
@@ -127,16 +127,16 @@ Es besteht bereits eine Aufgabe mit dem Namen: *UEA01* in meinem Arbeitsbereich 
 <tr>
 <td>
 
-Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über eigene Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufagebansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
+Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über spezifische Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufagebansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
 
 Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
 
-![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_02.gif)
+![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_03.png)
 
 
  Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
 
-:heavy_exclamation_mark: An dieser Stelle können Sie die Aufgabe auch schon einmal speichern.
+:information_source: An dieser Stelle können Sie die Aufgabe auch schon einmal speichern.
 
 </td></tr>
 <tr>
@@ -156,11 +156,11 @@ Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, w
 
 ![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch.gif)
 
-Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. Ich wähle einmal ein Optionsfeld.
+Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. In diesem Beispiel wird ein Optionsfeld gewählt.
 
 ![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_02.gif)
 
-Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird? Klicken Sie dazu auf den Reiter: *Vorschau*. Dort wird Ihre Aufgabe genau so angezeigt wie sie auch im **Testcenter** angezeigt werden würde.
+Sie können die Aufgabe vor der finalen Ausgaben durch das **Teststudio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
 ![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_04.gif)
 
@@ -173,13 +173,13 @@ Vielleicht möchten Sie die Aufgabe vorher betrachten bevor sie ausgegeben wird?
 </td></tr>
 <td>
 
-Jetzt können Sie Ihre Aufgabe mit dem **Teststudio** ausgeben lassen.
+Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Teststudio** ausgeben.
 
 ![TS_Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_01.gif)
 
 Was hat das **Teststudio** erzeugt?
 
-Es wird zu jeder Aufgabe jeweils eine Voud-Datei und eine Xml-Datei erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine `Testtakers.xml`, eine `Booklet.xml` und eine `iqb-player-aspect@1.24.html`. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
+Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine **Testtakers-Xml**, eine **Booklet-xml** und eine **iqb-player-aspect@1.24.html**. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
 
 ![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
 
@@ -231,7 +231,7 @@ Folgende Anhängigkeiten werden zwischen den Testdateien erzeugt:
 
 ![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_02.png)
 
-Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die **Ressourcen-Dateien** ein.
+Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die Ressourcen-Dateien **Aufgaben-Voud** und **Player.html** ein.
 
 Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
@@ -247,7 +247,7 @@ Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu 
 <tr>
 <td>
 
-Die verwendeten Testdateien sind XML-Dateien. Damit diese XML-Dateien auch vom **Testcenter** gelesen werden können, dürfen diese nur definierte Inhalte aufweisen. Welche Inhalte erlaubt sind, legt eine so genannte Schema-Definition fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende Xml-Datei auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens bei Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden Xml-Datei mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
+Die verwendeten Testdateien sind XML-Dateien. Damit diese XML-Dateien auch vom **Testcenter** gelesen werden können, dürfen diese nur definierte Inhalte aufweisen. Welche Inhalte erlaubt sind, legt eine so genannte Schema-Definition fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende Xml-Datei auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden Xml-Datei mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
 
 
 </td></tr>
@@ -260,9 +260,9 @@ Die verwendeten Testdateien sind XML-Dateien. Damit diese XML-Dateien auch vom *
 <tr>
 <td>
 
-Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Teststudio** in den Metadaten zur Aufgabe hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter**, ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels Ressourcendatei zum Player. In unserem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
+Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Teststudio** in der Aufgabe-Xml hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter**, ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels der Ressourcendatei zum Player. In unserem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
 
-:heavy_exclamation_mark: Werden Aufgaben in das **Testcenter** geladen, muss auch immer die zugehörige Ressourcendatei für den Player mit das **Testcenter** geladen werden. 
+:heavy_exclamation_mark: **Werden Aufgaben in das Testcenter geladen, muss auch immer die zugehörige Ressourcendatei für den Player mit das Testcenter geladen werden.**
 
 
 </td></tr>
@@ -275,7 +275,7 @@ Während der Aufgabenerstellung im **Teststudio** wird festgelegt mit welchem Ed
 <tr>
 <td>
 
-Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung XML und eine weitere mit der Endung VOUD. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zu unserer Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
+Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden, bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
 
 ![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_01.png)
 
@@ -291,10 +291,9 @@ Zu jeder im **Teststudio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine 
 <tr>
 <td>
 
-Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet.xml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. 
-Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
+Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xxml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 
-:information_source: Die hier gezeigte **Booklet.xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
+:information_source: Die hier gezeigte **Booklet-Xml** ist beim Export durch das **Teststudio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
 
 ![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml_01.png)
 
@@ -310,7 +309,7 @@ Nachfolgend werden die Strukturen der **Booklet.xml** einmal kurz aufgezeigt.
 <tr>
 <td>
 
-Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.xml** noch kein Testheft angelegt, sondern nur unsere Aufgabe. Wir fügen nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben wir unsere Aufgabe in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
+Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet-Xml** noch kein Testheft angelegt, sondern nur die erstelle Aufgabe: "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben Sie die Aufgabe: "MEA" in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
 
 ![Booklet:Testheft](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_04.gif)
 
@@ -326,11 +325,11 @@ Bei der automatischen Generierung durch das **Teststudio** ist in der **Booklet.
 <tr>
 <td>
 
-In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
+In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
 
-Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
 
-Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der **Custom-Text Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker.xml** durch das **Teststudio** ist noch keine **Custom-Text Konfiguration** enthalten. Diese muss der XML hinzugefügt werden. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text Konfiguration**. 
+Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Teststudio** ist noch keine **Custom-Text-Konfiguration** enthalten. Diese muss der **Testtaker-Xml** hinzugefügt werden. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
@@ -346,9 +345,9 @@ Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu veränder
 <tr>
 <td>
 
-Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [hier](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
+Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [**hier**](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
 
-Da wir mit den hier verwendeten Dateien später im **Testcenter** eine Testung starten wollen und uns abschließend auch die gespeicherten Antworten ansehen möchten, werden wir den Testmodus nun für eine Testperson ändern.
+Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine Testperson den Modus: von `run-review` auf `run-hot-return` ändern.
 
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.gif)
 
@@ -362,7 +361,7 @@ Da wir mit den hier verwendeten Dateien später im **Testcenter** eine Testung s
 <tr>
 <td>
 
-Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten der Bearbeitung detailliert aufgeführt. Mehr Details erfahren Sie auch in diesem Wiki unter: **Direkt zu anderen Seiten / Booklet-Xml, Testtaker-Xml, Unit-Xml**.
+Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten der Bearbeitung detailliert aufgeführt. Mehr Details finden Sie auch in diesem Wiki unter: **Direkt zu anderen Seiten / Booklet-Xml, Testtaker-Xml, Unit-Xml**.
 
 </td></tr>
 </table>
@@ -407,15 +406,15 @@ Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten de
 
 #### Anforderungen an die IT-Systeme
 
-Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine weitere interne Komponente mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das **Testcenter** stellt, finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
+Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine zusätzliche Funktionen mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das **Testcenter** stellt, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
 
 #### Zugang für die Testpersonen
 
-Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [hier](https://github.com/iqb-berlin/itc-toolbox).
+Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/itc-toolbox).
 
 #### Teststeuerung
 
-Die Anwendung **Testcenter** beinhaltet neben dem **System-Check** noch einer weitere Komponente, die es erlaubt die Testung zu steuern. Diese Komponente trägt den Namen **Testleitungskonsole**. Mittels dieser kann die Testleitung den Test für bestimmte Personengruppen pausieren oder an eine andere Stelle im Test springen und einiges mehr. Mehr Informationen dazu finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
+Die Anwendung **Testcenter** beinhaltet neben dem **System-Check** noch eine weitere Funktion, die es erlaubt die Testung zu steuern. Diese Komponente trägt den Namen **Testleitungskonsole**. Mittels dieser kann die Testleitung den Test für bestimmte Personengruppen pausieren oder an eine andere Stelle im Test springen und einiges mehr. Mehr Informationen dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
 
 </td></tr>
 <tr>
@@ -427,9 +426,9 @@ Die Anwendung **Testcenter** beinhaltet neben dem **System-Check** noch einer we
 <tr>
 <td>
 
-Eingabe der Adresse des Teststudios in einem Browser: **www.iqb-testcenter.de**
+Eingabe der Adresse des Teststudios in einen Browser: **www.iqb-testcenter.de**
  
-:heavy_exclamation_mark: Das Testcenter muss dazu auf Ihrem Server installiert sein.
+:heavy_exclamation_mark: **Das Testcenter muss dazu auf Ihrem Server installiert sein.**
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätigen Sie nach Eingabe Ihrer Zugangsdaten die Schaltfläche: **Weiter als Admin**. Die Schaltfläche **Weiter** ist für die Anmeldung der Testpersonen gedacht.
 
@@ -445,7 +444,7 @@ Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätige
 <tr>
 <td>
 
-Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeitsbreich: *Sandbox Tobias* öffnen.
+Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich: "Sandbox Tobias" geöffnet.
 
 ![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_AB_Auswahl_01.png)
 
@@ -461,9 +460,9 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel werde ich meinen Arbeit
 <tr>
 <td>
 
-Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt wie unser Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
+Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt, wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
 
-:heavy_exclamation_mark: Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das **Testcenter** laden. Wird dies nicht bachtet, lehnt das **Testcenter** die Datei mit einem entsprechendem Hinweis ab.   
+:heavy_exclamation_mark: **Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das Testcenter laden. Wird dies nicht beachtet, lehnt das Testcenter die Datei mit einem entsprechendem Hinweis ab.** 
 
 Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle für den Test benötigten Dateien gruppiert im Arbeitsbereich:
 
@@ -481,23 +480,23 @@ Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle 
 <tr>
 <td>
 
-In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im **Schnelleinstieg: Testdateien** aufgezeigt, haben wir den Testmodus für eine Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden wir uns nun also als diese Testperson an. Dazu öffnen wir noch einmal die **Testtaker-Xml** und kopieren oder notieren uns die Zugangsdaten für diese Testperson.
+In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg: "Testdateien" aufgezeigt, haben wir den Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
 
 ![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren.gif)
 
 Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQB-Logo oben links und melden Sie sich mit den notierten Zugangsdaten erneut an. 
 
-:information_source: Testpersonen melden sich über die Schaltfläche: **Weiter** am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die Schaltfläche: **Weiter als Admin**!
+:information_source: Testpersonen melden sich über die Schaltfläche: "Weiter" am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die Schaltfläche: "Weiter als Admin"!
 
 Nach der Anmeldung wird Ihnen das zu dieser Person angegebene Booklet angeboten. Das Booklet trägt dann den Namen der unter `Label` in der **Booklet-Xml** eingetragen ist.
 
 ![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_06.png)
 
-Nach Auswahl des Booklets müssen Sie wie in der **Booklet-Xml** angegeben ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Aufgabe (MEA-Xml) angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
+Nach Auswahl des Booklets, müssen Sie wie in der **Booklet-Xml** angegeben, ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Aufgabe (MEA-Xml) angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
 
 ![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_01.png)
 
-Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf Test beenden. Sie werden daraufhin gewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
+Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "Test beenden". Sie werden darauf hingewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
 </td></tr>
 <tr>
@@ -509,19 +508,19 @@ Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf Te
 <tr>
 <td>
 
-Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche: **Weiter als Admin**) an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter: **Ergebnisse/Antworten**. Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben und von mir unbenannt in **MEG**.
+Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche: "Weiter als Admin") an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter: "Ergebnisse/Antworten". Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben. In diesem Beispiel wurde der vom **Teststudio** automatisch erzeugte Name in **MEG** umbenannt.
 
 ![Testtakers Group-ID](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtakers_Group-ID.png)
 
-Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor der Login-Gruppe **MEG** und betätigen Sie die Schaltfläche **Antworten**. Die Datei wird dann im angegebenen Verzeichnis gespeichert. Anschließend kann diese Datei mit Excel geöffnet werden.
+Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor der Login-Gruppe **MEG** und betätigen Sie die Schaltfläche: "Antworten". Die Datei wird dann im angegebenen Verzeichnis gespeichert. Anschließend kann diese Datei mit Excel geöffnet werden.
 
 ![gespeicherte Anworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten.png)
 
-In der Spalte **Responses** befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden, die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
+In der Spalte: "Responses" befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
 
 ![gespeicherte Anworten Wandlung itc](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten_itc.png)
 
-Hier ist nun eindeutig zu sehen, dass ich während der Testung die Option 1 gewählt habe. Damit ist nun auch die Auswertung abgeschlossen.
+Hier ist nun eindeutig zu sehen, dass dieser Testung die Option 1 gewählt wurde. Damit ist nun auch die Auswertung abgeschlossen.
 
 :information_source: Jedes Aufgabenelement in einer Aufgabe wird über die Aufgabenelement-ID eindeutig identifiziert. In der Auswertung kann dann über diese ID die Auswertung des entsprechenden Aufgabenelements erfolgen.
 
