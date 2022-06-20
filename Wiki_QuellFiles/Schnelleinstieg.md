@@ -66,6 +66,18 @@ Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitun
 <tr>
 <td>
 
+### :heavy_check_mark: Vorweg
+
+</td></tr>
+<tr>
+<td>
+
+:information_source: Detaillierte Informationen zum **Teststudio** finden Sie im gleichnamigen Kapitel.
+
+</td></tr>
+<tr>
+<td>
+
 ### :heavy_check_mark: Teststudio öffnen
 
 </td></tr>
@@ -113,7 +125,7 @@ In diesem Beispiel besteht bereits eine Aufgabe mit dem Namen: "UEA01" in dem ge
 
 :information_source: Eine Aufgabe wird auch Unit genannt!
 
-![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen_01.gif)
+![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen.gif)
 
 :heavy_exclamation_mark: **Wählen Sie kurze ID-fähige Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.**
 
@@ -152,7 +164,7 @@ Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichn
 
 Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, wählen Sie zuvor einen dynamischen Abschnitt aus.
 
-![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch.gif)
+![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch_01.png)
 
 Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. In diesem Beispiel wird ein Optionsfeld gewählt.
 
@@ -160,7 +172,7 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 Sie können die Aufgabe vor der finalen Ausgaben durch das **Teststudio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
-![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_04.gif)
+![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_05.png)
 
 </td></tr>
 <tr>
@@ -217,7 +229,7 @@ Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erze
 <tr>
 <td>
 
-### :heavy_check_mark: Kurze Einführung zu den Testdateien
+### :heavy_check_mark: Vorweg
 
 </td></tr>
 <tr>
@@ -233,7 +245,9 @@ Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet
 
 Um nun eine Testung den spezifischen Anforderungen entsprechend durchführen zu können, können die Testdateien vor dem Laden in das **Testcenter** angepasst werden. 
 
-:information_source: **Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [Video](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an.**
+:information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
+
+:information_source: Mehr Informationen zu den Testdateien finden Sie auch im Abschnitt: "Direkt zu anderen Seiten". 
 
 </td></tr>
 <tr>
@@ -350,18 +364,6 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.gif)
 
 </td></tr>
-<tr>
-<td>
-
-### :heavy_check_mark: Weitere Infos zu den Testdateien
-
-</td></tr>
-<tr>
-<td>
-
-Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten der Bearbeitung detailliert aufgeführt. Mehr Details finden Sie auch in diesem Wiki unter: **Direkt zu anderen Seiten / Booklet-Xml, Testtaker-Xml, Unit-Xml**.
-
-</td></tr>
 </table>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -396,7 +398,7 @@ Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten de
 <tr>
 <td>
 
-### :heavy_check_mark: Vorbereitung und Hilfsmittel
+### :heavy_check_mark: Vorweg
 
 </td></tr>
 <tr>
@@ -415,6 +417,8 @@ Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfüg
 #### Teststeuerung
 
 Die Testleitung kann mittels einer weiteren integrierten Funktion des Testcenters den Ablauf einer Testung steuern. Diese Funktion trägt den Namen **Testleitungskonsole**. Mehr Informationen dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
+
+:information_source: Detaillierte Informationen zum **Testcenter** finden Sie im gleichnamigen Kapitel.
 
 </td></tr>
 <tr>
