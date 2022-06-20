@@ -9,7 +9,7 @@ Eine weitere Anwendung trägt den Namen **Testcenter** und wird für die Testdur
 Sind Aufgaben mit dem **Teststudio** final entworfen, können diese abschließend in einem bestimmten Dateiformat vom **Teststudio** ausgegeben werden. Die so ausgegebenen Dateien können bei Bedarf nachträglich verändert werden. Zur Testdurchführung werden diese Dateien dann in das **Testcenter** geladen und wiedergegeben.
 
 
-Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitung der **Testdateien** doch einmal anhand eines sehr vereinfachten Beispiels kurz kennen:
+Lernen Sie beiden Anwendung **Teststudio** und **Testcenter** und die Bearbeitung der **Testdateien** doch einmal anhand eines vereinfachten Beispiels kurz kennen:
 
 <table border=0 >
     <tr>
@@ -94,7 +94,7 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel öffne ich den Arbeitsb
 
 :information_source: Die Administrator\*innen geben die Bereiche für Sie frei.
 
-![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_03.png)
+![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_06.png)
 
 
 </td></tr>
@@ -149,8 +149,6 @@ Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt w
 <td>
 
 Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichnamigen Reiters.
-
-![TS_Editorreiter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_Reiter_01.png)
 
 Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, wählen Sie zuvor einen dynamischen Abschnitt aus.
 
