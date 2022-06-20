@@ -177,7 +177,7 @@ Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Teststudio** ausgeben.
 
 Was hat das **Teststudio** erzeugt?
 
-Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine **Testtakers-Xml**, eine **Booklet-xml** und eine **iqb-player-aspect@1.24.html**. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
+Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine **Testtakers-Xml**, eine **Booklet-Xml** und eine **iqb-player-aspect@1.24-Html**. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
 
 ![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
 
@@ -404,15 +404,17 @@ Da es sich um einen Schnelleinstieg handelt, werden nicht alle Möglichkeiten de
 
 #### Anforderungen an die IT-Systeme
 
-Bevor eine Testung durchgeführt wird, sollte sichergestellt werden, dass diese auch erfolgreich durchgeführt werden kann. Das **Testcenter** stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Hier sind einmal bspw. die Internetgeschwindigkeit und die Browserversion zu nennen. Die Anwendung **Testcenter** verfügt über eine zusätzliche Funktionen mit dem Namen **System-Check**. Der **System-Check** kann dazu verwendet werden, die Systeme hinsichtlich dieser Anforderungen zu überprüfen. [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das **Testcenter** stellt, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift **Anforderungen**.
+Das Testcenter stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Diese Anforderungen können mit der im Testcenter intergrierten Funktion **System-Check** überprüft werden.  [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das Testcenter stellt, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift: "Anforderungen".
 
 #### Zugang für die Testpersonen
 
-Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/itc-toolbox).
+Im Vorfeld sollte sich die Testleitung Gedanken darüber machen welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). 
+
+Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/itc-toolbox).
 
 #### Teststeuerung
 
-Die Anwendung **Testcenter** beinhaltet neben dem **System-Check** noch eine weitere Funktion, die es erlaubt die Testung zu steuern. Diese Komponente trägt den Namen **Testleitungskonsole**. Mittels dieser kann die Testleitung den Test für bestimmte Personengruppen pausieren oder an eine andere Stelle im Test springen und einiges mehr. Mehr Informationen dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
+Die Testleitung kann mittels einer weiteren integrierten Funktion des Testcenters den Ablauf einer Testung steuern. Diese Funktion trägt den Namen **Testleitungskonsole**. Mehr Informationen dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.8-Testleitungskonsole).
 
 </td></tr>
 <tr>
