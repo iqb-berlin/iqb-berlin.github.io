@@ -11,29 +11,28 @@ Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iq
 
 **Installation**
 
-Das IQB hat alle Programmierungen unter der Open Source-Lizenz [MIT](https://opensource.org/licenses/MIT) veröffentlicht und erleichtert die Installation durch ein sog. 
-Docker-Setup. Für die Installation muss man einen Server bereitstellen (Linux oder Windows) und dieser Server muss dann über 
+Das IQB hat alle Programmierungen unter der Open Source-Lizenz [MIT](https://opensource.org/licenses/MIT) veröffentlicht und erleichtert die Installation durch Containervirtualisierung (Docker). Für die Installation muss man einen Linux-Server bereitstellen und dieser Server muss dann über 
 eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. 
 Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. 
 Es ist weiterhin Wissen zu Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen 
-gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete gut abzusichern, 
+gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete und die eigentlichen Anwendungen gut abzusichern, 
 übernimmt aber im Schadensfall keine Verantwortung.
 
 **Verwaltung der Tests**
 
-Nach der Installation ist zunächst ein Standard-Konto für die Verwaltung von Tests angelegt. 
+Nach der Installation ist zunächst ein Systemadmin-Konto für die Verwaltung von Tests angelegt. 
 Außerdem ist ein Arbeitsbereich angelegt mit einem Beispieltest. Im ersten Schritt sind über ein Verwaltungsportal die Testinhalte 
 (Aufgaben, Testabläufe usw., z. B. als XML-Dateien) in das Testcenter zu laden. Nach der Durchführung des Tests, können über
-dieses Verwaltungsportal die Ergebnisse heruntergeladen werden (Csv-Dateien). Die Texte dieser Wiki sind vor allem für Personen gedacht, 
+dieses Verwaltungsportal die Ergebnisse heruntergeladen werden (Csv-Dateien). Die Texte dieses Wikis sind vor allem für Personen gedacht, 
 die diese Verwaltungsaufgaben ausführen.
 
 Man kann eine Installation des IQB-Testcenters weitgehend anpassen. Begrüßungsnachrichten, Hintergrundfarbe, Logo auf der Startseite und selbst der Name der Anwendung kann an eigene Wünsche angepasst werden.
 
 **Durchführung von Tests oder Befragungen**
 
-Durch Anwählen der Internet-Adresse des Testcenter-Servers erhält man ein Anmeldeformular. 
-Eine Testperson muss über Zugangsdaten verfügen und es startet dann das für diese Person vorbereitete Testheft 
-(d. h. die Abfolge von Aufgaben bzw. Fragen). Folgende besonderen Funktionen sind im IQB-Testcenter derzeit umgesetzt:
+Durch Eingabe der Internet-Adresse des Testcenter-Servers erhält man ein Anmeldeformular. 
+Eine Testperson muss über Zugangsdaten verfügen und es startet dann das für diese Person vorbereitete Testheft,
+d.h. die Abfolge von Aufgaben bzw. Fragen (Units). Folgende besonderen Funktionen sind im IQB-Testcenter derzeit umgesetzt:
 
 * Verschiedene Varianten der Anmeldung: Anmeldung über einen Link, zweistufige Anmeldung zur Vereinfachung der Durchführung, 
 spezieller Modus für das Ausprobieren eines Tests (Review) usw.
@@ -41,11 +40,11 @@ spezieller Modus für das Ausprobieren eines Tests (Review) usw.
 * zeitliche Beschränkung von Testteilen: Für eine bestimmte Anzahl Aufgaben steht der Testperson eine begrenzte Zeit zur Verfügung
 * Fortsetzung erst mit Freigabewort: Die Testdurchführung z. B. in einer Klasse kann synchronisiert werden, indem die Testleitung 
 ein Wort ansagt, mit dem dann der Test fortgesetzt werden kann
-* Fortsetzung erst nach vollständiger Anzeige: Um zu vermeiden, dass Teile einer Aufgabe übersehen werden, 
+* Fortsetzung erst nach vollständiger Präsentation: Um zu vermeiden, dass Teile einer Aufgabe übersehen werden, 
 kann das Weiterblättern solange unterbunden werden, bis alle Audio-Sequenzen abgespielt wurden und alle Seiten vollständig angezeigt wurden
 * Fortsetzung erst nach vollständiger Beantwortung
 * sofortige Speicherung: Alle Antworten werden sofort zum Testcenter-Server gesendet; 
-nach Abbruch oder Absturz eines Computers oder des Browsers kann daher der vorherige Stand wiederhergestellt werden
+nach Abbruch der Testung oder Absturz eines Computers bzw. Browsers kann daher der vorherige Stand wiederhergestellt werden
 
 Es können mehrere Tests oder Befragungen gleichzeitig laufen.
 
