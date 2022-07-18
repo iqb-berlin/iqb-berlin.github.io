@@ -37,7 +37,7 @@
 <td>
 
 #### Gibt es einführende Videos zu den IQB Testsystemen?
-> Ja. Ein Video ist [hier](https://box.hu-berlin.de/f/07de21dff3c948d2bff4/) zu finden.
+> Ja. Ein Video ist [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung) zu finden.
 
 </td>
 </tr>
