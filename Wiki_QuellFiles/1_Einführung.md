@@ -10,7 +10,7 @@ Nach zahlreichen Vorarbeiten arbeitet das [Institut zur Qualitätsentwicklung im
 seit 2018 gezielt im Auftrag der Länder an der Umstellung der papierbasierten Kompetenzerhebung auf eine technologiebasierte Durchführung. 
 Details zu den Projekten bzw. zu weiteren Planungen entnehmen Sie bitte [den TBA-Projektseiten des IQB](https://www.iqb.hu-berlin.de/tba/)!
 
-Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Komptenzerhebung
+Dieses Kapitel soll eine Einführung in die IQB Instrumentarien geben, die zur Umsetzung der technologiebasierten Kompetenzerhebung
 seitens des IQB zum Einsatz kommen.
  
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
