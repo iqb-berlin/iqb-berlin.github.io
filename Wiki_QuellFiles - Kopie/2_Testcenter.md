@@ -80,6 +80,8 @@ Das IQB folgt hier jedoch den Anforderungen an die Datensicherheit, so wie es z.
 
 Das IQB unterstützt daher nur die jeweils letzten beiden Hauptversionen eines Browsers bzw. - bei Chrome und Firefox - die Versionen der letzten 12 Monate. Beispielsweise werden derzeit (Stand April 2022) bei Safari nur die Versionen 14 (Veröffentlichung September 2020) und 15 unterstützt. 
 
+---
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.1-Daten-und-Prozesse">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -364,9 +366,30 @@ Es können Antwort- und Logdateien heruntergeladen werden. Diese werden im **Tes
 
 ![iqb online assessment applications with relations: testcenter](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_FE_Ergebnisse_final.png)
 
-> **Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung findet nur in den beiden Modi: 'run-hot-return' und 'run-hot-restart' statt!**
+> **Es werden nicht in jedem Testmodus Ergebnisse gespeichert. Die Speicherung erfolgt nur in folgenden Modi: `run-hot-return`, `run-hot-restart` und `run-trial`!**
 
-Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als CSV-Dateien gespeichert und können im Sinne einer besseren Übersichtlichkeit mit dem IQB Tool **itc-Toolbox** in eine XLSX-Datei gewandelt werden. Mehr dazu erfahren Sie auch in dem folgenden [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/itc%E2%80%90ToolBox:-Antworten-und-Logs).
+Die Ergebnisse können mittels der üblichen Browserfunktionalitäten heruntergeladen werden. Die Dateien werden dann als CSV-Dateien gespeichert.
+
+## Aufbereitung
+
+Durch den modularen Aufbau des Testsystems ist die Komponente, die die Interaktion mit der Testperson steuert, austauschbar. Laut [Verona-Spezifikation](https://verona-interfaces.github.io/) ist das Datenformat der Antworten und Logs nicht vorgeschrieben. Das liegt z. B. daran, dass Antworten nicht nur einfache Datentypen sein können (Text, Zahl), sondern auch Listen, Bilder, Ton usw. Das Interesse an Zusatzinformationen (Zustände über die Zeit) mag auch schwanken je nachdem, ob eine Pilotierung (Kennenlernen von Itemeigenschaften) oder eine große automatisierte Testung durchgeführt wird.
+
+Wenn man die Antwortdaten herunterlädt, sind die Antworten in einer bestimmten Spalte in einem Roh-Format JSON hinterlegt, so wie der Player sie geschickt hatte. Die Verona-Schnittstelle sieht vor, dass die Antwortdaten aufgeteilt werden können in mehrere sog. Parts oder Chunks. Im folgenden Beispiel hat der Player nur einen Chunk geschickt (mit der ID 'all') und die Antwortdaten als JSON-Struktur (verpackt als String). Außerdem ist das Datenformat und ein JavaScript-Zeitstempel (ts = TimeStamp) hinterlegt.
+
+```json
+[
+    {
+        "id":"all",
+        "content":"{\"name\":\"Sam Sample\",\"age\":34}",
+        "ts":1627545600,
+        "responseType":"example-data-format"
+    }
+]
+```
+
+Für viele Anwendungsfälle mag das ausreichen: Einfache Umformungsfunktionen in Excel oder R liefern die Informationen in einem sinnvollen Format. Für komplexe Antwortformate müssen jedoch spezielle Programmierungen die Umformung vornehmen. Das IQB hat für seine beiden Antwortformate [`iqb-standard`](https://github.com/iqb-berlin/verona-data-specifications/blob/main/responses/manual_iqb-standard.md) und [`iqb-abi`](https://github.com/iqb-berlin/verona-player-abi/blob/master/docs/key-value.md) das Windows-Programm [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox#readme) veröffentlicht. Die Antwortdaten aller Player des IQB können hierüber in eine gut auswertbare Form gebracht werden.
+
+> In der [Dokumentation des API des Testcenters](https://iqb-berlin.github.io/testcenter-backend/api/#tag/admin-download/paths/~1workspace~1{ws_id}~1report~1response/get) kann man nachlesen, dass über den Endpunkt, der die Antworten ausliefert, auch JSON als Format gewählt werden kann statt CSV. Das ist dann für die Datenintegration in Länderportale wahrscheinlich günstiger.
 
 ---
 
@@ -769,8 +792,6 @@ Es reicht ein Screenshot mit einem Handy, dann spart man sich viel Text. Ansonst
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
 </a>
 </div>
-
----
 
 ---
 
