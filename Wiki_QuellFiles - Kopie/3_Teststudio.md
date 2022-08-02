@@ -1,4 +1,4 @@
-# 3 Teststudio
+# 3 Studio
 
 Das IQB-Teststudio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Dadurch werden die Programmierungen geladen und man sieht ein Formular zum Anmelden.
 
