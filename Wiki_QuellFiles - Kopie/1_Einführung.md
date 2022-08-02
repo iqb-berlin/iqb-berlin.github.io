@@ -39,8 +39,7 @@ seitens des IQB zum Einsatz kommen.
 
 ## IQB-Anwendungen 
 
-Hier finden Sie einführende Videos zu den IQB-Anwendungen
-* [Einführung in die IQB TBA-Systeme](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung)
+[Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung) finden Sie einführende Videos zu den IQB-Anwendungen
 
 ![iqb applications: testcenter, teststudio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
 
@@ -55,7 +54,7 @@ Zugangsdaten. In die Benutzeroberfläche ist ein Editor eingebettet, mit dessen 
 nachträglich bearbeitet und an die entsprechende Testumgebung angepasst werden. Anschließend können die Testdateien dann im **Testcenter** 
 geladen und wiedergegeben werden.
 > **Das Studio für die Aufgaben befindet sich noch in einer Entwicklungsphase und wird im Projektzeitraum 2021-2023 grundlegend überarbeitet. 
-> Die derzeitige Version nennt sich Studio Lite. Die finale Version wird dann nur noch Studio heißen.**
+> Die derzeitige Version nennt sich Studio Lite.In späteren Versionen wird es dann nur noch Studio heißen.**
 
 #### IQB-Testcenter
 
@@ -126,10 +125,13 @@ Diese Web-Anwendung hat einige Einsätze absolviert und wird seitens des IQB als
 
 ## IQB-Studio
 
-Diese Anwendung liegt derzeit als Prototyp vor. Kleine eingearbeitete Teams können hinreichend schnell Aufgaben gestalten. Diese einfache Version des IQB-Studio wird als IQB-Studio-Lite weitergeführt. Nächste Entwicklungsschritte:
+Die erste Version des **Studios** zum Entwurf von Aufgaben trug den Namen: **Teststudio**. In letzter Zeit hat diese Version aber weitreichende Änderungen erfahren, wie bspw.:
 * Verbesserung der Import/Export-Funktionen
 * Editieren des Antwortschemas zur Unterstützung der automatisierten Kodierung
-* Konzeption eines IQB-Studio mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
+* Konzeption eines IQB-Studios mit komplexen Arbeitsabläufen, differenzierten Rollen, Projektmanagement und Definition der Antwortverarbeitung
+* Verbesserungen im Bereich kollaboratives Arbeiten
+Auch der Name schien in Verbindung mit der IQB-Anwendung **Testcenter** ungünstig und wurde nun in **Studio** unbenannt. Die Entwicklungen sind aber damit nicht am Ende, daher trägt das **Studio** derzeitig noch den Zusatz: **Lite**. Es wird weitere Versionen geben. Die finale Version wird dann ohne den Zusatz: **Lite** auskommen und nur noch **Studio** heißen.
+
 
 ## IQB-Kodierbox
 
@@ -297,7 +299,7 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 ### Export
 
 * Units exportieren mit XML und Voud
-* Der Export im Studio erlaubt es, eine Booklet-XML und eine Testtaker-XML zu erzeugen, die zu den exportierten Units passt. Diese Dateien sind allerdings nur ein Vorschlag und sollten bearbeitet werden.
+* Der Export im Studio erlaubt es, eine Booklet-XML und eine Testtaker-XML zu erzeugen, die zu den exportierten Units passt. Diese Dateien sind allerdings nur ein Vorschlag und können nachträglich bearbeitet werden.
 
 ## Testcenter konfigurieren
 
@@ -374,12 +376,11 @@ Die Lösung liegt darin, viele Speicherformate zuzulassen und jeweils Programmco
 Weitere technische Informationen finden Sie [hier](1.7-Technische-Details).
 
 ### Lizenzen
+Die Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch eine Nutzung in kommerziellem Zusammenhang ist möglich, solange Urheber genannt werden.
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/) für Spezifikationen, Dokumentationen, Videos, Metadatenkataloge und ähnliche Inhalte.
+* Für Spezifikationen, Dokumentationen, Videos, Metadatenkataloge und ähnliche Inhalte: [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) für Programmcode.
-
-Diese Lizenzen sollen die Verwendung so wenig wie möglich einschränken. Auch eine Nutzung in kommerziellem Zusammenhang ist möglich, solange Urheber genannt werden und die abgeleiteten Produkte ebenfalls frei zugänglich sind.
+* Für Software gilt im internationalen Rechtsverkehr die Lizenz [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT). Da diese Lizenz für die deutsche Rechtspraxis Mängel aufweist, gilt für Deutschland ein leicht angepasster Text: [MIT für Deutschland](Softwarelizenz-für-die-Anwendung-in-Deutschland).
 
 ---
 
@@ -429,6 +430,55 @@ Die Definitionen für die Aufgaben, Tests, Testpersonen und ggf. System-Checks k
 
 Wenn die gelieferten IQB-Aufgaben in einer eigenen Testanwendung genutzt werden sollen, dann muss diese die Verona-Schnittstelle unterstützen. Vor dem Laden einer Aufgabe wird dann das zugehörige Player-Modul geladen. Die Dokumentation der Schnittstelle finden Sie [hier](https://github.com/verona-interfaces/player/#readme).
 
+Die folgende <a name="checklist"></a>Checkliste gibt eine grobe Orientierung für den Aufwand, der bei einer Integration der Verona-Player-Schnittstelle im eigenen Testsystem zu erwarten ist. Die Zeichen zu Beginn der Optionen markieren steigenden Aufwand.
+
+#### Arbeitet das eigene System aufgabenweise oder strukturiert nach Tests/Teilaufgaben/Items?
+
+:heavy_check_mark: Die Strukturierung im Testablauf folgt Aufgaben, d. h. Stimulus und dazu gehörende Items werden gemeinsam präsentiert und nach der Bearbeitung zur nächsten Aufgabe navigiert. Das ist genau das Szenario, das dem Verona-Player zugrunde liegt. Ein Umbau ist hier nicht erforderlich.
+
+:heavy_exclamation_mark: Mehrere Aufgaben werden gleichzeitig auf einer Seite präsentiert - entweder der gesamte Test oder zumindest Testblöcke (Aufgabenfolgen). Dann muss die Verona-Schnittstelle für jede Aufgabe einzeln implementiert werden, dann also mehrfach pro Seite. Die Kommunikation mit der Aufgabe muss dann auch mehrfach implementiert werden, was das Risiko von Datenverlust erhöht. Besser wäre ein Umbau auf die aufgabenweise Präsentation.
+
+:bangbang: Die Aufgabe wird in Einzelteile zerlegt und stückchenweise präsentiert. Der Stimulus läuft völlig getrennt. Das kann die Verona-Schnittstelle nicht leisten, da die Kategorien "Stimulus", "Instruktion", "Item" usw. nicht transparent sind, also innerhalb der Aufgabendefinition nicht identifiziert werden können.
+
+#### Werden die Html-Seiten komplett auf dem Server erzeugt oder erst dynamisch im Browser?
+
+:heavy_check_mark: Eine Programmierung im Browser (JavaScript) kontrolliert die Anzeige der Aufgaben und sorgt bei Änderungen für das Speichern. Damit kann die Verona-Schnittstelle wie gedacht eingebaut und die Kommunikation eingerichtet werden. Die Kommunikation mit dem Server ist bereits grundsätzlich verfügbar.
+
+:heavy_exclamation_mark: Der Server erzeugt große Teile der Seite, aber es gibt browserseitig Programmierungen für die Interaktion. Hierbei gäbe es u. U. Mehraufwand, weil z. B. das Laden der vorherigen Antworten vom Server bisher nicht im Ablauf vorgesehen war und neu implementiert werden muss.
+
+:bangbang: Der Server erzeugt die komplette Seite. Änderungen der Anzeige werden durch Neuladen der Seite über Schalter/Aktionsflächen bzw. Navigation/Links ausgelöst. Das wäre problematisch, weil das Laden eines Players, der Aufgabendefinition und ggf. vorher gegebener Antworten Aktionen innerhalb des Browsers sind. Wenn es hierzu bisher keine Erfahrungen gibt bzw. grundsätzlich bisher keine Kommunikation zum Server eingebaut ist, dann wäre hier größerer Aufwand nötig.
+
+#### Werden zur Programmierung stark abstrahierende Frameworks genutzt?
+
+:heavy_check_mark: Es werden keine Frameworks benutzt bzw. nur gut kontrollierbare Bibliotheken. Alles kann durch die beteiligten Programmierer:innen gut gesteuert werden. Der Einbau der Schnittstelle kann dann schnell erfolgen.
+
+:heavy_exclamation_mark: Das genutzte Framework verdeckt viele Teile der Programmierung, kann aber gut durch Module/Komponenten erweitert werden. Ein Verona-Host kann extern vorbereitet und dann gezielt in die Automatismen des Frameworks eingebunden werden. Unter Umständen muss diese neue Komponente umfangreicher programmiert werden als beim Vollzugriff auf die Programmierung. Andererseits muss man diesen Aufwand nur einmal leisten und jemand mit demselben Framework kann diese Komponente sofort einsetzen.
+
+:bangbang: Das genutzte Framework kapselt Funktionalität und Navigation so stark, dass ein Eingreifen nicht möglich ist. Die Anpassungsmöglichkeiten durch Konfiguration bzw. Deklaration sind stark beschränkt. Dann muss nach Wegen gesucht werden, das Framework für die Aufgabenanzeige zu umgehen, d. h. die beteiligten Programmierer:innen begeben sich auf neues und u. U. unsicheres und undokumentiertes Terrain.
+
+#### Ist die Nutzung des Html-Elementes `iframe` problematisch?
+
+:heavy_check_mark: Nein. Ein Seitenbereich kann getrost auf diese Art betrieben werden.
+
+:heavy_exclamation_mark: Einige Eigenschaften des `iframe`-Elements lösen unerwünschtes Verhalten aus. Z. B. könnte ein gesetzter Eingabe-Fokus innerhalb des `iframe`-Elements als Verlassen der Seite angesehen werden und entsprechend ein Signal gesendet werden (Testperson versucht im Internet die Antwort zu finden). Hier sind entsprechende Justierungen nötig und möglich.
+
+:bangbang: Das genutzte System verhindert grundsätzlich aus Sicherheitsgründen die Nutzung eines `iframe`-Elements. Das könnte problematisch werden, da dann die Architektur des bisherigen Systems die Verona-Schnittstelle verhindert.
+
+#### Sind Formate für Aufgabendefinition und Antworten hart vorgegeben?
+
+:heavy_check_mark: Nein. Aufgabendefinition und Antworten können ein beliebiges Format haben. Um die Antworten wie bisher auswerten zu können, reicht ein kleiner Konverter.
+
+:heavy_exclamation_mark: Aufgabendefinition und Antworten sind vorgegeben und viele Systemkomponenten verlassen sich darauf. Hier ist Aufwand zu erwarten, über ständige Datenkonvertierungen das bisherige Verhalten abzusichern.
+
+:bangbang: Das gesamte System verlässt sich auf bestimmte Datenstrukturen bei Aufgabendefinition und Antworten und diese Strukturen können nicht über Datenkonvertierung aus den Verona-Daten generiert werden. Erforderliche Zusatzdaten liegen nicht vor, wie z. B. die Information, ob eine gegebene Antwort richtig ist. Hier kollidieren also grundsätzliche Auffassungen über die Datenhaltung und es ist ein erheblicher Umbau nötig.
+
+#### Sind Variationen der Aufgabenanzeige in anderem Zusammenhang nötig?
+
+:heavy_check_mark: Nein. Aufgaben werden zwar mit den gegebenen Antworten auch bei der Kodierung angezeigt und auch als Ansicht für Eltern, wenn sie die Antworten ihres Kindes anschauen möchten, aber es ist genau dieselbe Ansicht wie im Test. In diesen Fällen kann also einfach wieder ein Verona-Player-Host implementiert werden mit den gegebenen Antworten.
+
+:heavy_exclamation_mark: Ja. Das Testsystem soll bei der Anzeige für Kodierung und für Eltern keine Änderungen erlauben. Diese Variation ist für die aktuelle Verona-Schnittstelle nicht verfügbar. Allerdings richtet eine Änderung auch keinen Schaden an, da Änderungen nicht gespeichert werden. Ein Vor- und Zurückblättern stellt die korrekte Beantwortung wieder her.
+
+:bangbang: Ja. Das Testsystem visualisiert mit einer Variation der Aufgabenansicht, ob die Antworten richtig oder falsch sind. Dazu werden in der Nähe der Antwortfelder grüne bzw. rote Symbole eingeblendet. Das wird bei der Ansicht durch die Lehrkräfte und für die Eltern verwendet. Diese Variation ist für die aktuelle Verona-Schnittstelle nicht verfügbar.
 
 ---
 
@@ -453,15 +503,11 @@ Wenn die gelieferten IQB-Aufgaben in einer eigenen Testanwendung genutzt werden 
 
 # 1.7 Technische Details
 
-Die Anwendungen des IQB sind so programmiert und veröffentlicht, dass es möglichst einfach ist, sie zu installieren, anzupassen und ggf. neue Versionen einzuspielen.
+## Programmierung allgemein
 
-## Installation
+Wir programmieren die Frontends und die Verona-Module in *Angular*. Dieses Framework benutzt TypeScript als Sprache und erzeugt sehr effizienten JavaScript-Code. Für das Styling setzen wir die Bibliotheken Angular Material und Flex-Layout ein. Im Backend nutzen wir *php* mit der Erweiterung *Slim* für das Routing sowie *NestJS*, das node.js erweitert und womit man TypeScript auf eine Angular-ähnliche Art nutzen kann. Als Datenbankbetriebssysteme kommen MySQL und PostgreSQL zum Einsatz.
 
-Wir veröffentlichen sog. Docker-Setups. Ein Server muss nur die Virtualisierungslösung [Docker](https://www.docker.com/) unterstützen. Durch die Installation werden dann automatisch die einzelnen Systeme (Frontend, Datenbank, Backend, ggf. zweites Backend, Routing über Traefik) installiert. Die Installationsanleitung (z. B. für das Testcenter [hier](https://github.com/iqb-berlin/testcenter-setup#readme)) gibt dann detaillierte Hinweise für Anpassungen nach der Installation.
-
-### Update
-
-Es werden kontinuierlich neue Versionen veröffentlicht. Es handelt sich dann um Funktionserweiterungen, aber auch Fehler werden regelmäßig zu beheben sein. Im Installationspaket sind Skripte für den Update-Vorgang hinterlegt, die die lokalen Einstellungen und die vorhandenen Daten erhalten. Sollten Änderungen der Datenbank erforderlich sein, werden diese gezielt so vorgenommen, dass die alten Daten erhalten oder ggf. transformiert werden.
+Die Prototypen der Webanwendungen entstehen zunächst ohne Unit- und E2E-Tests. Im Laufe der Bestätigung von Architektur- und Funktionsentscheidungen kommen Tests hinzu, die dann automatisch ausgeführt werden und so eine hohe Codequalität unterstützen. Wir setzen die Grundsätze des Clean Code um und stellen dies über Pull-Requests (Peer-Reviews) und automatische Prüfungen (Linting) sicher.
 
 ## Verona-Module
 
@@ -469,13 +515,21 @@ Programmierungen, die die Darstellung einzelner Aufgaben betreffen, sind nicht f
 
 Voraussetzung für dieses Modul-System ist die Definition einer Schnittstelle, die wir in Zusammenhang mit dem computerbasierten Testen "Verona" nennen. Definitionen finden Sie [hier](https://verona-interfaces.github.io/).
 
-## Computersprachen
+## Installation und Update
 
-Wir programmieren die Frontends und die Verona-Module in *Angular*. Dieses Framework benutzt TypeScript als Sprache und erzeugt sehr effizienten JavaScript-Code. Es gibt Erweiterungen für das Styling (Angular Material, Flex-Layout). Im Backend haben wir bis 2021 *php* mit der Erweiterung *Slim* genutzt. Jetzt kommt zunehmend *NestJS* zum Einsatz, das node.js erweitert und womit man TypeScript auf eine Angular-ähnliche Art nutzen kann.
+Die Anwendungen des IQB sind so programmiert und veröffentlicht, dass es möglichst einfach ist, sie zu installieren, anzupassen und ggf. neue Versionen einzuspielen. Wir veröffentlichen sog. Docker-Setups. Ein Server muss nur die Virtualisierungslösung [Docker](https://www.docker.com/) unterstützen. Durch die Installation werden dann automatisch die einzelnen Systeme (Frontend, Datenbank, Backend, ggf. zweites Backend, Routing über Traefik) installiert. Die Installationsanleitung (z. B. für das Testcenter [hier](https://github.com/iqb-berlin/testcenter-setup#readme)) gibt detaillierte Hinweise für die Steuerung der Installation bzw. der nachträglichen Anpassung (Logo, Farben, Einführungstexte usw.).
 
-Als Datenbank haben wir bisher MySQL oder PostgreSQL genutzt. Neue Anwendungen (Studio, Kodierbox) speichern die Daten in MongoDB. Auch SQLite kommt punktuell zum Einsatz, vor allem als Austauschformat für die Ergebnisdaten.
+Besonderen Aufwand betreiben wir, um bei einem Update der Software die vorherigen Daten zu erhalten bzw. anzupassen (Migration).
 
-Die Prototypen der Webanwendungen sind ohne Unit- und E2E-Tests entstanden, was wir schrittweise beheben. Wir sehen eine hohe Testabdeckung als Voraussetzung für hohe Codequalität. Im Rahmen der Pull-Requests und damit des Peer-Reviews beachten wir die Grundsätze des Clean Code. Viele Prozesse sind automatisiert (Continuous Integration).
+## Datensicherheit
+
+Unsere Software ist nur ein Teil der Gesamtinstallation. Beispielsweise liegen die Firewall und der TP-Verbindungsaufbau über Zertifikate (https) außerhalb unseres Systems. Aber natürlich gibt es viele Aspekte der Datensicherheit, die in unserer Verantwortung liegen. Wir begegnen diesem Thema mit folgenden Maßnahmen:
+
+* Das System zur Codeverwaltung "GitHub" löst automatisch einen Alarm aus, wenn eine Softwarekomponente, die wir verwenden, als Risiko eingestuft wurde. Dies passiert regelmäßig und muss von uns bearbeitet werden, ehe eine neue Veröffentlichung gestattet ist.
+* Vor einer Veröffentlichung wird automatisch geprüft, ob die zur Installation freigegebenen Pakete bedenkliche Komponenten enthalten. Diese sog. Scans bzw. Audits zeigen z. B. an, ob die Apache-Version, die wir der Software beilegen, veraltet ist.
+* Wir beauftragen regelmäßig Penetrationstests. Außerdem geben wir Erkenntnisse aus Penetrationstests weiter, die andere Einrichtungen für die Prüfung unserer Software beauftragt haben.
+* Anfragen und Hinweise zur Datensicherheit können über eine [zentrale E-Mail-Adresse](mailto:iqb-tbadev@hu-berlin.de) an uns geschickt werden, die wir zeitnah beantworten.
+* Alle, die an aktuellen Informationen auch zu Fragen der Datensicherheit interessiert sind, können einen [Newsletter](https://sympa.cms.hu-berlin.de/sympa/subscribe/iqb-tbadev-news) abonnieren.
 
 ---
 <!--+++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
