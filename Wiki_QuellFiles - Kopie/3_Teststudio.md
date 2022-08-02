@@ -1,37 +1,27 @@
 # 3 Studio
 
-Das IQB-Teststudio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Dadurch werden die Programmierungen geladen und man sieht ein Formular zum Anmelden.
+Das IQB-Studio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Dadurch werden die Programmierungen geladen und man sieht ein Formular zum Anmelden.
 
-Eine grobe Einführung in das Teststudio geben auch die nachfolgenden Verlinkungen.
-Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Testcenter) bzgl. des Testcenters an:
+In themenspezifischen Arbeitsbereichen können dann mithilfe eines intergrierten Editors Aufgaben entworfen und organisiert  werden. Auch eine Vorschau der Aufgaben ist möglich. Nach einem abgeschlossenen Entwurf können die ertigen Aufgaben vom **Studio** in definierten Formaten ausgegeben werden.
 
-Des Weiteren besteht das folgende Forum: [Teststudio-Forum](https://github.com/iqb-berlin/teststudio-lite-frontend/discussions)<br>
-Hier finden Sie häufig gestellte Fragen und Antworten sowie Berichte über Einsätze des IQB-Teststudios.
+Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Teststudio) bzgl. des Studios an:
 
 **Installation**
 
-Das IQB hat alle Programmierungen unter einer Open-Source-Lizenz veröffentlicht und erleichtert die Installation durch ein sog. Docker-Setup. Für die Installation muss man einen Server bereitstellen (Linux oder Windows) und dieser Server muss dann über eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. Es ist weiterhin Wissen bzgl. Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete gut abzusichern, übernimmt aber im Schadensfall keine Verantwortung.
+Das IQB hat alle Programmierungen unter einer Open-Source-Lizenz veröffentlicht und erleichtert die Installation durch Containervirtualisierung (Docker). Für die Installation muss man einen Linux-Server bereitstellen und dieser Server muss dann über eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. Es ist weiterhin Wissen bzgl. Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete gut abzusichern, übernimmt aber im Schadensfall keine Verantwortung.
 
-**Arbeitsbereiche**
+**Organisation**
 
-Um Autoren die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit wird außerdem eine Gruppenaufteilung in entsprechende Themen vorgenommen. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der IT, also den Administrator\*innen, für diese Personen freigegeben wurden.
-Bsph. können dann nur alle zum Team Englisch gehörenden Autor\*innen die Arbeitsbereiche für den Fachbereich Englisch sehen.
+Um Autoren die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Bereichsgruppen und Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit können auch die Aufgaben in einem Arbeitsbereich themenspezifisch gruppiert werden. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der IT, also den Administrator\*innen, für diese Personen freigegeben wurden.
+Bsph. können dann nur alle zum Team Englisch gehörenden Autor\*innen die Bereichsgruppe des Fachbereichs Englisch sehen.
 
-> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".**
+**Rechte**
 
-Nach der Anmeldung mit den personenspezifischen Zugangsdaten präsentiert das System eine Liste aller Gruppen und der darin enthaltenen Arbeitsbereiche. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man durch einen Klick auf das IQB-Logo oben links zurück.
+Jeder Zugriff auf das **Studio** kann mit bestimmten Rechten ausgestattet werden. Hiermit kann sichergestellt werden, dass nur festgelegte Personengruppen auf bestimmte Bereiche zugreifen können.
 
-Ein geöffneter Arbeitsbereich teilt sich in zwei Fenster auf:
+**Ausblick**
 
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
-
-* rot markiert:<br>
-	Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
-
-* grün markiert:<br>
-	Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
-
-In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
+In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen Aufgaben mithilfe des **Studios** möglich sein. Somit wird dann Entwurf und Kodierung in einer Anwendung stattfinden und es bedarf keiner weiteren Zwischenschritte oder Hilfsmitteln mehr.
 
 ---
 
@@ -49,7 +39,85 @@ In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
 
 ---
 
-## 3.1 Unit Organisation
+## 3.1 Allgemeine Organisation und Zugriffsrechte
+
+### Organisation
+
+Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben** entworfen und organisiert werden. Zum besseren Verständnis ist nachfolgend einmal eine bsph. Aufteilung zu sehen.
+
+![Studio:Bereiche](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche.png)
+
+Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf bestimmte Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams selber innerhalb ihrer Bereichsgruppe undabhängig von den Systemadministrator\*innen organisieren. 
+
+Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Somit können Teammitglieder auf unterschiedlichen Wegen miteinander in Kontakt treten und Informationen austauschen.
+
+Nachfolgend ist zu erfahren, wie der Zugriff auf Bereichsgruppen und Arbeitsbereiche geregelt ist.
+
+### Zugriffsrechte
+
+Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den so genannten **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
+
+**Was kann der SuperAdmin?**
+
+Über die folgenden Schaltflächen kann der **SuperAdmin** die aufgelisteten Tätigkeiten vornehmen:
+
+![Studio:SuperAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_SuperAdmin.png)
+
+* Personen anlegen, bearbeiten und löschen
+* Bereichsgruppen anlegen, bearbeiten und bestimmten Personen Zugriff darauf geben
+* Arbeitsbereiche in den Bereichsgruppen anlegen, bearbeiten und Personen Zugriff darauf geben
+* spezifische Änderungen an der Anwendung **Studio** vornehmen, bspw. Texte, Farben und Logos der Anwendung ändern
+* Module eines Players und Editors in die Anwendung laden und somit dem Aufgabenentwurf zur Verfügung stellen
+* außerdem alles was der WorkspaceAdmin auch kann
+
+**Was kann der WorkspaceAdmin?**
+
+> Die Schaltfläche um zu den Einstellung für den WorkspaceAdmin zugelangen, ist im oberen Bild zu sehen.
+
+* Änderungen an der für den angemeldeten WorkspaceAdmin freigegebenen Bereichsgruppen vornehmen
+* Arbeitsbereiche anlegen und Einstellungen des Arbeitsbereichs bearbeiten
+* Aufgaben innerhalb eines Arbeitsbereichs organisieren (exportieren, kopieren, importieren usw.)
+* Personen für bestimmte Arbeitsbereiche freigeben
+
+Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** angelegt. Mit diesem können dann weitere Personen angelegt und deren Zugriffrechte (WorkspaceAdmin oder SuperAdmin) gesetzt werden. Im Vorfeld sollte festgelegt werden, wer welche Rechte erhält. Sollen bspw. weitere Personen angelegt werden, kann es ungünstig sein, wenn immer erst die IT benachrichtigt werden muss. Besser ist dann vielleicht jemanden aus dem eigenen Team mit entsprechenden **SuperAdmin**-Rechten auszustatten.
+
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+## 3.2 Unit Organisation
+
+> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".**
+
+Ein geöffneter Arbeitsbereich teilt sich in zwei Fenster auf:
+
+![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
+
+* rot markiert:<br>
+	Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
+
+* grün markiert:<br>
+	Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
+
+In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
+
 
 > **Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereiches. Siehe Bild im Kapitel: 3 Teststudio.**
 
@@ -78,12 +146,12 @@ Werden Units exportiert, verpackt das **Teststudio** die zu dieser Unit gehören
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Bearbeitung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Unit-Bearbeitung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Teststudio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Allgemeine-Organisation-und-Zugriffsrechte">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -96,7 +164,7 @@ Werden Units exportiert, verpackt das **Teststudio** die zu dieser Unit gehören
 
 ---
 
-## 3.2 Unit Bearbeitung
+## 3.3 Unit Bearbeitung
 
 Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
 
@@ -167,12 +235,12 @@ Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. D
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Editor">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Editor">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Unit-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -185,7 +253,7 @@ Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. D
 
 ---
 
-# 3.3 Editor
+# 3.4 Editor
 
 Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die drei folgenden Editoren zur Verfügung:<br>
 
@@ -205,12 +273,12 @@ Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt 
 Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Aspect-v1.21).
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Player-Vorschau-(Verona)">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Bearbeitung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Unit-Bearbeitung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -223,7 +291,7 @@ Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen 
 
 ---
 
-# 3.4 Player Vorschau (Verona)
+# 3.5 Player Vorschau (Verona)
 
 Damit die Aufgabe in der Vorschau wiedergegeben werden kann, muss der zum Editor passende Player gewählt werden. Eine Aufgabe die bspw. mit dem **PlainText-Editor** erstellt wurde, kann nicht von einem **Dan-Player** wiedergegeben werden, da ihm schlicht die enthaltenen Elemente nicht bekannt sind. Zum Zeitpunkt der Erstellung dieser Dokumentation stehen die zwei folgenden Player zur Verfügung:<br>
 	
@@ -241,12 +309,12 @@ Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen 
 
 ---
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Portal-zur-Verwaltung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.6-Portal-zur-Verwaltung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Editor">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Editor">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -259,7 +327,7 @@ Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen 
 
 ---
 
-# 3.5 Portal zur Verwaltung
+# 3.6 Portal zur Verwaltung
 
 ## Arbeitsbereich
 
@@ -292,7 +360,7 @@ Hier können einige Bereiche des Teststudios an individuelle Bedürfnisse angepa
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Player-Vorschau-(Verona)">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>

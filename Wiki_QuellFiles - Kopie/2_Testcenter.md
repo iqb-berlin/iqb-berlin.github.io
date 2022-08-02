@@ -6,7 +6,6 @@ dessen Internet-Adresse in die Adresszeile eines Internet-Browsers. Dadurch werd
 und man sieht ein Formular zum Anmelden. Alle Daten für einen Test sind vorher auf dem Server zu speichern. 
 Das kann über ein integriertes Verwaltungsportal erfolgen oder über andere Webanwendungen, die auf den Server zugreifen.
 
-Eine grobe Einführung in das Testcenter geben auch die nachfolgenden Verlinkungen.                        
 Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Testcenter) bzgl. des Testcenters an.
 
 **Installation**
