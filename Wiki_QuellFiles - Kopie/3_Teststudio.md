@@ -65,10 +65,31 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
 ![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen_01.png)
 
-* Import von Datei(en)
-  * Laden von Aufgaben von einem Speicherort. Zu einer Aufgabe gehört immer eine XML- und eine VOUD-Datei. Diese müssen pro Aufgabe gemeinsam geladen werden. Hierfür können diese zu einer ZIP-Datei verpackt werden. 
-* Neu von vorhandener Aufgabe
-  * 
+**Import von Datei(en)**
+* Laden von Aufgaben von einem Speicherort. Zu einer Aufgabe gehört immer eine XML- und eine VOUD-Datei. Diese müssen pro Aufgabe gemeinsam geladen werden. Hierfür können diese zu einer ZIP-Datei verpackt werden. 
+
+**Neu von vorhandener Aufgabe**
+* Es können Aufgaben aus einem anderen Bereich als Vorlage kopiert werden. Außerdem können Aufgaben im aktiven Arbeitsbereich kopiert werden. 
+
+**Neu (leer)**
+* Erzeugen einer neuen Aufgabe
+
+**Einstellungen**
+* Einstellungen für den aktiven Arbeitsbereich. Hier kann festgelegt werden, welcher Editor und Player voreingestellt ist. Wird eine neue Aufgabe erzeugt, sind diese dann schon voreingestellt in den Eigenschaften der Aufgabe zu finden.
+
+**Nutzer:inne**
+* Übersicht und Kontaktdaten (falls von den jeweiligen Personen freigegeben) aller Personen, die Zugriff auf diesen Arbeitsbreich haben.
+
+**Export**
+* Exportieren von Aufgaben mit zusätzlichen Optionen. Wenn gewünscht können auch die beiden Steuerdateien: Booklet.xml und Testtakers.xml zusätzlich zu den Aufgaben ausgegeben werden. Es kann dann auch festgelegt werden, wie diese beiden Dateien konfiguriert sein sollen. Bspw. kann für die Testtakers.xml festgelegt werden, wie viele Testpersonen angelegt sind und in welchem Modus diese Testpersonen den Test durchführen können. Zusätzlich kann die für die Aufgaben festgelegte Player-Ressource mit ausgegeben werden.
+
+**Verschieben**
+* Aufgaben aus dem aktiven Arbeitsbereich in einen anderen Arbeitsbereich verschieben.
+
+**Kopieren**
+* Kopieren einer Aufgabe des aktiven Arbeitsbereich in einen anderen Arbeitsbereich.
+
+:information_source: **Einige Funktionen bspw.das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
 
 
 
