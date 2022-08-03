@@ -65,7 +65,7 @@ Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenann
 
 Über die folgenden Schaltflächen kann der **SuperAdmin** die aufgelisteten Tätigkeiten vornehmen:
 
-![Studio:SuperAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_SuperAdmin_01.png)
+![Studio:SuperAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_SuperAdmin_02.png)
 
 * Personen anlegen, bearbeiten und löschen
 * Bereichsgruppen anlegen, bearbeiten und bestimmten Personen Zugriff darauf geben
@@ -76,7 +76,7 @@ Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenann
 
 **Was kann der WorkspaceAdmin?**
 
-> Die Schaltfläche um zu den Einstellung für den WorkspaceAdmin zugelangen, ist im oberen Bild zu sehen.
+![Studio:WorkspaceAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_WorkspaceAdmin.png)
 
 * Änderungen an der für den angemeldeten WorkspaceAdmin freigegebenen Bereichsgruppen vornehmen
 * Arbeitsbereiche anlegen und Einstellungen des Arbeitsbereichs bearbeiten
