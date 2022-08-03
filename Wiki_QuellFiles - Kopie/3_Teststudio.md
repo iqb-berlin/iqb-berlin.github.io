@@ -10,15 +10,6 @@ Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iq
 
 Das IQB hat alle Programmierungen unter einer Open-Source-Lizenz veröffentlicht und erleichtert die Installation durch Containervirtualisierung (Docker). Für die Installation muss man einen Linux-Server bereitstellen und dieser Server muss dann über eine Internet-Adresse erreichbar sein. Die Installation sollte erfahrenes IT-Fachpersonal durchführen. Die Dokumentation hierzu setzt Wissen vor allem zur Virtualisierungssoftware Docker voraus. Es ist weiterhin Wissen bzgl. Datensicherheit nötig, denn sobald ein Server öffentlich verfügbar ist, müssen Maßnahmen gegen Angriffe durch Schadsoftware ergriffen werden. Das IQB ist bemüht, die Installationspakete gut abzusichern, übernimmt aber im Schadensfall keine Verantwortung.
 
-**Organisation**
-
-Um Autoren die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Bereichsgruppen und Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in den Arbeitsbereichen organisiert. Im Sinne einer besseren Übersichtlichkeit können auch die Aufgaben in einem Arbeitsbereich themenspezifisch gruppiert werden. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der IT, also den Administrator\*innen, für diese Personen freigegeben wurden.
-Bsph. können dann nur alle zum Team Englisch gehörenden Autor\*innen die Bereichsgruppe des Fachbereichs Englisch sehen.
-
-**Rechte**
-
-Jeder Zugriff auf das **Studio** kann mit bestimmten Rechten ausgestattet werden. Hiermit kann sichergestellt werden, dass nur festgelegte Personengruppen auf bestimmte Bereiche zugreifen können.
-
 **Ausblick**
 
 In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen Aufgaben mithilfe des **Studios** möglich sein. Somit wird dann Entwurf und Kodierung in einer Anwendung stattfinden und es bedarf keiner weiteren Zwischenschritte oder Hilfsmitteln mehr.
