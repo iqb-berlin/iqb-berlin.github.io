@@ -63,7 +63,7 @@ Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mitt
 
 Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
-![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen.png)
+![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen_01.png)
 
 * Import von Datei(en)
   * jjjjj
