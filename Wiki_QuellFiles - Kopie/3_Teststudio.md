@@ -47,7 +47,7 @@ Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. *
 
 ![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_01.png)
 
-![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch.png)
+![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_01.png)
 
 Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf bestimmte Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams selber innerhalb ihrer Bereichsgruppe undabhängig von den Systemadministrator\*innen organisieren. 
 
