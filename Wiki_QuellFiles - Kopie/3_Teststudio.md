@@ -66,7 +66,9 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 ![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen_01.png)
 
 * Import von Datei(en)
-  * jjjjj
+  * Laden von Aufgaben von einem Speicherort. Zu einer Aufgabe gehört immer eine XML- und eine VOUD-Datei. Diese müssen pro Aufgabe gemeinsam geladen werden. Hierfür können diese zu einer ZIP-Datei verpackt werden. 
+* Neu von vorhandener Aufgabe
+  * 
 
 
 
