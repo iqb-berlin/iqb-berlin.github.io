@@ -1,8 +1,8 @@
 # 3 Studio
 
-Das IQB-Studio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Dadurch werden die Programmierungen geladen und man sieht ein Formular zum Anmelden.
+Das IQB-Studio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Anschließend wird die Webanwendung geladen und es wird ein Formular zur Anmeldung angezeigt.
 
-In themenspezifischen Arbeitsbereichen können dann mithilfe eines intergrierten Editors Aufgaben entworfen und organisiert  werden. Auch eine Vorschau der Aufgaben ist möglich. Nach einem abgeschlossenen Entwurf können die ertigen Aufgaben vom **Studio** in definierten Formaten ausgegeben werden.
+In themenspezifischen Arbeitsbereichen können dann mithilfe eines intergrierten Editors Aufgaben entworfen und organisiert  werden. Auch eine Vorschau der Aufgaben ist möglich. Nach einem abgeschlossenen Entwurf können die fertigen Aufgaben vom **Studio** in definierten Formaten ausgegeben werden.
 
 Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Teststudio) bzgl. des Studios an:
 
@@ -12,7 +12,7 @@ Das IQB hat alle Programmierungen unter einer Open-Source-Lizenz veröffentlicht
 
 **Organisation**
 
-Um Autoren die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Bereichsgruppen und Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in diesen Bereichen organisiert. Im Sinne einer besseren Übersichtlichkeit können auch die Aufgaben in einem Arbeitsbereich themenspezifisch gruppiert werden. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der IT, also den Administrator\*innen, für diese Personen freigegeben wurden.
+Um Autoren die Möglichkeit zu bieten an Aufgabenentwürfen zu arbeiten, ist eine Aufteilung bzw. Organisation in Bereichsgruppen und Arbeitsbereiche sinnvoll. Die Aufgabenentwürfe (Units) werden dann in den Arbeitsbereichen organisiert. Im Sinne einer besseren Übersichtlichkeit können auch die Aufgaben in einem Arbeitsbereich themenspezifisch gruppiert werden. Zugriffsrechte regeln den Zugriff auf diese Bereiche. So können Personen nur Bereiche sehen, die von der IT, also den Administrator\*innen, für diese Personen freigegeben wurden.
 Bsph. können dann nur alle zum Team Englisch gehörenden Autor\*innen die Bereichsgruppe des Fachbereichs Englisch sehen.
 
 **Rechte**
@@ -43,9 +43,11 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 ### Organisation
 
-Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben** entworfen und organisiert werden. Zum besseren Verständnis ist nachfolgend einmal eine bsph. Aufteilung zu sehen.
+Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben** entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. Es folgt ein praktisches Anwendungsbeispiel.
 
-![Studio:Bereiche](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche.png)
+![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch.png)
+
+![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch.png)
 
 Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf bestimmte Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams selber innerhalb ihrer Bereichsgruppe undabhängig von den Systemadministrator\*innen organisieren. 
 
