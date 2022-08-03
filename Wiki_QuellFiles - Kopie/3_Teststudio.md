@@ -45,7 +45,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben** entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. Es folgt ein praktisches Anwendungsbeispiel.
 
-![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_03.png)
+![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_04.png)
 
 ![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_02.png)
 
