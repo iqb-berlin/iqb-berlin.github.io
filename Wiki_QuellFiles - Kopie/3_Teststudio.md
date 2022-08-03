@@ -47,11 +47,22 @@ Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. *
 
 ![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_04.png)
 
-Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben sind zu sehen und können bearbeitet oder neu angelegt werden.
+Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben sind in Gruppen sortiert zu sehen.
 
 ![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_04.png)
 
-Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams undabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
+Im nächsten Bild ist ein Arbeitsbereich mit enthaltenen Aufgaben zu sehen.
+
+![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Arbeitsbereich.png)
+
+
+
+
+
+
+
+
+Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams unabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
 
 Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten.
 
@@ -59,7 +70,7 @@ Nachfolgend ist zu erfahren, wie der Zugriff auf Bereichsgruppen und Arbeitsbere
 
 ### Zugriffsrechte
 
-Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den so genannten **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
+Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen, die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
 
 **Was kann der SuperAdmin?**
 
@@ -83,7 +94,7 @@ Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenann
 * Aufgaben innerhalb eines Arbeitsbereichs organisieren (exportieren, kopieren, importieren usw.)
 * Personen für bestimmte Arbeitsbereiche freigeben
 
-Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** angelegt. Mit diesem können dann weitere Personen angelegt und deren Zugriffrechte (WorkspaceAdmin oder SuperAdmin) gesetzt werden. Im Vorfeld sollte festgelegt werden, wer welche Rechte erhält. Sollen bspw. weitere Personen angelegt werden, kann es ungünstig sein, wenn immer erst die IT benachrichtigt werden muss. Besser ist dann vielleicht jemanden aus dem eigenen Team mit entsprechenden **SuperAdmin**-Rechten auszustatten.
+Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** angelegt. Mit diesem können dann weitere Personen angelegt und deren Zugriffrechte (WorkspaceAdmin oder SuperAdmin) gesetzt werden. Im Vorfeld sollte festgelegt werden, wer welche Rechte erhält. Sollen bspw. weitere Personen hinzukommen, kann es ungünstig sein, wenn immer erst die IT benachrichtigt werden muss. Besser ist es dann vielleicht jemanden aus dem eigenen Team mit entsprechenden **SuperAdmin**-Rechten auszustatten.
 
 ---
 
