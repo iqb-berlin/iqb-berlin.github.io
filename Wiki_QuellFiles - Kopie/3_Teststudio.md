@@ -32,6 +32,8 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 ## 3.1 Organisation
 
+### Bereichsgruppen, Arbeitsbereiche und Co
+
 Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben**, auch genannt **Units**, entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. 
 
 ![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_04.png)
@@ -82,14 +84,15 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
 :information_source: **Einige Funktionen bspw.das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
 
-
-
+### Administration und Kommunikation im Team
 
 Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams unabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
 
+:information_source: In die Einstellungsebene für die Bereichsgruppe gelangt man über das Zahnradsymbol rechts neben der Bereichsgruppe.
+
 Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten.
 
-Nachfolgend ist zu erfahren, wie der Zugriff auf Bereichsgruppen und Arbeitsbereiche geregelt ist.
+![Studio:Kontaktdaten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Kontaktdaten.png)
 
 ---
 
