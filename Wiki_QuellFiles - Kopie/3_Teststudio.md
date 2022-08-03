@@ -26,7 +26,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Unit Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation-und-Zugriffsrechte">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -39,25 +39,34 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 ---
 
-## 3.1 Allgemeine Organisation und Zugriffsrechte
+## 3.1 Organisation
 
-### Organisation
-
-Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben** entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. 
+Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben**, auch genannt **Units**, entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. 
 
 ![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_04.png)
 
-Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben sind in Gruppen sortiert zu sehen.
+Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt anhand eines Beispiels aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben (Units) sind in Gruppen sortiert zu sehen.
 
 ![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_04.png)
 
-Im nächsten Bild ist ein Arbeitsbereich mit enthaltenen Aufgaben zu sehen.
+Im nächsten Bild ist einmal bsph. der Arbeitsbereich "Hören und verstehen" in der Bereichsgruppe "Deutsch" mit den enthaltenen Aufgaben (Units) zu sehen. In diesem Arbeitsbereich befinden sich 2 Gruppen mit den Namen "Templates" und "Vorlagen". Außerdem ist die Aufteilung eines Arbeitsbereichs einmal dargestellt und näher beschrieben.
 
-![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Arbeitsbereich.png)
+:information_source:> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck dieses Arbeitsbereichs. So könnte bspw. eine Aufteilung in unterschiedliche Fachbereiche sinnvoll sein.**
 
+![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Arbeitsbereich.png)
 
+* rot markiert:<br>
+	Hier können Units gelöscht, neu erzeugt, exportiert/importiert, kopiert und verschoben werden.
 
+* grün markiert:<br>
+	Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden. In späteren Versionen des **Studios** kann hier auch die Kodierung der Aufgabenelemente vorgenommen werden.
 
+Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
+
+![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen.png)
+
+* Import von Datei(en)
+ * jjjjj
 
 
 
@@ -68,7 +77,29 @@ Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** perso
 
 Nachfolgend ist zu erfahren, wie der Zugriff auf Bereichsgruppen und Arbeitsbereiche geregelt ist.
 
-### Zugriffsrechte
+---
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+
+## 3.2 Zugriffsrechte
 
 Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen, die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
 
@@ -117,19 +148,13 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 
 ---
 
-## 3.2 Unit Organisation
+## 3.3 Unit Organisation
 
-> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch".**
 
 Ein geöffneter Arbeitsbereich teilt sich in zwei Fenster auf:
 
 ![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
 
-* rot markiert:<br>
-	Organisation der Units. Hier können Units gelöscht, neu erzeugt, exportiert/importiert und verschoben werden.
-
-* grün markiert:<br>
-	Bearbeiten einer Unit. Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden.
 
 In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
 
