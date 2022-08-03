@@ -90,9 +90,11 @@ Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann dies
 
 :information_source: In die Einstellungsebene für die Bereichsgruppe gelangt man über das Zahnradsymbol rechts neben der Bereichsgruppe.
 
-Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten.
+Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. 
 
-![Studio:Kontaktdaten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Kontaktdaten.png)
+![Studio:Kontaktdaten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Kontaktdaten_01.png)
+
+Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten. Kommentare zu einer Aufgaben können im Arbeitsbereich in den Eigenschaften einer Aufgabe geschrieben werden.
 
 ---
 
@@ -114,7 +116,6 @@ Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** perso
 </div>
 
 ---
-
 
 ## 3.2 Zugriffsrechte
 
@@ -165,63 +166,7 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 
 ---
 
-## 3.3 Unit Organisation
-
-
-Ein geöffneter Arbeitsbereich teilt sich in zwei Fenster auf:
-
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Aufteilung_Arbeitsbereich_final.png)
-
-
-In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
-
-
-> **Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereiches. Siehe Bild im Kapitel: 3 Teststudio.**
-
-In diesem Bereich können Units verwaltet bzw. organisiert werden. Nachdem eine Unit markiert wurde, kann diese über die unten angeordneten Funktionschaltflächen gelöscht, exportiert, verschoben oder deren Eigenschaften verändert werden. Das kleine Pluszeichen legt eine neue Unit an. Oberhalb der Unit Auflistung im linken Bereich des Portals befinden sich zwei weitere Funktionsschaltflächen. Diese ermöglichen das Speichern bzw. Verwerfen von Änderungen an einer gewählten Unit.
-
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Funktionen_Arbeitsbereich_final.png)
-
-**Unit verschieben**
-
-Es ist möglich Units zu verschieben. Verschoben kann dabei nur in andere für die angemeldete Person freigegebene Arbeitsbereiche.
-
-**Unit kopieren**
-
-Markierte Units können kopiert werden. Alle Inhalte dieser Unit werden dabei in eine neu zu benennende Unit kopiert.
-
-**Unit importieren**
-
-Der Import von bestehenden Units ist ebenso möglich. Besteht die zu importierende Unit aus einer XML-/ und einer VOUD-Datei, sollten diese zuvor in einem Zip-Format gepackt werden. Anschließend kann die Zip-Datei ausgewählt und importiert werden. Der gewählte Name der Zip-Datei spielt dabei keine Rolle, sollte aber einer gewissen Logik folgen um den Überblick zu behalten.
-
-> **VOUD-Dateien können nicht einzeln importiert werden. Sie müssen immer zusammen mit der zugehörigen XML-Datei (`Unit.xml`) importiert werden. Daher sollten diese Dateien zuvor immer in einem Zip-Format verpackt und dann importiert werden!**
-
-**Unit exportieren**
-
-Werden Units exportiert, verpackt das **Teststudio** die zu dieser Unit gehörenden Dateien in einer Zip-Datei. Eine Unit besteht dabei aus einer XML-Datei und einer VOUD-Datei. Die Zip-Datei wird automatisch wie folgt benannt:<br> **aktuelles Datum***UnitDefs.voud.zip*. Es ist auch möglich eine passende `Testtakers.xml` und `Booklet.xml` mit ausgeben zu lassen. In der `Booklet.xml` sind dann bspw. alle zum Paket gehörenden Units bereits eingebunden. Um diese Dateien zu erzeugen, muss im Exportfenster der Haken bei "Als Paket für Testcenter" gesetzt werden.
-
----
-
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Unit-Bearbeitung">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Allgemeine-Organisation-und-Zugriffsrechte">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div align='center'>
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
-</a>
-</div>
-
----
-
-## 3.3 Unit Bearbeitung
+## 3.3 Aufgaben (Unit) Bearbeitung
 
 Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
 
