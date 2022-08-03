@@ -51,22 +51,22 @@ Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt anhand eines
 
 Im nächsten Bild ist einmal bsph. der Arbeitsbereich "Hören und verstehen" in der Bereichsgruppe "Deutsch" mit den enthaltenen Aufgaben (Units) zu sehen. In diesem Arbeitsbereich befinden sich 2 Gruppen mit den Namen "Templates" und "Vorlagen". Außerdem ist die Aufteilung eines Arbeitsbereichs einmal dargestellt und näher beschrieben.
 
-:information_source:> **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck dieses Arbeitsbereichs. So könnte bspw. eine Aufteilung in unterschiedliche Fachbereiche sinnvoll sein.**
+:information_source: **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck dieses Arbeitsbereichs. So könnte bspw. eine Aufteilung in unterschiedliche Fachbereiche sinnvoll sein.**
 
 ![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Arbeitsbereich.png)
 
-* rot markiert:<br>
-	Hier können Units gelöscht, neu erzeugt, exportiert/importiert, kopiert und verschoben werden.
+rot markiert:<br>
+Hier können Units gelöscht, neu erzeugt, exportiert/importiert, kopiert und verschoben werden.
 
-* grün markiert:<br>
-	Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden. In späteren Versionen des **Studios** kann hier auch die Kodierung der Aufgabenelemente vorgenommen werden.
+grün markiert:<br>
+Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden. In späteren Versionen des **Studios** kann hier auch die Kodierung der Aufgabenelemente vorgenommen werden.
 
 Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
 ![Studio:Unit_Funktionen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Funktionen.png)
 
 * Import von Datei(en)
- * jjjjj
+  * jjjjj
 
 
 
