@@ -47,13 +47,13 @@ Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. *
 
 ![Studio:Bereiche theoretisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_theoretisch_04.png)
 
-im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben sind zu sehen und können bearbeitet oder neu angelegt werden.
+Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben sind zu sehen und können bearbeitet oder neu angelegt werden.
 
 ![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_04.png)
 
-Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf bestimmte Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams selber innerhalb ihrer Bereichsgruppe undabhängig von den Systemadministrator\*innen organisieren. 
+Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams undabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
 
-Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Somit können Teammitglieder auf unterschiedlichen Wegen miteinander in Kontakt treten und Informationen austauschen.
+Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten.
 
 Nachfolgend ist zu erfahren, wie der Zugriff auf Bereichsgruppen und Arbeitsbereiche geregelt ist.
 
@@ -65,7 +65,7 @@ Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenann
 
 Über die folgenden Schaltflächen kann der **SuperAdmin** die aufgelisteten Tätigkeiten vornehmen:
 
-![Studio:SuperAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_SuperAdmin.png)
+![Studio:SuperAdmin](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_SuperAdmin_01.png)
 
 * Personen anlegen, bearbeiten und löschen
 * Bereichsgruppen anlegen, bearbeiten und bestimmten Personen Zugriff darauf geben
