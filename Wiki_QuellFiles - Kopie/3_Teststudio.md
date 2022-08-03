@@ -53,12 +53,12 @@ Im nächsten Bild ist einmal bsph. der Arbeitsbereich "Hören und verstehen" in 
 
 :information_source: **Die Benennung der Arbeitsbereiche richtet sich günstigerweise nach dem Zweck dieses Arbeitsbereichs. So könnte bspw. eine Aufteilung in unterschiedliche Fachbereiche sinnvoll sein.**
 
-![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Arbeitsbereich.png)
+![Studio:Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Arbeitsbereich_01.png)
 
-rot markiert:<br>
+**rot markiert:**<br>
 Hier können Units gelöscht, neu erzeugt, exportiert/importiert, kopiert und verschoben werden.
 
-grün markiert:<br>
+**grün markiert:**<br>
 Hier können die Eigenschaften einer Unit verändert, neue Aufgabenelemente mittels Editor erzeugt und Aufgaben in einer Vorschau dargestellt werden. In späteren Versionen des **Studios** kann hier auch die Kodierung der Aufgabenelemente vorgenommen werden.
 
 Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
