@@ -170,6 +170,8 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 
 Nach Öffnen eines Arbeitsbereichs kann in der Unit-Organisation eine neue Aufgabe angelegt oder eine bestehende Aufgaben bearbeitet werden. Wird eine Aufgabe neu angelegt, können alle relevanten Eigenschaften zu dieser Aufgabe vorab in einem Formular eingegeben werden. Es ist auch möglich diese Eigenschaften nachträglich zu ändern. Dazu ist die entsprechende Aufgabe in der Liste zu markieren. Anschließend erscheinen im oberen Teil einige Reiter. Über den Reiter "Eigenschaften" können die Eigenschaften nachträglich geändert werden. Alle weiteren Reiter werden nachfolgend beschrieben.
 
+![Unit Bearbeitung](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Unit_Bearbeitung_01.png)
+
 ### Reiter: Eigenschaften
 
 Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
@@ -214,7 +216,7 @@ Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung aktuelle
 
 Nachfolgendes Bild zeigt die Voransicht und deren Bestandteile:
 
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Editor_Vorschau_01.png)
+![Editor Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Editor_Vorschau_01.png)
 
 Beschreibung des grün markierten Bereiches:<br>
 
