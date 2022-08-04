@@ -41,7 +41,7 @@ seitens des IQB zum Einsatz kommen.
 
 [Hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung) finden Sie einführende Videos zu den IQB-Anwendungen
 
-![iqb applications: testcenter, teststudio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
+![iqb applications: testcenter, studio, codingbox](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_2.png)
 
 #### IQB-Studio
 
