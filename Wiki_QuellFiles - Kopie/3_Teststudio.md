@@ -4,7 +4,7 @@ Das IQB-Studio ist eine Webanwendung für den Entwurf von Kompetenztests oder Be
 
 In themenspezifischen Arbeitsbereichen können dann mithilfe eines intergrierten Editors Aufgaben entworfen und organisiert  werden. Auch eine Vorschau der Aufgaben ist möglich. Nach einem abgeschlossenen Entwurf können die fertigen Aufgaben vom **Studio** in definierten Formaten ausgegeben werden.
 
-Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Teststudio) bzgl. des Studios an:
+Das IQB bietet folgende [Video-Präsentationen](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Studio) bzgl. des Studios an:
 
 **Installation**
 
@@ -17,7 +17,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation-und-Zugriffsrechte">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -99,12 +99,12 @@ Weiterhin können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Zugriffsrechte">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -148,12 +148,12 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Aufgabenbearbeitung-und-Erstellung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -242,7 +242,7 @@ Hier können Kommentare zu den Aufgaben hinterlegt werden. Auf diesem Weg könne
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Unit-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.2-Zugriffsrechte">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -280,7 +280,7 @@ Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen 
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Unit-Bearbeitung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.3-Aufgabenbearbeitung-und-Erstellung">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -333,7 +333,7 @@ Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen 
 
 ## Arbeitsbereich
 
-Damit mehrere Studien gleichzeitig im Teststudio bearbeitet bzw. vorbereitet werden können, sind sog. Arbeitsbereiche vorbereitet. Die Benennung richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch". Für jedes Verwaltungskonto ist festgelegt, welche Arbeitsbereiche eingesehen (Nur-Lese-Modus) bzw. geändert werden können (Lesen-Und-Schreiben-Modus). Um die Übersichtlichkeit zu erhöhen, sind die Bereiche Gruppen zugeordnet. So gehören dann bspw. alle Arbeitsbereiche zum Thema Mathematik zur Gruppe Mathematik usw..
+Damit mehrere Studien gleichzeitig im **Studio** bearbeitet bzw. vorbereitet werden können, sind sog. Arbeitsbereiche vorbereitet. Die Benennung richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch". Für jedes Verwaltungskonto ist festgelegt, welche Arbeitsbereiche eingesehen (Nur-Lese-Modus) bzw. geändert werden können (Lesen-Und-Schreiben-Modus). Um die Übersichtlichkeit zu erhöhen, sind die Bereiche Gruppen zugeordnet. So gehören dann bspw. alle Arbeitsbereiche zum Thema Mathematik zur Gruppe Mathematik usw..
 
 Nach der Anmeldung präsentiert das System eine Liste aller Arbeitsbereiche, die für diese Person freigegeben sind. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
 
@@ -357,7 +357,7 @@ Hier werden alle angelegten Bereiche aufgelistet. Es können neue Bereiche angel
 Hier können neue Editor-bzw. Playerversionen geladen werden. Diese neuen Versionen können dann bei Benutzung des Editors angewählt werden. Die aktuellen Versionen sind in den entsprechenden GitHub-Repositories zu finden.
 
 * **Einstellungen:**<br>
-Hier können einige Bereiche des Teststudios an individuelle Bedürfnisse angepasst werden. Es ist bspw. möglich Texte der Anwendung anzupassen. Es ist auch möglich neue Gruppen für die Arbeitsbereiche anzulegen bzw. bestehende Gruppen zu löschen.
+Hier können einige Bereiche des **Studios** an individuelle Bedürfnisse angepasst werden. Es ist bspw. möglich Texte der Anwendung anzupassen. Es ist auch möglich neue Gruppen für die Arbeitsbereiche anzulegen bzw. bestehende Gruppen zu löschen.
 
 ---
 

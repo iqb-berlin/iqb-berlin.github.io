@@ -1,3 +1,5 @@
+Derzeitig befindet sich hier nur ein Video zur älteren Version **Teststudio**. Ein aktuelles Video zum **Studio** ist in Arbeit und wird an dieser Stelle demnächst veröffentlicht.
+
 <table border=1>
 <tr>
 <th align=left width=1000>
@@ -11,7 +13,7 @@
 
 **Inhalt:**
 
-> Struktur, Aufbau und Funktionen des Teststudios<br>
+> Struktur, Aufbau und Funktionen des Studios<br>
 > Aufbau und Funktion des integrierten Editors
 
 </td></tr>
