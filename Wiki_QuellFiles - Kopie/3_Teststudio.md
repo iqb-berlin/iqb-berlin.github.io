@@ -70,7 +70,7 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 **Einstellungen**
 * Einstellungen für den aktiven Arbeitsbereich. Hier kann festgelegt werden, welcher Editor und Player voreingestellt ist. Wird eine neue Aufgabe erzeugt, sind diese dann schon voreingestellt in den Eigenschaften der Aufgabe zu finden.
 
-**Nutzer:inne**
+**Nutzer:innen**
 * Übersicht und Kontaktdaten (falls von den jeweiligen Personen freigegeben) aller Personen, die Zugriff auf diesen Arbeitsbreich haben.
 
 **Export**
@@ -82,19 +82,19 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 **Kopieren**
 * Kopieren einer Aufgabe des aktiven Arbeitsbereich in einen anderen Arbeitsbereich.
 
-:information_source: **Einige Funktionen bspw.das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
+:information_source: **Einige Funktionen bspw. das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
 
 ### Administration und Kommunikation
 
-Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams unabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
+Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte), kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und angelegten Personen Zugriff darauf gewehren. So kann die für einen Bereich verantwortliche Person den Zugriff einzelner Mitglieder einer Fachgruppe auf Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. Dies ermöglicht den Fachgruppen eine von den Systemadministrator\*innen unabhängige Organisation ihres Bereichs.
 
 :information_source: In die Einstellungsebene für die Bereichsgruppe gelangt man über das Zahnradsymbol rechts neben der Bereichsgruppe.
 
-Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Die Person kann dann im Weiteren festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. 
+Jede in der Anwendung hinterlegte Person kann nach Anmeldung am **Studio** personenspezifische Daten, wie bspw. eine E-Mailadresse angeben. Anschließend kann die Person festlegen, ob diese Informationen für andere ersichtlich sind oder nicht. 
 
 ![Studio:Kontaktdaten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Kontaktdaten_01.png)
 
-Außerdem können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Teammitgliedern auf unterschiedlichen Wegen miteinander in Kontakt zu treten. Kommentare zu einer Aufgaben können im Arbeitsbereich in den Eigenschaften einer Aufgabe geschrieben werden.
+Weiterhin können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies ermöglicht Mitgliedern einer Fachgruppe auf unterschiedlichen Wegen miteinander in Kontakt zu treten. Kommentare zu einer Aufgaben können im Arbeitsbereich in den Eigenschaften einer Aufgabe geschrieben werden.
 
 ---
 
@@ -166,13 +166,11 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 
 ---
 
-## 3.3 Aufgaben (Unit) Bearbeitung
+## 3.3 Aufgabenbearbeitung und Erstellung
 
-Die Unit Organisation erfolgt im grün markierten Fenster des Arbeitsbereich. Siehe Bild im Kapitel: 3 Teststudio.
+Nach Öffnen eines Arbeitsbereichs kann in der Unit-Organisation eine neue Aufgabe angelegt oder eine bestehende Aufgaben bearbeitet werden. Wird eine Aufgabe neu angelegt, können alle relevanten Eigenschaften zu dieser Aufgabe vorab in einem Formular eingegeben werden. Es ist auch möglich diese Eigenschaften nachträglich zu ändern. Dazu ist die entsprechende Aufgabe in der Liste zu markieren. Anschließend erscheinen im oberen Teil einige Reiter. Über den Reiter "Eigenschaften" können die Eigenschaften nachträglich geändert werden. Alle weiteren Reiter werden nachfolgend beschrieben.
 
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Unit_bearbeiten_fina.png)
-
-### Tab Eigenschaften
+### Reiter: Eigenschaften
 
 Unter den Eigenschaften einer Unit werden einerseits Metadaten, wie Namen und Beschreibung festgelegt und andererseits werden der zu verwendende Editor und der zugehörige Player bestimmt.
 
@@ -204,11 +202,11 @@ Damit eine entworfene Aufgabe sowohl in der Vorschau, als auch später im Testce
 
 > Mehr zum Thema Player entnehmen Sie bitte dem Kapitel **Player.**
 
-### Tab Editor
+### Reiter: Editor
 
 > Detailierte Informationen zur Arbeit mit den Editoren finden Sie im Kapitel **Editor.**
 
-### Tab Vorschau
+### Reiter: Vorschau
 
 Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung aktueller Änderungen in der Voransicht begutachtet werden.
 
@@ -216,7 +214,7 @@ Während der Erstellung einer Aufgabe kann die Aufgabe ohne Speicherung aktuelle
 
 Nachfolgendes Bild zeigt die Voransicht und deren Bestandteile:
 
-![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editor_Voransicht_final.png)
+![iqb online assessment applications with relations: Teststudio Funktionen Arbeitsbereich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Editor_Vorschau_01.png)
 
 Beschreibung des grün markierten Bereiches:<br>
 
@@ -224,15 +222,15 @@ Beschreibung des grün markierten Bereiches:<br>
 **R:** zeigt die Vollständigkeit der Reaktionen an, d. h. es wird angezeigt, ob alle Input-Felder/Anklick-Optionen bedient wurden: grün = ja, alle; gelb = ja, teilweise; rot = nein, keine.<br>
 **F:** zeigt an, ob sich der Fokus noch im aktuellen Fenster befindet. Dient der Kontrolle bei der späteren Testdurchführung, ob sich die Testperson immer noch im Fenster der Testdurchführung befindet oder ob diese das Testfenster verlassen hat und stattdessen ein anderes Fenter geöffnet hat (andere Website etc.)
 
-### Anlegen einer Unit
+### Reiter: Kodierung
 
-Nach Auswahl und öffnen des gewünschten Arbeitsbereichs kann mithilfe der Plus-Schaltfläche im linken Teil des Arbeitsbereichs (rot markiert) eine neue Unit angelegt werden. Nach Anlage sollten die Eigenschaften hinsichtlich Namensgebung, Auswahl des Editors und Players im rechten Fenster erfolgen. Anschließend können die Editierfunktionen geöffnet werden mittels Klick auf den Tab: Editor. Die gewünschte Aufgabenelemente können dann auf den Seiten einer Unit platziert werden und deren Eigenschaften angepasst werden.
+In den nächsten Versionen des **Studios** wird es an dieser Stelle möglich sein eine Kodierung für die Aufgabenelemente anzulegen.
 
-#### Unit Bezeichner
+### Reiter: Kommentare
 
-Jedes Aufgabenelement, sei es ein Textfeld, ein Button etc., erhält einen eindeutigen Bezeichner. Dieser setzt sich wie folgt zusammen: *canvasElement* + *fortlaufende Nummer*
+Hier können Kommentare zu den Aufgaben hinterlegt werden. Auf diesem Weg können Mitgliedern einer Fachgruppe Informationen zu einer Aufgabe austauschen.
 
-Das erste Element einer Unitseite erhält somit den Bezeichner canvasElement1. Der Bezeichner eines Elements ist auch immer im Eigenschaftenfenster des Elementes ersichtlich. Dieser Bezeichner muss einer im Sinne der Auswertung relevanten Aufgabe zugeordnet werden, bspw: Aufgabe 1a = canvasElement9. Es sollten also während der Aufgabenerstellung immer parallel eine Liste geführt werden, die diese Zuordnung aufzeigen.
+:information_source: Gegebene Kommentare können nur von den Autor\*innen wieder gelöscht werden!
 
 ---
 
