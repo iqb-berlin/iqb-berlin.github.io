@@ -32,7 +32,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 ## 3.1 Organisation
 
-### Bereichsgruppen, Arbeitsbereiche und Co
+### Bereichsgruppen und Arbeitsbereiche
 
 Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. **Arbeitsbereiche** werden dabei immer einer **Bereichsgruppe** zugeordnet. Innerhalb der **Arbeitsbereiche** können dann die eigentlichen **Aufgaben**, auch genannt **Units**, entworfen und organisiert werden. Nachfolgend ist diese Struktur noch einmal verdeutlicht dargestellt. 
 
@@ -40,7 +40,7 @@ Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. *
 
 Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt anhand eines Beispiels aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben (Units) sind in Gruppen sortiert zu sehen.
 
-![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_04.png)
+![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_05.png)
 
 Im nächsten Bild ist einmal bsph. der Arbeitsbereich "Hören und verstehen" in der Bereichsgruppe "Deutsch" mit den enthaltenen Aufgaben (Units) zu sehen. In diesem Arbeitsbereich befinden sich 2 Gruppen mit den Namen "Templates" und "Vorlagen". Außerdem ist die Aufteilung eines Arbeitsbereichs einmal dargestellt und näher beschrieben.
 
@@ -84,7 +84,7 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
 :information_source: **Einige Funktionen bspw.das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
 
-### Administration und Kommunikation im Team
+### Administration und Kommunikation
 
 Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte) kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und kann in der Anwendung gelisteten Personen Zugriff darauf geben. So kann eine verantwortliche Person den Zugriff der zuvor bestimmten Teammitglieder auf relevante Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. So können sich Teams unabhängig von den Systemadministrator\*innen innerhalb ihrer Bereichsgruppe selber  organisieren. 
 
