@@ -40,7 +40,7 @@ Die Organisation findet in **Bereichsgruppen** und **Arbeitsbereichen** statt. *
 
 Im **Studio** sieht die Übersicht dann wie nachfolgend dargestellt anhand eines Beispiels aus. Mit einem Klick auf den jeweiligen Arbeitsbereich öffnet sich dieser und die enthaltenen Aufgaben (Units) sind in Gruppen sortiert zu sehen.
 
-![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_01.png)
+![Studio:Bereiche praktisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Bereiche_praktisch_02.png)
 
 Im nächsten Bild ist einmal bsph. der Arbeitsbereich "Hören und verstehen" in der Bereichsgruppe "Deutsch" mit den enthaltenen Aufgaben (Units) zu sehen. In diesem Arbeitsbereich befinden sich 2 Gruppen mit den Namen "Templates" und "Vorlagen". Außerdem ist die Aufteilung eines Arbeitsbereichs einmal dargestellt und näher beschrieben.
 
