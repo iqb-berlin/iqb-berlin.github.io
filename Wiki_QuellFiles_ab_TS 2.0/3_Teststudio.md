@@ -12,7 +12,7 @@ Das IQB hat alle Programmierungen unter einer Open-Source-Lizenz veröffentlicht
 
 **Ausblick**
 
-In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen Aufgaben mithilfe des **Studios** möglich sein. Somit wird dann Entwurf und Kodierung in einer Anwendung stattfinden und es bedarf keiner weiteren Zwischenschritte oder Hilfsmitteln mehr.
+In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen Aufgaben mithilfe des **Studios** möglich sein. Somit wird dann Entwurf und Kodierung in einer Anwendung stattfinden und es bedarf keiner weiteren Zwischenschritte oder Hilfsmittel mehr.
 
 ---
 
