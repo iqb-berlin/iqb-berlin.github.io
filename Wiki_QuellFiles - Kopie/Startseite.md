@@ -25,4 +25,4 @@ Die Texte sind weniger gedacht für:
 ## Kontakt
 * Für Anfragen zur Nutzung der IQB-Web-Anwendungen wenden Sie sich bitte an die Support-Adresse [iqb-tbadev-support@hu-berlin.de](mailto:iqb-tbadev-support@hu-berlin.de). Wir sind auch dankbar für Hinweise zu diesen Dokumentationen und fügen auch gern Erfahrungen Dritter hier ein.
 * Für Probleme, die offensichtlich durch eine fehlerhafte Programmierung verursacht werden, können Sie sich auch direkt an das Entwickler-Team wenden über die Adresse [iqb-tbadev@hu-berlin.de](mailto:iqb-tbadev@hu-berlin.de)
-* Wenn Sie über Neuigkeiten zu den Themen des Wikis informiert werden wollen, können Sie über [eine E-Mail an unseren Mailing-Server](mailto:sympa@lists.hu-berlin.de?subject=subscribe%20iqb-tbadev-news) einen Newsletter abonnieren. Ältere Ausgaben sind [hier](Newsletter-Archiv) zu finden.
+* Wenn Sie über Neuigkeiten zu den Themen des Wikis informiert werden wollen, können Sie über [unseren Mailing-Server](https://sympa.cms.hu-berlin.de/sympa/subscribe/iqb-tbadev-news) einen Newsletter abonnieren. Ältere Ausgaben sind [hier](https://sympa.cms.hu-berlin.de/sympa/arc/iqb-tbadev-news) zu finden.

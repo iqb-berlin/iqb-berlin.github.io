@@ -506,72 +506,9 @@ Jede Testperson erhält ein eigenes Passwort. Dies stellt die gängigste Methode
 </Group>
 ```
 
-
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Unit-Xml (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-Die Unitdefinition besteht aus mindestens einer XML-Datei. Hinweise zur Bearbeitung von XML-Dateien erhalten Sie [hier](Arbeiten-mit-Xml‐Dateien).
-
-> **Die in der Xml-Datei angelegten Attribute und Elemente sind nicht frei wählbar, sondern orientieren sich an einer Schema-Definition. Diese gibt vor, welche Elemente und Attribute verwendet werden dürfen. Die Schema Definition für die Unit.xml ist [hier](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Unit.xsd) ersichtlich.**
-
-<table>
-
-<tr>
-    <td>Unit:</td>
-    <td>id</td>
-    <td>Attribut</td>
-    <td>Frei wählbarer Wert. Bezeichnet die Unit, die eingebunden werden soll. Die ID innerhalb der Unit.xml muss den selben Namen tragen (Groß/-Kleinschreibung beachten!).</td>
-</tr>
-<tr>
-    <td>Unit:</td>
-    <td>label</td>
-    <td>Attribut</td>
-    <td>Frei wählbarer Wert.</td>
-</tr>
-<tr>
-    <td>Testlet:</td>
-    <td>id</td>
-    <td>Attribut</td>
-    <td>Frei wählbarer Wert.</td>
-</tr>
-<tr>
-    <td>Testlet:</td>
-    <td>label</td>
-    <td>Attribut</td>
-    <td>Frei wählbarer Wert.</td>
-</tr>
-<tr>
-    <td>CodeToEnter:</td>
-    <td>code</td>
-    <td>Attribut</td>
-    <td>Frei wählbarer Wert. Dieser Code wird im Testcenter abgefragt. Dies kann z.B. verwendet werden um nach Codeeingabe in eine weitere Unit zu gelangen.</td>
-</tr>
-<tr>
-    <td>CodeToEnter:</td>
-    <td>>xxx<</td>
-    <td>Datum</td>
-    <td>Frei wählbarer Wert. Dieser Text wird für die Codeabfrage verwendet.</td>
-</tr>
-
-</table>
-
-```xml
-<Units>
-  <Unit id="Unit1" label="erste Unit" />
-  <Testlet id="Testlet1" label="erstes Testlet">
-    <Restrictions>
-      <CodeToEnter code="Hase">Bitte geben Sie den Code ein!</CodeToEnter>
-    </Restrictions>
-  </Testlet>
-</Units>
-```
-
----
-
-#### Attribute und Daten UNIT.xml
-
-`UNIT`
 
 <table>
 
@@ -612,6 +549,7 @@ Die Unitdefinition besteht aus mindestens einer XML-Datei. Hinweise zur Bearbeit
   <DefinitionRef player="IQBVisualUnitPlayerV2">ER513.voud</DefinitionRef>
 </Unit>
 ```
+Die [Spezifikation](https://github.com/iqb-berlin/testcenter-backend/blob/master/definitions/vo_Unit.xsd) sieht die Möglichkeit vor, die Daten der Unitdefinition nicht als externe Datei, sondern in einem XML-Element `Definition` zu hinterlegen, das dann `DefinitionRef` ersetzt. Das mag bei kleinen Unitdefintionen ausreichen.
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Workaround Unit-Xml (Abschnittsmarker)

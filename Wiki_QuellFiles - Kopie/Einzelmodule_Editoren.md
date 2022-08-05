@@ -13,7 +13,7 @@ Das folgende [Video: Vom Entwurf zum Test](https://github.com/iqb-berlin/iqb-ber
 
 Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
 
-![iqb online assessment applications with relations: Teststudio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editoransicht_final.png)
+![iqb online assessment applications with relations: Studio Editieransicht](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Editoransicht_final.png)
 
 * Grün markiert:<br>
 	Im oberen Bereich die Elemente, die auf einer Seite hinzugefügt werden können. Dies sind bspw. Schaltflächen, Textfelder, Grafiken, Multiple-Choice-Felder etc. Im mittleren Bereich Optionen zur Formatübertragung und zum Kopieren und Einfügen markierter Elemente. Im unteren Bereich Pfeil-Schaltflächen, mit denen man alle Elemente auf einer Seite um 10px verschieben kann. Ganz unten die Option zum Löschen eines aktiven Elements und Optionen zum Up- und Download von Dateien. Eine detailierte Beschreibung der Elemente und Funktionen erfolgt weiter unten. 
@@ -67,7 +67,7 @@ Zum Erstelllen einer Textbox für jeglichen Text (Aufgabenstellung, Stimulus, Fr
 
 Nachdem ein Textelement auf der Seite platziert und markiert wurde, erscheint auf der rechten Seite ein Eigenschaftenfenster. In diesem können die Eigenschaften wie nachfolgend aufgelistet angepasst werden. Die aufgeführten Werte orientieren sich an den Erfahrungen der IQB Entwicklerteams.
 
-![iqb online assessment applications with relations: Teststudio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften_final.png)
+![iqb online assessment applications with relations: Studio Elemente](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_FE_Elemente_Eigenschaften_final.png)
 
 > Die nachfolgende Beschreibung enthält Vorschlagswerte, die auf Erfahrungen des IQB beruhen und daher nur als Empfehlung anzusehen sind.
 
@@ -481,7 +481,7 @@ task1_3;1
 task2_3;4
 task3_3;6
 
-````
+```
 
 ### Ausblenden/Einblenden
 
@@ -544,6 +544,7 @@ nav-button-group::next
 ### Wiedergabe der Inhalte
 
 Die mit diesem Editor erstellten Aufgabenelemente können sowohl in einer Vorschau, als auch im finalen System zur Testdurchführung wiedergegeben werden. Damit die Inhalte dargestellt werden können, bedarf es eines bestimmten Players. Dieser muss zwingend zu diesem Editor passen. Für den **PlainText-Editor** muss zwingend der Player **Verona Abi-Player** verwendet werden. Detailierte Informationen zu diesem Player finden Sie im gleichnamigen [Einzeldokument](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Verona-Player-Abi-v3.3).
+
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 #  Verona Editor Aspect v1.30 (Abschnittsmarker)

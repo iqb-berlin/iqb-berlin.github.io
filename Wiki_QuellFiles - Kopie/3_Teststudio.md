@@ -17,7 +17,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Verwaltung-und-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -30,7 +30,7 @@ In zukünftigen Versionen wird auch eine entsprechende Kodierung der entworfenen
 
 ---
 
-## 3.1 Organisation
+## 3.1 Verwaltung und Organisation
 
 ### Bereichsgruppen und Arbeitsbereiche
 
@@ -104,7 +104,7 @@ Weiterhin können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -153,7 +153,7 @@ Nach der Erstinstallation durch die IT, ist in der Anwendung ein **SuperAdmin** 
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Organisation">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.1-Verwaltung-und-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -299,70 +299,20 @@ Damit die Aufgabe in der Vorschau wiedergegeben werden kann, muss der zum Editor
 	
 **Verona Player Dan**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels **Dan-Editor** erfolgte.<br>
-Detailierte Informationen zum **Dan-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Dan-v3.0).
+Detailierte Informationen zum **Dan-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Dan).
 	
 **Verona Player Abi**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels **PlainText-Editor** erfolgte.<br>
-Detailierte Informationen zum **Abi-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Abi-v3.3).
+Detailierte Informationen zum **Abi-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Abi).
 
 **Verona Player Aspect**<br>
 Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels **Aspect-Editor** erfolgte.<br>
-Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Aspect-v1.15).
+Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Aspect).
 
 ---
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.6-Portal-zur-Verwaltung">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
-</a>
-</div>
+
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Editor">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
-</a>
-</div>
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div align='center'>
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
-<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
-</a>
-</div>
-
----
-
-# 3.6 Portal zur Verwaltung
-
-## Arbeitsbereich
-
-Damit mehrere Studien gleichzeitig im **Studio** bearbeitet bzw. vorbereitet werden können, sind sog. Arbeitsbereiche vorbereitet. Die Benennung richtet sich günstigerweise nach dem Zweck, also z. B. "Demo Deutsch Sek1" oder "Review Abi" oder "VERA Englisch". Für jedes Verwaltungskonto ist festgelegt, welche Arbeitsbereiche eingesehen (Nur-Lese-Modus) bzw. geändert werden können (Lesen-Und-Schreiben-Modus). Um die Übersichtlichkeit zu erhöhen, sind die Bereiche Gruppen zugeordnet. So gehören dann bspw. alle Arbeitsbereiche zum Thema Mathematik zur Gruppe Mathematik usw..
-
-Nach der Anmeldung präsentiert das System eine Liste aller Arbeitsbereiche, die für diese Person freigegeben sind. Mit einem Klick auf den jeweiligen Arbeitsbereich wird dieser geöffnet. Zur Liste der Arbeitsbereiche kehrt man zurück, indem man auf das IQB-Logo links oben in der Ecke klickt.
-
-In diesen Bereichen können dann Aufgaben angelegt, importiert oder bereits bestehende Aufgaben bearbeitet werden.
-
-Die Vergabe von Zugriffsberechtigungen auf Bereiche und die Zuordnung von Bereichen zu bestimmten Personen, erfolgt durch den **SuperAdmin**.
-
-## System-Admin (Super-Admin)
-
-Wurden Ihnen Rechte für die Verwaltung des Gesamtsystems zugewiesen (sog. **Super-Admin**), wird zusätzlich zur Liste der Arbeitsbereiche ein System-Admin-Schalter eingeblendet. Über diesen Schalter gelangen Sie zur Systemverwaltung. Dort können Nutzerkonten (Benutzername und Kennwort) und Arbeitsbereiche angelegt werden. Auch der Zugriff auf diese Arbeitsbereiche kann für die jeweiligen Personenkreise festgelegt und grundsätzliche Systemeinstellungen (Hintergrundfarbe, Logo) vorgenommen werden.
-
-Der System-Admin-Bereich wird in **4 Reiter** unterteilt:
-
-* **Nutzer:**<br>
-Hier können bestehende Benutzer\*innen verwaltet werden. Es können mittels Pluszeichen-Schaltfläche neue Benutzer\*innen hinzugefügt werden oder mit der Löschen-Schaltfläche gelöscht werden. Weiterhin stehen zwei Schaltflächen zur Änderungen von Kennwort und Zugriffebene bereit. Diese beide Schaltflächen sind mit einem Stift-Symbol gekennzeichnet. Ist eine Person als Super-Adminn angelegt, wird diese mit einem Stern gekennzeichnet. Wird in der Liste der angelegten Personen eine Person markiert, werden auf der rechten Seite alle Arbeitsbereiche angezeigt, auf die diese Person Zugriff hat. Die Berechtigung für einen Arbeitsbereich sind dabei noch einmal unterteilt in "read only" (RO) und "read and write" (RW).
-
-* **Arbeitsbereiche:**<br>
-Hier werden alle angelegten Bereiche aufgelistet. Es können neue Bereiche angelegt, gelöscht oder nachträglich bearbeitet werden. Durch Markierung eines Bereichs werden rechts alle Personen aufgelistet, die auf diesen Bereich Zugriff haben. Dabei wird noch einmal unterschieden, ob die Personen nur lesend (RO) oder lesend und schreibend (RW) auf den Bereich zugreifen darf. Sollen Personen einen Zugriff auf einen Bereich erhalten, ist der jeweilige Bereich zu markieren und die Person mit RO- oder RW-Zugriff auszuwählen. Anschließend muss zwingend das Speicher-Symbol oben rechts aktiviert werden, ansonsten werden die Änderungen nicht gespeichert.
-
-* **Editor/Player:**<br>
-Hier können neue Editor-bzw. Playerversionen geladen werden. Diese neuen Versionen können dann bei Benutzung des Editors angewählt werden. Die aktuellen Versionen sind in den entsprechenden GitHub-Repositories zu finden.
-
-* **Einstellungen:**<br>
-Hier können einige Bereiche des **Studios** an individuelle Bedürfnisse angepasst werden. Es ist bspw. möglich Texte der Anwendung anzupassen. Es ist auch möglich neue Gruppen für die Arbeitsbereiche anzulegen bzw. bestehende Gruppen zu löschen.
-
----
-
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>

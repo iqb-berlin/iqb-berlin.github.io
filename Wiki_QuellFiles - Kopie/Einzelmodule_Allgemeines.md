@@ -1,51 +1,4 @@
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-# IQB Konventionen (Abschnittsmarker)
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-### Seitenlayout
-
-    Seitenrand stets 30 px
-
-#### Volle Seite
-
-* eine oder mehrere Seiten, die die gesamte Bearbeitungsfläche beim Test ausfüllen
-* Breite 1.100 px, Höhe beliebig
-* ab einer Höhe von 1.000 px ist damit zu rechnen, dass nicht alles während des Tests dargestellt wird; daher sollte dann ein Viewpoint am Ende der Seite (links) platziert werden
-
-#### Geteilte Seite
-
-* links Seite ständig zu sehen, Breite ca. 530 px; hier werden die Textvorgaben (Stimulus) sowie die Audio-Elemente platziert
-* rechts andere Seite, ggf. Blättern durch mehrere Seiten; Breite ca. 530 px
-* die Teilung kann auch anders liegen, wenn z. B. eine Audioaufgabe links nicht viel Platz braucht
-* ab einer Höhe von 1.000 px ist damit zu rechnen, dass nicht alles während des Tests dargestellt wird; daher sollte dann ein Viewpoint am Ende der Seite (links) platziert werden
-
-### Textformatierung
-
-#### Stimulustext
-
-* Times New Roman 22 px, Höhe Anzahl Zeilen x 27
-* Überschriften: fett, Textausrichtung zentriert
-* Quellenangabe: extra Textfeld einfügen, Arial 10 px, unter dem Stimulustext platzieren
-* bei nummerierten Textteilen mit hängendem Einzug: Erste Zeile -23 px, wenn Nummerierung zweistellig -33 px
-* Fußnoten über html: Verweis im Text `<sup>1</sup>`, Fußnote unten mit horizontaler Linie `<hr><sup>1</sup><i>Text, Artikel</i>`
-
-#### Instruktion
-
-* Arial 24 px, fett, Höhe Anzahl Zeilen x 30
-
-#### Itemtext, Antwortoptionen, Textbox zur Eingabe von Kurzantworten
-
-* Arial 20 px, Höhe 30 px
-* bei nummerierten Textteilen mit hängendem Einzug: Erste Zeile -23 px, wenn Nummerierung zweistellig -33 px
-
-#### Abstände
-
-* zwischen Instruktion und Itemtext: 30 px
-* (Itemtext) zwischen Frage und Antwortoptionen: 10 px
-* zwischen zwei Antwortoptionen: kein Abstand
-* zwischen zwei Items: 20 px
-
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 # Login: Modi der Testdurchführung (Abschnittsmarker)
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
@@ -248,7 +201,7 @@ Zum Abspielen, Tests durchführen, Daten ausgeben, Logins festlegen usw. (alles 
 * auch muss die Antwortverarbeitung vorab geplant werden (im VERA-Paper-Pencil-Prozess heißt es Antwortschema), ein Responce Scheme (wie es hier im TBA-Kontext genannt wird) ist als extra Modul also auch notwendig 
 * insgesamt besteht die Schnittstelle aus 4 Modulen: Editor, Player, Response Scheme, Response Converter
 * ein Testsystem (z.B. Testcenter zu nennen, wie im IQB) in dem der Test durchgeführt werden kann (Pilotierung im IQB, Hauptdurchgang in einem Land) bräuchte einen Player und einen Response Converter
-* ein Teststudio in dem die Aufgaben und Tests entwickelt werden, bräuchte Editor (Authoring), Response Scheme und Player (für Demo-Voransicht der Aufgaben) 
+* ein Studio in dem die Aufgaben und Tests entwickelt werden, bräuchte Editor (Authoring), Response Scheme und Player (für Demo-Voransicht der Aufgaben) 
     
 Weitere Informationen und Videos finden Sie im [Wiki](https://github.com/verona-interfaces/verona-interfaces.github.io/wiki) zum Verona Interfaces
 	
@@ -279,17 +232,5 @@ Dieses Verfahren ist in Vorbereitung, wird aber aktuell als übertrieben angeseh
 
 Das IQB wird für verschiedene Studien bzw. Befragungen unterschiedliche Player einsetzen. Man könnte Player konzipieren, die alle möglichen Interaktionselemente abdecken, das IQB möchte aber eher typische Interaktionselemente als Basisausstattung umsetzen und dann zusätzliche Player bereitstellen, die spezielle Interaktionselemente implementieren. Wir möchten z. B. eine GeoGebra-Implementation nicht auch bei Sprachtests laden oder Formate zur Kommasetzung in Mathematik-Tests bereitstellen. Wo dann genau die Grenze zu ziehen ist wird sich zeigen, aber tendenziell möchten wir kleine fokussierte Player bereitstellen.
 
-
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-# Newsletter Archiv
-<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-# Newsletter IQB-Programmierungen zum computerbasierten Testen
-## 2021/1 - 18.5.2021
-### Teststudio-Lite 1.0
-Die IQB-Anwendung zum Erstellen von Aufgaben bzw. Seiten hat den Status "Prototyp" verlassen und ist jetzt in der Version 1.0 verfügbar. Die Installation als "Docker-Setup" ist jetzt erweitert um ein Update-Script, um alte Inhalte oder Einstellungen zu respektieren. Neue Funktionen u. a.:
-* Import von Aufgaben/Seiten
-* Vereinfachtes Einspielen von Verona-Modulen
-* Anpassbarkeit Startseite, Impressum 
 
 
