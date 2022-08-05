@@ -20,7 +20,7 @@
 
 [2.1 Daten und Prozesse](2.1-Daten-und-Prozesse)<br>
 [2.2 Die Sicht der Testperson](2.2-Die-Sicht-der-Testperson)<br>
-[2.3 Portal zur Verwaltung](2.3-Portal-zur-Verwaltung)<br>
+[2.3 Verwaltung und Organisation](2.3-Verwaltung-und-Organisation)<br>
 [2.4 Testinhalte hochladen](2.4-Testinhalte-hochladen)<br>
 [2.5 Ergebnisse herunterladen](2.5-Ergebnisse-herunterladen)<br>
 [2.6 Player Testwiedergabe (Verona)](2.6-Player-Testwiedergabe-(Verona))<br>
@@ -36,7 +36,8 @@
 [3.2 Zugriffsrechte](3.2-Zugriffsrechte)<br>
 [3.3 Aufgabenbearbeitung und Erstellung](3.3-Aufgabenbearbeitung-und-Erstellung)<br>
 [3.4 Editor](3.4-Editor)<br>
-[3.5 Player Vorschau (Verona)](3.5-Player-Vorschau-(Verona))
+[3.5 Player Vorschau (Verona)](3.5-Player-Vorschau-(Verona))<br>
+[3.6 Kodierung](3.6-Kodierung)
 
 ---
 

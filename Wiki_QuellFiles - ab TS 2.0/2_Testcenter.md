@@ -213,7 +213,7 @@ Die Beantwortung kann jederzeit beendet werden. Die Antworten werden stets sofor
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Portal-zur-Verwaltung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Verwaltung-und-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -231,7 +231,7 @@ Die Beantwortung kann jederzeit beendet werden. Die Antworten werden stets sofor
 
 ---
 
-# 2.3 Portal zur Verwaltung
+# 2.3 Verwaltung und Organisation
 
 In das **Testcenter** müssen die Inhalte für Tests geladen werden und es muss einen Weg geben, die Antworten zu erhalten. Für diese Aufgaben ist ein Verwaltungsportal eingerichtet. Die Verantwortlichen für eine Studie melden sich am Testsystem an derselben Stelle an, an welcher sich auch die Testperson anmelden würde. Das System erkennt, dass die Anmeldedaten zu einem Konto für die Verwaltung gehören und lädt entsprechend die Funktionen dafür.
 
@@ -346,7 +346,7 @@ Ein nützlicher Nebeneffekt hierbei ist, dass auch Editoren zur Bearbeitung von 
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Portal-zur-Verwaltung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.3-Verwaltung-und-Organisation">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>

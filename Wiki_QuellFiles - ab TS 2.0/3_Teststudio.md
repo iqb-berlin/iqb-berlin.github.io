@@ -84,7 +84,7 @@ Folgende Funktionen stehen in der Unit Organisation zur Verfügung:
 
 :information_source: **Einige Funktionen bspw. das Verschieben in einen anderen Arbeitsbereich, können nur genutzt werden, wenn die entsprechenden Zugriffsrechte auf den Ziel-Arbeitsbereich auch vorhanden sind.**
 
-### Administration und Kommunikation
+### Arbeiten im Team
 
 Hat eine Person Zugriff auf eine Bereichsgruppe (siehe Zugriffsrechte), kann diese Person Arbeitsbereiche innerhalb dieser Bereichsgruppe anlegen und angelegten Personen Zugriff darauf gewehren. So kann die für einen Bereich verantwortliche Person den Zugriff einzelner Mitglieder einer Fachgruppe auf Arbeitsbereiche und die darin enthaltenen Aufgaben regeln. Dies ermöglicht den Fachgruppen eine von den Systemadministrator\*innen unabhängige Organisation ihres Bereichs.
 
@@ -274,6 +274,8 @@ Komplexe Aufgaben können mittels Auswahl von vorgefertigten Elementen erstellt 
 
 Detailierte Informationen zum **Aspect-Editor** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Editor-Aspect-v1.21).
 
+---
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
@@ -310,9 +312,38 @@ Dieser Player kann Aufgaben wiedergeben, deren Erstellung mittels **Aspect-Edito
 Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen [Einzeldokument](Verona-Player-Aspect).
 
 ---
-
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.6-Kodierung">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
+</a>
+</div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.4-Editor">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
+</a>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++home++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div align='center'>
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
+<img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Button_Home_final.png">
+</a>
+</div>
+
+---
+
+# 3.6 Kodierung
+
+```yaml
+Dokumentstatus: Review (THuste)
+Stand: 05.08.2022
+todo: - In Bearbeitung
+      
+```
+
+---
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.5-Player-Vorschau-(Verona)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
