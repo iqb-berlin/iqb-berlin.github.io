@@ -172,7 +172,7 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
-![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_05.png)
+![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_03.gif)
 
 </td></tr>
 <tr>
