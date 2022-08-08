@@ -594,7 +594,7 @@ Der Editor ist wie folgt aufgebaut:
 * Aufführung der Eigenschaften eines Elements, aufgeteilt in Gruppen (spez. Parameter des Elements, Positionierung und Dimensionierung, Gestaltung) 
 * Grundlegende Funktionen wie Duplizieren und Löschen eines Elements
 
-![Aspect Editor Aufbau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_11.gif)
+![Aspect Editor Aufbau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_01.gif)
 
 ### Aufteilung einer Unit in Seiten
 
