@@ -164,7 +164,7 @@ Jetzt gehts los! Starten Sie den zuvor ausgewählten Editor mithilfe des gleichn
 
 Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, wählen Sie zuvor einen dynamischen Abschnitt aus.
 
-![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch_01.png)
+![TS_Editor_dynamisch](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editor_dynamisch_02.png)
 
 Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. In diesem Beispiel wird ein Optionsfeld gewählt.
 
