@@ -630,6 +630,8 @@ Nach der Auswahl eines Elements, linke Maustaste, wird es im Abschnitt angelegt.
 
 ### Elementen Eigenschaften (Parameter)
 
+:information_source: Zu beachten ist: Das **Studio** und auch der Editor haben noch einmal kleinere optische Veränderungen erfahren. Die nachfolgenden Bilder können bzgl. Optik etwas vom Stand des aktuellen Editors und des aktuellen Studios abweichen. Funktional hat sich aber nichts geändert.
+
 Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Gruppen oder Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
 
 ![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Eigenschaften_Tabs_02.gif)
