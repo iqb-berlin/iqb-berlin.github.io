@@ -102,11 +102,11 @@ Melden Sie sich anschließend mit Ihren Zugangsdaten am Studio an.
 <tr>
 <td>
 
-Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel öffne ich den Arbeitsbereich: "Tobias".
+Wählen Sie Ihren Arbeitsbereich aus.
 
 :information_source: Die Administrator\*innen geben die Bereiche für Sie frei.
 
-![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_06.png)
+![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_AB_Auswahl_01.png)
 
 
 </td></tr>
@@ -121,11 +121,11 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel öffne ich den Arbeitsb
 
 Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch Markierung der Aufgabe.
 
-In diesem Beispiel besteht bereits eine Aufgabe mit dem Namen: "UEA01" in dem geöffneten Arbeitsbereich. Legen Sie nun einmal eine neue Aufgabe an und geben Sie der Aufgabe einen eindeutigen Namen. Bsph. könnte hier der Name: "MEA" gewählt werden.
+In diesem Beispiel befinden sich bereits einige Aufgaben im geöffneten Arbeitsbereich. Fügen Sie nun eine neue Aufgabe hinzu. Wählen Sie anschließend einen eindeutigen Namen für die Aufgabe. In diesem Beispiel wird er Name "MEA" vergeben. "MEA" soll für "Meine erste Aufgabe" stehen. Sie können diese Aufgabe dann noch zur besseren Übersicht einer Gruppe hinzufügen. 
 
-:information_source: Eine Aufgabe wird auch Unit genannt!
+:information_source: Eine Aufgabe wird übrigens auch Unit genannt!
 
-![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen.gif)
+![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen_01.gif)
 
 :heavy_exclamation_mark: **Wählen Sie kurze ID-fähige Namen, die Ihre Aufgabe eindeutig identifizieren und diese von anderen Aufgaben sehr wahrscheinlich unterscheiden.**
 
