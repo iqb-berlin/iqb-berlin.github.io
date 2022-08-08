@@ -8,8 +8,10 @@
 Die folgenden [Videos](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editor:-Dan) werden direkt zum **Dan-Editor** angeboten
 
 Das folgende [Video: Vom Entwurf zum Test](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-TBA-Einf%C3%BChrung) beschäftigt sich vorwiegend mit dem Aufgabenentwurf, aber auch hier werden auch Aufgaben mit den **Dan-Editor** erzeugt:
-  
+
 ### Übersicht
+
+:information_source: Zu beachten ist: Das **Studio** und auch der Editor haben noch einmal optische Veränderungen erfahren. Die nachfolgenden Bilder können bzgl. Optik vom aktuellen Stand des Editors und des Studios abweichen. Funktional hat sich aber nichts geändert.
 
 Der Editor wird über den Tab: **Editor** im Bereich der Unitbearbeitung geöffnet. Nachfolgend wird dann die Editoransicht angezeigt:
 
@@ -107,6 +109,8 @@ Für Interessierte bzgl. der am IQB gesammelten Erfahrungen im Aufgabenentwurf, 
 
 > **[Hier](https://github.com/iqb-berlin/verona-editor-plaintext)** der Link zum GitHub Repository.<br>
 > **[Hier](https://github.com/iqb-berlin/verona-editor-plaintext/releases)** finden Sie die letzten aktuellen Versionsstände.
+
+:information_source: Zu beachten ist: Das **Studio** und auch der Editor haben noch einmal optische Veränderungen erfahren. Die nachfolgenden Bilder können bzgl. Optik vom aktuellen Stand des Editors und des Studios abweichen. Funktional hat sich aber nichts geändert.
 
 ## Erstellung der Aufgabenelemente
 
@@ -630,7 +634,7 @@ Nach der Auswahl eines Elements, linke Maustaste, wird es im Abschnitt angelegt.
 
 ### Elementen Eigenschaften (Parameter)
 
-:information_source: Zu beachten ist: Das **Studio** und auch der Editor haben noch einmal kleinere optische Veränderungen erfahren. Die nachfolgenden Bilder können bzgl. Optik etwas vom Stand des aktuellen Editors und des aktuellen Studios abweichen. Funktional hat sich aber nichts geändert.
+:information_source: Zu beachten ist: Das **Studio** und auch der Editor haben noch einmal optische Veränderungen erfahren. Die nachfolgenden Bilder können bzgl. Optik vom aktuellen Stand des Editors und des Studios abweichen. Funktional hat sich aber nichts geändert.
 
 Im Eigenschaftenbereich sind die Eigenschaften eines Elements zu finden. Das Eigenschaftenfenster unterteilt sich in 3 Gruppen oder Reiter (hier gekennzeichnet mit A,B,C). Die nachfolgend beschriebenen Parameter im Eigenschaftenbereich sind diesen 3 Reitern entsprechend zugeordnet.
 
