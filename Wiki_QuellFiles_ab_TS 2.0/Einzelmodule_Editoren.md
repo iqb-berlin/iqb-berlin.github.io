@@ -583,7 +583,7 @@ An dieser Stelle soll ein allgemeiner Überblick bzgl. Aufbau, Bedienung und Fun
 Der Editor ist wie folgt aufgebaut:
 
 **Mitte:** Seitenansicht mit Abschnitt
-* Seitenansicht einer Unit und dem darin enthaltenen Abschnitt
+* Seitenansicht einer Unit mit den enthaltenen Abschnitten
 * auf einer Seite können mehrere Abschnitte angelegt und Elemente darin angeordnet werden
 * die Abschnitte können dynamisch oder statisch angelegt werden
 
