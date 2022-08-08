@@ -618,7 +618,7 @@ Wird ein dynamischer Abschnitt angelegt, werden die Elemente nicht mehr fix im A
 
 Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernimmt und dieser erst in der eigentlichen Vorschau bzw. während der Wiedergabe der Aufgabe aktiv wird, müssen Benutzer\*innen schon im Vorfeld die Möglichkeit haben, die Anordnung in irgendeiner Weise festzulegen. Damit es möglich ist Elemente bestimmten Bereichen im Abschnitt und somit auf dem Wiedergabebildschirm zuzuweisen, kann in den Eigenschaften eines Elements die Position im Abschnitt festgelegt werden. Auf diese Weise findet eine Unterteilung des Abschnittes in Zeilen und Spalten statt. Um die Gestaltungsmöglichkeiten auf einer Seite offen zu halten, können weitere Abschnitte mit unterschiedlichen Rastern angelegt werden.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_05.gif)
+![AE_Dynamsich](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_dynamisch_01.gif)
 
 Es ist auch möglich teildynamisch zu arbeiten. Die Spaltenbreite und Zeilenhöhe kann auch <u>statische</u> Werte erhalten. Diese Werte können entweder in Bildanteilen oder in Bildpunkten angegeben werden.
 
