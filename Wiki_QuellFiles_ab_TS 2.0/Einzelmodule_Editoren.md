@@ -626,10 +626,6 @@ Es ist auch möglich teildynamisch zu arbeiten. Die Spaltenbreite und Zeilenhöh
 
 ## <a name="Die Aufgabenelemente"></a>Die Aufgabenelemente
 
-Die Elemente werden auf 2 Gruppen verteilt (Reiter 1 und 2). 
-
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Gruppen_Elemente_03.png)
-
 Nach der Auswahl eines Elements, linke Maustaste, wird es im Abschnitt angelegt. Ist der Abschnitt dynamisch, wird das zuerst gewählte Element in der ersten Abschnittszeile angelegt. Kommen weitere Elemente hinzu, werden diese aufsteigend der nächsten Zeile innerhalb des Abschnittes zugeordnet. Die so angelegten Elemente haben noch keine feste Positionszuordnung im Abschnitt. Sie werden erst einmal in eine freie Zeile des Abschnittes gelegt, damit sie dort markiert und deren Eigenschaften verändert werden können. In den Eigenschaften des Elements kann dann die finale Position festgelegt werden. Die Positionierung erfolgt innerhalb eines dynamischen Abschnitts in Zeilen und Spalten. Innerhalb eines statischen Abschnitts erfolgt die Positionierung in X-, und Y-Position.
 
 ### Elementen Eigenschaften (Parameter)
