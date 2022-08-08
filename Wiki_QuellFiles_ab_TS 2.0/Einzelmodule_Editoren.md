@@ -594,13 +594,13 @@ Der Editor ist wie folgt aufgebaut:
 * Aufführung der Eigenschaften eines Elements, aufgeteilt in Gruppen (spez. Parameter des Elements, Positionierung und Dimensionierung, Gestaltung) 
 * Grundlegende Funktionen wie Duplizieren und Löschen eines Elements
 
-![Aspect Editor Aufbau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_06.gif)
+![Aspect Editor Aufbau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Aufbau_11.gif)
 
 ### Aufteilung einer Unit in Seiten
 
 Units können in Seiten aufgeteilt werden. Jede Unit kann aus einer oder mehreren Seiten bestehen.<br> Der Seitenwechsel innerhalb der Unit kann dann mittels einer Schaltfläche in der Vorschau oder Wiedergabe erfolgen. Für jede Seite können bestimmte Einstellungen vorgenommen werden. Zum einen kann Einfluss auf die Darstellung der Seite genommen werden (Randabstand etc.), zum anderen kann festgelegt werden wie sich die Seite bei der Wiedergabe verhalten soll. Es kann dann bspw. eine Seite immer angezeigt (fixiert) und ihr Anteil auf dem Bildschirm festgelegt werden.
 
-![Aspect Editor Aufbau Seiten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten_01.gif)
+![Aspect Editor Aufbau Seiten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Seiten_01.png)
 
 ### Aufteilung einer Seite in Abschnitte
 
