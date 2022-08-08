@@ -168,7 +168,7 @@ Soll sich Ihre Aufgabe dynamisch an entsprechende Bildschirmgrößen anpassen, w
 
 Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die Aufgabe. In diesem Beispiel wird ein Optionsfeld mit Text gewählt.
 
-![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_01.gif)
+![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_02.gif)
 
 Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
