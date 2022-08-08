@@ -622,7 +622,7 @@ Da die dynamische Anordnung der Elemente ein entsprechender Algorithmus übernim
 
 Es ist auch möglich teildynamisch zu arbeiten. Die Spaltenbreite und Zeilenhöhe kann auch <u>statische</u> Werte erhalten. Diese Werte können entweder in Bildanteilen oder in Bildpunkten angegeben werden.
 
-![iqb online assessment applications: workflow](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_01.gif)
+![AE_Statisch_Settings](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/AE_Settings_dynamisch_02.png)
 
 ## <a name="Die Aufgabenelemente"></a>Die Aufgabenelemente
 
