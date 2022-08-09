@@ -358,9 +358,9 @@ Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu veränder
 
 Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht welcher Modus welche Funktionen bietet finden Sie [**hier**](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
 
-Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine Testperson den Modus: von `run-review` auf `run-hot-return` ändern.
+Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine Testperson den Modus: von `run-review` auf `run-hot-return` ändern und die Änderung anschließend speichern.
 
-![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.gif)
+![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.png)
 
 </td></tr>
 </table>
