@@ -288,7 +288,7 @@ Während der Aufgabenerstellung im **Studio** wird festgelegt mit welchem Editor
 
 Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden, bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
 
-![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_02.png)
+![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_01.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Unit_Xml_01.md) können Sie den Code kopieren.
 
