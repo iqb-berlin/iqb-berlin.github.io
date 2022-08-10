@@ -183,10 +183,14 @@ Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer V
 </td></tr>
 <td>
 
-Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben. Dabei können Sie in einem Formular festlegen wie die Dateien ausgegeben werden sollen. Sollen nur die Dateien zu einer Aufgabe ausgegeben werden, wird je Aufgabe eine **VOUD-Datei** und eine **XML-Datei** ausgegeben. Um eine Testung im **Testcenter** durchführen zu können, werden aber noch weitere Dateien benötigt. Optional können Sie diese gleich mit ausgeben lassen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Die Testdateien".
+Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben. Dabei können Sie in einem Formular festlegen welche Dateien ausgegeben werden sollen. 
+
+![Studio Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_01.png)
+
+Es können entweder nur die Dateien zu einer Aufgabe ausgeben werden oder weitere Dateien, die den späteren Testablauf im **Testcenter** steuern können. Nachfolgend werden diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Die Testdateien".
 
 **Player-Html**<br>
-Wiedergabe der Aufgaben im **Testcenter**.
+Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch **Player-Ressource** genannt.
 
 **Booklet-Xml**<br>
 Bündelung ausgewählter Aufgaben zu Testheften.
@@ -194,23 +198,11 @@ Bündelung ausgewählter Aufgaben zu Testheften.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
+Schauen wir uns an was das **Studio** nun erzeugt hat.
 
+Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. In diesem Beispiel wurde auch die Ausgabe der Player-Ressource und die Ausgabe der beiden Dateien zur Teststeuerung gewünscht. Diese 3 Dateien: **Booklet-Xml**, **Testtakers-Xml** und **iqb-player-aspect@1.25-Html** befinden sich nun zusätzlich zu den Dateien der Aufgabe im Ausgabeordner.
 
-
-
-
-
-
-
-Um die Aufgabe im **Testcenter** darstellen zu können muss bspw. der zu verwendende Player mit in das **Testcenter** geladen werden.  Diese steuern dann die Testabläufe und Randbedingungen einer Testung. Die
-
-![TS_Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_01.gif)
-
-Was hat das **Studio** erzeugt?
-
-Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. Wird der Haken bei: "Als Paket ausgeben" gesetzt, werden außerdem noch 3 andere Dateien erzeugt, eine **Testtakers-Xml**, eine **Booklet-Xml** und eine **iqb-player-aspect@1.24-Html**. Alles zusammen wird in einer Zip-Datei verpackt ausgegeben.
-
-![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_03.gif)
+![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_01.gif)
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen!
 
