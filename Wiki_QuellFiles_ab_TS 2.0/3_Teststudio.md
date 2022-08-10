@@ -1,5 +1,7 @@
 # 3 Studio
 
+:information_source: Es gibt eine ältere Version des Studios mit dem Namen **Teststudio**. Nach und nach wird diese Version aber ersetzt durch die aktuelle Version **Studio**. Da sich sowohl Aussehen, als auch Funktionsumfang geändert haben, finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Dokumentation-zur-%C3%A4lteren-Version:-Teststudio) zur Dokumentation der älteren Version **Teststudio**.
+
 Das IQB-Studio ist eine Webanwendung für den Entwurf von Kompetenztests oder Befragungen. Nach der Installation auf einem Webserver wählt man diesen Server über seine Adresse an. Dazu wird die Serveradresse in die Adresszeile eines Internet-Browsers eingegeben. Anschließend wird die Webanwendung geladen und es wird ein Formular zur Anmeldung angezeigt.
 
 In themenspezifischen Arbeitsbereichen können dann mithilfe eines intergrierten Editors Aufgaben entworfen und organisiert  werden. Auch eine Vorschau der Aufgaben ist möglich. Nach einem abgeschlossenen Entwurf können die fertigen Aufgaben vom **Studio** in definierten Formaten ausgegeben werden.
