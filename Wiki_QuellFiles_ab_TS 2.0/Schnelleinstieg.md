@@ -183,7 +183,26 @@ Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer V
 </td></tr>
 <td>
 
-Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
+Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben. Dabei können Sie in einem Formular festlegen wie die Dateien ausgegeben werden sollen. Sollen nur die Dateien zu einer Aufgabe ausgegeben werden, wird je Aufgabe eine **VOUD-Datei** und eine **XML-Datei** ausgegeben. Um eine Testung im **Testcenter** durchführen zu können, werden aber noch weitere Dateien benötigt. Optional können Sie diese gleich mit ausgeben lassen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Die Testdateien".
+
+**Player-Html**<br>
+Wiedergabe der Aufgaben im **Testcenter**.
+
+**Booklet-Xml**<br>
+Bündelung ausgewählter Aufgaben zu Testheften.
+
+**Testtaker-Xml**<br>
+Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
+
+
+
+
+
+
+
+
+
+Um die Aufgabe im **Testcenter** darstellen zu können muss bspw. der zu verwendende Player mit in das **Testcenter** geladen werden.  Diese steuern dann die Testabläufe und Randbedingungen einer Testung. Die
 
 ![TS_Output](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Output_01.gif)
 
@@ -234,19 +253,19 @@ Es wird zu jeder Aufgabe jeweils eine **Voud-Datei** und eine **Xml-Datei** erze
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Aufgaben-Xml`s ausgegeben, sondern auch noch die Steuerdateien **Booklet-Xml** und **Testtakers-Xml** werden automatisch Abhängigkeiten zwischen den Testdateien hergestellt.
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Aufgaben-Xml`s ausgegeben, sondern auch noch die Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien hergestellt.
 
-Folgende Anhängigkeiten werden zwischen den Testdateien erzeugt: 
+Folgende Abhängigkeiten werden zwischen den Testdateien erzeugt: 
 
 ![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_02.png)
 
 Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die Ressourcen-Dateien **Aufgaben-Voud** und **Player.html** ein.
 
-Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen diese Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird beschrieben, wie Änderungen an den Testdateien vorzunehmen sind.
+Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen diese Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird noch einmal die Funktion der Testdateien beschrieben und wie diese manuell an die spezifischen Testanforderungen angepasst werden können.
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
 
-:information_source: Mehr Informationen zu den Testdateien finden Sie auch im Abschnitt: "Direkt zu anderen Seiten". 
+:information_source: Mehr Informationen zu den einzelnen Testdateien finden Sie auch im Abschnitt: "Direkt zu anderen Seiten". 
 
 </td></tr>
 <tr>
@@ -342,7 +361,7 @@ Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Auß
 
 Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** ist noch keine **Custom-Text-Konfiguration** enthalten. Diese muss der **Testtaker-Xml** hinzugefügt werden. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
-![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_01.png)
+![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_02.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml.md) können Sie den Code kopieren.
 
