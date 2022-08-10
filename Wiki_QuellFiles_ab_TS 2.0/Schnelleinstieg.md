@@ -200,9 +200,9 @@ Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsd
 
 Schauen wir uns an was das **Studio** nun erzeugt hat.
 
-Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. In diesem Beispiel wurde auch die Ausgabe der Player-Ressource und die Ausgabe der beiden Dateien zur Teststeuerung gewünscht. Diese 3 Dateien: **Booklet-Xml**, **Testtakers-Xml** und **iqb-player-aspect@1.25-Html** befinden sich nun zusätzlich zu den Dateien der Aufgabe im Ausgabeordner.
-
 ![TS_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Outputdateien_01.gif)
+
+Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. In diesem Beispiel wurde auch die Ausgabe der Player-Ressource und die Ausgabe der beiden Dateien zur Teststeuerung gewünscht. Diese 3 Dateien: **Booklet-Xml**, **Testtakers-Xml** und **iqb-player-aspect@1.25-Html** befinden sich nun zusätzlich zu den Dateien der Aufgabe im Ausgabeordner.
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen!
 
