@@ -379,7 +379,7 @@ Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten ei
 
 Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine Testperson den Modus: von `run-review` auf `run-hot-return` ändern und die Änderung anschließend speichern.
 
-![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_01.png)
+![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_02.png)
 
 </td></tr>
 </table>
