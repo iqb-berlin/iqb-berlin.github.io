@@ -187,7 +187,7 @@ Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_01.png)
 
-Es können entweder nur die Dateien zu einer Aufgabe ausgeben werden oder weitere Dateien, die den späteren Testablauf im **Testcenter** steuern können. Nachfolgend werden diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Die Testdateien".
+Es können entweder nur die Dateien zu einer Aufgabe ausgeben werden oder weitere Dateien, die den späteren Testablauf im **Testcenter** steuern können. Nachfolgend werden diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Schnelleinstieg:Testdateien".
 
 **Player-Html**<br>
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
@@ -313,7 +313,7 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 <tr>
 <td>
 
-Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xxml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
+Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xxml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden, wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Mehr Informationen zur Booklet-Konfiguration sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 
 :information_source: Die hier gezeigte **Booklet-Xml** ist beim Export durch das **Studio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
 
