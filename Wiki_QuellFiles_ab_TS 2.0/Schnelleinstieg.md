@@ -253,7 +253,7 @@ Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab di
 
 Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunkte dargestellt.
 
-![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_01.png)
+![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_05.png)
 
 Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird noch einmal die Funktion der Testdateien beschrieben und wie diese manuell an die spezifischen Testanforderungen angepasst werden können.
 
