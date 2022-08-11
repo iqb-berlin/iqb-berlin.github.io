@@ -515,7 +515,7 @@ Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtak
 
 Nach Auswahl des Booklets müssen Sie, wie in der **Booklet-Xml** angegeben, ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Aufgabe (MEA-Xml) angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
 
-![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_01.png)
+![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_02.png)
 
 Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "Test beenden". Sie werden darauf hingewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
