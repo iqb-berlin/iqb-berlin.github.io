@@ -253,7 +253,7 @@ Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab di
 
 Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunktedargestellt.
 
-![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_03.png)
+![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_04.png)
 
 Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die Ressourcen-Dateien **Aufgaben-Voud** und **Player.html** ein.
 
