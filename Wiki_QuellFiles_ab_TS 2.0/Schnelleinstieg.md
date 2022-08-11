@@ -198,7 +198,7 @@ Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsd
 
 Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
 
-In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mit bestimmten Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
+In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mittels bestimmter Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
 
 Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese Testleitungskonsole zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
 
@@ -249,11 +249,11 @@ Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erze
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Aufgaben-Xml`s ausgegeben, sondern auch noch die Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien hergestellt.
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Dateien zur Aufgabe ausgegeben, sondern auch noch die beiden Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien beim Export hergestellt.
 
-Folgende Abhängigkeiten werden zwischen den Testdateien erzeugt: 
+Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunktedargestellt.
 
-![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_02.png)
+![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_01.png)
 
 Die **Testtaker-Xml** bindet die **Booklet-Xml** ein. Die **Booklet-Xml** bindet die **Aufgaben-Xml** ein. Die **Aufgaben-Xml** wiederum bindet die Ressourcen-Dateien **Aufgaben-Voud** und **Player.html** ein.
 
