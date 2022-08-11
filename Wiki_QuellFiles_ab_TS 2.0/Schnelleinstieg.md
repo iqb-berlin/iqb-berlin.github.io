@@ -511,7 +511,7 @@ Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQ
 
 Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtaker-Xml** mithilfe der eindeutigen Booklet-ID eingebunden und im **Testcenter** zur Auswahl angezeigt. Das Booklet trägt dann den Namen der unter `Label` in der **Booklet-Xml** eingetragen ist.
 
-![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_02.png)
+![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_01.png)
 
 Nach Auswahl des Booklets müssen Sie, wie in der **Booklet-Xml** angegeben, ein Freigabewort eingeben. Erst dann wird Ihnen die in der **Booklet-Xml** angelegte Aufgabe (MEA-Xml) angezeigt. Nun haben Sie 10 Minuten Zeit die Aufgabe zu beantworten. Beantworten Sie die Aufgabe in dieser Zeit nicht, wird das Testheft gesperrt. 
 
