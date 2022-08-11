@@ -168,7 +168,7 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 ![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_02.gif)
 
-Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch bei der Testdurchführung im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
+Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch bei der Testdurchführung im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
 ![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_03.gif)
 
@@ -185,7 +185,7 @@ Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
-Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder es können zusätzliche Dateien ausgegeben werden, die den Ablauf und grundlegende Funktionen der Testdurchführung beinflussen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Funktion ist kurz beschrieben. Mehr Informationen zu diesen Dateien finden Sie auch im Kapitel: "Schnelleinstieg:Testdateien".
+Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder es können zusätzliche Dateien ausgegeben werden, die den Ablauf und grundlegende Funktionen der Testdurchführung beinflussen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Funktion ist kurz beschrieben. Mehr Informationen zu diesen Dateien finden Sie auch im nächsten Kapitel "Schnelleinstieg:Testdateien".
 
 **Player-Html**<br>
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
@@ -196,7 +196,9 @@ Bündelung ausgewählter Aufgaben zu Testheften.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mit bestimmten Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
+Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+
+In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mit bestimmten Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
 
 Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese Testleitungskonsole zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
 
@@ -259,7 +261,7 @@ Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerd
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
 
-:information_source: Mehr Informationen zu den einzelnen Testdateien finden Sie auch im Abschnitt: "Direkt zu anderen Seiten". 
+:information_source: Mehr Informationen zu den einzelnen Testdateien finden Sie auch im Abschnitt "Direkt zu anderen Seiten". 
 
 </td></tr>
 <tr>
@@ -333,7 +335,7 @@ Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Test
 <tr>
 <td>
 
-Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testheft angelegt, sondern nur die erstelle Aufgabe: "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben Sie die Aufgabe: "MEA" in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
+Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testheft angelegt, sondern nur die erstelle Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testheft (Testlet) hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe bearbeiten. Die Aufgabe muss dann innerhalb der angegeben Zeit bearbeitet werden.
 
 ![Booklet Testheft hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_01.gif)
 
@@ -423,7 +425,7 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 
 #### Anforderungen an die IT-Systeme
 
-Das Testcenter stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Diese Anforderungen können mit der im Testcenter intergrierten Funktion **System-Check** überprüft werden.  [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das Testcenter stellt, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift: "Anforderungen".
+Das Testcenter stellt bestimmte Anforderungen an die Computer auf denen eine Testung durchgeführt wird. Diese Anforderungen können mit der im Testcenter intergrierten Funktion **System-Check** überprüft werden.  [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2.7-System-Check) finden Sie mehr Informationen zum **System-Check**. Welche Anforderungen das Testcenter stellt, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter) unter der Überschrift "Anforderungen".
 
 #### Zugang für die Testpersonen
 
@@ -465,7 +467,7 @@ Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätige
 <tr>
 <td>
 
-Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich: "Sandbox Tobias" geöffnet.
+Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich "Sandbox Tobias" geöffnet.
 
 ![TS_AB_Auswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TC_AB_Auswahl_01.png)
 
@@ -501,13 +503,13 @@ Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle 
 <tr>
 <td>
 
-In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg: "Testdateien" aufgezeigt, wurde der Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
+In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg "Testdateien" aufgezeigt, wurde der Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
 
 ![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren.gif)
 
 Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQB-Logo oben links und melden Sie sich mit den notierten Zugangsdaten erneut an. 
 
-:information_source: Testpersonen melden sich über die Schaltfläche: "Weiter" am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die Schaltfläche: "Weiter als Admin"!
+:information_source: Testpersonen melden sich über die Schaltfläche "Weiter" am **Testcenter** an. Die Testleitung verwendet für die Anmeldung die Schaltfläche "Weiter als Admin"!
 
 Nach der Anmeldung wird Ihnen das zu dieser Person angegebene Booklet angeboten. Das Booklet trägt dann den Namen der unter `Label` in der **Booklet-Xml** eingetragen ist.
 
@@ -529,7 +531,7 @@ Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "T
 <tr>
 <td>
 
-Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche: "Weiter als Admin") an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter: "Ergebnisse/Antworten". Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben. In diesem Beispiel wurde der vom **Studio** automatisch erzeugte Name in **MEG** umbenannt.
+Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche "Weiter als Admin") an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter "Ergebnisse/Antworten". Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben. In diesem Beispiel wurde der vom **Studio** automatisch erzeugte Name in **MEG** umbenannt.
 
 ![Testtakers Group-ID](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtakers_Group-ID.png)
 
@@ -537,7 +539,7 @@ Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor de
 
 ![gespeicherte Anworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten.png)
 
-In der Spalte: "Responses" befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
+In der Spalte "Responses" befinden sich nun die gespeicherten Zustände unserer Aufgabenelemente, in unserem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden die für uns interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
 
 ![gespeicherte Anworten Wandlung itc](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten_itc.png)
 
