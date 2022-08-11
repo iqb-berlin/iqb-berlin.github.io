@@ -2,9 +2,7 @@
 
 Im Rahmen der digitalisierten Testung hat das **IQB** zwei webbasierte Anwendungen entwickelt.
 
-Eine Anwendung wird für das Aufgabenmanagement und die Aufgabenentwicklung verwendet und trägt den Namen **Studio**. Ein integrierter **Editor** übernimmt dabei den eigentlichen Aufgabenentwurf. 
-
-Eine weitere Anwendung trägt den Namen **Testcenter** und wird für die Testdurchführung und Auswertung einer Testung verwendet.
+Eine Anwendung wird für das Aufgabenmanagement und die Aufgabenentwicklung verwendet und trägt den Namen **Studio**. Ein integrierter **Editor** übernimmt dabei den eigentlichen Aufgabenentwurf. Eine weitere Anwendung trägt den Namen **Testcenter** und wird für die Testdurchführung und Auswertung einer Testung verwendet.
 
 Sind Aufgaben mit dem **Studio** final entworfen, können diese abschließend in einem bestimmten Dateiformat vom **Studio** ausgegeben werden. Die so ausgegebenen Dateien können bei Bedarf nachträglich verändert werden. Zur Testdurchführung werden diese Dateien dann in das **Testcenter** geladen und wiedergegeben.
 
@@ -121,9 +119,9 @@ Wählen Sie Ihren Arbeitsbereich aus.
 
 Legen Sie eine neue Aufgabe an oder bearbeiten Sie eine bestehende Aufgabe durch Markierung der Aufgabe.
 
-In diesem Beispiel befinden sich bereits einige Aufgaben im geöffneten Arbeitsbereich. Fügen Sie nun eine neue Aufgabe hinzu. Wählen Sie anschließend einen eindeutigen Namen für die Aufgabe. In diesem Beispiel wird er Name "MEA" vergeben. "MEA" soll für "Meine erste Aufgabe" stehen. Sie können diese Aufgabe dann noch zur besseren Übersicht einer Gruppe hinzufügen. 
+In diesem Beispiel befinden sich bereits einige Aufgaben im geöffneten Arbeitsbereich. Fügen Sie nun eine neue Aufgabe hinzu. Wählen Sie anschließend einen eindeutigen Namen für die Aufgabe. In diesem Beispiel wird er Name "MEA" vergeben. "MEA" soll für "Meine erste Aufgabe" stehen. Zur besseren Übersicht können Sie die Aufgabe abschließend noch einer Gruppe innerhalb des Arbeitsbereichs zuordnen.
 
-:information_source: Eine Aufgabe wird übrigens auch Unit genannt!
+:information_source: Eine Aufgabe wird übrigens im IQB-Umfeld auch **Unit** genannt!
 
 ![TS_Aufgabe_anlegen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Aufgabe_anlegen_01.gif)
 
@@ -139,7 +137,7 @@ In diesem Beispiel befinden sich bereits einige Aufgaben im geöffneten Arbeitsb
 <tr>
 <td>
 
-Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über spezifische Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufagebansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
+Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Editor Sie die Aufgabe entwerfen möchten. Jeder vom IQB angebotene Editor verfügt über spezifische Eigenschaften und Funktionen. Wählen Sie den Aspect-Editor, wenn Sie Ihre Aufgabe mittels vorgefertigter Elemente entwerfen wollen und wenn sich die Aufgabenansicht dynamisch an andere Bildschirmgrößen anpassen soll. Wählen Sie den Editor für Text, wenn Sie Ihre Aufgabe mittels einer Scriptsprache entwerfen möchten und auf eine dynamische Ansicht verzichten können.
 
 Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
 
@@ -170,7 +168,7 @@ Legen Sie ihr erstes Aufgabenelement in Ihrer Aufgabe an und speichern Sie die A
 
 ![TS_Elementenauswahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Elementenauswahl_02.gif)
 
-Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
+Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer Vorschau betrachten. Klicken Sie dazu auf den Reiter: "Vorschau". Dort wird Ihre Aufgabe genau so angezeigt, wie sie auch bei der Testdurchführung im **Testcenter** angezeigt werden würde. So erkennen Sie schon vor der Ausgabe Fehler und können diese beheben!
 
 ![TS_Vorschau](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Vorschau_03.gif)
 
@@ -187,7 +185,7 @@ Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_01.png)
 
-Es können entweder nur die Dateien zu einer Aufgabe ausgeben werden oder weitere Dateien, die den späteren Testablauf im **Testcenter** steuern können. Nachfolgend werden diese zusätzlichen Dateien aufgeführt und deren Verwendung wird kurz beschrieben. Genauere Informationen zu diesen Dateien finden Sie im Kapitel: "Schnelleinstieg:Testdateien".
+Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder es können zusätzliche Dateien ausgegeben werden, die den Ablauf und grundlegende Funktionen der Testdurchführung beinflussen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Funktion ist kurz beschrieben. Mehr Informationen zu diesen Dateien finden Sie auch im Kapitel: "Schnelleinstieg:Testdateien".
 
 **Player-Html**<br>
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
@@ -198,11 +196,19 @@ Bündelung ausgewählter Aufgaben zu Testheften.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Schauen wir uns an was das **Studio** nun erzeugt hat.
+Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben.
+
+Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese Testleitungskonsole zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
+
+Welche Dateien hat das **Studio** nun erzeugt?
 
 ![Studio_Outputdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Outputdateien_01.png)
 
 Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. In diesem Beispiel wurde auch die Ausgabe der Player-Ressource und die Ausgabe der beiden Dateien zur Teststeuerung gewünscht. Diese 3 Dateien: **Booklet-Xml**, **Testtakers-Xml** und **iqb-player-aspect@1.25-Html** befinden sich nun zusätzlich zu den Dateien der Aufgabe im Ausgabeordner.
+
+Abschließend sind noch einmal die Inhalte der **Testtaker-Xml** und **Booklet-Xml** und Erläuterungen dazu dargestellt.
+
+
 
 :information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen!
 
@@ -373,7 +379,7 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_02.png)
 
-:information_source: An dieser Stelle beenden wir erst einmal die Änderungen an den Testdateien und laden diese Dateien nun in das **Testcenter**. Führen Sie gerne einmal weitere Änderungen an den Dateien durch und schauen Sie sich im **Testcenter** die Auswirkungen auf die Testdurchführung an.
+:information_source: An dieser Stelle werden erst einmal die Änderungen an den Testdateien beendet. Führen Sie gerne einmal weitere Änderungen an den Dateien durch und schauen Sie sich im **Testcenter** die Auswirkungen auf die Testdurchführung an.
 
 </td></tr>
 </table>
@@ -479,7 +485,7 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich
 <tr>
 <td>
 
-Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise geben wir dem **Testcenter** bekannt, wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
+Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise wird dem **Testcenter** bekannt gegeben wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
 
 :heavy_exclamation_mark: **Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das Testcenter laden. Wird dies nicht beachtet, lehnt das Testcenter die Datei mit einem entsprechendem Hinweis ab.** 
 
@@ -499,7 +505,7 @@ Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle 
 <tr>
 <td>
 
-In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg: "Testdateien" aufgezeigt, haben wir den Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
+In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg: "Testdateien" aufgezeigt, wurde der Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
 
 ![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren.gif)
 
