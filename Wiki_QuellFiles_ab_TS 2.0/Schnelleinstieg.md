@@ -183,7 +183,7 @@ Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer V
 
 Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
 
-![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_01.png)
+![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
 Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder es können zusätzliche Dateien ausgegeben werden, die den Ablauf und grundlegende Funktionen der Testdurchführung beinflussen. Nachfolgend sind diese zusätzlichen Dateien aufgeführt und deren Funktion ist kurz beschrieben. Mehr Informationen zu diesen Dateien finden Sie auch im Kapitel: "Schnelleinstieg:Testdateien".
 
@@ -196,7 +196,7 @@ Bündelung ausgewählter Aufgaben zu Testheften.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben.
+Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mit bestimmten Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
 
 Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese Testleitungskonsole zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
 
@@ -206,11 +206,7 @@ Welche Dateien hat das **Studio** nun erzeugt?
 
 Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erzeugt. Alle Inhalte einer Aufgabe befinden sich nun in diesen beiden Dateien. In diesem Beispiel wurde auch die Ausgabe der Player-Ressource und die Ausgabe der beiden Dateien zur Teststeuerung gewünscht. Diese 3 Dateien: **Booklet-Xml**, **Testtakers-Xml** und **iqb-player-aspect@1.25-Html** befinden sich nun zusätzlich zu den Dateien der Aufgabe im Ausgabeordner.
 
-Abschließend sind noch einmal die Inhalte der **Testtaker-Xml** und **Booklet-Xml** und Erläuterungen dazu dargestellt.
-
-
-
-:information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen!
+:information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen! Im nächsten Kapitel wird der Inhalt der gerade erzeugten Testdateien noch einmal näher beschrieben.
 
 </td></tr>
 </table>
