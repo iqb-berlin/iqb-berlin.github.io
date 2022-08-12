@@ -183,7 +183,7 @@ Sie können die Aufgabe vor der finalen Ausgaben durch das **Studio** in einer V
 
 Im nächsten Schritt lassen Sie Ihre Aufgabe mit dem **Studio** ausgeben.
 
-Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder zusätzliche Dateien, die den Ablauf und grundlegende Funktionen der Testdurchführung beeinflussen. Nachfolgend sind diese optionalen Dateien aufgeführt und deren Funktion ist kurz beschrieben. 
+Bei der Ausgabe kann festgelegt werden, welche Dateien ausgegeben werden sollen. Es können entweder nur die Dateien zu einer Aufgabe ausgegeben werden oder zusätzliche Dateien, die den Ablauf und grundlegende Funktionen der Testdurchführung beeinflussen. Nachfolgend sind diese optionalen Dateien aufgeführt und deren Funktion wird kurz beschrieben. 
 
 **Player-Html**<br>
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
@@ -194,11 +194,11 @@ Bündelung ausgewählter Aufgaben in Testlets, auch genannt Blöcken.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Über das Formular können dann in diesen Zusatzdateien auch vorab bestimmte Werte gesetzt werden.
+Geben Sie im Ausgabeformular an welche Dateien Sie ausgeben lassen möchten. Möchten Sie zusätzlich zur Aufgabe auch die oben aufgeführten optionalen Dateien ausgeben lassen, müssen Sie die gewünschten Werte angeben die diese Dateien erhalten sollen.
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
-In diesem Beispiel werden 6 Logins im Review-Modus der Datei: **Testtaker-Xml** hinzugefügt. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Der **Booklet-Xml** werden in diesem Fall 2 Werte, die das Aussehen und Verhalten bei einem Aufgabenwechsel festlegen (Modus Seitenwechsel, Buttons für Navigation), übergeben.
+Um die **Testtaker-Xml** und die **Booklet-Xml** ausgeben zu lassen, sind Werte in einem der Felder "Logins hinzufügen" einzugeben. Hierüber wird die Anzahl der Zugänge für die Testpersonen festgelegt. Dabei kann zwischen verschiedenen Testmodi gewählt werden. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, sehen Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). In diesem Fall werden 6 Logins im Review-Modus angelegt. Das **Studio** generiert dann automatisch Zeichenfolgen für den Namen und das Passwort. Optional können weitere Werte angegeben werden, die sich hauptsächlich auf die Seitennavigation im Testverlauf beziehen. Eine Auswahl finden Sie unter "Button für Unit-Navigation" und "Unit Seitenwechsel".
 
 Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. 
 
