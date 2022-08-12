@@ -516,7 +516,7 @@ Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtak
 ![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_01.png)
 
 
-
+![online assessment components: tasks, testees, booklets, authoring, testing, reporting](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_1.png)
 
 
 
