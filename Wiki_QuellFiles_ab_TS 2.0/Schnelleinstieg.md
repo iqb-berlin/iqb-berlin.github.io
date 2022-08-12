@@ -511,9 +511,23 @@ Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQ
 
 Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtaker-Xml** mithilfe der eindeutigen Booklet-ID eingebunden und im **Testcenter** zur Auswahl angezeigt. Das Booklet trägt dann den Namen der unter `Label` in der **Booklet-Xml** eingetragen ist.
 
+![Bookletaufruf](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletaufruf_01.png)
+
 ![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_01.png)
 
-Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: MEA1 angezeigt.
+
+
+
+
+
+
+
+
+
+
+
+
+Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: **MEA1** angezeigt. Nach Ablauf dieser Zeit wird das Testlet gesperrt.
 
 ![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_05.png)
 
