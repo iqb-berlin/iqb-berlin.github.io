@@ -513,23 +513,9 @@ Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtak
 
 ![Bookletaufruf](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletaufruf_01.png)
 
-![Bookletanzeige](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletanzeige_01.png)
-
-
-![online assessment components: tasks, testees, booklets, authoring, testing, reporting](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/einfuehrung_1.png)
-
-
-
-
-
-
-
-
-
-
 Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: **MEA1** angezeigt. Nach Ablauf dieser Zeit wird das Testlet gesperrt.
 
-![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_05.png)
+![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_02.png)
 
 Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "Test beenden". Sie werden darauf hingewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
