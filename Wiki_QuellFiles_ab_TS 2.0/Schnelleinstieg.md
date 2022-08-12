@@ -191,7 +191,7 @@ Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien 
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
 
 **Booklet-Xml**<br>
-Bündelung ausgewählter Aufgaben zu Testheften.
+Bündelung ausgewählter Aufgaben in Testlets oder auch genannt Blöcken.
 
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
@@ -255,7 +255,7 @@ Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunkte d
 
 ![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_05.png)
 
-Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird noch einmal die Funktion der Testdateien beschrieben und wie diese manuell an die spezifischen Testanforderungen angepasst werden können.
+Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird anhand von kurzen Beispiele aufgezeigt, wie die Dateien angepasst werden können.
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
 
@@ -305,6 +305,8 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Unit_Xml_02.md) können Sie den Code kopieren.
 
+:information_source: Übrigens wird eine **Aufgabe** am IQB auch gerne als **Unit** bezeichnet.
+
 </td></tr>
 <tr>
 <td>
@@ -315,9 +317,21 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 <tr>
 <td>
 
-Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xml** mittels spezifischer Attribute und Werte (Booklet Konfiguration) festgelegt werden wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Mehr Informationen zur Booklet-Konfiguration sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
+In einem **Booklet** können Aufgaben zusammengefasst und sortiert werden. 
 
-:information_source: Die hier gezeigte **Booklet-Xml** ist beim Export durch das **Studio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
+:information_source: Ein **Booklet** wird am IQB auch gerne als **Testheft** bezeichnet. 
+
+Die Aufgaben können hier zu so genannten **Testlets** zusammengefasst werden. **Testlets** können mit bestimmten Beschränkungen versehen werden. Hierzu gehören bspw. eine zeitliche Beschränkung für die Bearbeitung des **Testlets** und eine Zugangsbeschränkung mittels Freigabewort.
+
+:information_source: Ein **Testlet** wird am IQB übrigens auch gerne als **Block** bezeichnet. 
+
+Aufgabe können auch "lose" im Booklet vorliegen und werden dann von oben nach unten bei der Testdurchführung im **Testcener** angezeigt.
+
+Weiterhin kann in der **Booklet-Xml** mittels spezifischer Attribute und Werte (Booklet-Konfiguration) Aussehen und Verhalten des **Testcenters** bei der Testdurchführung bestimmt werden. Hierfür stehen eine Vielzahl möglicher Attribute zur Verfügung. Mehr Informationen zur **Booklet-Konfiguration** und den möglichen Attributen sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. 
+
+Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
+
+:information_source: Die hier gezeigte **Booklet-Xml** ist beim Export durch das **Studio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. **Testlets** und spezifische **Booklet Konfigurationen**.
 
 ![Booklet-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Xml_02.png)
 
@@ -327,15 +341,15 @@ Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Test
 <tr>
 <td>
 
-### :heavy_check_mark: Booklet.xml: Testheft hinzufügen
+### :heavy_check_mark: Booklet.xml: Testlet hinzufügen
 
 </td></tr>
 <tr>
 <td>
 
-Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testheft angelegt, sondern nur die erstelle Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testheft hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testheftes bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
+Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testlet angelegt, sondern nur die erstelle Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testlet hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testlet. Das Testlet soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testlets bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
 
-![Booklet Testheft hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_02.gif)
+![Booklet Testlet hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_02.gif)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Testheft_Xml_01.md) können Sie den Code kopieren.
 
@@ -351,9 +365,9 @@ Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml*
 
 In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
 
-Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der Modus der Testung festgelegt. Mit diesem Modus wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der **Modus** der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
 
-Es ist auch möglich einzelne Texte in der Anwendung **Testcenter** zu verändert. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** ist nur ein möglicher Parameter von vielen in der **Custom-Text-Konfiguration** angegeben. Welche Parameter es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
+Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** ist nur ein mögliches Attribut von vielen in der **Custom-Text-Konfiguration** angegeben. Welche Attribute es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
