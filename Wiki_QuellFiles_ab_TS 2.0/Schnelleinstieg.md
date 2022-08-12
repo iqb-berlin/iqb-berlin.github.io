@@ -381,6 +381,8 @@ Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Auß
 
 Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
+Nachfolgend ist die generierte **Testtaker-Xml** durch das **Studio** zu sehen.
+
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml_01.md) können Sie den Code kopieren.
