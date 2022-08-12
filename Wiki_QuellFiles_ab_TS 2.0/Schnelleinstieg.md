@@ -191,26 +191,22 @@ Bei der Ausgabe kann mithilfe eines Formulars festgelegt werden, welche Dateien 
 Wiedergabe der Aufgaben im **Testcenter**. Diese Datei wird auch als **Player-Ressource** bezeichnet.
 
 **Booklet-Xml**<br>
-Bündelung ausgewählter Aufgaben in Testlets oder auch genannt Blöcken.
+Bündelung ausgewählter Aufgaben in Testlets, auch genannt Blöcken.
 
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Mittels spezifischer Werte in den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** können Aussehen und Verhalten einer Testung bestimmt werden. Im Ausgabeformular des **Studios** können einige dieser Werte bereits festgelegt werden. Das **Studio** fügt diese Werte dann den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** hinzu. So werden in diesem Beispiel 6 Logins mit einem zugehörigen **Testmodus** angelegt. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). In diesem Fall werden 6 Logins im Review-Modus angelegt. Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+Über das Formular können dann in diesen Zusatzdateien auch vorab bestimmte Werte gesetzt werden. In diesem Beispiel werden 6 Logins im Review-Modus der Datei: **Testtaker-Xml** hinzugefügt. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). Der **Booklet-Xml** werden in diesem Fall 2 Werte, die das Aussehen und Verhalten bei einem Aufgabenwechsel festgelegen (Modus Seitenwechsel, Buttons für Navigation), übergeben.
 
-Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Mithilfe weiterer Werte kann das Aussehen und Verhalten bei einem Aufgabenwechsel festgelegt werden. Im Ausgabeformular sind einige hierfür häufig verwendete Werte aufgeführt und können in den Testdateien schon vorab festgelegt werden (Modus Seitenwechsel, Buttons für Navigation). 
+Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. 
 
-Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese **Testleitungskonsole** zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
-
-Nach dem erfolgreichen Export finden Sie nun am Speicherort die folgenden Dateien: 
+Nach dem erfolgreichen Export finden Sie nun die folgenden Dateien am Speicherort: 
 
 * die beiden Steuerdateien: **Testtaker1.xml**, **Booklet1.xml**
 * die beiden Dateien zur Aufgabe "MEA": **MEA.xml**, **MEA.voud**
 * die Playerressource: **iqb-player-aspect@1.25-Html**
 
-Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen! Im nächsten Kapitel wird der Inhalt der gerade erzeugten Testdateien noch einmal näher beschrieben.
-
-:information_source: Mehr Informationen zu den Testdateien finden Sie auch im nächsten Kapitel: Schnelleinstieg: Die Testdateien.
+:information_source: Hiermit ist der Aufgabenentwurf mit dem **Studio** abgeschlossen! Im nächsten Kapitel erfahren Sie mehr zu den Testdateien und deren Inhalten.
 
 </td></tr>
 </table>
