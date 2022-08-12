@@ -503,7 +503,7 @@ Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle 
 
 In der **Testtaker-Xml** sind Zugangsdaten für 6 Testpersonen angelegt. Um die Testung durchzuführen, müssen Sie sich mit den Zugangsdaten einer dieser Testpersonen am **Testcenter** anmelden. Die Testung wird dann in dem festgelegten Modus für diese Person abgespielt. Wie im Schnelleinstieg "Testdateien" aufgezeigt, wurde der Testmodus für die erste Person von `run-review` in `run-hot-return` geändert. In diesem Modus können Sie nach der Testdurchführung auch die gespeicherten Antworten herunterladen. Melden Sie sich nun einmal mit den Zugangsdaten dieser ersten Person an. Dazu öffnen Sie noch einmal die **Testtaker-Xml** und kopieren oder notieren sich die Zugangsdaten für diese Person.
 
-![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren_01.png)
+![Testtaker_Login_kopieren](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Login_kopieren_02.png)
 
 Melden Sie sich anschließend vom **Testcenter** ab. Klicken Sie dazu auf das IQB-Logo oben links und melden Sie sich mit den notierten Zugangsdaten erneut an. 
 
