@@ -196,11 +196,11 @@ Bündelung ausgewählter Aufgaben in Testlets oder auch genannt Blöcken.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Mittels spezifischer Werte in den beiden Dateien:**Booklet-Xml** und **Testtaker-Xml** können Aussehen und Verhalten einer Testung bestimmt werden. Dies stellt eine Möglichkeit dar, die Testung den spezifischen Anforderungen anzupassen. Im Ausgabeformular des **Studios** können einige dieser Werte bereits festgelegt werden. Das **Studio** fügt diese Werte dann den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** hinzu. So kann im Formular die Anzahl der **Logins** für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen **Logins** kann dann ein **Modus** zugewiesen werden. Der **Modus** bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Im Formular stehen zwei **Modi** zur Auswahl. Einmal der **Review-Modus** und einmal ein **Test-Modus**. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche **Modi** es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+Mittels spezifischer Werte in den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** können Aussehen und Verhalten einer Testung bestimmt werden. Dies stellt eine Möglichkeit dar die Testung den spezifischen Anforderungen anzupassen. Im Ausgabeformular des **Studios** können einige dieser Werte bereits festgelegt werden. Das **Studio** fügt diese Werte dann den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** hinzu. So kann im Formular die Anzahl der **Logins** für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen **Logins** kann dann ein **Modus** zugewiesen werden. Der **Modus** bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Im Formular stehen zwei **Modi** zur Auswahl. Einmal der **Review-Modus** und einmal ein **Test-Modus**. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche **Modi** es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
 
-In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mittels bestimmter Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
+In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Mithilfe weiterer Werte kann das Aussehen und Verhalten bei einem Aufgabenwechsel festgelegt werden. Im Ausgabeformular sind einige hierfür häufig verwendete Werte aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
 
-Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese Testleitungskonsole zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
+Die Testleitung hat die Möglichkeit eine Testung zu überwachen und zu steuern. Dazu kann die sogenannte **Testleitungskonsole** eingesetzt werden. Diese ist eine Teilanwendung der Anwendung **Testcenter**. Damit die Testleitung diese **Testleitungskonsole** zu einer Testung starten kann, muss sie sich mit zuvor festgelegten Zugangsdaten am **Testcenter** anmelden. Im Formular kann ein solcher Zugang mittels "Anzahl für Monitor" erzeugt werden.
 
 Welche Dateien hat das **Studio** nun erzeugt?
 
@@ -273,16 +273,17 @@ Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **B
 
 **Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert Daten und Werte zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Daten** und **Werte** und können diese auch verändern. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
 
-Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. In diesem **Element** befinden sich **Attribute** mit **Werten**. **Attribute** sind in diesem Fall der **mode** und **pw**, die zugehörigen **Werte** befinden sich in Anführungszeichen hinter dem Gleichheitszeichen. Pure **Daten** gibt es inerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur Daten zu finden, nämlich der Name des Booklets.
+Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. In diesem **Element** befinden sich **Attribute** mit **Werten**. **Attribute** sind in diesem Fall **mode** und **pw**, die zugehörigen **Werte** befinden sich in Anführungszeichen hinter dem Gleichheitszeichen. Pure **Daten** gibt es innerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur **Daten** zu finden, nämlich der Name des Booklets.
 
-xml´´´´
+```xml
 <Login mode="run-hot-return" name="q2d6b" pw="e4y7">
       <Booklet>booklet1</Booklet>
 </Login>
+```
 
-Damit das **Testcenter** alle **Werte** und **Daten** auch finden kann, dürfen nur festgelegte **Elemente** mit zulässigen **Werten** in der **XML** angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können.
+Damit das **Testcenter** alle Werte und Daten auch finden kann, dürfen nur festgelegte Elemente mit zulässigen Werten in der XML angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können.
 
-Es ist möglich eine XML auf zulässige Elemente zu überprüfen. Dies soll verhindern, dass eine XML mit nicht zulässigen Elementen in das **Testcenter** geladen wird. Welche Elemente erlaubt sind und welche nicht, legt die **Schema-Definition** fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
+Es ist möglich eine XML auf zulässige Elemente zu überprüfen. Dies soll verhindern, dass eine XML mit nicht zulässigen Elementen in das **Testcenter** geladen wird. Welche Elemente erlaubt sind und welche nicht, legt die **Schema-Definition** fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung einer XML auf Wunsch den aktuellen Inhalt mit der **Schema-Definition** ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten **Schema-Definition**. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese **Schema-Definition** beginnt dann mit `xmlns:xsi`.
 
 
 </td></tr>
@@ -330,15 +331,15 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 
 In einem **Booklet** können Aufgaben zusammengefasst und sortiert werden. 
 
-:information_source: Ein **Booklet** wird am IQB auch gerne als **Testheft** bezeichnet. 
+:information_source: Ein **Booklet** wird am IQB auch als **Testheft** bezeichnet. 
 
 Die Aufgaben können hier zu so genannten **Testlets** zusammengefasst werden. **Testlets** können mit bestimmten Beschränkungen versehen werden. Hierzu gehören bspw. eine zeitliche Beschränkung für die Bearbeitung des **Testlets** und eine Zugangsbeschränkung mittels Freigabewort.
 
-:information_source: Ein **Testlet** wird am IQB übrigens auch gerne als **Block** bezeichnet. 
+:information_source: Ein **Testlet** wird am IQB übrigens auch als **Block** bezeichnet. 
 
-Aufgabe können auch "lose" im Booklet vorliegen und werden dann von oben nach unten bei der Testdurchführung im **Testcener** angezeigt.
+Aufgabe können auch "lose" im Booklet vorliegen und werden dann von oben nach unten bei der Testdurchführung im **Testcenter** angezeigt.
 
-Weiterhin kann in der **Booklet-Xml** mittels spezifischer Attribute und Werte (Booklet-Konfiguration) Aussehen und Verhalten des **Testcenters** bei der Testdurchführung bestimmt werden. Hierfür stehen eine Vielzahl möglicher Attribute zur Verfügung. Mehr Informationen zur **Booklet-Konfiguration** und den möglichen Attributen sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. 
+Weiterhin kann in der **Booklet-Xml** mittels spezifischer Elemente, Attribute und Werte (Booklet-Konfiguration) Aussehen und Verhalten des **Testcenters** bei der Testdurchführung bestimmt werden. Hierfür stehen eine Vielzahl möglicher Elemente, Attribute und Werte zur Verfügung. Mehr Informationen zur **Booklet-Konfiguration** sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. 
 
 Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 
@@ -358,7 +359,7 @@ Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 <tr>
 <td>
 
-Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testlet angelegt, sondern nur die erstelle Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testlet hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testlet. Das Testlet soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testlets bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
+Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testlet angelegt, sondern nur die erstellte Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testlet hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testlet. Das Testlet soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testlets bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
 
 ![Booklet Testlet hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_02.gif)
 
@@ -378,7 +379,7 @@ In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei st
 
 Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der **Modus** der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
 
-Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** ist nur ein mögliches Attribut von vielen in der **Custom-Text-Konfiguration** angegeben. Welche Attribute es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
+Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
@@ -396,7 +397,7 @@ Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** 
 
 Jeder Testmodus weist spezifische Eigenschaften auf. So werden bspw. Anworten einer Testung im Modus: `run-review` nicht gespeichert, im Modus: `run-hot-return` oder `run-hot-restart` aber schon. Eine Übersicht der verfügbaren Modi und deren Funktionen finden Sie [**hier**](https://github.com/iqb-berlin/testcenter-frontend/blob/master/docs/test-mode.md). 
 
-Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine Testperson den Modus: von `run-review` auf `run-hot-return` ändern und die Änderung anschließend speichern. Zur Erinnerung: Im Review-Modus werden keine Antworten gespeichert und es könnte daher auch keine Auswertung erfolgen.
+Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gestartet werden soll und abschließend auch eine Auswertung der gegebenen Antworten erfolgen soll, sollten Sie für eine der Testpersonen den Modus: von `run-review` auf `run-hot-return` ändern und die Änderung anschließend speichern. Zur Erinnerung: Im Review-Modus werden keine Antworten gespeichert und es könnte daher auch keine Auswertung erfolgen.
 
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_02.png)
 
@@ -539,8 +540,6 @@ Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtak
 ![Bookletaufruf](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletaufruf_01.png)
 
 Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: **MEA1** angezeigt. Nach Ablauf dieser Zeit wird das Testlet gesperrt.
-
-![Booklet Beschraenkungen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Beschraenkungen_02.png)
 
 Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "Test beenden". Sie werden darauf hingewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
 
