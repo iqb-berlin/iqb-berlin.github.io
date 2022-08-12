@@ -315,7 +315,7 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 <tr>
 <td>
 
-Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xml** mittels spezifischer Parameter (Booklet Konfiguration) festgelegt werden wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Mehr Informationen zur Booklet-Konfiguration sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
+Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Testperson präsentiert werden. Werden Aufgaben in Testheften zusammengefasst, ist es weiterhin möglich Zugangsbeschränkungen und zeitliche Limits festzulegen. Außerdem kann in der **Booklet-Xml** mittels spezifischer Attribute und Werte (Booklet Konfiguration) festgelegt werden wie zwischen den Aufgaben navigiert werden kann. Bspw. kann das Weiterblättern zur nächsten Aufgabe von bestimmten Bedingungen abhängig gemacht werden. Mehr Informationen zur Booklet-Konfiguration sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 
 :information_source: Die hier gezeigte **Booklet-Xml** ist beim Export durch das **Studio** automatisch erzeugt wurden. Hier werden nur grundsätzliche Strukturen erzeugt. Es fehlen bspw. Testhefte und spezifische Booklet Konfigurationen.
 
@@ -335,7 +335,7 @@ Mittels **Booklet.xml** wird festgelegt in welcher Reihenfolge Aufgaben der Test
 
 Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testheft angelegt, sondern nur die erstelle Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testheft hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testheft. Das Testheft soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testheftes bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
 
-![Booklet Testheft hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_01.gif)
+![Booklet Testheft hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_02.gif)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Booklet_Testheft_Xml_01.md) können Sie den Code kopieren.
 
