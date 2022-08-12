@@ -196,7 +196,7 @@ Bündelung ausgewählter Aufgaben in Testlets oder auch genannt Blöcken.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Im Ausgabeformular kann nun festgelegt werden, welche Werte die beiden Dateien **Booklet-Xml** und **Testtaker-Xml** erhalten sollen. So kann im Formular die Anzahl der Logins für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen Logins kann dann ein Modus zugewiesen werden. Der Modus bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Es stehen im Formular zwei Modi zur Auswahl. Einmal der Review-Modus und einmal ein Test-Modus. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche Modi es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+Mittels spezifischer Werte in den beiden Dateien:**Booklet-Xml** und **Testtaker-Xml** können Aussehen und Verhalten einer Testung bestimmt werden. Dies stellt eine Möglichkeit dar, die Testung den spezifischen Anforderungen anzupassen. Im Ausgabeformular des **Studios** können einige dieser Werte bereits festgelegt werden. Das **Studio** fügt diese Werte dann den beiden Dateien: **Booklet-Xml** und **Testtaker-Xml** hinzu. So kann im Formular die Anzahl der **Logins** für die Personen angegeben werden, die an der Testung teilnehmen sollen. Diesen **Logins** kann dann ein **Modus** zugewiesen werden. Der **Modus** bestimmt wie die Testung nach Anmeldung dieser Personen am **Testcenter** ablaufen soll. Im Formular stehen zwei **Modi** zur Auswahl. Einmal der **Review-Modus** und einmal ein **Test-Modus**. Letzterer entspricht einer finalen Testung mit all ihren Eigenschaften. Welche **Modi** es gibt und welche Eigenschaften diese besitzen finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
 
 In diesem Beispiel werden 6 Personen mit Passwort im Review-Modus angelegt. Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. Bzgl. Navigation kann das Aussehen und Verhalten bei einem Aufgabenwechsel mittels bestimmter Parametern beeinflusst werden. Im Ausgabeformular sind einige häufig verwendete Parameter aufgeführt und können in den Testdateien schon vorab festgelegt werden. 
 
@@ -249,13 +249,13 @@ Es wird zu jeder Aufgabe jeweils eine **VOUD-Datei** und eine **XML-Datei** erze
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die gewünschten Dateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Dateien zur Aufgabe ausgegeben, sondern auch noch die beiden Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien beim Export hergestellt.
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die Testdateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Dateien zur Aufgabe ausgegeben, sondern auch noch die beiden Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien beim Export hergestellt.
 
 Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunkte dargestellt.
 
 ![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_05.png)
 
-Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerdateien **Testtaker-Xml** und **Booklet-Xml** bei der Ausgabe durch das **Studio** gesetzt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen. Nachfolgend wird anhand von kurzen Beispiele aufgezeigt, wie die Dateien angepasst werden können.
+Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **Booklet-Xml** können Aussehen und Ablauf der Testung festgelegt werden. Einige dieser Werte werden bereits beim Export durch das **Studio** diesen beiden Dateien hinzugefügt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen und um entsprechende Werte zu erweitern. Nachfolgend wird anhand von kurzen Beispiele aufgezeigt, wie die Dateien angepasst werden können.
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
 
@@ -265,13 +265,24 @@ Einige Abhängigkeiten und Werte wurde bereits automatisch in den beiden Steuerd
 <tr>
 <td>
 
-### :heavy_check_mark: XML-Schema Definition
+### :heavy_check_mark: XML und die Schema Definition
 
 </td></tr>
 <tr>
 <td>
 
-Die verwendeten Testdateien sind XML-Dateien. Damit diese XML-Dateien auch vom **Testcenter** gelesen werden können, dürfen diese nur definierte Inhalte aufweisen. Welche Inhalte erlaubt sind legt eine so genannte Schema-Definition fest. Hierbei handelt es sich grob gesagt um eine Vorlage wie die entsprechende Xml-Datei auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden Xml-Datei mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
+**Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert Daten und Werte zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Daten** und **Werte** und können diese auch verändern. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
+
+Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. In diesem **Element** befinden sich **Attribute** mit **Werten**. **Attribute** sind in diesem Fall der **mode** und **pw**, die zugehörigen **Werte** befinden sich in Anführungszeichen hinter dem Gleichheitszeichen. Pure **Daten** gibt es inerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur Daten zu finden, nämlich der Name des Booklets.
+
+xml´´´´
+<Login mode="run-hot-return" name="q2d6b" pw="e4y7">
+      <Booklet>booklet1</Booklet>
+</Login>
+
+Damit das **Testcenter** alle **Werte** und **Daten** auch finden kann, dürfen nur festgelegte **Elemente** mit zulässigen **Werten** in der **XML** angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können.
+
+Es ist möglich eine XML auf zulässige Elemente zu überprüfen. Dies soll verhindern, dass eine XML mit nicht zulässigen Elementen in das **Testcenter** geladen wird. Welche Elemente erlaubt sind und welche nicht, legt die **Schema-Definition** fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung auf Wunsch den aktuellen Inhalt mit der Schema-Definition ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten Schema-Definition. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese Schema-Definition beginnt dann mit `xmlns:xsi`.
 
 
 </td></tr>
