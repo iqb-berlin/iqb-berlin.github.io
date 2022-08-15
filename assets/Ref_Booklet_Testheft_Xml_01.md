@@ -24,7 +24,7 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
           <TimeMax minutes="10"/>
       </Restrictions>
     
-    <Unit id="MEA" label="1. Meine erste Aufgabe" />
+    <Unit id="MEA" label="1. Meine erste Aufgabe" labelshort="1" />
       
     </Testlet>
 
