@@ -315,7 +315,7 @@ Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen 
 
 ---
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.6-Kodierung">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3.6-Kodierung-(Schemer)">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -333,7 +333,7 @@ Detailierte Informationen zum **Aspect-Player** finden Sie in dem gleichnamigen 
 
 ---
 
-# 3.6 Kodierung
+# 3.6 Kodierung (Schemer)
 
 ```yaml
 Dokumentstatus: Review (THuste)
@@ -341,6 +341,7 @@ Stand: 05.08.2022
 todo: - In Bearbeitung
       
 ```
+Informationen zum Schemer sind dem [folgenden](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schemer-Vxx) Einzeldokument zu entnehmen.
 
 ---
 
