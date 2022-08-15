@@ -382,7 +382,7 @@ Nachfolgend ist die generierte **Testtaker-Xml** durch das **Studio** zu sehen.
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml_01.md) können Sie den Code kopieren.
 
-:heavy_exclamation_mark: **Gruppen-ID und Name der Testperson dürfen im Testcenter nur einmal vorkommen. Befindet sich in einem anderen Arbeitsbereich ein Duplikat, ist das Laden der Testtaker-Xml in das Testcenter nicht möglich und wird mit einer entsprechenden Fehlermeldung abgelehnt. Daher sollten auch keine "Klarbezeichner" gewählt werden, sondern immer eine Kombination aus Buchstaben und Zahlen. Dies verringert die Wahrscheinlichkeit von Duplikaten.**
+:heavy_exclamation_mark: Gruppen-ID und Name der Testperson dürfen im Testcenter nur einmal vorkommen. Befindet sich in einem anderen Arbeitsbereich ein Duplikat, ist das Laden der Testtaker-Xml in das Testcenter nicht möglich und wird mit einer entsprechenden Fehlermeldung abgelehnt. Daher sollten auch keine "Klarbezeichner" gewählt werden, sondern immer eine Kombination aus Buchstaben und Zahlen. Dies verringert die Wahrscheinlichkeit von Duplikaten.
 
 
 </td></tr>
