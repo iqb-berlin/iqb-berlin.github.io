@@ -11,16 +11,16 @@ Mehrere Testhefte und Aufgaben außerhalb der Testlets:
 <Booklet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Booklet.xsd">
   
-<Metadata>
-  <Id>booklet1</Id>
-  <Label>Testheft 1</Label>
-</Metadata>
+  <Metadata>
+    <Id>booklet1</Id>
+    <Label>Testheft 1</Label>
+  </Metadata>
 
-<BookletConfig>
-  <Config key="pagingMode">separate</Config>
-  <Config key="unit_navibuttons">FULL</Config>
-  <Config key="unit_menu">FULL</Config>
-</BookletConfig>
+  <BookletConfig>
+    <Config key="pagingMode">separate</Config>
+    <Config key="unit_navibuttons">FULL</Config>
+    <Config key="unit_menu">FULL</Config>
+  </BookletConfig>
 
   <Units>
   
