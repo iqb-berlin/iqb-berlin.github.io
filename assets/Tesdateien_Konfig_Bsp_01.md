@@ -11,51 +11,53 @@ Mehrere Testhefte und Aufgaben außerhalb der Testlets:
 <Booklet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Booklet.xsd">
   
-<Metadata>
-  <Id>booklet1</Id>
-  <Label>Testheft 1</Label>
-</Metadata>
+  <Metadata>
+    <Id>booklet1</Id>
+    <Label>Testheft 1</Label>
+  </Metadata>
 
-<BookletConfig>
-  <Config key="pagingMode">separate</Config>
-  <Config key="unit_navibuttons">FULL</Config>
-  <Config key="unit_menu">FULL</Config>
-</BookletConfig>
+  <BookletConfig>
+		<Config key="pagingMode">separate</Config>
+		<Config key="unit_navibuttons">FULL</Config>
+		<Config key="unit_menu">FULL</Config>
+  </BookletConfig>
 
-<Units>
-  
-  <Unit id="Start" label="Begrüßung zur Testung"/>
-
-  <Testlet id="MET1" label="Mein erstes Testlet">
+  <Units>
     
-    <Restrictions>
-        <CodeToEnter code="Hase">Bitte gib das Freigabewort ein.</CodeToEnter>
-        <TimeMax minutes="10"/>
-    </Restrictions>
-  
-    <Unit id="MEA1" label="Aufgabe 1" labelshort="1"/>
-    <Unit id="MEA2" label="Aufgabe 2" labelshort="2"/>
-    <Unit id="MEA3" label="Aufgabe 3" labelshort="3"/>
-  
-  </Testlet>
+<Unit id="Start" label="Begrüßung zur Testung"/>
 
-  <Unit id="Info1" label="Informationen zum Testlet 2"/>
-
-  <Testlet id="MET2" label="Mein zweites Testlet">
+    <Testlet id="MET1" label="Mein erstes Testlet">
+      
+      <Restrictions>
+          <CodeToEnter code="Hase">Bitte gib das Freigabewort ein.</CodeToEnter>
+          <TimeMax minutes="10"/>
+      </Restrictions>
     
-    <Restrictions>
-        <CodeToEnter code="Vogel">Bitte gib das Freigabewort ein.</CodeToEnter>
-    </Restrictions>
-  
-    <Unit id="MEA4" label="Aufgabe 4" labelshort="4"/>
-    <Unit id="MEA5" label="Aufgabe 5" labelshort="5"/>
-    <Unit id="MEA6" label="Aufgabe 6" labelshort="6"/>
-              
-  </Testlet>
-
-  <Unit id="Ende" label="Verabschiedung"/>
-
-</Units>
+      <Unit id="MEA1" label="Aufgabe 1" labelshort="1"/>
+	  <Unit id="MEA2" label="Aufgabe 2" labelshort="2"/>
+	  <Unit id="MEA3" label="Aufgabe 3" labelshort="3"/>
+	  
+            
+    </Testlet>
+	
+	<Unit id="Info1" label="Informationen zum Testlet 2"/>
+	
+	<Testlet id="MET2" label="Mein zweites Testlet">
+      
+      <Restrictions>
+          <CodeToEnter code="Vogel">Bitte gib das Freigabewort ein.</CodeToEnter>
+      </Restrictions>
+    
+      <Unit id="MEA4" label="Aufgabe 4" labelshort="4"/>
+	  <Unit id="MEA5" label="Aufgabe 5" labelshort="5"/>
+	  <Unit id="MEA6" label="Aufgabe 6" labelshort="6"/>
+	  
+            
+    </Testlet>
+	
+	<Unit id="Ende" label="Verabschiedung"/>
+	
+  </Units>
 
 </Booklet>
 ```
@@ -73,35 +75,35 @@ Mehrere Gruppen und ein Monitor zur Überwachung einer der Gruppe:
 <Testtakers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Testtakers.xsd">
   
-<Metadata/>
+  <Metadata/>
+  
+  <CustomTexts>
+    <CustomText key="login_testEndButtonText">Test beenden</CustomText>
+  </CustomTexts>
+  
+  <Group id="5a" label="Klasse 5a">
 
-<CustomTexts>
-  <CustomText key="login_testEndButtonText">Test beenden</CustomText>
-</CustomTexts>
-
-<Group id="5a" label="Klasse 5a">
-
-  <Login mode="run-hot-return" name="q2d6b" pw="e4y7">
-    <Booklet>booklet5a</Booklet>
-  </Login>
-  <Login mode="run-hot-return" name="e2p5h" pw="c3h6">
-    <Booklet>booklet5a</Booklet>
-  </Login>
-
-</Group>
-
-<Group id="5b" label="Klasse 5b">
-
-  <Login mode="run-review" name="q2op3" pw="z76z">
-    <Booklet>booklet5b</Booklet>
-  </Login>
-  <Login mode="run-review" name="e2io3" pw="d3f6">
-    <Booklet>booklet5b</Booklet>
-  </Login>
-
-  <Login mode="monitor-group" name="monitor_1" />
+    <Login mode="run-hot-return" name="q2d6b" pw="e4y7">
+      <Booklet>booklet5a</Booklet>
+    </Login>
+    <Login mode="run-hot-return" name="e2p5h" pw="c3h6">
+      <Booklet>booklet5a</Booklet>
+    </Login>
 
   </Group>
+
+  <Group id="5b" label="Klasse 5b">
+
+      <Login mode="run-review" name="q2op3" pw="z76z">
+        <Booklet>booklet5b</Booklet>
+      </Login>
+      <Login mode="run-review" name="e2io3" pw="d3f6">
+        <Booklet>booklet5b</Booklet>
+      </Login>
+
+      <Login mode="monitor-group" name="monitor_1" />
+
+    </Group>
 </Testtakers>
 
 ```
