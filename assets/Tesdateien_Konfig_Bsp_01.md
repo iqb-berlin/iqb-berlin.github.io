@@ -63,4 +63,4 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
 
 Die Unit-Navigationsleiste dazu würde so aussehen:
 
-![Bsp1 Booklet Navileiste](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bsp1_Booklet_Navileiste.png)
+![Bsp1 Booklet Navileiste](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bsp1_Booklet_Navileiste_01.png)
