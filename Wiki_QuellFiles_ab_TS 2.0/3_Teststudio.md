@@ -121,7 +121,7 @@ Weiterhin können zu jeder angelegten Aufgabe Kommentare hinterlegt werden. Dies
 
 ## 3.2 Zugriffsrechte
 
-Die Zugriffsrechte sind über zwei Anmeldetypen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen, die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
+Die Zugriffsrechte sind über zwei Anmeldeebenen geregelt. Zum einen den sogenannten **SuperAdmin** und zum anderen den **WorkspaceAdmin**. Der **SuperAdmin** kann, wie der Name vielleicht schon andeutet, so ziemlich alles im **Studio** freigeben. Er kann Personen anlegen und grundlegende Zugriffsrechte auf Bereichsgruppen und Arbeitsbereiche vergeben. Alle Personen, die vom **SuperAdmin** hinterlegt wurden und nicht als **SuperAdmin** angelegt wurden, sind automatisch **WorkspaceAdmins**. Diese können dann Arbeitsbereiche innerhalb einer Bereichsgruppe für andere Personen freigeben und spezifische Einstellungen an den Arbeitsbereichen vornehmen.
 
 **Was kann der SuperAdmin?**
 

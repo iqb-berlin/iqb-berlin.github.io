@@ -84,7 +84,7 @@ Lernen Sie beiden Anwendung **Studio** und **Testcenter** und die Bearbeitung de
 
 Eingabe der Adresse des Studios in einen Browser.
  
-:heavy_exclamation_mark: **Das Studio muss dazu auf Ihrem Server installiert sein.**
+:heavy_exclamation_mark: Das Studio muss dazu auf Ihrem Server installiert sein.
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Studio an.
 
@@ -198,7 +198,7 @@ Welche Dateien ausgegeben werden soll, kann im Ausgabeformular angegeben werden.
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
-In diesem Fall werden 6 Logins im Review-Modus angelegt. Das **Studio** generiert dann automatisch Zeichenfolgen für den Namen und das Passwort in der **Testtaker-Xml** unter `Login`. Optional können die Logins auch ohne Passwort angelegt werden. Außerdem generiert das **Studio** eine Gruppe, der diese Logins zugeordnet werden. Auch hierfür wird eine eindeutige Zeichenfolge generiert. Sobald eine Testperson in einem Testmodus angelegt wurde, wird aber nicht nur die **Testtaker-Xml** erzeugt, sondern auch eine **Bookelt-Xml**. Dieser fügt das **Studio** dann gleich die gewählte Aufgabe unter `Units` hinzu. Es können noch weitere Werte im Formular angegeben werden, die sich hauptsächlich auf die Seitennavigation im Testverlauf beziehen. Eine Auswahl finden Sie im Formular unter "Button für Unit-Navigation" und "Unit Seitenwechsel". Die hier gewählten Werte werden dann in der **Booklet-Xml** unter `BookletConfig` angelegt. 
+In diesem Fall werden 6 Logins im Review-Modus angelegt. Das **Studio** generiert dann automatisch Zeichenfolgen für den Namen und das Passwort in der **Testtaker-Xml** unter `Login`. Optional können die Logins auch ohne Passwort angelegt werden. Außerdem generiert das **Studio** eine Gruppe, der diese Logins zugeordnet werden. Auch hierfür wird eine eindeutige Zeichenfolge generiert. Sobald eine Testperson in einem Testmodus angelegt wurde, wird zusätzlich zur **Testtaker-Xml** auch eine **Bookelt-Xml** erzeugt. Dieser fügt das **Studio** dann gleich die gewählte Aufgabe unter `Units` hinzu. Es können noch weitere Werte im Formular angegeben werden, die sich hauptsächlich auf die Seitennavigation im Testverlauf beziehen. Eine Auswahl finden Sie im Formular unter "Button für Unit-Navigation" und "Unit Seitenwechsel". Die hier gewählten Werte werden dann in der **Booklet-Xml** unter `BookletConfig` angelegt. 
 
 Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. 
 
@@ -271,7 +271,7 @@ Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **B
 <tr>
 <td>
 
-**Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert, müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert Daten und Werte zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Werte** und **Daten** und können diese manipulieren. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
+**Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert, müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert **Daten** und **Werte** zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Werte** und **Daten** und können diese manipulieren. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
 
 Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. Dieses **Element** verfügt über definierte **Attribute** mit entsprechenden **Werten**. **Attribute** sind in diesem Fall **mode** und **pw**. Die zugehörigen **Werte** werden mittels Gleichheitszeichen zugewiesen. Pure **Daten** gibt es innerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur **Daten** zu finden, nämlich der Name des Booklets.
 
@@ -281,7 +281,7 @@ Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dab
 </Login>
 ```
 
-Damit das **Testcenter** alle Werte und Daten auch finden kann, dürfen nur festgelegte Elemente mit zulässigen Werten in der XML angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können. Um nicht erlaubte Elemente einer XML bereits beim Laden in das **Testcenter** zu erkennen, muss eine Vorabprüfung stattfinden. Die Vorabprüfung kann mittels so genannter **Schema-Definition** erfolgen.Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat und welche Elemente enthalten sein dürfen. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung einer XML auf Wunsch den aktuellen Inhalt mit der **Schema-Definition** ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten Vorlage der **Schema-Definition**. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese **Schema-Definition** beginnt dann mit `xmlns:xsi`.
+Damit das **Testcenter** alle Werte und Daten auch finden kann, dürfen nur festgelegte Elemente mit zulässigen Werten in der **XML** angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können. Um nicht erlaubte Elemente einer XML bereits beim Laden in das **Testcenter** zu erkennen, muss eine Vorabprüfung stattfinden. Die Vorabprüfung kann mittels so genannter **Schema-Definition** erfolgen.Hierbei handelt es sich grob gesagt um eine Vorlage wie die entsprechende XML auszusehen hat und welche Elemente enthalten sein dürfen. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung einer **XML** auf Wunsch den aktuellen Inhalt mit der **Schema-Definition** ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden **XML** mit der deklarierten Vorlage der **Schema-Definition**. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese **Schema-Definition** beginnt dann mit `xmlns:xsi`.
 
 
 </td></tr>
