@@ -14,7 +14,7 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/test
   </BookletConfig>
   
   <Units>
-    <Unit id="MEA" label="1. Meine erste Aufgabe" />
+    <Unit id="MEA" label="1. Meine erste Aufgabe" labelshort="1" />
   </Units>
 
 </Booklet>
