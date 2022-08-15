@@ -306,7 +306,7 @@ Während der Aufgabenerstellung im **Studio** wird festgelegt mit welchem Editor
 <tr>
 <td>
 
-Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle über den Editor angelegten Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben, welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA1** erzeugte Xml-Datei dargestellt.
+Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle über den Editor angelegten Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben, welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA** erzeugte Xml-Datei dargestellt.
 
 ![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_01.png)
 
@@ -372,7 +372,7 @@ Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml*
 
 In der Testtakers können Logins (`Login`) für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
 
-Die Logins mit den Anmeldedaten werden dabei immer einer entsprechenden Gruppe `Group` mit eindeutiger ID zugewiesen. Zusätzlich zu den Anmeldedaten wird angegeben, welches Booklet der jeweiligen Testperson nach Anmeldung präsentiert werden soll. Außerdem wird hier der **Modus** (`mode`) der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+Die Logins mit den Anmeldedaten werden dabei immer einer entsprechenden Gruppe (`Group`) mit eindeutiger ID zugewiesen. Zusätzlich zu den Anmeldedaten wird angegeben, welches Booklet der jeweiligen Testperson nach Anmeldung präsentiert werden soll. Außerdem wird hier der **Modus** (`mode`) der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
 
 Es ist auch möglich einzelne Texte individuell für die Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
@@ -381,6 +381,9 @@ Nachfolgend ist die generierte **Testtaker-Xml** durch das **Studio** zu sehen.
 ![Testtaker-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtaker_Xml_03.png)
 
 > [**Hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Ref_Testtaker_Xml_01.md) können Sie den Code kopieren.
+
+:heavy_exclamation_mark: **Gruppen-ID und Name der Testperson dürfen im Testcenter nur einmal vorkommen. Befindet sich in einem anderen Arbeitsbereich ein Duplikat, ist das Laden der Testtaker-Xml in das Testcenter nicht möglich und wird mit einer entsprechenden Fehlermeldung abgelehnt. Daher sollten auch keine "Klarbezeichner" gewählt werden, sondern immer eine Kombination aus Buchstaben und Zahlen. Dies verringert die Wahrscheinlichkeit von Duplikaten.**
+
 
 </td></tr>
 <tr>
@@ -472,7 +475,7 @@ Die Testleitung kann mittels einer weiteren integrierten Funktion des Testcenter
 
 Eingabe der Adresse des Testcenters in einen Browser: **www.iqb-testcenter.de**
  
-:heavy_exclamation_mark: **Das Testcenter muss dazu auf Ihrem Server installiert sein.**
+:information_source: **Das Testcenter muss auf einem Server installiert sein.**
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätigen Sie nach Eingabe Ihrer Zugangsdaten die Schaltfläche: **Weiter als Admin**. Die Schaltfläche **Weiter** ist für die Anmeldung der Testpersonen gedacht.
 
@@ -504,7 +507,7 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich
 <tr>
 <td>
 
-Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA01-xml** und die zugehörigen Ressourcen: **MEA01-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise wird dem **Testcenter** bekannt gegeben wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
+Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA-xml** und die zugehörigen Ressourcen: **MEA-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise wird dem **Testcenter** bekannt gegeben wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
 
 :heavy_exclamation_mark: **Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das Testcenter laden. Wird dies nicht beachtet, lehnt das Testcenter die Datei mit einem entsprechendem Hinweis ab.** 
 
@@ -536,11 +539,32 @@ Nach der Anmeldung wird das zu dieser Person angegebene Booklet in der **Testtak
 
 ![Bookletaufruf](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bookletaufruf_02.png)
 
-Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: **MEA1** angezeigt. Nach Ablauf dieser Zeit wird das Testlet gesperrt.
+Nach Auswahl des Booklets muss zuerst das Freigabewort für das Testlet eingegeben werden. Sobald dieses eingegeben wurde, beginnt die Zeit von 10 Minuten abzulaufen und es wird die im Testlet befindliche Aufgabe: **MEA** angezeigt. Nach Ablauf dieser Zeit wird das Testlet gesperrt.
 
-Sobald Sie die Aufgabe beantwortet haben, klicken Sie im Menu oben rechts auf "Test beenden". Sie werden darauf hingewiesen, dass Sie einen zeitbeschränkten Bereich verlassen und nicht zurückkehren können. Bestätigen Sie diese Meldung um den Test zu beenden.
+Nachdem das Freigabewort erfolgreich eingegeben wurde, wird Ihnen die erste und einzige Aufgabe in diesem Testlet angezeigt, nämlich unsere Aufgabe "MEA". Der im **Testcenter** angezeigte Name entspricht dem Attribut `label`, welches in der **Booklet-Xml** zur Aufgabe vergeben werden kann.
 
-:information_source: Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet an.
+```xml
+<Testlet id="MET" label="Mein erstes Testheft">
+      
+   <Restrictions>
+      <CodeToEnter code="Hase">Bitte gib das Freigabewort ein.</CodeToEnter>
+      <TimeMax minutes="10"/>
+   </Restrictions>
+    
+   <Unit id="MEA" label="Aufgabe 1" labelshort="1"/>
+            
+</Testlet>
+```
+
+Wählen Sie nun in der angezeigten Aufgabe "Aufgabe 1" ein Optionsfeld aus und merken Sie sich dieses. Anschließend kann der Test beendet werden. Dies kann auf verschiedenen Wege erfolgen. Entweder betätigen Sie einen der beiden Pfeile (rechts/ links) im Navigationsmenu oben rechts und verlassen damit das zeitbeschränkte Testlet. Oder Sie klicken einmal auf das IQB-Logo oben links. In beiden Fällen erscheint ein Hinweis, dass ein zeitbeschränkter Bereich verlassen werden soll und das Testlet anschließend gesperrt wird. Bestätigen Sie diesen Hinweis mit "Test beenden". 
+
+Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet an.
+
+:information_source: Kleiner Tipp: Im Navigationsmenu oben rechts sind zwei Pfeile und eine Aufgabe mit der Bezeichnung "1" zu sehen. Die "1" kommt aus der **Booklet-Xml** und ist der Unit über das Attribut `Labelshort` zugewiesen. An dieser Stelle haben Sie also die Möglichkeit den Bezeichner anzupassen.
+
+```xml
+<Unit id="MEA" label="Aufgabe 1" labelshort="1"/>
+```
 
 </td></tr>
 <tr>
