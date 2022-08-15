@@ -556,9 +556,9 @@ Nachdem das Freigabewort erfolgreich eingegeben wurde, wird Ihnen die erste und 
 </Testlet>
 ```
 
-Wählen Sie nun in der angezeigten Aufgabe "Aufgabe 1" ein Optionsfeld aus und merken Sie sich dieses. Anschließend kann der Test beendet werden. Dies kann auf verschiedenen Wege erfolgen. Entweder betätigen Sie einen der beiden Pfeile (rechts/ links) im Navigationsmenu oben rechts und verlassen damit das zeitbeschränkte Testlet. Oder Sie klicken einmal auf das IQB-Logo oben links. In beiden Fällen erscheint ein Hinweis, dass ein zeitbeschränkter Bereich verlassen werden soll und das Testlet anschließend gesperrt wird. Bestätigen Sie diesen Hinweis mit "Test beenden". 
+Wählen Sie nun in der angezeigten Aufgabe "Aufgabe 1" ein Optionsfeld aus und merken Sie sich dieses. Anschließend kann der Test beendet werden. Dies kann auf verschiedenen Wegen erfolgen. Entweder betätigen Sie einen der beiden Pfeile (rechts/ links) im Navigationsmenu oben rechts und verlassen damit das zeitbeschränkte Testlet oder Sie klicken einmal auf das IQB-Logo oben links. In beiden Fällen erscheint ein Hinweis, dass ein zeitbeschränkter Bereich verlassen werden soll und das Testlet anschließend gesperrt wird. Bestätigen Sie diesen Hinweis mit "Test beenden". 
 
-Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet oder außerhalb des Testlets an.
+Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet oder außerhalb des Testlets an. Verwenden Sie dazu auch gerne die aufgeführten Beispiele am Ende des vorherigen Kapitels.
 
 :information_source: Kleiner Tipp: Im Navigationsmenu oben rechts sind zwei Pfeile und eine Aufgabe mit der Bezeichnung "1" zu sehen. Der Bezeichner kommt aus der **Booklet-Xml** und ist der Unit über das Attribut `Labelshort` zugewiesen. An dieser Stelle haben Sie also die Möglichkeit den Bezeichner anzupassen.
 
@@ -576,9 +576,12 @@ Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur ein
 <tr>
 <td>
 
-Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche "Weiter als Admin") an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter "Ergebnisse/Antworten". Dort sollten Sie nun den Namen Ihrer Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben. In diesem Beispiel wurde der vom **Studio** automatisch erzeugte Name in **MEG** umbenannt.
+Wurde eine Testung in einem entsprechenden Modus (nicht jeder Modus speichert Antworten) durchgeführt, werden alle gegebenen Antworten personenspezifisch gespeichert. Sie finden die gegebenen Antworten dann in dem Arbeitsbereich in welchem sich auch die Testdateien befinden. Melden Sie sich dazu wieder als Testleitung (Schaltfläche "Weiter als Admin") an und wechseln Sie in Ihren Arbeitsbereich. Dort gehen Sie zum Reiter "Ergebnisse/Antworten". Dort sollten Sie nun den Namen der hier verwendeten Login-Gruppe finden. Vielleicht erinnern Sie sich noch? Der Name der Login-Gruppe wurde in der **Testtakers-Xml** angegeben. In diesem Beispiel wurde der vom **Studio** automatisch erzeugte Name in **MEG** umbenannt.
 
 ![Testtakers Group-ID](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testtakers_Group-ID.png)
+
+![Download Antworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Download_Antworten.png)
+
 
 Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor der Login-Gruppe **MEG** und betätigen Sie die Schaltfläche: "Antworten". Die Datei wird dann im angegebenen Verzeichnis gespeichert. Anschließend kann diese Datei mit Excel geöffnet werden.
 
