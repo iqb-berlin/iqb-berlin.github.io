@@ -401,7 +401,7 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 
 ![Testmodus ändern](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Testmodus_aendern_02.png)
 
-:information_source: An dieser Stelle werden erst einmal die Änderungen an den Testdateien beendet. Führen Sie gerne einmal weitere Änderungen an den Dateien durch und schauen Sie sich im **Testcenter** die Auswirkungen auf die Testdurchführung an.
+:information_source: An dieser Stelle werden erst einmal die Änderungen an den Testdateien beendet. Führen Sie gerne einmal weitere Änderungen an den Dateien durch und schauen Sie sich im **Testcenter** die Auswirkungen auf die Testdurchführung an. Beispiele für Konfigurationen sind [**hier**]() zu finden.
 
 </td></tr>
 </table>
