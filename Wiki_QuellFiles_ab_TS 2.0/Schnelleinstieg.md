@@ -587,11 +587,11 @@ Um die Datei der gespeicherten Antworten zu öffnen, setzen Sie den Haken vor de
 
 ![gespeicherte Anworten](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten.png)
 
-In der Spalte "Responses" befinden sich nun die gespeicherten Zustände der Aufgabenelemente, in diesem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden die in diesem Fall interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwednung gewandelt, sieht das Ergebnis wie folgt aus:
+In der Spalte "Responses" befinden sich nun die gespeicherten Zustände der Aufgabenelemente, in diesem Fall des Optionsfelds. Da das Optionsfeld aus mehreren Teilen besteht, wie bspw. einer Überschrift, mehreren Zeilen für die Optionen, sind auch all diese Teile in dieser Spalte aufgeführt. Damit es nun etwas übersichtlicher wird und nur die Teile des Aufgabenelements angezeigt werden, die in diesem Fall interessant sind, nämlich die eigentlichen Optionsfelder, ist es möglich diese Datei nachträglich zu bearbeiten. Hierfür kann die eingangs schon erwähnte Anwendung **itc-Toolbox** verwendet werden. Wird die Datei mittels dieser Anwendung gewandelt, sieht das Ergebnis wie folgt aus:
 
 ![gespeicherte Anworten Wandlung itc](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/gespeicherte_Antworten_itc.png)
 
-Hier ist nun eindeutig zu sehen, dass dieser Testung die Option 1 gewählt wurde. Damit ist nun auch die Auswertung abgeschlossen.
+Hier ist nun eindeutig zu sehen, dass in dieser Testung die Option 1 gewählt wurde. Damit ist nun auch die Auswertung abgeschlossen.
 
 :information_source: Jedes Aufgabenelement in einer Aufgabe wird über die Aufgabenelement-ID eindeutig identifiziert. In der Auswertung kann dann über diese ID die Auswertung des entsprechenden Aufgabenelements erfolgen.
 
