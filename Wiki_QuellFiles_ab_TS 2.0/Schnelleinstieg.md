@@ -194,11 +194,12 @@ Bündelung ausgewählter Aufgaben in Testlets, auch genannt Blöcken.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Geben Sie im Ausgabeformular an welche Dateien Sie ausgeben lassen möchten. Möchten Sie zusätzlich zur Aufgabe auch die oben aufgeführten optionalen Dateien ausgeben lassen, müssen Sie die Anzahl der Logins für die Testpersonen angeben. Dabei kann zwischen verschiedenen Testmodi gewählt werden. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+Welche Dateien ausgegeben werden soll, kann im Ausgabeformular angegeben werden. Möchten Sie zusätzlich zur Aufgabe auch die oben aufgeführten optionalen Dateien ausgeben lassen, müssen Sie die Anzahl der Logins für die Testpersonen angeben. Dabei kann zwischen verschiedenen **Testmodi** gewählt werden. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
-In diesem Fall werden 6 Logins im Review-Modus angelegt. Das **Studio** generiert dann automatisch Zeichenfolgen für den Namen und das Passwort in der **Testtaker-Xml** unter `Login`. Optional können die Logins auch ohne Passwort angelegt werden. Es können weitere Werte angegeben werden, die sich hauptsächlich auf die Seitennavigation im Testverlauf beziehen. Eine Auswahl finden Sie unter "Button für Unit-Navigation" und "Unit Seitenwechsel". Die hier gewählten Werte werden dann in der **Booklet-Xml** unter `BookletConfig` angelegt.
+In diesem Fall werden 6 Logins im Review-Modus angelegt. Das **Studio** generiert dann automatisch Zeichenfolgen für den Namen und das Passwort in der **Testtaker-Xml** unter `Login`. Optional können die Logins auch ohne Passwort angelegt werden. Außerdem generiert das **Studio** eine Gruppe, der diese Logins zugeordnet werden. Auch hierfür wird eine eindeutige Zeichenfolge generiert. Sobald eine Testperson in einem Testmodus angelegt wurde, wird aber nicht nur die **Testtaker-Xml** erzeugt, sondern auch eine **Bookelt-Xml**. Dieser fügt das **Studio** dann gleich die gewählte Aufgabe unter `Units` hinzu. Es können noch weitere Werte im Formular angegeben werden, die sich hauptsächlich auf die Seitennavigation im Testverlauf beziehen. Eine Auswahl finden Sie im Formular unter "Button für Unit-Navigation" und "Unit Seitenwechsel". Die hier gewählten Werte werden dann in der **Booklet-Xml** unter `BookletConfig` angelegt. 
+
 Außerdem wird in diesem Beispiel die Player-Ressource zur Aufgabe ausgegeben. 
 
 Nach dem erfolgreichen Export finden Sie nun die folgenden Dateien am Speicherort: 
@@ -248,13 +249,13 @@ Nach dem erfolgreichen Export finden Sie nun die folgenden Dateien am Speicheror
 <tr>
 <td>
 
-Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die Testdateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Dateien zur Aufgabe ausgegeben, sondern auch noch die beiden Steuerdateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien beim Export hergestellt.
+Um eine Testung mit dem **Testcenter** durchführen zu können, müssen vorab die Testdateien für die Testung in das **Testcenter** geladen werden. Wie im Schnelleinstieg zum **Studio** bereits beschrieben wurde, gibt das **Studio** nach dem Aufgabenentwurf die zugehörigen Testdateien aus. Werden vom **Studio** nicht nur die Dateien zur Aufgabe ausgegeben, sondern auch noch die optionalen Dateien **Booklet-Xml** und **Testtakers-Xml**, werden automatisch Abhängigkeiten zwischen den Testdateien beim Export hergestellt.
 
 Nachfolgend sind die Abhängigkeiten der Testdateien und die Einbindungspunkte dargestellt.
 
 ![Abhängigkeiten Testdateien](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Abhängigkeiten_Testdateien_05.png)
 
-Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **Booklet-Xml** können Aussehen und Ablauf der Testung festgelegt werden. Einige dieser Werte werden bereits beim Export durch das **Studio** diesen beiden Dateien hinzugefügt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Manchmal reichen die Automatismen des **Studios** aber nicht aus um eine Testung den spezifischen Anforderungen entsprechend anzupassen. In diesem Fall sind die Testdateien manuell anzupassen und um entsprechende Werte zu erweitern. Nachfolgend wird anhand von kurzen Beispiele aufgezeigt, wie die Dateien angepasst werden können.
+Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **Booklet-Xml** können Aussehen und Ablauf der Testung festgelegt werden. Einige dieser Werte werden bereits beim Export durch das **Studio** diesen beiden Dateien hinzugefügt. Bspw. wurden in der **Testtaker-Xml** 6 Logins mit einem Passwort und einem Review-Modus angelegt. Die Anpassung der Dateien durch das **Studio** kann eventuell nicht ausreichend sein, um eine Testung den individuellen Bedürfnissen anzupassen. Es gibt da einfach zu viele mögliche Werte und Kombinationen. Daher gibt es die Möglichkeit die Dateien manuell anzupassen und um entsprechende Werte zu erweitern. Nachfolgend wird anhand von kurzen Beispiele aufgezeigt, wie die Dateien angepasst werden können, aber auch wie die Inhalte zu verstehen sind.
 
 :information_source: Wollen Sie noch etwas mehr zu den Funktionen der Testdateien erfahren? Schauen Sie sich gerne das [**Video**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Die-Testdateien) zu diesem Thema an,
 
@@ -270,9 +271,9 @@ Mithilfe von spezifischen Werte in den beiden Dateien: **Testtaker-Xml** und **B
 <tr>
 <td>
 
-**Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert Daten und Werte zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Daten** und **Werte** und können diese auch verändern. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
+**Studio** und **Testcenter** tauschen Informationen mittels der Testdateien aus. Damit dieser Austausch funktioniert, müssen beide Anwendung eine gemeinsame Sprache sprechen. In diesem Fall ist die gemeinsame Sprache **XML**. **XML** ist eine Möglichkeit textbasiert Daten und Werte zu transportieren. Das heißt: Sie können eine **XML** mit einem einfachen Texteditor öffnen und sehen die enthalten **Werte** und **Daten** und können diese manipulieren. Die **Daten** und **Werte** werden dabei in **Elementen** (tags) in Form von **Attributen** hinterlegt. Hier mal ein kurzes Beispiel:
 
-Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. In diesem **Element** befinden sich **Attribute** mit **Werten**. **Attribute** sind in diesem Fall **mode** und **pw**, die zugehörigen **Werte** befinden sich in Anführungszeichen hinter dem Gleichheitszeichen. Pure **Daten** gibt es innerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur **Daten** zu finden, nämlich der Name des Booklets.
+Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dabei ein **Element**. Dieses **Element** verfügt über definierte **Attribute** mit entsprechenden **Werten**. **Attribute** sind in diesem Fall **mode** und **pw**. Die zugehörigen **Werte** werden mittels Gleichheitszeichen zugewiesen. Pure **Daten** gibt es innerhalb dieses **Elements** hier nicht. Aber im **Element: Booklet** sind nur **Daten** zu finden, nämlich der Name des Booklets.
 
 ```xml
 <Login mode="run-hot-return" name="q2d6b" pw="e4y7">
@@ -280,9 +281,7 @@ Beim Export wurden 6 Logins in der **Testtaker.xml** angelegt. Ein Login ist dab
 </Login>
 ```
 
-Damit das **Testcenter** alle Werte und Daten auch finden kann, dürfen nur festgelegte Elemente mit zulässigen Werten in der XML angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können.
-
-Es ist möglich eine XML auf zulässige Elemente zu überprüfen. Dies soll verhindern, dass eine XML mit nicht zulässigen Elementen in das **Testcenter** geladen wird. Welche Elemente erlaubt sind und welche nicht, legt die **Schema-Definition** fest. Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung einer XML auf Wunsch den aktuellen Inhalt mit der **Schema-Definition** ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten **Schema-Definition**. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese **Schema-Definition** beginnt dann mit `xmlns:xsi`.
+Damit das **Testcenter** alle Werte und Daten auch finden kann, dürfen nur festgelegte Elemente mit zulässigen Werten in der XML angelegt sein. Es ist also nicht möglich ein frei erfundenes Element der **XML** hinzuzufügen. Das **Testcenter** kennt dieses Element nicht und wird daher auch keine Werte und Daten dieses Elements auswerten können. Um nicht erlaubte Elemente einer XML bereits beim Laden in das **Testcenter** zu erkennen, muss eine Vorabprüfung stattfinden. Die Vorabprüfung kann mittels so genannter **Schema-Definition** erfolgen.Hierbei handelt es sich grob gesagt um eine Vorlage, wie die entsprechende XML auszusehen hat und welche Elemente enthalten sein dürfen. Spezielle Editoren gleichen bereits bei der manuellen Bearbeitung einer XML auf Wunsch den aktuellen Inhalt mit der **Schema-Definition** ab und melden eventuelle fehlerhafte Inhalte. Diese können dann bereits vor dem Laden in das **Testcenter** korrigiert werden. Spätestens beim Laden in das **Testcenter** erfolgt ein Abgleich der zu ladenden XML mit der deklarierten Vorlage der **Schema-Definition**. Wo diese Definition zu finden ist, wird in der jeweiligen Xml-Datei direkt am Anfang angegeben. Der Verweis auf diese **Schema-Definition** beginnt dann mit `xmlns:xsi`.
 
 
 </td></tr>
@@ -295,10 +294,7 @@ Es ist möglich eine XML auf zulässige Elemente zu überprüfen. Dies soll verh
 <tr>
 <td>
 
-Während der Aufgabenerstellung im **Studio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Studio** in der Aufgabe-Xml hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter**, ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels der Ressourcendatei zum Player. In diesem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
-
-:heavy_exclamation_mark: **Werden Aufgaben in das Testcenter geladen, muss auch immer die zugehörige Ressourcendatei für den Player mit das Testcenter geladen werden.**
-
+Während der Aufgabenerstellung im **Studio** wird festgelegt mit welchem Editor die Aufgaben erstellt werden soll. Außerdem wird angegeben mit welchem Player die Aufgabeninhalte später wiedergegeben werden. Dabei ist zu beachten, dass Editor und Player immer zueinander passen müssen. Wird bspw. der Aspect-Editor verwendet, muss auch der Aspect-Player verwendet werden. Gewählter Player und Editor werden beim Export durch das  **Studio** in der Aufgaben-Xml hinterlegt. Sobald Aufgaben in das **Testcenter** geladen werden, prüft das **Testcenter**, ob der in der Aufgaben-Xml angegebene Player in das **Testcenter** geladen wurde. Das **Testcenter** hat nicht jeden Programmcode zu jedem Player hinterlegt, daher muss der Programmcode des jeweiligen Players mit in das **Testcenter** geladen werden. Dies geschieht mittels der Ressourcendatei zum Player. In diesem Fall trägt diese Datei den Namen: **iqb-player-aspect@1.24.html**. 
 
 </td></tr>
 <tr>
@@ -310,7 +306,7 @@ Während der Aufgabenerstellung im **Studio** wird festgelegt mit welchem Editor
 <tr>
 <td>
 
-Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA01.xml** erzeugte Xml-Datei dargestellt.
+Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Datei mit der Endung **XML** und eine weitere mit der Endung **VOUD**. Beiden Dateien wird der Aufgabenname vorangestellt. In der Voud-Datei befinden sich alle Aufgabeninhalte, sprich alle über den Editor angelegten Aufgabenelemente. In der Xml-Datei sind zugehörige Metadaten wie bspw. der Aufgabenname und Kurzbeschreibung der Aufgabe angelegt. Außerdem wird hier angegeben, welcher Editor und Player bei der Aufgabenerstellung verwendet wurde. Es findet weiterhin ein Verweis auf die zugehörige VOUD statt. Prinzipiell können beide Dateien manuell nachträglich bearbeitet werden bevor sie in das **Testcenter** geladen werden. In der Voud-Datei sind manuelle Änderungen allerdings schwierig, da die Struktur unübersichtlich erscheint. In der Xml-Datei sind Änderungen hingegen mittels eines Editors einfach umzusetzen. Nachfolgend ist einmal die zur Aufgabe: **MEA1** erzeugte Xml-Datei dargestellt.
 
 ![Unit-XML](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Unit_Xml_01.png)
 
@@ -330,15 +326,15 @@ Zu jeder im **Studio** erzeugten Aufgabe werden je 2 Dateien erstellt. Eine Date
 
 In einem **Booklet** können Aufgaben zusammengefasst und sortiert werden. 
 
-:information_source: Ein **Booklet** wird am IQB auch als **Testheft** bezeichnet. 
+:information_source: Ein **Booklet** wird auch als **Testheft** bezeichnet. 
 
 Die Aufgaben können hier zu so genannten **Testlets** zusammengefasst werden. **Testlets** können mit bestimmten Beschränkungen versehen werden. Hierzu gehören bspw. eine zeitliche Beschränkung für die Bearbeitung des **Testlets** und eine Zugangsbeschränkung mittels Freigabewort.
 
-:information_source: Ein **Testlet** wird am IQB übrigens auch als **Block** bezeichnet. 
+:information_source: Ein **Testlet** wird übrigens auch als **Block** bezeichnet. 
 
-Aufgabe können auch "lose" im Booklet vorliegen und werden dann von oben nach unten bei der Testdurchführung im **Testcenter** angezeigt.
+Aufgaben können auch "lose" im Booklet vorliegen und werden dann von oben nach unten bei der Testdurchführung im **Testcenter** angezeigt.
 
-Weiterhin kann in der **Booklet-Xml** mittels spezifischer Elemente, Attribute und Werte (Booklet-Konfiguration) Aussehen und Verhalten des **Testcenters** bei der Testdurchführung bestimmt werden. Hierfür stehen eine Vielzahl möglicher Elemente, Attribute und Werte zur Verfügung. Mehr Informationen zur **Booklet-Konfiguration** sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. 
+Weiterhin kann in der **Booklet-Xml** mittels spezifischer Elemente, Attribute und Werte eine Booklet-Konfiguration (`BookletConfig`)angelegt sein. Aussehen und Verhalten der Testung können dann mittels dieser festgelegt werden. Hierfür stehen eine Vielzahl möglicher Elemente, Attribute und Werte zur Verfügung. Mehr Informationen zur **Booklet-Konfiguration** sind [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Booklet%E2%80%90Xml) zu finden. 
 
 Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 
@@ -358,7 +354,7 @@ Nachfolgend werden die Strukturen der **Booklet-xml** einmal kurz aufgezeigt.
 <tr>
 <td>
 
-Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein Testlet angelegt, sondern nur die erstellte Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein Testlet hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses Testlet. Das Testlet soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des Testlets bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
+Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml** noch kein **Testlet** angelegt, sondern nur die erstellte Aufgabe "MEA". Fügen Sie nun einmal zum besseren Verständnis ein **Testlet** hinzu. Anschließend verschieben Sie die Aufgabe "MEA" in dieses **Testlet**. Das **Testlet** soll dann noch eine Zeitbeschränkung `TimeMax` und eine Zugangsbeschränkung `CodeToEnter` erhalten. Testpersonen können dann bei einer finalen Testung erst nach Eingabe des Freigabewortes die Aufgabe innerhalb des **Testlets** bearbeiten. Die Testperson hat dann für die eingestellte Zeit die Möglichkeit die enthaltenen Aufgaben zu bearbeiten.
 
 ![Booklet Testlet hinzufügen](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Booklet_Testlet_02.gif)
 
@@ -374,11 +370,11 @@ Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml*
 <tr>
 <td>
 
-In der Testtakers können Logins für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
+In der Testtakers können Logins (`Login`) für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
 
-Es wird angegeben welches Booklet die jeweilige Testperson bearbeiten soll. Außerdem wird hier der **Modus** der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+Die Logins mit den Anmeldedaten werden dabei immer einer entsprechenden Gruppe `Group` mit eindeutiger ID zugewiesen. Zusätzlich zu den Anmeldedaten wird angegeben, welches Booklet der jeweiligen Testperson nach Anmeldung präsentiert werden soll. Außerdem wird hier der **Modus** (`mode`) der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
 
-Es ist auch möglich einzelne Texte individuell in der Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
+Es ist auch möglich einzelne Texte individuell für die Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
 Nachfolgend ist die generierte **Testtaker-Xml** durch das **Studio** zu sehen.
 
