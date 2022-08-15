@@ -509,7 +509,7 @@ Wählen Sie Ihren Arbeitsbereich aus. In diesem Beispiel wird der Arbeitsbereich
 
 Nun ist es an der Zeit die Testdateien: **Testtakers-xml**, **Booklet-xml**, **MEA-xml** und die zugehörigen Ressourcen: **MEA-voud** und **Player-html** in das **Testcenter** zu laden. Auf diese Weise wird dem **Testcenter** bekannt gegeben wie der Test ablaufen soll, welche Booklets angezeigt werden sollen und welche Testpersonen an der Testung teilnehmen. Das Laden der Dateien findet im Arbeitsbereich unter dem Reiter: **Dateien** statt.
 
-:heavy_exclamation_mark: **Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das Testcenter laden. Wird dies nicht beachtet, lehnt das Testcenter die Datei mit einem entsprechendem Hinweis ab.** 
+:information_source: Da alle Testdateien in Abhängigkeit zueinander stehen, beachten Sie beim Laden der Testdateien die Reihenfolge in welcher Sie die Dateien in das Testcenter laden. Wird dies nicht beachtet, lehnt das Testcenter die Datei mit einem entsprechendem Hinweis ab.
 
 Wurden alle Dateien in das Testcenter geladen, befinden sich abschließend alle für den Test benötigten Dateien gruppiert im Arbeitsbereich:
 
@@ -558,9 +558,9 @@ Nachdem das Freigabewort erfolgreich eingegeben wurde, wird Ihnen die erste und 
 
 Wählen Sie nun in der angezeigten Aufgabe "Aufgabe 1" ein Optionsfeld aus und merken Sie sich dieses. Anschließend kann der Test beendet werden. Dies kann auf verschiedenen Wege erfolgen. Entweder betätigen Sie einen der beiden Pfeile (rechts/ links) im Navigationsmenu oben rechts und verlassen damit das zeitbeschränkte Testlet. Oder Sie klicken einmal auf das IQB-Logo oben links. In beiden Fällen erscheint ein Hinweis, dass ein zeitbeschränkter Bereich verlassen werden soll und das Testlet anschließend gesperrt wird. Bestätigen Sie diesen Hinweis mit "Test beenden". 
 
-Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet an.
+Es handelt sich an dieser Stelle um ein sehr vereinfachtest Beispiel mit nur einer Aufgabe. Würden sich weitere Aufgaben im Testlet befinden, könnten Sie über das Navigationsmenu oben rechts zur nächsten Aufgabe wechseln und müssten den Test noch nicht an dieser Stelle beenden. Probieren Sie es aus und legen Sie weitere Aufgaben in Ihrem Testlet oder außerhalb des Testlets an.
 
-:information_source: Kleiner Tipp: Im Navigationsmenu oben rechts sind zwei Pfeile und eine Aufgabe mit der Bezeichnung "1" zu sehen. Die "1" kommt aus der **Booklet-Xml** und ist der Unit über das Attribut `Labelshort` zugewiesen. An dieser Stelle haben Sie also die Möglichkeit den Bezeichner anzupassen.
+:information_source: Kleiner Tipp: Im Navigationsmenu oben rechts sind zwei Pfeile und eine Aufgabe mit der Bezeichnung "1" zu sehen. Der Bezeichner kommt aus der **Booklet-Xml** und ist der Unit über das Attribut `Labelshort` zugewiesen. An dieser Stelle haben Sie also die Möglichkeit den Bezeichner anzupassen.
 
 ```xml
 <Unit id="MEA" label="Aufgabe 1" labelshort="1"/>
