@@ -228,7 +228,7 @@ Beschreibung des grün markierten Bereiches:<br>
 
 ### Reiter: Kodierung
 
-In den nächsten Versionen des **Studios** wird es an dieser Stelle möglich sein eine Kodierung für die Aufgabenelemente anzulegen.
+In den nächsten Versionen des **Studios** wird es an dieser Stelle möglich sein eine Kodiervorlage für die Aufgabenelemente anzulegen.
 
 ### Reiter: Kommentare
 

@@ -475,7 +475,7 @@ Die Testleitung kann mittels einer weiteren integrierten Funktion des Testcenter
 
 Eingabe der Adresse des Testcenters in einen Browser: **www.iqb-testcenter.de**
  
-:information_source: **Das Testcenter muss auf einem Server installiert sein.**
+:information_source: Das Testcenter muss auf einem Server installiert sein. Mehr Informationen dazu sind [hier](https://github.com/iqb-berlin/testcenter) zu finden.
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Testcenter an. Betätigen Sie nach Eingabe Ihrer Zugangsdaten die Schaltfläche: **Weiter als Admin**. Die Schaltfläche **Weiter** ist für die Anmeldung der Testpersonen gedacht.
 
