@@ -84,7 +84,7 @@ Lernen Sie beiden Anwendung **Studio** und **Testcenter** und die Bearbeitung de
 
 Eingabe der Adresse des Studios in einen Browser.
  
-:heavy_exclamation_mark: Das Studio muss dazu auf Ihrem Server installiert sein.
+:heavy_exclamation_mark: Das Studio muss dazu auf Ihrem Server installiert sein. Mehr Information sind [hier](https://github.com/iqb-berlin/studio-lite) zu finden.
 
 Melden Sie sich anschließend mit Ihren Zugangsdaten am Studio an.
 
@@ -141,7 +141,7 @@ Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Edito
 
 Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
 
-![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_01.png)
+![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_02.png)
 
 
  Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
