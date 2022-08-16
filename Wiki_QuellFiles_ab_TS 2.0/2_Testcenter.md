@@ -248,7 +248,7 @@ Der Arbeitsbereich hat drei Grundfunktionen. Diese können mit einem Klick auf d
 
 ### Tab Dateien
 
-Alle Testinhalte und Definitionen eines Tests bzw. einer Befragung, werden über Dateien in das System hochgeladen. Sie müssen also erst einmal auf dem eigenen Computer vorbereitet werden (bspw. über einen Download aus einer anderen Webanwendung (Units)). Meist handelt es sich um XML-Dateien, die einer fest vorgeschriebenen Syntax folgen und aus denen das Testsystem alle notwendigen Informationen liest. Die Bedeutung der Dateien sind den Einzeldokumenten in dieser Wiki zu entnehmen.
+Alle Testinhalte und Definitionen eines Tests bzw. einer Befragung, werden über Dateien in das System hochgeladen. Sie müssen also erst einmal auf dem eigenen Computer vorbereitet werden (bspw. über einen Download aus einer anderen Webanwendung (Units)). Meist handelt es sich um XML-Dateien, die einer fest vorgeschriebenen Syntax folgen und aus denen das Testsystem alle notwendigen Informationen liest. Die Bedeutung der Dateien sind den Einzeldokumenten dieses Wikis zu entnehmen.
 
 Sobald eine Datei hochgeladen ist, ist sie wirksam. D. h. unmittelbar nachdem eine Datei mit Login-Daten hochgeladen wurde, kann sich eine Testperson mit diesen Daten anmelden. Sollte man feststellen, dass eine Unit Fehler enthält, kann man die Unit-Datei überarbeiten und erneut in das **Testcenter** laden. Jeder danach gestartete Test, wird dann die neue Unit verwenden.
 
