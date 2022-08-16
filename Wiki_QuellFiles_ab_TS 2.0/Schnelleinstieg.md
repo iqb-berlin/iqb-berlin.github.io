@@ -141,7 +141,7 @@ Bevor Sie mit dem Aufgabentwurf starten, müssen Sie festlegen mit welchem Edito
 
 Ist der Editor ausgewählt, muss auch ein zum Editor passender Player gewählt werden. Der Player gibt die Aufgabe mit Ihren Aufgabenelementen dann sowohl in der Vorschau als auch später bei der Testdurchführung im **Testcenter** wieder.
 
-![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_01.png)
+![TS_Editorwahl](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/TS_Editorwahl_02.png)
 
 
  Player und Editor werden in verschieden Versionständen angeboten. Wählen Sie immer die aktuellste Version.
