@@ -1,5 +1,5 @@
-* [DAN](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editor:-Dan)
-* [Aspect](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editor:-Aspect)
+* [DAN](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Dan-Editor-Videos)
+* [Aspect](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Aspect-Editor-Videos)
 
 ---
 

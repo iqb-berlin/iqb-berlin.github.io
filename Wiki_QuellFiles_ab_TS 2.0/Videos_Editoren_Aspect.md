@@ -104,7 +104,7 @@
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Videos:-Editoren">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Editoren-Videos">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
