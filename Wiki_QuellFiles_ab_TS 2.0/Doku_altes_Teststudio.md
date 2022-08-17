@@ -35,8 +35,6 @@ In den nachfolgenden Kapiteln wird detailiert auf diese Aufteilung eingegangen.
 
 ---
 
----
-
 ## 3.1 Unit Organisation
 
 > **Die Unit Organisation erfolgt im rot markierten Fenster des Arbeitsbereiches. Siehe Bild im Kapitel: 3 Teststudio.**

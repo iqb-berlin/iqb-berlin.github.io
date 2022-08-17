@@ -29,19 +29,19 @@ Lernen Sie beiden Anwendung **Studio** und **Testcenter** und die Bearbeitung de
     </tr>
     <tr>
         <th align=center>
-            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Studio">Studio</a>
+            <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Studio-Schnelleinstieg">Studio</a>
         </th>
         <th align=center>
            <a href=""></a>
         </th>
         <th align=center>
-           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">Testdateien</a>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testdateien-Schnelleinstieg">Testdateien</a>
         </th>
         <th align=center>
            <a href=""></a>
         </th>
         <th align=center>
-           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testcenter">Testcenter</a>
+           <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testcenter-Schnelleinstieg">Testcenter</a>
         </th>
     </tr>
 </table>
@@ -49,7 +49,7 @@ Lernen Sie beiden Anwendung **Studio** und **Testcenter** und die Bearbeitung de
 :information_source: Detailliertere Informationen zu den Anwendungen finden Sie in den gleichnamigen Kapiteln dieser Wiki.
 
 <!--###################################################################################################################### -->
-## Schnelleinstieg: Das Studio
+## Studio Schnelleinstieg
 <!--###################################################################################################################### -->
 
 <table border=1>
@@ -194,7 +194,7 @@ Bündelung ausgewählter Aufgaben in Testlets, auch genannt Blöcken.
 **Testtaker-Xml**<br>
 Festlegungen in welchem Modus die Testung ablaufen soll und anlegen der Zugangsdaten für die Testpersonen.
 
-Welche Dateien ausgegeben werden soll, kann im Ausgabeformular angegeben werden. Möchten Sie zusätzlich zur Aufgabe auch die oben aufgeführten optionalen Dateien ausgeben lassen, müssen Sie die Anzahl der Logins für die Testpersonen angeben. Dabei kann zwischen verschiedenen **Testmodi** gewählt werden. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung). 
+Welche Dateien ausgegeben werden soll, kann im Ausgabeformular angegeben werden. Möchten Sie zusätzlich zur Aufgabe auch die oben aufgeführten optionalen Dateien ausgeben lassen, müssen Sie die Anzahl der Logins für die Testpersonen angeben. Dabei kann zwischen verschiedenen **Testmodi** gewählt werden. Der **Testmodus** legt fest wie eine Testung abläuft (Vorschau, finaler Test etc.). Welche Modi zur Verfügung stehen, finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Modi-der-Testdurchf%C3%BChrung). 
 
 ![Studio Output Formular](https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Studio_Output_Formular_02.png)
 
@@ -216,7 +216,7 @@ Nach dem erfolgreichen Export finden Sie nun die folgenden Dateien am Speicheror
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testdateien-Schnelleinstieg">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
@@ -230,7 +230,7 @@ Nach dem erfolgreichen Export finden Sie nun die folgenden Dateien am Speicheror
 ---
 
 !<--###################################################################################################################### -->
-## Schnelleinstieg: Die Testdateien
+## Testdateien Schnelleinstieg
 !<--###################################################################################################################### -->
 
 <table border=1>
@@ -370,9 +370,9 @@ Bei der automatischen Generierung durch das **Studio** ist in der **Booklet-Xml*
 <tr>
 <td>
 
-In der Testtakers können Logins (`Login`) für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
+In der Testtakers können Logins (`Login`) für die Testpersonen angelegt werden. Dabei stehen verschiedene Anmeldemöglichkeiten zur Verfügung. Mit Passwort, ohne Passwort, als Link usw.. Mehr dazu finden Sie auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren).
 
-Die Logins mit den Anmeldedaten werden dabei immer einer entsprechenden Gruppe (`Group`) mit eindeutiger ID zugewiesen. Zusätzlich zu den Anmeldedaten wird angegeben, welches Booklet der jeweiligen Testperson nach Anmeldung präsentiert werden soll. Außerdem wird hier der **Modus** (`mode`) der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung).
+Die Logins mit den Anmeldedaten werden dabei immer einer entsprechenden Gruppe (`Group`) mit eindeutiger ID zugewiesen. Zusätzlich zu den Anmeldedaten wird angegeben, welches Booklet der jeweiligen Testperson nach Anmeldung präsentiert werden soll. Außerdem wird hier der **Modus** (`mode`) der Testung festgelegt. Mit diesem **Modus** wird festgelegt wie der Test ablaufen soll (Probelauf, finale Testung). Mehr Informationen finden Sie dazu auch [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Modi-der-Testdurchf%C3%BChrung).
 
 Es ist auch möglich einzelne Texte individuell für die Anwendung **Testcenter** anzupassen. Die Texte können dann in der **Custom-Text-Konfiguration** geändert werden. In der automatisch erzeugten **Testtaker-Xml** durch das **Studio** sind nur einzelne Elemente, Attribute und Werte von vielen in der **Custom-Text-Konfiguration** angegeben. Welche es noch gibt finden Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testtaker%E2%80%90Xml) unter **Custom-Text-Konfiguration**. 
 
@@ -409,12 +409,12 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 ---
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++forward+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testcenter">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testcenter-Schnelleinstieg">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Fw_Button_final.png" align="right">
 </a>
 </div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Studio">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Studio-Schnelleinstieg">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>
@@ -428,7 +428,7 @@ Da mit den hier verwendeten Dateien später im **Testcenter** eine Testung gesta
 ---
 
 !<--###################################################################################################################### -->
-## Schnelleinstieg: Das Testcenter
+## Testcenter Schnelleinstieg
 !<--###################################################################################################################### -->
 
 <table border=1>
@@ -453,7 +453,7 @@ Das Testcenter stellt bestimmte Anforderungen an die Computer auf denen eine Tes
 
 #### Zugang für die Testpersonen
 
-Im Vorfeld sollte sich die Testleitung Gedanken darüber machen, welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren). 
+Im Vorfeld sollte sich die Testleitung Gedanken darüber machen, welcher Personenkreis getestet werden soll und wie die Testpersonen die Zugangsdaten erhalten. Mehr Informationen dazu erhalten Sie [**hier**](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren). 
 
 Das IQB stellt eine weitere Anwendung mit dem Namen: **itc-Toolbox** zur Verfügung mit welcher Logins und bspw. QR-Codes für die Testpersonen erzeugt werden können. Mehr dazu finden Sie [**hier**](https://github.com/iqb-berlin/itc-toolbox).
 
@@ -604,7 +604,7 @@ Sie haben nun Ihre erste eigene Testung durchgeführt. Da hier nur ein sehr einf
 ---
 
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++backward++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Schnelleinstieg:-Testdateien">
+<a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Testdateien-Schnelleinstieg">
 <img src="https://github.com/iqb-berlin/iqb-berlin.github.io/blob/master/assets/Bw_Button_final.png" align="left">
 </a>
 </div>

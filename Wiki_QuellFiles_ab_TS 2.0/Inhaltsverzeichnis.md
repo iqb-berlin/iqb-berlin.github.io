@@ -45,8 +45,8 @@
 
 [Arbeiten mit Xml‐Dateien](Arbeiten-mit-Xml‐Dateien)<br>
 [Booklet-Xml](Booklet‐Xml)<br>
-[Login: Anmeldeverfahren](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren)<br>
-[Login: Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung)<br>
+[Login Anmeldeverfahren](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren)<br>
+[Login Modi der Testdurchführung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Modi-der-Testdurchf%C3%BChrung)<br>
 [Newsletter-Archiv](Newsletter-Archiv)<br>
 [Testtaker‐Xml](Testtaker‐Xml)<br>
 [Unit‐Xml](Unit‐Xml)<br>
