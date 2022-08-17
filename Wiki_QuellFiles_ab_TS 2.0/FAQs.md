@@ -178,7 +178,7 @@
 
 #### Wie sollte die Einteilung der Testpersonen in der Testtakers.xml erfolgen? Gibt es da Vorgaben?
 
-> Es ist Ihnen überlassen wie Sie die Personen anlegen. Gerne aber berät Sie das IQB hinsichtlich eigener Erfahrungen diesbezüglich. Es ist möglich Personen einzeln mit Namen und Passwort anzulegen. Sie können aber auch Gruppen anlegen und einzelne Personen dieser Gruppe zuordnen. Mehr zum Thema Anmeldung der Testperson finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren).
+> Es ist Ihnen überlassen wie Sie die Personen anlegen. Gerne aber berät Sie das IQB hinsichtlich eigener Erfahrungen diesbezüglich. Es ist möglich Personen einzeln mit Namen und Passwort anzulegen. Sie können aber auch Gruppen anlegen und einzelne Personen dieser Gruppe zuordnen. Mehr zum Thema Anmeldung der Testperson finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren).
 
 </td></tr>
 <tr>

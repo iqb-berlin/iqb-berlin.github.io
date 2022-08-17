@@ -315,11 +315,11 @@ Die Beteiligten brauchen rechtzeitig klare Anweisungen, wie die Studie vorbereit
 * Eine xlsx-Datei für die **ict-Toolbox** kann helfen, das Testdesign transparent zu 
   planen: Units, Blöcke, Testhefte sind hier einzutragen und dann die daraus erzeugten XML-Dateien hochzuladen.
 * Sollten Units im Testheft mehrfach auftauchen (z. B. Fragen zur Motivation) bitte darauf achten, dass die Units unterschiedliche Aliase bekommen!
-* Bitte [diese Hinweise](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren) zu Logins beachten.
+* Bitte [diese Hinweise](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren) zu Logins beachten.
 
 ### Review und Probelauf
 
-* Die XML zu Testteilnehmer\*innen (die sog. Testtaker.xml) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Modi-der-Testdurchf%C3%BChrung) anlegen und für alle Verantwortlichen der Studie hochladen.
+* Die XML zu Testteilnehmer\*innen (die sog. Testtaker.xml) ersteinmal nur für [Review-Modus](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Modi-der-Testdurchf%C3%BChrung) anlegen und für alle Verantwortlichen der Studie hochladen.
 * Nach jeder Review-Schleife die Kommentare aus dem Testcenter-Admin-Portal herunterladen und auswerten, Änderungen an den Units vornehmen, neu exportieren und NUR DIE 
   neuen VOUD-Dateien ins Testcenter hochladen (sonst überschreibt man die XML-Änderungen).
 * Auch Logins im hot-restart-Modus anlegen, Real-Time-Tests durchführen und sorgfältig auswerten

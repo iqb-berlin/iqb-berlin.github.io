@@ -182,7 +182,7 @@ Nun kommt es auf die richtige Internet-Adresse an. Diese sollte bitte nicht in d
 
 Das Startbild ist sehr reduziert. Rechts ein paar allgemeine Informationen (Version, Datenschutz etc.), links nur Eingabefelder für Name und Kennwort. Nach der Eingabe wird ein großer Schalter präsentiert, der das Testheft symbolisiert, das gestartet werden soll. Die Anzeige des Testheftes signalisiert auch eine erfolgreiche Anmeldung.
 
-> Weitere Informationen zur Anmeldung finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login:-Anmeldeverfahren)
+> Weitere Informationen zur Anmeldung finden Sie auch [hier](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/Login-Anmeldeverfahren)
 
 Mögliche Probleme:
 
@@ -321,8 +321,8 @@ Folgende Texte geben Erläuterungen für diese zentralen Funktionen:
 * Logins:
   * [Bearbeiten der XML-Datei](Testtaker%E2%80%90Xml)
   * [Unterstützung durch itc-ToolBox](https://github.com/iqb-berlin/itc-toolbox#readme)
-  * [Anmeldeverfahren](Login%3A-Anmeldeverfahren)
-  * [Modi der Testdurchführung](Login%3A-Modi-der-Testdurchf%C3%BChrung)
+  * [Anmeldeverfahren](Login-Anmeldeverfahren)
+  * [Modi der Testdurchführung](Login-Modi-der-Testdurchf%C3%BChrung)
 
 **Empfehlung: Verweis zur Validierung**
 
