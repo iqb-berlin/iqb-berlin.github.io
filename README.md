@@ -15,16 +15,19 @@ Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick au
   + [Aspect Player](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   + [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
   + [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases/latest) - Player für eine spezielle Scriptsprache
-* Verona-Editoren – zur Verwendung im IQB-Teststudio
+  + [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest/releases/latest) - Player für eine spezielle Form des Lesetests
+* Verona-Editoren – zur Änderung von Unit-Definitionen (z. B. im IQB-Studio)
   + [Aspect Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
-  * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text 
+  * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text
+* Verona-Schemer - zur Änderung eines Kodierschemas (z. B. im IQB-Studio)
+  * [IQB-Schemer](https://github.com/iqb-berlin/schemer-autocoder/releases/latest) - Standard für IQB-Aufgaben
 
 ## Entwicklung/Quellcode
 * IQB-Testcenter: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), 
 * IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
 * [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
 * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
-* Verona-Module: [aspect](https://github.com/iqb-berlin/verona-modules-aspect), [abi-player](https://github.com/iqb-berlin/verona-player-abi), [simple-player](https://github.com/iqb-berlin/verona-player-simple), [plaintext-editor](https://github.com/iqb-berlin/verona-editor-plaintext)
+* Verona-Module: [aspect](https://github.com/iqb-berlin/verona-modules-aspect), [abi-player](https://github.com/iqb-berlin/verona-player-abi), [simple-player](https://github.com/iqb-berlin/verona-player-simple), [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest), [plaintext-editor](https://github.com/iqb-berlin/verona-editor-plaintext), [schemer/autocoder](https://github.com/iqb-berlin/schemer-autocoder)
 
 ## Verona Interfaces Specs
 Das IQB implementiert die Spezifikationen, die im Rahmen der Verona-Initiative entwickelt werden. Dokumentationen und die Spezifikationen selbst finden Sie [hier](https://verona-interfaces.github.io/).
