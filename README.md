@@ -4,32 +4,23 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
 
 Diese Seite bietet einen groben Überblick über das Angebot. Mit einem Klick auf die Links begeben Sie sich in Wikis, Code-Repositorien und Foren oder zu einer Videopräsentation zum jeweiligen Thema.
 
-# Computerbasiertes Testen
+# Computerbasiertes Testen (TBA)
 ## Verstehen und Anwenden: [Wiki IQB TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
 
 ## Installieren
-* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter-setup#readme) - Webanwendung zum Durchführen von Leistungstests und Befragungen 
-* [IQB-Teststudio](https://github.com/iqb-berlin/teststudio-lite-setup#readme) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
+* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter#readme) - Webanwendung zum Durchführen von Leistungstests und Befragungen 
+* [IQB-Teststudio](https://github.com/iqb-berlin/studio-lite#readme) - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items
 * [ict-ToolBox](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox) - Windows-Programm zum Aufbereiten der Ergebnisse u. a.
-* Verona-Player – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio (Voransicht)
-  + [Aspect Player](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Player für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+* Verona-Module – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio
+  + [Aspect Player und Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   + [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
   + [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases/latest) - Player für eine spezielle Scriptsprache
   + [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest/releases/latest) - Player für eine spezielle Form des Lesetests
-* Verona-Editoren – zur Änderung von Unit-Definitionen (z. B. im IQB-Studio)
-  + [Aspect Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases/latest) - Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
   * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text
-* Verona-Schemer - zur Änderung eines Kodierschemas (z. B. im IQB-Studio)
-  * [IQB-Schemer](https://github.com/iqb-berlin/schemer-autocoder/releases/latest) - Standard für IQB-Aufgaben
+  * [IQB-Schemer](https://github.com/iqb-berlin/schemer-autocoder/releases/latest) - Editieren eines Kodierschemas - Standard für IQB-Aufgaben
 
-## Entwicklung/Quellcode
-* IQB-Testcenter: [Frontend](https://github.com/iqb-berlin/testcenter-frontend) (Angular), [Backend](https://github.com/iqb-berlin/testcenter-backend) (php), [Server für Testleitungskonsole](https://github.com/iqb-berlin/testcenter-broadcasting-service) (node.js), 
-* IQB-Teststudio-Lite: [Frontend](https://github.com/iqb-berlin/teststudio-lite-frontend) (Angular), [Backend](https://github.com/iqb-berlin/teststudio-lite-backend) (php), 
-* [itc-Toolbox](https://github.com/iqb-berlin/itc-toolbox) (vb.net)
-* [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed): IQB-Anwendung zum schnellen Testen eines Verona-Players bzw. dessen Unit-Definitionen
-* Verona-Module: [aspect](https://github.com/iqb-berlin/verona-modules-aspect), [abi-player](https://github.com/iqb-berlin/verona-player-abi), [simple-player](https://github.com/iqb-berlin/verona-player-simple), [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest), [plaintext-editor](https://github.com/iqb-berlin/verona-editor-plaintext), [schemer/autocoder](https://github.com/iqb-berlin/schemer-autocoder)
 
-## Verona Interfaces Specs
+## Verona Interfaces
 Das IQB implementiert die Spezifikationen, die im Rahmen der Verona-Initiative entwickelt werden. Dokumentationen und die Spezifikationen selbst finden Sie [hier](https://verona-interfaces.github.io/).
  
 # <a name="metadata"></a>Metadaten
@@ -49,13 +40,6 @@ Das IQB implementiert die Spezifikationen, die im Rahmen der Verona-Initiative e
 * [eatATA](https://cran.r-project.org/web/packages/eatATA/index.html): automatisierte Blockbesetzung/automatisierte Testhefterstellung
 * [eatFDZ](https://github.com/beckerbenj/eatFDZ): automatisierte Anonymisierung von Datensätzen; Abgleich von pdf-Dokumenten (z. B. Skalenhandbüchern) und Datensätzen
 
-# <a name="components"></a>Übergreifende Programmierungen / Spezifikationen
-* [IQB-Components](https://github.com/iqb-berlin/iqb-components): Angular-Komponenten zur Verwendung in Web-Anwendungen
-* [IQB-Dev-Components](https://github.com/iqb-berlin/iqb-dev-components): Sammlung von Scripten zur Unterstützung der Programmierung bzw. des Deployments von Web-Anwendungen
-* [eslint-config](https://github.com/iqb-berlin/eslint-config): TypeScript/JavaScript Syntax-Regeln (linting)
-* [distpacker](https://github.com/iqb-berlin/distpacker): Script zum Packen von Html-, Css- und JavaScript-Dateien zu einer Html-Datei
-* [vb-lib](https://github.com/iqb-berlin/vb-lib): Sammlung verschiedener Module zur Programmierung von Windows-Desktop-Anwendungen (vb.Net-Code); diese Module sind auf nuget.org als Package veröffentlicht
-* [Version-Compare](https://github.com/iqb-berlin/version-compare): Kleines Tool (Windows legacy)  
 
 # Repositories alphabetisch:
 {% for repository in site.github.public_repositories %}{% if repository.archived == false %}
