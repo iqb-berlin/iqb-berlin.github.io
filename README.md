@@ -8,7 +8,7 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
 <hr/>
 
 * IQB-Testcenter - Webanwendung zum Durchführen von Leistungstests und Befragungen; [Installation/Code](https://github.com/iqb-berlin/testcenter#readme), [Dokumentation für Anwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter), [Aktuelle Vorhaben](https://github.com/iqb-berlin/testcenter/issues)
-* IQB-Teststudio - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items; [Installation/Code](https://github.com/iqb-berlin/studio#readme), [Dokumentation für Anwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio), [Aktuelle Vorhaben](https://github.com/iqb-berlin/studio/issues)
+* IQB-Teststudio - Webanwendung zum Erstellen von Testaufgaben bzw. Seiten mit Frage-Items; [Installation/Code](https://github.com/iqb-berlin/studio-lite#readme), [Dokumentation für Anwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio), [Aktuelle Vorhaben](https://github.com/iqb-berlin/studio-lite/issues)
 * ict-ToolBox - Windows-Programm zur Vor- und Nachbereitung von Testcenter-Daten; [Installieren](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox), [Dokumentation/Code](https://github.com/iqb-berlin/itc-toolbox#readme)
 * Verona-Module – zur Verwendung im IQB-Testcenter oder im IQB-Teststudio
   * [Aspect Player und Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases) - Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
