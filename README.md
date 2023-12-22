@@ -16,7 +16,7 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
   * [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest/releases) - Player für Lesegeschwindigkeitstests
   * [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
   * [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text
-  * [IQB-Schemer](https://github.com/iqb-berlin/schemer-autocoder/releases/latest) - Editieren eines Kodierschemas - Standard für IQB-Aufgaben
+  * [IQB-Schemer](https://github.com/iqb-berlin/coding-components/releases/latest) - Editieren eines Kodierschemas - Standard für IQB-Aufgaben
 * Für Entwickler:innen:
   * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed#readme): Anwendung zum Testen von Playern oder Unit-Definitionen
   * [iqb-dev-components](https://github.com/iqb-berlin/iqb-dev-components#readme): Einige allgemeine Tools zur Webentwicklung
