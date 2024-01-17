@@ -36,4 +36,4 @@ Das IQB stellt Programmierungen öffentlich zur Verfügung, die der Datenanalyse
 
 # Repositories alphabetisch:
 {% for repository in site.github.public_repositories %}{% if repository.archived != true %}
-* [{{ repository.name }}]({{ repository.html_url }}) {{ repository.archived }} {% endif %}{% endfor %}
+* [{{ repository.name }}]({{ repository.html_url }}) {{ repository.description }} {% endif %}{% endfor %}
