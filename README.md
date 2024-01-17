@@ -35,5 +35,5 @@ Das IQB implementiert die Spezifikationen, die im Rahmen der Verona-Initiative e
 Das IQB stellt Programmierungen öffentlich zur Verfügung, die der Datenanalyse im weiteren Sinne dienen. Dazu gehören Verfahren der klassischen Testtheorie ebenso wie IRT-Verfahren. Es werden auch Module zur Datenaufbereitung (cleaning, plot) veröffentlicht. Weitere Informationen finden Sie hier: [iqb-research.github.io](https://iqb-research.github.io/). 
 
 # Repositories alphabetisch:
-{% for repository in site.github.public_repositories %}{% if repository.archived != true %}
+{% for repository in site.github.public_repositories %}{% if repository.archived != 'true' %}
 * [{{ repository.name }}]({{ repository.html_url }}) {{ repository.description }} {% endif %}{% endfor %}
