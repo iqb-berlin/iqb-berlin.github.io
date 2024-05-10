@@ -1,0 +1,43 @@
+project:
+  type: website
+
+website:
+  site-url: https://iqb-berlin.github.io/
+  title: "IQB"
+  favicon: images/favicon.ico
+  page-navigation: true
+  repo-url: https://github.com/iqb-berlin/iqb-berlin.github.io/
+  navbar:
+    pinned: true
+    search: false
+    logo: images/IQB-klein.png
+    right:
+      - icon: github
+        href: https://github.com/iqb-berlin/
+  page-footer:
+    background: dark
+    right:
+      - text: "IQB 2024"
+        href: https://www.iqb.hu-berlin.de
+    left:
+      - text: "{{< fa house >}}"
+        href: index.qmd
+  sidebar: 
+    style: "docked"
+    search: false
+    lang: de
+    contents:
+      - href: index.qmd
+        text: Start
+      - href: verona-modules.qmd
+        text: Verona-Module
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    anchor-sections: true
+    link-external-icon: true
+    link-external-newwindow: true

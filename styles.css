@@ -1,0 +1,20 @@
+/* css styles */
+h1 {
+    font-weight: lighter;
+}
+
+h1.title {
+    font-weight: bold;
+    color: #367ec4
+}
+
+.teaser1 {
+    background-image: url("banner_metadaten1.jpg");
+    opacity: 0.4;
+}
+
+.teaser1-top {
+    font-weight: bold;
+    opacity: 1;
+    color: black;
+}
