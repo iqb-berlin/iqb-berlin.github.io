@@ -1,4 +1,0 @@
----
-lang: de
-title: Verona-Module des IQB
----
