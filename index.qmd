@@ -1,0 +1,94 @@
+---
+title: IQB auf GitHub
+fig.heigth: 100
+format:
+  dashboard:
+    image-height: 25
+    site-url: https://iqb-berlin.github.io/
+    favicon: images/favicon.ico
+    repo-url: https://github.com/iqb-berlin/iqb-berlin.github.io/
+    theme: spacelab
+    orientation: columns
+    logo: images/IQB-klein.png
+    nav-buttons:
+      - icon: github
+        href: https://github.com/iqb-berlin/
+---
+
+## Column {width=300}
+
+::: {.card title="TBA -- Einführung"}
+
+[![](images/teaser-tba.png)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
+
+Verstehen und Anwenden: Die Webanwendungen des IQB zum computerbasierten Testen. [{{< fa chevron-right >}}](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
+
+:::
+
+::: {.card title="TBA -- Kodieren"}
+
+[![](images/teaser-coding.jpg)](https://iqb-berlin.github.io/coding-info)
+
+Die Aufbereitung von Antworten für die Analyse ist aufwändig, kann aber automatisiert werden. [{{< fa chevron-right >}}](https://iqb-berlin.github.io/coding-info)
+
+:::
+
+## Column {width=300}
+
+::: {.card title="Verona -- Spezifikationen"}
+
+[![](images/teaser-verona.jpg)](https://verona-interfaces.github.io)
+
+Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen. [{{< fa chevron-right >}}](https://verona-interfaces.github.io)
+
+:::
+
+::: {.card title="Metadaten"}
+
+[![](images/teaser-metadata.jpg)](https://iqb-vocabs.github.io)
+
+Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet. [{{< fa chevron-right >}}](https://iqb-vocabs.github.io)
+
+:::
+
+## Column
+
+::: {.card}
+
+### Datenanalyse
+
+Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit.
+
+[![](images/teaser-r.jpg)](https://iqb-research.github.io/IQB-Methods/){fig-align="right"}
+
+Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit. [{{< fa chevron-right >}}](
+
+### Testcenter -- Web-Anwendung zum Testen
+
+* [Installation/Code](https://github.com/iqb-berlin/testcenter#readme)
+* [Dokumentation für Anwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter)
+* [Aktuelle Vorhaben](https://github.com/iqb-berlin/testcenter/issues)
+* ict-ToolBox - Windows-Programm zur Vor- und Nachbereitung von Testcenter-Daten
+  + [Installieren](https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox)
+  + [Dokumentation/Code](https://github.com/iqb-berlin/itc-toolbox#readme)
+
+
+### Studio - Webanwendung zur Bauen von Testaufgaben
+
+* [Installation/Code](https://github.com/iqb-berlin/studio-lite#readme)
+* [Dokumentation für Anwendung](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio)
+* [Aktuelle Vorhaben](https://github.com/iqb-berlin/studio-lite/issues)
+
+### Verona-Module
+
+* [Aspect Player und Editor](https://github.com/iqb-berlin/verona-modules-aspect/releases) - Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)
+* [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases) - Player für eine spezielle Scriptsprache
+* [Speed Test Player](https://github.com/iqb-berlin/verona-player-speedtest/releases) - Player für Lesegeschwindigkeitstests
+* [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases/latest) - Universeller Player für Html-Definitionen
+* [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest) - Universeller Editor, Bearbeitung der Unit-Definitionen als Text
+* [IQB-Schemer](https://github.com/iqb-berlin/coding-components/releases/latest) - Editieren eines Kodierschemas - Standard für IQB-Aufgaben
+* Für Entwickler:innen:
+  * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed#readme): Anwendung zum Testen von Playern oder Unit-Definitionen
+  * [iqb-dev-components](https://github.com/iqb-berlin/iqb-dev-components#readme): Einige allgemeine Tools zur Webentwicklung
+
+:::

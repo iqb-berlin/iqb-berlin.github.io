@@ -1,0 +1,8 @@
+---
+title: Seite nicht gefunden
+lang: de
+---
+
+Sie haben einen Link aufgerufen, zu dem keine Seite existiert. Wenn dieser Fehler aufseiten der Redaktion liegt, schicken Sie uns bitte einen Hinweis:
+
+[TBA-Team iqb-tbadev@hu-berlin.de](mailto:iqb-tbadev@hu-berlin.de)

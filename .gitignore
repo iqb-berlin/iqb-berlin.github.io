@@ -1,2 +1,6 @@
 /iqb-berlin.github.io.iml
 /.idea/
+/.quarto/
+/_site/
+/index_files/
+index.html
