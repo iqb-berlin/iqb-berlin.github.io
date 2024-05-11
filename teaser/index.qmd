@@ -1,0 +1,15 @@
+---
+listing:
+  - id: teaser
+    contents: .
+    type: grid
+    fields: [image, title, description]
+---
+
+süpcka spc üaskcüpaüsppaüsppppp  pp
+
+:::{#teaser}
+
+:::
+
+knöckharsch

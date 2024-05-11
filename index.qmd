@@ -1,5 +1,8 @@
 ---
 lang: de
+format:
+  html:
+    toc: false
 ---
 ::: {layout="[[2,1]]"}
 Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-berlin.de) nutzt GitHub für die Veröffentlichung von Programmcode und dessen Dokumentation.
@@ -9,11 +12,23 @@ Das [Institut zur Qualitätsentwicklung im Bildungswesen](https://www.iqb.hu-ber
 
 Diese Seiten enthalten vor allem Links zu den Webanwendungen und den Dokumentationen des IQB. 
 
-::: {layout="[[1,1]]"}
 
-[![TBA-info](images/teaser-tba.png)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
+::: {.list .grid .quarto-listing-cols-3}
 
+::: {.quarto-grid-item .card}
+[![](images/teaser-tba.png)](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
+
+##### [TBA](https://github.com/iqb-berlin/iqb-berlin.github.io/wiki)
+
+::: {.card-text}
+Dokumentation zum computerbasierten Testen
+:::
+
+:::
+
+::: {.quarto-grid-item .card}
 [![Metadaten-info](images/teaser-metadata.jpg)]()
+:::
 
 :::
 

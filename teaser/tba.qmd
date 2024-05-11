@@ -1,0 +1,13 @@
+---
+title: "TBA"
+description: "Projekte für computerbasiertes Testen"
+lang: de
+date: "1/8/2023"
+image: teaser-tba.png
+categories:
+  - verona
+  - architektur
+  - player
+---
+
+xk ÜPKX ÜPAKXÜPA ÜXPKÜA
