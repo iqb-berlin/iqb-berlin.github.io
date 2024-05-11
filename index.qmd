@@ -53,15 +53,13 @@ Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit
 
 ## Column
 
-::: {.card}
+::: {.card fig-align="right"}
 
 ### Datenanalyse
 
-Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit.
+Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit. [{{< fa chevron-right >}}](https://iqb-research.github.io/IQB-Methods/)
 
-[![](images/teaser-r.jpg)](https://iqb-research.github.io/IQB-Methods/){fig-align="right"}
-
-Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit. [{{< fa chevron-right >}}](
+[![](images/teaser-r.jpg)](https://iqb-research.github.io/IQB-Methods/)
 
 ### Testcenter -- Web-Anwendung zum Testen
 
