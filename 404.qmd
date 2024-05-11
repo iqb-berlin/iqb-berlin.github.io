@@ -5,4 +5,4 @@ lang: de
 
 Sie haben einen Link aufgerufen, zu dem keine Seite existiert. Wenn dieser Fehler aufseiten der Redaktion liegt, schicken Sie uns bitte einen Hinweis:
 
-[susanne.hunger@iqb.hu-berlin.de](mailto:susanne.hunger@iqb.hu-berlin.de)
+[TBA-Team iqb-tbadev@hu-berlin.de](mailto:iqb-tbadev@hu-berlin.de)
