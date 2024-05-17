@@ -1,34 +1,14 @@
 ---
 lang: de
+listing:
+  id: gallery
+  template: gallery.ejs
+  contents: tiles.yml
+  type: grid
 ---
 
-
-
-::: {.card title="Verona -- Spezifikationen"}
-
-[![](images/teaser-verona.jpg)](https://verona-interfaces.github.io)
-
-Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen. [{{< fa chevron-right >}}](https://verona-interfaces.github.io)
-
+::: {#gallery}
 :::
-
-::: {.card title="Metadaten"}
-
-[![](images/teaser-metadata.jpg)](https://iqb-vocabs.github.io)
-
-Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet. [{{< fa chevron-right >}}](https://iqb-vocabs.github.io)
-
-:::
-
-## Row
-
-::: {.card fig-align="right"}
-
-### Datenanalyse
-
-Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus großen Lernstandserhebungen stellt das IQB viele R-Programmierungen bereit. [{{< fa chevron-right >}}](https://iqb-research.github.io/IQB-Methods/)
-
-[![](images/teaser-r.jpg)](https://iqb-research.github.io/IQB-Methods/)
 
 ### Testcenter -- Web-Anwendung zum Testen
 
@@ -57,5 +37,3 @@ Für die Analyse der Daten zur Vorbereitung der Rückmeldung von Ergebnissen aus
 * Für Entwickler:innen:
   * [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed#readme): Anwendung zum Testen von Playern oder Unit-Definitionen
   * [iqb-dev-components](https://github.com/iqb-berlin/iqb-dev-components#readme): Einige allgemeine Tools zur Webentwicklung
-
-:::

@@ -1,0 +1,20 @@
+- title: TBA - Einführung
+  description: "Verstehen und Anwenden: Die Webanwendungen des IQB zum computerbasierten Testen."
+  href: https://github.com/iqb-berlin/iqb-berlin.github.io/wiki
+  thumbnail: teaser-tba.png
+- title: TBA - Kodieren
+  description: Die Aufbereitung von Antworten für die Analyse ist aufwändig, kann aber automatisiert werden.
+  href: https://iqb-berlin.github.io/coding-info
+  thumbnail: teaser-coding.jpg
+- title: Verona - Spezifikationen
+  description: Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen.
+  href: https://verona-interfaces.github.io
+  thumbnail: teaser-verona.jpg
+- title: Metadaten
+  description: Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet.
+  href: https://iqb-vocabs.github.io
+  thumbnail: teaser-metadata.jpg
+- title: Datenanalyse
+  description: Für die Analyse der Daten aus großen Lernstands&shy;erhebungen stellt das IQB viele R-Programmierungen bereit.
+  href: https://iqb-research.github.io/IQB-Methods/
+  thumbnail: teaser-r.jpg

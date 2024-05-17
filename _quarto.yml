@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  page-navigation: false
+  back-to-top-navigation: true
+  site-url: https://iqb-berlin.github.io/
+  favicon: images/favicon.ico
+  repo-url: https://github.com/iqb-berlin/iqb-berlin.github.io/
+  title: "IQB auf GitHub"
+  navbar:
+    pinned: true
+    search: true
+    logo: images/IQB-klein.png
+    right:
+      - icon: github
+        href: https://github.com/iqb-berlin
+  page-footer:
+    border: true
+    background: light
+    right:
+      - text: "IQB 2024"
+        href: https://www.iqb.hu-berlin.de
+    left:
+      - href: index.qmd
+        text: "{{< fa house >}}"
+
+format:
+  html:
+    theme: superhero
+    toc: false
+    anchor-sections: true
+    margin-width: 0
+    link-external-newwindow: true
+    
