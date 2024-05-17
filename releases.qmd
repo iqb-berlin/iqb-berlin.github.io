@@ -1,0 +1,48 @@
+---
+title: Releases
+lang: de
+format:
+    html:
+        toc: true
+---
+
+Auf dieser Seite finden Sie direkte Links zu veröffentlichter Software des IQB.
+
+Sie führen meist in den jeweiligen Release-Bereich des Code-Repositories. Dort finden Sie mitunter die Software zum Download, aber zumindest die sog. Release Notes -- also eine Liste der Änderungen zur vorherigen Version. Bitte lesen Sie diese sorgfältig, da sich hier mitunter bereits Meldungen an uns zu vermeintlichen Fehlern erübrigen bzw. auch Risiken eines Updates beschrieben sind.
+
+Möchten Sie dann Hinweise zur Installation, gehen Sie bitte in diesen Repositories zum Text auf der Startseite (sog. Readme). Auch ein Ordner Issues ist stets zu erreichen, um Ideen oder Fehlermeldungen an das Entwicklerteam zu schicken.
+
+# TBA-Webanwendungen
+
+* [IQB-Testcenter](https://github.com/iqb-berlin/testcenter/releases): Durchführen von Tests und Befragungen
+* [IQB-Studio](https://github.com/iqb-berlin/studio-lite/releases): Entwickeln von Testaufgaben
+* [IQB-Kodierbox](https://github.com/iqb-berlin/coding-box#readme): Anzeigen und Kodieren von Antworten
+* [Toolbox für das Testcenter](https://github.com/iqb-berlin/itc-toolbox#readme-ov-file): Windows-Desktop-Anwendung als Helferlein für die Vor- und Nachbereitung von Tests
+
+# Verona-Module des IQB
+
+* [Aspect](https://github.com/iqb-berlin/verona-modules-aspect/releases): Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA und Bildungsstandards)
+* [Abi Player](https://github.com/iqb-berlin/verona-player-abi/releases): Player für eine einfache Scriptsprache mit dynamischen Unterformularen
+* [Speed Test - multi](https://github.com/iqb-berlin/verona-modules-speedtest/releases): Player und Editor für einen Lesegeschwindigkeitstests (mehrere Items pro Unit; Text und Bild)
+* [Speed Test Player - mono](https://github.com/iqb-berlin/verona-player-speedtest/releases): Player für einen Lesegeschwindigkeitstests (ein Item pro Unit; nur Text)
+* [Simple Player](https://github.com/iqb-berlin/verona-player-simple/releases): Universeller Player für Html
+* [Plain Text Editor](https://github.com/iqb-berlin/verona-editor-plaintext/releases): Universeller Editor, Bearbeitung der Unit-Definitionen als Text
+* [IQB-Schemer](https://github.com/iqb-berlin/coding-components/releases): Editieren eines Kodierschemas - Standard für IQB-Aufgaben
+* [Verona-Player-Testbed](https://github.com/iqb-berlin/verona-player-testbed#readme): Offline-Anwendung zum Testen von Playern oder Unit-Definitionen
+
+# JavaScript-Module und Custom Elements
+
+* Kodierung: [Klassen, Interfaces, Coder](https://www.npmjs.com/package/@iqb/responses), [FrontEnd-Komponenten](https://www.npmjs.com/package/@iqb/ngx-coding-components)
+* [allgemeine Angular Komponenten](https://www.npmjs.com/package/iqb-dev-components)
+
+# Technologische Komponenten
+
+* [ESLint Rules des IQB](https://www.npmjs.com/package/@iqb/eslint-config)
+* [Edge router and monitoring application infrastructure](https://github.com/iqb-berlin/traefik/releases)
+* [IQB-Lasttest](https://github.com/iqb-berlin/load-test)
+* [Identity Management Server](https://github.com/iqb-berlin/identity-and-access-management) (keine IQB-Programmierung, sondern angepasste KeyCloak-Installation)
+
+# Programmierungen zu Metadaten
+
+* [Profil: Validieren und dokumentieren](https://www.npmjs.com/package/@iqb/validate-md-profile)
+* [Vokabular: Veröffentlichen](https://www.npmjs.com/package/@iqb/csv2ttl)
