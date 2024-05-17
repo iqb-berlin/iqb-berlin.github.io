@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.554">
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -57,78 +55,20 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Keine Treffer",
-    "search-matching-documents-text": "Treffer",
-    "search-copy-link-title": "Link in die Suche kopieren",
-    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
-    "search-more-match-text": "weitere Treffer in diesem Dokument",
-    "search-more-matches-text": "weitere Treffer in diesem Dokument",
-    "search-clear-button-title": "Zurücksetzen",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Abbrechen",
-    "search-submit-button-title": "Abschicken",
-    "search-label": "Suchen"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-gallery .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-href','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-description","listing-href","listing-thumbnail"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-gallery'] = new List('listing-gallery', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -139,15 +79,15 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/IQB-klein.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/IQB-klein.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">IQB auf GitHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Suchen"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -175,106 +115,28 @@ window.Quarto = {
 
 
 
-<div id="listing-gallery" class="quarto-listing quarto-listing-container-custom">
-<div class="list grid" style="column-gap: 10px;">
+<p>```xml</p>
+<!--?xml version="1.0" encoding="utf-8"?-->
+<p><booklet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nonamespaceschemalocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/9.2.0/definitions/vo_Booklet.xsd"></booklet></p>
+<p><metadata> <id>Booklet1</id> <label>Beispiel-Testheft</label> <description>Erzeugt mit Teststudio 13.06.2022</description> </metadata></p>
+<p><bookletconfig> <config key="unit_menu">FULL</config> </bookletconfig></p>
+<p><units></units></p>
+<pre><code>&lt;Testlet id="MET" label="Mein erstes Testheft"&gt;
   
-    <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="0">
-      <div class="card-header py-1 px-2 border-bottom border-1 bg-light">TBA - Einführung</div>
-      <a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki">
-        <img src="start/teaser-tba.png" alt="Verstehen und Anwenden: Die Webanwendungen des IQB zum computerbasierten Testen." class="card-img-top">
-      </a>
-      <p style="margin: 4px 12px;">
-        Verstehen und Anwenden: Die Webanwendungen des IQB zum computerbasierten Testen.
-      </p>
-    </div>
+  &lt;Restrictions&gt;
+      &lt;CodeToEnter code="Hase"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;
+      &lt;TimeMax minutes="10"/&gt;
+  &lt;/Restrictions&gt;
+
+&lt;Unit id="MEA" label="1. Meine erste Aufgabe" /&gt;
   
-    <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="1">
-      <div class="card-header py-1 px-2 border-bottom border-1 bg-light">TBA - Kodieren</div>
-      <a href="https://iqb-berlin.github.io/coding-info">
-        <img src="start/teaser-coding.jpg" alt="Die Aufbereitung von Antworten für die Analyse ist aufwändig, kann aber automatisiert werden." class="card-img-top">
-      </a>
-      <p style="margin: 4px 12px;">
-        Die Aufbereitung von Antworten für die Analyse ist aufwändig, kann aber automatisiert werden.
-      </p>
-    </div>
-  
-    <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="2">
-      <div class="card-header py-1 px-2 border-bottom border-1 bg-light">Verona - Spezifikationen</div>
-      <a href="https://verona-interfaces.github.io">
-        <img src="start/teaser-verona.jpg" alt="Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen." class="card-img-top">
-      </a>
-      <p style="margin: 4px 12px;">
-        Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen.
-      </p>
-    </div>
-  
-    <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="3">
-      <div class="card-header py-1 px-2 border-bottom border-1 bg-light">Metadaten</div>
-      <a href="https://iqb-vocabs.github.io">
-        <img src="start/teaser-metadata.jpg" alt="Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet." class="card-img-top">
-      </a>
-      <p style="margin: 4px 12px;">
-        Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet.
-      </p>
-    </div>
-  
-    <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="4">
-      <div class="card-header py-1 px-2 border-bottom border-1 bg-light">Datenanalyse</div>
-      <a href="https://iqb-research.github.io/IQB-Methods/">
-        <img src="start/teaser-r.jpg" alt="Für die Analyse der Daten aus großen Lernstands&amp;shy;erhebungen stellt das IQB viele R-Programmierungen bereit." class="card-img-top">
-      </a>
-      <p style="margin: 4px 12px;">
-        Für die Analyse der Daten aus großen Lernstands­erhebungen stellt das IQB viele R-Programmierungen bereit.
-      </p>
-    </div>
-  
-</div>
-<div class="listing-no-matching d-none">
-Keine Treffer
-</div>
-</div>
-<section id="testcenter-web-anwendung-zum-testen" class="level3">
-<h3 class="anchored" data-anchor-id="testcenter-web-anwendung-zum-testen">Testcenter – Web-Anwendung zum Testen</h3>
-<ul>
-<li><a href="https://github.com/iqb-berlin/testcenter#readme">Installation/Code</a></li>
-<li><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/2-Testcenter">Dokumentation für Anwendung</a></li>
-<li><a href="https://github.com/iqb-berlin/testcenter/issues">Aktuelle Vorhaben</a></li>
-<li>ict-ToolBox - Windows-Programm zur Vor- und Nachbereitung von Testcenter-Daten
-<ul>
-<li><a href="https://www.iqb.hu-berlin.de/institut/ab/it/itc-ToolBox">Installieren</a></li>
-<li><a href="https://github.com/iqb-berlin/itc-toolbox#readme">Dokumentation/Code</a></li>
-</ul></li>
-</ul>
-</section>
-<section id="studio---webanwendung-zur-bauen-von-testaufgaben" class="level3">
-<h3 class="anchored" data-anchor-id="studio---webanwendung-zur-bauen-von-testaufgaben">Studio - Webanwendung zur Bauen von Testaufgaben</h3>
-<ul>
-<li><a href="https://github.com/iqb-berlin/studio-lite#readme">Installation/Code</a></li>
-<li><a href="https://github.com/iqb-berlin/iqb-berlin.github.io/wiki/3-Studio">Dokumentation für Anwendung</a></li>
-<li><a href="https://github.com/iqb-berlin/studio-lite/issues">Aktuelle Vorhaben</a></li>
-</ul>
-</section>
-<section id="verona-module" class="level3">
-<h3 class="anchored" data-anchor-id="verona-module">Verona-Module</h3>
-<ul>
-<li><a href="https://github.com/iqb-berlin/verona-modules-aspect/releases">Aspect Player und Editor</a> - Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)</li>
-<li><a href="https://github.com/iqb-berlin/verona-player-abi/releases">Abi Player</a> - Player für eine spezielle Scriptsprache</li>
-<li><a href="https://github.com/iqb-berlin/verona-player-speedtest/releases">Speed Test Player</a> - Player für Lesegeschwindigkeitstests</li>
-<li><a href="https://github.com/iqb-berlin/verona-player-simple/releases/latest">Simple Player</a> - Universeller Player für Html-Definitionen</li>
-<li><a href="https://github.com/iqb-berlin/verona-editor-plaintext/releases/latest">Plain Text Editor</a> - Universeller Editor, Bearbeitung der Unit-Definitionen als Text</li>
-<li><a href="https://github.com/iqb-berlin/coding-components/releases/latest">IQB-Schemer</a> - Editieren eines Kodierschemas - Standard für IQB-Aufgaben</li>
-<li>Für Entwickler:innen:
-<ul>
-<li><a href="https://github.com/iqb-berlin/verona-player-testbed#readme">Verona-Player-Testbed</a>: Anwendung zum Testen von Playern oder Unit-Definitionen</li>
-<li><a href="https://github.com/iqb-berlin/iqb-dev-components#readme">iqb-dev-components</a>: Einige allgemeine Tools zur Webentwicklung</li>
-</ul></li>
-</ul>
+&lt;/Testlet&gt;</code></pre>
+<p></p>
+<p></p>
 
 
 
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -329,12 +191,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Kopiert");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Kopiert");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -695,7 +557,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="../index.html">
 <p><i class="fa-solid fa-house" aria-label="house"></i></p>
 </a>
   </li>  

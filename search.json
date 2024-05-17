@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "assets/Ref_Unit_Xml_02.html",
+    "href": "assets/Ref_Unit_Xml_02.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml    MEA Meine erste Aufgabe  MEA.voud \n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Booklet_Xml_01.html",
+    "href": "assets/Ref_Booklet_Xml_01.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml  \n booklet1 Testheft 1 \n separate FULL \n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Testtaker_Xml_01.html",
+    "href": "assets/Ref_Testtaker_Xml_01.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml     Test beenden \n\n&lt;Login mode=\"run-hot-return\" name=\"q2d6b\" pw=\"e4y7\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"e2p5h\" pw=\"c3h6\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"v6f7r\" pw=\"u3r4\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"a3u4h\" pw=\"h6g9\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"e2d9q\" pw=\"y7r5\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"d4c7d\" pw=\"s5y7\"&gt;\n  &lt;Booklet&gt;booklet1&lt;/Booklet&gt;\n&lt;/Login&gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Booklet_Testheft_Xml_01.html",
+    "href": "assets/Ref_Booklet_Testheft_Xml_01.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml  \n Booklet1 Beispiel-Testheft Erzeugt mit Teststudio 13.06.2022 \n separate FULL \n\n&lt;Testlet id=\"MET\" label=\"Mein erstes Testheft\"&gt;\n  \n  &lt;Restrictions&gt;\n      &lt;CodeToEnter code=\"Hase\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n      &lt;TimeMax minutes=\"10\"/&gt;\n  &lt;/Restrictions&gt;\n\n&lt;Unit id=\"MEA\" label=\"1. Meine erste Aufgabe\" labelshort=\"1\" /&gt;\n  \n&lt;/Testlet&gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Tesdateien_Konfig_Bsp_01.html",
+    "href": "assets/Tesdateien_Konfig_Bsp_01.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": ":information_source: Alle hier aufgeführten Bezeichner von IDs sind nur exemplarisch und im Klartext gehalten, um den Aufbau besser zu verstehen. Bspw. erhöhen Gruppenbezeichner wie 5a oder 5b in der Testtaker-Xml die Wahrscheinlichkeit eines Gruppenduplikates in einem anderen Arbeitsbereich. Die Bezeichner sollte daher immer aus einer Kombination zwischen Zahlen und Buchstaben bestehen.\n\n\nMehrere Testhefte und Aufgaben außerhalb der Testlets:\n&lt;?xml version=\"1.0\"?&gt;\n&lt;Booklet xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \nxsi:noNamespaceSchemaLocation=\"https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Booklet.xsd\"&gt;\n  \n  &lt;Metadata&gt;\n    &lt;Id&gt;booklet1&lt;/Id&gt;\n    &lt;Label&gt;Testheft 1&lt;/Label&gt;\n  &lt;/Metadata&gt;\n\n  &lt;BookletConfig&gt;\n    &lt;Config key=\"pagingMode\"&gt;separate&lt;/Config&gt;\n    &lt;Config key=\"unit_navibuttons\"&gt;FULL&lt;/Config&gt;\n    &lt;Config key=\"unit_menu\"&gt;FULL&lt;/Config&gt;\n  &lt;/BookletConfig&gt;\n\n  &lt;Units&gt;\n  \n    &lt;Unit id=\"Start\" label=\"Begrüßung zur Testung\"/&gt;\n\n    &lt;Testlet id=\"MET1\" label=\"Mein erstes Testlet\"&gt;\n      \n      &lt;Restrictions&gt;\n          &lt;CodeToEnter code=\"Hase\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n          &lt;TimeMax minutes=\"10\"/&gt;\n      &lt;/Restrictions&gt;\n    \n      &lt;Unit id=\"MEA1\" label=\"Aufgabe 1\" labelshort=\"1\"/&gt;\n      &lt;Unit id=\"MEA2\" label=\"Aufgabe 2\" labelshort=\"2\"/&gt;\n      &lt;Unit id=\"MEA3\" label=\"Aufgabe 3\" labelshort=\"3\"/&gt;\n    \n    &lt;/Testlet&gt;\n\n    &lt;Unit id=\"Info1\" label=\"Informationen zum Testlet 2\"/&gt;\n\n    &lt;Testlet id=\"MET2\" label=\"Mein zweites Testlet\"&gt;\n      \n      &lt;Restrictions&gt;\n          &lt;CodeToEnter code=\"Vogel\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n      &lt;/Restrictions&gt;\n    \n      &lt;Unit id=\"MEA4\" label=\"Aufgabe 4\" labelshort=\"4\"/&gt;\n      &lt;Unit id=\"MEA5\" label=\"Aufgabe 5\" labelshort=\"5\"/&gt;\n      &lt;Unit id=\"MEA6\" label=\"Aufgabe 6\" labelshort=\"6\"/&gt;\n                \n    &lt;/Testlet&gt;\n\n    &lt;Unit id=\"Ende\" label=\"Verabschiedung\"/&gt;\n\n  &lt;/Units&gt;\n\n&lt;/Booklet&gt;\nHier werden mehrere Testlets mit Aufgaben angelegt. Zwischen den Testlets befinden sich Aufgaben, die bswp. nur der Information oder der Begrüßung dienen. Jedem Testlet können eigene Beschränkungen zugewiesen werden. So hat das Testlet “MET2” bspw. keine Zeitbeschränkung. Die Unit-Navigationsleiste zu diesem Booklet würde während der Testdurchführung so aussehen. Beachten Sie dabei das Attribut labelshort zu den Units (unit).\n\n\n\nBsp1 Booklet Navileiste\n\n\n\n\n\nMehrere Gruppen und ein Monitor zur Überwachung einer der Gruppe:\n&lt;?xml version=\"1.0\"?&gt;\n&lt;Testtakers xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \nxsi:noNamespaceSchemaLocation=\"https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Testtakers.xsd\"&gt;\n  \n&lt;Metadata/&gt;\n\n&lt;CustomTexts&gt;\n  &lt;CustomText key=\"login_testEndButtonText\"&gt;Test beenden&lt;/CustomText&gt;\n&lt;/CustomTexts&gt;\n\n&lt;Group id=\"5a\" label=\"Klasse 5a\"&gt;\n\n  &lt;Login mode=\"run-hot-return\" name=\"q2d6b\" pw=\"e4y7\"&gt;\n    &lt;Booklet&gt;booklet5a&lt;/Booklet&gt;\n  &lt;/Login&gt;\n  &lt;Login mode=\"run-hot-return\" name=\"e2p5h\" pw=\"c3h6\"&gt;\n    &lt;Booklet&gt;booklet5a&lt;/Booklet&gt;\n  &lt;/Login&gt;\n\n&lt;/Group&gt;\n\n&lt;Group id=\"5b\" label=\"Klasse 5b\"&gt;\n\n  &lt;Login mode=\"run-review\" name=\"q2op3\" pw=\"z76z\"&gt;\n    &lt;Booklet&gt;booklet5b&lt;/Booklet&gt;\n  &lt;/Login&gt;\n  &lt;Login mode=\"run-review\" name=\"e2io3\" pw=\"d3f6\"&gt;\n    &lt;Booklet&gt;booklet5b&lt;/Booklet&gt;\n  &lt;/Login&gt;\n\n  &lt;Login mode=\"monitor-group\" name=\"monitor_1\" /&gt;\n\n  &lt;/Group&gt;\n&lt;/Testtakers&gt;\nIn diesem Beispiel sollen zwei unglaublich kleine Klasse getestet werden. Die Testung für die Klasse 5a soll bereits final durchgeführt werden können. Aus diesem Grund sind dort alle Personen im run-hot-return Modus angelegt. Die Testung für die Klasse 5b ist noch nicht final. Hier sind alle Personen mit dem Modus: run-review angelegt. Der Grund dafür könnte bspw. sein, dass die Testleitung gerne noch einmal das booklet5b aus Sicht der Testpersonen begutachten möchte, bevor eine “heiße”Testung erfolgt. Außerdem ist in dieser Gruppe ein Gruppenmonitor monitor-group angelegt. Dies ist ein Zugang für die Testleitung. Werden diese Zugangsdaten bei der Anmeldung angegeben, startet die Testleitungskonsole und es ist möglich den Testverlauf zu begutachten und zu steuern."
+  },
+  {
+    "objectID": "assets/Tesdateien_Konfig_Bsp_01.html#konfigurationsbeispiele-testdateien",
+    "href": "assets/Tesdateien_Konfig_Bsp_01.html#konfigurationsbeispiele-testdateien",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": ":information_source: Alle hier aufgeführten Bezeichner von IDs sind nur exemplarisch und im Klartext gehalten, um den Aufbau besser zu verstehen. Bspw. erhöhen Gruppenbezeichner wie 5a oder 5b in der Testtaker-Xml die Wahrscheinlichkeit eines Gruppenduplikates in einem anderen Arbeitsbereich. Die Bezeichner sollte daher immer aus einer Kombination zwischen Zahlen und Buchstaben bestehen.\n\n\nMehrere Testhefte und Aufgaben außerhalb der Testlets:\n&lt;?xml version=\"1.0\"?&gt;\n&lt;Booklet xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \nxsi:noNamespaceSchemaLocation=\"https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Booklet.xsd\"&gt;\n  \n  &lt;Metadata&gt;\n    &lt;Id&gt;booklet1&lt;/Id&gt;\n    &lt;Label&gt;Testheft 1&lt;/Label&gt;\n  &lt;/Metadata&gt;\n\n  &lt;BookletConfig&gt;\n    &lt;Config key=\"pagingMode\"&gt;separate&lt;/Config&gt;\n    &lt;Config key=\"unit_navibuttons\"&gt;FULL&lt;/Config&gt;\n    &lt;Config key=\"unit_menu\"&gt;FULL&lt;/Config&gt;\n  &lt;/BookletConfig&gt;\n\n  &lt;Units&gt;\n  \n    &lt;Unit id=\"Start\" label=\"Begrüßung zur Testung\"/&gt;\n\n    &lt;Testlet id=\"MET1\" label=\"Mein erstes Testlet\"&gt;\n      \n      &lt;Restrictions&gt;\n          &lt;CodeToEnter code=\"Hase\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n          &lt;TimeMax minutes=\"10\"/&gt;\n      &lt;/Restrictions&gt;\n    \n      &lt;Unit id=\"MEA1\" label=\"Aufgabe 1\" labelshort=\"1\"/&gt;\n      &lt;Unit id=\"MEA2\" label=\"Aufgabe 2\" labelshort=\"2\"/&gt;\n      &lt;Unit id=\"MEA3\" label=\"Aufgabe 3\" labelshort=\"3\"/&gt;\n    \n    &lt;/Testlet&gt;\n\n    &lt;Unit id=\"Info1\" label=\"Informationen zum Testlet 2\"/&gt;\n\n    &lt;Testlet id=\"MET2\" label=\"Mein zweites Testlet\"&gt;\n      \n      &lt;Restrictions&gt;\n          &lt;CodeToEnter code=\"Vogel\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n      &lt;/Restrictions&gt;\n    \n      &lt;Unit id=\"MEA4\" label=\"Aufgabe 4\" labelshort=\"4\"/&gt;\n      &lt;Unit id=\"MEA5\" label=\"Aufgabe 5\" labelshort=\"5\"/&gt;\n      &lt;Unit id=\"MEA6\" label=\"Aufgabe 6\" labelshort=\"6\"/&gt;\n                \n    &lt;/Testlet&gt;\n\n    &lt;Unit id=\"Ende\" label=\"Verabschiedung\"/&gt;\n\n  &lt;/Units&gt;\n\n&lt;/Booklet&gt;\nHier werden mehrere Testlets mit Aufgaben angelegt. Zwischen den Testlets befinden sich Aufgaben, die bswp. nur der Information oder der Begrüßung dienen. Jedem Testlet können eigene Beschränkungen zugewiesen werden. So hat das Testlet “MET2” bspw. keine Zeitbeschränkung. Die Unit-Navigationsleiste zu diesem Booklet würde während der Testdurchführung so aussehen. Beachten Sie dabei das Attribut labelshort zu den Units (unit).\n\n\n\nBsp1 Booklet Navileiste\n\n\n\n\n\nMehrere Gruppen und ein Monitor zur Überwachung einer der Gruppe:\n&lt;?xml version=\"1.0\"?&gt;\n&lt;Testtakers xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \nxsi:noNamespaceSchemaLocation=\"https://raw.githubusercontent.com/iqb-berlin/testcenter-backend/master/definitions/vo_Testtakers.xsd\"&gt;\n  \n&lt;Metadata/&gt;\n\n&lt;CustomTexts&gt;\n  &lt;CustomText key=\"login_testEndButtonText\"&gt;Test beenden&lt;/CustomText&gt;\n&lt;/CustomTexts&gt;\n\n&lt;Group id=\"5a\" label=\"Klasse 5a\"&gt;\n\n  &lt;Login mode=\"run-hot-return\" name=\"q2d6b\" pw=\"e4y7\"&gt;\n    &lt;Booklet&gt;booklet5a&lt;/Booklet&gt;\n  &lt;/Login&gt;\n  &lt;Login mode=\"run-hot-return\" name=\"e2p5h\" pw=\"c3h6\"&gt;\n    &lt;Booklet&gt;booklet5a&lt;/Booklet&gt;\n  &lt;/Login&gt;\n\n&lt;/Group&gt;\n\n&lt;Group id=\"5b\" label=\"Klasse 5b\"&gt;\n\n  &lt;Login mode=\"run-review\" name=\"q2op3\" pw=\"z76z\"&gt;\n    &lt;Booklet&gt;booklet5b&lt;/Booklet&gt;\n  &lt;/Login&gt;\n  &lt;Login mode=\"run-review\" name=\"e2io3\" pw=\"d3f6\"&gt;\n    &lt;Booklet&gt;booklet5b&lt;/Booklet&gt;\n  &lt;/Login&gt;\n\n  &lt;Login mode=\"monitor-group\" name=\"monitor_1\" /&gt;\n\n  &lt;/Group&gt;\n&lt;/Testtakers&gt;\nIn diesem Beispiel sollen zwei unglaublich kleine Klasse getestet werden. Die Testung für die Klasse 5a soll bereits final durchgeführt werden können. Aus diesem Grund sind dort alle Personen im run-hot-return Modus angelegt. Die Testung für die Klasse 5b ist noch nicht final. Hier sind alle Personen mit dem Modus: run-review angelegt. Der Grund dafür könnte bspw. sein, dass die Testleitung gerne noch einmal das booklet5b aus Sicht der Testpersonen begutachten möchte, bevor eine “heiße”Testung erfolgt. Außerdem ist in dieser Gruppe ein Gruppenmonitor monitor-group angelegt. Dies ist ein Zugang für die Testleitung. Werden diese Zugangsdaten bei der Anmeldung angegeben, startet die Testleitungskonsole und es ist möglich den Testverlauf zu begutachten und zu steuern."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "TBA - Einführung\n      \n        \n      \n      \n        Verstehen und Anwenden: Die Webanwendungen des IQB zum computerbasierten Testen.\n      \n    \n  \n    \n      TBA - Kodieren\n      \n        \n      \n      \n        Die Aufbereitung von Antworten für die Analyse ist aufwändig, kann aber automatisiert werden.\n      \n    \n  \n    \n      Verona - Spezifikationen\n      \n        \n      \n      \n        Das IQB arbeitet mit an übergreifenden Standards für Daten und Schnittstellen.\n      \n    \n  \n    \n      Metadaten\n      \n        \n      \n      \n        Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet.\n      \n    \n  \n    \n      Datenanalyse\n      \n        \n      \n      \n        Für die Analyse der Daten aus großen Lernstands­erhebungen stellt das IQB viele R-Programmierungen bereit.\n      \n    \n  \n\n\nKeine Treffer\n\n\n\nTestcenter – Web-Anwendung zum Testen\n\nInstallation/Code\nDokumentation für Anwendung\nAktuelle Vorhaben\nict-ToolBox - Windows-Programm zur Vor- und Nachbereitung von Testcenter-Daten\n\nInstallieren\nDokumentation/Code\n\n\n\n\nStudio - Webanwendung zur Bauen von Testaufgaben\n\nInstallation/Code\nDokumentation für Anwendung\nAktuelle Vorhaben\n\n\n\nVerona-Module\n\nAspect Player und Editor - Player und Editor für komplexe Testaufgaben oder Seiten (IQB-Standard, VERA)\nAbi Player - Player für eine spezielle Scriptsprache\nSpeed Test Player - Player für Lesegeschwindigkeitstests\nSimple Player - Universeller Player für Html-Definitionen\nPlain Text Editor - Universeller Editor, Bearbeitung der Unit-Definitionen als Text\nIQB-Schemer - Editieren eines Kodierschemas - Standard für IQB-Aufgaben\nFür Entwickler:innen:\n\nVerona-Player-Testbed: Anwendung zum Testen von Playern oder Unit-Definitionen\niqb-dev-components: Einige allgemeine Tools zur Webentwicklung\n\n\n\n\n\n\n\n Zurück nach oben"
+  },
+  {
+    "objectID": "verona-modules.html",
+    "href": "verona-modules.html",
+    "title": "Verona-Module des IQB",
+    "section": "",
+    "text": "Zurück nach oben"
+  },
+  {
+    "objectID": "assets/Ref_Booklet_Testheft_Xml.html",
+    "href": "assets/Ref_Booklet_Testheft_Xml.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml\n\n\n Booklet1 Beispiel-Testheft Erzeugt mit Teststudio 13.06.2022 \n FULL \n\n&lt;Testlet id=\"MET\" label=\"Mein erstes Testheft\"&gt;\n  \n  &lt;Restrictions&gt;\n      &lt;CodeToEnter code=\"Hase\"&gt;Bitte gib das Freigabewort ein.&lt;/CodeToEnter&gt;\n      &lt;TimeMax minutes=\"10\"/&gt;\n  &lt;/Restrictions&gt;\n\n&lt;Unit id=\"MEA\" label=\"1. Meine erste Aufgabe\" /&gt;\n  \n&lt;/Testlet&gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Testtaker_Xml.html",
+    "href": "assets/Ref_Testtaker_Xml.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml    Erzeugt mit Teststudio 25.05.2022 \n&lt;Group id=\"MEG\" label=\"Meine erste Gruppe\"&gt;\n&lt;Login mode=\"run-review\" name=\"v2z2b\" pw=\"q5e6\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"y4e3x\" pw=\"e9z5\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"b7u4z\" pw=\"b4c6\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"b6b9g\" pw=\"x5u7\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"z6g4f\" pw=\"x3e6\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n&lt;Login mode=\"run-review\" name=\"b4x4s\" pw=\"b5x4\"&gt;\n        &lt;Booklet&gt;Booklet1&lt;/Booklet&gt;\n    &lt;/Login&gt;\n &lt;/Group&gt;\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Unit_Xml_01.html",
+    "href": "assets/Ref_Unit_Xml_01.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml  \n MEA Meine erste Aufgabe \n MEA.voud \n    1 1   2 2   3 3     MEA.vocs\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/Ref_Booklet_Xml.html",
+    "href": "assets/Ref_Booklet_Xml.html",
+    "title": "IQB auf GitHub",
+    "section": "",
+    "text": "```xml  \n Booklet1 Beispiel-Testheft Erzeugt mit Teststudio 25.05.2022   FULL    \n\n\n\n\n Back to top"
+  }
+]
