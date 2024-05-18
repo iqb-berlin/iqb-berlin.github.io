@@ -17,13 +17,13 @@ format:
 
 Das [Institut zur Qualitätsentwicklung im Bildungswesen (IQB)](https://www.iqb.hu-berlin.de) ist ein wissenschaftliches Institut, das die Länder in der Bundesrepublik Deutschland bei der Qualitätsentwicklung und Qualitätssicherung im allgemeinbildenden Schulsystem unterstützt. Den Ausgangspunkt und die Grundlage dieser Arbeit bilden Bildungsstandards, die von der Ständigen Konferenz der Kultusminister der Länder in der Bundesrepublik Deutschland (KMK) verabschiedet worden sind. Diese Bildungsstandards definieren, welche Kompetenzen Schülerinnen und Schüler bis zu einem bestimmten Zeitpunkt in ihrer Schullaufbahn entwickelt haben sollen. Das IQB hat den Auftrag, regelmäßig zu überprüfen, inwieweit diese Ziele in deutschen Schulen erreicht werden (Bildungsmonitoring). Ferner unterstützt das IQB die Länder darin, die Bildungsstandards, die als zentraler Orientierungsrahmen für alle Akteure im Bildungssystem dienen sollen, umzusetzen (Implementierung). Darüber hinaus gehört das IQB zu den wichtigsten Instituten in Deutschland, die im Bereich der empirischen Bildungsforschung aktiv sind (Forschung).
 
-Ein Teil dieser Unterstützungsleistungen besteht aus der Bereitstellung von Software. Die Nutzungslizenz hierfür ist stets [MIT](license.qmd). Sämtliche Spezifikationen für Schnittstellen und Datenformate sind unter der Lizenz CC0 veröffentlicht. Die gesamten Software-Entwicklungen sind Open Source.
+Ein Teil dieser Unterstützungsleistungen besteht aus der Bereitstellung von Software. Die Nutzungslizenz hierfür ist stets [MIT](license.qmd). Sämtliche Spezifikationen für Schnittstellen und Datenformate sind unter der Lizenz [CC0](https://open-educational-resources.de/was-die-cc0-freigabe-bedeutet-und-welche-moeglichkeiten-sie-eroeffnen/) veröffentlicht. Die gesamten Software-Entwicklungen sind Open Source.
 
 Diese Seite ist der Einstiegspunkt für diese Ressourcen. Wählen Sie oben eine Hauptkategorie für eine separate Online-Dokumentation oder springen Sie zu
 
 * [Releases](releases.qmd): Direkte Links für die Installation bzw. Download.
 * [Spezifikationen](specs.qmd): Links zu Spezifikationen für Schnittstellen und Datenformate
-* [Dialog](dialog.qmd): Links zu Foren, Mailinglisten, und weitere Kontakte
+* [Dialog](dialog.qmd): Mit dem IQB in Kontakt treten
 
 ## Impressum
 

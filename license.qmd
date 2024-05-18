@@ -1,5 +1,4 @@
 ---
-title: MIT für Deutschland
 lang: de
 format:
     html:
