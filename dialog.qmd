@@ -6,4 +6,18 @@ format:
         toc: true
 ---
 
-* [Dialog](dialog.qmd): Links zu Foren, Mailinglisten, und weitere Kontakte
+# Lernen, Ausprobieren, Nachfragen
+
+Sie lesen gerade eine Online-Dokumentation und haben einiges ausprobiert? Vieles haben wir noch nicht ausreichend beschrieben, und Teile der Programmierungen sind in einem frühen Stadium -- also mitunter fehlerhaft und zu kurz gedacht. Oder manchmal sind Schlüsselinformationen schlecht positioniert. Bitte wenden Sie sich direkt an die angegebenen Kontakt-Adressen! Wir geben gern Starthilfe.
+
+Diese Beratung ist Teil unseres Auftrages und entspricht unserem Selbstverständnis. Die Software kann nur gewinnen, wenn sich Nutzer*innen melden. Wir setzen natürlich Prioritäten bei Weiterentwicklungen und Dokumentationen. Nur wer mit uns in Kontakt tritt, kann diese Prioritäten beeinflussen.
+
+# Issues/Tickets
+
+Unsere Arbeit basiert auf dem Ticket-System von GitHub. Alle Arbeitsschritte werden hier vorbereitet und nach Abschluss archiviert. Bitte schauen Sie dort einmal vorbei - dann sehen Sie, was wir in näherer Zunkunft vorhaben und können auch die Diskussion über neue Funktionen direkt verfolgen.
+
+Setzen Sie selbst Ideen, Hinweise oder Fehlerberichte als Ticket in GitHub! Wir melden uns dann bzw. antworten direkt in das Ticketsystem.
+
+# Mailinglisten, Treffen
+
+In den Dokumentationen sind Mailinglisten angegeben, die Sie gern abonnieren können. Hier werden auch Termine von Treffen bekanntgegeben, wie z. B. das jährliche Verona-Forum.

@@ -23,7 +23,7 @@ Diese Seite ist der Einstiegspunkt für diese Ressourcen. Wählen Sie oben eine 
 
 * [Releases](releases.qmd): Direkte Links für die Installation bzw. Download.
 * [Spezifikationen](specs.qmd): Links zu Spezifikationen für Schnittstellen und Datenformate
-
+* [Dialog](dialog.qmd): Links zu Foren, Mailinglisten, und weitere Kontakte
 
 ## Impressum
 
