@@ -1,0 +1,9 @@
+---
+title: Dialog
+lang: de
+format:
+    html:
+        toc: true
+---
+
+* [Dialog](dialog.qmd): Links zu Foren, Mailinglisten, und weitere Kontakte

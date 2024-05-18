@@ -1,0 +1,19 @@
+---
+title: MIT für Deutschland
+lang: de
+format:
+    html:
+        toc: false
+---
+
+Für Software gilt im internationalen Rechtsverkehr die Lizenz [MIT](https://opensource.org/licenses/MIT). Da diese Lizenz für die deutsche Rechtspraxis Mängel aufweist, gilt für Deutschland ein leicht angepasster Text.
+
+# MIT für Deutschland
+
+Copyright (c) 2022 Institut zur Qualitätsentwicklung im Bildungswesen (IQB)
+
+Jedem, der eine Kopie dieser Software und der zugehörigen Dokumentationsdateien (die "Software") erhält, wird hiermit kostenlos die Erlaubnis erteilt, ohne Einschränkung mit der Software zu handeln, einschließlich und ohne Einschränkung der Rechte zur Nutzung, zur Vervielfältigung, Bearbeitung, Zusammenführung, Veröffentlichung, Verbreitung, Unterlizensierung und/oder zum Verkauf von Kopien der Software, und Personen, denen die Software zur Verfügung gestellt wird, dies gleichermaßen zu gestatten, jeweils sofern und solange die folgenden Bedingungen eingehalten werden:
+
+Der obige Urheberrechtshinweis und dieser Genehmigungshinweis müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein.
+
+Soweit gesetztlich möglich, werden jegliche Ansprüche aus Mängelgewährleistungsrechten ausgeschlossen. Die Autor:innen und Urheberrechtsinhaber:innen sind in keinem Fall haftbar für Ansprüche, Schäden oder andere Verpflichtungen, ob in einer Vertrags- oder Haftungsklage, einer unerlaubten Handlung oder anderweitig, die sich aus, aus oder in Verbindung mit der Software oder der Nutzung oder anderen Geschäften mit der Software ergeben. Der Haftungsausschluss bezieht sich nicht auf die Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung des Lizenzgebers oder einer vorsätzlichen oder fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Lizenzgebers beruhen. Außerdem ist die Haftung auch nicht für Schäden, die auf einer grobfahrlässigen Pflichtverletzung des Lizenzgebers oder seines gesetzlichen Vertreters oder Erfüllungsgehilfen beruhen, beschränkt oder ausgeschlossen.

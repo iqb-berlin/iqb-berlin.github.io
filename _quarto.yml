@@ -17,6 +17,7 @@ website:
         href: https://github.com/iqb-berlin
     left:
       - releases.qmd
+      - specs.qmd
   page-footer:
     border: true
     background: light
@@ -30,8 +31,6 @@ website:
 format:
   html:
     theme: superhero
-    toc: false
     anchor-sections: true
-    margin-width: 0
     link-external-newwindow: true
     
