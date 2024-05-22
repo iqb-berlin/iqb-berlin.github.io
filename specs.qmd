@@ -22,7 +22,7 @@ Auf dieser Seite finden Sie direkte Links zu Spezifikationen des IQB bzw. zu sol
 * Input Testtaker-Xml: [Spec Xsd](https://github.com/iqb-berlin/testcenter/blob/master/definitions/vo_Testtakers.xsd), [Modi der Testdurchführung](https://pages.cms.hu-berlin.de/iqb/testcenter/pages/test-mode.html)
 * Input Unit-Xml: [Spec Xsd](https://github.com/iqb-berlin/testcenter/blob/master/definitions/vo_Unit.xsd)
 * Input System-Check-Xml: [Spec Xsd](https://github.com/iqb-berlin/testcenter/blob/master/definitions/vo_SysCheck.xsd)
-* Setzen von eigenen Texten -- [CostumTexts](https://pages.cms.hu-berlin.de/iqb/testcenter/pages/custom-texts.html)
+* Setzen von eigenen Texten -- [CustomTexts](https://pages.cms.hu-berlin.de/iqb/testcenter/pages/custom-texts.html)
 * [API Backend](https://pages.cms.hu-berlin.de/iqb/testcenter/dist/api/index.html)
 
 # Antworten/Kodierung
