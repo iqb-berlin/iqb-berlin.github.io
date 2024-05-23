@@ -8,6 +8,7 @@ listing:
 format:
     html:
         toc: false
+        include-in-header: ld.organisation.html
 ---
 
 ::: {#gallery}
