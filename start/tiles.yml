@@ -18,3 +18,7 @@
   description: Für die Analyse der Daten aus großen Lernstands&shy;erhebungen stellt das IQB viele R-Programmierungen bereit.
   href: https://iqb-research.github.io/IQB-Methods/
   thumbnail: start/teaser-r.jpg
+- title: Item-Tabelle
+  description: Für VERA werden jedes Jahr diverse Daten für Items an die Länder gegeben (Kennwerte, Metadaten, Platzierung in Modulen usw.).
+  href: https://iqb-berlin.github.io/item-table/
+  thumbnail: start/teaser-item-table.jpg  

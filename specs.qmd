@@ -28,6 +28,7 @@ Auf dieser Seite finden Sie direkte Links zu Spezifikationen des IQB bzw. zu sol
 # Antworten/Kodierung
 
 * responses, coding-scheme, missing, state-map: [Spec](https://iqb-berlin.github.io/responses), [Docs](https://iqb-berlin.github.io/coding-info/data-structures/)
+* [VERA Item-Tabelle](https://iqb-berlin.github.io/item-table/data-specs-doc/)
 
 # Metadaten
 
