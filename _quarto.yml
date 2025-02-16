@@ -23,7 +23,7 @@ website:
     border: true
     background: light
     right:
-      - text: "IQB 2024"
+      - text: "IQB 2025"
         href: https://www.iqb.hu-berlin.de
     left:
       - href: index.qmd
