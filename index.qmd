@@ -23,7 +23,6 @@ Ein Teil dieser Unterstützungsleistungen besteht aus der Bereitstellung von Sof
 Diese Seite ist der Einstiegspunkt für diese Ressourcen. Wählen Sie oben eine Hauptkategorie für eine separate Online-Dokumentation oder springen Sie zu
 
 * [Releases](releases.qmd): Direkte Links für die Installation bzw. Download.
-* [Spezifikationen](specs.qmd): Links zu Spezifikationen für Schnittstellen und Datenformate
 * [Dialog](dialog.qmd): Mit dem IQB in Kontakt treten
 
 ## Impressum
