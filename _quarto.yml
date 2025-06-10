@@ -11,7 +11,7 @@ website:
   navbar:
     pinned: true
     search: true
-    logo: images/IQB-klein.png
+    logo: images/iqb-logo-only-white.png
     right:
       - icon: github
         href: https://github.com/iqb-berlin
