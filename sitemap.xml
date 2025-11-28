@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://iqb-berlin.github.io/releases.html</loc>
-    <lastmod>2025-06-10T10:46:54.426Z</lastmod>
-  </url>
-  <url>
-    <loc>https://iqb-berlin.github.io/index.html</loc>
-    <lastmod>2025-06-10T10:46:54.426Z</lastmod>
-  </url>
-  <url>
-    <loc>https://iqb-berlin.github.io/verona-modules.html</loc>
-    <lastmod>2025-06-10T10:46:54.429Z</lastmod>
+    <loc>https://iqb-berlin.github.io/license.html</loc>
+    <lastmod>2025-11-28T12:32:17.585Z</lastmod>
   </url>
   <url>
     <loc>https://iqb-berlin.github.io/dialog.html</loc>
-    <lastmod>2025-06-10T10:46:54.426Z</lastmod>
+    <lastmod>2025-11-28T12:32:17.584Z</lastmod>
   </url>
   <url>
-    <loc>https://iqb-berlin.github.io/license.html</loc>
-    <lastmod>2025-06-10T10:46:54.426Z</lastmod>
+    <loc>https://iqb-berlin.github.io/releases.html</loc>
+    <lastmod>2025-11-28T12:32:17.585Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iqb-berlin.github.io/w3id-404.html</loc>
+    <lastmod>2025-11-28T12:32:17.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iqb-berlin.github.io/verona-modules.html</loc>
+    <lastmod>2025-11-28T12:32:17.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iqb-berlin.github.io/index.html</loc>
+    <lastmod>2025-11-28T12:32:17.585Z</lastmod>
   </url>
 </urlset>
