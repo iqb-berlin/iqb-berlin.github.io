@@ -1,0 +1,14 @@
+---
+title: perma-link nicht gefunden
+lang: de
+---
+
+Das [IQB](https://www.iqb.hu-berlin.de) nutzt [w3id.org](https://w3id.org/) für permanente URLs. Über diesen Mechanismus kann der Ort einer Datei geändert werden, ohne dass die URL angepasst werden muss.
+
+Sie haben eine URL aufgerufen, die über w3id.org aufgelöst werden sollte, aber es wurde keine zutreffende Umleitungsregel gefunden. Folgende Seiten könnten helfen, die Ursache dafür zu finden:
+
+* [Metadaten-Vokabulare des IQB](https://iqb-vocabs.github.io/vokabulare/)
+* [Profile für Metadaten am IQB](https://iqb-vocabs.github.io/metadatenprofile/)
+* [IQB-Spezifikationen](https://iqb-specifications.github.io/) von Schnittstellen und Daten
+
+Kontakt: [TBA-Team iqb-tbadev@hu-berlin.de](mailto:iqb-tbadev@hu-berlin.de)
