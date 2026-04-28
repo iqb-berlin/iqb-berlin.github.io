@@ -10,7 +10,7 @@ format:
 
 Sie lesen gerade eine Online-Dokumentation und haben einiges ausprobiert? Vieles haben wir noch nicht ausreichend beschrieben, und Teile der Programmierungen sind in einem frühen Stadium -- also mitunter fehlerhaft und zu kurz gedacht. Oder manchmal sind Schlüsselinformationen schlecht positioniert. Bitte wenden Sie sich direkt an die angegebenen Kontakt-Adressen! Wir geben gern Starthilfe.
 
-Diese Beratung ist Teil unseres Auftrages und entspricht unserem Selbstverständnis. Die Software kann nur gewinnen, wenn sich Nutzer*innen melden. Wir setzen natürlich Prioritäten bei Weiterentwicklungen und Dokumentationen. Nur wer mit uns in Kontakt tritt, kann diese Prioritäten beeinflussen.
+Diese Beratung entspricht unserem Selbstverständnis. Die Software kann nur gewinnen, wenn sich Nutzer*innen melden. Wir setzen natürlich Prioritäten bei Weiterentwicklungen und Dokumentationen. Nur wer mit uns in Kontakt tritt, kann diese Prioritäten beeinflussen.
 
 # Issues/Tickets
 

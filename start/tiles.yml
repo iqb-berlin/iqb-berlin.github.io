@@ -7,7 +7,7 @@
   href: https://iqb-specifications.github.io/
   thumbnail: start/teaser-specifications.jpg  
 - title: Metadaten
-  description: Die Datenobjekte, die das IQB den Ländern bereitstellt, werden schrittweise mit standardisierten Metadaten ausgestattet.
+  description: Das IQB stattet schrittweise Datenobjekte mit standardisierten Metadaten aus.
   href: https://iqb-vocabs.github.io
   thumbnail: start/teaser-metadata.jpg
 - title: Datenanalyse
