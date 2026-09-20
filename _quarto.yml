@@ -8,6 +8,8 @@ website:
   favicon: images/favicon.ico
   repo-url: https://github.com/iqb-berlin/iqb-berlin.github.io/
   title: "IQB auf GitHub"
+  margin-header: |
+    ![](/assets/tebea.png)
   navbar:
     pinned: true
     search: true

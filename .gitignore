@@ -2,3 +2,5 @@
 /.idea/
 /.quarto/
 /_site/
+
+**/*.quarto_ipynb
